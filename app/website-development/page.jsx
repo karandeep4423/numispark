@@ -1,6 +1,6 @@
 "use client";
+import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
-import { PlusCircle, MinusCircle, ArrowUpRight } from "lucide-react";
 import {
   Users,
   Smile,
@@ -19,91 +19,9 @@ import {
   PenTool,
   Rocket,
 } from "lucide-react";
-import { useState } from "react";
+import { PlusCircle, MinusCircle, ArrowUpRight } from "lucide-react";
 import Contact from "@/components/contact-us/page";
 
-const Services = [
-  {
-    serviceName: "Web Development",
-    serviceIcon: Code,
-    serviceDes:
-      "Build scalable, platform-independent web solutions for enhanced accessibility and reach.",
-  },
-  {
-    serviceName: "Mobile App Development",
-    serviceIcon: Smartphone,
-    serviceDes:
-      "Create robust mobile applications tailored for Android and iOS platforms.",
-  },
-  {
-    serviceName: "Digital Marketing",
-    serviceIcon: Megaphone,
-    serviceDes:
-      "Boost your online presence and drive engagement with data-driven marketing strategies.",
-  },
-  {
-    serviceName: "UI/UX Design",
-    serviceIcon: Layout,
-    serviceDes:
-      "Design intuitive and visually appealing interfaces for a seamless user experience.",
-  },
-  {
-    serviceName: "SaaS Development",
-    serviceIcon: Cloud,
-    serviceDes:
-      "Develop secure, scalable, and customizable SaaS solutions for your business needs.",
-  },
-  {
-    serviceName: "AI and Automation",
-    serviceIcon: Zap,
-    serviceDes:
-      "Leverage AI and automation to optimize workflows and drive efficiency.",
-  },
-  {
-    serviceName: "Ecommerce Development",
-    serviceIcon: ShoppingCart,
-    serviceDes:
-      "Create dynamic e-commerce platforms to enhance your online retail presence.",
-  },
-];
-const WhyUs = [
-  {
-    serviceName: "Experienced Team of Experts",
-    serviceIcon: "Users", // Icon for team and collaboration
-    serviceDes:
-      "Our experienced team of experts delivers platform-independent business solutions for maximum availability.",
-  },
-  {
-    serviceName: "Cutting-Edge Tools and Technologies",
-    serviceIcon: "Code", // Icon for development and tools
-    serviceDes:
-      "We use the latest technologies to build robust and scalable solutions tailored to your needs.",
-  },
-  {
-    serviceName: "Customer-Centric Approach",
-    serviceIcon: "Smile", // Icon for customer satisfaction
-    serviceDes:
-      "We prioritize your success and ensure every solution aligns with your unique goals.",
-  },
-  {
-    serviceName: "Proven Track Record with Measurable Results",
-    serviceIcon: "TrendingUp", // Icon for growth and performance
-    serviceDes:
-      "Our proven track record ensures measurable results and consistent success for your business.",
-  },
-  {
-    serviceName: "Transparent Communication",
-    serviceIcon: "MessageCircle", // Icon for communication
-    serviceDes:
-      "We maintain transparency in our communication, keeping you informed every step of the way.",
-  },
-  {
-    serviceName: "On-Time Delivery",
-    serviceIcon: "Clock", // Icon for punctuality
-    serviceDes:
-      "We value your time and guarantee timely delivery of all projects, no matter the scale.",
-  },
-];
 const TECHNOLOGIES = [
   {
     name: "React Js",
@@ -226,6 +144,76 @@ const TECHNOLOGIES = [
     logo: "https://cdn.brandfetch.io/idyLWe2HhF/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B",
   },
 ];
+
+const Benefits = [
+  {
+    serviceName: "Enhanced User Experience",
+    serviceIcon: "Users", // Icon for team and collaboration
+    serviceDes:
+      "Our experienced team of experts delivers platform-independent business solutions for maximum availability.",
+  },
+  {
+    serviceName: "Faster Loading Times",
+    serviceIcon: "Code", // Icon for development and tools
+    serviceDes:
+      "We use the latest technologies to build robust and scalable solutions tailored to your needs.",
+  },
+  {
+    serviceName: "Scalability for Future Growth",
+    serviceIcon: "Smile", // Icon for customer satisfaction
+    serviceDes:
+      "We prioritize your success and ensure every solution aligns with your unique goals.",
+  },
+  {
+    serviceName: "Dedicated Post-Launch Support",
+    serviceIcon: "TrendingUp", // Icon for growth and performance
+    serviceDes:
+      "Our proven track record ensures measurable results and consistent success for your business.",
+  },
+];
+const WhyUs = [
+  {
+    serviceName: "Mobile Responsive Design",
+    serviceIcon: "Users", // Icon for team and collaboration
+    serviceDes:
+      "Our experienced team of experts delivers platform-independent business solutions for maximum availability.",
+  },
+  {
+    serviceName: "SEO-Friendly",
+    serviceIcon: "Code", // Icon for development and tools
+    serviceDes:
+      "We use the latest technologies to build robust and scalable solutions tailored to your needs.",
+  },
+  {
+    serviceName: "Easy-to-Manage CMS",
+    serviceIcon: "Smile", // Icon for customer satisfaction
+    serviceDes:
+      "We prioritize your success and ensure every solution aligns with your unique goals.",
+  },
+  {
+    serviceName: "Speed Optimization",
+    serviceIcon: "TrendingUp", // Icon for growth and performance
+    serviceDes:
+      "Our proven track record ensures measurable results and consistent success for your business.",
+  },
+];
+const faqData = [
+  {
+    question: "How can I request a quote for a project?",
+    answer:
+      "You can request a quote by filling out our online form or contacting our sales team directly. We'll get back to you within 24 hours with a detailed proposal based on your project requirements.",
+  },
+  {
+    question: "What industries do you serve?",
+    answer:
+      "We serve a wide range of industries including technology, healthcare, finance, retail, education, and manufacturing. Our solutions are customized to meet the specific needs of each sector.",
+  },
+  {
+    question: "What is the typical timeline for a project?",
+    answer:
+      "Project timelines vary depending on scope and complexity. Typically, small projects take 2-4 weeks, medium projects 1-3 months, and large projects 3-6 months. We'll provide a detailed timeline during the initial consultation.",
+  },
+];
 const portfolioItems = [
   {
     image: "/api/placeholder/400/400",
@@ -246,26 +234,9 @@ const portfolioItems = [
     dotColor: "bg-amber-500",
   },
 ];
-const faqData = [
-  {
-    question: "How can I request a quote for a project?",
-    answer:
-      "You can request a quote by filling out our online form or contacting our sales team directly. We'll get back to you within 24 hours with a detailed proposal based on your project requirements.",
-  },
-  {
-    question: "What industries do you serve?",
-    answer:
-      "We serve a wide range of industries including technology, healthcare, finance, retail, education, and manufacturing. Our solutions are customized to meet the specific needs of each sector.",
-  },
-  {
-    question: "What is the typical timeline for a project?",
-    answer:
-      "Project timelines vary depending on scope and complexity. Typically, small projects take 2-4 weeks, medium projects 1-3 months, and large projects 3-6 months. We'll provide a detailed timeline during the initial consultation.",
-  },
-];
-
-export default function Home() {
+const WebsiteDevelopment = () => {
   const [openIndex, setOpenIndex] = useState(null);
+
   const { ref: first, inView: firstSectionIsVisible } = useInView({
     rootMargin: "-200px 0px",
     triggerOnce: "true",
@@ -340,40 +311,6 @@ export default function Home() {
           </button>
         </div>
       </div>
-      {/* Services Section */}
-      <div className="py-16 bg-gray-50">
-        <h2 className="text-4xl px-2 text-center font-bold text-gray-800">
-          Our Core{" "}
-          <span className="text-blue-600 bg-blue-200 p-1.5 rounded-2xl">
-            Services
-          </span>
-        </h2>
-        <p className="px-2 text-xl text-center font-medium text-gray-600 mt-4">
-          Comprehensive Solutions Tailored to Your Needs
-        </p>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {Services.map((service, index) => {
-            const Icon = service.serviceIcon;
-
-            return (
-              <div
-                key={index}
-                className="flex flex-col items-center p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
-                  <Icon className="text-blue-600 w-14 h-14" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {service.serviceName}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {service.serviceDes}
-                </p>
-              </div>
-            );
-          })}
-        </div>
-      </div>
       {/* Technologies Section */}
       <div className="pb-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
@@ -407,13 +344,89 @@ export default function Home() {
           ))}
         </div>
       </div>
+      {/* Why partner with us */}
+      <div className="py-16 bg-gray-50">
+        <h2 className="text-4xl text-center font-bold text-gray-800">
+          <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
+            Key Features{" "}
+          </span>{" "}
+          of our websites
+        </h2>
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
+          {WhyUs.map((service, index) => {
+            const Icon = {
+              Users,
+              Code,
+              Smile,
+              TrendingUp,
+              MessageCircle,
+              Clock,
+            }[service.serviceIcon];
+
+            return (
+              <div
+                key={index}
+                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition-shadow duration-300"
+              >
+                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
+                  <Icon className="text-blue-600 w-14 h-14" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
+                  {service.serviceName}
+                </h3>
+                <p className="text-gray-600 text-center">
+                  {service.serviceDes}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      {/* Benefits of Choosing Us */}
+      <div className="py-16 bg-gray-50">
+        <h2 className="text-4xl text-center font-bold text-gray-800">
+          <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
+            Benefits
+          </span>{" "}
+          of Choosing Us
+        </h2>
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
+          {Benefits.map((service, index) => {
+            const Icon = {
+              Users,
+              Code,
+              Smile,
+              TrendingUp,
+              MessageCircle,
+              Clock,
+            }[service.serviceIcon];
+
+            return (
+              <div
+                key={index}
+                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition-shadow duration-300"
+              >
+                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
+                  <Icon className="text-blue-600 w-14 h-14" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
+                  {service.serviceName}
+                </h3>
+                <p className="text-gray-600 text-center">
+                  {service.serviceDes}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
       {/* Process  */}
       <div className="bg-black  text-white">
         <div className="flex items-center justify-center">
           <h2 className=" relative mt-16 text-center text-5xl font-bold">
-            How agency works
+            Development Process
           </h2>
-          <div className="bg-sky-400 mt-16 absolute   mix-blend-multiply filter blur-2xl h-16 w-56 "></div>
+          <div className="bg-blue-600 mt-16 absolute   mix-blend-multiply filter blur-2xl h-16 w-56 "></div>
         </div>
         <div className="flex text-lg xl:text-xl max-w-screen-xl m-auto  justify-center items-center mt-10 flex-col">
           <div>
@@ -435,7 +448,7 @@ export default function Home() {
             </div>
             <div>
               <h3 className="mt-2 lg:mt-0 text-3xl px-3 text-center font-bold">
-                Understanding Your Vision
+                Requirement Analysis
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
                 We collaborate closely to understand your objectives,
@@ -478,7 +491,7 @@ export default function Home() {
             </div>
             <div>
               <h3 className="mt-2 lg:mt-0 text-3xl  text-center font-bold">
-                Strategic Planning
+                Wireframing & Prototyping
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
                 Using insights from our discussions, we craft a detailed
@@ -520,7 +533,7 @@ export default function Home() {
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl  text-center font-bold">
-                Design & Development
+                Development
               </h3>
               <p className=" ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
                 Our creative and technical teams work together to bring your
@@ -562,7 +575,7 @@ export default function Home() {
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl text-center font-bold">
-                Launch & Deployment
+                Testing
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
                 After rigorous testing, we launch your project with precision.
@@ -604,7 +617,7 @@ export default function Home() {
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl px-3 text-center font-bold">
-                Ongoing Support
+                Deployment
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
                 We provide post-launch support to ensure your project stays
@@ -613,48 +626,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </div>
-      </div>
-      {/* Why partner with us */}
-      <div className="py-16 bg-gray-50">
-        <h2 className="text-4xl text-center font-bold text-gray-800">
-          Why{" "}
-          <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            Partner
-          </span>{" "}
-          With Us
-        </h2>
-        <p className="text-xl text-center font-medium text-gray-600 mt-4">
-          Your Success Is Our Priority
-        </p>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {WhyUs.map((service, index) => {
-            const Icon = {
-              Users,
-              Code,
-              Smile,
-              TrendingUp,
-              MessageCircle,
-              Clock,
-            }[service.serviceIcon];
-
-            return (
-              <div
-                key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
-                  <Icon className="text-blue-600 w-14 h-14" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {service.serviceName}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {service.serviceDes}
-                </p>
-              </div>
-            );
-          })}
         </div>
       </div>
       {/* Our recent works */}
@@ -710,7 +681,9 @@ export default function Home() {
         </div>
       </div>
       {/* Contact us */}
-      <Contact />
+      <Contact/>
     </div>
   );
-}
+};
+
+export default WebsiteDevelopment;

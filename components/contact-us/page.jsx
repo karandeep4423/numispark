@@ -66,8 +66,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="mt-20 bg-gray-50">
-      <div className="m-auto max-w-screen-xl items-center flex flex-col md:flex-row">
+    <div className="mt-20 m-auto max-w-screen-xl bg-gray-50">
+      <div className=" mx-5 lg:mx-32 items-center flex flex-col">
         <div className="flex flex-col mx-10">
           <div className="flex items-center justify-center">
             <h1 className=" text-gray-800text-center mb-8 sm:mb-0 mt-14 text-3xl sm:text-5xl font-bold">
@@ -77,7 +77,7 @@ const Contact = () => {
         </div>
         <form
           onSubmit={handleSubmit}
-          className="shadow-[5px_5px_0px_4px_rgba(2,139,199,0.5),_-5px_-5px_0px_rgba(255,255,255,1)] h-fit w-full md:w-10/12 mt-8 rounded-3xl mx-10 p-6 md:p-10 mb-16 border-2 border-gray-200"
+          className="shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] h-fit w-full md:w-10/12 mt-8 rounded-3xl mx-10 p-6 md:p-10 mb-16 border-2 border-gray-200"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Input Fields */}
