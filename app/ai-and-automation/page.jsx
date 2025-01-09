@@ -1,6 +1,6 @@
 "use client";
-import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
+import { PlusCircle, MinusCircle, ArrowUpRight } from "lucide-react";
 import {
   Users,
   Smile,
@@ -19,132 +19,101 @@ import {
   PenTool,
   Rocket,
 } from "lucide-react";
-import { PlusCircle, MinusCircle, ArrowUpRight } from "lucide-react";
+import { useState } from "react";
 import Contact from "@/components/contact-us/page";
 
+const Services = [
+  {
+    serviceName: "Custom AI Model Development",
+    serviceIcon: Code,
+    serviceDes:
+      "Build scalable, platform-independent web solutions for enhanced accessibility and reach.",
+  },
+  {
+    serviceName: "Chatbot Integration ",
+    serviceIcon: Smartphone,
+    serviceDes:
+      "Create robust mobile applications tailored for Android and iOS platforms.",
+  },
+  {
+    serviceName: "Business Process Automation",
+    serviceIcon: Megaphone,
+    serviceDes:
+      "Boost your online presence and drive engagement with data-driven marketing strategies.",
+  },
+  {
+    serviceName: "Machine Learning and Predictive Analytics",
+    serviceIcon: Layout,
+    serviceDes:
+      "Design intuitive and visually appealing interfaces for a seamless user experience.",
+  },
+];
+const features = [
+  {
+    serviceName: "Natural Language Understanding (NLU)",
+    serviceIcon: "Users", // Icon for team and collaboration
+    serviceDes:
+      "Our experienced team of experts delivers platform-independent business solutions for maximum availability.",
+  },
+  {
+    serviceName: "Multilingual Support",
+    serviceIcon: "Code", // Icon for development and tools
+    serviceDes:
+      "We use the latest technologies to build robust and scalable solutions tailored to your needs.",
+  },
+  {
+    serviceName: "Integration with Popular Platforms ",
+    serviceIcon: "Smile", // Icon for customer satisfaction
+    serviceDes:
+      "We prioritize your success and ensure every solution aligns with your unique goals.",
+  },
+  {
+    serviceName: "Real-Time Analytics",
+    serviceIcon: "TrendingUp", // Icon for growth and performance
+    serviceDes:
+      "Our proven track record ensures measurable results and consistent success for your business.",
+  },
+  {
+    serviceName: "Transparent Communication",
+    serviceIcon: "MessageCircle", // Icon for communication
+    serviceDes:
+      "We maintain transparency in our communication, keeping you informed every step of the way.",
+  },
+  {
+    serviceName: "On-Time Delivery",
+    serviceIcon: "Clock", // Icon for punctuality
+    serviceDes:
+      "We value your time and guarantee timely delivery of all projects, no matter the scale.",
+  },
+];
 const TECHNOLOGIES = [
   {
-    name: "React Js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    name: "Python",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
   },
   {
-    name: "Angular Js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg",
+    name: "Tensorflow",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg",
   },
   {
-    name: "Vue Js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
+    name: "PyTorch",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg",
   },
   {
-    name: "Tailwind css",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    name: "Zapier",
+    logo: "https://cdn.brandfetch.io/idNMs_nMA0/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B",
   },
   {
-    name: "Node js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+    name: "UiPath",
+    logo: "https://cdn.brandfetch.io/idEaAShmlC/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B",
   },
   {
     name: "Django",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg",
   },
   {
-    name: "Ruby on Rails",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg",
-  },
-  {
-    name: "Laravel",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg",
-  },
-  {
-    name: "Webflow",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webflow/webflow-original.svg",
-  },
-  {
-    name: "Wordpress",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg",
-  },
-
-  {
-    name: "MongoDB",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-  },
-  {
-    name: "MySQL",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
-  },
-  {
-    name: "PostgreSQL",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
-  },
-];
-
-const Benefits = [
-  {
-    serviceName: "Enhanced User Experience",
-    serviceIcon: "Users", // Icon for team and collaboration
-    serviceDes:
-      "Our experienced team of experts delivers platform-independent business solutions for maximum availability.",
-  },
-  {
-    serviceName: "Faster Loading Times",
-    serviceIcon: "Code", // Icon for development and tools
-    serviceDes:
-      "We use the latest technologies to build robust and scalable solutions tailored to your needs.",
-  },
-  {
-    serviceName: "Scalability for Future Growth",
-    serviceIcon: "Smile", // Icon for customer satisfaction
-    serviceDes:
-      "We prioritize your success and ensure every solution aligns with your unique goals.",
-  },
-  {
-    serviceName: "Dedicated Post-Launch Support",
-    serviceIcon: "TrendingUp", // Icon for growth and performance
-    serviceDes:
-      "Our proven track record ensures measurable results and consistent success for your business.",
-  },
-];
-const WhyUs = [
-  {
-    serviceName: "Mobile Responsive Design",
-    serviceIcon: "Users", // Icon for team and collaboration
-    serviceDes:
-      "Our experienced team of experts delivers platform-independent business solutions for maximum availability.",
-  },
-  {
-    serviceName: "SEO-Friendly",
-    serviceIcon: "Code", // Icon for development and tools
-    serviceDes:
-      "We use the latest technologies to build robust and scalable solutions tailored to your needs.",
-  },
-  {
-    serviceName: "Easy-to-Manage CMS",
-    serviceIcon: "Smile", // Icon for customer satisfaction
-    serviceDes:
-      "We prioritize your success and ensure every solution aligns with your unique goals.",
-  },
-  {
-    serviceName: "Speed Optimization",
-    serviceIcon: "TrendingUp", // Icon for growth and performance
-    serviceDes:
-      "Our proven track record ensures measurable results and consistent success for your business.",
-  },
-];
-const faqData = [
-  {
-    question: "How can I request a quote for a project?",
-    answer:
-      "You can request a quote by filling out our online form or contacting our sales team directly. We'll get back to you within 24 hours with a detailed proposal based on your project requirements.",
-  },
-  {
-    question: "What industries do you serve?",
-    answer:
-      "We serve a wide range of industries including technology, healthcare, finance, retail, education, and manufacturing. Our solutions are customized to meet the specific needs of each sector.",
-  },
-  {
-    question: "What is the typical timeline for a project?",
-    answer:
-      "Project timelines vary depending on scope and complexity. Typically, small projects take 2-4 weeks, medium projects 1-3 months, and large projects 3-6 months. We'll provide a detailed timeline during the initial consultation.",
+    name: "OpenAI",
+    logo: "https://cdn.brandfetch.io/idR3duQxYl/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B",
   },
 ];
 const portfolioItems = [
@@ -167,10 +136,51 @@ const portfolioItems = [
     dotColor: "bg-amber-500",
   },
 ];
-
-const WebsiteDevelopment = () => {
+const faqData = [
+  {
+    question: "How can I request a quote for a project?",
+    answer:
+      "You can request a quote by filling out our online form or contacting our sales team directly. We'll get back to you within 24 hours with a detailed proposal based on your project requirements.",
+  },
+  {
+    question: "What industries do you serve?",
+    answer:
+      "We serve a wide range of industries including technology, healthcare, finance, retail, education, and manufacturing. Our solutions are customized to meet the specific needs of each sector.",
+  },
+  {
+    question: "What is the typical timeline for a project?",
+    answer:
+      "Project timelines vary depending on scope and complexity. Typically, small projects take 2-4 weeks, medium projects 1-3 months, and large projects 3-6 months. We'll provide a detailed timeline during the initial consultation.",
+  },
+];
+const WhyUs = [
+  {
+    serviceName: "Expertise in Cutting-Edge AI Technologies",
+    serviceIcon: "Users", // Icon for team and collaboration
+    serviceDes:
+      "Our experienced team of experts delivers platform-independent business solutions for maximum availability.",
+  },
+  {
+    serviceName: "Custom Solutions for Your Business Needs",
+    serviceIcon: "Code", // Icon for development and tools
+    serviceDes:
+      "We use the latest technologies to build robust and scalable solutions tailored to your needs.",
+  },
+  {
+    serviceName: "Cost-Effective and Scalable Solutions",
+    serviceIcon: "Smile", // Icon for customer satisfaction
+    serviceDes:
+      "We prioritize your success and ensure every solution aligns with your unique goals.",
+  },
+  {
+    serviceName: "Speed Optimization",
+    serviceIcon: "TrendingUp", // Icon for growth and performance
+    serviceDes:
+      "Our proven track record ensures measurable results and consistent success for your business.",
+  },
+];
+export default function Home() {
   const [openIndex, setOpenIndex] = useState(null);
-
   const { ref: first, inView: firstSectionIsVisible } = useInView({
     rootMargin: "-200px 0px",
     triggerOnce: "true",
@@ -227,24 +237,59 @@ const WebsiteDevelopment = () => {
       {/* Hero Section */}
       <div className="flex flex-col h-screen gap-5 justify-center items-center">
         <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
-          Custom Websites Tailored to Your Business Needs
+          Transform Your Business with AI & Automation
         </span>
         <span className="text-xs text-gray-800 sm:text-2xl text-center font-bold">
-          Emphasizing scalability, responsiveness, and performance.
+          From chatbots to custom AI models, we create intelligent solutions to
+          boost efficiency
         </span>
         <div className="flex flex-col gap-4 mt-5">
           <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Get a Free consultation
+            Start Your AI Journey
           </button>
           <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Explore Our Services
+            Request a Free Consultation
           </button>
         </div>
       </div>
-      {/* Technologies Section */}
+      {/* Services Section */}
       <div className="py-16 bg-gray-50">
+        <h2 className="text-4xl px-2 text-center font-bold text-gray-800">
+          Our Core{" "}
+          <span className="text-blue-600 bg-blue-200 p-1.5 rounded-2xl">
+            Services
+          </span>
+        </h2>
+        <p className="px-2 text-xl text-center font-medium text-gray-600 mt-4">
+          Comprehensive Solutions Tailored to Your Needs
+        </p>
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
+          {Services.map((service, index) => {
+            const Icon = service.serviceIcon;
+
+            return (
+              <div
+                key={index}
+                className="flex flex-col items-center p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+              >
+                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
+                  <Icon className="text-blue-600 w-14 h-14" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
+                  {service.serviceName}
+                </h3>
+                <p className="text-gray-600 text-center">
+                  {service.serviceDes}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      {/* Technologies Section */}
+      <div className="pb-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
-          <span className="text-blue-600 p-2.5 m-1 rounded-2xl bg-blue-200">
+          <span className="text-blue-600 m-1 p-2.5 rounded-2xl bg-blue-200">
             Technologies
           </span>
           We Excel In
@@ -274,54 +319,20 @@ const WebsiteDevelopment = () => {
           ))}
         </div>
       </div>
-      {/* Why partner with us */}
+      {/* Key Features */}
       <div className="pb-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
+          Key{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            Key Features{" "}
+            Features
           </span>{" "}
-          of our websites
+          of Our Chatbots
         </h2>
+        <p className="text-xl text-center font-medium text-gray-600 mt-4">
+          Your Success Is Our Priority
+        </p>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {WhyUs.map((service, index) => {
-            const Icon = {
-              Users,
-              Code,
-              Smile,
-              TrendingUp,
-              MessageCircle,
-              Clock,
-            }[service.serviceIcon];
-
-            return (
-              <div
-                key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
-                  <Icon className="text-blue-600 w-14 h-14" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {service.serviceName}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {service.serviceDes}
-                </p>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-      {/* Benefits of Choosing Us */}
-      <div className="pb-16 bg-gray-50">
-        <h2 className="text-4xl text-center font-bold text-gray-800">
-          <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            Benefits
-          </span>{" "}
-          of Choosing Us
-        </h2>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {Benefits.map((service, index) => {
+          {features.map((service, index) => {
             const Icon = {
               Users,
               Code,
@@ -354,9 +365,9 @@ const WebsiteDevelopment = () => {
       <div className="bg-black  text-white">
         <div className="flex items-center justify-center">
           <h2 className=" relative mt-16 text-center text-5xl font-bold">
-            Development Process
+            How agency works
           </h2>
-          <div className="bg-blue-600 mt-16 absolute   mix-blend-multiply filter blur-2xl h-16 w-56 "></div>
+          <div className="bg-sky-400 mt-16 absolute   mix-blend-multiply filter blur-2xl h-16 w-56 "></div>
         </div>
         <div className="flex text-lg xl:text-xl max-w-screen-xl m-auto  justify-center items-center mt-10 flex-col">
           <div>
@@ -378,7 +389,7 @@ const WebsiteDevelopment = () => {
             </div>
             <div>
               <h3 className="mt-2 lg:mt-0 text-3xl px-3 text-center font-bold">
-                Requirement Analysis
+                Understanding Your Vision
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
                 We collaborate closely to understand your objectives,
@@ -421,7 +432,7 @@ const WebsiteDevelopment = () => {
             </div>
             <div>
               <h3 className="mt-2 lg:mt-0 text-3xl  text-center font-bold">
-                Wireframing & Prototyping
+                Strategic Planning
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
                 Using insights from our discussions, we craft a detailed
@@ -463,7 +474,7 @@ const WebsiteDevelopment = () => {
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl  text-center font-bold">
-                Development
+                Design & Development
               </h3>
               <p className=" ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
                 Our creative and technical teams work together to bring your
@@ -505,7 +516,7 @@ const WebsiteDevelopment = () => {
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl text-center font-bold">
-                Testing
+                Launch & Deployment
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
                 After rigorous testing, we launch your project with precision.
@@ -547,7 +558,7 @@ const WebsiteDevelopment = () => {
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl px-3 text-center font-bold">
-                Deployment
+                Ongoing Support
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
                 We provide post-launch support to ensure your project stays
@@ -556,6 +567,44 @@ const WebsiteDevelopment = () => {
               </p>
             </div>
           </div>
+        </div>
+      </div>
+      {/* Why partner with us */}
+      <div className="py-16 bg-gray-50">
+        <h2 className="text-4xl text-center font-bold text-gray-800">
+          <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
+          Benefits{" "}
+          </span>{" "}
+          of Choosing Us
+        </h2>
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
+          {WhyUs.map((service, index) => {
+            const Icon = {
+              Users,
+              Code,
+              Smile,
+              TrendingUp,
+              MessageCircle,
+              Clock,
+            }[service.serviceIcon];
+
+            return (
+              <div
+                key={index}
+                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition-shadow duration-300"
+              >
+                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
+                  <Icon className="text-blue-600 w-14 h-14" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
+                  {service.serviceName}
+                </h3>
+                <p className="text-gray-600 text-center">
+                  {service.serviceDes}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
       {/* Our recent works */}
@@ -614,6 +663,4 @@ const WebsiteDevelopment = () => {
       <Contact />
     </div>
   );
-};
-
-export default WebsiteDevelopment;
+}

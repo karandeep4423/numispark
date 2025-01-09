@@ -2,134 +2,102 @@
 import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import {
-  Users,
-  Smile,
   TrendingUp,
-  MessageCircle,
-  Clock,
+  CloudUpload,
+  BookOpen,
+  CheckCircle,
+  ShieldCheck,
   Code,
   Smartphone,
-  Megaphone,
   Layout,
-  Cloud,
+  UserCheck,
+  Layers,
   Zap,
-  ShoppingCart,
-  Brain,
-  Target,
-  PenTool,
-  Rocket,
+  RefreshCw,
+  Shield
 } from "lucide-react";
 import { PlusCircle, MinusCircle, ArrowUpRight } from "lucide-react";
 import Contact from "@/components/contact-us/page";
 
 const TECHNOLOGIES = [
   {
-    name: "React Js",
+    name: "React Native",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
   },
   {
-    name: "Angular Js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg",
+    name: "Kotlin",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg",
   },
   {
-    name: "Vue Js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
+    name: "Swift",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg",
   },
   {
-    name: "Tailwind css",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-  },
-  {
-    name: "Node js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
-  },
-  {
-    name: "Django",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg",
-  },
-  {
-    name: "Ruby on Rails",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg",
-  },
-  {
-    name: "Laravel",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg",
-  },
-  {
-    name: "Webflow",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webflow/webflow-original.svg",
-  },
-  {
-    name: "Wordpress",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg",
-  },
-
-  {
-    name: "MongoDB",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-  },
-  {
-    name: "MySQL",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
-  },
-  {
-    name: "PostgreSQL",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+    name: "Flutter",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
   },
 ];
 
 const Benefits = [
   {
     serviceName: "Enhanced User Experience",
-    serviceIcon: "Users", // Icon for team and collaboration
+    serviceIcon: "UserCheck", // Icon for team and collaboration
     serviceDes:
-      "Our experienced team of experts delivers platform-independent business solutions for maximum availability.",
+      "Our expert team specializes in crafting seamless and intuitive mobile applications that work flawlessly across all platforms. This ensures maximum availability and usability for your target audience.",
   },
   {
-    serviceName: "Faster Loading Times",
+    serviceName: "Expert Developers with Extensive Experience",
     serviceIcon: "Code", // Icon for development and tools
     serviceDes:
-      "We use the latest technologies to build robust and scalable solutions tailored to your needs.",
+      "With years of experience and a deep understanding of the latest technologies, our developers create robust, scalable, and customized apps tailored to your unique business requirements.",
   },
   {
-    serviceName: "Scalability for Future Growth",
-    serviceIcon: "Smile", // Icon for customer satisfaction
+    serviceName: "Optimized for App Store Success",
+    serviceIcon: "TrendingUp", // Icon for customer satisfaction
     serviceDes:
-      "We prioritize your success and ensure every solution aligns with your unique goals.",
+      "We go beyond development, focusing on strategies that make your app shine in app stores. Our solutions are designed to help your business achieve its goals and win over users.",
   },
   {
-    serviceName: "Dedicated Post-Launch Support",
-    serviceIcon: "TrendingUp", // Icon for growth and performance
+    serviceName: "Fast and Secure Apps",
+    serviceIcon: "ShieldCheck", // Icon for growth and performance
     serviceDes:
-      "Our proven track record ensures measurable results and consistent success for your business.",
+      "Speed and security are at the heart of our development process. We ensure your app delivers exceptional performance while safeguarding sensitive data, giving you a competitive edge.",
+  },
+  {
+    serviceName: "Regular Updates and Maintenance",
+    serviceIcon: "RefreshCw", // Icon for updates and reliability
+    serviceDes:
+      "Stay ahead with apps that evolve with your needs. Our commitment to ongoing updates and maintenance ensures your app remains current, functional, and aligned with the latest industry standards.",
   },
 ];
-const WhyUs = [
+
+const Features = [
   {
-    serviceName: "Mobile Responsive Design",
-    serviceIcon: "Users", // Icon for team and collaboration
+    serviceName: "Native Apps (iOS & Android)",
+    serviceIcon: "Smartphone", // Icon for mobile apps
     serviceDes:
-      "Our experienced team of experts delivers platform-independent business solutions for maximum availability.",
+      "Take advantage of platform-specific features and performance with expertly crafted native applications for both iOS and Android. Our apps deliver the ultimate user experience.",
   },
   {
-    serviceName: "SEO-Friendly",
-    serviceIcon: "Code", // Icon for development and tools
+    serviceName: "Cross-Platform Apps",
+    serviceIcon: "Layers", // Icon for multi-layered apps
     serviceDes:
-      "We use the latest technologies to build robust and scalable solutions tailored to your needs.",
+      "Streamline your app’s development and reach a wider audience. We leverage cutting-edge frameworks to build high-performance apps that work seamlessly across platforms.",
   },
   {
-    serviceName: "Easy-to-Manage CMS",
-    serviceIcon: "Smile", // Icon for customer satisfaction
+    serviceName: "Scalable & Secure Apps",
+    serviceIcon: "Shield", // Icon for security
     serviceDes:
-      "We prioritize your success and ensure every solution aligns with your unique goals.",
+      "Your growth is our priority. We build apps designed to scale as your business grows, ensuring top-notch security at every stage.",
   },
   {
     serviceName: "Speed Optimization",
-    serviceIcon: "TrendingUp", // Icon for growth and performance
+    serviceIcon: "Zap", // Icon for speed and performance
     serviceDes:
-      "Our proven track record ensures measurable results and consistent success for your business.",
+      "No one likes a slow app! Our optimization techniques guarantee lightning-fast load times, enhancing user satisfaction and engagement.",
   },
 ];
+
 const faqData = [
   {
     question: "How can I request a quote for a project?",
@@ -146,7 +114,23 @@ const faqData = [
     answer:
       "Project timelines vary depending on scope and complexity. Typically, small projects take 2-4 weeks, medium projects 1-3 months, and large projects 3-6 months. We'll provide a detailed timeline during the initial consultation.",
   },
+  {
+    question: "Can you help improve my existing mobile app?",
+    answer:
+      "Absolutely! We offer app audit, redesign, and feature enhancement services to improve the performance and user experience of your existing mobile app.",
+  },
+  {
+    question: "Do you assist with app store submissions?",
+    answer:
+      "Yes, we handle the entire app store submission process, including ensuring compliance with guidelines, creating app store assets, and managing updates.",
+  },
+  {
+    question: "Do you offer post-launch support?",
+    answer:
+      "Yes, we provide ongoing support and maintenance to ensure your app remains up-to-date, secure, and functional over time.",
+  },
 ];
+
 const portfolioItems = [
   {
     image: "/api/placeholder/400/400",
@@ -168,7 +152,7 @@ const portfolioItems = [
   },
 ];
 
-const WebsiteDevelopment = () => {
+const MobileDevelopment = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const { ref: first, inView: firstSectionIsVisible } = useInView({
@@ -227,7 +211,7 @@ const WebsiteDevelopment = () => {
       {/* Hero Section */}
       <div className="flex flex-col h-screen gap-5 justify-center items-center">
         <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
-          Custom Websites Tailored to Your Business Needs
+          Innovative Mobile Apps to Elevate Your Business
         </span>
         <span className="text-xs text-gray-800 sm:text-2xl text-center font-bold">
           Emphasizing scalability, responsiveness, and performance.
@@ -244,7 +228,7 @@ const WebsiteDevelopment = () => {
       {/* Technologies Section */}
       <div className="py-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
-          <span className="text-blue-600 p-2.5 m-1 rounded-2xl bg-blue-200">
+          <span className="text-blue-600 m-1 p-2.5 rounded-2xl bg-blue-200">
             Technologies
           </span>
           We Excel In
@@ -274,23 +258,21 @@ const WebsiteDevelopment = () => {
           ))}
         </div>
       </div>
-      {/* Why partner with us */}
+      {/* Key Features */}
       <div className="pb-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
             Key Features{" "}
           </span>{" "}
-          of our websites
+          of our apps
         </h2>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {WhyUs.map((service, index) => {
+          {Features.map((service, index) => {
             const Icon = {
-              Users,
-              Code,
-              Smile,
-              TrendingUp,
-              MessageCircle,
-              Clock,
+              Smartphone,
+              Layers,
+              Shield,
+              Zap,
             }[service.serviceIcon];
 
             return (
@@ -323,12 +305,11 @@ const WebsiteDevelopment = () => {
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
           {Benefits.map((service, index) => {
             const Icon = {
-              Users,
+              UserCheck,
               Code,
-              Smile,
               TrendingUp,
-              MessageCircle,
-              Clock,
+              ShieldCheck,
+              RefreshCw,
             }[service.serviceIcon];
 
             return (
@@ -374,17 +355,16 @@ const WebsiteDevelopment = () => {
             }
           >
             <div className="mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Brain className="text-white" size={80} />
+              <BookOpen className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-2 lg:mt-0 text-3xl px-3 text-center font-bold">
                 Requirement Analysis
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                We collaborate closely to understand your objectives,
-                challenges, and goals, ensuring a clear path forward for your
-                project. Our focus is to align with your vision right from the
-                start.
+                Our team begins by understanding your mobile app's objectives,
+                target audience, and key features. This step ensures a shared
+                vision and sets the foundation for a successful app.
               </p>
             </div>
           </div>
@@ -417,16 +397,16 @@ const WebsiteDevelopment = () => {
             }
           >
             <div className="mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Target className="text-white" size={80} />
+              <Layout className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-2 lg:mt-0 text-3xl  text-center font-bold">
                 Wireframing & Prototyping
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                Using insights from our discussions, we craft a detailed
-                strategy that outlines actionable steps. Our tailored approach
-                ensures measurable success for your project.
+                We create detailed wireframes and interactive prototypes to
+                visualize the app’s flow and user experience. This stage allows
+                you to refine your ideas before development begins.
               </p>
             </div>
           </div>
@@ -459,16 +439,16 @@ const WebsiteDevelopment = () => {
             }
           >
             <div className=" mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <PenTool className="text-white" size={80} />
+              <Code className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl  text-center font-bold">
                 Development
               </h3>
               <p className=" ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                Our creative and technical teams work together to bring your
-                ideas to life. We deliver visually stunning designs paired with
-                high-performing development.
+                Our developers use cutting-edge technologies and frameworks to
+                build scalable, responsive, and high-performance mobile apps
+                tailored to your needs.
               </p>
             </div>
           </div>
@@ -501,16 +481,16 @@ const WebsiteDevelopment = () => {
             }
           >
             <div className="mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Rocket className="text-white" size={80} />
+              <CheckCircle className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl text-center font-bold">
                 Testing
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                After rigorous testing, we launch your project with precision.
-                Our seamless deployment ensures that your solution is ready to
-                perform flawlessly.
+                We rigorously test your mobile app for functionality,
+                performance, and compatibility across devices to ensure a
+                seamless user experience and eliminate any bugs.
               </p>
             </div>
           </div>
@@ -543,16 +523,16 @@ const WebsiteDevelopment = () => {
             }
           >
             <div className="mt-3 lg:mt-0  flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Users className="text-white" size={80} />
+              <CloudUpload className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl px-3 text-center font-bold">
-                Deployment
+                App Store Deployment
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                We provide post-launch support to ensure your project stays
-                ahead of the curve. Our team is always here to assist and
-                innovate further.
+                Once your app is polished and tested, we handle its launch on
+                app stores. We ensure compliance with platform guidelines and
+                provide support to optimize your app’s visibility.
               </p>
             </div>
           </div>
@@ -593,7 +573,7 @@ const WebsiteDevelopment = () => {
         </div>
       </div>
       {/* Faqs */}
-      <div className="max-w-3xl mx-auto  px-4 sm:px-6 lg:px-8">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-gray-800 text-center mb-12">
           Frequently Asked Questions
         </h1>
@@ -616,4 +596,4 @@ const WebsiteDevelopment = () => {
   );
 };
 
-export default WebsiteDevelopment;
+export default MobileDevelopment;

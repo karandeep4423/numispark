@@ -66,11 +66,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="mt-20 m-auto max-w-screen-xl bg-gray-50">
+    <div className=" m-auto mt-10 max-w-screen-xl bg-gray-50">
       <div className=" mx-5 lg:mx-32 items-center flex flex-col">
         <div className="flex flex-col mx-10">
           <div className="flex items-center justify-center">
-            <h1 className=" text-gray-800text-center mb-8 sm:mb-0 mt-14 text-3xl sm:text-5xl font-bold">
+            <h1 className=" text-gray-800text-center my-10 sm:mb-0  text-3xl sm:text-5xl font-bold">
               Prêt à commencer?
             </h1>
           </div>

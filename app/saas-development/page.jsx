@@ -48,22 +48,9 @@ const TECHNOLOGIES = [
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg",
   },
   {
-    name: "Ruby on Rails",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg",
-  },
-  {
     name: "Laravel",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg",
   },
-  {
-    name: "Webflow",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webflow/webflow-original.svg",
-  },
-  {
-    name: "Wordpress",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg",
-  },
-
   {
     name: "MongoDB",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
@@ -76,17 +63,35 @@ const TECHNOLOGIES = [
     name: "PostgreSQL",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
   },
+  {
+    name: "Aws",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+  },
+  {
+    name: "Google Cloud",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
+  },
+  {
+    name: "Microsoft Azure",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg",
+  },
 ];
 
 const Benefits = [
   {
-    serviceName: "Enhanced User Experience",
+    serviceName: "Reduced Time-to-Market",
     serviceIcon: "Users", // Icon for team and collaboration
     serviceDes:
       "Our experienced team of experts delivers platform-independent business solutions for maximum availability.",
   },
   {
-    serviceName: "Faster Loading Times",
+    serviceName: "User-Friendly Interfaces",
+    serviceIcon: "Code", // Icon for development and tools
+    serviceDes:
+      "We use the latest technologies to build robust and scalable solutions tailored to your needs.",
+  },
+  {
+    serviceName: "Cost Savings with Optimized Architecture",
     serviceIcon: "Code", // Icon for development and tools
     serviceDes:
       "We use the latest technologies to build robust and scalable solutions tailored to your needs.",
@@ -106,25 +111,25 @@ const Benefits = [
 ];
 const WhyUs = [
   {
-    serviceName: "Mobile Responsive Design",
+    serviceName: "Expertise in Multi-Tenant Architecture",
     serviceIcon: "Users", // Icon for team and collaboration
     serviceDes:
       "Our experienced team of experts delivers platform-independent business solutions for maximum availability.",
   },
   {
-    serviceName: "SEO-Friendly",
+    serviceName: "Secure and Scalable Cloud Solutions",
     serviceIcon: "Code", // Icon for development and tools
     serviceDes:
       "We use the latest technologies to build robust and scalable solutions tailored to your needs.",
   },
   {
-    serviceName: "Easy-to-Manage CMS",
+    serviceName: "Agile Development Process for Quick Delivery",
     serviceIcon: "Smile", // Icon for customer satisfaction
     serviceDes:
       "We prioritize your success and ensure every solution aligns with your unique goals.",
   },
   {
-    serviceName: "Speed Optimization",
+    serviceName: "24/7 Post-Launch Support",
     serviceIcon: "TrendingUp", // Icon for growth and performance
     serviceDes:
       "Our proven track record ensures measurable results and consistent success for your business.",
@@ -168,7 +173,7 @@ const portfolioItems = [
   },
 ];
 
-const WebsiteDevelopment = () => {
+const SaaSDevelopment = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const { ref: first, inView: firstSectionIsVisible } = useInView({
@@ -227,24 +232,25 @@ const WebsiteDevelopment = () => {
       {/* Hero Section */}
       <div className="flex flex-col h-screen gap-5 justify-center items-center">
         <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
-          Custom Websites Tailored to Your Business Needs
+          Build Scalable SaaS Solutions Tailored to Your Business
         </span>
         <span className="text-xs text-gray-800 sm:text-2xl text-center font-bold">
-          Emphasizing scalability, responsiveness, and performance.
+          From concept to deployment, we create robust SaaS platforms that
+          deliver results
         </span>
         <div className="flex flex-col gap-4 mt-5">
           <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Get a Free consultation
+            Get a Free SaaS Consultation
           </button>
           <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Explore Our Services
+            View Our SaaS Portfolio
           </button>
         </div>
       </div>
       {/* Technologies Section */}
       <div className="py-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
-          <span className="text-blue-600 p-2.5 m-1 rounded-2xl bg-blue-200">
+          <span className="text-blue-600 m-1 p-2.5 rounded-2xl bg-blue-200">
             Technologies
           </span>
           We Excel In
@@ -274,13 +280,14 @@ const WebsiteDevelopment = () => {
           ))}
         </div>
       </div>
-      {/* Why partner with us */}
+      {/* Key features*/}
       <div className="pb-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
-          <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            Key Features{" "}
+          Key
+          <span className="text-blue-600 bg-blue-200 p-2 m-1 rounded-2xl">
+            Features{" "}
           </span>{" "}
-          of our websites
+          of our SaaS
         </h2>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
           {WhyUs.map((service, index) => {
@@ -463,7 +470,7 @@ const WebsiteDevelopment = () => {
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl  text-center font-bold">
-                Development
+                Building a secure and scalable SaaS platform
               </h3>
               <p className=" ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
                 Our creative and technical teams work together to bring your
@@ -593,7 +600,7 @@ const WebsiteDevelopment = () => {
         </div>
       </div>
       {/* Faqs */}
-      <div className="max-w-3xl mx-auto  px-4 sm:px-6 lg:px-8">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-gray-800 text-center mb-12">
           Frequently Asked Questions
         </h1>
@@ -616,4 +623,4 @@ const WebsiteDevelopment = () => {
   );
 };
 
-export default WebsiteDevelopment;
+export default SaaSDevelopment;
