@@ -205,8 +205,13 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="flex flex-col h-screen gap-5 justify-center items-center">
-        <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
+      <div  style={{
+        backgroundImage: "url('/ecommerce.svg')",
+        backgroundSize: "contain",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }} className="flex flex-col h-screen gap-5 justify-center items-center">
+        <span className="text-2xl text-gray-100 sm:text-6xl text-center font-extrabold">
           Powerful Ecommerce Solutions to Boost Your Sales
         </span>
         <div className="flex flex-col gap-4 mt-5">

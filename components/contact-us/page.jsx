@@ -8,7 +8,7 @@ import {
   MapPin,
   ChevronDown,
   Briefcase,
-  DollarSign,
+  BadgeEuro
 } from "lucide-react";
 
 const Contact = () => {
@@ -138,7 +138,7 @@ const Contact = () => {
               {
                 name: "budget",
                 placeholder: "Your Budget",
-                Icon: DollarSign,
+                Icon: BadgeEuro,
                 options: [
                   { value: "below1000", label: "$0 - $1,000" },
                   { value: "1000to5000", label: "$1,000 - $5,000" },

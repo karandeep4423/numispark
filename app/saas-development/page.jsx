@@ -2,17 +2,20 @@
 import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import {
-  Users,
-  Smile,
-  TrendingUp,
-  MessageCircle,
   Clock,
   Code,
+  BarChart,
+  Users,
+  TrendingUp,
   Smartphone,
   Megaphone,
   Layout,
   Cloud,
   Zap,
+  Smile,
+  MessageCircle,
+  DollarSign,
+  Headphones,
   ShoppingCart,
   Brain,
   Target,
@@ -76,81 +79,95 @@ const TECHNOLOGIES = [
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg",
   },
 ];
-
 const Benefits = [
   {
     serviceName: "Reduced Time-to-Market",
-    serviceIcon: "Users", // Icon for team and collaboration
+    serviceIcon: "Clock", // Icon for quick delivery and launch
     serviceDes:
-      "Our experienced team of experts delivers platform-independent business solutions for maximum availability.",
+      "Our experienced team specializes in SaaS development, delivering platform-independent solutions quickly for maximum availability.",
   },
   {
     serviceName: "User-Friendly Interfaces",
-    serviceIcon: "Code", // Icon for development and tools
+    serviceIcon: "Layout", // Icon for user interfaces and design
     serviceDes:
-      "We use the latest technologies to build robust and scalable solutions tailored to your needs.",
+      "We leverage the latest technologies in SaaS development to create intuitive and scalable user interfaces tailored to your needs.",
   },
   {
     serviceName: "Cost Savings with Optimized Architecture",
-    serviceIcon: "Code", // Icon for development and tools
+    serviceIcon: "DollarSign", // Icon for cost optimization and analysis
     serviceDes:
-      "We use the latest technologies to build robust and scalable solutions tailored to your needs.",
+      "Our SaaS solutions utilize optimized architecture to minimize costs while providing robust and scalable applications.",
   },
   {
     serviceName: "Scalability for Future Growth",
-    serviceIcon: "Smile", // Icon for customer satisfaction
+    serviceIcon: "TrendingUp", // Icon for growth and expansion
     serviceDes:
-      "We prioritize your success and ensure every solution aligns with your unique goals.",
+      "We prioritize your success in SaaS development by ensuring every solution is scalable and aligns with your unique business goals.",
   },
   {
     serviceName: "Dedicated Post-Launch Support",
-    serviceIcon: "TrendingUp", // Icon for growth and performance
+    serviceIcon: "Headphones", // Icon for support and assistance
     serviceDes:
-      "Our proven track record ensures measurable results and consistent success for your business.",
+      "Our commitment to your SaaS project continues post-launch, with dedicated support ensuring measurable results and ongoing success.",
   },
 ];
 const WhyUs = [
   {
     serviceName: "Expertise in Multi-Tenant Architecture",
-    serviceIcon: "Users", // Icon for team and collaboration
+    serviceIcon: "Users", // Icon for collaboration and team
     serviceDes:
-      "Our experienced team of experts delivers platform-independent business solutions for maximum availability.",
+      "Our skilled team excels in SaaS development, delivering secure and efficient multi-tenant architecture for maximum availability.",
   },
   {
     serviceName: "Secure and Scalable Cloud Solutions",
-    serviceIcon: "Code", // Icon for development and tools
+    serviceIcon: "Cloud", // Icon for cloud technology
     serviceDes:
-      "We use the latest technologies to build robust and scalable solutions tailored to your needs.",
+      "We build secure and scalable cloud-based SaaS solutions, utilizing the latest technologies tailored to meet your business needs.",
   },
   {
     serviceName: "Agile Development Process for Quick Delivery",
-    serviceIcon: "Smile", // Icon for customer satisfaction
+    serviceIcon: "Clock", // Icon for time efficiency
     serviceDes:
-      "We prioritize your success and ensure every solution aligns with your unique goals.",
+      "Our agile SaaS development process ensures quick delivery while prioritizing your success and aligning with your unique goals.",
   },
   {
     serviceName: "24/7 Post-Launch Support",
-    serviceIcon: "TrendingUp", // Icon for growth and performance
+    serviceIcon: "Headphones", // Icon for customer support
     serviceDes:
-      "Our proven track record ensures measurable results and consistent success for your business.",
+      "We provide 24/7 support after launching your SaaS solution, ensuring consistent success and measurable results for your business.",
   },
 ];
 const faqData = [
   {
-    question: "How can I request a quote for a project?",
+    question: "What is included in your SaaS development services?",
     answer:
-      "You can request a quote by filling out our online form or contacting our sales team directly. We'll get back to you within 24 hours with a detailed proposal based on your project requirements.",
+      "Our SaaS development services include requirement analysis, UX/UI design, backend and frontend development, quality assurance testing, deployment, and ongoing support. We ensure that your SaaS application is scalable, secure, and tailored to your business needs.",
   },
   {
-    question: "What industries do you serve?",
+    question: "Can you help with migrating my existing software to a SaaS model?",
     answer:
-      "We serve a wide range of industries including technology, healthcare, finance, retail, education, and manufacturing. Our solutions are customized to meet the specific needs of each sector.",
+      "Yes, we offer migration services to help you transition your existing software to a SaaS model. Our team will assess your current setup, develop a migration plan, and ensure a smooth transition to the cloud without disrupting your business operations.",
   },
   {
-    question: "What is the typical timeline for a project?",
+    question: "What technologies do you use for SaaS development?",
     answer:
-      "Project timelines vary depending on scope and complexity. Typically, small projects take 2-4 weeks, medium projects 1-3 months, and large projects 3-6 months. We'll provide a detailed timeline during the initial consultation.",
+      "We utilize modern technologies and frameworks suitable for SaaS development, including cloud platforms like AWS or Azure, programming languages such as JavaScript, Python, and Ruby, and frontend libraries like React or Angular. We choose the best technology stack based on your specific requirements.",
   },
+  {
+    question: "How long does it take to develop a SaaS application?",
+    answer:
+      "The timeline for developing a SaaS application varies based on complexity and features. Typically, it can take anywhere from a few weeks to several months. We will provide you with a detailed timeline after discussing your project requirements during our initial consultation.",
+  },
+  {
+    question: "How do you handle ongoing support and maintenance for SaaS applications?",
+    answer:
+      "We offer comprehensive post-launch support and maintenance packages to ensure your SaaS application runs smoothly. Our support includes bug fixes, updates, feature enhancements, and technical assistance to help you address any issues that may arise.",
+  },
+  {
+    question: "Can you integrate my SaaS application with other tools or platforms?",
+    answer:
+      "Yes, we can integrate your SaaS application with various third-party tools and platforms, such as payment gateways, CRM systems, and marketing automation tools. Our team will work with you to identify the best integration options for your business.",
+  }
 ];
 const portfolioItems = [
   {
@@ -293,10 +310,8 @@ const SaaSDevelopment = () => {
           {WhyUs.map((service, index) => {
             const Icon = {
               Users,
-              Code,
-              Smile,
-              TrendingUp,
-              MessageCircle,
+              Cloud,
+              Headphones,
               Clock,
             }[service.serviceIcon];
 
@@ -330,11 +345,10 @@ const SaaSDevelopment = () => {
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
           {Benefits.map((service, index) => {
             const Icon = {
-              Users,
-              Code,
-              Smile,
+              Layout,
+              Headphones,
+              DollarSign,
               TrendingUp,
-              MessageCircle,
               Clock,
             }[service.serviceIcon];
 

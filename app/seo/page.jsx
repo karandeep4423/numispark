@@ -1,173 +1,148 @@
 "use client";
-import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
+import { PlusCircle, MinusCircle, ArrowUpRight, Search } from "lucide-react";
 import {
-  CloudUpload,
-  Code,
-  CheckCircle,
+  Users,
+  DollarSign,
   Smile,
+  FileText,
+  FileType,
+  Award,
+  Copy,
+  Image,
+  Instagram,
+  Box,
+  Palette,
   TrendingUp,
-  Gauge,
-  Server,
+  MessageCircle,
+  MessageSquareText,
+  Clock,
+  Code,
+  Globe,
+  Connection,
   Smartphone,
+  Megaphone,
   Layout,
+  Cloud,
   Zap,
+  Settings,
+  ShoppingCart,
   Brain,
   Target,
-  LifeBuoy,
-  Search,
+  PenTool,
+  Rocket,
+  BarChart,
+  Cog,
+  LineChart,
+  Maximize,
+  Pen,
+  Play,
+  GitBranch,
+  Timer,
+  Heart,
+  Eye,
+  CloudDownload,
+  MapPin,
+  Link,
+  Mouse,
 } from "lucide-react";
-import { PlusCircle, MinusCircle, ArrowUpRight } from "lucide-react";
+import { useState } from "react";
 import Contact from "@/components/contact-us/page";
 
+const Services = [
+  {
+    serviceName: "On-Page Optimization",
+    serviceIcon: Layout,
+    serviceDes:
+      "Optimize your website's content and structure to improve search engine rankings and user experience.",
+  },
+  {
+    serviceName: "Off-Page Strategies",
+    serviceIcon: Link,
+    serviceDes:
+      "Enhance your website's authority and visibility through strategic link building and external optimization.",
+  },
+  {
+    serviceName: "Technical SEO",
+    serviceIcon: Code,
+    serviceDes:
+      "Ensure your website's technical foundation is solid, including site speed, mobile-friendliness, and crawlability.",
+  },
+  {
+    serviceName: "Local SEO",
+    serviceIcon: MapPin,
+    serviceDes:
+      "Boost your local search presence to attract nearby customers and improve visibility in location-based searches.",
+  },
+  {
+    serviceName: "Content Strategy",
+    serviceIcon: FileText,
+    serviceDes:
+      "Develop and implement a content strategy that aligns with your SEO goals and engages your target audience.",
+  },
+  {
+    serviceName: "Analytics & Reporting",
+    serviceIcon: BarChart,
+    serviceDes:
+      "Track and analyze your SEO performance with detailed reports to measure success and identify areas for improvement.",
+  },
+];
+const features = [
+  {
+    serviceName: "Keyword Optimization",
+    serviceIcon: Search,
+    serviceDes:
+      "Strategically optimize keywords to improve search engine rankings and drive targeted traffic.",
+  },
+  {
+    serviceName: "Content Quality",
+    serviceIcon: FileText,
+    serviceDes:
+      "Create high-quality, engaging content that aligns with SEO best practices and user intent.",
+  },
+  {
+    serviceName: "Technical Excellence",
+    serviceIcon: Code,
+    serviceDes:
+      "Ensure your website's technical aspects, such as site speed and mobile-friendliness, are optimized for SEO.",
+  },
+  {
+    serviceName: "Link Building",
+    serviceIcon: Link,
+    serviceDes:
+      "Acquire high-quality backlinks from authoritative sources to boost your website's authority.",
+  },
+  {
+    serviceName: "E-commerce SEO",
+    serviceIcon: ShoppingCart,
+    serviceDes:
+      "Specialized optimization for online stores to increase product visibility and drive more sales.",
+  },
+  {
+    serviceName: "Site Speed Optimization",
+    serviceIcon: Zap,
+    serviceDes:
+      "Performance tuning to improve page load times and core web vitals for better search rankings.",
+  },
+];
 const TECHNOLOGIES = [
   {
-    name: "React Js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    name: "Google Analytics",
+    logo: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTYiIGhlaWdodD0iMjg0IiB2aWV3Qm94PSIwIDAgMjU2IDI4NCI+PHBhdGggZmlsbD0iI2Y5YWIwMCIgZD0iTTI1Ni4wMDMgMjQ3LjkzM2EzNS4yMjQgMzUuMjI0IDAgMCAxLTM5LjM3NiAzNS4xNjFjLTE4LjA0NC0yLjY3LTMxLjI2Ni0xOC4zNzEtMzAuODI2LTM2LjYwNlYzNi44NDVDMTg1LjM2NSAxOC41OTEgMTk4LjYyIDIuODgxIDIxNi42ODcuMjRhMzUuMjIgMzUuMjIgMCAwIDEgMzkuMzE2IDM1LjE2eiIvPjxwYXRoIGZpbGw9IiNlMzc0MDAiIGQ9Ik0zNS4xMDEgMjEzLjE5M2MxOS4zODYgMCAzNS4xMDEgMTUuNzE2IDM1LjEwMSAzNS4xMDFjMCAxOS4zODYtMTUuNzE1IDM1LjEwMS0zNS4xMDEgMzUuMTAxUzAgMjY3LjY4IDAgMjQ4LjI5NXMxNS43MTUtMzUuMTAyIDM1LjEwMS0zNS4xMDJtOTIuMzU4LTEwNi4zODdjLTE5LjQ3NyAxLjA2OC0zNC41OSAxNy40MDYtMzQuMTM3IDM2LjkwOHY5NC4yODVjMCAyNS41ODggMTEuMjU5IDQxLjEyMiAyNy43NTUgNDQuNDMzYTM1LjE2IDM1LjE2IDAgMCAwIDQyLjE0Ni0zNC41NlYxNDIuMDg5YTM1LjIyIDM1LjIyIDAgMCAwLTM1Ljc2NC0zNS4yODIiLz48L3N2Zz4=",
   },
   {
-    name: "Angular Js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg",
+    name: "Semrush",
+    logo: "https://cdn.brandfetch.io/idt3n8W3ef/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B",
   },
   {
-    name: "Vue Js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
+    name: "Ahrefs",
+    logo: "https://cdn.brandfetch.io/idxB1p5kuP/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B",
   },
   {
-    name: "Tailwind css",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-  },
-  {
-    name: "Node js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
-  },
-  {
-    name: "Django",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg",
-  },
-  {
-    name: "Ruby on Rails",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg",
-  },
-  {
-    name: "Laravel",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg",
-  },
-  {
-    name: "Webflow",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webflow/webflow-original.svg",
-  },
-  {
-    name: "Wordpress",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg",
-  },
-
-  {
-    name: "MongoDB",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-  },
-  {
-    name: "MySQL",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
-  },
-  {
-    name: "PostgreSQL",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+    name: "Meta Ads",
+    logo: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTUuNyIgaGVpZ2h0PSIxMDQiIHZpZXdCb3g9IjAgMCAyNTYgMTcxIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImxvZ29zTWV0YUljb24wIiB4MT0iMTMuODc4JSIgeDI9Ijg5LjE0NCUiIHkxPSI1NS45MzQlIiB5Mj0iNTguNjk0JSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNjRlMSIvPjxzdG9wIG9mZnNldD0iNDAlIiBzdG9wLWNvbG9yPSIjMDA2NGUxIi8+PHN0b3Agb2Zmc2V0PSI4MyUiIHN0b3AtY29sb3I9IiMwMDczZWUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDgyZmIiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0ibG9nb3NNZXRhSWNvbjEiIHgxPSI1NC4zMTUlIiB4Mj0iNTQuMzE1JSIgeTE9IjgyLjc4MiUiIHkyPSIzOS4zMDclIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDA4MmZiIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDA2NGUwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0iIzAwODFmYiIgZD0iTTI3LjY1MSAxMTIuMTM2YzAgOS43NzUgMi4xNDYgMTcuMjggNC45NSAyMS44MmMzLjY3NyA1Ljk0NyA5LjE2IDguNDY2IDE0Ljc1MSA4LjQ2NmM3LjIxMSAwIDEzLjgwOC0xLjc5IDI2LjUyLTE5LjM3MmMxMC4xODUtMTQuMDkyIDIyLjE4Ni0zMy44NzQgMzAuMjYtNDYuMjc1bDEzLjY3NS0yMS4wMWM5LjQ5OS0xNC41OTEgMjAuNDkzLTMwLjgxMSAzMy4xLTQxLjgwNkMxNjEuMTk2IDQuOTg1IDE3Mi4yOTggMCAxODMuNDcgMGMxOC43NTggMCAzNi42MjUgMTAuODcgNTAuMyAzMS4yNTdDMjQ4LjczNSA1My41ODQgMjU2IDgxLjcwNyAyNTYgMTEwLjcyOWMwIDE3LjI1My0zLjQgMjkuOTMtOS4xODcgMzkuOTQ2Yy01LjU5MSA5LjY4Ni0xNi40ODggMTkuMzYzLTM0LjgxOCAxOS4zNjN2LTI3LjYxNmMxNS42OTUgMCAxOS42MTItMTQuNDIyIDE5LjYxMi0zMC45MjdjMC0yMy41Mi01LjQ4NC00OS42MjMtMTcuNTY0LTY4LjI3M2MtOC41NzQtMTMuMjMtMTkuNjg0LTIxLjMxMy0zMS45MDctMjEuMzEzYy0xMy4yMiAwLTIzLjg1OSA5Ljk3LTM1LjgxNSAyNy43NWMtNi4zNTYgOS40NDUtMTIuODgyIDIwLjk1Ni0yMC4yMDggMzMuOTQ0bC04LjA2NiAxNC4yODljLTE2LjIwMyAyOC43MjgtMjAuMzA3IDM1LjI3MS0yOC40MDggNDYuMDdjLTE0LjIgMTguOTEtMjYuMzI0IDI2LjA3Ni00Mi4yODcgMjYuMDc2Yy0xOC45MzUgMC0zMC45MS04LjItMzguMzI1LTIwLjU1NkMyLjk3MyAxMzkuNDEzIDAgMTI2LjIwMiAwIDExMS4xNDh6Ii8+PHBhdGggZmlsbD0idXJsKCNsb2dvc01ldGFJY29uMCkiIGQ9Ik0yMS44MDIgMzMuMjA2QzM0LjQ4IDEzLjY2NiA1Mi43NzQgMCA3My43NTcgMEM4NS45MSAwIDk3Ljk5IDMuNTk3IDExMC42MDUgMTMuODk3YzEzLjc5OCAxMS4yNjEgMjguNTA1IDI5LjgwNSA0Ni44NTMgNjAuMzY4bDYuNTggMTAuOTY3YzE1Ljg4MSAyNi40NTkgMjQuOTE3IDQwLjA3IDMwLjIwNSA0Ni40OWM2LjgwMiA4LjI0MyAxMS41NjUgMTAuNyAxNy43NTIgMTAuN2MxNS42OTUgMCAxOS42MTItMTQuNDIyIDE5LjYxMi0zMC45MjdsMjQuMzkzLS43NjZjMCAxNy4yNTMtMy40IDI5LjkzLTkuMTg3IDM5Ljk0NmMtNS41OTEgOS42ODYtMTYuNDg4IDE5LjM2My0zNC44MTggMTkuMzYzYy0xMS4zOTUgMC0yMS40OS0yLjQ3NS0zMi42NTQtMTMuMDA3Yy04LjU4Mi04LjA4My0xOC42MTUtMjIuNDQzLTI2LjMzNC0zNS4zNTJsLTIyLjk2LTM4LjM1MkMxMTguNTI4IDY0LjA4IDEwNy45NiA0OS43MyAxMDEuODQ1IDQzLjIzYy02LjU3OC02Ljk4OC0xNS4wMzYtMTUuNDI4LTI4LjUzMi0xNS40MjhjLTEwLjkyMyAwLTIwLjIgNy42NjYtMjcuOTYzIDE5LjM5eiIvPjxwYXRoIGZpbGw9InVybCgjbG9nb3NNZXRhSWNvbjEpIiBkPSJNNzMuMzEyIDI3LjgwMmMtMTAuOTIzIDAtMjAuMiA3LjY2Ni0yNy45NjMgMTkuMzljLTEwLjk3NiAxNi41NjgtMTcuNjk4IDQxLjI0NS0xNy42OTggNjQuOTQ0YzAgOS43NzUgMi4xNDYgMTcuMjggNC45NSAyMS44Mkw5LjAyNyAxNDkuNDgyQzIuOTczIDEzOS40MTMgMCAxMjYuMjAyIDAgMTExLjE0OEMwIDgzLjc3MiA3LjUxNCA1NS4yNCAyMS44MDIgMzMuMjA2QzM0LjQ4IDEzLjY2NiA1Mi43NzQgMCA3My43NTcgMHoiLz48L3N2Zz4=",
   },
 ];
-
-const Benefits = [
-  {
-    serviceName: "Enhanced User Experience",
-    serviceIcon: "Layout", // Icon for design and usability
-    serviceDes:
-      "We deliver intuitive and engaging websites designed to provide seamless navigation and a superior user experience.",
-  },
-  {
-    serviceName: "Faster Loading Times",
-    serviceIcon: "Zap", // Icon for speed and performance
-    serviceDes:
-      "Our development process ensures optimized loading speeds, improving user retention and satisfaction.",
-  },
-  {
-    serviceName: "Scalability for Future Growth",
-    serviceIcon: "TrendingUp", // Icon for growth and expansion
-    serviceDes:
-      "We build scalable solutions that grow with your business, ensuring your website remains robust as traffic increases.",
-  },
-  {
-    serviceName: "Dedicated Post-Launch Support",
-    serviceIcon: "LifeBuoy", // Icon for support and maintenance
-    serviceDes:
-      "Our team provides ongoing support and maintenance to ensure your website stays secure, updated, and functional.",
-  },
-];
-
-const WhyUs = [
-  {
-    serviceName: "Mobile Responsive Design",
-    serviceIcon: "Smartphone", // Icon for mobile and responsiveness
-    serviceDes:
-      "We create mobile-friendly designs that ensure your website looks great and functions perfectly on all devices.",
-  },
-  {
-    serviceName: "SEO-Friendly Development",
-    serviceIcon: "Search", // Icon for search optimization
-    serviceDes:
-      "Our websites are optimized for search engines, helping you rank higher and attract more organic traffic.",
-  },
-  {
-    serviceName: "Easy-to-Manage CMS",
-    serviceIcon: "Server", // Icon for content management
-    serviceDes:
-      "We integrate user-friendly CMS platforms, empowering you to update and manage your website effortlessly.",
-  },
-  {
-    serviceName: "Speed Optimization",
-    serviceIcon: "Gauge", // Icon for speed and efficiency
-    serviceDes:
-      "We implement advanced optimization techniques to enhance your website's speed and performance.",
-  },
-];
-
-const faqData = [
-  {
-    question: "Do you provide website hosting services?",
-    answer:
-      "While we don’t directly host websites, we can assist you in selecting and setting up reliable hosting solutions like AWS, Bluehost, or SiteGround.",
-  },
-  {
-    question: "Can you redesign my existing website?",
-    answer:
-      "Absolutely. We offer website redesign services to improve aesthetics, functionality, and performance while maintaining your brand identity.",
-  },
-  {
-    question: "Do you provide content for websites?",
-    answer:
-      "Yes, we offer content creation services, including copywriting, SEO-optimized content, and multimedia content for your website.",
-  },
-  {
-    question: "Will my website be optimized for search engines?",
-    answer:
-      "Yes, all websites we develop are SEO-friendly, ensuring faster indexing and improved search engine rankings.",
-  },
-  {
-    question: "Do you offer maintenance and updates after the website launch?",
-    answer:
-      "Yes, we offer post-launch support, including regular updates, security patches, and performance monitoring to keep your website running smoothly.",
-  },
-  {
-    question: "Can you provide training on how to manage my website?",
-    answer:
-      "Yes, we provide training sessions and user guides to help you manage your website efficiently using the CMS or other tools we've implemented.",
-  },
-  {
-    question: "Do you support multilingual websites?",
-    answer:
-      "Yes, we can develop websites with multilingual support, allowing you to reach a global audience effectively.",
-  },
-];
-
 const portfolioItems = [
   {
     image: "/api/placeholder/400/400",
@@ -188,10 +163,79 @@ const portfolioItems = [
     dotColor: "bg-amber-500",
   },
 ];
+const faqData = [
+  {
+    question: "What is SEO and how does it work?",
+    answer:
+      "SEO (Search Engine Optimization) is the practice of optimizing your website to increase its visibility in search engine results. It works through various techniques including keyword optimization, quality content creation, technical improvements, and building authoritative backlinks.",
+  },
+  {
+    question: "How long does it take to see results from SEO?",
+    answer:
+      "SEO is a long-term strategy, typically taking 3-6 months to see initial results. However, significant improvements in rankings and traffic usually become apparent within 6-12 months of consistent optimization efforts.",
+  },
+  {
+    question: "What's included in your SEO services?",
+    answer:
+      "Our SEO services include keyword research, on-page optimization, technical SEO audits, content strategy, link building, local SEO optimization, and monthly performance reporting with detailed analytics.",
+  },
+  {
+    question: "Do you guarantee first-page rankings?",
+    answer:
+      "While we use proven SEO strategies and have a strong track record of success, we cannot guarantee specific rankings as search engines frequently update their algorithms and rankings depend on many factors including competition.",
+  },
+  {
+    question: "How do you measure SEO success?",
+    answer:
+      "We track multiple metrics including keyword rankings, organic traffic growth, conversion rates, bounce rates, page load times, and ROI. Monthly reports provide detailed insights into your SEO performance.",
+  },
+  {
+    question: "How much does SEO cost?",
+    answer:
+      "SEO pricing varies based on your website's current status, competition level, and goals. We offer customized packages starting from basic optimization to comprehensive SEO campaigns. Contact us for a detailed quote.",
+  },
+];
+const WhyUs = [
+  {
+    serviceName: "Data-Driven Results",
+    serviceIcon: LineChart,
+    serviceDes:
+      "We use advanced analytics and tracking tools to measure performance and deliver measurable ROI on your SEO investment.",
+  },
+  {
+    serviceName: "Transparent Reporting",
+    serviceIcon: BarChart,
+    serviceDes:
+      "Regular detailed reports that show your ranking progress, traffic growth, and conversion improvements in clear terms.",
+  },
+  {
+    serviceName: "Custom Strategy",
+    serviceIcon: Target,
+    serviceDes:
+      "Tailored SEO approach based on your industry, competition, and business goals rather than one-size-fits-all solutions.",
+  },
+  {
+    serviceName: "Technical Excellence",
+    serviceIcon: Code,
+    serviceDes:
+      "Expert optimization of technical SEO elements including site structure, speed, and mobile responsiveness.",
+  },
+  {
+    serviceName: "Content Optimization",
+    serviceIcon: FileText,
+    serviceDes:
+      "Strategic content creation and optimization that ranks well in search engines while engaging your target audience.",
+  },
+  {
+    serviceName: "Continuous Innovation",
+    serviceIcon: Rocket,
+    serviceDes:
+      "Stay ahead with latest SEO trends and algorithm updates through our proactive approach to search optimization.",
+  },
+];
 
-const WebsiteDevelopment = () => {
+export default function Seo() {
   const [openIndex, setOpenIndex] = useState(null);
-
   const { ref: first, inView: firstSectionIsVisible } = useInView({
     rootMargin: "-200px 0px",
     triggerOnce: "true",
@@ -248,24 +292,58 @@ const WebsiteDevelopment = () => {
       {/* Hero Section */}
       <div className="flex flex-col h-screen gap-5 justify-center items-center">
         <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
-          Custom Websites Tailored to Your Business Needs
+          Rank Higher, Reach Farther with Our Expert SEO Services
         </span>
         <span className="text-xs text-gray-800 sm:text-2xl text-center font-bold">
-          Emphasizing scalability, responsiveness, and performance.
+          Boost engagement and establish a unique brand identity
         </span>
         <div className="flex flex-col gap-4 mt-5">
           <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Get a Free consultation
+            Start Your AI Journey
           </button>
           <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Explore Our Services
+            Request a Free Consultation
           </button>
         </div>
       </div>
-      {/* Technologies Section */}
+      {/* Services Section */}
       <div className="py-16 bg-gray-50">
+        <h2 className="text-4xl px-2 text-center font-bold text-gray-800">
+          Our Core{" "}
+          <span className="text-blue-600 bg-blue-200 p-1.5 rounded-2xl">
+            Services
+          </span>
+        </h2>
+        <p className="px-2 text-xl text-center font-medium text-gray-600 mt-4">
+          Comprehensive Solutions Tailored to Your Needs
+        </p>
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
+          {Services.map((service, index) => {
+            const Icon = service.serviceIcon;
+
+            return (
+              <div
+                key={index}
+                className="flex flex-col items-center p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+              >
+                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
+                  <Icon className="text-blue-600 w-14 h-14" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
+                  {service.serviceName}
+                </h3>
+                <p className="text-gray-600 text-center">
+                  {service.serviceDes}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      {/* Technologies Section */}
+      <div className="pb-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
-          <span className="text-blue-600 p-2.5 m-1 rounded-2xl bg-blue-200">
+          <span className="text-blue-600 m-1 p-2.5 rounded-2xl bg-blue-200">
             Technologies
           </span>
           We Excel In
@@ -295,23 +373,21 @@ const WebsiteDevelopment = () => {
           ))}
         </div>
       </div>
-      {/* Why partner with us */}
+      {/* Key Features */}
       <div className="pb-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
+          Key{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            Key Features{" "}
+            Features
           </span>{" "}
-          of our websites
+          of Our SEO
         </h2>
+        <p className="text-xl text-center font-medium text-gray-600 mt-4">
+          Your Success Is Our Priority
+        </p>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {WhyUs.map((service, index) => {
-            const Icon = {
-              Search,
-              Smartphone,
-              Gauge,
-              Server,
-            }[service.serviceIcon];
-
+          {features.map((service, index) => {
+            const Icon = service.serviceIcon;
             return (
               <div
                 key={index}
@@ -331,24 +407,17 @@ const WebsiteDevelopment = () => {
           })}
         </div>
       </div>
-      {/* Benefits of Choosing Us */}
+      {/* Why partner with us */}
       <div className="pb-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            Benefits
+            Benefits{" "}
           </span>{" "}
           of Choosing Us
         </h2>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {Benefits.map((service, index) => {
-            const Icon = {
-              Zap,
-              LifeBuoy,
-              Smile,
-              Layout,
-              TrendingUp,
-            }[service.serviceIcon];
-
+          {WhyUs.map((service, index) => {
+            const Icon = service.serviceIcon;
             return (
               <div
                 key={index}
@@ -372,9 +441,9 @@ const WebsiteDevelopment = () => {
       <div className="bg-black  text-white">
         <div className="flex items-center justify-center">
           <h2 className=" relative mt-16 text-center text-5xl font-bold">
-            Development Process
+            How agency works
           </h2>
-          <div className="bg-blue-600 mt-16 absolute   mix-blend-multiply filter blur-2xl h-16 w-56 "></div>
+          <div className="bg-sky-400 mt-16 absolute   mix-blend-multiply filter blur-2xl h-16 w-56 "></div>
         </div>
         <div className="flex text-lg xl:text-xl max-w-screen-xl m-auto  justify-center items-center mt-10 flex-col">
           <div>
@@ -396,12 +465,11 @@ const WebsiteDevelopment = () => {
             </div>
             <div>
               <h3 className="mt-2 lg:mt-0 text-3xl px-3 text-center font-bold">
-                Requirement Analysis
+                Understanding Your Goals
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                Collaborate to understand objectives, challenges, and goals.
-                This ensures alignment with your website vision from the
-                beginning.
+                We begin by analyzing your business objectives, target audience,
+                and market competition to align SEO strategies with your vision.
               </p>
             </div>
           </div>
@@ -434,15 +502,16 @@ const WebsiteDevelopment = () => {
             }
           >
             <div className="mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Target className="text-white" size={80} />
+              <Search className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-2 lg:mt-0 text-3xl  text-center font-bold">
-                Wireframing & Prototyping
+                Keyword Research & Analysis
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                Translate ideas into structured plans with prototypes to
-                visualize the final website and ensure strategic clarity.
+                Our team conducts in-depth research to identify high-performing
+                keywords that resonate with your target audience, ensuring
+                optimal search engine visibility.
               </p>
             </div>
           </div>
@@ -475,15 +544,16 @@ const WebsiteDevelopment = () => {
             }
           >
             <div className=" mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Code className="text-white" size={80} />
+              <FileText className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl  text-center font-bold">
-                Development
+                Content Strategy Development
               </h3>
               <p className=" ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                Transform concepts into a fully functional website with seamless
-                design and robust development for optimal performance.
+                We create a robust content plan, focusing on high-quality,
+                keyword-rich content to drive traffic, engage users, and improve
+                rankings.
               </p>
             </div>
           </div>
@@ -516,15 +586,16 @@ const WebsiteDevelopment = () => {
             }
           >
             <div className="mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <CheckCircle className="text-white" size={80} />
+              <Code className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl text-center font-bold">
-                Testing
+                Technical SEO Implementation
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                Conduct rigorous testing to ensure your website is free of
-                issues, optimized, and ready for seamless launch.
+                From optimizing site structure to enhancing page speed and
+                implementing schema markup, we ensure your website is
+                search-engine-friendly.
               </p>
             </div>
           </div>
@@ -557,15 +628,16 @@ const WebsiteDevelopment = () => {
             }
           >
             <div className="mt-3 lg:mt-0  flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <CloudUpload className="text-white" size={80} />
+              <TrendingUp className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl px-3 text-center font-bold">
-                Deployment
+                Performance Monitoring & Optimization
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                Deploy the website with precision and provide post-launch
-                support to keep it running smoothly and effectively.
+                After launch, we continuously track performance using analytics
+                tools, refining strategies to maximize search engine rankings
+                and ROI.
               </p>
             </div>
           </div>
@@ -627,6 +699,4 @@ const WebsiteDevelopment = () => {
       <Contact />
     </div>
   );
-};
-
-export default WebsiteDevelopment;
+}

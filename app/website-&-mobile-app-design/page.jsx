@@ -1,173 +1,110 @@
 "use client";
-import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
+import { PlusCircle, MinusCircle, ArrowUpRight, Search } from "lucide-react";
 import {
-  CloudUpload,
-  Code,
-  CheckCircle,
+  Users,
+  DollarSign,
   Smile,
+  Box,
+  Palette,
   TrendingUp,
-  Gauge,
-  Server,
+  MessageCircle,
+  MessageSquareText,
+  Clock,
+  Code,
+  Globe,
+  Connection,
   Smartphone,
+  Megaphone,
   Layout,
+  Cloud,
   Zap,
+  Settings,
+  ShoppingCart,
   Brain,
   Target,
-  LifeBuoy,
-  Search,
+  PenTool,
+  Rocket,
+  BarChart,
+  Cog,
+  LineChart,
+  Maximize,
+  Play,
+  GitBranch,
+  Timer,
+  Heart,
+  Eye,
+  Mouse,
 } from "lucide-react";
-import { PlusCircle, MinusCircle, ArrowUpRight } from "lucide-react";
+import { useState } from "react";
 import Contact from "@/components/contact-us/page";
 
+const Services = [
+  {
+    serviceName: "Website Design",
+    serviceIcon: Palette,
+    serviceDes:
+      "Create stunning, responsive websites that captivate your audience. Our designs combine visual appeal with intuitive navigation to drive engagement and conversions.",
+  },
+  {
+    serviceName: "Mobile App Design",
+    serviceIcon: Smartphone,
+    serviceDes:
+      "Craft seamless mobile experiences that users love. We design native and cross-platform apps that combine beautiful interfaces with smooth functionality.",
+  },
+  {
+    serviceName: "UI/UX Consulting",
+    serviceIcon: Users,
+    serviceDes:
+      "Optimize your digital products with expert UI/UX guidance. We analyze user behavior and implement data-driven design improvements to boost user satisfaction.",
+  },
+  {
+    serviceName: "Design Systems",
+    serviceIcon: Box,
+    serviceDes:
+      "Build scalable design frameworks that maintain consistency across all platforms. Our design systems accelerate development and ensure brand coherence.",
+  },
+];
+const features = [
+  {
+    serviceName: "Responsive Design",
+    serviceIcon: Maximize,
+    serviceDes:
+      "Designs that adapt perfectly to all screen sizes, ensuring a consistent experience across desktop, tablet, and mobile devices.",
+  },
+  {
+    serviceName: "Interactive Prototypes",
+    serviceIcon: Play,
+    serviceDes:
+      "Test and validate your designs before development with high-fidelity prototypes that simulate the real user experience.",
+  },
+  {
+    serviceName: "User Flow Optimization",
+    serviceIcon: GitBranch,
+    serviceDes:
+      "Create intuitive user journeys that guide visitors naturally through your digital product, improving conversion rates.",
+  },
+  {
+    serviceName: "Performance Focus",
+    serviceIcon: Zap,
+    serviceDes:
+      "Fast-loading, efficient interfaces optimized for speed and performance to keep users engaged and satisfied.",
+  },
+];
 const TECHNOLOGIES = [
   {
-    name: "React Js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    name: "Figma",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
   },
   {
-    name: "Angular Js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg",
+    name: "Sketch",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sketch/sketch-original.svg",
   },
   {
-    name: "Vue Js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
-  },
-  {
-    name: "Tailwind css",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-  },
-  {
-    name: "Node js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
-  },
-  {
-    name: "Django",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg",
-  },
-  {
-    name: "Ruby on Rails",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg",
-  },
-  {
-    name: "Laravel",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg",
-  },
-  {
-    name: "Webflow",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webflow/webflow-original.svg",
-  },
-  {
-    name: "Wordpress",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg",
-  },
-
-  {
-    name: "MongoDB",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-  },
-  {
-    name: "MySQL",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
-  },
-  {
-    name: "PostgreSQL",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+    name: "Adobe XD",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xd/xd-original.svg",
   },
 ];
-
-const Benefits = [
-  {
-    serviceName: "Enhanced User Experience",
-    serviceIcon: "Layout", // Icon for design and usability
-    serviceDes:
-      "We deliver intuitive and engaging websites designed to provide seamless navigation and a superior user experience.",
-  },
-  {
-    serviceName: "Faster Loading Times",
-    serviceIcon: "Zap", // Icon for speed and performance
-    serviceDes:
-      "Our development process ensures optimized loading speeds, improving user retention and satisfaction.",
-  },
-  {
-    serviceName: "Scalability for Future Growth",
-    serviceIcon: "TrendingUp", // Icon for growth and expansion
-    serviceDes:
-      "We build scalable solutions that grow with your business, ensuring your website remains robust as traffic increases.",
-  },
-  {
-    serviceName: "Dedicated Post-Launch Support",
-    serviceIcon: "LifeBuoy", // Icon for support and maintenance
-    serviceDes:
-      "Our team provides ongoing support and maintenance to ensure your website stays secure, updated, and functional.",
-  },
-];
-
-const WhyUs = [
-  {
-    serviceName: "Mobile Responsive Design",
-    serviceIcon: "Smartphone", // Icon for mobile and responsiveness
-    serviceDes:
-      "We create mobile-friendly designs that ensure your website looks great and functions perfectly on all devices.",
-  },
-  {
-    serviceName: "SEO-Friendly Development",
-    serviceIcon: "Search", // Icon for search optimization
-    serviceDes:
-      "Our websites are optimized for search engines, helping you rank higher and attract more organic traffic.",
-  },
-  {
-    serviceName: "Easy-to-Manage CMS",
-    serviceIcon: "Server", // Icon for content management
-    serviceDes:
-      "We integrate user-friendly CMS platforms, empowering you to update and manage your website effortlessly.",
-  },
-  {
-    serviceName: "Speed Optimization",
-    serviceIcon: "Gauge", // Icon for speed and efficiency
-    serviceDes:
-      "We implement advanced optimization techniques to enhance your website's speed and performance.",
-  },
-];
-
-const faqData = [
-  {
-    question: "Do you provide website hosting services?",
-    answer:
-      "While we don’t directly host websites, we can assist you in selecting and setting up reliable hosting solutions like AWS, Bluehost, or SiteGround.",
-  },
-  {
-    question: "Can you redesign my existing website?",
-    answer:
-      "Absolutely. We offer website redesign services to improve aesthetics, functionality, and performance while maintaining your brand identity.",
-  },
-  {
-    question: "Do you provide content for websites?",
-    answer:
-      "Yes, we offer content creation services, including copywriting, SEO-optimized content, and multimedia content for your website.",
-  },
-  {
-    question: "Will my website be optimized for search engines?",
-    answer:
-      "Yes, all websites we develop are SEO-friendly, ensuring faster indexing and improved search engine rankings.",
-  },
-  {
-    question: "Do you offer maintenance and updates after the website launch?",
-    answer:
-      "Yes, we offer post-launch support, including regular updates, security patches, and performance monitoring to keep your website running smoothly.",
-  },
-  {
-    question: "Can you provide training on how to manage my website?",
-    answer:
-      "Yes, we provide training sessions and user guides to help you manage your website efficiently using the CMS or other tools we've implemented.",
-  },
-  {
-    question: "Do you support multilingual websites?",
-    answer:
-      "Yes, we can develop websites with multilingual support, allowing you to reach a global audience effectively.",
-  },
-];
-
 const portfolioItems = [
   {
     image: "/api/placeholder/400/400",
@@ -188,10 +125,68 @@ const portfolioItems = [
     dotColor: "bg-amber-500",
   },
 ];
-
-const WebsiteDevelopment = () => {
+const faqData = [
+  {
+    question: "Can you work with our development team?",
+    answer:
+      "Yes, we seamlessly integrate with your team, providing clear documentation and maintaining open communication throughout the project.",
+  },
+  {
+    question: "Do you offer design revisions?",
+    answer:
+      "We include multiple revision rounds to ensure your complete satisfaction with the final design.",
+  },
+  {
+    question: "What's your typical project timeline?",
+    answer:
+      "Most projects take 4-8 weeks from concept to completion, depending on scope and complexity.",
+  },
+  {
+    question: "Do you provide design systems?",
+    answer:
+      "Yes, we create comprehensive design systems to maintain consistency and accelerate future development.",
+  },
+];
+const WhyUs = [
+  {
+    serviceName: "Intuitive User Interfaces",
+    serviceIcon: Mouse,
+    serviceDes:
+      "Deliver seamless user experiences with interfaces that feel natural and effortless to navigate. Our designs minimize learning curves and maximize user engagement.",
+  },
+  {
+    serviceName: "Optimized Accessibility",
+    serviceIcon: Eye,
+    serviceDes:
+      "Create inclusive experiences that work for all users. Our designs follow WCAG guidelines ensuring your product is accessible to everyone.",
+  },
+  {
+    serviceName: "Brand Consistency",
+    serviceIcon: Palette,
+    serviceDes:
+      "Maintain strong brand identity across all touchpoints. Every design element aligns perfectly with your brand guidelines and values.",
+  },
+  {
+    serviceName: "Rapid Development",
+    serviceIcon: Timer,
+    serviceDes:
+      "Accelerate your time-to-market with our streamlined design process. Clean handoffs and detailed documentation speed up development.",
+  },
+  {
+    serviceName: "User Satisfaction",
+    serviceIcon: Heart,
+    serviceDes:
+      "Delight users with thoughtful interactions and smooth experiences. Happy users become loyal customers and brand advocates.",
+  },
+  {
+    serviceName: "Higher Conversions",
+    serviceIcon: TrendingUp,
+    serviceDes:
+      "Transform visitors into customers with conversion-focused designs. Strategic UX patterns guide users naturally toward desired actions.",
+  },
+];
+export default function websiteMobileDesign() {
   const [openIndex, setOpenIndex] = useState(null);
-
   const { ref: first, inView: firstSectionIsVisible } = useInView({
     rootMargin: "-200px 0px",
     triggerOnce: "true",
@@ -248,24 +243,59 @@ const WebsiteDevelopment = () => {
       {/* Hero Section */}
       <div className="flex flex-col h-screen gap-5 justify-center items-center">
         <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
-          Custom Websites Tailored to Your Business Needs
+          User-Centric Designs for Stunning Website & Mobile Experiences
         </span>
         <span className="text-xs text-gray-800 sm:text-2xl text-center font-bold">
-          Emphasizing scalability, responsiveness, and performance.
+          Transform your digital presence with designs that convert visitors
+          into loyal customers
         </span>
         <div className="flex flex-col gap-4 mt-5">
           <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Get a Free consultation
+            Start Your AI Journey
           </button>
           <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Explore Our Services
+            Request a Free Consultation
           </button>
         </div>
       </div>
-      {/* Technologies Section */}
+      {/* Services Section */}
       <div className="py-16 bg-gray-50">
+        <h2 className="text-4xl px-2 text-center font-bold text-gray-800">
+          Our Core{" "}
+          <span className="text-blue-600 bg-blue-200 p-1.5 rounded-2xl">
+            Services
+          </span>
+        </h2>
+        <p className="px-2 text-xl text-center font-medium text-gray-600 mt-4">
+          Comprehensive Solutions Tailored to Your Needs
+        </p>
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
+          {Services.map((service, index) => {
+            const Icon = service.serviceIcon;
+
+            return (
+              <div
+                key={index}
+                className="flex flex-col items-center p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+              >
+                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
+                  <Icon className="text-blue-600 w-14 h-14" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
+                  {service.serviceName}
+                </h3>
+                <p className="text-gray-600 text-center">
+                  {service.serviceDes}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      {/* Technologies Section */}
+      <div className="pb-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
-          <span className="text-blue-600 p-2.5 m-1 rounded-2xl bg-blue-200">
+          <span className="text-blue-600 m-1 p-2.5 rounded-2xl bg-blue-200">
             Technologies
           </span>
           We Excel In
@@ -295,23 +325,21 @@ const WebsiteDevelopment = () => {
           ))}
         </div>
       </div>
-      {/* Why partner with us */}
+      {/* Key Features */}
       <div className="pb-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
+          Key{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            Key Features{" "}
+            Features
           </span>{" "}
-          of our websites
+          of Our Designs
         </h2>
+        <p className="text-xl text-center font-medium text-gray-600 mt-4">
+          Your Success Is Our Priority
+        </p>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {WhyUs.map((service, index) => {
-            const Icon = {
-              Search,
-              Smartphone,
-              Gauge,
-              Server,
-            }[service.serviceIcon];
-
+          {features.map((service, index) => {
+            const Icon = service.serviceIcon;
             return (
               <div
                 key={index}
@@ -331,24 +359,17 @@ const WebsiteDevelopment = () => {
           })}
         </div>
       </div>
-      {/* Benefits of Choosing Us */}
+      {/* Why partner with us */}
       <div className="pb-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            Benefits
+            Benefits{" "}
           </span>{" "}
           of Choosing Us
         </h2>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {Benefits.map((service, index) => {
-            const Icon = {
-              Zap,
-              LifeBuoy,
-              Smile,
-              Layout,
-              TrendingUp,
-            }[service.serviceIcon];
-
+          {WhyUs.map((service, index) => {
+            const Icon = service.serviceIcon;
             return (
               <div
                 key={index}
@@ -372,9 +393,9 @@ const WebsiteDevelopment = () => {
       <div className="bg-black  text-white">
         <div className="flex items-center justify-center">
           <h2 className=" relative mt-16 text-center text-5xl font-bold">
-            Development Process
+            How agency works
           </h2>
-          <div className="bg-blue-600 mt-16 absolute   mix-blend-multiply filter blur-2xl h-16 w-56 "></div>
+          <div className="bg-sky-400 mt-16 absolute   mix-blend-multiply filter blur-2xl h-16 w-56 "></div>
         </div>
         <div className="flex text-lg xl:text-xl max-w-screen-xl m-auto  justify-center items-center mt-10 flex-col">
           <div>
@@ -392,16 +413,15 @@ const WebsiteDevelopment = () => {
             }
           >
             <div className="mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Brain className="text-white" size={80} />
+              <Search className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-2 lg:mt-0 text-3xl px-3 text-center font-bold">
-                Requirement Analysis
+                Research & Discovery
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                Collaborate to understand objectives, challenges, and goals.
-                This ensures alignment with your website vision from the
-                beginning.
+                Deep dive into your users'needs, market trends, and competitive
+                landscape to inform our design decisions.
               </p>
             </div>
           </div>
@@ -434,15 +454,15 @@ const WebsiteDevelopment = () => {
             }
           >
             <div className="mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Target className="text-white" size={80} />
+              <Box className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-2 lg:mt-0 text-3xl  text-center font-bold">
-                Wireframing & Prototyping
+                Wireframing
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                Translate ideas into structured plans with prototypes to
-                visualize the final website and ensure strategic clarity.
+                Create structured layouts and user flows that form the
+                foundation of intuitive navigation and content hierarchy.
               </p>
             </div>
           </div>
@@ -475,15 +495,15 @@ const WebsiteDevelopment = () => {
             }
           >
             <div className=" mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Code className="text-white" size={80} />
+              <Palette className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl  text-center font-bold">
-                Development
+                Visual Design
               </h3>
               <p className=" ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                Transform concepts into a fully functional website with seamless
-                design and robust development for optimal performance.
+                Transform wireframes into stunning visual designs that align
+                with your brand and engage your users.
               </p>
             </div>
           </div>
@@ -516,15 +536,15 @@ const WebsiteDevelopment = () => {
             }
           >
             <div className="mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <CheckCircle className="text-white" size={80} />
+              <PenTool className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl text-center font-bold">
-                Testing
+                Prototyping
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                Conduct rigorous testing to ensure your website is free of
-                issues, optimized, and ready for seamless launch.
+                Rigorous testing across devices and platforms to ensure a
+                flawless launch of your digital product.
               </p>
             </div>
           </div>
@@ -557,15 +577,15 @@ const WebsiteDevelopment = () => {
             }
           >
             <div className="mt-3 lg:mt-0  flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <CloudUpload className="text-white" size={80} />
+              <Rocket className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl px-3 text-center font-bold">
-                Deployment
+                Testing & Launch
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                Deploy the website with precision and provide post-launch
-                support to keep it running smoothly and effectively.
+              Rigorous testing across devices and platforms to ensure a
+              flawless launch of your digital product.
               </p>
             </div>
           </div>
@@ -627,6 +647,4 @@ const WebsiteDevelopment = () => {
       <Contact />
     </div>
   );
-};
-
-export default WebsiteDevelopment;
+}

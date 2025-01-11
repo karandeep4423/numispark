@@ -7,13 +7,10 @@ import {
   ShoppingCart,
   Cpu,
   Activity,
-  Brush,
   Edit,
   Image,
-  Layers,
   Search,
   Share,
-  FileText,
   Menu,
   X,
 } from "lucide-react";
@@ -49,17 +46,15 @@ const serviceItems = [
     category: "UI/UX Design",
     items: [
       {
-        label: "Mobile App Design",
-        link: "/mobile-app-design",
-        icon: <Brush />,
+        label: "Website & Mobile App Design",
+        link: "/website-&-mobile-app-design",
+        icon: <Edit /> ,
       },
-      { label: "Website Design", link: "/website-design", icon: <Edit /> },
       {
-        label: "Social Media Post",
-        link: "/social-media-post",
+        label: "Social Media Post & Logo Design",
+        link: "/social-media-post-&-logo-design",
         icon: <Image />,
-      },
-      { label: "Logo Design", link: "/logo-design", icon: <Layers /> },
+      }
     ],
   },
   {
@@ -70,12 +65,7 @@ const serviceItems = [
         label: "Social Media Marketing",
         link: "/social-media-marketing",
         icon: <Share />,
-      },
-      {
-        label: "Content Marketing",
-        link: "/content-marketing",
-        icon: <FileText />,
-      },
+      }
     ],
   },
 ];
@@ -150,7 +140,9 @@ const Navbar = () => {
                 >
                   <div className="flex gap-4 py-2 hover:font-bold items-center">
                     <div className="bg-blue-200 p-2.5 rounded-2xl">
-                    <span className="w-8 font-extrabold text-blue-600 h-8">{icon}</span>
+                      <span className="w-8 font-extrabold text-blue-600 h-8">
+                        {icon}
+                      </span>
                     </div>
                     <Link href={link} onClick={toggleMenu}>
                       {label}

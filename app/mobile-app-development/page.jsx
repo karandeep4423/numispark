@@ -209,11 +209,18 @@ const MobileDevelopment = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div className="flex flex-col h-screen gap-5 justify-center items-center">
-        <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
+      <div
+       style={{
+        backgroundImage: "url('/mobile-app-dev.svg')",
+        backgroundSize: "contain",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+       className="flex w-full flex-col h-screen gap-5 justify-center items-center">
+        <span className="text-2xl text-gray-100 sm:text-6xl text-center font-extrabold">
           Innovative Mobile Apps to Elevate Your Business
         </span>
-        <span className="text-xs text-gray-800 sm:text-2xl text-center font-bold">
+        <span className="text-xs text-gray-100 sm:text-2xl text-center font-bold">
           Emphasizing scalability, responsiveness, and performance.
         </span>
         <div className="flex flex-col gap-4 mt-5">

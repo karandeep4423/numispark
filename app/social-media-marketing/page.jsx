@@ -1,10 +1,31 @@
 "use client";
 import { useInView } from "react-intersection-observer";
-import { PlusCircle, MinusCircle, ArrowUpRight } from "lucide-react";
+import { PlusCircle, MinusCircle, ArrowUpRight, Search } from "lucide-react";
 import {
   Users,
+  UserPlus,
+  MessageSquare,
+  Map,
+  Layers,
+  ToggleLeft,
+  PieChart,
+  Headphones,
+  ArrowUp,
+  Mic,
+  Video,
+  Activity,
+  BarChart2,
+  Edit3,
   DollarSign,
   Smile,
+  FileText,
+  FileType,
+  Award,
+  Copy,
+  Image,
+  Instagram,
+  Box,
+  Palette,
   TrendingUp,
   MessageCircle,
   MessageSquareText,
@@ -26,90 +47,179 @@ import {
   BarChart,
   Cog,
   LineChart,
+  Maximize,
+  Pen,
+  Play,
+  GitBranch,
+  Timer,
+  Heart,
+  Eye,
+  CloudDownload,
+  MapPin,
+  Link,
+  Mouse,
 } from "lucide-react";
 import { useState } from "react";
 import Contact from "@/components/contact-us/page";
 
 const Services = [
   {
-    serviceName: "Custom AI Model Development",
-    serviceIcon: Brain,
+    serviceName: "Content Creation",
+    serviceIcon: Edit3,
     serviceDes:
-      "Transform your business with tailor-made AI solutions that adapt to your unique challenges. Our custom models leverage cutting-edge technology to deliver unprecedented accuracy and efficiency in your operations.",
+      "Create visually engaging and impactful posts, videos, and stories tailored to your brand and audience.",
   },
   {
-    serviceName: "Chatbot Integration",
-    serviceIcon: MessageSquareText,
+    serviceName: "Campaign Management",
+    serviceIcon: Activity,
     serviceDes:
-      "Revolutionize your customer service with intelligent chatbots that understand, learn, and evolve. Provide 24/7 support while reducing costs and improving customer satisfaction.",
+      "Plan, execute, and monitor social media campaigns to drive meaningful engagement and conversions.",
   },
   {
-    serviceName: "Business Process Automation",
-    serviceIcon: Cog,
+    serviceName: "Analytics & Reporting",
+    serviceIcon: BarChart2,
     serviceDes:
-      "Eliminate repetitive tasks and streamline workflows with intelligent automation solutions. Our systems adapt to your business processes, reducing errors and freeing your team to focus on strategic initiatives.",
+      "Analyze performance metrics to optimize strategies and provide actionable insights.",
   },
   {
-    serviceName: "Machine Learning and Predictive Analytics",
-    serviceIcon: LineChart,
+    serviceName: "Influencer Marketing",
+    serviceIcon: UserPlus,
     serviceDes:
-      "Harness the power of your data with advanced analytics that predict trends, identify opportunities, and drive informed decision-making. Turn insights into action with our comprehensive ML solutions.",
+      "Partner with influencers to amplify your brand's voice and reach targeted audiences.",
+  },
+  {
+    serviceName: "Social Media Strategy Development",
+    serviceIcon: Map,
+    serviceDes:
+      "Craft a custom strategy to align with your business goals and social media objectives.",
+  },
+  {
+    serviceName: "Paid Advertising Management",
+    serviceIcon: DollarSign,
+    serviceDes:
+      "Optimize paid ads on platforms like Facebook, Instagram, and LinkedIn for maximum ROI.",
+  },
+  {
+    serviceName: "Competitor Analysis",
+    serviceIcon: Eye,
+    serviceDes:
+      "Gain insights into competitors' strategies to stay ahead in the market and refine your approach.",
+  },
+  {
+    serviceName: "Performance Optimization",
+    serviceIcon: TrendingUp,
+    serviceDes:
+      "Continuously improve your campaigns for better engagement, reach, and results.",
   },
 ];
 const features = [
   {
-    serviceName: "Natural Language Understanding (NLU)",
-    serviceIcon: Brain,
-    serviceDes:
-      "Enable seamless human-machine interactions with our advanced NLU capabilities. Process and understand human language with unprecedented accuracy, supporting multiple use cases from customer service to data analysis.",
-  },
-  {
-    serviceName: "Multilingual Support",
+    serviceName: "Platform-Specific Expertise",
     serviceIcon: Globe,
     serviceDes:
-      "Break language barriers and expand globally with our multilingual AI solutions. Support 100+ languages with native-like understanding and response capabilities.",
+      "Our team understands the nuances of each social media platform, tailoring strategies to maximize engagement and reach on Facebook, Instagram, LinkedIn, TikTok, and more.",
   },
   {
-    serviceName: "Integration with Popular Platforms",
+    serviceName: "Data-Driven Strategies",
+    serviceIcon: BarChart2,
+    serviceDes:
+      "Leverage advanced analytics to craft campaigns that resonate with your audience and deliver measurable results.",
+  },
+  {
+    serviceName: "Creative Content Creation",
+    serviceIcon: Image,
+    serviceDes:
+      "Develop visually appealing graphics, videos, and written content that align with your brand and captivate your audience.",
+  },
+  {
+    serviceName: "Paid Advertising Expertise",
+    serviceIcon: DollarSign,
+    serviceDes:
+      "Optimize ad campaigns with precise targeting, compelling creatives, and ongoing performance monitoring to ensure maximum ROI.",
+  },
+  {
+    serviceName: "Engagement Optimization",
+    serviceIcon: MessageCircle,
+    serviceDes:
+      "Boost interactions with your audience by fostering conversations, responding to comments, and creating engaging polls and stories.",
+  },
+  {
+    serviceName: "Real-Time Analytics & Reporting",
+    serviceIcon: PieChart,
+    serviceDes:
+      "Monitor the performance of your social media campaigns in real-time and receive detailed reports to inform strategic decisions.",
+  },
+  {
+    serviceName: "Brand Voice Consistency",
+    serviceIcon: Mic,
+    serviceDes:
+      "Maintain a consistent tone and message across platforms, reinforcing your brand identity and values.",
+  },
+  {
+    serviceName: "Social Listening & Sentiment Analysis",
+    serviceIcon: Headphones,
+    serviceDes:
+      "Monitor online conversations about your brand and industry to stay responsive to trends and customer sentiment.",
+  },
+  {
+    serviceName: "Cross-Platform Integration",
+    serviceIcon: Layers,
+    serviceDes:
+      "Seamlessly integrate campaigns across multiple platforms for cohesive messaging and amplified reach.",
+  },
+  {
+    serviceName: "Community Building",
     serviceIcon: Users,
     serviceDes:
-      "Seamlessly connect our AI solutions with your existing tech stack. Whether it's Slack, Microsoft Teams, or custom platforms, we ensure smooth integration and optimal performance.",
+      "Cultivate a loyal following by building meaningful relationships with your audience through consistent interaction and valuable content.",
   },
   {
-    serviceName: "Real-Time Analytics",
-    serviceIcon: BarChart,
+    serviceName: "A/B Testing for Campaigns",
+    serviceIcon: ToggleLeft,
     serviceDes:
-      "Monitor and optimize your AI solutions in real-time. Get actionable insights into performance metrics, user engagement, and system health with our comprehensive analytics dashboard.",
+      "Optimize performance by testing different ad creatives, captions, and targeting strategies to identify what resonates best with your audience.",
+  },
+  {
+    serviceName: "Video Marketing",
+    serviceIcon: Video,
+    serviceDes:
+      "Create impactful video content, including reels, live sessions, and ads, to capture your audience’s attention and drive engagement.",
+  },
+  {
+    serviceName: "Trend Utilization",
+    serviceIcon: TrendingUp,
+    serviceDes:
+      "Stay ahead by leveraging the latest trends, challenges, and viral content to keep your brand relevant and relatable.",
+  },
+  {
+    serviceName: "Scalable Campaigns",
+    serviceIcon: ArrowUp,
+    serviceDes:
+      "Adapt campaigns to grow alongside your business, ensuring your social media strategy scales with your goals.",
+  },
+  {
+    serviceName: "Advanced Targeting",
+    serviceIcon: Target,
+    serviceDes:
+      "Reach the right audience by leveraging precise demographic, geographic, and interest-based targeting options for organic and paid campaigns.",
   },
 ];
 const TECHNOLOGIES = [
   {
-    name: "Python",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    name: "Google Analytics",
+    logo: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTYiIGhlaWdodD0iMjg0IiB2aWV3Qm94PSIwIDAgMjU2IDI4NCI+PHBhdGggZmlsbD0iI2Y5YWIwMCIgZD0iTTI1Ni4wMDMgMjQ3LjkzM2EzNS4yMjQgMzUuMjI0IDAgMCAxLTM5LjM3NiAzNS4xNjFjLTE4LjA0NC0yLjY3LTMxLjI2Ni0xOC4zNzEtMzAuODI2LTM2LjYwNlYzNi44NDVDMTg1LjM2NSAxOC41OTEgMTk4LjYyIDIuODgxIDIxNi42ODcuMjRhMzUuMjIgMzUuMjIgMCAwIDEgMzkuMzE2IDM1LjE2eiIvPjxwYXRoIGZpbGw9IiNlMzc0MDAiIGQ9Ik0zNS4xMDEgMjEzLjE5M2MxOS4zODYgMCAzNS4xMDEgMTUuNzE2IDM1LjEwMSAzNS4xMDFjMCAxOS4zODYtMTUuNzE1IDM1LjEwMS0zNS4xMDEgMzUuMTAxUzAgMjY3LjY4IDAgMjQ4LjI5NXMxNS43MTUtMzUuMTAyIDM1LjEwMS0zNS4xMDJtOTIuMzU4LTEwNi4zODdjLTE5LjQ3NyAxLjA2OC0zNC41OSAxNy40MDYtMzQuMTM3IDM2LjkwOHY5NC4yODVjMCAyNS41ODggMTEuMjU5IDQxLjEyMiAyNy43NTUgNDQuNDMzYTM1LjE2IDM1LjE2IDAgMCAwIDQyLjE0Ni0zNC41NlYxNDIuMDg5YTM1LjIyIDM1LjIyIDAgMCAwLTM1Ljc2NC0zNS4yODIiLz48L3N2Zz4=",
   },
   {
-    name: "Tensorflow",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg",
+    name: "Semrush",
+    logo: "https://cdn.brandfetch.io/idt3n8W3ef/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B",
   },
   {
-    name: "PyTorch",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg",
+    name: "Ahrefs",
+    logo: "https://cdn.brandfetch.io/idxB1p5kuP/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B",
   },
   {
-    name: "Zapier",
-    logo: "https://cdn.brandfetch.io/idNMs_nMA0/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B",
-  },
-  {
-    name: "UiPath",
-    logo: "https://cdn.brandfetch.io/idEaAShmlC/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B",
-  },
-  {
-    name: "Django",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg",
-  },
-  {
-    name: "OpenAI",
-    logo: "https://cdn.brandfetch.io/idR3duQxYl/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B",
+    name: "Meta Ads",
+    logo: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTUuNyIgaGVpZ2h0PSIxMDQiIHZpZXdCb3g9IjAgMCAyNTYgMTcxIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImxvZ29zTWV0YUljb24wIiB4MT0iMTMuODc4JSIgeDI9Ijg5LjE0NCUiIHkxPSI1NS45MzQlIiB5Mj0iNTguNjk0JSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNjRlMSIvPjxzdG9wIG9mZnNldD0iNDAlIiBzdG9wLWNvbG9yPSIjMDA2NGUxIi8+PHN0b3Agb2Zmc2V0PSI4MyUiIHN0b3AtY29sb3I9IiMwMDczZWUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDgyZmIiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0ibG9nb3NNZXRhSWNvbjEiIHgxPSI1NC4zMTUlIiB4Mj0iNTQuMzE1JSIgeTE9IjgyLjc4MiUiIHkyPSIzOS4zMDclIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDA4MmZiIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDA2NGUwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0iIzAwODFmYiIgZD0iTTI3LjY1MSAxMTIuMTM2YzAgOS43NzUgMi4xNDYgMTcuMjggNC45NSAyMS44MmMzLjY3NyA1Ljk0NyA5LjE2IDguNDY2IDE0Ljc1MSA4LjQ2NmM3LjIxMSAwIDEzLjgwOC0xLjc5IDI2LjUyLTE5LjM3MmMxMC4xODUtMTQuMDkyIDIyLjE4Ni0zMy44NzQgMzAuMjYtNDYuMjc1bDEzLjY3NS0yMS4wMWM5LjQ5OS0xNC41OTEgMjAuNDkzLTMwLjgxMSAzMy4xLTQxLjgwNkMxNjEuMTk2IDQuOTg1IDE3Mi4yOTggMCAxODMuNDcgMGMxOC43NTggMCAzNi42MjUgMTAuODcgNTAuMyAzMS4yNTdDMjQ4LjczNSA1My41ODQgMjU2IDgxLjcwNyAyNTYgMTEwLjcyOWMwIDE3LjI1My0zLjQgMjkuOTMtOS4xODcgMzkuOTQ2Yy01LjU5MSA5LjY4Ni0xNi40ODggMTkuMzYzLTM0LjgxOCAxOS4zNjN2LTI3LjYxNmMxNS42OTUgMCAxOS42MTItMTQuNDIyIDE5LjYxMi0zMC45MjdjMC0yMy41Mi01LjQ4NC00OS42MjMtMTcuNTY0LTY4LjI3M2MtOC41NzQtMTMuMjMtMTkuNjg0LTIxLjMxMy0zMS45MDctMjEuMzEzYy0xMy4yMiAwLTIzLjg1OSA5Ljk3LTM1LjgxNSAyNy43NWMtNi4zNTYgOS40NDUtMTIuODgyIDIwLjk1Ni0yMC4yMDggMzMuOTQ0bC04LjA2NiAxNC4yODljLTE2LjIwMyAyOC43MjgtMjAuMzA3IDM1LjI3MS0yOC40MDggNDYuMDdjLTE0LjIgMTguOTEtMjYuMzI0IDI2LjA3Ni00Mi4yODcgMjYuMDc2Yy0xOC45MzUgMC0zMC45MS04LjItMzguMzI1LTIwLjU1NkMyLjk3MyAxMzkuNDEzIDAgMTI2LjIwMiAwIDExMS4xNDh6Ii8+PHBhdGggZmlsbD0idXJsKCNsb2dvc01ldGFJY29uMCkiIGQ9Ik0yMS44MDIgMzMuMjA2QzM0LjQ4IDEzLjY2NiA1Mi43NzQgMCA3My43NTcgMEM4NS45MSAwIDk3Ljk5IDMuNTk3IDExMC42MDUgMTMuODk3YzEzLjc5OCAxMS4yNjEgMjguNTA1IDI5LjgwNSA0Ni44NTMgNjAuMzY4bDYuNTggMTAuOTY3YzE1Ljg4MSAyNi40NTkgMjQuOTE3IDQwLjA3IDMwLjIwNSA0Ni40OWM2LjgwMiA4LjI0MyAxMS41NjUgMTAuNyAxNy43NTIgMTAuN2MxNS42OTUgMCAxOS42MTItMTQuNDIyIDE5LjYxMi0zMC45MjdsMjQuMzkzLS43NjZjMCAxNy4yNTMtMy40IDI5LjkzLTkuMTg3IDM5Ljk0NmMtNS41OTEgOS42ODYtMTYuNDg4IDE5LjM2My0zNC44MTggMTkuMzYzYy0xMS4zOTUgMC0yMS40OS0yLjQ3NS0zMi42NTQtMTMuMDA3Yy04LjU4Mi04LjA4My0xOC42MTUtMjIuNDQzLTI2LjMzNC0zNS4zNTJsLTIyLjk2LTM4LjM1MkMxMTguNTI4IDY0LjA4IDEwNy45NiA0OS43MyAxMDEuODQ1IDQzLjIzYy02LjU3OC02Ljk4OC0xNS4wMzYtMTUuNDI4LTI4LjUzMi0xNS40MjhjLTEwLjkyMyAwLTIwLjIgNy42NjYtMjcuOTYzIDE5LjM5eiIvPjxwYXRoIGZpbGw9InVybCgjbG9nb3NNZXRhSWNvbjEpIiBkPSJNNzMuMzEyIDI3LjgwMmMtMTAuOTIzIDAtMjAuMiA3LjY2Ni0yNy45NjMgMTkuMzljLTEwLjk3NiAxNi41NjgtMTcuNjk4IDQxLjI0NS0xNy42OTggNjQuOTQ0YzAgOS43NzUgMi4xNDYgMTcuMjggNC45NSAyMS44Mkw5LjAyNyAxNDkuNDgyQzIuOTczIDEzOS40MTMgMCAxMjYuMjAyIDAgMTExLjE0OEMwIDgzLjc3MiA3LjUxNCA1NS4yNCAyMS44MDIgMzMuMjA2QzM0LjQ4IDEzLjY2NiA1Mi43NzQgMCA3My43NTcgMHoiLz48L3N2Zz4=",
   },
 ];
 const portfolioItems = [
@@ -134,58 +244,97 @@ const portfolioItems = [
 ];
 const faqData = [
   {
-    question: "How can I request a quote for a project?",
+    question: "Which social media platforms do you specialize in?",
     answer:
-      "Start your AI journey by scheduling a free consultation through our online form or calling us directly. Within 24 hours, our experts will analyze your requirements and provide a detailed proposal including timeline, deliverables, and pricing options tailored to your needs.",
+      "We specialize in managing campaigns across popular platforms such as Facebook, Instagram, LinkedIn, Twitter, TikTok, Pinterest, and YouTube. Our team tailors strategies to suit the unique features and audience of each platform.",
   },
   {
-    question: "What industries do you serve?",
+    question: "Can you manage paid social media ads for us?",
     answer:
-      "We've successfully implemented AI solutions across diverse sectors including healthcare (patient care optimization), finance (risk assessment), retail (inventory management), manufacturing (predictive maintenance), and education (personalized learning). Our adaptable approach ensures effective solutions regardless of your industry.",
+      "Absolutely! We create and manage targeted ad campaigns, including audience research, ad design, and performance optimization, to maximize your ROI on platforms like Facebook Ads, Instagram Ads, LinkedIn Ads, and TikTok Ads.",
   },
   {
-    question: "What is the typical timeline for a project?",
+    question: "How often will you post on our social media accounts?",
     answer:
-      "Project timelines vary based on complexity and scope. Simple chatbot integrations typically take 2-4 weeks, while custom AI model development may require 2-3 months. Enterprise-scale automation solutions usually span 3-6 months. We provide detailed milestones and regular progress updates throughout the development cycle.",
+      "The posting frequency depends on your specific goals and chosen plan. Typically, we recommend 3-5 posts per week per platform to maintain consistent engagement with your audience.",
   },
   {
-    question: "How do you ensure the security of AI solutions?",
+    question: "Do you provide content creation as part of your service?",
     answer:
-      "Security is paramount in our development process. We implement enterprise-grade encryption, regular security audits, and comply with industry standards (GDPR, HIPAA, etc.). All our AI solutions undergo rigorous testing for potential vulnerabilities before deployment.",
+      "Yes, we handle content creation, including designing graphics, writing captions, producing videos, and curating content that aligns with your brand’s voice and engages your audience effectively.",
   },
   {
-    question: "What kind of support do you provide after deployment?",
+    question: "How do you measure the success of social media campaigns?",
     answer:
-      "We offer comprehensive post-deployment support including 24/7 monitoring, regular performance optimization, model retraining, and dedicated technical support. Our maintenance packages ensure your AI solutions continue to evolve and improve over time.",
+      "We track metrics such as follower growth, engagement rates, click-through rates, reach, impressions, and conversions. Additionally, we provide detailed reports with actionable insights to optimize future campaigns.",
+  },
+  {
+    question:
+      "How long does it take to see results from social media marketing?",
+    answer:
+      "Results vary based on your goals and the competitive landscape. While you may see initial engagement improvements within a few weeks, consistent efforts over 3-6 months typically yield significant growth in brand awareness and ROI.",
+  },
+  {
+    question: "Do you offer social media management for small businesses?",
+    answer:
+      "Yes, our services are tailored to businesses of all sizes. We create cost-effective strategies designed to meet the needs and budgets of small businesses while delivering measurable results.",
+  },
+  {
+    question: "Will I have input in the social media content and strategy?",
+    answer:
+      "Of course! We work collaboratively with you to ensure the content and strategies align with your brand’s vision and goals. Your feedback is an integral part of the process.",
+  },
+  {
+    question: "Can you help grow our follower count organically?",
+    answer:
+      "Yes, we use proven techniques like engaging content creation, strategic posting, hashtags, collaborations, and community interaction to grow your follower base organically over time.",
+  },
+  {
+    question: "What tools do you use for social media management?",
+    answer:
+      "We utilize industry-leading tools such as Hootsuite, Buffer, Facebook Ads Manager, and other analytics tools to schedule posts, monitor performance, and optimize campaigns.",
   },
 ];
 const WhyUs = [
   {
-    serviceName: "Expertise in Cutting-Edge AI Technologies",
-    serviceIcon: Brain,
+    serviceName: "Increased Brand Awareness",
+    serviceIcon: Globe,
     serviceDes:
-      "Partner with a team that stays ahead of AI innovation. Our experts specialize in the latest technologies including GPT-4, computer vision, and deep learning, ensuring you get future-proof solutions that drive real business value.",
+      "Enhance your brand's visibility and recognition through tailored strategies and campaigns.",
   },
   {
-    serviceName: "Custom Solutions for Your Business Needs",
-    serviceIcon: Settings,
+    serviceName: "Targeted Campaigns for Higher ROI",
+    serviceIcon: Target,
     serviceDes:
-      "Get AI solutions perfectly aligned with your business goals. We don't believe in one-size-fits-all - our team analyzes your unique challenges and develops custom AI solutions that deliver measurable ROI.",
+      "Reach the right audience with data-driven targeting for better campaign performance.",
   },
   {
-    serviceName: "Cost-Effective and Scalable Solutions",
+    serviceName: "Consistent Engagement with Followers",
+    serviceIcon: Heart,
+    serviceDes:
+      "Foster meaningful connections with your audience through regular and interactive content.",
+  },
+  {
+    serviceName: "Real-Time Analytics",
+    serviceIcon: BarChart,
+    serviceDes:
+      "Monitor campaign performance and make informed decisions with up-to-date analytics.",
+  },
+  {
+    serviceName: "Enhanced Customer Loyalty",
+    serviceIcon: Smile,
+    serviceDes:
+      "Build long-term relationships with your audience through authentic and responsive interactions.",
+  },
+  {
+    serviceName: "Cost-Effective Marketing",
     serviceIcon: DollarSign,
     serviceDes:
-      "Maximize your investment with solutions that grow with your business. Our AI systems are built for scalability, allowing you to start small and expand capabilities as your needs evolve, all while maintaining cost efficiency.",
-  },
-  {
-    serviceName: "Speed Optimization",
-    serviceIcon: Zap,
-    serviceDes:
-      "Experience lightning-fast performance with our optimized AI solutions. We employ advanced techniques in model compression and edge computing to deliver rapid response times without compromising accuracy.",
+      "Maximize your marketing budget by focusing on strategies that deliver measurable results.",
   },
 ];
-export default function AiDevelopment() {
+
+export default function SocialMediaMarketing() {
   const [openIndex, setOpenIndex] = useState(null);
   const { ref: first, inView: firstSectionIsVisible } = useInView({
     rootMargin: "-200px 0px",
@@ -243,11 +392,10 @@ export default function AiDevelopment() {
       {/* Hero Section */}
       <div className="flex flex-col h-screen gap-5 justify-center items-center">
         <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
-          Transform Your Business with AI & Automation
+          Build Your Brand on Social Media Platforms
         </span>
         <span className="text-xs text-gray-800 sm:text-2xl text-center font-bold">
-          From chatbots to custom AI models, we create intelligent solutions to
-          boost efficiency
+          Empower your business with tailored strategies
         </span>
         <div className="flex flex-col gap-4 mt-5">
           <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
@@ -332,7 +480,7 @@ export default function AiDevelopment() {
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
             Features
           </span>{" "}
-          of Our Chatbots
+          of Our SEO
         </h2>
         <p className="text-xl text-center font-medium text-gray-600 mt-4">
           Your Success Is Our Priority
@@ -417,13 +565,13 @@ export default function AiDevelopment() {
             </div>
             <div>
               <h3 className="mt-2 lg:mt-0 text-3xl px-3 text-center font-bold">
-                Understanding Your Vision
+                Understanding Your Goals
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                We dive deep into your business needs and challenges through
-                focused discovery sessions. Our team ensures we're not just
-                understanding your requirements, but uncovering opportunities
-                for innovation and growth.
+                We start by thoroughly understanding your business objectives,
+                target audience, and market dynamics to ensure our strategies
+                are aligned with your goals. This foundational step is crucial
+                for tailoring an effective digital marketing approach.
               </p>
             </div>
           </div>
@@ -456,17 +604,17 @@ export default function AiDevelopment() {
             }
           >
             <div className="mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Target className="text-white" size={80} />
+              <Search className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-2 lg:mt-0 text-3xl  text-center font-bold">
-                Strategic Planning
+                Market Research & Analysis
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                Transforming insights into actionable strategies, we create a
-                clear roadmap for your project. Our detailed planning ensures
-                efficient development, timeline adherence, and measurable
-                outcomes.
+                In-depth market research helps us identify industry trends,
+                competitor strategies, and consumer behavior, providing valuable
+                insights that inform our marketing tactics and campaign
+                planning.
               </p>
             </div>
           </div>
@@ -499,16 +647,17 @@ export default function AiDevelopment() {
             }
           >
             <div className=" mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <PenTool className="text-white" size={80} />
+              <FileText className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl  text-center font-bold">
-                Design & Development
+                Strategy Development
               </h3>
               <p className=" ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                Our expert team brings your vision to life using cutting-edge AI
-                technologies and clean code. Regular updates and demonstrations
-                keep you involved throughout the development process.
+                We develop a comprehensive digital marketing strategy that
+                includes channel selection, campaign objectives, and a detailed
+                content plan to engage your audience effectively and meet your
+                business goals.
               </p>
             </div>
           </div>
@@ -541,16 +690,17 @@ export default function AiDevelopment() {
             }
           >
             <div className="mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Rocket className="text-white" size={80} />
+              <Play className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl text-center font-bold">
-                Launch & Deployment
+                Implementation & Campaign Launch
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                We ensure a smooth transition from development to deployment
-                with comprehensive testing and optimization. Your solution
-                launches with confidence, backed by thorough quality assurance.
+                Once the strategy and content are ready, we implement the
+                campaigns across selected digital channels. This phase involves
+                setting up ads, scheduling posts, and ensuring everything is
+                optimized for maximum impact.
               </p>
             </div>
           </div>
@@ -583,15 +733,17 @@ export default function AiDevelopment() {
             }
           >
             <div className="mt-3 lg:mt-0  flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Users className="text-white" size={80} />
+              <FileText className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl px-3 text-center font-bold">
-                Ongoing Support
+                Reporting & Analysis
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                We provide continuous support, regular updates, and proactive
-                maintenance to keep your solution performing at its best.
+                We provide detailed reports that analyze campaign performance,
+                including key metrics and insights. This transparency helps you
+                understand the impact of our efforts and informs future
+                marketing strategies.
               </p>
             </div>
           </div>
