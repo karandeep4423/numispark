@@ -246,22 +246,31 @@ const WebsiteDevelopment = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div className="flex flex-col h-screen gap-5 justify-center items-center">
-        <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
+      <div
+        style={{
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDQiIGhlaWdodD0iMTA0IiB2aWV3Qm94PSIwIDAgMTQgMTQiPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwNzJmMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTMuNSAxMC41di04QS41LjUgMCAwIDAgMTMgMkgxYy0uMjY1IDAtLjUuMjM1LS41LjV2OGMwIC4yNjUuMjM1LjUuNS41aDEyYy4yNjUgMCAuNS0uMjM1LjUtLjVNNiAxMWwtMSAyLjVNOCAxMWwxIDIuNW0tNSAwaDYiLz48cGF0aCBkPSJNNSA1TDMuNSA2LjVMNSA4bTQtM2wxLjUgMS41TDkgOCIvPjwvZz48L3N2Zz4=')`,
+          backgroundSize: "contain",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+        className="flex bg-blue-200 flex-col h-screen gap-5 justify-center items-center"
+      >
+        <span className="text-2xl opacity-100 text-gray-800 sm:text-6xl text-center font-extrabold">
           Custom Websites Tailored to Your Business Needs
         </span>
         <span className="text-xs text-gray-800 sm:text-2xl text-center font-bold">
           Emphasizing scalability, responsiveness, and performance.
         </span>
         <div className="flex flex-col gap-4 mt-5">
-          <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
+          <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600">
             Get a Free consultation
           </button>
-          <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
+          <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600">
             Explore Our Services
           </button>
         </div>
       </div>
+
       {/* Technologies Section */}
       <div className="py-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">

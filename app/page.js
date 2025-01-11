@@ -19,7 +19,7 @@ import {
   PenTool,
   Rocket,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Contact from "@/components/contact-us/page";
 
 const Services = [
@@ -266,6 +266,45 @@ const faqData = [
 
 export default function Home() {
   const [openIndex, setOpenIndex] = useState(null);
+  const [icons, setIcons] = useState([]);
+
+  useEffect(() => {
+    // Initialize icons with random positions
+    const initialIcons = TECHNOLOGIES.map((tech, index) => ({
+      ...tech,
+      id: index,
+      x: Math.random() * 100,
+      y: Math.random() * 100,
+      speedX: (Math.random() - 0.5) * 0.1,
+      speedY: (Math.random() - 0.5) * 0.1,
+      rotation: Math.random() * 360,
+    }));
+    setIcons(initialIcons);
+
+    const moveIcons = () => {
+      setIcons((prevIcons) =>
+        prevIcons.map((icon) => {
+          let newX = icon.x + icon.speedX;
+          let newY = icon.y + icon.speedY;
+
+          // Bounce off edges
+          if (newX < 0 || newX > 100) icon.speedX *= -1;
+          if (newY < 0 || newY > 100) icon.speedY *= -1;
+
+          return {
+            ...icon,
+            x: newX < 0 ? 0 : newX > 100 ? 100 : newX,
+            y: newY < 0 ? 0 : newY > 100 ? 100 : newY,
+            rotation: (icon.rotation + 0.2) % 360,
+          };
+        })
+      );
+    };
+
+    const animationInterval = setInterval(moveIcons, 50);
+    return () => clearInterval(animationInterval);
+  }, []);
+
   const { ref: first, inView: firstSectionIsVisible } = useInView({
     rootMargin: "-200px 0px",
     triggerOnce: "true",
@@ -320,24 +359,55 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="flex flex-col h-screen gap-5 justify-center items-center">
-        <span className="text-xl text-gray-800 sm:text-4xl text-center font-bold">
-          Empowering Your Business with
-        </span>
+      <div className="relative h-screen overflow-hidden bg-blue-200 ">
+        {/* Floating icons background */}
+        <div className="absolute inset-0 opacity-60">
+          {icons.map((icon) => (
+            <div
+              key={icon.id}
+              className="absolute transition-transform duration-1000 ease-linear"
+              style={{
+                left: `${icon.x}%`,
+                top: `${icon.y}%`,
+                transform: `rotate(${icon.rotation}deg)`,
+                width: "48px",
+                height: "48px",
+              }}
+            >
+              <img
+                src={icon.logo}
+                alt={icon.name}
+                className="w-12 h-12 object-contain"
+              />
+            </div>
+          ))}
+        </div>
 
-        <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
-          World-Class Digital Solutions
-        </span>
-        <span className="text-xs text-gray-800 sm:text-2xl text-center font-bold">
-          Web Development | Mobile Apps | UI/UX Design | Digital Marketing
-        </span>
-        <div className="flex flex-col gap-4 mt-5">
-          <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Get a Free consultation
-          </button>
-          <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Explore Our Services
-          </button>
+        {/* Semi-transparent overlay */}
+        <div className="absolute inset-0  bg-opacity-60" />
+
+        {/* Hero content */}
+        <div className="relative z-10 flex flex-col h-screen gap-5 justify-center items-center">
+          <span className="text-xl text-gray-800 sm:text-4xl text-center font-bold">
+            Empowering Your Business with
+          </span>
+
+          <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
+            World-Class Digital Solutions
+          </span>
+
+          <span className="text-xs text-gray-800 sm:text-2xl text-center font-bold">
+            Web Development | Mobile Apps | UI/UX Design | Digital Marketing
+          </span>
+
+          <div className="flex flex-col gap-4 mt-5">
+            <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 hover:bg-blue-700 transition-colors">
+              Get a Free consultation
+            </button>
+            <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 hover:bg-blue-700 transition-colors">
+              Explore Our Services
+            </button>
+          </div>
         </div>
       </div>
       {/* Services Section */}
