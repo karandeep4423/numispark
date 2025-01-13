@@ -248,17 +248,17 @@ const WebsiteDevelopment = () => {
       {/* Hero Section */}
       <div
         style={{
-          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDQiIGhlaWdodD0iMTA0IiB2aWV3Qm94PSIwIDAgMTQgMTQiPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwNzJmMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTMuNSAxMC41di04QS41LjUgMCAwIDAgMTMgMkgxYy0uMjY1IDAtLjUuMjM1LS41LjV2OGMwIC4yNjUuMjM1LjUuNS41aDEyYy4yNjUgMCAuNS0uMjM1LjUtLjVNNiAxMWwtMSAyLjVNOCAxMWwxIDIuNW0tNSAwaDYiLz48cGF0aCBkPSJNNSA1TDMuNSA2LjVMNSA4bTQtM2wxLjUgMS41TDkgOCIvPjwvZz48L3N2Zz4=')`,
-          backgroundSize: "contain",
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('web.gif')`,
+          backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
-        className="flex bg-blue-200 flex-col h-screen gap-5 justify-center items-center"
+        className="flex bg-blue-300 flex-col h-screen gap-5 justify-center items-center"
       >
         <span className="text-2xl opacity-100 text-gray-800 sm:text-6xl text-center font-extrabold">
           Custom Websites Tailored to Your Business Needs
         </span>
-        <span className="text-xs text-gray-800 sm:text-2xl text-center font-bold">
+        <span className="text-xs text-gray-900 sm:text-2xl text-center font-bold">
           Emphasizing scalability, responsiveness, and performance.
         </span>
         <div className="flex flex-col gap-4 mt-5">
@@ -277,7 +277,7 @@ const WebsiteDevelopment = () => {
           <span className="text-blue-600 p-2.5 m-1 rounded-2xl bg-blue-200">
             Technologies
           </span>
-          We Excel In
+          <span className="text-[#2563EB]">We Excel In</span>
         </h2>
         <p className="text-xl px-2 text-center font-medium text-gray-600 mt-4">
           The Backbone of Our High Quality Solutions

@@ -211,16 +211,16 @@ const MobileDevelopment = () => {
       {/* Hero Section */}
       <div
        style={{
-        backgroundImage: "url('/mobile-app-dev.svg')",
+        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('mob-dev1.gif')`,
         backgroundSize: "contain",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
-       className="flex w-full flex-col h-screen gap-5 justify-center items-center">
-        <span className="text-2xl text-gray-100 sm:text-6xl text-center font-extrabold">
+       className="bg-blue-300 flex w-full flex-col h-screen gap-5 justify-center items-center">
+        <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
           Innovative Mobile Apps to Elevate Your Business
         </span>
-        <span className="text-xs text-gray-100 sm:text-2xl text-center font-bold">
+        <span className="text-xs text-gray-800 sm:text-2xl text-center font-bold">
           Emphasizing scalability, responsiveness, and performance.
         </span>
         <div className="flex flex-col gap-4 mt-5">

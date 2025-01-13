@@ -159,7 +159,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className=" bg-blue-200">
       <nav className="flex justify-between gap-5 h-20 px-4 xl:px-0 max-w-screen-xl m-auto">
         <div className="flex items-center">
           <Link href="/">
@@ -179,9 +179,9 @@ const Navbar = () => {
 
         <div
           // Mobile Responsive
-          className={`lg:space-x-5 gap-y-4 text-lg absolute justify-between flex flex-col items-center lg:flex-row z-50 lg:static lg:w-auto lg:py-0 pb-6 w-full left-0 ${
+          className={` lg:space-x-5 gap-y-4 text-lg absolute justify-between flex flex-col items-center lg:flex-row z-50 lg:static lg:w-auto lg:py-0 pb-6 w-full left-0 ${
             state.isMenuOpen
-              ? "top-[64px] overflow-scroll lg:overflow-hidden bg-indigo-100 lg:bg-white pt-6"
+              ? "top-[64px] overflow-scroll lg:overflow-hidden bg-blue-200  pt-6"
               : "hidden lg:flex"
           }`}
         >

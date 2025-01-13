@@ -205,22 +205,34 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <div  style={{
-        backgroundImage: "url('/ecommerce.svg')",
-        backgroundSize: "contain",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }} className="flex flex-col h-screen gap-5 justify-center items-center">
-        <span className="text-2xl text-gray-100 sm:text-6xl text-center font-extrabold">
-          Powerful Ecommerce Solutions to Boost Your Sales
-        </span>
-        <div className="flex flex-col gap-4 mt-5">
-          <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Get a Free consultation
-          </button>
-          <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Explore Our Services
-          </button>
+      <div
+        // style={{
+        //   backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('/ecommerce.gif')`,
+        //   backgroundSize: "cover",
+        //   backgroundPosition: "center",
+        //   backgroundRepeat: "no-repeat",
+        // }}
+        className="flex bg-blue-200 flex-col sm:flex-row h-screen gap-5 justify-center items-center"
+      >
+        <div className="w-1/2 mt-10 sm:mt-0 flex justify-center items-center flex-col">
+          <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
+            Powerful Ecommerce Solutions to Boost Your Sales
+          </span>
+          <div className="flex flex-col gap-4 mt-5">
+            <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
+              Get a Free consultation
+            </button>
+            <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
+              Explore Our Services
+            </button>
+          </div>
+        </div>
+        <div className="sm:w-1/2 w-full h-screen flex items-center">
+          <img
+            src="/ecommerce.gif"
+            alt="ecommerce"
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
       {/* Technologies Section */}
