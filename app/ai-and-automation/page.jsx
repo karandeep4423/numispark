@@ -241,21 +241,38 @@ export default function AiDevelopment() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="flex flex-col h-screen gap-5 justify-center items-center">
-        <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
-          Transform Your Business with AI & Automation
-        </span>
-        <span className="text-xs text-gray-800 sm:text-2xl text-center font-bold">
-          From chatbots to custom AI models, we create intelligent solutions to
-          boost efficiency
-        </span>
-        <div className="flex flex-col gap-4 mt-5">
-          <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Start Your AI Journey
-          </button>
-          <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Request a Free Consultation
-          </button>
+      <div className="relative h-screen flex flex-col  sm:flex-row justify-center items-center overflow-hidden bg-blue-200">
+        {/* Video Background with blend mode */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full  object-cover z-20 mix-blend-screen"
+        >
+          <source src="/ai.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        {/* Overlay Content */}
+        <div className="relative z-20 flex w-full h-screen gap-5 justify-center items-center">
+          <div className="mt-10 sm:mt-0 flex justify-center items-center flex-col">
+            <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
+              Transform Your Business with AI & Automation
+            </span>
+            <span className="text-xs text-gray-800 sm:text-2xl text-center font-bold">
+              From chatbots to custom AI models, we create intelligent solutions
+              to boost efficiency
+            </span>
+            <div className="flex z-50 flex-col sm:flex-row gap-4 mt-5">
+              <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 hover:bg-blue-700 transition-colors">
+                Start Your AI Journey
+              </button>
+              <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 hover:bg-blue-700 transition-colors">
+                Request a Free Consultation
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       {/* Services Section */}

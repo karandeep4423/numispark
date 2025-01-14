@@ -144,7 +144,8 @@ const faqData = [
       "Our SaaS development services include requirement analysis, UX/UI design, backend and frontend development, quality assurance testing, deployment, and ongoing support. We ensure that your SaaS application is scalable, secure, and tailored to your business needs.",
   },
   {
-    question: "Can you help with migrating my existing software to a SaaS model?",
+    question:
+      "Can you help with migrating my existing software to a SaaS model?",
     answer:
       "Yes, we offer migration services to help you transition your existing software to a SaaS model. Our team will assess your current setup, develop a migration plan, and ensure a smooth transition to the cloud without disrupting your business operations.",
   },
@@ -159,15 +160,17 @@ const faqData = [
       "The timeline for developing a SaaS application varies based on complexity and features. Typically, it can take anywhere from a few weeks to several months. We will provide you with a detailed timeline after discussing your project requirements during our initial consultation.",
   },
   {
-    question: "How do you handle ongoing support and maintenance for SaaS applications?",
+    question:
+      "How do you handle ongoing support and maintenance for SaaS applications?",
     answer:
       "We offer comprehensive post-launch support and maintenance packages to ensure your SaaS application runs smoothly. Our support includes bug fixes, updates, feature enhancements, and technical assistance to help you address any issues that may arise.",
   },
   {
-    question: "Can you integrate my SaaS application with other tools or platforms?",
+    question:
+      "Can you integrate my SaaS application with other tools or platforms?",
     answer:
       "Yes, we can integrate your SaaS application with various third-party tools and platforms, such as payment gateways, CRM systems, and marketing automation tools. Our team will work with you to identify the best integration options for your business.",
-  }
+  },
 ];
 const portfolioItems = [
   {
@@ -247,21 +250,38 @@ const SaaSDevelopment = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div className="flex flex-col h-screen gap-5 justify-center items-center">
-        <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
-          Build Scalable SaaS Solutions Tailored to Your Business
-        </span>
-        <span className="text-xs text-gray-800 sm:text-2xl text-center font-bold">
-          From concept to deployment, we create robust SaaS platforms that
-          deliver results
-        </span>
-        <div className="flex flex-col gap-4 mt-5">
-          <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Get a Free SaaS Consultation
-          </button>
-          <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            View Our SaaS Portfolio
-          </button>
+      <div className="relative h-screen bg-blue-200">
+        {/* Video Background with blend mode */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover mix-blend-screen"
+        >
+          <source src="/saas.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        {/* Overlay Content */}
+        <div className="relative z-20 flex w-full h-screen justify-center items-center">
+          <div className="w-full px-4 flex flex-col items-center gap-6">
+            <h1 className="text-2xl sm:text-4xl lg:text-6xl text-center font-extrabold text-gray-800">
+              Build Scalable SaaS Solutions Tailored to Your Business
+            </h1>
+            <p className="text-sm sm:text-xl lg:text-2xl text-center font-bold text-gray-800">
+              From concept to deployment, we create robust SaaS platforms that
+              deliver results
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 mt-2">
+              <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 hover:bg-blue-700 transition-colors">
+                Get a Free SaaS Consultation
+              </button>
+              <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 hover:bg-blue-700 transition-colors">
+                View Our SaaS Portfolio
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       {/* Technologies Section */}
