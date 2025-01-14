@@ -205,36 +205,40 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <div
-        // style={{
-        //   backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('/ecommerce.gif')`,
-        //   backgroundSize: "cover",
-        //   backgroundPosition: "center",
-        //   backgroundRepeat: "no-repeat",
-        // }}
-        className="flex bg-blue-200 flex-col sm:flex-row h-screen gap-5 justify-center items-center"
-      >
-        <div className="w-1/2 mt-10 sm:mt-0 flex justify-center items-center flex-col">
-          <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
-            Powerful Ecommerce Solutions to Boost Your Sales
-          </span>
-          <div className="flex flex-col gap-4 mt-5">
-            <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-              Get a Free consultation
-            </button>
-            <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-              Explore Our Services
-            </button>
+      <div className="relative h-screen flex flex-col sm:flex-row justify-center items-center overflow-hidden">
+        {/* Background Color Layer */}
+        <div className="absolute inset-0 bg-blue-200 z-10"></div>
+
+        {/* Video Background with reduced opacity */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover z-10 opacity-50"
+        >
+          <source src="/ecommerce1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        {/* Overlay Content */}
+        <div className="relative z-20 flex w-full h-screen gap-5 justify-center items-center">
+          <div className="w-1/2 mt-10 sm:mt-0 flex justify-center items-center flex-col">
+            <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
+              Powerful Ecommerce Solutions to Boost Your Sales
+            </span>
+            <div className="flex flex-col gap-4 mt-5">
+              <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 hover:bg-blue-700 transition-colors">
+                Get a Free consultation
+              </button>
+              <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 hover:bg-blue-700 transition-colors">
+                Explore Our Services
+              </button>
+            </div>
           </div>
         </div>
-        <div className="sm:w-1/2 w-full h-screen flex items-center">
-          <img
-            src="/ecommerce.gif"
-            alt="ecommerce"
-            className="w-full h-full object-cover"
-          />
-        </div>
       </div>
+
       {/* Technologies Section */}
       <div className="py-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
