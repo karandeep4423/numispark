@@ -160,7 +160,7 @@ const Navbar = () => {
 
   return (
     <div className=" bg-blue-200">
-      <nav className="flex justify-between gap-5 h-20 px-4 xl:px-0 max-w-screen-xl m-auto">
+      <nav className="z-50 flex justify-between gap-5 h-20 px-4 xl:px-0 max-w-screen-xl m-auto">
         <div className="flex items-center">
           <Link href="/">
             <p className="w-44 h-8 font-extrabold text-xl">Digital Agency</p>

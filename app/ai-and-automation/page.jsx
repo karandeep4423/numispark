@@ -248,7 +248,7 @@ export default function AiDevelopment() {
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full  object-cover z-20 mix-blend-screen"
+          className="absolute inset-0 w-full h-full  object-cover z-20 mix-blend-multiply"
         >
           <source src="/ai.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -257,10 +257,10 @@ export default function AiDevelopment() {
         {/* Overlay Content */}
         <div className="relative z-20 flex w-full h-screen gap-5 justify-center items-center">
           <div className="mt-10 sm:mt-0 flex justify-center items-center flex-col">
-            <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
+            <span className="text-2xl text-gray-200 sm:text-6xl text-center font-extrabold">
               Transform Your Business with AI & Automation
             </span>
-            <span className="text-xs text-gray-800 sm:text-2xl text-center font-bold">
+            <span className="text-xs text-gray-200 sm:text-2xl text-center font-bold">
               From chatbots to custom AI models, we create intelligent solutions
               to boost efficiency
             </span>

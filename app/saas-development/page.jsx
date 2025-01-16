@@ -257,7 +257,7 @@ const SaaSDevelopment = () => {
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover mix-blend-screen"
+          className="absolute inset-0 w-full h-full object-cover mix-blend-darken"
         >
           <source src="/saas.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -266,10 +266,10 @@ const SaaSDevelopment = () => {
         {/* Overlay Content */}
         <div className="relative z-20 flex w-full h-screen justify-center items-center">
           <div className="w-full px-4 flex flex-col items-center gap-6">
-            <h1 className="text-2xl sm:text-4xl lg:text-6xl text-center font-extrabold text-gray-800">
+            <h1 className="text-2xl sm:text-4xl lg:text-6xl text-center font-extrabold text-gray-200">
               Build Scalable SaaS Solutions Tailored to Your Business
             </h1>
-            <p className="text-sm sm:text-xl lg:text-2xl text-center font-bold text-gray-800">
+            <p className="text-sm sm:text-xl lg:text-2xl text-center font-bold text-gray-200">
               From concept to deployment, we create robust SaaS platforms that
               deliver results
             </p>

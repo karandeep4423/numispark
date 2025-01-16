@@ -241,7 +241,14 @@ export default function websiteMobileDesign() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="flex flex-col h-screen gap-5 justify-center items-center">
+      <div 
+       style={{
+        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('logo.gif')`,
+        backgroundSize: "contain",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+      className="flex bg-blue-200 flex-col h-screen gap-5 justify-center items-center">
         <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
           User-Centric Designs for Stunning Website & Mobile Experiences
         </span>
