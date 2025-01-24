@@ -10,6 +10,7 @@ import {
   Settings,
 } from "lucide-react";
 import Contact from "@/components/contact-us/page";
+import HeroButtons from "@/components/HeroButtons/page";
 const teamMembers = [
   {
     name: "Jessica Dobrev",
@@ -110,23 +111,21 @@ const About = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div className="flex flex-col h-screen gap-5 justify-center items-center">
-        <span className="text-xl text-gray-800 sm:text-4xl text-center font-bold">
+      <div className="bg-blue-200">
+      <div className="flex mx-3 flex-col h-screen gap-5 justify-center items-center">
+        <span className="text-gray-800 text-4xl text-center font-bold">
           Empowering Your Business with
         </span>
 
-        <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
+        <span className="text-5xl text-gray-800 sm:text-6xl text-center font-extrabold">
           Innovative Digital Solutions
         </span>
-        <span className="text-xs text-gray-800 sm:text-2xl text-center font-bold">
+        <span className="text-xl max-w-screen-xl  text-gray-800 sm:text-2xl text-center font-bold">
           We're a team of passionate digital craftsmen, turning innovative ideas
           into powerful digital solutions that drive business growth.
         </span>
-        <div className="flex flex-col gap-4 mt-5">
-          <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Discover Our Services
-          </button>
-        </div>
+        <HeroButtons />
+      </div>
       </div>
       {/* core values Section */}
       <div className="py-16 bg-gray-50">
