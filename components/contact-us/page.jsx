@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import {
   Mail,
@@ -66,11 +65,12 @@ const Contact = () => {
   };
 
   return (
-    <div className=" m-auto mt-10 max-w-screen-xl bg-gray-50">
-      <div className=" mx-5 lg:mx-32 items-center flex flex-col">
+    <div className="bg-gray-50">
+    <div className=" m-auto pt-8 max-w-screen-xl ">
+      <div className="  mx-5 lg:mx-32 items-center flex flex-col">
         <div className="flex flex-col mx-10">
           <div className="flex items-center justify-center">
-            <h1 className=" text-gray-800text-center my-10 sm:mb-0  text-3xl sm:text-5xl font-bold">
+            <h1 className=" text-gray-800 text-center my-10 sm:mb-0 text-4xl  sm:text-5xl font-bold">
               Prêt à commencer?
             </h1>
           </div>
@@ -187,13 +187,14 @@ const Contact = () => {
           <div className="flex pt-10 justify-center">
             <button
               type="submit"
-              className="text-lg font-medium w-3/4 py-2 rounded-xl text-center bg-[#784F33] text-white transition-all ease-out duration-300 hover:bg-gradient-to-r hover:from-[#E0C49D] hover:to-[#E0C49D] hover:ring-2 hover:ring-offset-2 hover:ring-white"
+              className="text-lg font-medium w-3/4 py-2 rounded-xl text-center bg-blue-600 text-white transition-all ease-out duration-300 hover:bg-blue-500  hover:ring-white"
             >
               Envoyer
             </button>
           </div>
         </form>
       </div>
+    </div>
     </div>
   );
 };

@@ -38,6 +38,8 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import Contact from "@/components/contact-us/page";
+import Link from "next/link";
+import HeroButtons from "@/components/HeroButtons/page";
 
 const Services = [
   {
@@ -241,29 +243,24 @@ export default function websiteMobileDesign() {
   return (
     <div>
       {/* Hero Section */}
-      <div 
-       style={{
-        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('logo.gif')`,
-        backgroundSize: "contain",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-      className="flex bg-blue-200 flex-col h-screen gap-5 justify-center items-center">
-        <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
+      <div
+        style={{
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('web-mob-d.gif')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+        className="flex bg-blue-300 flex-col h-screen gap-5 justify-center items-center"
+      >
+        <span className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
           User-Centric Designs for Stunning Website & Mobile Experiences
         </span>
-        <span className="text-xs text-gray-800 sm:text-2xl text-center font-bold">
+        <span className=" max-w-screen-xl text-gray-800 text-2xl text-center font-bold">
           Transform your digital presence with designs that convert visitors
           into loyal customers
         </span>
-        <div className="flex flex-col gap-4 mt-5">
-          <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Start Your AI Journey
-          </button>
-          <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Request a Free Consultation
-          </button>
-        </div>
+        {/* buttons */}
+        <HeroButtons />
       </div>
       {/* Services Section */}
       <div className="py-16 bg-gray-50">
@@ -283,7 +280,7 @@ export default function websiteMobileDesign() {
             return (
               <div
                 key={index}
-                className="flex flex-col items-center p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+                className="flex flex-col items-center p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 md:hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
                   <Icon className="text-blue-600 w-14 h-14" />
@@ -350,7 +347,7 @@ export default function websiteMobileDesign() {
             return (
               <div
                 key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition-shadow duration-300"
+                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
                   <Icon className="text-blue-600 w-14 h-14" />
@@ -380,7 +377,7 @@ export default function websiteMobileDesign() {
             return (
               <div
                 key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition-shadow duration-300"
+                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
                   <Icon className="text-blue-600 w-14 h-14" />
@@ -591,8 +588,8 @@ export default function websiteMobileDesign() {
                 Testing & Launch
               </h3>
               <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-              Rigorous testing across devices and platforms to ensure a
-              flawless launch of your digital product.
+                Rigorous testing across devices and platforms to ensure a
+                flawless launch of your digital product.
               </p>
             </div>
           </div>
@@ -633,7 +630,7 @@ export default function websiteMobileDesign() {
         </div>
       </div>
       {/* Faqs */}
-      <div className="max-w-3xl mx-auto  px-4 sm:px-6 lg:px-8">
+      <div className="max-w-3xl mx-auto mb-5 px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-gray-800 text-center mb-12">
           Frequently Asked Questions
         </h1>

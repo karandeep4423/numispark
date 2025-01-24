@@ -5,6 +5,7 @@ import {
   Clock,
   Code,
   BarChart,
+  CheckCircle,
   Users,
   TrendingUp,
   Smartphone,
@@ -24,6 +25,8 @@ import {
 } from "lucide-react";
 import { PlusCircle, MinusCircle, ArrowUpRight } from "lucide-react";
 import Contact from "@/components/contact-us/page";
+import Link from "next/link";
+import HeroButtons from "@/components/HeroButtons/page";
 
 const TECHNOLOGIES = [
   {
@@ -266,21 +269,15 @@ const SaaSDevelopment = () => {
         {/* Overlay Content */}
         <div className="relative z-20 flex w-full h-screen justify-center items-center">
           <div className="w-full px-4 flex flex-col items-center gap-6">
-            <h1 className="text-2xl sm:text-4xl lg:text-6xl text-center font-extrabold text-gray-200">
+            <h1 className="text-5xl max-w-screen-xl sm:text-4xl lg:text-6xl text-center font-extrabold text-gray-200">
               Build Scalable SaaS Solutions Tailored to Your Business
             </h1>
-            <p className="text-sm sm:text-xl lg:text-2xl text-center font-bold text-gray-200">
+            <p className=" max-w-screen-xl text-2xl text-center font-bold text-gray-200">
               From concept to deployment, we create robust SaaS platforms that
               deliver results
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mt-2">
-              <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 hover:bg-blue-700 transition-colors">
-                Get a Free SaaS Consultation
-              </button>
-              <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 hover:bg-blue-700 transition-colors">
-                View Our SaaS Portfolio
-              </button>
-            </div>
+            {/* buttons */}
+            <HeroButtons />
           </div>
         </div>
       </div>
@@ -338,7 +335,7 @@ const SaaSDevelopment = () => {
             return (
               <div
                 key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition-shadow duration-300"
+                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
                   <Icon className="text-blue-600 w-14 h-14" />
@@ -375,7 +372,7 @@ const SaaSDevelopment = () => {
             return (
               <div
                 key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition-shadow duration-300"
+                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
                   <Icon className="text-blue-600 w-14 h-14" />
@@ -458,7 +455,7 @@ const SaaSDevelopment = () => {
             }
           >
             <div className="mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Target className="text-white" size={80} />
+              <PenTool className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-2 lg:mt-0 text-3xl  text-center font-bold">
@@ -500,7 +497,7 @@ const SaaSDevelopment = () => {
             }
           >
             <div className=" mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <PenTool className="text-white" size={80} />
+              <Code className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl  text-center font-bold">
@@ -542,7 +539,7 @@ const SaaSDevelopment = () => {
             }
           >
             <div className="mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Rocket className="text-white" size={80} />
+              <CheckCircle className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl text-center font-bold">
@@ -584,7 +581,7 @@ const SaaSDevelopment = () => {
             }
           >
             <div className="mt-3 lg:mt-0  flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Users className="text-white" size={80} />
+              <Rocket className="text-white" size={80} />
             </div>
             <div>
               <h3 className="mt-3 lg:mt-0 text-3xl px-3 text-center font-bold">
@@ -634,7 +631,7 @@ const SaaSDevelopment = () => {
         </div>
       </div>
       {/* Faqs */}
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-3xl mb-5 mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-gray-800 text-center mb-12">
           Frequently Asked Questions
         </h1>

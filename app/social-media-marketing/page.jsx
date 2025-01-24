@@ -61,6 +61,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import Contact from "@/components/contact-us/page";
+import HeroButtons from "@/components/HeroButtons/page";
 
 const Services = [
   {
@@ -120,22 +121,10 @@ const features = [
       "Our team understands the nuances of each social media platform, tailoring strategies to maximize engagement and reach on Facebook, Instagram, LinkedIn, TikTok, and more.",
   },
   {
-    serviceName: "Data-Driven Strategies",
-    serviceIcon: BarChart2,
-    serviceDes:
-      "Leverage advanced analytics to craft campaigns that resonate with your audience and deliver measurable results.",
-  },
-  {
     serviceName: "Creative Content Creation",
     serviceIcon: Image,
     serviceDes:
       "Develop visually appealing graphics, videos, and written content that align with your brand and captivate your audience.",
-  },
-  {
-    serviceName: "Paid Advertising Expertise",
-    serviceIcon: DollarSign,
-    serviceDes:
-      "Optimize ad campaigns with precise targeting, compelling creatives, and ongoing performance monitoring to ensure maximum ROI.",
   },
   {
     serviceName: "Engagement Optimization",
@@ -162,24 +151,6 @@ const features = [
       "Monitor online conversations about your brand and industry to stay responsive to trends and customer sentiment.",
   },
   {
-    serviceName: "Cross-Platform Integration",
-    serviceIcon: Layers,
-    serviceDes:
-      "Seamlessly integrate campaigns across multiple platforms for cohesive messaging and amplified reach.",
-  },
-  {
-    serviceName: "Community Building",
-    serviceIcon: Users,
-    serviceDes:
-      "Cultivate a loyal following by building meaningful relationships with your audience through consistent interaction and valuable content.",
-  },
-  {
-    serviceName: "A/B Testing for Campaigns",
-    serviceIcon: ToggleLeft,
-    serviceDes:
-      "Optimize performance by testing different ad creatives, captions, and targeting strategies to identify what resonates best with your audience.",
-  },
-  {
     serviceName: "Video Marketing",
     serviceIcon: Video,
     serviceDes:
@@ -190,12 +161,6 @@ const features = [
     serviceIcon: TrendingUp,
     serviceDes:
       "Stay ahead by leveraging the latest trends, challenges, and viral content to keep your brand relevant and relatable.",
-  },
-  {
-    serviceName: "Scalable Campaigns",
-    serviceIcon: ArrowUp,
-    serviceDes:
-      "Adapt campaigns to grow alongside your business, ensuring your social media strategy scales with your goals.",
   },
   {
     serviceName: "Advanced Targeting",
@@ -390,20 +355,19 @@ export default function SocialMediaMarketing() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="flex flex-col h-screen gap-5 justify-center items-center">
-        <span className="text-2xl text-gray-800 sm:text-6xl text-center font-extrabold">
-          Build Your Brand on Social Media Platforms
-        </span>
-        <span className="text-xs text-gray-800 sm:text-2xl text-center font-bold">
-          Empower your business with tailored strategies
-        </span>
-        <div className="flex flex-col gap-4 mt-5">
-          <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Start Your AI Journey
-          </button>
-          <button className="w-fit text-gray-200 font-bold text-xs sm:text-lg h-fit border-2 rounded-full p-4 bg-blue-600 ">
-            Request a Free Consultation
-          </button>
+      <div className="bg-blue-200 ">
+        <div className="max-w-screen-xl m-auto  p-5 flex flex-col sm:flex-row  h-screen gap-5 justify-center items-center">
+          <div className=" w-full flex flex-col items-center">
+            <span className="text-5xl text-gray-800 sm:text-6xl text-center font-extrabold">
+              Build Your Brand on Social Media Platforms
+            </span>
+            <span className=" text-gray-800 text-2xl text-center font-bold">
+              Empower your business with tailored strategies
+            </span>
+            {/* buttons */}
+            <HeroButtons />
+          </div>
+          <img className="w-2/4 h-96" src="/social-marketing.gif"></img>
         </div>
       </div>
       {/* Services Section */}
@@ -424,7 +388,7 @@ export default function SocialMediaMarketing() {
             return (
               <div
                 key={index}
-                className="flex flex-col items-center p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+                className="flex flex-col items-center p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 md:hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
                   <Icon className="text-blue-600 w-14 h-14" />
@@ -480,7 +444,7 @@ export default function SocialMediaMarketing() {
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
             Features
           </span>{" "}
-          of Our SEO
+          of Social Media Marketing
         </h2>
         <p className="text-xl text-center font-medium text-gray-600 mt-4">
           Your Success Is Our Priority
@@ -491,7 +455,7 @@ export default function SocialMediaMarketing() {
             return (
               <div
                 key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition-shadow duration-300"
+                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
                   <Icon className="text-blue-600 w-14 h-14" />
@@ -521,7 +485,7 @@ export default function SocialMediaMarketing() {
             return (
               <div
                 key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition-shadow duration-300"
+                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
                   <Icon className="text-blue-600 w-14 h-14" />
@@ -784,7 +748,7 @@ export default function SocialMediaMarketing() {
         </div>
       </div>
       {/* Faqs */}
-      <div className="max-w-3xl mx-auto  px-4 sm:px-6 lg:px-8">
+      <div className="max-w-3xl mx-auto mb-5  px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-gray-800 text-center mb-12">
           Frequently Asked Questions
         </h1>
