@@ -34,7 +34,6 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import Contact from "@/components/contact-us/page";
-import Link from "next/link";
 import HeroButtons from "@/components/HeroButtons/page";
 
 const Services = [
@@ -121,19 +120,19 @@ const TECHNOLOGIES = [
 ];
 const portfolioItems = [
   {
-    image: "/api/placeholder/400/400",
+    image: "/globe.svg",
     category: "UI/ UX Design",
     bgColor: "bg-violet-100",
     dotColor: "bg-violet-500",
   },
   {
-    image: "/api/placeholder/400/400",
+    image: "/globe.svg",
     category: "App Design",
     bgColor: "bg-emerald-600",
     dotColor: "bg-emerald-500",
   },
   {
-    image: "/api/placeholder/400/400",
+    image: "/globe.svg",
     category: "App Design",
     bgColor: "bg-amber-400",
     dotColor: "bg-amber-500",

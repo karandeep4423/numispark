@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import {
   Globe,
@@ -14,6 +14,7 @@ import {
   Menu,
   X,
 } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const serviceItems = [
   {
@@ -48,13 +49,13 @@ const serviceItems = [
       {
         label: "Website & Mobile App Design",
         link: "/website-&-mobile-app-design",
-        icon: <Edit /> ,
+        icon: <Edit />,
       },
       {
         label: "Social Media Post & Logo Design",
         link: "/social-media-post-&-logo-design",
         icon: <Image />,
-      }
+      },
     ],
   },
   {
@@ -65,17 +66,17 @@ const serviceItems = [
         label: "Social Media Marketing",
         link: "/social-media-marketing",
         icon: <Share />,
-      }
+      },
     ],
   },
 ];
 
 const Navbar = () => {
+  const pathname = usePathname();
   const [state, setState] = useState({
     isMenuOpen: false,
-    activeDropdown: null,
+    activeDropdown: "Services",
   });
-
   const toggleMenu = () => {
     setState((prevState) => ({
       ...prevState,
@@ -83,13 +84,15 @@ const Navbar = () => {
     }));
   };
 
+  useEffect(() => {
+    setState({ activeDropdown: "Services" });
+  }, [pathname]);
+
   const toggleDropdown = (name) => {
-    if (window.innerWidth < 1024) {
-      setState((prevState) => ({
-        ...prevState,
-        activeDropdown: prevState.activeDropdown === name ? null : name,
-      }));
-    }
+    setState((prevState) => ({
+      ...prevState,
+      activeDropdown: prevState.activeDropdown === name ? null : name,
+    }));
   };
 
   const DropdownIcon = ({ isOpen }) => (
@@ -112,7 +115,6 @@ const Navbar = () => {
 
   const renderDropdown = (name, data) => {
     const isDropdownOpen = state.activeDropdown === name;
-
     return (
       <div className="dropdown group">
         <button
@@ -127,8 +129,8 @@ const Navbar = () => {
 
         <div
           className={`${
-            isDropdownOpen ? "block" : "hidden"
-          } grid-flow-col xl:left-56 2xl:right-56  2xl:left-auto lg:left-32 lg:absolute lg:invisible lg:group-hover:visible z-10 h-fit rounded-xl bg-blue-50 py-5 lg:py-10 divide-gray-300 lg:divide-x lg:grid items-start justify-start`}
+            isDropdownOpen ? "block lg:group-hover:visible" : "hidden"
+          } grid-flow-col xl:left-56 2xl:right-56  2xl:left-auto lg:left-32 lg:absolute lg:invisible  z-10 h-fit rounded-xl bg-blue-50 py-5 lg:py-10 divide-gray-300 lg:divide-x lg:grid items-start justify-start`}
         >
           {data.map(({ category, items }, categoryIndex) => (
             <div key={`category-${categoryIndex}`} className="category-section">
@@ -144,7 +146,13 @@ const Navbar = () => {
                         {icon}
                       </span>
                     </div>
-                    <Link href={link} onClick={toggleMenu}>
+                    <Link
+                      href={link}
+                      onClick={() => {
+                        toggleMenu();
+                        toggleDropdown(name);
+                      }}
+                    >
                       {label}
                     </Link>
                   </div>
@@ -160,14 +168,14 @@ const Navbar = () => {
 
   return (
     <div className=" bg-blue-200">
-      <nav className="z-50 flex justify-between gap-5 h-20 px-4 xl:px-0 max-w-screen-xl m-auto">
+      <nav className="z-30 flex justify-between gap-5 h-20 px-4 xl:px-0 max-w-screen-xl m-auto">
         <div className="flex items-center">
           <Link href="/">
             <p className="w-44 h-8 font-extrabold text-xl">Digital Agency</p>
           </Link>
         </div>
 
-        <div className="flex items-center lg:hidden">
+        <div className="z-50 flex items-center lg:hidden">
           <button onClick={toggleMenu} aria-label="Toggle menu">
             {state.isMenuOpen ? (
               <X className="w-6 h-6 text-black" aria-hidden="true" />
@@ -181,7 +189,7 @@ const Navbar = () => {
           // Mobile Responsive
           className={` lg:space-x-5 gap-y-4 text-lg absolute justify-between flex flex-col items-center lg:flex-row z-50 lg:static lg:w-auto lg:py-0 pb-6 w-full left-0 ${
             state.isMenuOpen
-              ? "top-[64px] overflow-scroll lg:overflow-hidden bg-blue-200  pt-6"
+              ? "top-[64px] z-50 overflow-scroll lg:overflow-hidden bg-blue-200  pt-6"
               : "hidden lg:flex"
           }`}
         >
