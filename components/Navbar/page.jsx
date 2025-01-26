@@ -130,7 +130,7 @@ const Navbar = () => {
         <div
           className={`${
             isDropdownOpen ? "block lg:group-hover:visible" : "hidden"
-          } grid-flow-col xl:left-56 2xl:right-56  2xl:left-auto lg:left-32 lg:absolute lg:invisible  z-10 h-fit rounded-xl bg-blue-50 py-5 lg:py-10 divide-gray-300 lg:divide-x lg:grid items-start justify-start`}
+          } grid-flow-col xl:left-56 2xl:right-56  2xl:left-auto lg:left-32 lg:absolute lg:invisible  z-50 h-fit rounded-xl bg-[rgba(191,219,254,0.9)] border-blue-600 border-2 text-blue-600 py-5 lg:py-10 divide-gray-300 lg:divide-x lg:grid items-start justify-start`}
         >
           {data.map(({ category, items }, categoryIndex) => (
             <div key={`category-${categoryIndex}`} className="category-section">
@@ -141,7 +141,7 @@ const Navbar = () => {
                   key={`item-${itemIndex}-${label}`}
                 >
                   <div className="flex gap-4 py-2 hover:font-bold items-center">
-                    <div className="bg-blue-200 p-2.5 rounded-2xl">
+                    <div className=" border-2 border-blue-600 p-2.5 rounded-2xl">
                       <span className="w-8 font-extrabold text-blue-600 h-8">
                         {icon}
                       </span>
@@ -161,14 +161,14 @@ const Navbar = () => {
             </div>
           ))}
         </div>
-        <div className="invisible pl-6 lg:group-hover:visible absolute rounded-sm before:-top-2 before:absolute before:h-4 before:w-4 before:-rotate-45 before:transform before:border-blue-50 before:bg-blue-50"></div>
+        <div className="invisible pl-6 lg:group-hover:visible absolute rounded-sm before:-top-2 before:absolute before:h-4 before:w-4 before:-rotate-45 before:transform before:border-blue-600 before:border-t-2 before:border-r-2 before:bg-blue-200"></div>
       </div>
     );
   };
 
   return (
-    <div className=" bg-blue-200">
-      <nav className="z-30 flex justify-between gap-5 h-20 px-4 xl:px-0 max-w-screen-xl m-auto">
+    <div className="bg-blue-200">
+      <nav className="z-30  flex justify-between gap-5 h-20 px-4 xl:px-0 max-w-screen-xl m-auto">
         <div className="flex items-center">
           <Link href="/">
             <p className="w-44 h-8 font-extrabold text-xl">Digital Agency</p>
