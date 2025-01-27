@@ -1,10 +1,7 @@
 "use client";
-import { useInView } from "react-intersection-observer";
 import {
   Users,
   Smile,
-  PlusCircle,
-  MinusCircle,
   ArrowUpRight,
   TrendingUp,
   MessageCircle,
@@ -21,10 +18,41 @@ import {
   Target,
   Rocket,
 } from "lucide-react";
-import { useState, useEffect } from "react";
 import Contact from "@/components/contact-us/page";
-import Link from "next/link";
-import HeroButtons from "@/components/HeroButtons/page";
+import FAQs from "@/components/Faqs/page";
+import Technologies from "@/components/Technologies/page";
+import HowAgencyWorks from "@/components/Process/page";
+import Hero from "@/components/HomeHero/page";
+const steps = [
+  {
+    icon: <Brain className="text-white" size={80} />,
+    title: "Understanding Your Vision",
+    description: "We collaborate closely to understand your objectives, challenges, and goals, ensuring a clear path forward for your project. Our focus is to align with your vision right from the start."
+  },
+  {
+    icon: <Target className="text-white" size={80} />,
+    title: "Strategic Planning",
+    description:"Using insights from our discussions, we craft a detailed strategy that outlines actionable steps. Our tailored approach ensures measurable success for your project."
+  },
+  {
+    icon: <Code className="text-white" size={80} />,
+    title: "Design & Development",
+    description:"Our creative and technical teams work together to bring your ideas to life. We deliver visually stunning designs paired with high-performing development."
+  },
+  {
+    icon: <Rocket className="text-white" size={80} />,
+    title: "Launch & Deployment",
+    description:
+      "After rigorous testing, we launch your project with precision. Our seamless deployment ensures that your solution is ready to perform flawlessly.",
+  },
+  {
+    icon: <RefreshCw className="text-white" size={80} />,
+    title: "Ongoing Support",
+    description:
+      "We provide post-launch support to ensure your project stays ahead of the curve. Our team is always here to assist and innovate further.",
+  },
+];
+
 const Services = [
   {
     serviceName: "Web Development",
@@ -268,143 +296,11 @@ const faqData = [
 ];
 
 export default function Home() {
-  const [openIndex, setOpenIndex] = useState(null);
-  const [icons, setIcons] = useState([]);
-
-  useEffect(() => {
-    // Initialize icons with random positions
-    const initialIcons = TECHNOLOGIES.map((tech, index) => ({
-      ...tech,
-      id: index,
-      x: Math.random() * 100,
-      y: Math.random() * 100,
-      speedX: (Math.random() - 0.5) * 0.1,
-      speedY: (Math.random() - 0.5) * 0.1,
-      rotation: Math.random() * 360,
-    }));
-    setIcons(initialIcons);
-
-    const moveIcons = () => {
-      setIcons((prevIcons) =>
-        prevIcons.map((icon) => {
-          let newX = icon.x + icon.speedX;
-          let newY = icon.y + icon.speedY;
-
-          // Bounce off edges
-          if (newX < 0 || newX > 100) icon.speedX *= -1;
-          if (newY < 0 || newY > 100) icon.speedY *= -1;
-
-          return {
-            ...icon,
-            x: newX < 0 ? 0 : newX > 100 ? 100 : newX,
-            y: newY < 0 ? 0 : newY > 100 ? 100 : newY,
-            rotation: (icon.rotation + 0.2) % 360,
-          };
-        })
-      );
-    };
-
-    const animationInterval = setInterval(moveIcons, 50);
-    return () => clearInterval(animationInterval);
-  }, []);
-
-  const { ref: first, inView: firstSectionIsVisible } = useInView({
-    rootMargin: "-200px 0px",
-    triggerOnce: "true",
-    delay: 200,
-  });
-  const { ref: second, inView: secondSectionIsVisible } = useInView({
-    rootMargin: "-200px 0px",
-    triggerOnce: "true",
-    delay: 200,
-  });
-  const { ref: third, inView: thirdSectionIsVisible } = useInView({
-    rootMargin: "-200px 0px",
-    triggerOnce: "true",
-    delay: 200,
-  });
-  const { ref: fourth, inView: fourthSectionIsVisible } = useInView({
-    rootMargin: "-200px 0px",
-    triggerOnce: "true",
-    delay: 200,
-  });
-  const { ref: fifth, inView: fifthSectionIsVisible } = useInView({
-    rootMargin: "-200px 0px",
-    triggerOnce: "true",
-    delay: 200,
-  });
-
-  const FAQItem = ({ question, children, isOpen, onClick }) => {
-    return (
-      <div className="border-l-4 border-blue-300 bg-white rounded-lg shadow-sm mb-4 overflow-hidden">
-        <button
-          onClick={onClick}
-          className="w-full p-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
-        >
-          <span className="text-gray-700 text-lg font-medium">{question}</span>
-          {isOpen ? (
-            <MinusCircle className="text-blue-600 w-6 h-6 flex-shrink-0" />
-          ) : (
-            <PlusCircle className="text-blue-600 w-6 h-6 flex-shrink-0" />
-          )}
-        </button>
-        <div
-          className={`overflow-hidden transition-all duration-200 ${
-            isOpen ? "max-h-96 p-4" : "max-h-0"
-          }`}
-        >
-          <div className="text-gray-600">{children}</div>
-        </div>
-      </div>
-    );
-  };
 
   return (
     <div>
       {/* Hero Section */}
-      <div className="relative h-screen overflow-hidden bg-blue-200 ">
-        {/* Floating icons background */}
-        <div className="absolute inset-0 opacity-60">
-          {icons.map((icon) => (
-            <div
-              key={icon.id}
-              className="absolute transition-transform duration-1000 ease-linear"
-              style={{
-                left: `${icon.x}%`,
-                top: `${icon.y}%`,
-                transform: `rotate(${icon.rotation}deg)`,
-                width: "48px",
-                height: "48px",
-              }}
-            >
-              <img
-                src={icon.logo}
-                alt={icon.name}
-                className="w-12 h-12 object-contain"
-              />
-            </div>
-          ))}
-        </div>
-
-        {/* Semi-transparent overlay */}
-        <div className="absolute inset-0  bg-opacity-60" />
-
-        {/* Hero content */}
-        <div className="relative z-10 flex flex-col h-screen gap-5 justify-center items-center">
-          <span className=" text-gray-800 text-4xl text-center font-bold">
-            Empowering Your Business with
-          </span>
-
-          <span className=" text-gray-800 text-5xl sm:text-6xl text-center font-extrabold">
-            World-Class Digital Solutions
-          </span>
-
-          <span className="text-md text-gray-800 sm:text-2xl text-center font-bold">
-            Web Development | Mobile Apps | UI/UX Design | Digital Marketing
-          </span>
-          <HeroButtons></HeroButtons>
-        </div>
-      </div>
+      <Hero technologies={TECHNOLOGIES}/>
       {/* Services Section */}
       <div className="py-16 bg-gray-50">
         <h2
@@ -443,246 +339,9 @@ export default function Home() {
         </div>
       </div>
       {/* Technologies Section */}
-      <div className="pb-16 bg-gray-50">
-        <h2 className="text-4xl text-center font-bold text-gray-800">
-          <span className="text-blue-600 p-2.5 rounded-2xl bg-blue-200">
-            Technologies
-          </span>
-          We Excel In
-        </h2>
-        <p className="text-xl text-center font-medium text-gray-600 mt-4">
-          The Backbone of Our High Quality Solutions
-        </p>
-        <div className="grid grid-cols-2 md:grid-cols-4  container mt-10 mx-auto px-4">
-          {TECHNOLOGIES.map((tech, index) => (
-            <div
-              key={`${tech.name}-${index}`}
-              className="shadow-[5px_5px_0px_0px_rgb(147,197,253)] p-4 md:p-8"
-            >
-              <div className=" flex flex-col items-center justify-center h-24 md:h-16">
-                <div className="w-14 h-14 md:w-16 md:h-16 mb-2">
-                  <img
-                    src={tech.logo}
-                    alt={`${tech.name} icon`}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <p className="text-lg md:text-xl text-center font-light">
-                  {tech.name}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <Technologies technologies={TECHNOLOGIES} />
       {/* Process  */}
-      <div className="bg-black  text-white">
-        <div className="flex items-center justify-center">
-          <h2 className=" relative mt-16 text-center text-5xl font-bold">
-            How agency works
-          </h2>
-          <div className="bg-sky-400 mt-16 absolute   mix-blend-multiply filter blur-2xl h-16 w-56 "></div>
-        </div>
-        <div className="flex text-lg xl:text-xl max-w-screen-xl m-auto  justify-center items-center mt-10 flex-col">
-          <div>
-            <span className=" text-black absolute pt-1 -mt-5 -ml-5 text-center text-xl bg-white z-10  rounded-full h-10 w-10">
-              {" "}
-              1
-            </span>
-          </div>
-          <div
-            ref={first}
-            className={
-              firstSectionIsVisible
-                ? " rounded-xl lg:p-6 p-3  opacity-100 w-10/12 relative  flex flex-col lg:flex-row justify-center items-center  border-2 border-white"
-                : "rounded-xl lg:p-6 p-3  opacity-50 w-10/12 relative  flex flex-col lg:flex-row justify-center items-center  border-2 border-white"
-            }
-          >
-            <div className="mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Brain className="text-white" size={80} />
-            </div>
-            <div>
-              <h3 className="mt-2 lg:mt-0 text-3xl px-3 text-center font-bold">
-                Understanding Your Vision
-              </h3>
-              <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                We collaborate closely to understand your objectives,
-                challenges, and goals, ensuring a clear path forward for your
-                project. Our focus is to align with your vision right from the
-                start.
-              </p>
-            </div>
-          </div>
-          <div
-            ref={second}
-            className={
-              secondSectionIsVisible
-                ? "w-1 h-24 relative opacity-100  bg-white"
-                : "w-1 h-24 relative opacity-50  bg-white"
-            }
-          ></div>
-          <div className="z-40  bg-white">
-            <span
-              ref={second}
-              className={
-                secondSectionIsVisible
-                  ? "z-40 opacity-100 absolute pt-1 -mt-5 -ml-5 text-center text-xl bg-white  border-2 border-white text-black rounded-full h-10 w-10 z-100"
-                  : "z-40 opacity-80 absolute pt-1 -mt-5 -ml-5 text-center text-xl bg-white  border-2 border-white text-black rounded-full h-10 w-10"
-              }
-            >
-              2
-            </span>
-          </div>
-          <div
-            ref={second}
-            className={
-              secondSectionIsVisible
-                ? "rounded-xl p-3 lg:p-6 opacity-100 w-10/12 relative  flex flex-col lg:flex-row justify-center items-center  border-2 border-white"
-                : "rounded-xl p-3 lg:p-6 opacity-50 w-10/12 relative  flex flex-col lg:flex-row justify-center items-center border-2 border-white"
-            }
-          >
-            <div className="mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Target className="text-white" size={80} />
-            </div>
-            <div>
-              <h3 className="mt-2 lg:mt-0 text-3xl  text-center font-bold">
-                Strategic Planning
-              </h3>
-              <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                Using insights from our discussions, we craft a detailed
-                strategy that outlines actionable steps. Our tailored approach
-                ensures measurable success for your project.
-              </p>
-            </div>
-          </div>
-          <div
-            ref={third}
-            className={
-              thirdSectionIsVisible
-                ? "w-1 h-24 relative opacity-100  bg-white"
-                : "w-1 h-24 relative opacity-50  bg-white"
-            }
-          ></div>
-          <div className="h-0 w-0 z-50 	  bg-white">
-            <span
-              ref={third}
-              className={
-                thirdSectionIsVisible
-                  ? "opacity-100 absolute pt-1 -mt-5 -ml-5 text-center text-xl bg-white  border-2 border-white text-black rounded-full h-10 w-10 "
-                  : "	 opacity-80 absolute -mt-5 pt-1 -ml-5 text-center text-xl bg-white  border-2 border-white text-black rounded-full h-10 w-10"
-              }
-            >
-              3
-            </span>
-          </div>
-          <div
-            ref={third}
-            className={
-              thirdSectionIsVisible
-                ? "rounded-xl p-3 lg:p-6 opacity-100 w-10/12 relative  flex flex-col lg:flex-row justify-center items-center  border-2 border-white"
-                : "rounded-xl p-3 lg:p-6 opacity-50 w-10/12 relative  flex flex-col lg:flex-row justify-center items-center  border-2 border-white"
-            }
-          >
-            <div className=" mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Code className="text-white" size={80} />
-            </div>
-            <div>
-              <h3 className="mt-3 lg:mt-0 text-3xl  text-center font-bold">
-                Design & Development
-              </h3>
-              <p className=" ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                Our creative and technical teams work together to bring your
-                ideas to life. We deliver visually stunning designs paired with
-                high-performing development.
-              </p>
-            </div>
-          </div>
-          <div
-            ref={fourth}
-            className={
-              fourthSectionIsVisible
-                ? "w-1 h-24 relative opacity-100  bg-white"
-                : "w-1 h-24 relative opacity-50  bg-white"
-            }
-          ></div>
-          <div className="h-0 w-0 z-50 	  bg-white">
-            <span
-              ref={fourth}
-              className={
-                fourthSectionIsVisible
-                  ? "opacity-100 absolute pt-1 -mt-5 -ml-5 text-center text-xl bg-white  border-2 border-white text-black rounded-full h-10 w-10 "
-                  : "	 opacity-80 absolute pt-1 -mt-5 -ml-5 text-center text-xl bg-white  border-2 border-white text-black rounded-full h-10 w-10"
-              }
-            >
-              4
-            </span>
-          </div>
-          <div
-            ref={fourth}
-            className={
-              fourthSectionIsVisible
-                ? "rounded-xl p-3 lg:p-6 opacity-100 w-10/12 relative  flex flex-col lg:flex-row justify-center items-center h-fit border-2 border-white"
-                : "rounded-xl p-3 lg:p-6 opacity-50 w-10/12 relative  flex flex-col lg:flex-row justify-center items-center h-fit border-2 border-white"
-            }
-          >
-            <div className="mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Rocket className="text-white" size={80} />
-            </div>
-            <div>
-              <h3 className="mt-3 lg:mt-0 text-3xl text-center font-bold">
-                Launch & Deployment
-              </h3>
-              <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                After rigorous testing, we launch your project with precision.
-                Our seamless deployment ensures that your solution is ready to
-                perform flawlessly.
-              </p>
-            </div>
-          </div>
-          <div
-            ref={fifth}
-            className={
-              fifthSectionIsVisible
-                ? "w-1 h-24 relative opacity-100  bg-white"
-                : "w-1 h-24 relative opacity-50  bg-white"
-            }
-          ></div>
-          <div className="h-0 w-0 z-50 	  bg-white">
-            <span
-              ref={fifth}
-              className={
-                fifthSectionIsVisible
-                  ? "opacity-100 absolute pt-1 -mt-5 -ml-5 text-center text-xl bg-white  border-2 border-white text-black rounded-full h-10 w-10 "
-                  : "	 opacity-80 absolute pt-1 -mt-5 -ml-5 text-center text-xl bg-white  border-2 border-white text-black rounded-full h-10 w-10"
-              }
-            >
-              5
-            </span>
-          </div>
-          <div
-            ref={fifth}
-            className={
-              fifthSectionIsVisible
-                ? "rounded-xl p-3 lg:p-6 opacity-100 mb-16 w-10/12 relative  flex flex-col lg:flex-row justify-center items-center  h-fit border-2 border-white"
-                : "rounded-xl p-3 lg:p-6 opacity-50 w-10/12 relative mb-16 flex flex-col lg:flex-row justify-center items-center h-fit border-2 border-white"
-            }
-          >
-            <div className="mt-3 lg:mt-0  flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <RefreshCw className="text-white" size={80} />
-            </div>
-            <div>
-              <h3 className="mt-3 lg:mt-0 text-3xl px-3 text-center font-bold">
-                Ongoing Support
-              </h3>
-              <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                We provide post-launch support to ensure your project stays
-                ahead of the curve. Our team is always here to assist and
-                innovate further.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HowAgencyWorks steps={steps} />
       {/* Why partner with us */}
       <div className="py-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
@@ -760,23 +419,7 @@ export default function Home() {
         </div>
       </div>
       {/* Faqs */}
-      <div className="max-w-3xl mb-5 mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-gray-800 text-center mb-12">
-          Frequently Asked Questions
-        </h1>
-        <div className="space-y-6">
-          {faqData.map((faq, index) => (
-            <FAQItem
-              key={index}
-              question={faq.question}
-              isOpen={openIndex === index}
-              onClick={() => setOpenIndex(openIndex === index ? null : index)}
-            >
-              {faq.answer}
-            </FAQItem>
-          ))}
-        </div>
-      </div>
+      <FAQs faqData={faqData} />
       {/* Contact us */}
       <Contact />
     </div>

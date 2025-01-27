@@ -6,7 +6,7 @@ import { Instagram, Facebook, Mail, MessageCircle } from "lucide-react";
 const Footer = () => {
   return (
     <div>
-      <div className="bg-blue-300 text-lg xl:text-xl text-left rounded-t-3xl">
+      <div className="bg-blue-200 text-lg xl:text-xl text-left rounded-t-3xl">
         <div className="-mt-4  max-w-screen-xl m-auto place-items-center sm:place-items-start grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  space-x-5 px-5 ">
           {/* Brand Section */}
           <div className="flex flex-col items-center space-y-4 pt-10 w-64">

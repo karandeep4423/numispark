@@ -1,6 +1,5 @@
 "use client";
-import React, { useState } from "react";
-import { useInView } from "react-intersection-observer";
+import React from "react";
 import {
   TrendingUp,
   CloudUpload,
@@ -15,12 +14,40 @@ import {
   Zap,
   RefreshCw,
   Shield,
+  ArrowUpRight,
 } from "lucide-react";
-import { PlusCircle, MinusCircle, ArrowUpRight } from "lucide-react";
 import Contact from "@/components/contact-us/page";
-import Link from "next/link";
 import HeroButtons from "@/components/HeroButtons/page";
-
+import FAQs from "@/components/Faqs/page";
+import Technologies from "@/components/Technologies/page";
+import HowAgencyWorks from "@/components/Process/page";
+const steps = [
+  {
+    icon: <BookOpen className="text-white" size={80} />,
+    title: "Requirement Analysis",
+    description: "Our team begins by understanding your mobile app's objectives, target audience, and key features. This step ensures a shared vision and sets the foundation for a successful app."
+  },
+  {
+    icon: <Layout className="text-white" size={80} />,
+    title: "Wireframing & Prototyping",
+    description: "We create detailed wireframes and interactive prototypes to visualize the app's flow and user experience. This stage allows you to refine your ideas before development begins."
+  },
+  {
+    icon: <Code className="text-white" size={80} />,
+    title: "Development",
+    description: "Our developers use cutting-edge technologies and frameworks to build scalable, responsive, and high-performance mobile apps tailored to your needs."
+  },
+  {
+    icon: <CheckCircle className="text-white" size={80} />,
+    title: "Testing",
+    description: "We rigorously test your mobile app for functionality, performance, and compatibility across devices to ensure a seamless user experience and eliminate any bugs."
+  },
+  {
+    icon: <CloudUpload className="text-white" size={80} />,
+    title: "App Store Deployment",
+    description: "Once your app is polished and tested, we handle its launch on app stores. We ensure compliance with platform guidelines and provide support to optimize your app's visibility."
+  }
+];
 const TECHNOLOGIES = [
   {
     name: "React Native",
@@ -155,58 +182,6 @@ const portfolioItems = [
 ];
 
 const MobileDevelopment = () => {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const { ref: first, inView: firstSectionIsVisible } = useInView({
-    rootMargin: "-200px 0px",
-    triggerOnce: "true",
-    delay: 200,
-  });
-  const { ref: second, inView: secondSectionIsVisible } = useInView({
-    rootMargin: "-200px 0px",
-    triggerOnce: "true",
-    delay: 200,
-  });
-  const { ref: third, inView: thirdSectionIsVisible } = useInView({
-    rootMargin: "-200px 0px",
-    triggerOnce: "true",
-    delay: 200,
-  });
-  const { ref: fourth, inView: fourthSectionIsVisible } = useInView({
-    rootMargin: "-200px 0px",
-    triggerOnce: "true",
-    delay: 200,
-  });
-  const { ref: fifth, inView: fifthSectionIsVisible } = useInView({
-    rootMargin: "-200px 0px",
-    triggerOnce: "true",
-    delay: 200,
-  });
-
-  const FAQItem = ({ question, children, isOpen, onClick }) => {
-    return (
-      <div className="border-l-4 border-blue-300 bg-white rounded-lg shadow-sm mb-4 overflow-hidden">
-        <button
-          onClick={onClick}
-          className="w-full p-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
-        >
-          <span className="text-gray-700 text-lg font-medium">{question}</span>
-          {isOpen ? (
-            <MinusCircle className="text-blue-600 w-6 h-6 flex-shrink-0" />
-          ) : (
-            <PlusCircle className="text-blue-600 w-6 h-6 flex-shrink-0" />
-          )}
-        </button>
-        <div
-          className={`overflow-hidden transition-all duration-200 ${
-            isOpen ? "max-h-96 p-4" : "max-h-0"
-          }`}
-        >
-          <div className="text-gray-600">{children}</div>
-        </div>
-      </div>
-    );
-  };
 
   return (
     <div>
@@ -230,38 +205,7 @@ const MobileDevelopment = () => {
         <HeroButtons />
       </div>
       {/* Technologies Section */}
-      <div className="py-16 bg-gray-50">
-        <h2 className="text-4xl text-center font-bold text-gray-800">
-          <span className="text-blue-600 m-1 p-2.5 rounded-2xl bg-blue-200">
-            Technologies
-          </span>
-          We Excel In
-        </h2>
-        <p className="text-xl px-2 text-center font-medium text-gray-600 mt-4">
-          The Backbone of Our High Quality Solutions
-        </p>
-        <div className="grid grid-cols-2 md:grid-cols-4  container mt-10 mx-auto px-4">
-          {TECHNOLOGIES.map((tech, index) => (
-            <div
-              key={`${tech.name}-${index}`}
-              className="shadow-[5px_5px_0px_0px_rgb(147,197,253)] p-4 md:p-8"
-            >
-              <div className=" flex flex-col items-center justify-center h-24 md:h-16">
-                <div className="w-14 h-14 md:w-16 md:h-16 mb-2">
-                  <img
-                    src={tech.logo}
-                    alt={`${tech.name} icon`}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <p className="text-lg md:text-xl text-center font-light">
-                  {tech.name}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <Technologies technologies={TECHNOLOGIES} />
       {/* Key Features */}
       <div className="pb-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
@@ -336,212 +280,7 @@ const MobileDevelopment = () => {
         </div>
       </div>
       {/* Process  */}
-      <div className="bg-black  text-white">
-        <div className="flex items-center justify-center">
-          <h2 className=" relative mt-16 text-center text-5xl font-bold">
-            Development Process
-          </h2>
-          <div className="bg-blue-600 mt-16 absolute   mix-blend-multiply filter blur-2xl h-16 w-56 "></div>
-        </div>
-        <div className="flex text-lg xl:text-xl max-w-screen-xl m-auto  justify-center items-center mt-10 flex-col">
-          <div>
-            <span className=" text-black absolute pt-1 -mt-5 -ml-5 text-center text-xl bg-white z-10  rounded-full h-10 w-10">
-              {" "}
-              1
-            </span>
-          </div>
-          <div
-            ref={first}
-            className={
-              firstSectionIsVisible
-                ? " rounded-xl lg:p-6 p-3  opacity-100 w-10/12 relative  flex flex-col lg:flex-row justify-center items-center  border-2 border-white"
-                : "rounded-xl lg:p-6 p-3  opacity-50 w-10/12 relative  flex flex-col lg:flex-row justify-center items-center  border-2 border-white"
-            }
-          >
-            <div className="mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <BookOpen className="text-white" size={80} />
-            </div>
-            <div>
-              <h3 className="mt-2 lg:mt-0 text-3xl px-3 text-center font-bold">
-                Requirement Analysis
-              </h3>
-              <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                Our team begins by understanding your mobile app's objectives,
-                target audience, and key features. This step ensures a shared
-                vision and sets the foundation for a successful app.
-              </p>
-            </div>
-          </div>
-          <div
-            ref={second}
-            className={
-              secondSectionIsVisible
-                ? "w-1 h-24 relative opacity-100  bg-white"
-                : "w-1 h-24 relative opacity-50  bg-white"
-            }
-          ></div>
-          <div className="z-40  bg-white">
-            <span
-              ref={second}
-              className={
-                secondSectionIsVisible
-                  ? "z-40 opacity-100 absolute pt-1 -mt-5 -ml-5 text-center text-xl bg-white  border-2 border-white text-black rounded-full h-10 w-10 z-100"
-                  : "z-40 opacity-80 absolute pt-1 -mt-5 -ml-5 text-center text-xl bg-white  border-2 border-white text-black rounded-full h-10 w-10"
-              }
-            >
-              2
-            </span>
-          </div>
-          <div
-            ref={second}
-            className={
-              secondSectionIsVisible
-                ? "rounded-xl p-3 lg:p-6 opacity-100 w-10/12 relative  flex flex-col lg:flex-row justify-center items-center  border-2 border-white"
-                : "rounded-xl p-3 lg:p-6 opacity-50 w-10/12 relative  flex flex-col lg:flex-row justify-center items-center border-2 border-white"
-            }
-          >
-            <div className="mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Layout className="text-white" size={80} />
-            </div>
-            <div>
-              <h3 className="mt-2 lg:mt-0 text-3xl  text-center font-bold">
-                Wireframing & Prototyping
-              </h3>
-              <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                We create detailed wireframes and interactive prototypes to
-                visualize the app’s flow and user experience. This stage allows
-                you to refine your ideas before development begins.
-              </p>
-            </div>
-          </div>
-          <div
-            ref={third}
-            className={
-              thirdSectionIsVisible
-                ? "w-1 h-24 relative opacity-100  bg-white"
-                : "w-1 h-24 relative opacity-50  bg-white"
-            }
-          ></div>
-          <div className="h-0 w-0 z-50 	  bg-white">
-            <span
-              ref={third}
-              className={
-                thirdSectionIsVisible
-                  ? "opacity-100 absolute pt-1 -mt-5 -ml-5 text-center text-xl bg-white  border-2 border-white text-black rounded-full h-10 w-10 "
-                  : "	 opacity-80 absolute -mt-5 pt-1 -ml-5 text-center text-xl bg-white  border-2 border-white text-black rounded-full h-10 w-10"
-              }
-            >
-              3
-            </span>
-          </div>
-          <div
-            ref={third}
-            className={
-              thirdSectionIsVisible
-                ? "rounded-xl p-3 lg:p-6 opacity-100 w-10/12 relative  flex flex-col lg:flex-row justify-center items-center  border-2 border-white"
-                : "rounded-xl p-3 lg:p-6 opacity-50 w-10/12 relative  flex flex-col lg:flex-row justify-center items-center  border-2 border-white"
-            }
-          >
-            <div className=" mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <Code className="text-white" size={80} />
-            </div>
-            <div>
-              <h3 className="mt-3 lg:mt-0 text-3xl  text-center font-bold">
-                Development
-              </h3>
-              <p className=" ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                Our developers use cutting-edge technologies and frameworks to
-                build scalable, responsive, and high-performance mobile apps
-                tailored to your needs.
-              </p>
-            </div>
-          </div>
-          <div
-            ref={fourth}
-            className={
-              fourthSectionIsVisible
-                ? "w-1 h-24 relative opacity-100  bg-white"
-                : "w-1 h-24 relative opacity-50  bg-white"
-            }
-          ></div>
-          <div className="h-0 w-0 z-50 	  bg-white">
-            <span
-              ref={fourth}
-              className={
-                fourthSectionIsVisible
-                  ? "opacity-100 absolute pt-1 -mt-5 -ml-5 text-center text-xl bg-white  border-2 border-white text-black rounded-full h-10 w-10 "
-                  : "	 opacity-80 absolute pt-1 -mt-5 -ml-5 text-center text-xl bg-white  border-2 border-white text-black rounded-full h-10 w-10"
-              }
-            >
-              4
-            </span>
-          </div>
-          <div
-            ref={fourth}
-            className={
-              fourthSectionIsVisible
-                ? "rounded-xl p-3 lg:p-6 opacity-100 w-10/12 relative  flex flex-col lg:flex-row justify-center items-center h-fit border-2 border-white"
-                : "rounded-xl p-3 lg:p-6 opacity-50 w-10/12 relative  flex flex-col lg:flex-row justify-center items-center h-fit border-2 border-white"
-            }
-          >
-            <div className="mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <CheckCircle className="text-white" size={80} />
-            </div>
-            <div>
-              <h3 className="mt-3 lg:mt-0 text-3xl text-center font-bold">
-                Testing
-              </h3>
-              <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                We rigorously test your mobile app for functionality,
-                performance, and compatibility across devices to ensure a
-                seamless user experience and eliminate any bugs.
-              </p>
-            </div>
-          </div>
-          <div
-            ref={fifth}
-            className={
-              fifthSectionIsVisible
-                ? "w-1 h-24 relative opacity-100  bg-white"
-                : "w-1 h-24 relative opacity-50  bg-white"
-            }
-          ></div>
-          <div className="h-0 w-0 z-50 	  bg-white">
-            <span
-              ref={fifth}
-              className={
-                fifthSectionIsVisible
-                  ? "opacity-100 absolute pt-1 -mt-5 -ml-5 text-center text-xl bg-white  border-2 border-white text-black rounded-full h-10 w-10 "
-                  : "	 opacity-80 absolute pt-1 -mt-5 -ml-5 text-center text-xl bg-white  border-2 border-white text-black rounded-full h-10 w-10"
-              }
-            >
-              5
-            </span>
-          </div>
-          <div
-            ref={fifth}
-            className={
-              fifthSectionIsVisible
-                ? "rounded-xl p-3 lg:p-6 opacity-100 mb-16 w-10/12 relative  flex flex-col lg:flex-row justify-center items-center  h-fit border-2 border-white"
-                : "rounded-xl p-3 lg:p-6 opacity-50 w-10/12 relative mb-16 flex flex-col lg:flex-row justify-center items-center h-fit border-2 border-white"
-            }
-          >
-            <div className="mt-3 lg:mt-0  flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
-              <CloudUpload className="text-white" size={80} />
-            </div>
-            <div>
-              <h3 className="mt-3 lg:mt-0 text-3xl px-3 text-center font-bold">
-                App Store Deployment
-              </h3>
-              <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                Once your app is polished and tested, we handle its launch on
-                app stores. We ensure compliance with platform guidelines and
-                provide support to optimize your app’s visibility.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HowAgencyWorks steps={steps} />
       {/* Our recent works */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         <h2 className="text-4xl text-center font-bold text-gray-800">
@@ -577,23 +316,7 @@ const MobileDevelopment = () => {
         </div>
       </div>
       {/* Faqs */}
-      <div className="max-w-3xl mb-5 mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-gray-800 text-center mb-12">
-          Frequently Asked Questions
-        </h1>
-        <div className="space-y-6">
-          {faqData.map((faq, index) => (
-            <FAQItem
-              key={index}
-              question={faq.question}
-              isOpen={openIndex === index}
-              onClick={() => setOpenIndex(openIndex === index ? null : index)}
-            >
-              {faq.answer}
-            </FAQItem>
-          ))}
-        </div>
-      </div>
+      <FAQs faqData={faqData} />
       {/* Contact us */}
       <Contact />
     </div>
