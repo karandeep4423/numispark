@@ -1,6 +1,9 @@
 import { useInView } from "react-intersection-observer";
+import { useTranslation } from "react-i18next";
 
 const HowAgencyWorks = ({ steps }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-black text-white">
       <div className="flex items-center justify-center">
@@ -16,7 +19,7 @@ const HowAgencyWorks = ({ steps }) => {
             triggerOnce: true,
             delay: 200,
           });
-
+          const key = `process.steps.${step.translationKey}`;
           return (
             <div key={index} className="w-full flex flex-col items-center">
               {/* Step Number */}
@@ -43,10 +46,10 @@ const HowAgencyWorks = ({ steps }) => {
                 </div>
                 <div>
                   <h3 className="mt-3 lg:mt-0 text-3xl px-3 text-center font-bold">
-                    {step.title}
+                  {t(`${key}.title`)}
                   </h3>
                   <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                    {step.description}
+                  {t(`${key}.description`)}
                   </p>
                 </div>
               </div>

@@ -23,118 +23,8 @@ import FAQs from "@/components/Faqs/page";
 import Technologies from "@/components/Technologies/page";
 import HowAgencyWorks from "@/components/Process/page";
 import Hero from "@/components/HomeHero/page";
-const steps = [
-  {
-    icon: <Brain className="text-white" size={80} />,
-    title: "Understanding Your Vision",
-    description: "We collaborate closely to understand your objectives, challenges, and goals, ensuring a clear path forward for your project. Our focus is to align with your vision right from the start."
-  },
-  {
-    icon: <Target className="text-white" size={80} />,
-    title: "Strategic Planning",
-    description:"Using insights from our discussions, we craft a detailed strategy that outlines actionable steps. Our tailored approach ensures measurable success for your project."
-  },
-  {
-    icon: <Code className="text-white" size={80} />,
-    title: "Design & Development",
-    description:"Our creative and technical teams work together to bring your ideas to life. We deliver visually stunning designs paired with high-performing development."
-  },
-  {
-    icon: <Rocket className="text-white" size={80} />,
-    title: "Launch & Deployment",
-    description:
-      "After rigorous testing, we launch your project with precision. Our seamless deployment ensures that your solution is ready to perform flawlessly.",
-  },
-  {
-    icon: <RefreshCw className="text-white" size={80} />,
-    title: "Ongoing Support",
-    description:
-      "We provide post-launch support to ensure your project stays ahead of the curve. Our team is always here to assist and innovate further.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
-const Services = [
-  {
-    serviceName: "Web Development",
-    serviceIcon: Code,
-    serviceDes:
-      "Build scalable, platform-independent web solutions for enhanced accessibility and reach.",
-  },
-  {
-    serviceName: "Mobile App Development",
-    serviceIcon: Smartphone,
-    serviceDes:
-      "Create robust mobile applications tailored for Android and iOS platforms.",
-  },
-  {
-    serviceName: "Digital Marketing",
-    serviceIcon: Megaphone,
-    serviceDes:
-      "Boost your online presence and drive engagement with data-driven marketing strategies.",
-  },
-  {
-    serviceName: "UI/UX Design",
-    serviceIcon: Layout,
-    serviceDes:
-      "Design intuitive and visually appealing interfaces for a seamless user experience.",
-  },
-  {
-    serviceName: "SaaS Development",
-    serviceIcon: Cloud,
-    serviceDes:
-      "Develop secure, scalable, and customizable SaaS solutions for your business needs.",
-  },
-  {
-    serviceName: "AI and Automation",
-    serviceIcon: Zap,
-    serviceDes:
-      "Leverage AI and automation to optimize workflows and drive efficiency.",
-  },
-  {
-    serviceName: "Ecommerce Development",
-    serviceIcon: ShoppingCart,
-    serviceDes:
-      "Create dynamic e-commerce platforms to enhance your online retail presence.",
-  },
-];
-const WhyUs = [
-  {
-    serviceName: "Experienced Team of Experts",
-    serviceIcon: "Users", // Icon for team and collaboration
-    serviceDes:
-      "Our experienced team of experts delivers platform-independent business solutions for maximum availability.",
-  },
-  {
-    serviceName: "Cutting-Edge Tools and Technologies",
-    serviceIcon: "Code", // Icon for development and tools
-    serviceDes:
-      "We use the latest technologies to build robust and scalable solutions tailored to your needs.",
-  },
-  {
-    serviceName: "Customer-Centric Approach",
-    serviceIcon: "Smile", // Icon for customer satisfaction
-    serviceDes:
-      "We prioritize your success and ensure every solution aligns with your unique goals.",
-  },
-  {
-    serviceName: "Proven Track Record with Measurable Results",
-    serviceIcon: "TrendingUp", // Icon for growth and performance
-    serviceDes:
-      "Our proven track record ensures measurable results and consistent success for your business.",
-  },
-  {
-    serviceName: "Transparent Communication",
-    serviceIcon: "MessageCircle", // Icon for communication
-    serviceDes:
-      "We maintain transparency in our communication, keeping you informed every step of the way.",
-  },
-  {
-    serviceName: "On-Time Delivery",
-    serviceIcon: "Clock", // Icon for punctuality
-    serviceDes:
-      "We value your time and guarantee timely delivery of all projects, no matter the scale.",
-  },
-];
 const TECHNOLOGIES = [
   {
     name: "React Js",
@@ -257,67 +147,135 @@ const TECHNOLOGIES = [
     logo: "https://cdn.brandfetch.io/idyLWe2HhF/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B",
   },
 ];
+
+const Services = [
+  {
+    serviceIcon: Code,
+    translationKey: "webDevelopment",
+  },
+  {
+    serviceIcon: Smartphone,
+    translationKey: "mobileAppDevelopment",
+  },
+  {
+    serviceIcon: Megaphone,
+    translationKey: "digitalMarketing",
+  },
+  {
+    serviceIcon: Layout,
+    translationKey: "uiUxDesign",
+  },
+  {
+    serviceIcon: Cloud,
+    translationKey: "saasDevelopment",
+  },
+  {
+    serviceIcon: Zap,
+    translationKey: "aiAutomation",
+  },
+  {
+    serviceIcon: ShoppingCart,
+    translationKey: "ecommerceDevelopment",
+  },
+];
+
+const steps = [
+  {
+    icon: <Brain className="text-white" size={80} />,
+    translationKey: "vision",
+  },
+  {
+    icon: <Target className="text-white" size={80} />,
+    translationKey: "planning",
+  },
+  {
+    icon: <Code className="text-white" size={80} />,
+    translationKey: "development",
+  },
+  {
+    icon: <Rocket className="text-white" size={80} />,
+    translationKey: "launch",
+  },
+  {
+    icon: <RefreshCw className="text-white" size={80} />,
+    translationKey: "support",
+  },
+];
+
+const WhyUs = [
+  {
+    serviceIcon: "Users",
+    translationKey: "team",
+  },
+  {
+    serviceIcon: "Code",
+    translationKey: "technology",
+  },
+  {
+    serviceIcon: "Smile",
+    translationKey: "approach",
+  },
+  {
+    serviceIcon: "TrendingUp",
+    translationKey: "track",
+  },
+  {
+    serviceIcon: "MessageCircle",
+    translationKey: "communication",
+  },
+  {
+    serviceIcon: "Clock",
+    translationKey: "delivery",
+  },
+];
+
 const portfolioItems = [
   {
     image: "/api/placeholder/400/400",
-    category: "UI/ UX Design",
+    translationKey: "uiUx",
     bgColor: "bg-violet-100",
     dotColor: "bg-violet-500",
   },
   {
     image: "/api/placeholder/400/400",
-    category: "App Design",
+    translationKey: "appDesign",
     bgColor: "bg-emerald-600",
     dotColor: "bg-emerald-500",
   },
   {
     image: "/api/placeholder/400/400",
-    category: "App Design",
+    translationKey: "appDesign",
     bgColor: "bg-amber-400",
     dotColor: "bg-amber-500",
   },
 ];
-const faqData = [
-  {
-    question: "How can I request a quote for a project?",
-    answer:
-      "You can request a quote by filling out our online form or contacting our sales team directly. We'll get back to you within 24 hours with a detailed proposal based on your project requirements.",
-  },
-  {
-    question: "What industries do you serve?",
-    answer:
-      "We serve a wide range of industries including technology, healthcare, finance, retail, education, and manufacturing. Our solutions are customized to meet the specific needs of each sector.",
-  },
-  {
-    question: "What is the typical timeline for a project?",
-    answer:
-      "Project timelines vary depending on scope and complexity. Typically, small projects take 2-4 weeks, medium projects 1-3 months, and large projects 3-6 months. We'll provide a detailed timeline during the initial consultation.",
-  },
-];
 
 export default function Home() {
+  const { t } = useTranslation();
 
   return (
     <div>
       {/* Hero Section */}
-      <Hero technologies={TECHNOLOGIES}/>
+      <Hero technologies={TECHNOLOGIES} />
+
       {/* Services Section */}
       <div className="py-16 bg-gray-50">
         <h2
           id="services"
           className="text-4xl px-2 text-center font-bold text-gray-800"
         >
-          Our Core{" "}
+          {t("services.title")}
           <span className="text-blue-600 bg-blue-200 p-1.5 rounded-2xl">
-            Services
+            {t("services.titleHighlight")}
           </span>
         </h2>
         <p className="px-2 text-xl text-center font-medium text-gray-600 mt-4">
-          Comprehensive Solutions Tailored to Your Needs
+          {t("services.subtitle")}
         </p>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
           {Services.map((service, index) => {
             const Icon = service.serviceIcon;
+            const key = `services.items.${service.translationKey}`;
 
             return (
               <div
@@ -328,31 +286,33 @@ export default function Home() {
                   <Icon className="text-blue-600 w-14 h-14" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {service.serviceName}
+                  {t(`${key}.name`)}
                 </h3>
                 <p className="text-gray-600 text-center">
-                  {service.serviceDes}
+                  {t(`${key}.description`)}
                 </p>
               </div>
             );
           })}
         </div>
       </div>
+
       {/* Technologies Section */}
       <Technologies technologies={TECHNOLOGIES} />
-      {/* Process  */}
+
+      {/* Process Section */}
       <HowAgencyWorks steps={steps} />
-      {/* Why partner with us */}
+      {/* Why Partner with Us Section */}
       <div className="py-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
-          Why{" "}
+          {t("whyUs.title")}{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            Partner
+            {t("whyUs.titleHighlight")}
           </span>{" "}
-          With Us
+          {t("whyUs.titleEnd")}
         </h2>
         <p className="text-xl text-center font-medium text-gray-600 mt-4">
-          Your Success Is Our Priority
+          {t("whyUs.subtitle")}
         </p>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
           {WhyUs.map((service, index) => {
@@ -364,6 +324,7 @@ export default function Home() {
               MessageCircle,
               Clock,
             }[service.serviceIcon];
+            const key = `whyUs.reasons.${service.translationKey}`;
 
             return (
               <div
@@ -374,42 +335,42 @@ export default function Home() {
                   <Icon className="text-blue-600 w-14 h-14" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {service.serviceName}
+                  {t(`${key}.title`)}
                 </h3>
                 <p className="text-gray-600 text-center">
-                  {service.serviceDes}
+                  {t(`${key}.description`)}
                 </p>
               </div>
             );
           })}
         </div>
       </div>
-      {/* Our recent works */}
+
+      {/* Portfolio Section */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         <h2 className="text-4xl text-center font-bold text-gray-800">
-          Our Recent{" "}
+          {t("portfolio.title")}{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            Work
+            {t("portfolio.titleHighlight")}
           </span>
-        </h2>{" "}
+        </h2>
         <div className="grid mt-10 grid-cols-1 md:grid-cols-3 gap-6">
           {portfolioItems.map((item, index) => (
             <div
               key={index}
               className={`shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] relative rounded-3xl p-6 ${item.bgColor}`}
             >
-              {/* Project Image */}
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
                 <img
                   src={item.image}
-                  alt={item.category}
+                  alt={t(`portfolio.categories.${item.translationKey}`)}
                   className="w-full h-full object-cover"
                 />
               </div>
-
-              {/* Bottom Section */}
               <div className="flex justify-between items-center">
-                <h3 className="text-lg font-medium">{item.category}</h3>
+                <h3 className="text-lg font-medium">
+                  {t(`portfolio.categories.${item.translationKey}`)}
+                </h3>
                 <button className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors">
                   <ArrowUpRight className="w-6 h-6 text-white" />
                 </button>
@@ -418,9 +379,18 @@ export default function Home() {
           ))}
         </div>
       </div>
-      {/* Faqs */}
-      <FAQs faqData={faqData} />
-      {/* Contact us */}
+
+      {/* FAQs Section */}
+      <FAQs
+        faqData={Object.keys(t("faq.items", { returnObjects: true })).map(
+          (key) => ({
+            question: t(`faq.items.${key}.question`),
+            answer: t(`faq.items.${key}.answer`),
+          })
+        )}
+      />
+
+      {/* Contact Section */}
       <Contact />
     </div>
   );

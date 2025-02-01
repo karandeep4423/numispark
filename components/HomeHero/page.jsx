@@ -1,5 +1,7 @@
-import { useEffect, useState, useCallback, useRef } from 'react';
-import HeroButtons from '../HeroButtons/page';
+import { useEffect, useState, useCallback, useRef } from "react";
+import HeroButtons from "../HeroButtons/page";
+import { useTranslation } from "react-i18next";
+
 // Separate component for animated background
 const AnimatedBackground = ({ technologies }) => {
   const [icons, setIcons] = useState([]);
@@ -24,10 +26,11 @@ const AnimatedBackground = ({ technologies }) => {
   const moveIcons = useCallback(() => {
     const currentTime = Date.now();
     const deltaTime = currentTime - lastUpdateTimeRef.current;
-    
-    if (deltaTime > 50) { // Update every 50ms
-      setIcons(prevIcons =>
-        prevIcons.map(icon => {
+
+    if (deltaTime > 50) {
+      // Update every 50ms
+      setIcons((prevIcons) =>
+        prevIcons.map((icon) => {
           let newX = icon.x + icon.speedX;
           let newY = icon.y + icon.speedY;
 
@@ -93,27 +96,29 @@ const AnimatedBackground = ({ technologies }) => {
 
 // Main Hero component
 const Hero = ({ technologies }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="relative h-screen overflow-hidden bg-blue-200">
       <AnimatedBackground technologies={technologies} />
-      
+
       {/* Semi-transparent overlay */}
       <div className="absolute inset-0 bg-opacity-60" />
 
       {/* Hero content */}
       <div className="relative z-10 flex flex-col h-screen gap-5 justify-center items-center">
         <span className="text-gray-800 text-4xl text-center font-bold">
-          Empowering Your Business with
+          {t("hero.title")}
         </span>
 
         <span className="text-gray-800 text-5xl sm:text-6xl text-center font-extrabold">
-          World-Class Digital Solutions
+          {t("hero.titleHighlight")}
         </span>
 
         <span className="text-md text-gray-800 sm:text-2xl text-center font-bold">
-          Web Development | Mobile Apps | UI/UX Design | Digital Marketing
+          {t("hero.subtitle")}
         </span>
-        
+
         <HeroButtons />
       </div>
     </div>

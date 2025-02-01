@@ -1,0 +1,122 @@
+{
+  "hero": {
+    "title": "Empowering Your Business with",
+    "titleHighlight": "World-Class Digital Solutions",
+    "subtitle": "Web Development | Mobile Apps | UI/UX Design | Digital Marketing"
+  },
+  "services": {
+    "title": "Our Core",
+    "titleHighlight": "Services",
+    "subtitle": "Comprehensive Solutions Tailored to Your Needs",
+    "items": {
+      "webDevelopment": {
+        "name": "Web Development",
+        "description": "Build scalable, platform-independent web solutions for enhanced accessibility and reach."
+      },
+      "mobileAppDevelopment": {
+        "name": "Mobile App Development",
+        "description": "Create robust mobile applications tailored for Android and iOS platforms."
+      },
+      "digitalMarketing": {
+        "name": "Digital Marketing",
+        "description": "Boost your online presence and drive engagement with data-driven marketing strategies."
+      },
+      "uiUxDesign": {
+        "name": "UI/UX Design",
+        "description": "Design intuitive and visually appealing interfaces for a seamless user experience."
+      },
+      "saasDevelopment": {
+        "name": "SaaS Development",
+        "description": "Develop secure, scalable, and customizable SaaS solutions for your business needs."
+      },
+      "aiAutomation": {
+        "name": "AI and Automation",
+        "description": "Leverage AI and automation to optimize workflows and drive efficiency."
+      },
+      "ecommerceDevelopment": {
+        "name": "Ecommerce Development",
+        "description": "Create dynamic e-commerce platforms to enhance your online retail presence."
+      }
+    }
+  },
+  "process": {
+    "steps": {
+      "vision": {
+        "title": "Understanding Your Vision",
+        "description": "We collaborate closely to understand your objectives, challenges, and goals, ensuring a clear path forward for your project. Our focus is to align with your vision right from the start."
+      },
+      "planning": {
+        "title": "Strategic Planning",
+        "description": "Using insights from our discussions, we craft a detailed strategy that outlines actionable steps. Our tailored approach ensures measurable success for your project."
+      },
+      "development": {
+        "title": "Design & Development",
+        "description": "Our creative and technical teams work together to bring your ideas to life. We deliver visually stunning designs paired with high-performing development."
+      },
+      "launch": {
+        "title": "Launch & Deployment",
+        "description": "After rigorous testing, we launch your project with precision. Our seamless deployment ensures that your solution is ready to perform flawlessly."
+      },
+      "support": {
+        "title": "Ongoing Support",
+        "description": "We provide post-launch support to ensure your project stays ahead of the curve. Our team is always here to assist and innovate further."
+      }
+    }
+  },
+  "whyUs": {
+    "title": "Why",
+    "titleHighlight": "Partner",
+    "titleEnd": "With Us",
+    "subtitle": "Your Success Is Our Priority",
+    "reasons": {
+      "team": {
+        "title": "Experienced Team of Experts",
+        "description": "Our experienced team of experts delivers platform-independent business solutions for maximum availability."
+      },
+      "technology": {
+        "title": "Cutting-Edge Tools and Technologies",
+        "description": "We use the latest technologies to build robust and scalable solutions tailored to your needs."
+      },
+      "approach": {
+        "title": "Customer-Centric Approach",
+        "description": "We prioritize your success and ensure every solution aligns with your unique goals."
+      },
+      "track": {
+        "title": "Proven Track Record with Measurable Results",
+        "description": "Our proven track record ensures measurable results and consistent success for your business."
+      },
+      "communication": {
+        "title": "Transparent Communication",
+        "description": "We maintain transparency in our communication, keeping you informed every step of the way."
+      },
+      "delivery": {
+        "title": "On-Time Delivery",
+        "description": "We value your time and guarantee timely delivery of all projects, no matter the scale."
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Our Recent",
+    "titleHighlight": "Work",
+    "categories": {
+      "uiUx": "UI/UX Design",
+      "appDesign": "App Design"
+    }
+  },
+  "faq": {
+    "items": {
+      "quote": {
+        "question": "How can I request a quote for a project?",
+        "answer": "You can request a quote by filling out our online form or contacting our sales team directly. We'll get back to you within 24 hours with a detailed proposal based on your project requirements."
+      },
+      "industries": {
+        "question": "What industries do you serve?",
+        "answer": "We serve a wide range of industries including technology, healthcare, finance, retail, education, and manufacturing. Our solutions are customized to meet the specific needs of each sector."
+      },
+      "timeline": {
+        "question": "What is the typical timeline for a project?",
+        "answer": "Project timelines vary depending on scope and complexity. Typically, small projects take 2-4 weeks, medium projects 1-3 months, and large projects 3-6 months. We'll provide a detailed timeline during the initial consultation."
+      }
+    }
+  }
+}
