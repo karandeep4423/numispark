@@ -1,0 +1,138 @@
+{
+    "websiteMobileDesign": {
+      "hero": {
+        "title": "User-Centric Designs for Stunning",
+        "titleHighlight": "Website & Mobile Experiences",
+        "subtitle": "Transform your digital presence with designs that convert visitors into loyal customers"
+      },
+      "services": {
+        "title": "Our Core",
+        "titleHighlight": "Services",
+        "subtitle": "Comprehensive Solutions Tailored to Your Needs",
+        "items": {
+          "websiteDesign": {
+            "name": "Website Design",
+            "description": "Create stunning, responsive websites that captivate your audience. Our designs combine visual appeal with intuitive navigation to drive engagement and conversions."
+          },
+          "mobileAppDesign": {
+            "name": "Mobile App Design",
+            "description": "Craft seamless mobile experiences that users love. We design native and cross-platform apps that combine beautiful interfaces with smooth functionality."
+          },
+          "uiUxConsulting": {
+            "name": "UI/UX Consulting",
+            "description": "Optimize your digital products with expert UI/UX guidance. We analyze user behavior and implement data-driven design improvements to boost user satisfaction."
+          },
+          "designSystems": {
+            "name": "Design Systems",
+            "description": "Build scalable design frameworks that maintain consistency across all platforms. Our design systems accelerate development and ensure brand coherence."
+          }
+        }
+      },
+      "features": {
+        "title": "Key",
+        "titleHighlight": "Features",
+        "titleEnd": "of Our Designs",
+        "subtitle": "Your Success Is Our Priority",
+        "items": {
+          "responsiveDesign": {
+            "name": "Responsive Design",
+            "description": "Designs that adapt perfectly to all screen sizes, ensuring a consistent experience across desktop, tablet, and mobile devices."
+          },
+          "interactivePrototypes": {
+            "name": "Interactive Prototypes",
+            "description": "Test and validate your designs before development with high-fidelity prototypes that simulate the real user experience."
+          },
+          "userFlowOptimization": {
+            "name": "User Flow Optimization",
+            "description": "Create intuitive user journeys that guide visitors naturally through your digital product, improving conversion rates."
+          },
+          "performanceFocus": {
+            "name": "Performance Focus",
+            "description": "Fast-loading, efficient interfaces optimized for speed and performance to keep users engaged and satisfied."
+          }
+        }
+      },
+      "benefits": {
+        "title": "Benefits",
+        "titleEnd": "of Choosing Us",
+        "items": {
+          "intuitiveInterfaces": {
+            "title": "Intuitive User Interfaces",
+            "description": "Deliver seamless user experiences with interfaces that feel natural and effortless to navigate. Our designs minimize learning curves and maximize user engagement."
+          },
+          "optimizedAccessibility": {
+            "title": "Optimized Accessibility",
+            "description": "Create inclusive experiences that work for all users. Our designs follow WCAG guidelines ensuring your product is accessible to everyone."
+          },
+          "brandConsistency": {
+            "title": "Brand Consistency",
+            "description": "Maintain strong brand identity across all touchpoints. Every design element aligns perfectly with your brand guidelines and values."
+          },
+          "rapidDevelopment": {
+            "title": "Rapid Development",
+            "description": "Accelerate your time-to-market with our streamlined design process. Clean handoffs and detailed documentation speed up development."
+          },
+          "userSatisfaction": {
+            "title": "User Satisfaction",
+            "description": "Delight users with thoughtful interactions and smooth experiences. Happy users become loyal customers and brand advocates."
+          },
+          "higherConversions": {
+            "title": "Higher Conversions",
+            "description": "Transform visitors into customers with conversion-focused designs. Strategic UX patterns guide users naturally toward desired actions."
+          }
+        }
+      },
+      "process": {
+        "steps": {
+          "research": {
+            "title": "Research & Discovery",
+            "description": "Deep dive into your users' needs, market trends, and competitive landscape to inform our design decisions."
+          },
+          "wireframing": {
+            "title": "Wireframing",
+            "description": "Create structured layouts and user flows that form the foundation of intuitive navigation and content hierarchy."
+          },
+          "visualDesign": {
+            "title": "Visual Design",
+            "description": "Transform wireframes into stunning visual designs that align with your brand and engage your users."
+          },
+          "prototyping": {
+            "title": "Prototyping",
+            "description": "Rigorous testing across devices and platforms to ensure a flawless launch of your digital product."
+          },
+          "testingLaunch": {
+            "title": "Testing & Launch",
+            "description": "Rigorous testing across devices and platforms to ensure a flawless launch of your digital product."
+          }
+        }
+      },
+      "portfolio": {
+        "title": "Our Recent",
+        "titleHighlight": "Work",
+        "categories": {
+          "uiUx": "UI/UX Design",
+          "appDesign": "App Design"
+        }
+      },
+      "faq": {
+        "items": {
+          "collaboration": {
+            "question": "Can you work with our development team?",
+            "answer": "Yes, we seamlessly integrate with your team, providing clear documentation and maintaining open communication throughout the project."
+          },
+          "revisions": {
+            "question": "Do you offer design revisions?",
+            "answer": "We include multiple revision rounds to ensure your complete satisfaction with the final design."
+          },
+          "timeline": {
+            "question": "What's your typical project timeline?",
+            "answer": "Most projects take 4-8 weeks from concept to completion, depending on scope and complexity."
+          },
+          "designSystems": {
+            "question": "Do you provide design systems?",
+            "answer": "Yes, we create comprehensive design systems to maintain consistency and accelerate future development."
+          }
+        }
+      }
+    }
+}

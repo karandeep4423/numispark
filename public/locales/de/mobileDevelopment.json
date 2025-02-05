@@ -1,0 +1,117 @@
+{
+  "mobileDevelopment": {
+    "hero": {
+      "title": "Innovative Mobile Anwendungen zur Belebung Ihres Unternehmens",
+      "subtitle": "Mit Fokus auf Skalierbarkeit, Reaktionsfähigkeit und Leistung"
+    },
+    "keyFeatures": {
+      "title": "Haupt",
+      "titleHighlight": "Eigenschaften",
+      "titleEnd": "unserer Anwendungen",
+      "items": {
+        "nativeApps": {
+          "name": "Native Anwendungen (iOS & Android)",
+          "description": "Nutzen Sie die plattformspezifischen Funktionen und optimale Leistung dank nativer Anwendungen, die mit Expertise für iOS und Android entwickelt wurden. Unsere Anwendungen bieten ein unvergleichliches Nutzererlebnis."
+        },
+        "crossPlatform": {
+          "name": "Plattformübergreifende Anwendungen",
+          "description": "Vereinfachen Sie die Entwicklung Ihrer Anwendung und erreichen Sie ein breiteres Publikum. Wir nutzen modernste Frameworks, um leistungsstarke Anwendungen zu erstellen, die nahtlos auf allen Plattformen funktionieren."
+        },
+        "scalableSecure": {
+          "name": "Skalierbare und sichere Anwendungen",
+          "description": "Ihr Wachstum ist unsere Priorität. Wir entwickeln Anwendungen, die sich an die Entwicklung Ihres Unternehmens anpassen und dabei in jeder Phase höchste Sicherheit gewährleisten."
+        },
+        "speedOptimization": {
+          "name": "Geschwindigkeitsoptimierung",
+          "description": "Niemand mag eine langsame Anwendung! Unsere Optimierungstechniken garantieren ultraschnelle Ladezeiten, die die Zufriedenheit und das Engagement der Nutzer steigern."
+        }
+      }
+    },
+    "benefits": {
+      "title": "Vorteile",
+      "titleEnd": "bei uns zu wählen",
+      "items": {
+        "userExperience": {
+          "name": "Verbessertes Nutzererlebnis",
+          "description": "Unser Expertenteam ist auf die Entwicklung flüssiger und intuitiver mobiler Anwendungen spezialisiert, was maximale Verfügbarkeit und Benutzerfreundlichkeit für Ihre Zielgruppe gewährleistet."
+        },
+        "expertDevelopers": {
+          "name": "Erfahrene Expert-Entwickler",
+          "description": "Mit jahrelanger Erfahrung und tiefgreifendem Wissen über moderne Technologien entwickeln unsere Entwickler robuste, skalierbare und maßgeschneiderte Anwendungen, die perfekt auf Ihre einzigartigen Bedürfnisse zugeschnitten sind."
+        },
+        "appStoreSuccess": {
+          "name": "Optimiert für den Erfolg im App Store",
+          "description": "Wir gehen über die reine Entwicklung hinaus, indem wir uns auf Strategien konzentrieren, die Ihre Anwendung in den App Stores hervorheben. Unsere Lösungen sind darauf ausgelegt, Ihnen zu helfen, Ihre Ziele zu erreichen und die Nutzer zu begeistern."
+        },
+        "fastSecure": {
+          "name": "Schnelle und sichere Anwendungen",
+          "description": "Schnelligkeit und Sicherheit stehen im Mittelpunkt unseres Entwicklungsprozesses. Wir stellen sicher, dass Ihre Anwendung herausragende Leistungen bietet und gleichzeitig sensible Daten schützt, was Ihnen einen Wettbewerbsvorteil verschafft."
+        },
+        "updatesMaintenance": {
+          "name": "Regelmäßige Updates und Wartung",
+          "description": "Bleiben Sie auf dem neuesten Stand mit Anwendungen, die sich an Ihre Bedürfnisse anpassen. Unser Engagement für regelmäßige Updates und Wartung stellt sicher, dass Ihre Anwendung aktuell, funktionsfähig und industriekonform bleibt."
+        }
+      }
+    },
+    "process": {
+      "steps": {
+        "analysis": {
+          "title": "Bedarfsanalyse",
+          "description": "Unser Team beginnt damit, die Ziele, die Zielgruppe und die Schlüsselfunktionen Ihrer mobilen Anwendung zu verstehen. Dieser Schritt sichert eine gemeinsame Vision und legt die Grundlage für eine erfolgreiche App."
+        },
+        "wireframing": {
+          "title": "Erstellung von Wireframes und Prototypen",
+          "description": "Wir erstellen detaillierte Wireframes und interaktive Prototypen, um den Ablauf und das Nutzererlebnis der Anwendung zu visualisieren. Diese Phase ermöglicht es Ihnen, Ihre Ideen zu verfeinern, bevor die Entwicklung beginnt."
+        },
+        "development": {
+          "title": "Entwicklung",
+          "description": "Unsere Entwickler nutzen modernste Technologien und Frameworks, um skalierbare, reaktionsfähige und leistungsstarke mobile Anwendungen zu entwickeln, die speziell auf Ihre Bedürfnisse zugeschnitten sind."
+        },
+        "testing": {
+          "title": "Tests",
+          "description": "Wir testen Ihre mobile Anwendung gründlich, um ihre Funktionalität, Leistung und Kompatibilität auf verschiedenen Geräten sicherzustellen, wodurch ein reibungsloses Nutzererlebnis gewährleistet und Fehler eliminiert werden."
+        },
+        "deployment": {
+          "title": "Bereitstellung im App Store",
+          "description": "Sobald Ihre Anwendung fertiggestellt und getestet ist, übernehmen wir den Launch in den App Stores. Wir sorgen dafür, dass die Richtlinien der Plattformen eingehalten werden und bieten Unterstützung, um die Sichtbarkeit Ihrer Anwendung zu optimieren."
+        }
+      }
+    },
+    "portfolio": {
+      "title": "Unsere neuesten",
+      "titleHighlight": "Projekte",
+      "categories": {
+        "uiUx": "UI/UX-Design",
+        "appDesign": "App-Design"
+      }
+    },
+    "faq": {
+      "items": {
+        "quote": {
+          "question": "Wie kann ich ein Angebot für ein Projekt anfordern?",
+          "answer": "Sie können ein Angebot anfordern, indem Sie unser Online-Formular ausfüllen oder direkt unser Vertriebsteam kontaktieren. Wir werden Ihnen innerhalb von 24 Stunden einen detaillierten Vorschlag basierend auf Ihren Anforderungen zukommen lassen."
+        },
+        "industries": {
+          "question": "Welche Branchen bedienen wir?",
+          "answer": "Wir sind in einem breiten Spektrum von Branchen tätig, darunter Technologie, Gesundheitswesen, Finanzen, Einzelhandel, Bildung und Industrie. Unsere Lösungen sind maßgeschneidert, um den spezifischen Anforderungen jeder Branche gerecht zu werden."
+        },
+        "timeline": {
+          "question": "Wie lange dauert ein typisches Projekt?",
+          "answer": "Die Dauer variiert je nach Umfang und Komplexität des Projekts. In der Regel dauern kleine Projekte 2 bis 4 Wochen, mittlere Projekte 1 bis 3 Monate und große Projekte 3 bis 6 Monate. Wir werden Ihnen einen detaillierten Zeitplan während der Erstberatung zur Verfügung stellen."
+        },
+        "improveExisting": {
+          "question": "Können Sie meine bestehende mobile Anwendung verbessern?",
+          "answer": "Absolut! Wir bieten Audit-, Redesign- und Verbesserungsservices an, um die Leistung und das Nutzererlebnis Ihrer bestehenden mobilen Anwendung zu optimieren."
+        },
+        "appStoreHelp": {
+          "question": "Helfen Sie bei der Einreichung der Anwendung in den App Stores?",
+          "answer": "Ja, wir übernehmen den gesamten Einreichungsprozess, sorgen dafür, dass die Richtlinien eingehalten werden, erstellen visuelle Elemente für den App Store und kümmern uns um Updates."
+        },
+        "support": {
+          "question": "Bieten Sie nach dem Launch Support an?",
+          "answer": "Ja, wir bieten kontinuierlichen Support und Wartung, damit Ihre Anwendung stets aktuell, sicher und funktionsfähig bleibt."
+        }
+      }
+    }
+  }
+}

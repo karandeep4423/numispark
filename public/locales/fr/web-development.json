@@ -1,0 +1,117 @@
+{
+  "webDevelopment": {
+    "hero": {
+      "title": "Sites Web Personnalisés Adaptés à Vos Besoins d'Entreprise",
+      "subtitle": "Mettant l'accent sur l'évolutivité, la réactivité et la performance"
+    },
+    "keyFeatures": {
+      "title": "Principales",
+      "titleHighlight": "Caractéristiques",
+      "titleEnd": "de nos sites web",
+      "items": {
+        "mobileResponsive": {
+          "name": "Design Adaptatif pour Mobile",
+          "description": "Nous créons des designs adaptés aux mobiles qui garantissent que votre site web soit superbe et fonctionne parfaitement sur tous les appareils."
+        },
+        "seoFriendly": {
+          "name": "Développement Optimisé pour le SEO",
+          "description": "Nos sites web sont optimisés pour les moteurs de recherche, vous aidant à obtenir un meilleur classement et à attirer davantage de trafic organique."
+        },
+        "cms": {
+          "name": "CMS Facile à Gérer",
+          "description": "Nous intégrons des plateformes CMS conviviales, vous permettant de mettre à jour et de gérer votre site web sans effort."
+        },
+        "speedOptimization": {
+          "name": "Optimisation de la Vitesse",
+          "description": "Nous mettons en œuvre des techniques d'optimisation avancées pour améliorer la rapidité et la performance de votre site web."
+        }
+      }
+    },
+    "benefits": {
+      "title": "Avantages",
+      "titleEnd": "de Nous Choisir",
+      "items": {
+        "userExperience": {
+          "name": "Expérience Utilisateur Améliorée",
+          "description": "Nous livrons des sites web intuitifs et engageants, conçus pour offrir une navigation fluide et une expérience utilisateur supérieure."
+        },
+        "loadingTimes": {
+          "name": "Temps de Chargement Plus Rapides",
+          "description": "Notre processus de développement garantit des vitesses de chargement optimisées, améliorant la rétention des utilisateurs et leur satisfaction."
+        },
+        "scalability": {
+          "name": "Évolutivité pour la Croissance Future",
+          "description": "Nous construisons des solutions évolutives qui se développent avec votre entreprise, assurant la robustesse de votre site même avec l'augmentation du trafic."
+        },
+        "support": {
+          "name": "Support Dédié Après Lancement",
+          "description": "Notre équipe fournit un support et une maintenance continus afin de garantir que votre site web reste sécurisé, à jour et pleinement fonctionnel."
+        }
+      }
+    },
+    "process": {
+      "steps": {
+        "analysis": {
+          "title": "Analyse des Besoins",
+          "description": "Collaborer pour comprendre les objectifs, les défis et les buts. Cela permet d'aligner dès le départ votre vision du site web."
+        },
+        "wireframing": {
+          "title": "Création de Maquettes & Prototypage",
+          "description": "Transformer les idées en plans structurés avec des prototypes pour visualiser le site final et assurer une clarté stratégique."
+        },
+        "development": {
+          "title": "Développement",
+          "description": "Transformer les concepts en un site web entièrement fonctionnel grâce à un design harmonieux et un développement robuste pour une performance optimale."
+        },
+        "testing": {
+          "title": "Tests",
+          "description": "Réaliser des tests rigoureux pour s'assurer que votre site web est exempt de problèmes, optimisé et prêt pour un lancement sans accrocs."
+        },
+        "deployment": {
+          "title": "Déploiement",
+          "description": "Déployer le site web avec précision et offrir un support post-lancement pour maintenir son fonctionnement fluide et efficace."
+        }
+      }
+    },
+    "portfolio": {
+      "title": "Nos Récentes",
+      "titleHighlight": "Réalisations",
+      "categories": {
+        "uiUx": "Design UI/UX",
+        "appDesign": "Design d'Application"
+      }
+    },
+    "faq": {
+      "items": {
+        "hosting": {
+          "question": "Fournissez-vous des services d'hébergement web ?",
+          "answer": "Bien que nous n'hébergions pas directement les sites, nous pouvons vous aider à choisir et configurer des solutions d'hébergement fiables telles qu'AWS, Bluehost ou SiteGround."
+        },
+        "redesign": {
+          "question": "Pouvez-vous redessiner mon site existant ?",
+          "answer": "Absolument. Nous proposons des services de refonte de site afin d'améliorer l'esthétique, la fonctionnalité et la performance tout en préservant l'identité de votre marque."
+        },
+        "content": {
+          "question": "Fournissez-vous du contenu pour les sites web ?",
+          "answer": "Oui, nous offrons des services de création de contenu, incluant la rédaction, le contenu optimisé SEO et du contenu multimédia pour votre site."
+        },
+        "seo": {
+          "question": "Mon site sera-t-il optimisé pour les moteurs de recherche ?",
+          "answer": "Oui, tous les sites que nous développons sont optimisés pour le SEO, assurant une indexation rapide et un meilleur classement dans les moteurs de recherche."
+        },
+        "maintenance": {
+          "question": "Offrez-vous un support et des mises à jour après le lancement du site ?",
+          "answer": "Oui, nous proposons un support post-lancement, incluant des mises à jour régulières, des correctifs de sécurité et un suivi de performance pour garantir que votre site web fonctionne sans accroc."
+        },
+        "training": {
+          "question": "Pouvez-vous fournir une formation pour la gestion de mon site ?",
+          "answer": "Oui, nous offrons des sessions de formation et des guides d'utilisation pour vous aider à gérer efficacement votre site web à l'aide du CMS ou d'autres outils que nous avons mis en place."
+        },
+        "multilingual": {
+          "question": "Supportez-vous les sites web multilingues ?",
+          "answer": "Oui, nous pouvons développer des sites web avec un support multilingue, vous permettant ainsi d'atteindre efficacement un public mondial."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "socialMediaLogoDesign": {
+    "hero": {
+      "title": "Eye-Catching Designs for Your Brand’s Social Media & Logo",
+      "subtitle": "Boost engagement and establish a unique brand identity"
+    },
+    "process": {
+      "steps":{
+      "step1": {
+        "title": "Understanding Your Vision",
+        "description": "We start by discussing your goals, brand identity, and audience preferences to align our designs with your social media and logo needs."
+      },
+      "step2": {
+        "title": "Research & Inspiration",
+        "description": "We analyze trends, competitors, and market dynamics to gather inspiration for crafting compelling social media visuals and memorable logos."
+      },
+      "step3": {
+        "title": "Concept Creation",
+        "description": "Our designers draft unique concepts, including layouts for social media posts and initial logo sketches, to establish a creative direction."
+      },
+      "step4": {
+        "title": "Design & Refinement",
+        "description": "Using your feedback, we finalize polished designs with eye-catching visuals for social media and a logo that represents your brand authentically."
+      },
+      "step5": {
+        "title": "Final Delivery",
+        "description": "We provide high-quality files for your social media posts and logos, ready to enhance your brand's online presence and identity."
+      }}
+    },
+    "services": {
+      "sectionTitle": "Our Core",
+      "sectionTitleHighlight":"Services",
+      "sectionSubtitle": "Comprehensive Solutions Tailored to Your Needs",
+      "items": {
+        "socialMediaDesign": {
+          "serviceName": "Social Media Design",
+          "serviceDes": "Create eye-catching social media posts that boost engagement. Our designs are optimized for each platform's unique requirements and audience preferences."
+        },
+        "logoBrandIdentity": {
+          "serviceName": "Logo & Brand Identity",
+          "serviceDes": "Professional logo design with multiple concepts and variations, plus complete brand identity guidelines for consistent presentation."
+        },
+        "brandKitDesign": {
+          "serviceName": "Brand Kit Design",
+          "serviceDes": "Build comprehensive brand kits including color palettes, typography, and design elements that ensure consistency across all platforms."
+        },
+        "socialStrategy": {
+          "serviceName": "Social Strategy",
+          "serviceDes": "Get expert guidance on content strategy, posting schedules, and engagement techniques to maximize your social media presence."
+        },
+        "socialMediaTemplates": {
+          "serviceName": "Social Media Templates",
+          "serviceDes": "Reusable templates for stories, posts, and carousels that your team can easily customize while maintaining brand consistency."
+        }
+      }
+    },
+    "features": {
+      "sectionTitle": "Key Features",
+      "sectionSubtitle": "of Our Designs",
+      "sectionTagline": "Your Success Is Our Priority",
+      "items": {
+        "platformOptimization": {
+          "serviceName": "Platform Optimization",
+          "serviceDes": "Designs perfectly sized and optimized for each social platform's specifications and best practices."
+        },
+        "brandConsistency": {
+          "serviceName": "Brand Consistency",
+          "serviceDes": "Maintain strong visual identity across all posts and platforms while allowing creative flexibility."
+        },
+        "engagementFocus": {
+          "serviceName": "Engagement Focus",
+          "serviceDes": "Create designs that drive likes, comments, and shares through strategic visual hierarchy and call-to-actions."
+        },
+        "multiFormatDelivery": {
+          "serviceName": "Multi-Format Delivery",
+          "serviceDes": "Receive your designs in all necessary formats - from web-ready files to print-quality vectors."
+        }
+      }
+    },
+    "whyUs": {
+      "sectionTitle": "Benefits",
+      "sectionSubtitle": "of Choosing Us",
+      "items": {
+        "platformExpertise": {
+          "serviceName": "Platform Expertise",
+          "serviceDes": "Deep understanding of each social platform's unique requirements and audience behaviors."
+        },
+        "brandFocusedDesign": {
+          "serviceName": "Brand-Focused Design",
+          "serviceDes": "Every design element carefully crafted to strengthen and promote your brand identity."
+        },
+        "engagementDriven": {
+          "serviceName": "Engagement-Driven",
+          "serviceDes": "Strategic designs that encourage user interaction and boost social media engagement."
+        },
+        "quickTurnaround": {
+          "serviceName": "Quick Turnaround",
+          "serviceDes": "Rapid delivery of designs to keep your social media presence fresh and consistent."
+        },
+        "unlimitedRevisions": {
+          "serviceName": "Unlimited Revisions",
+          "serviceDes": "We refine your logo and designs until they perfectly match your vision and brand requirements."
+        },
+        "socialMediaStrategy": {
+          "serviceName": "Social Media Strategy",
+          "serviceDes": "Designs aligned with your social media strategy to help achieve your marketing goals."
+        }
+      }
+    },
+    "portfolio": {
+      "sectionTitle": "Our Recent",
+      "sectionHighlight": "Work",
+      "categories": {
+        "uiUx": "UI/ UX Design",
+        "appDesign": "App Design"
+      }
+    },
+    "faq": {
+      "items": {
+        "logoConcepts": {
+          "question": "How many logo concepts will I receive in the initial design phase?",
+          "answer": "Our standard logo package includes 3-5 unique concepts. Each concept comes with different variations and applications to help you visualize how the logo will work across various platforms."
+        },
+        "templatePackage": {
+          "question": "What's included in the social media template package?",
+          "answer": "The package includes customizable templates for: Instagram posts (feed, stories, and reels), Facebook posts and cover images, LinkedIn company page graphics, Twitter posts and header images, plus basic animation templates for stories and reels."
+        },
+        "editableTemplates": {
+          "question": "Do you provide editable templates for our team to use?",
+          "answer": "Yes! We create easy-to-edit templates in Canva or similar platforms, allowing your team to maintain consistent branding while creating day-to-day social media content."
+        },
+        "turnaround": {
+          "question": "What's the turnaround time for social media content?",
+          "answer": "Regular posts are delivered within 24-48 hours. For monthly content packages (15-20 posts), we deliver the full package within 5-7 business days."
+        },
+        "rushDelivery": {
+          "question": "Do you offer rush delivery for urgent social media posts?",
+          "answer": "Yes, we offer same-day delivery for urgent social media posts at an additional fee, subject to availability."
+        },
+        "brandGuide": {
+          "question": "What's included in the brand style guide?",
+          "answer": "The comprehensive guide includes: logo usage rules, color palettes with all codes (RGB, CMYK, HEX), typography guidelines, image style guidelines, social media post templates, and best practices for maintaining brand consistency."
+        },
+        "seasonalCampaigns": {
+          "question": "Can you help with seasonal social media campaigns?",
+          "answer": "Yes! We create themed content packages for holidays, special events, and seasonal promotions, including both static and animated posts."
+        },
+        "contentCalendar": {
+          "question": "Do you provide social media content calendars?",
+          "answer": "Yes, we can provide a strategic content calendar along with your designs, suggesting optimal posting times and content mix for maximum engagement."
+        },
+        "revisions": {
+          "question": "Can I make revisions to the designs?",
+          "answer": "Absolutely! We offer unlimited revisions during the design process until you're completely satisfied. For logos, revisions are included until final approval. For social media posts, we offer 2 rounds of revisions per post."
+        },
+        "brandAssetUsage": {
+          "question": "Do you provide guidance on logo and brand asset usage?",
+          "answer": "Yes, every logo package includes a detailed brand guidelines document explaining proper usage, minimum sizes, spacing requirements, and do's and don'ts for your logo and brand assets."
+        }
+      }
+    }
+  }
+}

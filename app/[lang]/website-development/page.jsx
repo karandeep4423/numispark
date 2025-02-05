@@ -22,44 +22,7 @@ import HeroButtons from "@/components/HeroButtons/page";
 import FAQs from "@/components/Faqs/page";
 import Technologies from "@/components/Technologies/page";
 import HowAgencyWorks from "@/components/Process/page";
-
-const steps = [
-  {
-    step: 1,
-    title: "Requirement Analysis",
-    description:
-      "Collaborate to understand objectives, challenges, and goals. This ensures alignment with your website vision from the beginning.",
-    icon: <Brain className="text-white" size={80} />,
-  },
-  {
-    step: 2,
-    title: "Wireframing & Prototyping",
-    description:
-      "Translate ideas into structured plans with prototypes to visualize the final website and ensure strategic clarity.",
-    icon: <Target className="text-white" size={80} />,
-  },
-  {
-    step: 3,
-    title: "Development",
-    description:
-      "Transform concepts into a fully functional website with seamless design and robust development for optimal performance.",
-    icon: <Code className="text-white" size={80} />,
-  },
-  {
-    step: 4,
-    title: "Testing",
-    description:
-      "Conduct rigorous testing to ensure your website is free of issues, optimized, and ready for seamless launch.",
-    icon: <CheckCircle className="text-white" size={80} />,
-  },
-  {
-    step: 5,
-    title: "Deployment",
-    description:
-      "Deploy the website with precision and provide post-launch support to keep it running smoothly and effectively.",
-    icon: <CloudUpload className="text-white" size={80} />,
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const TECHNOLOGIES = [
   {
@@ -117,120 +80,90 @@ const TECHNOLOGIES = [
   },
 ];
 
-const Benefits = [
+const steps = [
   {
-    serviceName: "Enhanced User Experience",
-    serviceIcon: "Layout", // Icon for design and usability
-    serviceDes:
-      "We deliver intuitive and engaging websites designed to provide seamless navigation and a superior user experience.",
+    translationKey: "analysis",
+    icon: <Brain className="text-white" size={80} />,
   },
   {
-    serviceName: "Faster Loading Times",
-    serviceIcon: "Zap", // Icon for speed and performance
-    serviceDes:
-      "Our development process ensures optimized loading speeds, improving user retention and satisfaction.",
+    translationKey: "wireframing",
+    icon: <Target className="text-white" size={80} />,
   },
   {
-    serviceName: "Scalability for Future Growth",
-    serviceIcon: "TrendingUp", // Icon for growth and expansion
-    serviceDes:
-      "We build scalable solutions that grow with your business, ensuring your website remains robust as traffic increases.",
+    translationKey: "development",
+    icon: <Code className="text-white" size={80} />,
   },
   {
-    serviceName: "Dedicated Post-Launch Support",
-    serviceIcon: "LifeBuoy", // Icon for support and maintenance
-    serviceDes:
-      "Our team provides ongoing support and maintenance to ensure your website stays secure, updated, and functional.",
+    translationKey: "testing",
+    icon: <CheckCircle className="text-white" size={80} />,
+  },
+  {
+    translationKey: "deployment",
+    icon: <CloudUpload className="text-white" size={80} />,
   },
 ];
 
-const WhyUs = [
+const keyFeatures = [
   {
-    serviceName: "Mobile Responsive Design",
-    serviceIcon: "Smartphone", // Icon for mobile and responsiveness
-    serviceDes:
-      "We create mobile-friendly designs that ensure your website looks great and functions perfectly on all devices.",
+    translationKey: "mobileResponsive",
+    serviceIcon: "Smartphone",
   },
   {
-    serviceName: "SEO-Friendly Development",
-    serviceIcon: "Search", // Icon for search optimization
-    serviceDes:
-      "Our websites are optimized for search engines, helping you rank higher and attract more organic traffic.",
+    translationKey: "seoFriendly",
+    serviceIcon: "Search",
   },
   {
-    serviceName: "Easy-to-Manage CMS",
-    serviceIcon: "Server", // Icon for content management
-    serviceDes:
-      "We integrate user-friendly CMS platforms, empowering you to update and manage your website effortlessly.",
+    translationKey: "cms",
+    serviceIcon: "Server",
   },
   {
-    serviceName: "Speed Optimization",
-    serviceIcon: "Gauge", // Icon for speed and efficiency
-    serviceDes:
-      "We implement advanced optimization techniques to enhance your website's speed and performance.",
+    translationKey: "speedOptimization",
+    serviceIcon: "Gauge",
   },
 ];
 
-const faqData = [
+const benefits = [
   {
-    question: "Do you provide website hosting services?",
-    answer:
-      "While we don’t directly host websites, we can assist you in selecting and setting up reliable hosting solutions like AWS, Bluehost, or SiteGround.",
+    translationKey: "userExperience",
+    serviceIcon: "Layout",
   },
   {
-    question: "Can you redesign my existing website?",
-    answer:
-      "Absolutely. We offer website redesign services to improve aesthetics, functionality, and performance while maintaining your brand identity.",
+    translationKey: "loadingTimes",
+    serviceIcon: "Zap",
   },
   {
-    question: "Do you provide content for websites?",
-    answer:
-      "Yes, we offer content creation services, including copywriting, SEO-optimized content, and multimedia content for your website.",
+    translationKey: "scalability",
+    serviceIcon: "TrendingUp",
   },
   {
-    question: "Will my website be optimized for search engines?",
-    answer:
-      "Yes, all websites we develop are SEO-friendly, ensuring faster indexing and improved search engine rankings.",
-  },
-  {
-    question: "Do you offer maintenance and updates after the website launch?",
-    answer:
-      "Yes, we offer post-launch support, including regular updates, security patches, and performance monitoring to keep your website running smoothly.",
-  },
-  {
-    question: "Can you provide training on how to manage my website?",
-    answer:
-      "Yes, we provide training sessions and user guides to help you manage your website efficiently using the CMS or other tools we've implemented.",
-  },
-  {
-    question: "Do you support multilingual websites?",
-    answer:
-      "Yes, we can develop websites with multilingual support, allowing you to reach a global audience effectively.",
+    translationKey: "support",
+    serviceIcon: "LifeBuoy",
   },
 ];
 
 const portfolioItems = [
   {
     image: "/api/placeholder/400/400",
-    category: "UI/ UX Design",
+    translationKey: "uiUx",
     bgColor: "bg-violet-100",
     dotColor: "bg-violet-500",
   },
   {
     image: "/api/placeholder/400/400",
-    category: "App Design",
+    translationKey: "appDesign",
     bgColor: "bg-emerald-600",
     dotColor: "bg-emerald-500",
   },
   {
     image: "/api/placeholder/400/400",
-    category: "App Design",
+    translationKey: "appDesign",
     bgColor: "bg-amber-400",
     dotColor: "bg-amber-500",
   },
 ];
 
 const WebsiteDevelopment = () => {
+  const { t } = useTranslation("webDevelopment");
 
   return (
     <div>
@@ -244,33 +177,36 @@ const WebsiteDevelopment = () => {
         }}
         className="flex bg-blue-300 flex-col h-screen gap-5 justify-center items-center"
       >
-        <span className="text-5xl max-w-screen-xl  opacity-100 text-gray-800 sm:text-6xl text-center font-extrabold">
-          Custom Websites Tailored to Your Business Needs
+        <span className="text-5xl max-w-screen-xl opacity-100 text-gray-800 sm:text-6xl text-center font-extrabold">
+          {t("webDevelopment.hero.title")}
         </span>
-        <span className="max-w-screen-xl  text-gray-900 text-2xl text-center font-bold">
-          Emphasizing scalability, responsiveness, and performance.
+        <span className="max-w-screen-xl text-gray-900 text-2xl text-center font-bold">
+          {t("webDevelopment.hero.subtitle")}
         </span>
-        {/* buttons */}
         <HeroButtons />
       </div>
+
       {/* Technologies Section */}
       <Technologies technologies={TECHNOLOGIES} />
-      {/*  Key Features */}
+
+      {/* Key Features */}
       <div className="pb-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
+          {t("webDevelopment.keyFeatures.title")}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            Key Features{" "}
+            {t("webDevelopment.keyFeatures.titleHighlight")}{" "}
           </span>{" "}
-          of our websites
+          {t("webDevelopment.keyFeatures.titleEnd")}
         </h2>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {WhyUs.map((service, index) => {
+          {keyFeatures.map((feature, index) => {
             const Icon = {
               Search,
               Smartphone,
               Gauge,
               Server,
-            }[service.serviceIcon];
+            }[feature.serviceIcon];
+            const key = `webDevelopment.keyFeatures.items.${feature.translationKey}`;
 
             return (
               <div
@@ -281,33 +217,34 @@ const WebsiteDevelopment = () => {
                   <Icon className="text-blue-600 w-14 h-14" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {service.serviceName}
+                  {t(`${key}.name`)}
                 </h3>
                 <p className="text-gray-600 text-center">
-                  {service.serviceDes}
+                  {t(`${key}.description`)}
                 </p>
               </div>
             );
           })}
         </div>
       </div>
-      {/* Benefits of Choosing Us */}
+
+      {/* Benefits Section */}
       <div className="pb-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            Benefits
+            {t("webDevelopment.benefits.title")}
           </span>{" "}
-          of Choosing Us
+          {t("webDevelopment.benefits.titleEnd")}
         </h2>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {Benefits.map((service, index) => {
+          {benefits.map((benefit, index) => {
             const Icon = {
               Zap,
               LifeBuoy,
-              Smile,
               Layout,
               TrendingUp,
-            }[service.serviceIcon];
+            }[benefit.serviceIcon];
+            const key = `webDevelopment.benefits.items.${benefit.translationKey}`;
 
             return (
               <div
@@ -318,45 +255,49 @@ const WebsiteDevelopment = () => {
                   <Icon className="text-blue-600 w-14 h-14" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {service.serviceName}
+                  {t(`${key}.name`)}
                 </h3>
                 <p className="text-gray-600 text-center">
-                  {service.serviceDes}
+                  {t(`${key}.description`)}
                 </p>
               </div>
             );
           })}
         </div>
       </div>
-      {/* Process  */}
-      <HowAgencyWorks steps={steps} />
 
-      {/* Our recent works */}
+      {/* Process Section */}
+      <HowAgencyWorks steps={steps} namespace="webDevelopment" />
+
+      {/* Portfolio Section */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         <h2 className="text-4xl text-center font-bold text-gray-800">
-          Our Recent{" "}
+          {t("webDevelopment.portfolio.title")}{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            Work
+            {t("webDevelopment.portfolio.titleHighlight")}
           </span>
-        </h2>{" "}
+        </h2>
         <div className="grid mt-10 grid-cols-1 md:grid-cols-3 gap-6">
           {portfolioItems.map((item, index) => (
             <div
               key={index}
               className={`shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] relative rounded-3xl p-6 ${item.bgColor}`}
             >
-              {/* Project Image */}
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
                 <img
                   src={item.image}
-                  alt={item.category}
+                  alt={t(
+                    `webDevelopment.portfolio.categories.${item.translationKey}`
+                  )}
                   className="w-full h-full object-cover"
                 />
               </div>
-
-              {/* Bottom Section */}
               <div className="flex justify-between items-center">
-                <h3 className="text-lg font-medium">{item.category}</h3>
+                <h3 className="text-lg font-medium">
+                  {t(
+                    `webDevelopment.portfolio.categories.${item.translationKey}`
+                  )}
+                </h3>
                 <button className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors">
                   <ArrowUpRight className="w-6 h-6 text-white" />
                 </button>
@@ -365,9 +306,18 @@ const WebsiteDevelopment = () => {
           ))}
         </div>
       </div>
-      {/* Faqs */}
-      <FAQs faqData={faqData} />
-      {/* Contact us */}
+
+      {/* FAQs Section */}
+      <FAQs
+        faqData={Object.keys(
+          t("webDevelopment.faq.items", { returnObjects: true })
+        ).map((key) => ({
+          question: t(`webDevelopment.faq.items.${key}.question`),
+          answer: t(`webDevelopment.faq.items.${key}.answer`),
+        }))}
+      />
+
+      {/* Contact Section */}
       <Contact />
     </div>
   );

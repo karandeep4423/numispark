@@ -1,3 +1,124 @@
 {
-    "welcome": "Bienvenue dans notre application!"
+  "home": {
+    "hero": {
+      "title": "Donner du pouvoir à votre entreprise avec",
+      "titleHighlight": "Solutions numériques de classe mondiale",
+      "subtitle": "Développement web | Applications mobiles | Design UI/UX | Marketing numérique"
+    },
+    "services": {
+      "title": "Notre cœur",
+      "titleHighlight": "Services",
+      "subtitle": "Solutions complètes adaptées à vos besoins",
+      "items": {
+        "webDevelopment": {
+          "name": "Développement Web",
+          "description": "Construisez des solutions web évolutives et indépendantes de la plateforme pour une accessibilité et une portée améliorées."
+        },
+        "mobileAppDevelopment": {
+          "name": "Développement d'applications mobiles",
+          "description": "Créez des applications mobiles robustes, conçues pour les plateformes Android et iOS."
+        },
+        "digitalMarketing": {
+          "name": "Marketing numérique",
+          "description": "Boostez votre présence en ligne et stimulez l'engagement avec des stratégies de marketing basées sur les données."
+        },
+        "uiUxDesign": {
+          "name": "Conception UI/UX",
+          "description": "Concevez des interfaces intuitives et esthétiques pour une expérience utilisateur fluide."
+        },
+        "saasDevelopment": {
+          "name": "Développement SaaS",
+          "description": "Développez des solutions SaaS sécurisées, évolutives et personnalisables pour répondre aux besoins de votre entreprise."
+        },
+        "aiAutomation": {
+          "name": "IA et automatisation",
+          "description": "Exploitez l'IA et l'automatisation pour optimiser les flux de travail et améliorer l'efficacité."
+        },
+        "ecommerceDevelopment": {
+          "name": "Développement e-commerce",
+          "description": "Créez des plateformes e-commerce dynamiques pour renforcer votre présence dans le commerce en ligne."
+        }
+      }
+    },
+    "process": {
+      "steps": {
+        "vision": {
+          "title": "Comprendre votre vision",
+          "description": "Nous collaborons étroitement pour comprendre vos objectifs, défis et ambitions, garantissant ainsi une trajectoire claire pour votre projet. Notre priorité est de nous aligner sur votre vision dès le début."
+        },
+        "planning": {
+          "title": "Planification stratégique",
+          "description": "En nous appuyant sur les informations recueillies lors de nos échanges, nous élaborons une stratégie détaillée qui définit des étapes concrètes. Notre approche sur mesure garantit le succès mesurable de votre projet."
+        },
+        "development": {
+          "title": "Conception et développement",
+          "description": "Nos équipes créatives et techniques travaillent ensemble pour donner vie à vos idées. Nous fournissons des conceptions visuellement époustouflantes associées à un développement performant."
+        },
+        "launch": {
+          "title": "Lancement et déploiement",
+          "description": "Après des tests rigoureux, nous lançons votre projet avec précision. Notre déploiement sans faille garantit que votre solution est prête à fonctionner parfaitement."
+        },
+        "support": {
+          "title": "Support continu",
+          "description": "Nous assurons un support après lancement pour que votre projet reste à la pointe. Notre équipe est toujours présente pour vous aider et innover davantage."
+        }
+      }
+    },
+    "whyUs": {
+      "title": "Pourquoi",
+      "titleHighlight": "Partenaire",
+      "titleEnd": "Avec nous",
+      "subtitle": "Votre succès est notre priorité",
+      "reasons": {
+        "team": {
+          "title": "Équipe d'experts expérimentés",
+          "description": "Notre équipe d'experts expérimentés fournit des solutions d'affaires indépendantes de la plateforme pour une disponibilité maximale."
+        },
+        "technology": {
+          "title": "Outils et technologies de pointe",
+          "description": "Nous utilisons les technologies les plus récentes pour construire des solutions robustes et évolutives, adaptées à vos besoins."
+        },
+        "approach": {
+          "title": "Approche centrée sur le client",
+          "description": "Nous plaçons votre succès en priorité et nous assurons que chaque solution est en adéquation avec vos objectifs uniques."
+        },
+        "track": {
+          "title": "Expérience avérée avec des résultats mesurables",
+          "description": "Notre expérience avérée garantit des résultats mesurables et un succès constant pour votre entreprise."
+        },
+        "communication": {
+          "title": "Communication transparente",
+          "description": "Nous maintenons une communication transparente, vous tenant informé à chaque étape."
+        },
+        "delivery": {
+          "title": "Livraison à temps",
+          "description": "Nous valorisons votre temps et garantissons une livraison ponctuelle de tous les projets, quelle que soit leur envergure."
+        }
+      }
+    },
+    "portfolio": {
+      "title": "Nos récents",
+      "titleHighlight": "Travaux",
+      "categories": {
+        "uiUx": "Conception UI/UX",
+        "appDesign": "Conception d'applications"
+      }
+    },
+    "faq": {
+      "items": {
+        "quote": {
+          "question": "Comment puis-je demander un devis pour un projet ?",
+          "answer": "Vous pouvez demander un devis en remplissant notre formulaire en ligne ou en contactant directement notre équipe commerciale. Nous vous répondrons dans les 24 heures avec une proposition détaillée basée sur les exigences de votre projet."
+        },
+        "industries": {
+          "question": "Quels secteurs desservez-vous ?",
+          "answer": "Nous desservons un large éventail de secteurs, y compris la technologie, la santé, la finance, le commerce de détail, l'éducation et la fabrication. Nos solutions sont personnalisées pour répondre aux besoins spécifiques de chaque secteur."
+        },
+        "timeline": {
+          "question": "Quel est le délai typique pour un projet ?",
+          "answer": "Les délais des projets varient en fonction de l'ampleur et de la complexité. En général, les petits projets prennent 2 à 4 semaines, les projets moyens 1 à 3 mois, et les grands projets 3 à 6 mois. Nous fournirons un calendrier détaillé lors de la consultation initiale."
+        }
+      }
+    }
+  }
 }

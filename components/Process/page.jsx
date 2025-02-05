@@ -1,14 +1,15 @@
+"use client"
 import { useInView } from "react-intersection-observer";
 import { useTranslation } from "react-i18next";
 
-const HowAgencyWorks = ({ steps }) => {
-  const { t } = useTranslation();
-
+const HowAgencyWorks = ({ steps, namespace }) => {
+  const { t } = useTranslation([namespace]);
+  console.log("namespace", namespace);
   return (
     <div className="bg-black text-white">
       <div className="flex items-center justify-center">
         <h2 className="relative mt-16 text-center text-5xl font-bold">
-          How Agency Works
+          {t(`${namespace}.process.title`, "How Agency Works")}
         </h2>
         <div className="bg-sky-400 mt-16 absolute mix-blend-multiply filter blur-2xl h-16 w-56"></div>
       </div>
@@ -19,7 +20,15 @@ const HowAgencyWorks = ({ steps }) => {
             triggerOnce: true,
             delay: 200,
           });
-          const key = `process.steps.${step.translationKey}`;
+
+          // Determine whether to use direct title/description or fetch from translations
+          const title =
+            step.title ||
+            t(`${namespace}.process.steps.${step.translationKey}.title`);
+          const description =
+            step.description ||
+            t(`${namespace}.process.steps.${step.translationKey}.description`);
+
           return (
             <div key={index} className="w-full flex flex-col items-center">
               {/* Step Number */}
@@ -46,10 +55,10 @@ const HowAgencyWorks = ({ steps }) => {
                 </div>
                 <div>
                   <h3 className="mt-3 lg:mt-0 text-3xl px-3 text-center font-bold">
-                  {t(`${key}.title`)}
+                    {title}
                   </h3>
                   <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
-                  {t(`${key}.description`)}
+                    {description}
                   </p>
                 </div>
               </div>

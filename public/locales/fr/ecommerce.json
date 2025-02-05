@@ -1,0 +1,112 @@
+{
+  "ecommerce": {
+    "hero": {
+      "title": "Solutions e-commerce puissantes pour dynamiser vos ventes"
+    },
+    "keyFeatures": {
+      "title": "Principales",
+      "titleHighlight": "Caractéristiques",
+      "titleEnd": "de notre e-commerce",
+      "items": {
+        "securePaymentGateways": {
+          "name": "Passerelles de paiement sécurisées",
+          "description": "Nous mettons en œuvre des mesures de sécurité robustes pour protéger les données de vos clients et assurer des transactions sécurisées."
+        },
+        "userFriendlyDesign": {
+          "name": "Design convivial",
+          "description": "Nos designs sont intuitifs et réactifs, garantissant une expérience d'achat fluide sur tous les appareils."
+        },
+        "inventoryManagement": {
+          "name": "Gestion des stocks",
+          "description": "Nos systèmes facilitent le suivi et la gestion de votre inventaire en temps réel, réduisant ainsi les problèmes de stock."
+        },
+        "advancedAnalytics": {
+          "name": "Analyses avancées et rapports",
+          "description": "Nous fournissons des analyses détaillées pour vous aider à prendre des décisions basées sur les données et optimiser les performances."
+        }
+      }
+    },
+    "benefits": {
+      "title": "Avantages",
+      "titleEnd": "de nous choisir",
+      "items": {
+        "easyIntegration": {
+          "name": "Intégration facile avec les systèmes de paiement",
+          "description": "Nous permettons une intégration fluide avec plusieurs passerelles de paiement afin d'assurer des transactions sécurisées et sans tracas pour vos clients."
+        },
+        "scalablePlatforms": {
+          "name": "Plateformes évolutives",
+          "description": "Nos solutions sont conçues pour évoluer avec votre entreprise, permettant une croissance sans compromettre la performance."
+        },
+        "enhancedConversion": {
+          "name": "Taux de conversion améliorés",
+          "description": "Nous optimisons votre boutique pour améliorer les taux de conversion, assurant ainsi que les visiteurs se transforment en clients fidèles."
+        },
+        "seamlessExperience": {
+          "name": "Expérience utilisateur fluide",
+          "description": "Nous concevons des interfaces conviviales pour une navigation sans effort, améliorant ainsi l'expérience d'achat globale."
+        },
+        "postLaunchSupport": {
+          "name": "Support et maintenance post-lancement",
+          "description": "Notre équipe assure des mises à jour régulières et une maintenance pour garantir que votre plateforme reste sécurisée et à jour."
+        }
+      }
+    },
+    "process": {
+      "steps": {
+        "vision": {
+          "title": "Comprendre votre vision",
+          "description": "Nous commençons par une consultation approfondie afin de comprendre vos objectifs commerciaux, votre public cible et vos propositions de valeur uniques."
+        },
+        "planning": {
+          "title": "Planification stratégique",
+          "description": "Notre équipe élabore une stratégie complète qui définit les caractéristiques clés, les fonctionnalités et les échéances. Nous nous concentrons sur l'établissement d'une expérience utilisateur intuitive, l'optimisation des taux de conversion et l'intégration des meilleures pratiques en SEO et marketing."
+        },
+        "designDevelopment": {
+          "title": "Design et développement",
+          "description": "Nos designers créent une interface visuellement attrayante et conviviale, tandis que nos développeurs mettent en place une infrastructure backend robuste."
+        },
+        "launchDeployment": {
+          "title": "Lancement et déploiement",
+          "description": "Une fois tout peaufiné, nous préparons le lancement. Notre équipe veille à ce que tous les systèmes soient opérationnels et que votre site e-commerce soit prêt pour vos clients."
+        },
+        "ongoingSupport": {
+          "title": "Support continu",
+          "description": "Après le lancement, nous offrons un support continu comprenant des mises à jour régulières, le suivi des performances et des stratégies d'évolution pour accompagner la croissance de votre entreprise."
+        }
+      }
+    },
+    "portfolio": {
+      "title": "Nos récentes",
+      "titleHighlight": "Réalisations",
+      "categories": {
+        "uiUx": "Design UI/UX",
+        "appDesign": "Design d'application"
+      }
+    },
+    "faq": {
+      "items": {
+        "platforms": {
+          "question": "Avec quelles plateformes e-commerce travaillez-vous ?",
+          "answer": "Nous nous spécialisons dans des plateformes telles que Shopify, WooCommerce, Magento, ainsi que des solutions sur mesure adaptées à vos besoins."
+        },
+        "features": {
+          "question": "Quelles fonctionnalités pouvez-vous intégrer à mon site e-commerce ?",
+          "answer": "Nous pouvons intégrer des fonctionnalités telles que l'affichage des produits, le panier d'achat, les avis clients, les listes de souhaits, le traitement sécurisé des paiements, le suivi des commandes et des recommandations personnalisées pour améliorer l'expérience utilisateur."
+        },
+        "digitalMarketing": {
+          "question": "Pouvez-vous m'aider avec le marketing digital pour ma boutique en ligne ?",
+          "answer": "Oui, nous proposons des services complets de marketing digital, incluant le SEO, le marketing sur les réseaux sociaux, l'email marketing et la publicité au coût par clic, pour vous aider à atteindre votre public cible et générer du trafic vers votre boutique."
+        },
+        "seo": {
+          "question": "Comment gérez-vous le SEO pour les sites e-commerce ?",
+          "answer": "Nous appliquons les meilleures pratiques SEO, incluant la recherche de mots-clés, l'optimisation on-page, l'optimisation des descriptions de produits, l'ajout de balises alt aux images et des stratégies de netlinking pour améliorer la visibilité de votre site dans les résultats de recherche."
+        },
+        "support": {
+          "question": "Quel type de support continuez-vous à fournir après le lancement du site ?",
+          "answer": "Nous proposons un support continu comprenant des mises à jour régulières, la maintenance, la résolution de problèmes et le suivi des performances pour assurer le bon fonctionnement de votre site e-commerce."
+        }
+      }
+    }
+  }
+}

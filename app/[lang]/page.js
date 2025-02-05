@@ -259,23 +259,23 @@ export default function Home() {
       <Hero technologies={TECHNOLOGIES} />
 
       {/* Services Section */}
-      <div className="py-16 bg-gray-50">
+      <div className="pt-16 bg-gray-50">
         <h2
           id="services"
           className="text-4xl px-2 text-center font-bold text-gray-800"
         >
-          {t("services.title")}
+          {t("home.services.title")}
           <span className="text-blue-600 bg-blue-200 p-1.5 rounded-2xl">
-            {t("services.titleHighlight")}
+            {t("home.services.titleHighlight")}
           </span>
         </h2>
         <p className="px-2 text-xl text-center font-medium text-gray-600 mt-4">
-          {t("services.subtitle")}
+          {t("home.services.subtitle")}
         </p>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
           {Services.map((service, index) => {
             const Icon = service.serviceIcon;
-            const key = `services.items.${service.translationKey}`;
+            const key = `home.services.items.${service.translationKey}`;
 
             return (
               <div
@@ -301,18 +301,18 @@ export default function Home() {
       <Technologies technologies={TECHNOLOGIES} />
 
       {/* Process Section */}
-      <HowAgencyWorks steps={steps} />
+      <HowAgencyWorks steps={steps} namespace="home" />
       {/* Why Partner with Us Section */}
       <div className="py-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
-          {t("whyUs.title")}{" "}
+          {t("home.whyUs.title")}{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            {t("whyUs.titleHighlight")}
+            {t("home.whyUs.titleHighlight")}
           </span>{" "}
-          {t("whyUs.titleEnd")}
+          {t("home.whyUs.titleEnd")}
         </h2>
         <p className="text-xl text-center font-medium text-gray-600 mt-4">
-          {t("whyUs.subtitle")}
+          {t("home.whyUs.subtitle")}
         </p>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
           {WhyUs.map((service, index) => {
@@ -324,7 +324,7 @@ export default function Home() {
               MessageCircle,
               Clock,
             }[service.serviceIcon];
-            const key = `whyUs.reasons.${service.translationKey}`;
+            const key = `home.whyUs.reasons.${service.translationKey}`;
 
             return (
               <div
@@ -349,9 +349,9 @@ export default function Home() {
       {/* Portfolio Section */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         <h2 className="text-4xl text-center font-bold text-gray-800">
-          {t("portfolio.title")}{" "}
+          {t("home.portfolio.title")}{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            {t("portfolio.titleHighlight")}
+            {t("home.portfolio.titleHighlight")}
           </span>
         </h2>
         <div className="grid mt-10 grid-cols-1 md:grid-cols-3 gap-6">
@@ -363,13 +363,13 @@ export default function Home() {
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
                 <img
                   src={item.image}
-                  alt={t(`portfolio.categories.${item.translationKey}`)}
+                  alt={t(`home.portfolio.categories.${item.translationKey}`)}
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="flex justify-between items-center">
                 <h3 className="text-lg font-medium">
-                  {t(`portfolio.categories.${item.translationKey}`)}
+                  {t(`home.portfolio.categories.${item.translationKey}`)}
                 </h3>
                 <button className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors">
                   <ArrowUpRight className="w-6 h-6 text-white" />
@@ -382,10 +382,10 @@ export default function Home() {
 
       {/* FAQs Section */}
       <FAQs
-        faqData={Object.keys(t("faq.items", { returnObjects: true })).map(
+        faqData={Object.keys(t("home.faq.items", { returnObjects: true })).map(
           (key) => ({
-            question: t(`faq.items.${key}.question`),
-            answer: t(`faq.items.${key}.answer`),
+            question: t(`home.faq.items.${key}.question`),
+            answer: t(`home.faq.items.${key}.answer`),
           })
         )}
       />

@@ -1,0 +1,117 @@
+{
+  "webDevelopment": {
+    "hero": {
+      "title": "Individuell angepasste Webseiten, zugeschnitten auf Ihre Geschäftsbedürfnisse",
+      "subtitle": "Mit Fokus auf Skalierbarkeit, Reaktionsfähigkeit und Leistung"
+    },
+    "keyFeatures": {
+      "title": "Haupt",
+      "titleHighlight": "Eigenschaften",
+      "titleEnd": "unserer Webseiten",
+      "items": {
+        "mobileResponsive": {
+          "name": "Mobilfreundliches Design",
+          "description": "Wir erstellen mobiloptimierte Designs, die sicherstellen, dass Ihre Webseite auf allen Geräten hervorragend aussieht und einwandfrei funktioniert."
+        },
+        "seoFriendly": {
+          "name": "SEO-optimierte Entwicklung",
+          "description": "Unsere Webseiten sind für Suchmaschinen optimiert, helfen Ihnen, ein besseres Ranking zu erzielen und mehr organischen Traffic anzuziehen."
+        },
+        "cms": {
+          "name": "Benutzerfreundliches CMS",
+          "description": "Wir integrieren benutzerfreundliche CMS-Plattformen, die es Ihnen ermöglichen, Ihre Webseite mühelos zu aktualisieren und zu verwalten."
+        },
+        "speedOptimization": {
+          "name": "Geschwindigkeitsoptimierung",
+          "description": "Wir setzen fortschrittliche Optimierungstechniken ein, um die Geschwindigkeit und Leistung Ihrer Webseite zu verbessern."
+        }
+      }
+    },
+    "benefits": {
+      "title": "Vorteile",
+      "titleEnd": "von uns zu wählen",
+      "items": {
+        "userExperience": {
+          "name": "Verbessertes Benutzererlebnis",
+          "description": "Wir liefern intuitive und ansprechende Webseiten, die für eine reibungslose Navigation und ein herausragendes Nutzererlebnis konzipiert sind."
+        },
+        "loadingTimes": {
+          "name": "Schnellere Ladezeiten",
+          "description": "Unser Entwicklungsprozess gewährleistet optimierte Ladegeschwindigkeiten, was die Nutzerbindung und Zufriedenheit erhöht."
+        },
+        "scalability": {
+          "name": "Skalierbarkeit für zukünftiges Wachstum",
+          "description": "Wir entwickeln skalierbare Lösungen, die mit Ihrem Unternehmen wachsen und die Stabilität Ihrer Webseite auch bei steigendem Traffic gewährleisten."
+        },
+        "support": {
+          "name": "Dedizierter Support nach dem Launch",
+          "description": "Unser Team bietet kontinuierlichen Support und Wartung, um sicherzustellen, dass Ihre Webseite sicher, aktuell und voll funktionsfähig bleibt."
+        }
+      }
+    },
+    "process": {
+      "steps": {
+        "analysis": {
+          "title": "Bedarfsanalyse",
+          "description": "Zusammenarbeiten, um die Ziele, Herausforderungen und Anforderungen zu verstehen. So wird Ihre Vision für die Webseite von Anfang an abgestimmt."
+        },
+        "wireframing": {
+          "title": "Erstellung von Wireframes & Prototyping",
+          "description": "Ideen in strukturierte Pläne mittels Prototypen umsetzen, um die endgültige Webseite zu visualisieren und strategische Klarheit zu gewährleisten."
+        },
+        "development": {
+          "title": "Entwicklung",
+          "description": "Konzepte in eine vollständig funktionsfähige Webseite umsetzen, durch ein harmonisches Design und robuste Entwicklung für optimale Leistung."
+        },
+        "testing": {
+          "title": "Tests",
+          "description": "Strenge Tests durchführen, um sicherzustellen, dass Ihre Webseite fehlerfrei, optimiert und bereit für einen reibungslosen Launch ist."
+        },
+        "deployment": {
+          "title": "Bereitstellung",
+          "description": "Die Webseite präzise bereitstellen und nach dem Launch Support bieten, um einen reibungslosen und effizienten Betrieb sicherzustellen."
+        }
+      }
+    },
+    "portfolio": {
+      "title": "Unsere neuesten",
+      "titleHighlight": "Projekte",
+      "categories": {
+        "uiUx": "UI/UX-Design",
+        "appDesign": "App-Design"
+      }
+    },
+    "faq": {
+      "items": {
+        "hosting": {
+          "question": "Bieten Sie Webhosting-Dienste an?",
+          "answer": "Obwohl wir die Webseiten nicht direkt hosten, können wir Ihnen helfen, zuverlässige Hosting-Lösungen wie AWS, Bluehost oder SiteGround auszuwählen und einzurichten."
+        },
+        "redesign": {
+          "question": "Können Sie meine bestehende Webseite neu gestalten?",
+          "answer": "Absolut. Wir bieten Website-Relaunch-Dienste an, um Ästhetik, Funktionalität und Leistung zu verbessern, während die Identität Ihrer Marke erhalten bleibt."
+        },
+        "content": {
+          "question": "Stellen Sie Inhalte für Webseiten bereit?",
+          "answer": "Ja, wir bieten Content-Erstellungsdienste an, einschließlich Texterstellung, SEO-optimierten Inhalten und multimedialen Inhalten für Ihre Webseite."
+        },
+        "seo": {
+          "question": "Wird meine Webseite für Suchmaschinen optimiert sein?",
+          "answer": "Ja, alle von uns entwickelten Webseiten sind SEO-optimiert, was eine schnelle Indexierung und ein besseres Ranking in den Suchmaschinen gewährleistet."
+        },
+        "maintenance": {
+          "question": "Bieten Sie Support und Updates nach dem Launch der Webseite an?",
+          "answer": "Ja, wir bieten Support nach dem Launch an, einschließlich regelmäßiger Updates, Sicherheits-Patches und Leistungsüberwachung, um sicherzustellen, dass Ihre Webseite reibungslos funktioniert."
+        },
+        "training": {
+          "question": "Können Sie Schulungen zur Verwaltung meiner Webseite anbieten?",
+          "answer": "Ja, wir bieten Schulungssitzungen und Benutzerhandbücher an, um Ihnen zu helfen, Ihre Webseite mit dem CMS oder anderen von uns implementierten Tools effektiv zu verwalten."
+        },
+        "multilingual": {
+          "question": "Unterstützen Sie mehrsprachige Webseiten?",
+          "answer": "Ja, wir können Webseiten mit mehrsprachiger Unterstützung entwickeln, sodass Sie effektiv ein globales Publikum erreichen."
+        }
+      }
+    }
+  }
+}

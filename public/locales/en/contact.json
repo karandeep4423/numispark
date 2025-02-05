@@ -1,0 +1,36 @@
+{
+  "contact": {
+    "heading": "Prêt à commencer?",
+    "subHeading": "Ready to get started? We would love to hear from you.",
+    "form": {
+      "input": {
+        "email": "Email",
+        "name": "Nom complet",
+        "phone": "Numéro de téléphone",
+        "city": "Ville"
+      },
+      "select": {
+        "serviceType": "Select Service Type",
+        "budget": "Your Budget",
+        "options": {
+          "serviceType": {
+            "webDevelopment": "Web Development",
+            "appDevelopment": "App Development",
+            "digitalMarketing": "Digital Marketing",
+            "seoServices": "SEO Services"
+          },
+          "budget": {
+            "below1000": "$0 - $1,000",
+            "1000to5000": "$1,000 - $5,000",
+            "5000to10000": "$5,000 - $10,000",
+            "above10000": "Above $10,000"
+          }
+        }
+      },
+      "textarea": {
+        "placeholder": "Tell us about your project"
+      },
+      "submit": "Envoyer"
+    }
+  }
+}

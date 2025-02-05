@@ -1,0 +1,95 @@
+{
+  "about": {
+    "hero": {
+      "titlePart1": "Empowering Your Business with",
+      "titlePart2": "Innovative Digital Solutions",
+      "subtitle": "We're a team of passionate digital craftsmen, turning innovative ideas into powerful digital solutions that drive business growth."
+    },
+    "coreValues": {
+      "title": "Our Core",
+      "titleHighlight": "Values",
+      "subtitle": "Comprehensive Solutions Tailored to Your Needs",
+      "items": {
+        "quality": {
+          "title": "Quality First",
+          "description": "We never compromise on quality, ensuring every project meets our high standards of excellence."
+        },
+        "delivery": {
+          "title": "Timely Delivery",
+          "description": "We respect deadlines and ensure projects are delivered on time without sacrificing quality."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "We stay ahead of technological trends to provide cutting-edge solutions for our clients."
+        },
+        "partnership": {
+          "title": "Client Partnership",
+          "description": "We build lasting relationships with our clients, becoming their trusted technology partners."
+        }
+      }
+    },
+    "team": {
+      "title": "Meet Our",
+      "titleHighlight": "Team",
+      "subtitle": "Meet the talented individuals who make our digital innovation possible.",
+      "members": {
+        "jessica": {
+          "name": "Jessica Dobrev",
+          "role": "Backend Lead"
+        },
+        "drew": {
+          "name": "Drew Cano",
+          "role": "Head of UX"
+        },
+        "sasha": {
+          "name": "Sasha Kindred",
+          "role": "VP of Marketing"
+        },
+        "emily": {
+          "name": "Emily Donnavan",
+          "role": "Product Lead"
+        },
+        "orlando": {
+          "name": "Orlando Diggs",
+          "role": "Co-Founder and COO"
+        },
+        "sophie": {
+          "name": "Sophie Chamberlain",
+          "role": "Head of Sales"
+        },
+        "lana": {
+          "name": "Lana Steiner",
+          "role": "VP of Customer Success"
+        },
+        "emmy": {
+          "name": "Emmy Rosum",
+          "role": "Co-Founder and CEO"
+        }
+      }
+    },
+    "whyChooseUs": {
+      "title": "Why",
+      "titleHighlight": "Partner",
+      "titleEnd": "With Us",
+      "subtitle": "Comprehensive Solutions Tailored to Your Needs",
+      "items": {
+        "experts": {
+          "title": "Dedicated Team of Experts",
+          "description": "Our team comprises industry veterans, certified professionals, and creative minds who bring diverse expertise to every project."
+        },
+        "solutions": {
+          "title": "Tailored Solutions for Every Client",
+          "description": "We understand that every business is unique. Our approach focuses on creating customized solutions that align perfectly with your specific needs."
+        },
+        "success": {
+          "title": "Proven Track Record of Success",
+          "description": "Our portfolio speaks for itself, with numerous successful projects across various industries. We've helped businesses achieve their digital goals."
+        },
+        "communication": {
+          "title": "Transparent Communication",
+          "description": "We believe in building trust through transparency. Our clear communication channels and well-defined processes ensure you're always informed."
+        }
+      }
+    }
+  }
+}

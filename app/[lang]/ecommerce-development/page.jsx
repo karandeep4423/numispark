@@ -1,8 +1,5 @@
 "use client";
-import { useInView } from "react-intersection-observer";
 import {
-  PlusCircle,
-  MinusCircle,
   ArrowUpRight,
   Code,
   Layout,
@@ -24,66 +21,7 @@ import HeroButtons from "@/components/HeroButtons/page";
 import FAQs from "@/components/Faqs/page";
 import Technologies from "@/components/Technologies/page";
 import HowAgencyWorks from "@/components/Process/page";
-
-const Benefits = [
-  {
-    serviceName: "Easy Integration with Payment Systems",
-    serviceIcon: "CreditCard", // Icon for payment systems
-    serviceDes:
-      "We enable seamless integration with multiple payment gateways to ensure secure and hassle-free transactions for your customers.",
-  },
-  {
-    serviceName: "Scalable Platforms",
-    serviceIcon: "Layers", // Icon for scalability and layers
-    serviceDes:
-      "Our solutions are built to scale with your business, accommodating growth without compromising performance.",
-  },
-  {
-    serviceName: "Enhanced Conversion Rates",
-    serviceIcon: "BarChart", // Icon for analytics and growth
-    serviceDes:
-      "We optimize your store for higher conversion rates, ensuring that visitors turn into loyal customers.",
-  },
-  {
-    serviceName: "Seamless User Experience",
-    serviceIcon: "Layout", // Icon for design and user interface
-    serviceDes:
-      "We craft user-friendly interfaces for effortless navigation, enhancing the overall shopping experience.",
-  },
-  {
-    serviceName: "Post-Launch Support & Maintenance",
-    serviceIcon: "Wrench", // Icon for tools and maintenance
-    serviceDes:
-      "Our team provides regular updates and maintenance to ensure your platform remains secure and up-to-date.",
-  },
-];
-
-const Features = [
-  {
-    serviceName: "Secure Payment Gateways",
-    serviceIcon: "Shield", // Icon for security
-    serviceDes:
-      "We implement robust security measures to protect customer data and provide secure transactions.",
-  },
-  {
-    serviceName: "User-Friendly Design",
-    serviceIcon: "Monitor", // Icon for interface and design
-    serviceDes:
-      "Our designs are intuitive and responsive, ensuring a seamless shopping experience on any device.",
-  },
-  {
-    serviceName: "Inventory Management",
-    serviceIcon: "Archive", // Icon for inventory
-    serviceDes:
-      "Our systems make it easy to track and manage your inventory in real-time, minimizing stock issues.",
-  },
-  {
-    serviceName: "Advanced Analytics & Reporting",
-    serviceIcon: "PieChart", // Icon for analytics
-    serviceDes:
-      "We provide detailed analytics to help you make data-driven decisions and optimize performance.",
-  },
-];
+import { useTranslation } from "next-i18next";
 
 const TECHNOLOGIES = [
   {
@@ -103,89 +41,99 @@ const TECHNOLOGIES = [
     logo: "https://cdn.brandfetch.io/idjqrHQc8M/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B",
   },
 ];
-const portfolioItems = [
+const Features = [
   {
-    image: "/api/placeholder/400/400",
-    category: "UI/ UX Design",
-    bgColor: "bg-violet-100",
-    dotColor: "bg-violet-500",
+    translationKey: "securePaymentGateways",
+    serviceIcon: "Shield"
   },
   {
-    image: "/api/placeholder/400/400",
-    category: "App Design",
-    bgColor: "bg-emerald-600",
-    dotColor: "bg-emerald-500",
+    translationKey: "userFriendlyDesign",
+    serviceIcon: "Monitor"
   },
   {
-    image: "/api/placeholder/400/400",
-    category: "App Design",
-    bgColor: "bg-amber-400",
-    dotColor: "bg-amber-500",
-  },
-];
-const faqData = [
-  {
-    question: "What e-commerce platforms do you work with?",
-    answer:
-      "We specialize in platforms like Shopify, WooCommerce, Magento, and custom-built solutions tailored to your business needs.",
+    translationKey: "inventoryManagement",
+    serviceIcon: "Archive"
   },
   {
-    question: "What features can you include in my e-commerce website?",
-    answer:
-      "We can include features such as product listings, shopping cart functionality, customer reviews, wish lists, secure payment processing, order tracking, and personalized recommendations to enhance user experience.",
-  },
-  {
-    question: "Can you help me with digital marketing for my online store?",
-    answer:
-      "Yes, we offer comprehensive digital marketing services, including SEO, social media marketing, email marketing, and pay-per-click advertising, to help you reach your target audience and drive traffic to your store.",
-  },
-  {
-    question: "How do you handle SEO for e-commerce sites?",
-    answer:
-      "We implement SEO best practices, including keyword research, on-page optimization, product description optimization, image alt tags, and link-building strategies to improve your site's visibility in search engine results.",
-  },
-  {
-    question:
-      "What kind of ongoing support do you provide after the website launch?",
-    answer:
-      "We offer ongoing support that includes regular updates, maintenance, troubleshooting, and performance monitoring to ensure your e-commerce site runs smoothly and efficiently.",
-  },
-];
-const steps = [
-  {
-    icon: <Brain className="text-white" size={80} />,
-    title: "Understanding Your Vision",
-    description: "We begin by conducting an in-depth consultation to understand your business goals, target audience, and unique selling propositions."
-  },
-  {
-    icon: <Target className="text-white" size={80} />,
-    title: "Strategic Planning",
-    description: "Our team creates a comprehensive strategy that outlines key features, functionalities, and timelines.We focus on establishing an intuitive user experience, optimizing conversion rates, and incorporating best practices for SEO and marketing."
-  },
-  {
-    icon: <Code className="text-white" size={80} />,
-    title: "Design & Development",
-    description: "Our designers craft a visually appealing and user-friendly interface, while our developers build a robust backend infrastructure."
-  },
-  {
-    icon: <Rocket className="text-white" size={80} />,
-    title: "Launch & Deployment",
-    description: "Once everything is polished, we prepare for launch. Our team ensures that all systems are functional and that your e-commerce site is ready for customers."
-  },
-  {
-    icon: <RefreshCw className="text-white" size={80} />,
-    title: "Ongoing Support",
-    description: "After launch, we provide continuous support to ensure your e-commerce store operates smoothly. We offer regular updates, performance monitoring, and strategies for scaling your business as you grow."
+    translationKey: "advancedAnalytics",
+    serviceIcon: "PieChart"
   }
 ];
 
-export default function Home() {
+const Benefits = [
+  {
+    translationKey: "easyIntegration",
+    serviceIcon: "CreditCard"
+  },
+  {
+    translationKey: "scalablePlatforms",
+    serviceIcon: "Layers"
+  },
+  {
+    translationKey: "enhancedConversion",
+    serviceIcon: "BarChart"
+  },
+  {
+    translationKey: "seamlessExperience",
+    serviceIcon: "Layout"
+  },
+  {
+    translationKey: "postLaunchSupport",
+    serviceIcon: "Wrench"
+  }
+];
+
+const portfolioItems = [
+  {
+    image: "/api/placeholder/400/400",
+    translationKey: "uiUx",
+    bgColor: "bg-violet-100",
+    dotColor: "bg-violet-500"
+  },
+  {
+    image: "/api/placeholder/400/400",
+    translationKey: "appDesign",
+    bgColor: "bg-emerald-600",
+    dotColor: "bg-emerald-500"
+  },
+  {
+    image: "/api/placeholder/400/400",
+    translationKey: "appDesign",
+    bgColor: "bg-amber-400",
+    dotColor: "bg-amber-500"
+  }
+];
+
+const steps = [
+  {
+    translationKey: "vision",
+    icon: <Brain className="text-white" size={80} />
+  },
+  {
+    translationKey: "planning",
+    icon: <Target className="text-white" size={80} />
+  },
+  {
+    translationKey: "designDevelopment",
+    icon: <Code className="text-white" size={80} />
+  },
+  {
+    translationKey: "launchDeployment",
+    icon: <Rocket className="text-white" size={80} />
+  },
+  {
+    translationKey: "ongoingSupport",
+    icon: <RefreshCw className="text-white" size={80} />
+  }
+];
+
+export default function EcommerceDevelopment() {
+  const { t } = useTranslation("ecommerce");
 
   return (
     <div>
       {/* Hero Section */}
       <div className="relative h-screen flex flex-col sm:flex-row justify-center items-center overflow-hidden bg-blue-200">
-        {/* Video Background with blend mode */}
         <video
           autoPlay
           loop
@@ -196,37 +144,37 @@ export default function Home() {
           <source src="/ecommerce1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-
-        {/* Overlay Content */}
         <div className="relative z-20 flex w-full h-screen gap-5 justify-center items-center">
-          <div className="mt-10 sm:mt-0 flex justify-center items-center flex-col">
+          <div className="mt-10 sm:mt-0 flex flex-col justify-center items-center">
             <span className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
-              Powerful Ecommerce Solutions to Boost Your Sales
+              {t("ecommerce.hero.title")}
             </span>
-            {/* buttons */}
             <HeroButtons />
           </div>
         </div>
       </div>
+
       {/* Technologies Section */}
       <Technologies technologies={TECHNOLOGIES} />
-      {/* Key Features */}
+
+      {/* Key Features Section */}
       <div className="pb-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
-          Key
+          {t("ecommerce.keyFeatures.title")}{" "}
           <span className="text-blue-600 m-1 bg-blue-200 p-2.5 rounded-2xl">
-            Features{" "}
+            {t("ecommerce.keyFeatures.titleHighlight")}
           </span>{" "}
-          of our Ecommerce
+          {t("ecommerce.keyFeatures.titleEnd")}
         </h2>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {Features.map((service, index) => {
+          {Features.map((feature, index) => {
             const Icon = {
               Shield,
               Monitor,
               Archive,
-              PieChart,
-            }[service.serviceIcon];
+              PieChart
+            }[feature.serviceIcon];
+            const key = `ecommerce.keyFeatures.items.${feature.translationKey}`;
 
             return (
               <div
@@ -237,33 +185,35 @@ export default function Home() {
                   <Icon className="text-blue-600 w-14 h-14" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {service.serviceName}
+                  {t(`${key}.name`)}
                 </h3>
                 <p className="text-gray-600 text-center">
-                  {service.serviceDes}
+                  {t(`${key}.description`)}
                 </p>
               </div>
             );
           })}
         </div>
       </div>
-      {/* Benefits of Choosing Us */}
+
+      {/* Benefits Section */}
       <div className="pb-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            Benefits
+            {t("ecommerce.benefits.title")}
           </span>{" "}
-          of Choosing Us
+          {t("ecommerce.benefits.titleEnd")}
         </h2>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {Benefits.map((service, index) => {
+          {Benefits.map((benefit, index) => {
             const Icon = {
               CreditCard,
               Layers,
               BarChart,
               Layout,
-              Wrench,
-            }[service.serviceIcon];
+              Wrench
+            }[benefit.serviceIcon];
+            const key = `ecommerce.benefits.items.${benefit.translationKey}`;
 
             return (
               <div
@@ -274,44 +224,45 @@ export default function Home() {
                   <Icon className="text-blue-600 w-14 h-14" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {service.serviceName}
+                  {t(`${key}.name`)}
                 </h3>
                 <p className="text-gray-600 text-center">
-                  {service.serviceDes}
+                  {t(`${key}.description`)}
                 </p>
               </div>
             );
           })}
         </div>
       </div>
-      {/* Process  */}
-      <HowAgencyWorks steps={steps} />
-      {/* Our recent works */}
+
+      {/* Process Section */}
+      <HowAgencyWorks steps={steps} namespace="ecommerce" />
+
+      {/* Portfolio Section */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         <h2 className="text-4xl text-center font-bold text-gray-800">
-          Our Recent{" "}
+          {t("ecommerce.portfolio.title")}{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            Work
+            {t("ecommerce.portfolio.titleHighlight")}
           </span>
-        </h2>{" "}
+        </h2>
         <div className="grid mt-10 grid-cols-1 md:grid-cols-3 gap-6">
           {portfolioItems.map((item, index) => (
             <div
               key={index}
               className={`shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] relative rounded-3xl p-6 ${item.bgColor}`}
             >
-              {/* Project Image */}
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
                 <img
                   src={item.image}
-                  alt={item.category}
+                  alt={t(`ecommerce.portfolio.categories.${item.translationKey}`)}
                   className="w-full h-full object-cover"
                 />
               </div>
-
-              {/* Bottom Section */}
               <div className="flex justify-between items-center">
-                <h3 className="text-lg font-medium">{item.category}</h3>
+                <h3 className="text-lg font-medium">
+                  {t(`ecommerce.portfolio.categories.${item.translationKey}`)}
+                </h3>
                 <button className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors">
                   <ArrowUpRight className="w-6 h-6 text-white" />
                 </button>
@@ -320,9 +271,18 @@ export default function Home() {
           ))}
         </div>
       </div>
-      {/* Faqs */}
-      <FAQs faqData={faqData} />
-      {/* Contact us */}
+
+      {/* FAQs Section */}
+      <FAQs
+        faqData={Object.keys(
+          t("ecommerce.faq.items", { returnObjects: true })
+        ).map((key) => ({
+          question: t(`ecommerce.faq.items.${key}.question`),
+          answer: t(`ecommerce.faq.items.${key}.answer`)
+        }))}
+      />
+
+      {/* Contact Section */}
       <Contact />
     </div>
   );

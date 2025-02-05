@@ -15,7 +15,7 @@ import {
   X,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
-
+import LanguageSwitcher from "../LanguageSwitcher/page";
 const serviceItems = [
   {
     category: "Development Services",
@@ -210,6 +210,7 @@ const Navbar = () => {
           >
             Start a Project
           </Link>
+          <LanguageSwitcher/>
         </div>
       </nav>
     </div>
