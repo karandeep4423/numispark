@@ -1,52 +1,58 @@
 import { NextResponse } from 'next/server';
 
 const supportedLocales = ['fr', 'en', 'de'];
-const defaultLocale = 'fr';
+const hiddenLocale = 'fr';
 
 export function middleware(request) {
   const { pathname } = request.nextUrl;
   
-  // Handle root path detection
-  if (pathname === '/') {
-    // First, try to read the cookie set by the language switcher
-    const cookieLocale = request.cookies.get('userLocale')?.value;
-    // If cookie is set and valid, use it; otherwise, use accept-language header.
-    let locale;
-    if (cookieLocale && supportedLocales.includes(cookieLocale)) {
-      locale = cookieLocale;
-    } else {
-      const acceptLanguage = request.headers.get('accept-language') || defaultLocale;
-      const detectedLocale = acceptLanguage.split(',')[0].split('-')[0].toLowerCase();
-      locale = supportedLocales.includes(detectedLocale) ? detectedLocale : defaultLocale;
-    }
-
-    // For default language (for example, French) use a rewrite if desired
-    if (locale === defaultLocale) {
-      return NextResponse.rewrite(new URL(`/${defaultLocale}`, request.url));
-    }
-    // Redirect other languages to their subpath
-    return NextResponse.redirect(new URL(`/${locale}`, request.url));
+  // Early exit: if the request is for a static asset, skip localization.
+  if (/\.(gif|png|jpg|jpeg|svg|mp4)$/.test(pathname)) {
+    return NextResponse.next();
   }
 
-  // Validate locale in path
-  const pathLocale = pathname.split('/')[1];
-  if (!supportedLocales.includes(pathLocale)) {
-    // Use the cookie or accept-language to determine the locale.
-    const cookieLocale = request.cookies.get('userLocale')?.value;
-    let locale;
-    if (cookieLocale && supportedLocales.includes(cookieLocale)) {
-      locale = cookieLocale;
+  // Determine user's locale from cookie or Accept-Language header.
+  const cookieLocale = request.cookies.get('userLocale')?.value;
+  let locale;
+  if (cookieLocale && supportedLocales.includes(cookieLocale)) {
+    locale = cookieLocale;
+  } else {
+    const acceptLanguage = request.headers.get('accept-language') || '';
+    const lowerAcceptLanguage = acceptLanguage.toLowerCase();
+
+    if (lowerAcceptLanguage.includes('fr')) {
+      locale = 'fr';
+    } else if (lowerAcceptLanguage.includes('de')) {
+      locale = 'de';
     } else {
-      const acceptLanguage = request.headers.get('accept-language') || defaultLocale;
-      const detectedLocale = acceptLanguage.split(',')[0].split('-')[0].toLowerCase();
-      locale = supportedLocales.includes(detectedLocale) ? detectedLocale : defaultLocale;
+      locale = 'en';
     }
-    return NextResponse.redirect(new URL(`/${locale}${pathname}`, request.url));
   }
 
-  return NextResponse.next();
+  // Split the pathname to check if it already contains a locale prefix.
+  const pathSegments = pathname.split('/');
+  const pathLocale = pathSegments[1];
+
+  if (supportedLocales.includes(pathLocale)) {
+    // URL already contains a locale prefix.
+    if (pathLocale === hiddenLocale) {
+      // Remove the prefix for the hidden locale (French).
+      const newPathname = pathname.replace(`/${hiddenLocale}`, '') || '/';
+      return NextResponse.redirect(new URL(newPathname, request.url));
+    }
+    return NextResponse.next();
+  } else {
+    // URL does not contain any locale prefix.
+    if (locale === hiddenLocale) {
+      // Rewrite internally for the hidden locale (French).
+      return NextResponse.rewrite(new URL(`/${hiddenLocale}${pathname}`, request.url));
+    } else {
+      // Redirect externally for non-hidden locales (e.g. '/en' or '/de').
+      return NextResponse.redirect(new URL(`/${locale}${pathname}`, request.url));
+    }
+  }
 }
 
 export const config = {
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
+  matcher: '/((?!api|_next/static|_next/image|favicon.ico).*)',
 };

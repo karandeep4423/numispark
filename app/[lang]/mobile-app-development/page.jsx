@@ -78,7 +78,15 @@ const MobileDevelopment = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div className="bg-blue-300 flex w-full flex-col h-screen gap-5 justify-center items-center">
+      <div
+        style={{
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('/mob-dev1.gif')`,
+          backgroundSize: "contain",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+        className="bg-blue-300 flex w-full flex-col h-screen gap-5 justify-center items-center"
+      >
         <span className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
           {t("mobileDevelopment.hero.title")}
         </span>
@@ -87,7 +95,7 @@ const MobileDevelopment = () => {
         </span>
         <HeroButtons />
       </div>
-      
+
       {/* Technologies Section */}
       <Technologies technologies={TECHNOLOGIES} />
 

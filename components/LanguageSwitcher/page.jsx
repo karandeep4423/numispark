@@ -7,7 +7,7 @@ export default function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname(); // e.g. "/en/website-development"
   const [isOpen, setIsOpen] = useState(false);
-  const [currentLang, setCurrentLang] = useState("fr"); // default value
+  const [currentLang, setCurrentLang] = useState("en"); // default value
 
   const languages = [
     { code: "fr", label: "Français" },

@@ -95,7 +95,19 @@ export default function WebsiteMobileDesign() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="flex bg-blue-300 flex-col h-screen gap-5 justify-center items-center">
+      <div
+        className="flex relative bg-blue-200 flex-col h-screen gap-5 justify-center items-center"
+      >
+         <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover mix-blend-multiply"
+        >
+          <source src="/web-mob-d.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <span className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
           {t("websiteMobileDesign.hero.title")}{" "}
           <span className="text-blue-600 p-1.5 rounded-2xl">
@@ -144,9 +156,9 @@ export default function WebsiteMobileDesign() {
         </div>
       </div>
 
-       {/* Technologies Section */}
-       <Technologies technologies={TECHNOLOGIES} />
-       
+      {/* Technologies Section */}
+      <Technologies technologies={TECHNOLOGIES} />
+
       {/* Features Section */}
       <div className="py-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
@@ -237,13 +249,17 @@ export default function WebsiteMobileDesign() {
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
                 <img
                   src="/api/placeholder/400/400"
-                  alt={t(`websiteMobileDesign.portfolio.categories.${item.translationKey}`)}
+                  alt={t(
+                    `websiteMobileDesign.portfolio.categories.${item.translationKey}`
+                  )}
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="flex justify-between items-center">
                 <h3 className="text-lg font-medium">
-                  {t(`websiteMobileDesign.portfolio.categories.${item.translationKey}`)}
+                  {t(
+                    `websiteMobileDesign.portfolio.categories.${item.translationKey}`
+                  )}
                 </h3>
                 <button className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors">
                   <ArrowUpRight className="w-6 h-6 text-white" />
@@ -256,12 +272,12 @@ export default function WebsiteMobileDesign() {
 
       {/* FAQs Section */}
       <FAQs
-        faqData={Object.keys(t("websiteMobileDesign.faq.items", { returnObjects: true })).map(
-          (key) => ({
-            question: t(`websiteMobileDesign.faq.items.${key}.question`),
-            answer: t(`websiteMobileDesign.faq.items.${key}.answer`),
-          })
-        )}
+        faqData={Object.keys(
+          t("websiteMobileDesign.faq.items", { returnObjects: true })
+        ).map((key) => ({
+          question: t(`websiteMobileDesign.faq.items.${key}.question`),
+          answer: t(`websiteMobileDesign.faq.items.${key}.answer`),
+        }))}
       />
 
       {/* Contact Section */}
