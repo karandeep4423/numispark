@@ -45,7 +45,6 @@ const Contact = () => {
 
         const result = await res.json();
         if (result.err) {
-          console.error("Server error, Try again");
           return;
         }
 
@@ -59,8 +58,6 @@ const Contact = () => {
           serviceType: "",
           budget: ""
         });
-
-        console.log("Your message has been sent successfully");
       } catch (error) {
         console.error("Something went wrong. Try again.", error);
       }
@@ -134,8 +131,13 @@ const Contact = () => {
                   options: [
                     { value: "webDevelopment", label: t("contact.form.select.options.serviceType.webDevelopment") },
                     { value: "appDevelopment", label: t("contact.form.select.options.serviceType.appDevelopment") },
-                    { value: "digitalMarketing", label: t("contact.form.select.options.serviceType.digitalMarketing") },
-                    { value: "seoServices", label: t("contact.form.select.options.serviceType.seoServices") }
+                    { value: "SocialMediaMarketing", label: t("contact.form.select.options.serviceType.SocialMediaMarketing") },
+                    { value: "seoServices", label: t("contact.form.select.options.serviceType.seoServices") },
+                    { value: "ecommerceDevelopment", label: t("contact.form.select.options.serviceType.ecommerceDevelopment") },
+                    { value: "SaasDevelopment", label: t("contact.form.select.options.serviceType.SaasDevelopment") },
+                    { value: "AIandAutomation", label: t("contact.form.select.options.serviceType.AIandAutomation") },
+                    { value: "WebsiteMobileAppDesign", label: t("contact.form.select.options.serviceType.WebsiteMobileAppDesign") },
+                    { value: "SocialMediaPost&LogoDesign", label: t("contact.form.select.options.serviceType.SocialMediaPost&LogoDesign") }
                   ]
                 },
                 {

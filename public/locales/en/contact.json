@@ -1,13 +1,13 @@
 {
   "contact": {
-    "heading": "Prêt à commencer?",
+    "heading": "Ready to start?",
     "subHeading": "Ready to get started? We would love to hear from you.",
     "form": {
       "input": {
         "email": "Email",
-        "name": "Nom complet",
-        "phone": "Numéro de téléphone",
-        "city": "Ville"
+        "name": "Full Name",
+        "phone": "Phone Number",
+        "city": "City"
       },
       "select": {
         "serviceType": "Select Service Type",
@@ -16,8 +16,13 @@
           "serviceType": {
             "webDevelopment": "Web Development",
             "appDevelopment": "App Development",
-            "digitalMarketing": "Digital Marketing",
-            "seoServices": "SEO Services"
+            "SocialMediaMarketing": "Social Media Marketing",
+            "seoServices": "SEO Services",
+            "ecommerceDevelopment": "Ecommerce Development",
+            "SaasDevelopment": "SaaS Development",
+            "AIandAutomation": "AI and Automation",
+            "WebsiteMobileAppDesign": "Website & Mobile App Design",
+            "SocialMediaPost&LogoDesign": "Social Media Post & Logo Design"
           },
           "budget": {
             "below1000": "$0 - $1,000",
@@ -30,7 +35,7 @@
       "textarea": {
         "placeholder": "Tell us about your project"
       },
-      "submit": "Envoyer"
+      "submit": "Send"
     }
   }
 }

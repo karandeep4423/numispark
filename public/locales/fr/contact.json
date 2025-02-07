@@ -1,0 +1,41 @@
+{
+  "contact": {
+    "heading": "Prêt à commencer?",
+    "subHeading": "Prêt à commencer ? Nous serions ravis de vous entendre.",
+    "form": {
+      "input": {
+        "email": "Email",
+        "name": "Nom complet",
+        "phone": "Numéro de téléphone",
+        "city": "Ville"
+      },
+      "select": {
+        "serviceType": "Sélectionner le type de service",
+        "budget": "Votre budget",
+        "options": {
+          "serviceType": {
+            "webDevelopment": "Développement Web",
+            "appDevelopment": "Développement d'applications",
+            "SocialMediaMarketing": "Marketing des médias sociaux",
+            "seoServices": "Services SEO",
+            "ecommerceDevelopment": "Développement e-commerce",
+            "SaasDevelopment":"Développement SaaS",
+            "AIandAutomation":"IA et Automatisation",
+            "WebsiteMobileAppDesign":"Conception de sites Web et d'applications mobiles",
+            "SocialMediaPost&LogoDesign":"Conception de publications sur les médias sociaux et de logos"
+          },
+          "budget": {
+            "below1000": "$0 - $1,000",
+            "1000to5000": "$1,000 - $5,000",
+            "5000to10000": "$5,000 - $10,000",
+            "above10000": "Plus de 10 000 $"
+          }
+        }
+      },
+      "textarea": {
+        "placeholder": "Parlez-nous de votre projet"
+      },
+      "submit": "Envoyer"
+    }
+  }
+}
