@@ -1,0 +1,131 @@
+{
+  "aiDevelopment": {
+    "hero": {
+      "title": "Transformez votre entreprise avec l'IA et l'automatisation",
+      "subtitle": "Des chatbots aux modèles d'IA personnalisés, nous créons des solutions intelligentes pour améliorer l'efficacité"
+    },
+    "services": {
+      "sectionTitle": "Nos Offres Principales",
+      "sectionSubtitle": "Des solutions complètes adaptées à vos besoins",
+      "items": {
+        "customAI": {
+          "serviceName": "Développement de modèles d'IA personnalisés",
+          "serviceDes": "Transformez votre entreprise avec des solutions d'IA sur mesure qui s'adaptent à vos défis uniques. Nos modèles personnalisés exploitent une technologie de pointe pour offrir une précision et une efficacité sans précédent dans vos opérations."
+        },
+        "chatbot": {
+          "serviceName": "Intégration de Chatbots",
+          "serviceDes": "Révolutionnez votre service client avec des chatbots intelligents qui comprennent, apprennent et évoluent. Offrez un support 24/7 tout en réduisant les coûts et en améliorant la satisfaction client."
+        },
+        "automation": {
+          "serviceName": "Automatisation des processus métier",
+          "serviceDes": "Éliminez les tâches répétitives et rationalisez vos flux de travail avec des solutions d'automatisation intelligentes. Nos systèmes s'adaptent à vos processus métier, réduisant les erreurs et permettant à votre équipe de se concentrer sur des initiatives stratégiques."
+        },
+        "analytics": {
+          "serviceName": "Apprentissage automatique et analyses prédictives",
+          "serviceDes": "Exploitez la puissance de vos données grâce à des analyses avancées qui prédisent les tendances, identifient les opportunités et favorisent une prise de décision éclairée. Transformez les insights en actions avec nos solutions complètes d'apprentissage automatique."
+        }
+      }
+    },
+    "features": {
+      "sectionTitle": "Fonctionnalités clés",
+      "sectionSubtitle": "de nos chatbots",
+      "sectionTagline": "Votre succès est notre priorité",
+      "items": {
+        "nlu": {
+          "serviceName": "Compréhension du langage naturel (NLU)",
+          "serviceDes": "Permettez des interactions fluides entre humains et machines grâce à nos capacités avancées de compréhension du langage naturel. Traitez et comprenez le langage humain avec une précision sans précédent, prenant en charge de nombreux cas d'utilisation, du service client à l'analyse de données."
+        },
+        "multilingual": {
+          "serviceName": "Support multilingue",
+          "serviceDes": "Brisez les barrières linguistiques et développez-vous à l'international grâce à nos solutions d'IA multilingues. Prenez en charge plus de 100 langues avec une compréhension et des capacités de réponse proches de celles d'un natif."
+        },
+        "integration": {
+          "serviceName": "Intégration avec des plateformes populaires",
+          "serviceDes": "Intégrez harmonieusement nos solutions d'IA à votre infrastructure technologique existante. Qu'il s'agisse de Slack, Microsoft Teams ou de plateformes personnalisées, nous assurons une intégration fluide et des performances optimales."
+        },
+        "realtime": {
+          "serviceName": "Analyses en temps réel",
+          "serviceDes": "Surveillez et optimisez vos solutions d'IA en temps réel. Obtenez des informations exploitables sur les indicateurs de performance, l'engagement des utilisateurs et la santé du système grâce à notre tableau de bord analytique complet."
+        }
+      }
+    },
+    "whyUs": {
+      "sectionTitle": "Avantages",
+      "sectionSubtitle": "de nous choisir",
+      "items": {
+        "cuttingEdge": {
+          "serviceName": "Expertise dans les technologies d'IA de pointe",
+          "serviceDes": "Associez-vous à une équipe qui reste à la pointe de l'innovation en IA. Nos experts se spécialisent dans les technologies les plus récentes, y compris GPT-4, la vision par ordinateur et le deep learning, garantissant des solutions pérennes qui apportent une réelle valeur ajoutée à votre entreprise."
+        },
+        "customSolutions": {
+          "serviceName": "Solutions personnalisées pour les besoins de votre entreprise",
+          "serviceDes": "Obtenez des solutions d'IA parfaitement alignées avec les objectifs de votre entreprise. Nous ne croyons pas à l'approche « unique pour tous » : notre équipe analyse vos défis uniques et développe des solutions d'IA personnalisées offrant un retour sur investissement mesurable."
+        },
+        "costEffective": {
+          "serviceName": "Solutions économiques et évolutives",
+          "serviceDes": "Maximisez votre investissement avec des solutions qui évoluent avec votre entreprise. Nos systèmes d'IA sont conçus pour être évolutifs, vous permettant de démarrer en petit et d'étendre les capacités au fur et à mesure que vos besoins évoluent, tout en maintenant une efficacité en termes de coûts."
+        },
+        "speedOptimization": {
+          "serviceName": "Optimisation de la vitesse",
+          "serviceDes": "Découvrez des performances ultra-rapides grâce à nos solutions d'IA optimisées. Nous utilisons des techniques avancées de compression de modèles et de calcul en périphérie pour offrir des temps de réponse rapides sans compromettre la précision."
+        }
+      }
+    },
+    "process": {
+      "steps": {
+        "vision": {
+          "title": "Comprendre votre vision",
+          "description": "Nous plongeons au cœur de vos besoins et défis commerciaux grâce à des sessions de découverte ciblées. Notre équipe veille à ne pas simplement comprendre vos exigences, mais à identifier des opportunités d'innovation et de croissance."
+        },
+        "planning": {
+          "title": "Planification stratégique",
+          "description": "En transformant les insights en stratégies concrètes, nous créons une feuille de route claire pour votre projet. Notre planification détaillée garantit un développement efficace, le respect des délais et des résultats mesurables."
+        },
+        "development": {
+          "title": "Conception et développement",
+          "description": "Notre équipe d'experts donne vie à votre vision en utilisant des technologies d'IA de pointe et un code propre. Des mises à jour régulières et des démonstrations vous impliquent tout au long du processus de développement."
+        },
+        "launch": {
+          "title": "Lancement et déploiement",
+          "description": "Nous assurons une transition en douceur du développement au déploiement grâce à des tests et une optimisation complets. Votre solution est lancée en toute confiance, soutenue par une assurance qualité rigoureuse."
+        },
+        "support": {
+          "title": "Support continu",
+          "description": "Nous fournissons un support continu, des mises à jour régulières et une maintenance proactive pour garantir des performances optimales de votre solution."
+        }
+      }
+    },
+    "portfolio": {
+      "sectionTitle": "Nos récentes",
+      "sectionHighlight": "réalisations",
+      "categories": {
+        "uiUx": "Design UI/UX",
+        "appDesign": "Design d'application"
+      }
+    },
+    "faq": {
+      "items": {
+        "quote": {
+          "question": "Comment puis-je demander un devis pour un projet ?",
+          "answer": "Commencez votre parcours en IA en programmant une consultation gratuite via notre formulaire en ligne ou en nous appelant directement. Dans les 24 heures, nos experts analyseront vos exigences et vous fourniront une proposition détaillée incluant le calendrier, les livrables et des options de tarification adaptées à vos besoins."
+        },
+        "industries": {
+          "question": "Dans quels secteurs intervenez-vous ?",
+          "answer": "Nous avons mis en œuvre avec succès des solutions d'IA dans divers secteurs, notamment la santé (optimisation des soins aux patients), la finance (évaluation des risques), le commerce de détail (gestion des stocks), la fabrication (maintenance prédictive) et l'éducation (apprentissage personnalisé). Notre approche adaptable garantit des solutions efficaces, quel que soit votre secteur."
+        },
+        "timeline": {
+          "question": "Quel est le délai typique pour un projet ?",
+          "answer": "Les délais des projets varient en fonction de la complexité et de l'étendue. Les intégrations simples de chatbots prennent généralement 2 à 4 semaines, tandis que le développement de modèles d'IA personnalisés peut nécessiter 2 à 3 mois. Les solutions d'automatisation à l'échelle de l'entreprise s'étendent généralement sur 3 à 6 mois. Nous fournissons des jalons détaillés et des mises à jour régulières tout au long du cycle de développement."
+        },
+        "security": {
+          "question": "Comment assurez-vous la sécurité des solutions d'IA ?",
+          "answer": "La sécurité est primordiale dans notre processus de développement. Nous mettons en œuvre un cryptage de niveau entreprise, des audits de sécurité réguliers et nous conformons aux normes du secteur (RGPD, HIPAA, etc.). Toutes nos solutions d'IA sont soumises à des tests rigoureux pour détecter d'éventuelles vulnérabilités avant leur déploiement."
+        },
+        "supportAfter": {
+          "question": "Quel type de support fournissez-vous après le déploiement ?",
+          "answer": "Nous offrons un support post-déploiement complet incluant une surveillance 24/7, une optimisation régulière des performances, un réentraînement des modèles et un support technique dédié. Nos forfaits de maintenance garantissent que vos solutions d'IA continuent d'évoluer et de s'améliorer avec le temps."
+        }
+      }
+    }
+  }
+}

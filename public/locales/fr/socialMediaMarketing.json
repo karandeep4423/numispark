@@ -1,0 +1,205 @@
+{
+  "socialMediaMarketing": {
+    "hero": {
+      "title": "Développez votre marque sur les plateformes de médias sociaux",
+      "subtitle": "Dynamisez votre entreprise avec des stratégies personnalisées"
+    },
+    "services": {
+      "sectionTitle": "Nos Offres Principales",
+      "sectionTitleHighlight": "Services",
+      "sectionSubtitle": "Des solutions complètes adaptées à vos besoins",
+      "items": {
+        "contentCreation": {
+          "serviceName": "Création de Contenu",
+          "serviceDes": "Créez des publications, vidéos et stories visuellement percutantes, adaptées à votre marque et à votre audience."
+        },
+        "campaignManagement": {
+          "serviceName": "Gestion de Campagne",
+          "serviceDes": "Planifiez, exécutez et suivez des campagnes sur les réseaux sociaux pour générer un engagement significatif et des conversions."
+        },
+        "analyticsReporting": {
+          "serviceName": "Analytique & Reporting",
+          "serviceDes": "Analysez les indicateurs de performance pour optimiser vos stratégies et fournir des informations exploitables."
+        },
+        "influencerMarketing": {
+          "serviceName": "Marketing d'Influence",
+          "serviceDes": "Collaborez avec des influenceurs pour amplifier la voix de votre marque et atteindre des audiences ciblées."
+        },
+        "socialStrategyDev": {
+          "serviceName": "Développement de Stratégie pour les Médias Sociaux",
+          "serviceDes": "Élaborez une stratégie personnalisée alignée sur vos objectifs commerciaux et vos ambitions sur les réseaux sociaux."
+        },
+        "paidAdvertising": {
+          "serviceName": "Gestion de Publicité Payante",
+          "serviceDes": "Optimisez vos publicités payantes sur des plateformes telles que Facebook, Instagram et LinkedIn pour un retour sur investissement maximal."
+        },
+        "competitorAnalysis": {
+          "serviceName": "Analyse de la Concurrence",
+          "serviceDes": "Obtenez des informations sur les stratégies de vos concurrents pour rester en tête du marché et affiner votre approche."
+        },
+        "performanceOptimization": {
+          "serviceName": "Optimisation de la Performance",
+          "serviceDes": "Améliorez continuellement vos campagnes pour obtenir un meilleur engagement, une portée accrue et de meilleurs résultats."
+        }
+      }
+    },
+    "features": {
+      "sectionTitle": "Principales",
+      "sectionHighlight": "Caractéristiques",
+      "sectionSubtitle": "du Marketing sur les Réseaux Sociaux",
+      "sectionTagline": "Votre succès est notre priorité",
+      "items": {
+        "platformExpertise": {
+          "serviceName": "Expertise Spécifique à Chaque Plateforme",
+          "serviceDes": "Notre équipe comprend les spécificités de chaque plateforme de médias sociaux et adapte les stratégies pour maximiser l'engagement et la portée sur Facebook, Instagram, LinkedIn, TikTok, et plus encore."
+        },
+        "creativeContent": {
+          "serviceName": "Création de Contenu Créatif",
+          "serviceDes": "Développez des graphismes, vidéos et contenus écrits attrayants qui s'alignent avec votre marque et captivent votre audience."
+        },
+        "engagementOptimization": {
+          "serviceName": "Optimisation de l'Engagement",
+          "serviceDes": "Stimulez les interactions avec votre audience en favorisant les conversations, en répondant aux commentaires et en créant des sondages et stories engageants."
+        },
+        "realTimeAnalytics": {
+          "serviceName": "Analytique & Reporting en Temps Réel",
+          "serviceDes": "Surveillez la performance de vos campagnes en temps réel et recevez des rapports détaillés pour éclairer vos décisions stratégiques."
+        },
+        "brandVoice": {
+          "serviceName": "Cohérence de la Voix de Marque",
+          "serviceDes": "Maintenez un ton et un message cohérents sur toutes les plateformes, renforçant ainsi l'identité et les valeurs de votre marque."
+        },
+        "socialListening": {
+          "serviceName": "Veille Sociale et Analyse du Sentiment",
+          "serviceDes": "Surveillez les conversations en ligne concernant votre marque et votre secteur afin de rester réactif aux tendances et au ressenti des clients."
+        },
+        "videoMarketing": {
+          "serviceName": "Marketing Vidéo",
+          "serviceDes": "Créez du contenu vidéo percutant, incluant des reels, des sessions en direct et des publicités, pour capter l'attention de votre audience et stimuler l'engagement."
+        },
+        "trendUtilization": {
+          "serviceName": "Exploitation des Tendances",
+          "serviceDes": "Restez à la pointe en tirant parti des dernières tendances, challenges et contenus viraux pour maintenir la pertinence et l'accessibilité de votre marque."
+        },
+        "advancedTargeting": {
+          "serviceName": "Ciblage Avancé",
+          "serviceDes": "Atteignez la bonne audience grâce à un ciblage précis basé sur la démographie, la géographie et les centres d'intérêt, pour des campagnes organiques et payantes efficaces."
+        }
+      }
+    },
+    "whyUs": {
+      "sectionTitle": "Avantages",
+      "sectionSubtitle": "de nous choisir",
+      "items": {
+        "brandAwareness": {
+          "serviceName": "Notoriété de Marque Accrue",
+          "serviceDes": "Améliorez la visibilité et la reconnaissance de votre marque grâce à des stratégies et campagnes sur mesure."
+        },
+        "targetedCampaigns": {
+          "serviceName": "Campagnes Ciblées pour un ROI Plus Élevé",
+          "serviceDes": "Atteignez la bonne audience grâce à un ciblage basé sur les données pour améliorer les performances de vos campagnes."
+        },
+        "consistentEngagement": {
+          "serviceName": "Engagement Constant avec vos Abonnés",
+          "serviceDes": "Faites naître des liens significatifs avec votre audience grâce à un contenu régulier et interactif."
+        },
+        "realTimeAnalytics": {
+          "serviceName": "Analytique en Temps Réel",
+          "serviceDes": "Surveillez la performance de vos campagnes et prenez des décisions éclairées grâce à des analyses actualisées."
+        },
+        "customerLoyalty": {
+          "serviceName": "Fidélisation Client Renforcée",
+          "serviceDes": "Construisez des relations durables avec votre audience grâce à des interactions authentiques et réactives."
+        },
+        "costEffective": {
+          "serviceName": "Marketing Rentable",
+          "serviceDes": "Optimisez votre budget marketing en vous concentrant sur des stratégies qui offrent des résultats mesurables."
+        }
+      }
+    },
+    "portfolio": {
+      "title": "Nos Récentes",
+      "titleHighlight": "Réalisations",
+      "categories": {
+        "uiUx": "Design UI/UX",
+        "appDesign": "Design d'Applications"
+      }
+    },
+    "process": {
+      "steps": {
+        "step1": {
+          "title": "Comprendre Vos Objectifs",
+          "description": "Nous commençons par comprendre en profondeur vos objectifs commerciaux, votre audience cible et la dynamique du marché afin d'aligner nos stratégies sur vos ambitions. Cette étape fondamentale est cruciale pour concevoir une approche de marketing digital efficace."
+        },
+        "step2": {
+          "title": "Étude de Marché et Analyse",
+          "description": "Une étude de marché approfondie nous aide à identifier les tendances du secteur, les stratégies des concurrents et le comportement des consommateurs, fournissant ainsi des informations précieuses pour orienter nos tactiques marketing et la planification des campagnes."
+        },
+        "step3": {
+          "title": "Développement de Stratégie",
+          "description": "Nous élaborons une stratégie de marketing digital complète qui inclut la sélection des canaux, les objectifs de campagne et un plan de contenu détaillé pour engager efficacement votre audience et atteindre vos objectifs commerciaux."
+        },
+        "step4": {
+          "title": "Mise en Œuvre et Lancement de la Campagne",
+          "description": "Une fois la stratégie et le contenu prêts, nous déployons les campagnes sur les canaux digitaux sélectionnés. Cette phase implique la mise en place des publicités, la planification des publications et l'optimisation de chaque élément pour un impact maximal."
+        },
+        "step5": {
+          "title": "Reporting et Analyse",
+          "description": "Nous fournissons des rapports détaillés analysant la performance des campagnes, incluant des indicateurs clés et des insights. Cette transparence vous aide à comprendre l'impact de nos actions et à orienter vos stratégies marketing futures."
+        }
+      },
+      "portfolio": {
+        "sectionTitle": "Nos Récentes",
+        "sectionHighlight": "Réalisations",
+        "categories": {
+          "uiUx": "Design UI/UX",
+          "appDesign": "Design d'Applications"
+        }
+      }
+    },
+    "faq": {
+      "items": {
+        "platforms": {
+          "question": "Sur quelles plateformes de médias sociaux vous spécialisez-vous ?",
+          "answer": "Nous nous spécialisons dans la gestion de campagnes sur des plateformes populaires telles que Facebook, Instagram, LinkedIn, Twitter, TikTok, Pinterest et YouTube. Notre équipe adapte les stratégies en fonction des spécificités et de l'audience de chaque plateforme."
+        },
+        "paidAds": {
+          "question": "Pouvez-vous gérer des publicités payantes sur les réseaux sociaux pour nous ?",
+          "answer": "Absolument ! Nous créons et gérons des campagnes publicitaires ciblées, incluant la recherche d'audience, la conception des annonces et l'optimisation des performances, pour maximiser votre ROI sur des plateformes telles que Facebook Ads, Instagram Ads, LinkedIn Ads et TikTok Ads."
+        },
+        "postingFrequency": {
+          "question": "À quelle fréquence publierez-vous sur nos comptes de médias sociaux ?",
+          "answer": "La fréquence de publication dépend de vos objectifs spécifiques et du plan choisi. En général, nous recommandons 3 à 5 publications par semaine et par plateforme pour maintenir un engagement constant avec votre audience."
+        },
+        "contentCreation": {
+          "question": "Proposez-vous la création de contenu dans le cadre de vos services ?",
+          "answer": "Oui, nous prenons en charge la création de contenu, y compris la conception de visuels, la rédaction de légendes, la production de vidéos et la curation de contenus qui correspondent à la voix de votre marque et engagent efficacement votre audience."
+        },
+        "successMetrics": {
+          "question": "Comment mesurez-vous le succès des campagnes sur les réseaux sociaux ?",
+          "answer": "Nous suivons des indicateurs tels que la croissance du nombre d'abonnés, les taux d'engagement, les taux de clics, la portée, les impressions et les conversions. De plus, nous fournissons des rapports détaillés avec des insights exploitables pour optimiser les campagnes futures."
+        },
+        "resultsTimeline": {
+          "question": "Combien de temps faut-il pour voir des résultats du marketing sur les réseaux sociaux ?",
+          "answer": "Les résultats varient en fonction de vos objectifs et du contexte concurrentiel. Bien que vous puissiez observer une amélioration initiale de l'engagement en quelques semaines, des efforts constants sur 3 à 6 mois produisent généralement une croissance significative de la notoriété de la marque et du ROI."
+        },
+        "smallBusiness": {
+          "question": "Proposez-vous la gestion des réseaux sociaux pour les petites entreprises ?",
+          "answer": "Oui, nos services sont adaptés aux entreprises de toutes tailles. Nous élaborons des stratégies rentables conçues pour répondre aux besoins et budgets des petites entreprises tout en offrant des résultats mesurables."
+        },
+        "clientInput": {
+          "question": "Pourrai-je influencer le contenu et la stratégie sur les réseaux sociaux ?",
+          "answer": "Bien sûr ! Nous travaillons en collaboration avec vous pour nous assurer que le contenu et les stratégies s'alignent sur la vision et les objectifs de votre marque. Vos retours sont une partie intégrante du processus."
+        },
+        "followerGrowth": {
+          "question": "Pouvez-vous aider à augmenter organiquement notre nombre d'abonnés ?",
+          "answer": "Oui, nous utilisons des techniques éprouvées telles que la création de contenu engageant, la publication stratégique, l'utilisation de hashtags, les collaborations et l'interaction avec la communauté pour accroître organiquement votre nombre d'abonnés au fil du temps."
+        },
+        "tools": {
+          "question": "Quels outils utilisez-vous pour la gestion des réseaux sociaux ?",
+          "answer": "Nous utilisons des outils de premier plan dans l'industrie tels que Hootsuite, Buffer, Facebook Ads Manager et d'autres outils d'analyse pour programmer les publications, surveiller les performances et optimiser les campagnes."
+        }
+      }
+    }
+  }
+}

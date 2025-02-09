@@ -1,0 +1,164 @@
+{
+  "socialMediaLogoDesign": {
+    "hero": {
+      "title": "Des designs accrocheurs pour les réseaux sociaux et le logo de votre marque",
+      "subtitle": "Augmentez l'engagement et établissez une identité de marque unique"
+    },
+    "process": {
+      "steps": {
+        "step1": {
+          "title": "Comprendre votre vision",
+          "description": "Nous commençons par discuter de vos objectifs, de l'identité de votre marque et des préférences de votre public afin d'aligner nos designs sur vos besoins en matière de réseaux sociaux et de logo."
+        },
+        "step2": {
+          "title": "Recherche et inspiration",
+          "description": "Nous analysons les tendances, les concurrents et la dynamique du marché pour recueillir l'inspiration nécessaire à la création de visuels percutants pour les réseaux sociaux et de logos mémorables."
+        },
+        "step3": {
+          "title": "Création de concepts",
+          "description": "Nos designers élaborent des concepts uniques, incluant des mises en page pour les publications sur les réseaux sociaux et des esquisses initiales de logo, afin de définir une direction créative."
+        },
+        "step4": {
+          "title": "Conception et perfectionnement",
+          "description": "En utilisant vos retours, nous finalisons des designs soignés avec des visuels accrocheurs pour les réseaux sociaux et un logo qui représente authentiquement votre marque."
+        },
+        "step5": {
+          "title": "Livraison finale",
+          "description": "Nous fournissons des fichiers de haute qualité pour vos publications sur les réseaux sociaux et vos logos, prêts à renforcer la présence en ligne et l'identité de votre marque."
+        }
+      }
+    },
+    "services": {
+      "sectionTitle": "Nos offres principales",
+      "sectionTitleHighlight": "Services",
+      "sectionSubtitle": "Des solutions complètes adaptées à vos besoins",
+      "items": {
+        "socialMediaDesign": {
+          "serviceName": "Design pour les réseaux sociaux",
+          "serviceDes": "Créez des publications percutantes sur les réseaux sociaux qui augmentent l'engagement. Nos designs sont optimisés pour répondre aux exigences uniques de chaque plateforme et aux préférences de votre audience."
+        },
+        "logoBrandIdentity": {
+          "serviceName": "Logo et identité de marque",
+          "serviceDes": "Création professionnelle de logos avec plusieurs concepts et variations, accompagnée de directives complètes pour une identité de marque cohérente."
+        },
+        "brandKitDesign": {
+          "serviceName": "Création de kit de marque",
+          "serviceDes": "Élaborez des kits de marque complets incluant des palettes de couleurs, des typographies et des éléments de design garantissant une cohérence sur toutes les plateformes."
+        },
+        "socialStrategy": {
+          "serviceName": "Stratégie sur les réseaux sociaux",
+          "serviceDes": "Bénéficiez de conseils d'experts en stratégie de contenu, planning de publication et techniques d'engagement pour maximiser votre présence sur les réseaux sociaux."
+        },
+        "socialMediaTemplates": {
+          "serviceName": "Modèles pour réseaux sociaux",
+          "serviceDes": "Des modèles réutilisables pour les stories, publications et carrousels que votre équipe peut facilement personnaliser tout en maintenant la cohérence de la marque."
+        }
+      }
+    },
+    "features": {
+      "sectionTitle": "Caractéristiques clés",
+      "sectionSubtitle": "de nos designs",
+      "sectionTagline": "Votre succès est notre priorité",
+      "items": {
+        "platformOptimization": {
+          "serviceName": "Optimisation des plateformes",
+          "serviceDes": "Des designs parfaitement dimensionnés et optimisés selon les spécifications et les meilleures pratiques de chaque plateforme sociale."
+        },
+        "brandConsistency": {
+          "serviceName": "Cohérence de la marque",
+          "serviceDes": "Maintenez une identité visuelle forte sur toutes les publications et plateformes tout en laissant place à la flexibilité créative."
+        },
+        "engagementFocus": {
+          "serviceName": "Axé sur l'engagement",
+          "serviceDes": "Créez des designs qui génèrent des likes, des commentaires et des partages grâce à une hiérarchie visuelle stratégique et des appels à l'action efficaces."
+        },
+        "multiFormatDelivery": {
+          "serviceName": "Livraison multi-format",
+          "serviceDes": "Recevez vos designs dans tous les formats nécessaires - des fichiers prêts pour le web aux vecteurs de qualité imprimable."
+        }
+      }
+    },
+    "whyUs": {
+      "sectionTitle": "Avantages",
+      "sectionSubtitle": "de nous choisir",
+      "items": {
+        "platformExpertise": {
+          "serviceName": "Expertise des plateformes",
+          "serviceDes": "Une compréhension approfondie des exigences uniques et des comportements d'audience de chaque plateforme sociale."
+        },
+        "brandFocusedDesign": {
+          "serviceName": "Design axé sur la marque",
+          "serviceDes": "Chaque élément de design est soigneusement élaboré pour renforcer et promouvoir l'identité de votre marque."
+        },
+        "engagementDriven": {
+          "serviceName": "Axé sur l'engagement",
+          "serviceDes": "Des designs stratégiques qui encouragent l'interaction des utilisateurs et stimulent l'engagement sur les réseaux sociaux."
+        },
+        "quickTurnaround": {
+          "serviceName": "Délai de livraison rapide",
+          "serviceDes": "Livraison rapide de designs pour maintenir une présence sur les réseaux sociaux fraîche et cohérente."
+        },
+        "unlimitedRevisions": {
+          "serviceName": "Révisions illimitées",
+          "serviceDes": "Nous peaufinons votre logo et vos designs jusqu'à ce qu'ils correspondent parfaitement à votre vision et aux exigences de votre marque."
+        },
+        "socialMediaStrategy": {
+          "serviceName": "Stratégie pour les réseaux sociaux",
+          "serviceDes": "Des designs alignés avec votre stratégie de réseaux sociaux pour vous aider à atteindre vos objectifs marketing."
+        }
+      }
+    },
+    "portfolio": {
+      "sectionTitle": "Nos récentes",
+      "sectionHighlight": "réalisations",
+      "categories": {
+        "uiUx": "Design UI/UX",
+        "appDesign": "Design d'application"
+      }
+    },
+    "faq": {
+      "items": {
+        "logoConcepts": {
+          "question": "Combien de concepts de logo vais-je recevoir lors de la phase initiale de conception ?",
+          "answer": "Notre forfait standard de logo comprend 3 à 5 concepts uniques. Chaque concept est accompagné de différentes variations et applications pour vous aider à visualiser comment le logo fonctionnera sur diverses plateformes."
+        },
+        "templatePackage": {
+          "question": "Que comprend le forfait de modèles pour les réseaux sociaux ?",
+          "answer": "Le forfait comprend des modèles personnalisables pour : les publications Instagram (fil, stories et reels), les publications et images de couverture Facebook, les graphismes pour la page entreprise LinkedIn, les publications et images d'en-tête Twitter, ainsi que des modèles d'animation basiques pour les stories et reels."
+        },
+        "editableTemplates": {
+          "question": "Fournissez-vous des modèles modifiables pour que notre équipe puisse les utiliser ?",
+          "answer": "Oui ! Nous créons des modèles faciles à modifier sur Canva ou des plateformes similaires, permettant à votre équipe de maintenir une cohérence de marque tout en créant du contenu quotidien pour les réseaux sociaux."
+        },
+        "turnaround": {
+          "question": "Quel est le délai de livraison pour le contenu des réseaux sociaux ?",
+          "answer": "Les publications régulières sont livrées en 24 à 48 heures. Pour les forfaits de contenu mensuels (15 à 20 publications), nous livrons l'ensemble du package en 5 à 7 jours ouvrables."
+        },
+        "rushDelivery": {
+          "question": "Proposez-vous une livraison express pour les publications urgentes sur les réseaux sociaux ?",
+          "answer": "Oui, nous proposons une livraison le jour même pour les publications urgentes sur les réseaux sociaux moyennant un supplément, sous réserve de disponibilité."
+        },
+        "brandGuide": {
+          "question": "Que comprend le guide de style de la marque ?",
+          "answer": "Le guide complet inclut : les règles d'utilisation du logo, des palettes de couleurs avec tous les codes (RGB, CMJN, HEX), des directives typographiques, des lignes directrices pour le style des images, des modèles de publications pour les réseaux sociaux et les meilleures pratiques pour maintenir la cohérence de la marque."
+        },
+        "seasonalCampaigns": {
+          "question": "Pouvez-vous aider avec des campagnes saisonnières sur les réseaux sociaux ?",
+          "answer": "Oui ! Nous créons des forfaits de contenu thématiques pour les vacances, événements spéciaux et promotions saisonnières, incluant à la fois des publications statiques et animées."
+        },
+        "contentCalendar": {
+          "question": "Fournissez-vous des calendriers de contenu pour les réseaux sociaux ?",
+          "answer": "Oui, nous pouvons fournir un calendrier de contenu stratégique en complément de vos designs, suggérant les meilleurs moments de publication et le meilleur mix de contenu pour un engagement maximal."
+        },
+        "revisions": {
+          "question": "Puis-je apporter des modifications aux designs ?",
+          "answer": "Absolument ! Nous offrons des révisions illimitées pendant le processus de conception jusqu'à ce que vous soyez entièrement satisfait. Pour les logos, les révisions sont incluses jusqu'à l'approbation finale. Pour les publications sur les réseaux sociaux, nous offrons 2 cycles de révisions par publication."
+        },
+        "brandAssetUsage": {
+          "question": "Fournissez-vous des conseils sur l'utilisation des logos et des éléments de marque ?",
+          "answer": "Oui, chaque forfait de logo inclut un document détaillé de directives de marque expliquant l'utilisation correcte, les tailles minimales, les exigences d'espacement ainsi que les bonnes et mauvaises pratiques pour votre logo et vos éléments de marque."
+        }
+      }
+    }
+  }
+}

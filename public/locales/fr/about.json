@@ -1,0 +1,95 @@
+{
+  "about": {
+    "hero": {
+      "titlePart1": "Donner du pouvoir à votre entreprise avec",
+      "titlePart2": "des solutions numériques innovantes",
+      "subtitle": "Nous sommes une équipe d'artisans du digital passionnés, transformant des idées innovantes en solutions numériques puissantes qui stimulent la croissance de l'entreprise."
+    },
+    "coreValues": {
+      "title": "Nos valeurs fondamentales",
+      "titleHighlight": "Valeurs",
+      "subtitle": "Des solutions complètes adaptées à vos besoins",
+      "items": {
+        "quality": {
+          "title": "Qualité avant tout",
+          "description": "Nous ne faisons jamais de compromis sur la qualité, garantissant que chaque projet répond à nos normes d'excellence élevées."
+        },
+        "delivery": {
+          "title": "Livraison à temps",
+          "description": "Nous respectons les délais et veillons à ce que les projets soient livrés dans les temps sans compromettre la qualité."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "Nous restons à la pointe des tendances technologiques pour offrir des solutions de pointe à nos clients."
+        },
+        "partnership": {
+          "title": "Partenariat client",
+          "description": "Nous établissons des relations durables avec nos clients, devenant leurs partenaires technologiques de confiance."
+        }
+      }
+    },
+    "team": {
+      "title": "Rencontrez notre",
+      "titleHighlight": "équipe",
+      "subtitle": "Découvrez les talents qui rendent notre innovation digitale possible.",
+      "members": {
+        "jessica": {
+          "name": "Jessica Dobrev",
+          "role": "Responsable Back-end"
+        },
+        "drew": {
+          "name": "Drew Cano",
+          "role": "Responsable UX"
+        },
+        "sasha": {
+          "name": "Sasha Kindred",
+          "role": "Vice-Président Marketing"
+        },
+        "emily": {
+          "name": "Emily Donnavan",
+          "role": "Responsable Produit"
+        },
+        "orlando": {
+          "name": "Orlando Diggs",
+          "role": "Co-fondateur et COO"
+        },
+        "sophie": {
+          "name": "Sophie Chamberlain",
+          "role": "Responsable des Ventes"
+        },
+        "lana": {
+          "name": "Lana Steiner",
+          "role": "Vice-Présidente de la Réussite Client"
+        },
+        "emmy": {
+          "name": "Emmy Rosum",
+          "role": "Co-fondateur et PDG"
+        }
+      }
+    },
+    "whyChooseUs": {
+      "title": "Pourquoi",
+      "titleHighlight": "s'associer",
+      "titleEnd": "avec nous",
+      "subtitle": "Des solutions complètes adaptées à vos besoins",
+      "items": {
+        "experts": {
+          "title": "Une équipe d'experts dévoués",
+          "description": "Notre équipe est composée de vétérans de l'industrie, de professionnels certifiés et d'esprits créatifs qui apportent une expertise diversifiée à chaque projet."
+        },
+        "solutions": {
+          "title": "Des solutions sur mesure pour chaque client",
+          "description": "Nous comprenons que chaque entreprise est unique. Notre approche vise à créer des solutions personnalisées qui s'alignent parfaitement sur vos besoins spécifiques."
+        },
+        "success": {
+          "title": "Un palmarès éprouvé de succès",
+          "description": "Notre portfolio parle de lui-même, avec de nombreux projets réussis dans divers secteurs. Nous avons aidé des entreprises à atteindre leurs objectifs digitaux."
+        },
+        "communication": {
+          "title": "Communication transparente",
+          "description": "Nous croyons en la construction de la confiance grâce à la transparence. Nos canaux de communication clairs et nos processus bien définis vous garantissent d'être toujours informé."
+        }
+      }
+    }
+  }
+}

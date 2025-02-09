@@ -1,0 +1,117 @@
+{
+  "saas": {
+    "hero": {
+      "title": "Construisez des solutions SaaS évolutives sur mesure pour votre entreprise",
+      "subtitle": "De la conception au déploiement, nous créons des plateformes SaaS robustes qui offrent des résultats"
+    },
+    "keyFeatures": {
+      "title": "Principales",
+      "titleHighlight": "Fonctionnalités",
+      "titleEnd": "de notre SaaS",
+      "items": {
+        "multiTenant": {
+          "name": "Expertise en architecture multi-locataire",
+          "description": "Notre équipe expérimentée excelle dans le développement SaaS, assurant une architecture multi-locataire sécurisée et efficace pour une disponibilité maximale."
+        },
+        "cloudSolutions": {
+          "name": "Solutions cloud sécurisées et évolutives",
+          "description": "Nous développons des solutions SaaS basées sur le cloud, sécurisées et évolutives, en utilisant les technologies les plus récentes adaptées aux besoins de votre entreprise."
+        },
+        "agileDevelopment": {
+          "name": "Processus de développement agile pour une livraison rapide",
+          "description": "Notre processus de développement SaaS agile garantit une livraison rapide tout en mettant votre succès en priorité et en s'alignant sur vos objectifs uniques."
+        },
+        "support24": {
+          "name": "Support post-lancement 24/7",
+          "description": "Nous offrons un support 24/7 après le lancement de votre solution SaaS, garantissant un succès constant et des résultats mesurables pour votre entreprise."
+        }
+      }
+    },
+    "benefits": {
+      "title": "Avantages",
+      "titleEnd": "de nous choisir",
+      "items": {
+        "timeToMarket": {
+          "name": "Réduction du délai de mise sur le marché",
+          "description": "Notre équipe expérimentée se spécialise dans le développement SaaS, fournissant rapidement des solutions indépendantes de la plateforme pour une disponibilité maximale."
+        },
+        "userFriendly": {
+          "name": "Interfaces conviviales",
+          "description": "Nous utilisons les dernières technologies en développement SaaS pour créer des interfaces utilisateur intuitives et évolutives, adaptées à vos besoins."
+        },
+        "costSavings": {
+          "name": "Économies grâce à une architecture optimisée",
+          "description": "Nos solutions SaaS utilisent une architecture optimisée pour minimiser les coûts tout en fournissant des applications robustes et évolutives."
+        },
+        "scalability": {
+          "name": "Scalabilité pour la croissance future",
+          "description": "Nous plaçons votre succès au cœur du développement SaaS en veillant à ce que chaque solution soit évolutive et en adéquation avec vos objectifs commerciaux uniques."
+        },
+        "dedicatedSupport": {
+          "name": "Support post-lancement dédié",
+          "description": "Notre engagement envers votre projet SaaS se poursuit après le lancement, avec un support dédié garantissant des résultats mesurables et un succès continu."
+        }
+      }
+    },
+    "process": {
+      "steps": {
+        "analysis": {
+          "title": "Analyse des besoins",
+          "description": "Nous collaborons étroitement pour comprendre vos objectifs, défis et ambitions, garantissant ainsi une voie claire pour votre projet. Notre objectif est de nous aligner sur votre vision dès le départ."
+        },
+        "wireframing": {
+          "title": "Création de maquettes et prototypage",
+          "description": "À partir des informations recueillies lors de nos échanges, nous élaborons une stratégie détaillée qui définit des étapes concrètes. Notre approche personnalisée garantit un succès mesurable pour votre projet."
+        },
+        "development": {
+          "title": "Développement d'une plateforme SaaS sécurisée et évolutive",
+          "description": "Nos équipes créatives et techniques collaborent pour concrétiser vos idées. Nous fournissons des designs visuellement impressionnants associés à un développement performant."
+        },
+        "testing": {
+          "title": "Tests",
+          "description": "Après des tests rigoureux, nous lançons votre projet avec précision. Notre déploiement sans faille garantit que votre solution est prête à fonctionner parfaitement."
+        },
+        "deployment": {
+          "title": "Déploiement",
+          "description": "Nous assurons un support post-lancement pour que votre projet reste à la pointe. Notre équipe est toujours disponible pour vous aider et innover davantage."
+        }
+      }
+    },
+    "portfolio": {
+      "title": "Nos récentes",
+      "titleHighlight": "réalisations",
+      "categories": {
+        "uiUx": "Design UI/UX",
+        "appDesign": "Design d'application"
+      }
+    },
+    "faq": {
+      "items": {
+        "included": {
+          "question": "Que comprennent vos services de développement SaaS ?",
+          "answer": "Nos services de développement SaaS incluent l'analyse des besoins, la conception UX/UI, le développement back-end et front-end, les tests d'assurance qualité, le déploiement et le support continu. Nous veillons à ce que votre application SaaS soit évolutive, sécurisée et adaptée aux besoins de votre entreprise."
+        },
+        "migration": {
+          "question": "Pouvez-vous aider à migrer mon logiciel existant vers un modèle SaaS ?",
+          "answer": "Oui, nous proposons des services de migration pour vous aider à transformer votre logiciel existant en modèle SaaS. Notre équipe évaluera votre configuration actuelle, élaborera un plan de migration et garantira une transition fluide vers le cloud sans perturber vos opérations."
+        },
+        "technologies": {
+          "question": "Quelles technologies utilisez-vous pour le développement SaaS ?",
+          "answer": "Nous utilisons des technologies modernes et des frameworks adaptés au développement SaaS, incluant des plateformes cloud telles qu'AWS ou Azure, des langages de programmation comme JavaScript, Python et Ruby, ainsi que des bibliothèques front-end telles que React ou Angular. Nous choisissons la meilleure pile technologique en fonction de vos exigences spécifiques."
+        },
+        "timeline": {
+          "question": "Combien de temps faut-il pour développer une application SaaS ?",
+          "answer": "La durée de développement d'une application SaaS varie en fonction de sa complexité et des fonctionnalités requises. En général, cela peut prendre de quelques semaines à plusieurs mois. Nous vous fournirons un calendrier détaillé après avoir discuté de vos besoins lors de notre consultation initiale."
+        },
+        "support": {
+          "question": "Comment gérez-vous le support continu et la maintenance des applications SaaS ?",
+          "answer": "Nous proposons des forfaits complets de support et de maintenance post-lancement pour garantir le bon fonctionnement de votre application SaaS. Notre support comprend la correction de bugs, les mises à jour, l'ajout de fonctionnalités et une assistance technique pour vous aider à résoudre tout problème éventuel."
+        },
+        "integration": {
+          "question": "Pouvez-vous intégrer mon application SaaS avec d'autres outils ou plateformes ?",
+          "answer": "Oui, nous pouvons intégrer votre application SaaS avec divers outils et plateformes tiers, tels que les passerelles de paiement, les systèmes CRM et les outils d'automatisation marketing. Notre équipe travaillera avec vous pour identifier les meilleures options d'intégration pour votre entreprise."
+        }
+      }
+    }
+  }
+}

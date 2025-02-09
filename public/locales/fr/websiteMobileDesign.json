@@ -1,0 +1,138 @@
+{
+  "websiteMobileDesign": {
+    "hero": {
+      "title": "Des designs centrés sur l'utilisateur pour des",
+      "titleHighlight": "expériences web et mobiles époustouflantes",
+      "subtitle": "Transformez votre présence digitale avec des designs qui transforment les visiteurs en clients fidèles"
+    },
+    "services": {
+      "title": "Nos offres principales",
+      "titleHighlight": "Services",
+      "subtitle": "Des solutions complètes adaptées à vos besoins",
+      "items": {
+        "websiteDesign": {
+          "name": "Design de site web",
+          "description": "Créez des sites web époustouflants et responsives qui captivent votre audience. Nos designs allient attrait visuel et navigation intuitive pour stimuler l'engagement et les conversions."
+        },
+        "mobileAppDesign": {
+          "name": "Design d'application mobile",
+          "description": "Créez des expériences mobiles fluides que les utilisateurs adorent. Nous concevons des applications natives et multiplateformes qui allient interfaces élégantes et fonctionnalités performantes."
+        },
+        "uiUxConsulting": {
+          "name": "Consultation UI/UX",
+          "description": "Optimisez vos produits digitaux grâce à des conseils experts en UI/UX. Nous analysons le comportement des utilisateurs et mettons en œuvre des améliorations de design basées sur les données pour accroître la satisfaction des utilisateurs."
+        },
+        "designSystems": {
+          "name": "Systèmes de design",
+          "description": "Construisez des frameworks de design évolutifs qui maintiennent la cohérence sur toutes les plateformes. Nos systèmes de design accélèrent le développement et garantissent la cohérence de la marque."
+        }
+      }
+    },
+    "features": {
+      "title": "Caractéristiques",
+      "titleHighlight": "clés",
+      "titleEnd": "de nos designs",
+      "subtitle": "Votre succès est notre priorité",
+      "items": {
+        "responsiveDesign": {
+          "name": "Design responsive",
+          "description": "Des designs qui s'adaptent parfaitement à toutes les tailles d'écran, garantissant une expérience cohérente sur ordinateur, tablette et mobile."
+        },
+        "interactivePrototypes": {
+          "name": "Prototypes interactifs",
+          "description": "Testez et validez vos designs avant le développement avec des prototypes haute fidélité qui simulent l'expérience utilisateur réelle."
+        },
+        "userFlowOptimization": {
+          "name": "Optimisation du parcours utilisateur",
+          "description": "Créez des parcours utilisateur intuitifs qui guident naturellement les visiteurs à travers votre produit digital, améliorant ainsi les taux de conversion."
+        },
+        "performanceFocus": {
+          "name": "Optimisation de la performance",
+          "description": "Des interfaces rapides et efficaces, optimisées pour la vitesse et la performance afin de maintenir l'engagement et la satisfaction des utilisateurs."
+        }
+      }
+    },
+    "benefits": {
+      "title": "Avantages",
+      "titleEnd": "de nous choisir",
+      "items": {
+        "intuitiveInterfaces": {
+          "title": "Interfaces utilisateur intuitives",
+          "description": "Offrez des expériences utilisateur fluides avec des interfaces qui paraissent naturelles et faciles à naviguer. Nos designs minimisent la courbe d'apprentissage et maximisent l'engagement des utilisateurs."
+        },
+        "optimizedAccessibility": {
+          "title": "Accessibilité optimisée",
+          "description": "Créez des expériences inclusives adaptées à tous les utilisateurs. Nos designs respectent les directives WCAG, garantissant que votre produit est accessible à tous."
+        },
+        "brandConsistency": {
+          "title": "Cohérence de la marque",
+          "description": "Maintenez une identité de marque forte à travers tous les points de contact. Chaque élément de design s'aligne parfaitement avec vos directives et valeurs de marque."
+        },
+        "rapidDevelopment": {
+          "title": "Développement rapide",
+          "description": "Accélérez votre mise sur le marché grâce à notre processus de design optimisé. Des transmissions claires et une documentation détaillée accélèrent le développement."
+        },
+        "userSatisfaction": {
+          "title": "Satisfaction utilisateur",
+          "description": "Ravissez vos utilisateurs avec des interactions réfléchies et des expériences fluides. Des utilisateurs satisfaits deviennent des clients fidèles et des ambassadeurs de votre marque."
+        },
+        "higherConversions": {
+          "title": "Conversions plus élevées",
+          "description": "Transformez les visiteurs en clients grâce à des designs axés sur la conversion. Des schémas UX stratégiques guident naturellement les utilisateurs vers les actions souhaitées."
+        }
+      }
+    },
+    "process": {
+      "steps": {
+        "research": {
+          "title": "Recherche et découverte",
+          "description": "Plongez au cœur des besoins de vos utilisateurs, des tendances du marché et du paysage concurrentiel pour éclairer nos décisions de design."
+        },
+        "wireframing": {
+          "title": "Wireframing",
+          "description": "Créez des maquettes et des parcours utilisateur structurés qui forment la base d'une navigation intuitive et d'une hiérarchie du contenu."
+        },
+        "visualDesign": {
+          "title": "Design visuel",
+          "description": "Transformez les maquettes en designs visuels époustouflants qui s'alignent avec votre marque et captivent vos utilisateurs."
+        },
+        "prototyping": {
+          "title": "Prototypage",
+          "description": "Testez rigoureusement sur divers appareils et plateformes pour garantir un lancement sans faille de votre produit digital."
+        },
+        "testingLaunch": {
+          "title": "Tests et lancement",
+          "description": "Tests rigoureux sur divers appareils et plateformes pour garantir un lancement impeccable de votre produit digital."
+        }
+      }
+    },
+    "portfolio": {
+      "title": "Nos récentes",
+      "titleHighlight": "réalisations",
+      "categories": {
+        "uiUx": "Design UI/UX",
+        "appDesign": "Design d'application"
+      }
+    },
+    "faq": {
+      "items": {
+        "collaboration": {
+          "question": "Pouvez-vous travailler avec notre équipe de développement ?",
+          "answer": "Oui, nous nous intégrons parfaitement à votre équipe, fournissant une documentation claire et maintenant une communication ouverte tout au long du projet."
+        },
+        "revisions": {
+          "question": "Proposez-vous des révisions de design ?",
+          "answer": "Nous incluons plusieurs cycles de révision pour garantir votre entière satisfaction avec le design final."
+        },
+        "timeline": {
+          "question": "Quel est le délai typique pour un projet ?",
+          "answer": "La plupart des projets prennent entre 4 et 8 semaines, de la conception à la réalisation, en fonction de l'ampleur et de la complexité."
+        },
+        "designSystems": {
+          "question": "Proposez-vous des systèmes de design ?",
+          "answer": "Oui, nous créons des systèmes de design complets pour maintenir la cohérence et accélérer le développement futur."
+        }
+      }
+    }
+  }
+}
