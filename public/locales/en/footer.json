@@ -1,0 +1,51 @@
+{
+    "footer": {
+      "brand": "Digital Agence",
+      "social": {
+        "instagram": "Instagram",
+        "facebook": "Facebook",
+        "whatsapp": "WhatsApp",
+        "email": "Email"
+      },
+      "navigation": {
+        "heading": "Navigation",
+        "links": {
+          "home": "Home",
+          "aboutUs": "About us",
+          "contactUs": "Contact us"
+        }
+      },
+      "developmentServices": {
+        "heading": "Development Services",
+        "links": {
+          "websiteDevelopment": "Website Development",
+          "mobileAppDevelopment": "Mobile App Development",
+          "ecommerceDevelopment": "Ecommerce Development",
+          "saasDevelopment": "SaaS Development",
+          "aiAndAutomation": "AI and Automation"
+        }
+      },
+      "designServices": {
+        "heading": "Design Services",
+        "links": {
+          "websiteMobileAppDesign": "Website & Mobile App Design",
+          "socialMediaPostLogoDesign": "Social Media Post & Logo Design"
+        }
+      },
+      "digitalMarketing": {
+        "heading": "Digital Marketing",
+        "links": {
+          "seo": "SEO",
+          "socialMediaMarketing": "Social Media Marketing"
+        }
+      },
+      "contactInfo": {
+        "heading": "Contact us",
+        "location": "Paris, France",
+        "email": "contact@privatehonors.com",
+        "phone": "+33624610775"
+      },
+      "copyright": "Copyright ©2024 All rights reserved"
+    }
+  }
+  
