@@ -21,8 +21,7 @@ import LanguageSwitcher from "../LanguageSwitcher/page";
 const Navbar = () => {
   const { t } = useTranslation("navbar");
   const pathname = usePathname();
-  // const [path, setPathname] = useState(pathname);
-  // const pathname = window.location.pathname;
+
   const [state, setState] = useState({
     isMenuOpen: false,
     activeDropdown: "services",
@@ -40,7 +39,7 @@ const Navbar = () => {
     setState((prev) => ({ ...prev, activeDropdown: "services" }));
   }, [pathname]);
 
-  
+
 // toggleDropdown function to open and close the dropdown for services.
   const toggleDropdown = (id) => {
     setState((prevState) => ({
