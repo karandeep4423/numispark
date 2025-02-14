@@ -54,6 +54,7 @@
       }
     },
     "process": {
+      "title": "Développement SaaS",
       "steps": {
         "analysis": {
           "title": "Analyse des besoins",

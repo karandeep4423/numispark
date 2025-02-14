@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Instagram, Facebook, Mail, MessageCircle } from "lucide-react";
 
 const Footer = () => {
@@ -23,20 +22,20 @@ const Footer = () => {
                 target="_blank"
                 aria-label="Instagram"
               >
-                <Instagram className="w-8 h-8 text-gray-800 hover:text-gray-400 transition-colors" />
+                <Instagram className="w-10 h-10 text-blue-600 hover:text-blue-400 transition-colors" />
               </Link>
               <Link
                 href="https://www.facebook.com/share/14GyLWh1t1/?mibextid=LQQJ4d"
                 target="_blank"
                 aria-label="Facebook"
               >
-                <Facebook className="w-8 h-8 text-gray-800 hover:text-gray-400 transition-colors" />
+                <Facebook className="w-10 h-10 text-blue-600 hover:text-blue-400 transition-colors" />
               </Link>
               <Link href="/" target="_blank" aria-label="WhatsApp">
-                <MessageCircle className="w-8 h-8 text-gray-800 hover:text-gray-400 transition-colors" />
+                <MessageCircle className="w-10 h-10 text-blue-600 hover:text-blue-400 transition-colors" />
               </Link>
               <a href="mailto:contact@privatehonors.com" aria-label="Email">
-                <Mail className="w-8 h-8 text-gray-800 hover:text-gray-400 transition-colors" />
+                <Mail className="w-11 h-11 text-blue-600 hover:text-blue-400 transition-colors" />
               </a>
             </div>
           </div>

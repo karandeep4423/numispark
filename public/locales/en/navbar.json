@@ -1,0 +1,38 @@
+{
+  "navbar": {
+    "brand": "Digital Agency",
+    "links": {
+      "home": "Home",
+      "services": "Services",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "startProject": "Start a Project"
+    },
+    "dropdown": {
+      "developmentServices": {
+        "title": "Development Services",
+        "items": {
+          "websiteDevelopment": "Website Development",
+          "mobileAppDevelopment": "Mobile App Development",
+          "ecommerceDevelopment": "Ecommerce Development",
+          "saasDevelopment": "SaaS Development",
+          "aiAndAutomation": "AI and Automation"
+        }
+      },
+      "uiUxDesign": {
+        "title": "UI/UX Design",
+        "items": {
+          "websiteMobileAppDesign": "Website & Mobile App Design",
+          "socialMediaPostLogoDesign": "Social Media Post & Logo Design"
+        }
+      },
+      "digitalMarketing": {
+        "title": "Digital Marketing",
+        "items": {
+          "seo": "SEO",
+          "socialMediaMarketing": "Social Media Marketing"
+        }
+      }
+    }
+  }
+}

@@ -9,6 +9,19 @@
         "phone": "Phone Number",
         "city": "City"
       },
+      "errors": {
+        "invalidEmail": "Please enter a valid email address",
+        "required": "Fields are required",
+        "pleaseFixErrors": "Please fix the errors above",
+        "name": "Please enter your full name",
+        "invalidPhone": "Please enter a valid phone number",
+        "city": "Please enter your city",
+        "serviceType": "Please select the type of service",
+        "budget": "Please select your budget",
+        "message": "Please enter a message",
+        "success": "Your message has been sent successfully.",
+        "server": "An error occurred while sending your message. Please try again later."
+      },
       "select": {
         "serviceType": "Select Service Type",
         "budget": "Your Budget",
@@ -35,7 +48,8 @@
       "textarea": {
         "placeholder": "Tell us about your project"
       },
-      "submit": "Send"
+      "submit": "Send",
+      "submitting": "Sending..."
     }
   }
 }

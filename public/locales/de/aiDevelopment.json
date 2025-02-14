@@ -1,0 +1,133 @@
+{
+    "aiDevelopment": {
+      "hero": {
+        "title": "Verwandeln Sie Ihr Unternehmen mit KI & Automatisierung",
+        "subtitle": "Von Chatbots bis zu maßgeschneiderten KI-Modellen entwickeln wir intelligente Lösungen, die die Effizienz steigern"
+      },
+      "services": {
+        "sectionTitle": "Unsere Kernkompetenzen",
+        "sectionSubtitle": "Umfassende Lösungen, maßgeschneidert für Ihre Bedürfnisse",
+        "items": {
+          "customAI": {
+            "serviceName": "Entwicklung maßgeschneiderter KI-Modelle",
+            "serviceDes": "Verwandeln Sie Ihr Unternehmen mit maßgeschneiderten KI-Lösungen, die sich an Ihre einzigartigen Herausforderungen anpassen. Unsere individuellen Modelle nutzen modernste Technologie, um beispiellose Genauigkeit und Effizienz in Ihren Abläufen zu erzielen."
+          },
+          "chatbot": {
+            "serviceName": "Chatbot-Integration",
+            "serviceDes": "Revolutionieren Sie Ihren Kundenservice mit intelligenten Chatbots, die verstehen, lernen und sich weiterentwickeln. Bieten Sie rund um die Uhr Support, senken Sie Kosten und steigern Sie die Kundenzufriedenheit."
+          },
+          "automation": {
+            "serviceName": "Automatisierung von Geschäftsprozessen",
+            "serviceDes": "Beseitigen Sie repetitive Aufgaben und optimieren Sie Ihre Arbeitsabläufe mit intelligenten Automatisierungslösungen. Unsere Systeme passen sich Ihren Geschäftsprozessen an, reduzieren Fehler und ermöglichen es Ihrem Team, sich auf strategische Initiativen zu konzentrieren."
+          },
+          "analytics": {
+            "serviceName": "Maschinelles Lernen und prädiktive Analytik",
+            "serviceDes": "Nutzen Sie die Kraft Ihrer Daten mit fortschrittlicher Analytik, die Trends vorhersagt, Chancen erkennt und fundierte Entscheidungen ermöglicht. Setzen Sie Erkenntnisse in Taten um mit unseren umfassenden ML-Lösungen."
+          }
+        }
+      },
+      "features": {
+        "sectionTitle": "Hauptmerkmale",
+        "sectionSubtitle": "unserer Chatbots",
+        "sectionTagline": "Ihr Erfolg ist unsere Priorität",
+        "items": {
+          "nlu": {
+            "serviceName": "Verstehen natürlicher Sprache (NLU)",
+            "serviceDes": "Ermöglichen Sie nahtlose Interaktionen zwischen Mensch und Maschine mit unseren fortschrittlichen NLU-Funktionen. Verarbeiten und verstehen Sie die menschliche Sprache mit beispielloser Genauigkeit und unterstützen Sie verschiedene Anwendungsfälle, von Kundenservice bis hin zur Datenanalyse."
+          },
+          "multilingual": {
+            "serviceName": "Mehrsprachige Unterstützung",
+            "serviceDes": "Überwinden Sie Sprachbarrieren und expandieren Sie global mit unseren mehrsprachigen KI-Lösungen. Unterstützen Sie über 100 Sprachen mit nahezu muttersprachlichem Verständnis und Reaktionsfähigkeit."
+          },
+          "integration": {
+            "serviceName": "Integration mit gängigen Plattformen",
+            "serviceDes": "Verbinden Sie unsere KI-Lösungen nahtlos mit Ihrem bestehenden Technologie-Stack. Ob Slack, Microsoft Teams oder individuelle Plattformen – wir sorgen für eine reibungslose Integration und optimale Leistung."
+          },
+          "realtime": {
+            "serviceName": "Echtzeit-Analytik",
+            "serviceDes": "Überwachen und optimieren Sie Ihre KI-Lösungen in Echtzeit. Erhalten Sie umsetzbare Erkenntnisse zu Leistungskennzahlen, Nutzerengagement und Systemzustand mit unserem umfassenden Analyse-Dashboard."
+          }
+        }
+      },
+      "whyUs": {
+        "sectionTitle": "Vorteile",
+        "sectionSubtitle": "der Zusammenarbeit mit uns",
+        "items": {
+          "cuttingEdge": {
+            "serviceName": "Expertise in modernsten KI-Technologien",
+            "serviceDes": "Arbeiten Sie mit einem Team zusammen, das stets an der Spitze der KI-Innovation steht. Unsere Experten sind auf die neuesten Technologien wie GPT-4, Computer Vision und Deep Learning spezialisiert, sodass Sie zukunftssichere Lösungen erhalten, die echten Geschäftswert schaffen."
+          },
+          "customSolutions": {
+            "serviceName": "Maßgeschneiderte Lösungen für Ihre Geschäftsbedürfnisse",
+            "serviceDes": "Erhalten Sie KI-Lösungen, die perfekt auf Ihre Geschäftsziele abgestimmt sind. Wir glauben nicht an Standardlösungen – unser Team analysiert Ihre individuellen Herausforderungen und entwickelt maßgeschneiderte KI-Lösungen, die einen messbaren ROI liefern."
+          },
+          "costEffective": {
+            "serviceName": "Kosteneffiziente und skalierbare Lösungen",
+            "serviceDes": "Maximieren Sie Ihre Investition mit Lösungen, die mit Ihrem Unternehmen wachsen. Unsere KI-Systeme sind auf Skalierbarkeit ausgelegt, sodass Sie klein starten und die Funktionen erweitern können, während Sie gleichzeitig kosteneffizient bleiben."
+          },
+          "speedOptimization": {
+            "serviceName": "Geschwindigkeitsoptimierung",
+            "serviceDes": "Erleben Sie blitzschnelle Leistung mit unseren optimierten KI-Lösungen. Wir setzen fortschrittliche Techniken wie Modellkompression und Edge Computing ein, um schnelle Reaktionszeiten zu gewährleisten, ohne die Genauigkeit zu beeinträchtigen."
+          }
+        }
+      },
+      "process": {
+        "title": "KI-Entwicklung",
+        "steps": {
+          "vision": {
+            "title": "Ihre Vision verstehen",
+            "description": "Wir tauchen tief in Ihre Geschäftsbedürfnisse und Herausforderungen ein, indem wir gezielte Discovery-Sitzungen durchführen. Unser Team stellt sicher, dass wir nicht nur Ihre Anforderungen verstehen, sondern auch Chancen für Innovation und Wachstum aufdecken."
+          },
+          "planning": {
+            "title": "Strategische Planung",
+            "description": "Wir verwandeln Erkenntnisse in umsetzbare Strategien und erstellen eine klare Roadmap für Ihr Projekt. Unsere detaillierte Planung gewährleistet eine effiziente Entwicklung, termingerechte Umsetzung und messbare Ergebnisse."
+          },
+          "development": {
+            "title": "Design & Entwicklung",
+            "description": "Unser Expertenteam erweckt Ihre Vision zum Leben, indem es modernste KI-Technologien und sauberen Code einsetzt. Regelmäßige Updates und Demonstrationen halten Sie während des gesamten Entwicklungsprozesses auf dem Laufenden."
+          },
+          "launch": {
+            "title": "Einführung & Bereitstellung",
+            "description": "Wir sorgen für einen reibungslosen Übergang von der Entwicklung zur Bereitstellung durch umfassende Tests und Optimierung. Ihre Lösung wird mit Zuversicht gestartet, unterstützt durch gründliche Qualitätssicherung."
+          },
+          "support": {
+            "title": "Laufende Unterstützung",
+            "description": "Wir bieten kontinuierlichen Support, regelmäßige Updates und proaktive Wartung, damit Ihre Lösung stets optimale Leistung erbringt."
+          }
+        }
+      },
+      "portfolio": {
+        "sectionTitle": "Unsere aktuellen",
+        "sectionHighlight": "Arbeiten",
+        "categories": {
+          "uiUx": "UI/ UX Design",
+          "appDesign": "App Design"
+        }
+      },
+      "faq": {
+        "items": {
+          "quote": {
+            "question": "Wie kann ich ein Angebot für ein Projekt anfordern?",
+            "answer": "Starten Sie Ihre KI-Reise, indem Sie eine kostenlose Beratung über unser Online-Formular vereinbaren oder uns direkt anrufen. Innerhalb von 24 Stunden analysieren unsere Experten Ihre Anforderungen und erstellen einen detaillierten Vorschlag, der Zeitplan, Ergebnisse und auf Ihre Bedürfnisse zugeschnittene Preismodelle umfasst."
+          },
+          "industries": {
+            "question": "Welche Branchen bedienen Sie?",
+            "answer": "Wir haben KI-Lösungen erfolgreich in verschiedenen Sektoren implementiert, darunter Gesundheitswesen (Optimierung der Patientenversorgung), Finanzen (Risikobewertung), Einzelhandel (Bestandsmanagement), Fertigung (vorausschauende Wartung) und Bildung (personalisierte Lernkonzepte). Unser flexibler Ansatz gewährleistet effektive Lösungen, unabhängig von Ihrer Branche."
+          },
+          "timeline": {
+            "question": "Wie lange dauert ein typisches Projekt?",
+            "answer": "Die Projektdauer variiert je nach Komplexität und Umfang. Einfache Chatbot-Integrationen dauern in der Regel 2-4 Wochen, während die Entwicklung individueller KI-Modelle 2-3 Monate in Anspruch nehmen kann. Automatisierungslösungen im Unternehmensmaßstab erstrecken sich normalerweise über 3-6 Monate. Wir liefern detaillierte Meilensteine und regelmäßige Fortschrittsberichte während des gesamten Entwicklungszyklus."
+          },
+          "security": {
+            "question": "Wie gewährleisten Sie die Sicherheit der KI-Lösungen?",
+            "answer": "Sicherheit hat in unserem Entwicklungsprozess oberste Priorität. Wir setzen Verschlüsselung auf Unternehmensniveau ein, führen regelmäßige Sicherheitsüberprüfungen durch und halten uns an Industriestandards (GDPR, HIPAA etc.). Alle unsere KI-Lösungen werden vor der Bereitstellung rigorosen Tests auf potenzielle Schwachstellen unterzogen."
+          },
+          "supportAfter": {
+            "question": "Welche Art von Support bieten Sie nach der Bereitstellung an?",
+            "answer": "Wir bieten umfassenden Support nach der Bereitstellung, einschließlich 24/7-Monitoring, regelmäßiger Leistungsoptimierung, Modell-Neutrainings und dediziertem technischem Support. Unsere Wartungspakete stellen sicher, dass sich Ihre KI-Lösungen kontinuierlich weiterentwickeln und verbessern."
+          }
+        }
+      }
+    }
+  }
+  

@@ -9,6 +9,19 @@
         "phone": "Telefonnummer",
         "city": "Stadt"
       },
+      "errors": {
+        "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+        "required": "Felder sind erforderlich",
+        "pleaseFixErrors": "Bitte beheben Sie die obigen Fehler",
+        "name": "Bitte geben Sie Ihren vollständigen Namen ein",
+        "invalidPhone": "Bitte geben Sie eine gültige Telefonnummer ein",
+        "city": "Bitte geben Sie Ihre Stadt ein",
+        "serviceType": "Bitte wählen Sie die Art des Services aus",
+        "budget": "Bitte wählen Sie Ihr Budget aus",
+        "message": "Bitte geben Sie eine Nachricht ein",
+        "success": "Ihre Nachricht wurde erfolgreich gesendet.",
+        "server": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+      },
       "select": {
         "serviceType": "Dienstleistungstyp auswählen",
         "budget": "Ihr Budget",
@@ -35,7 +48,8 @@
       "textarea": {
         "placeholder": "Erzählen Sie uns von Ihrem Projekt"
       },
-      "submit": "Senden"
+      "submit": "Senden",
+      "submitting": "Senden..."
     }
   }
 }

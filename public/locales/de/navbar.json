@@ -1,0 +1,38 @@
+{
+  "navbar": {
+    "brand": "Digitale Agentur",
+    "links": {
+      "home": "Startseite",
+      "services": "Dienstleistungen",
+      "aboutUs": "Über uns",
+      "contactUs": "Kontakt",
+      "startProject": "Projekt starten"
+    },
+    "dropdown": {
+      "developmentServices": {
+        "title": "Entwicklungsdienstleistungen",
+        "items": {
+          "websiteDevelopment": "Webentwicklung",
+          "mobileAppDevelopment": "Entwicklung mobiler Apps",
+          "ecommerceDevelopment": "E-Commerce-Entwicklung",
+          "saasDevelopment": "SaaS-Entwicklung",
+          "aiAndAutomation": "KI und Automatisierung"
+        }
+      },
+      "uiUxDesign": {
+        "title": "UI/UX-Design",
+        "items": {
+          "websiteMobileAppDesign": "Web- & Mobile-App-Design",
+          "socialMediaPostLogoDesign": "Social-Media-Post- und Logo-Design"
+        }
+      },
+      "digitalMarketing": {
+        "title": "Digitales Marketing",
+        "items": {
+          "seo": "SEO",
+          "socialMediaMarketing": "Social-Media-Marketing"
+        }
+      }
+    }
+  }
+}

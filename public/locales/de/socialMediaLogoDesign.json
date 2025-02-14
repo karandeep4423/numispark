@@ -1,0 +1,166 @@
+{
+    "socialMediaLogoDesign": {
+      "hero": {
+        "title": "Auffällige Designs für die Social-Media-Präsenz und das Logo Ihrer Marke",
+        "subtitle": "Steigern Sie das Engagement und etablieren Sie eine einzigartige Markenidentität"
+      },
+      "process": {
+        "title": "Unser Designprozess",
+        "steps": {
+          "step1": {
+            "title": "Ihre Vision verstehen",
+            "description": "Wir beginnen damit, Ihre Ziele, Markenidentität und Zielgruppenpräferenzen zu besprechen, um unsere Designs an Ihre Social-Media- und Logoanforderungen anzupassen."
+          },
+          "step2": {
+            "title": "Recherche & Inspiration",
+            "description": "Wir analysieren Trends, Wettbewerber und Marktdynamiken, um Inspiration für die Gestaltung überzeugender Social-Media-Visuals und unvergesslicher Logos zu sammeln."
+          },
+          "step3": {
+            "title": "Konzeptentwicklung",
+            "description": "Unsere Designer entwerfen einzigartige Konzepte, einschließlich Layouts für Social-Media-Beiträge und erste Logo-Skizzen, um eine kreative Richtung festzulegen."
+          },
+          "step4": {
+            "title": "Design & Verfeinerung",
+            "description": "Unter Berücksichtigung Ihres Feedbacks finalisieren wir ausgefeilte Designs mit auffälligen Visuals für Social Media und einem Logo, das Ihre Marke authentisch repräsentiert."
+          },
+          "step5": {
+            "title": "Endgültige Lieferung",
+            "description": "Wir liefern hochwertige Dateien für Ihre Social-Media-Beiträge und Logos, die bereit sind, die Online-Präsenz und Identität Ihrer Marke zu stärken."
+          }
+        }
+      },
+      "services": {
+        "sectionTitle": "Unsere Kernkompetenzen",
+        "sectionTitleHighlight": "Dienstleistungen",
+        "sectionSubtitle": "Umfassende Lösungen, maßgeschneidert für Ihre Bedürfnisse",
+        "items": {
+          "socialMediaDesign": {
+            "serviceName": "Social-Media-Design",
+            "serviceDes": "Erstellen Sie auffällige Social-Media-Beiträge, die das Engagement steigern. Unsere Designs sind auf die spezifischen Anforderungen jeder Plattform und die Vorlieben der Zielgruppe optimiert."
+          },
+          "logoBrandIdentity": {
+            "serviceName": "Logo & Markenidentität",
+            "serviceDes": "Professionelles Logodesign mit mehreren Konzepten und Varianten sowie vollständige Richtlinien zur Markenidentität für eine konsistente Präsentation."
+          },
+          "brandKitDesign": {
+            "serviceName": "Brand-Kit-Design",
+            "serviceDes": "Erstellen Sie umfassende Brand-Kits, einschließlich Farbpaletten, Typografie und Designelementen, die Konsistenz über alle Plattformen hinweg gewährleisten."
+          },
+          "socialStrategy": {
+            "serviceName": "Social-Media-Strategie",
+            "serviceDes": "Erhalten Sie fachkundige Beratung zu Content-Strategie, Veröffentlichungsplänen und Engagement-Techniken, um Ihre Social-Media-Präsenz zu maximieren."
+          },
+          "socialMediaTemplates": {
+            "serviceName": "Social-Media-Vorlagen",
+            "serviceDes": "Wiederverwendbare Vorlagen für Stories, Beiträge und Karussells, die Ihr Team einfach anpassen kann, während die Markenkonsistenz gewahrt bleibt."
+          }
+        }
+      },
+      "features": {
+        "sectionTitle": "Hauptmerkmale",
+        "sectionSubtitle": "unserer Designs",
+        "sectionTagline": "Ihr Erfolg ist unsere Priorität",
+        "items": {
+          "platformOptimization": {
+            "serviceName": "Plattform-Optimierung",
+            "serviceDes": "Designs, die perfekt an die Spezifikationen und Best Practices jeder Social-Media-Plattform angepasst und optimiert sind."
+          },
+          "brandConsistency": {
+            "serviceName": "Markenkonsistenz",
+            "serviceDes": "Bewahren Sie eine starke visuelle Identität über alle Beiträge und Plattformen hinweg, während Sie kreative Flexibilität ermöglichen."
+          },
+          "engagementFocus": {
+            "serviceName": "Engagement-Fokus",
+            "serviceDes": "Erstellen Sie Designs, die durch strategische visuelle Hierarchie und Handlungsaufforderungen Likes, Kommentare und Shares fördern."
+          },
+          "multiFormatDelivery": {
+            "serviceName": "Multiformat-Lieferung",
+            "serviceDes": "Erhalten Sie Ihre Designs in allen erforderlichen Formaten – von webfertigen Dateien bis hin zu druckfähigen Vektoren."
+          }
+        }
+      },
+      "whyUs": {
+        "sectionTitle": "Vorteile",
+        "sectionSubtitle": "der Zusammenarbeit mit uns",
+        "items": {
+          "platformExpertise": {
+            "serviceName": "Plattform-Expertise",
+            "serviceDes": "Tiefes Verständnis der einzigartigen Anforderungen und des Nutzerverhaltens jeder Social-Media-Plattform."
+          },
+          "brandFocusedDesign": {
+            "serviceName": "Markenfokussiertes Design",
+            "serviceDes": "Jedes Designelement wird sorgfältig gestaltet, um Ihre Markenidentität zu stärken und zu fördern."
+          },
+          "engagementDriven": {
+            "serviceName": "Engagement-orientiert",
+            "serviceDes": "Strategische Designs, die die Nutzerinteraktion fördern und das Social-Media-Engagement steigern."
+          },
+          "quickTurnaround": {
+            "serviceName": "Schnelle Umsetzung",
+            "serviceDes": "Schnelle Lieferung der Designs, um Ihre Social-Media-Präsenz frisch und konsistent zu halten."
+          },
+          "unlimitedRevisions": {
+            "serviceName": "Unbegrenzte Revisionen",
+            "serviceDes": "Wir überarbeiten Ihr Logo und Ihre Designs, bis sie perfekt Ihrer Vision und Ihren Markenanforderungen entsprechen."
+          },
+          "socialMediaStrategy": {
+            "serviceName": "Social-Media-Strategie",
+            "serviceDes": "Designs, die mit Ihrer Social-Media-Strategie übereinstimmen, um Ihre Marketingziele zu erreichen."
+          }
+        }
+      },
+      "portfolio": {
+        "sectionTitle": "Unsere aktuellen",
+        "sectionHighlight": "Arbeiten",
+        "categories": {
+          "uiUx": "UI/UX-Design",
+          "appDesign": "App-Design"
+        }
+      },
+      "faq": {
+        "items": {
+          "logoConcepts": {
+            "question": "Wie viele Logokonzepte erhalte ich in der initialen Designphase?",
+            "answer": "Unser Standard-Logo-Paket umfasst 3-5 einzigartige Konzepte. Jedes Konzept wird mit verschiedenen Varianten und Anwendungsbeispielen geliefert, um Ihnen zu veranschaulichen, wie das Logo auf verschiedenen Plattformen funktioniert."
+          },
+          "templatePackage": {
+            "question": "Was ist im Social-Media-Vorlagenpaket enthalten?",
+            "answer": "Das Paket umfasst anpassbare Vorlagen für: Instagram-Beiträge (Feed, Stories und Reels), Facebook-Beiträge und Titelbilder, LinkedIn-Unternehmensseiten-Grafiken, Twitter-Beiträge und Header-Bilder sowie grundlegende Animationstemplates für Stories und Reels."
+          },
+          "editableTemplates": {
+            "question": "Stellen Sie bearbeitbare Vorlagen zur Nutzung durch unser Team zur Verfügung?",
+            "answer": "Ja! Wir erstellen leicht bearbeitbare Vorlagen in Canva oder ähnlichen Plattformen, damit Ihr Team bei der Erstellung täglicher Social-Media-Inhalte eine konsistente Markenführung beibehalten kann."
+          },
+          "turnaround": {
+            "question": "Wie lange dauert die Bearbeitung von Social-Media-Inhalten?",
+            "answer": "Normale Beiträge werden innerhalb von 24-48 Stunden geliefert. Für monatliche Content-Pakete (15-20 Beiträge) liefern wir das gesamte Paket innerhalb von 5-7 Werktagen."
+          },
+          "rushDelivery": {
+            "question": "Bieten Sie einen Express-Lieferservice für dringende Social-Media-Beiträge an?",
+            "answer": "Ja, wir bieten für dringende Social-Media-Beiträge eine Lieferung am selben Tag gegen Aufpreis, je nach Verfügbarkeit, an."
+          },
+          "brandGuide": {
+            "question": "Was ist im Markenstil-Guide enthalten?",
+            "answer": "Der umfassende Guide enthält: Regeln zur Logoverwendung, Farbpaletten mit allen Codes (RGB, CMYK, HEX), Typografie-Richtlinien, Bildstil-Richtlinien, Social-Media-Beitragsvorlagen und Best Practices zur Aufrechterhaltung der Markenkonsistenz."
+          },
+          "seasonalCampaigns": {
+            "question": "Können Sie bei saisonalen Social-Media-Kampagnen helfen?",
+            "answer": "Ja! Wir erstellen thematische Content-Pakete für Feiertage, besondere Anlässe und saisonale Aktionen, einschließlich statischer und animierter Beiträge."
+          },
+          "contentCalendar": {
+            "question": "Stellen Sie Social-Media-Content-Kalender zur Verfügung?",
+            "answer": "Ja, wir können einen strategischen Content-Kalender zusammen mit Ihren Designs bereitstellen, der optimale Veröffentlichungszeiten und einen ausgewogenen Content-Mix für maximales Engagement vorschlägt."
+          },
+          "revisions": {
+            "question": "Kann ich Änderungen an den Designs vornehmen?",
+            "answer": "Absolut! Wir bieten während des Designprozesses unbegrenzte Revisionen an, bis Sie vollständig zufrieden sind. Bei Logos sind Revisionen bis zur endgültigen Freigabe enthalten. Für Social-Media-Beiträge bieten wir 2 Revisionsrunden pro Beitrag an."
+          },
+          "brandAssetUsage": {
+            "question": "Geben Sie Anleitungen zur Verwendung von Logos und Markenassets?",
+            "answer": "Ja, jedes Logo-Paket enthält ein detailliertes Markenrichtliniendokument, das die richtige Verwendung, Mindestgrößen, Abstandsanforderungen sowie Dos and Don'ts für Ihr Logo und Ihre Markenassets erklärt."
+          }
+        }
+      }
+    }
+  }
+  

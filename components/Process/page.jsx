@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 
 const HowAgencyWorks = ({ steps, namespace }) => {
   const { t } = useTranslation([namespace]);
-  console.log("namespace", namespace);
   return (
     <div className="bg-black text-white">
       <div className="flex items-center justify-center">

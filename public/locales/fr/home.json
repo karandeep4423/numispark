@@ -41,6 +41,7 @@
       }
     },
     "process": {
+      "title": "Comment fonctionne l'agence",
       "steps": {
         "vision": {
           "title": "Comprendre votre vision",

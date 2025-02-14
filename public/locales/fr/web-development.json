@@ -50,6 +50,7 @@
       }
     },
     "process": {
+      "title": "Processus de développement Web",
       "steps": {
         "analysis": {
           "title": "Analyse des Besoins",

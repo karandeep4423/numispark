@@ -9,6 +9,19 @@
         "phone": "Numéro de téléphone",
         "city": "Ville"
       },
+      "errors": {
+        "invalidEmail": "Veuillez saisir une adresse e-mail valide",
+        "required": "Les champs sont obligatoires",
+        "pleaseFixErrors": "Veuillez corriger les erreurs ci-dessus",
+        "name": "Veuillez saisir votre nom complet",
+        "invalidPhone": "Veuillez saisir un numéro de téléphone valide",
+        "city": "Veuillez saisir votre ville",
+        "serviceType": "Veuillez sélectionner le type de service",
+        "budget": "Veuillez sélectionner votre budget",
+        "message": "Veuillez saisir un message",
+        "success": "Votre message a été envoyé avec succès.",
+        "server": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard."
+      },
       "select": {
         "serviceType": "Sélectionner le type de service",
         "budget": "Votre budget",
@@ -19,10 +32,10 @@
             "SocialMediaMarketing": "Marketing des médias sociaux",
             "seoServices": "Services SEO",
             "ecommerceDevelopment": "Développement e-commerce",
-            "SaasDevelopment":"Développement SaaS",
-            "AIandAutomation":"IA et Automatisation",
-            "WebsiteMobileAppDesign":"Conception de sites Web et d'applications mobiles",
-            "SocialMediaPost&LogoDesign":"Conception de publications sur les médias sociaux et de logos"
+            "SaasDevelopment": "Développement SaaS",
+            "AIandAutomation": "IA et Automatisation",
+            "WebsiteMobileAppDesign": "Conception de sites Web et d'applications mobiles",
+            "SocialMediaPost&LogoDesign": "Conception de publications sur les médias sociaux et de logos"
           },
           "budget": {
             "below1000": "$0 - $1,000",
@@ -35,7 +48,8 @@
       "textarea": {
         "placeholder": "Parlez-nous de votre projet"
       },
-      "submit": "Envoyer"
+      "submit": "Envoyer",
+      "submitting": "Envoi..."
     }
   }
 }

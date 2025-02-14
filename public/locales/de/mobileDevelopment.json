@@ -54,6 +54,7 @@
       }
     },
     "process": {
+      "title": "Mobiler Entwicklungsprozess",
       "steps": {
         "analysis": {
           "title": "Bedarfsanalyse",

@@ -1,14 +1,17 @@
+import { useTranslation } from "react-i18next";
+
 const Technologies = ({ technologies }) => {
+  const { t } = useTranslation("technologies");
     return (
       <div className="pb-16 bg-gray-50">
         <h2 className="text-4xl pt-16 text-center font-bold text-gray-800">
           <span className="text-blue-600 p-2.5 rounded-2xl bg-blue-200">
-            Technologies
+          {t("tech.headingHighlight")}
           </span>
-          We Excel In
+          {t("tech.heading")}
         </h2>
         <p className="text-xl text-center font-medium text-gray-600 mt-4">
-          The Backbone of Our High Quality Solutions
+        {t("tech.description")}
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 container mt-10 mx-auto px-4">
           {technologies.map((tech, index) => (

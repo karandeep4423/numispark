@@ -193,10 +193,10 @@ const Navbar = () => {
               : "hidden lg:flex"
           }`}
         >
-          {renderDropdown("Services", serviceItems)}
-          <Link onClick={toggleMenu} href="/our-work">
-            Our Work
+          <Link onClick={toggleMenu} href="/">
+            Home
           </Link>
+          {renderDropdown("Services", serviceItems)}
           <Link onClick={toggleMenu} href="/about-us">
             About Us
           </Link>
@@ -206,7 +206,7 @@ const Navbar = () => {
           <Link
             className="hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] font-medium px-4 py-3 rounded-full bg-blue-600 text-white transition-all duration-300"
             onClick={toggleMenu}
-            href="/start-project"
+            href="/contact-us"
           >
             Start a Project
           </Link>

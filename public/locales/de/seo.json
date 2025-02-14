@@ -1,0 +1,163 @@
+{
+    "seo": {
+      "hero": {
+        "title": "Ranke höher, erreiche weiter mit unseren professionellen SEO-Diensten",
+        "subtitle": "Steigern Sie das Engagement und etablieren Sie eine einzigartige Markenidentität"
+      },
+      "services": {
+        "title": "Unser Kern",
+        "titleHighlight": "Dienstleistungen",
+        "subtitle": "Umfassende Lösungen, maßgeschneidert für Ihre Bedürfnisse",
+        "items": {
+          "onPage": {
+            "name": "On-Page-Optimierung",
+            "description": "Optimieren Sie den Inhalt und die Struktur Ihrer Website, um Suchmaschinen-Rankings und Benutzererfahrung zu verbessern."
+          },
+          "offPage": {
+            "name": "Off-Page-Strategien",
+            "description": "Steigern Sie die Autorität und Sichtbarkeit Ihrer Website durch strategischen Linkaufbau und externe Optimierung."
+          },
+          "technical": {
+            "name": "Technisches SEO",
+            "description": "Stellen Sie sicher, dass die technische Basis Ihrer Website solide ist – von der Seitenladegeschwindigkeit über mobile Optimierung bis zur Crawlbarkeit."
+          },
+          "local": {
+            "name": "Lokales SEO",
+            "description": "Erhöhen Sie Ihre lokale Suchpräsenz, um Kunden in Ihrer Nähe anzuziehen und die Sichtbarkeit bei standortbezogenen Suchen zu verbessern."
+          },
+          "content": {
+            "name": "Content-Strategie",
+            "description": "Entwickeln und implementieren Sie eine Content-Strategie, die mit Ihren SEO-Zielen übereinstimmt und Ihre Zielgruppe anspricht."
+          },
+          "analytics": {
+            "name": "Analyse & Berichterstattung",
+            "description": "Verfolgen und analysieren Sie Ihre SEO-Leistung mit detaillierten Berichten, um Erfolge zu messen und Verbesserungsmöglichkeiten zu identifizieren."
+          }
+        }
+      },
+      "features": {
+        "title": "Schlüssel",
+        "titleHighlight": "Merkmale",
+        "titleEnd": "unseres SEO",
+        "subtitle": "Ihr Erfolg hat bei uns Priorität",
+        "items": {
+          "keyword": {
+            "name": "Keyword-Optimierung",
+            "description": "Optimieren Sie Schlüsselwörter strategisch, um Suchmaschinen-Rankings zu verbessern und gezielten Traffic zu generieren."
+          },
+          "contentQuality": {
+            "name": "Content-Qualität",
+            "description": "Erstellen Sie hochwertige, ansprechende Inhalte, die den SEO-Best Practices und der Nutzerabsicht entsprechen."
+          },
+          "technicalExcellence": {
+            "name": "Technische Exzellenz",
+            "description": "Optimieren Sie technische Aspekte Ihrer Website, wie Seitenladegeschwindigkeit und mobile Optimierung, für bestmögliche SEO-Ergebnisse."
+          },
+          "linkBuilding": {
+            "name": "Linkaufbau",
+            "description": "Erwerben Sie hochwertige Backlinks von autoritativen Quellen, um die Autorität Ihrer Website zu stärken."
+          },
+          "ecommerce": {
+            "name": "E-Commerce-SEO",
+            "description": "Spezialisierte Optimierung für Online-Shops, um die Produktpräsenz zu erhöhen und mehr Verkäufe zu erzielen."
+          },
+          "speed": {
+            "name": "Optimierung der Seitenladegeschwindigkeit",
+            "description": "Feinabstimmung der Performance zur Verbesserung der Ladezeiten und Core Web Vitals für bessere Suchmaschinen-Rankings."
+          }
+        }
+      },
+      "benefits": {
+        "title": "Vorteile",
+        "titleEnd": "bei uns",
+        "items": {
+          "dataDriven": {
+            "name": "Datengetriebene Ergebnisse",
+            "description": "Wir nutzen fortschrittliche Analysetools und Tracking-Methoden, um die Leistung zu messen und einen messbaren ROI für Ihre SEO-Investition zu liefern."
+          },
+          "transparent": {
+            "name": "Transparente Berichterstattung",
+            "description": "Regelmäßige, detaillierte Berichte, die Ihren Ranking-Fortschritt, Traffic-Wachstum und Verbesserungen bei den Konversionen klar aufzeigen."
+          },
+          "custom": {
+            "name": "Individuelle Strategie",
+            "description": "Ein maßgeschneiderter SEO-Ansatz, der auf Ihre Branche, den Wettbewerb und Ihre Geschäftsziele abgestimmt ist – statt Einheitslösungen."
+          },
+          "technical": {
+            "name": "Technische Exzellenz",
+            "description": "Fachkundige Optimierung der technischen SEO-Elemente, einschließlich der Seitenstruktur, Geschwindigkeit und mobilen Reaktionsfähigkeit."
+          },
+          "content": {
+            "name": "Content-Optimierung",
+            "description": "Strategische Inhaltserstellung und -optimierung, die in Suchmaschinen gut rankt und Ihre Zielgruppe anspricht."
+          },
+          "innovation": {
+            "name": "Kontinuierliche Innovation",
+            "description": "Mit unserem proaktiven Ansatz bleiben Sie stets auf dem neuesten Stand der SEO-Trends und Algorithmus-Updates."
+          }
+        }
+      },
+      "process": {
+        "title": "Wie SEO funktioniert",
+        "steps": {
+          "goals": {
+            "title": "Ihre Ziele verstehen",
+            "description": "Wir beginnen mit einer Analyse Ihrer Geschäftsziele, Zielgruppe und Marktkompetition, um die SEO-Strategien mit Ihrer Vision in Einklang zu bringen."
+          },
+          "research": {
+            "title": "Keyword-Recherche & Analyse",
+            "description": "Unser Team führt umfassende Recherchen durch, um leistungsstarke Keywords zu identifizieren, die bei Ihrer Zielgruppe Anklang finden und optimale Sichtbarkeit in Suchmaschinen gewährleisten."
+          },
+          "content": {
+            "title": "Entwicklung der Content-Strategie",
+            "description": "Wir erstellen einen fundierten Content-Plan, der sich auf hochwertige, keyword-reiche Inhalte konzentriert, um Traffic zu generieren, Nutzer zu binden und die Rankings zu verbessern."
+          },
+          "technical": {
+            "title": "Implementierung von technischem SEO",
+            "description": "Von der Optimierung der Seitenstruktur über die Verbesserung der Ladegeschwindigkeit bis hin zur Implementierung von Schema-Markup – wir sorgen dafür, dass Ihre Website suchmaschinenfreundlich ist."
+          },
+          "monitoring": {
+            "title": "Leistungsüberwachung & Optimierung",
+            "description": "Nach dem Launch überwachen wir kontinuierlich die Performance mit Analysetools und verfeinern die Strategien, um Suchmaschinen-Rankings und ROI zu maximieren."
+          }
+        }
+      },
+      "portfolio": {
+        "title": "Unsere aktuellen",
+        "titleHighlight": "Arbeiten",
+        "categories": {
+          "uiUx": "UI/UX-Design",
+          "appDesign": "App-Design"
+        }
+      },
+      "faq": {
+        "items": {
+          "whatIsSeo": {
+            "question": "Was ist SEO und wie funktioniert es?",
+            "answer": "SEO (Suchmaschinenoptimierung) ist die Praxis, Ihre Website so zu optimieren, dass ihre Sichtbarkeit in Suchergebnissen erhöht wird. Dies geschieht durch verschiedene Techniken wie Keyword-Optimierung, Erstellung hochwertiger Inhalte, technische Verbesserungen und den Aufbau autoritativer Backlinks."
+          },
+          "timeline": {
+            "question": "Wie lange dauert es, bis SEO-Ergebnisse sichtbar werden?",
+            "answer": "SEO ist eine langfristige Strategie, bei der in der Regel 3-6 Monate vergehen, bis erste Ergebnisse sichtbar werden. Signifikante Verbesserungen in Rankings und Traffic zeigen sich meist nach 6-12 Monaten kontinuierlicher Optimierungsmaßnahmen."
+          },
+          "services": {
+            "question": "Was beinhalten Ihre SEO-Dienstleistungen?",
+            "answer": "Unsere SEO-Dienstleistungen umfassen Keyword-Recherche, On-Page-Optimierung, technische SEO-Audits, Content-Strategie, Linkaufbau, lokale SEO-Optimierung und monatliche Leistungsberichte mit detaillierten Analysen."
+          },
+          "guarantee": {
+            "question": "Garantieren Sie Platzierungen auf der ersten Seite?",
+            "answer": "Obwohl wir bewährte SEO-Strategien einsetzen und eine starke Erfolgsbilanz vorweisen können, können wir keine spezifischen Platzierungen garantieren, da Suchmaschinen ihre Algorithmen häufig aktualisieren und Rankings von vielen Faktoren, einschließlich des Wettbewerbs, abhängen."
+          },
+          "measureSuccess": {
+            "question": "Wie messen Sie den Erfolg von SEO?",
+            "answer": "Wir verfolgen mehrere Metriken, darunter Keyword-Rankings, organisches Traffic-Wachstum, Konversionsraten, Absprungraten, Seitenladezeiten und ROI. Monatliche Berichte liefern detaillierte Einblicke in Ihre SEO-Leistung."
+          },
+          "cost": {
+            "question": "Wie viel kostet SEO?",
+            "answer": "Die Kosten für SEO variieren je nach dem aktuellen Zustand Ihrer Website, dem Wettbewerbsniveau und Ihren Zielen. Wir bieten maßgeschneiderte Pakete – von grundlegender Optimierung bis hin zu umfassenden SEO-Kampagnen. Kontaktieren Sie uns für ein detailliertes Angebot."
+          }
+        }
+      }
+    }
+  }
+  

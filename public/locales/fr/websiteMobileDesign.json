@@ -83,6 +83,7 @@
       }
     },
     "process": {
+      "title": "Développement de design",
       "steps": {
         "research": {
           "title": "Recherche et découverte",

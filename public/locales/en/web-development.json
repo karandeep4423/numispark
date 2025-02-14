@@ -50,6 +50,7 @@
         }
       },
       "process": {
+        "title": "Web Development Process",
         "steps": {
           "analysis": {
             "title": "Requirement Analysis",

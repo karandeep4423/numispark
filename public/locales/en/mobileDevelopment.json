@@ -54,6 +54,7 @@
       }
     },
     "process": {
+      "title": "Mobile Development Process",
       "steps": {
         "analysis": {
           "title": "Requirement Analysis",

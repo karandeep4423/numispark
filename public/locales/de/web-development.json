@@ -50,6 +50,7 @@
       }
     },
     "process": {
+      "title": "Webentwicklungsprozess",
       "steps": {
         "analysis": {
           "title": "Bedarfsanalyse",
