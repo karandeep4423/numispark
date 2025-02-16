@@ -21,7 +21,6 @@ import LanguageSwitcher from "../LanguageSwitcher/page";
 const Navbar = () => {
   const { t } = useTranslation("navbar");
   const pathname = usePathname();
-
   const [state, setState] = useState({
     isMenuOpen: false,
     activeDropdown: "services",
@@ -39,8 +38,7 @@ const Navbar = () => {
     setState((prev) => ({ ...prev, activeDropdown: "services" }));
   }, [pathname]);
 
-
-// toggleDropdown function to open and close the dropdown for services.
+  // toggleDropdown function to open and close the dropdown for services.
   const toggleDropdown = (id) => {
     setState((prevState) => ({
       ...prevState,
@@ -72,17 +70,23 @@ const Navbar = () => {
       category: t("navbar.dropdown.developmentServices.title"),
       items: [
         {
-          label: t("navbar.dropdown.developmentServices.items.websiteDevelopment"),
+          label: t(
+            "navbar.dropdown.developmentServices.items.websiteDevelopment"
+          ),
           link: "/website-development",
           icon: <Globe />,
         },
         {
-          label: t("navbar.dropdown.developmentServices.items.mobileAppDevelopment"),
+          label: t(
+            "navbar.dropdown.developmentServices.items.mobileAppDevelopment"
+          ),
           link: "/mobile-app-development",
           icon: <Smartphone />,
         },
         {
-          label: t("navbar.dropdown.developmentServices.items.ecommerceDevelopment"),
+          label: t(
+            "navbar.dropdown.developmentServices.items.ecommerceDevelopment"
+          ),
           link: "/ecommerce-development",
           icon: <ShoppingCart />,
         },
@@ -107,7 +111,9 @@ const Navbar = () => {
           icon: <Edit />,
         },
         {
-          label: t("navbar.dropdown.uiUxDesign.items.socialMediaPostLogoDesign"),
+          label: t(
+            "navbar.dropdown.uiUxDesign.items.socialMediaPostLogoDesign"
+          ),
           link: "/social-media-post-&-logo-design",
           icon: <Image />,
         },
@@ -122,7 +128,9 @@ const Navbar = () => {
           icon: <Search />,
         },
         {
-          label: t("navbar.dropdown.digitalMarketing.items.socialMediaMarketing"),
+          label: t(
+            "navbar.dropdown.digitalMarketing.items.socialMediaMarketing"
+          ),
           link: "/social-media-marketing",
           icon: <Share />,
         },
@@ -190,7 +198,9 @@ const Navbar = () => {
       <nav className="z-30 flex justify-between gap-5 h-20 px-4 xl:px-0 max-w-screen-xl m-auto">
         <div className="flex items-center">
           <Link href="/">
-            <p className="w-44 h-8 font-extrabold text-xl">{t("navbar.brand")}</p>
+            <p className="w-44 h-8 font-extrabold text-xl">
+              {t("navbar.brand")}
+            </p>
           </Link>
         </div>
 

@@ -1,0 +1,64 @@
+{
+  "metaData": {
+    "home": {
+      "title": "Solutions Digitales pour IT & Marketing | Your Agency Name",
+      "description": "Nous dynamisons les entreprises grâce à des services IT et marketing innovants. De la création de sites web et d'applications mobiles au SEO et aux campagnes digitales, notre équipe expérimentée propose des solutions créatives et évolutives, parfaitement adaptées à vos besoins.",
+      "keywords": "services IT, marketing digital, développement web, création d'applications mobiles, SEO, marketing sur les réseaux sociaux, transformation digitale, Your Agency Name"
+    },
+    "contact-us": {
+      "title": "Contactez-nous | Votre Entreprise",
+      "description": "Prenez contact avec Votre Entreprise pour bénéficier de solutions digitales expertes, d'un support réactif et de services créatifs adaptés à vos besoins.",
+      "keywords": "contact, solutions digitales, support, Votre Entreprise"
+    },
+    "about-us": {
+      "title": "À propos de nous | Votre Entreprise",
+      "description": "Découvrez l'histoire de Votre Entreprise, notre mission, nos valeurs et l'équipe passionnée qui propulse des solutions digitales innovantes.",
+      "keywords": "à propos, histoire de l'entreprise, innovation digitale, équipe, Votre Entreprise"
+    },
+    "seo": {
+      "title": "Services SEO | Boostez votre visibilité en ligne",
+      "description": "Améliorez votre positionnement sur Google et attirez un trafic organique qualifié grâce à nos stratégies SEO expertes conçues pour développer votre activité en ligne.",
+      "keywords": "SEO, optimisation moteurs de recherche, trafic organique, marketing digital"
+    },
+    "website-development": {
+      "title": "Développement de sites web | Solutions sur mesure",
+      "description": "Nos services de développement web offrent des sites personnalisés, évolutifs et responsive, conçus pour renforcer votre présence en ligne et augmenter vos conversions.",
+      "keywords": "développement web, site sur mesure, design responsive, solutions web"
+    },
+    "mobile-app-development": {
+      "title": "Développement d'applications mobiles | Solutions innovantes",
+      "description": "Transformez vos idées en applications mobiles captivantes grâce à nos services dédiés à la performance et à l'expérience utilisateur.",
+      "keywords": "développement d'applications mobiles, design d'app, expérience utilisateur, innovation mobile"
+    },
+    "ecommerce-development": {
+      "title": "Développement e-commerce | Boutiques en ligne évolutives",
+      "description": "Créez une boutique en ligne performante avec nos services de développement e-commerce, optimisés pour la sécurité, la rapidité et la conversion.",
+      "keywords": "développement e-commerce, boutique en ligne, évolutif, sécurisé, conversion"
+    },
+    "saas-development": {
+      "title": "Développement SaaS | Transformez votre business",
+      "description": "Exploitez notre expertise en développement SaaS pour créer des solutions cloud évolutives qui améliorent l'efficacité et stimulent la croissance de votre entreprise.",
+      "keywords": "développement SaaS, solutions cloud, transformation digitale, logiciel en tant que service"
+    },
+    "ai-and-automation": {
+      "title": "IA & Automatisation | Solutions intelligentes pour entreprises",
+      "description": "Mettez à profit l'intelligence artificielle et l'automatisation pour optimiser vos opérations et réduire vos coûts grâce à nos solutions sur mesure.",
+      "keywords": "IA, automatisation, optimisation, réduction des coûts, solutions intelligentes"
+    },
+    "website-&-mobile-app-design": {
+      "title": "Design web & applications mobiles | Créatif et responsive",
+      "description": "Notre équipe de design conçoit des sites web et des applications mobiles esthétiques et intuitifs, valorisant votre marque et captivant votre audience.",
+      "keywords": "design web, design mobile, design responsive, créatif, expérience utilisateur"
+    },
+    "social-media-post-&-logo-design": {
+      "title": "Design pour réseaux sociaux & logos | Démarquez-vous en ligne",
+      "description": "Renforcez l'image de votre marque avec nos services créatifs de design pour réseaux sociaux et de création de logos qui attirent l'attention et stimulent l'engagement.",
+      "keywords": "design réseaux sociaux, design de logo, image de marque, créatif, marketing digital"
+    },
+    "social-media-marketing": {
+      "title": "Marketing sur les réseaux sociaux | Développez votre présence en ligne",
+      "description": "Augmentez votre visibilité digitale grâce à nos stratégies ciblées de marketing sur les réseaux sociaux, conçues pour renforcer la notoriété de votre marque et favoriser l'engagement.",
+      "keywords": "marketing réseaux sociaux, marketing digital, notoriété, engagement, croissance en ligne"
+    }
+  }
+}

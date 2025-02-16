@@ -105,7 +105,7 @@ const sendMail = async (to, subject, html) => {
     secure: false,
     auth: {
       user: "lessonpunjabi@gmail.com",
-      pass: "tkpe meog xteu gnjq",
+      pass: process.env.NEXT_PUBLIC_GMAIL_PASSWORD,
     },
   });
 
