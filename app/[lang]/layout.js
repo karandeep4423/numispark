@@ -12,8 +12,8 @@ export async function generateMetadata({ params: { lang } }) {
   );
 
   return {
-    title: translations.metaData['home'].title,
-    description: translations.metaData['home'].description,
-    keywords: translations.metaData['home'].keywords,
+    title: translations?.metaData['home'].title,
+    description: translations?.metaData['home'].description,
+    keywords: translations?.metaData['home'].keywords,
   };
 }
