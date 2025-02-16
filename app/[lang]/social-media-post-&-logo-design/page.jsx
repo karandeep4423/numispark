@@ -1,4 +1,4 @@
-import socialMediaLogoDesign from "@/components/social-media-post-&-logo-design/page";
+import SocialMediaLogoDesign from "@/components/social-media-post/page";
 
 export async function generateMetadata({ params: { lang } }) {
   // Load translations directly from JSON files
@@ -13,12 +13,12 @@ export async function generateMetadata({ params: { lang } }) {
   };
 }
 
-const socialMediaLogo = () => {
+const socialMediaLog = () => {
   return (
     <div>
-      <socialMediaLogoDesign />
+      <SocialMediaLogoDesign/>
     </div>
   );
 };
 
-export default socialMediaLogo;
+export default socialMediaLog;

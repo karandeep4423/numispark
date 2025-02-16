@@ -157,7 +157,7 @@ const portfolioItems = [
   }
 ];
 
-export default function socialMediaLogoDesign() {
+export default function SocialMediaLogoDesign() {
   const { t } = useTranslation("socialMediaLogoDesign");
 
   return (
