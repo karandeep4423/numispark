@@ -6,12 +6,6 @@ export default async function LangLayout({ children, params }) {
 }
 
 export async function generateMetadata({ params: { lang } }) {
-  if (!lang) {
-    return {
-      title: "Default Title",
-      description: "Default Description",
-    };
-  }
 
   try {
     const translations = await import(`@/public/locales/${lang}/metaData.json`);
