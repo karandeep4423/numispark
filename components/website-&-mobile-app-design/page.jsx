@@ -24,6 +24,8 @@ import FAQs from "@/components/Faqs/page";
 import Technologies from "@/components/Technologies/page";
 import HowAgencyWorks from "@/components/Process/page";
 import { useTranslation } from "next-i18next";
+import PortfolioModal from "@/components/PortfolioModal/page";
+import React, { useState } from "react";
 
 const TECHNOLOGIES = [
   {
@@ -73,16 +75,52 @@ const steps = [
 
 const portfolioItems = [
   {
-    translationKey: "uiUx",
+    image: "/portfolio/appdesign1.jpg",
+    src: ["/portfolio/appdesign1.jpg"],
+    translationName: "websiteMobileDesign.portfolio.categories.fuzzed.name",
+    translationContent:
+      "websiteMobileDesign.portfolio.categories.fuzzed.content",
+    translationdesign: "websiteMobileDesign.portfolio.categories.fuzzed.design",
+    translationfontendDevelopment:
+      "websiteMobileDesign.portfolio.categories.fuzzed.frontendDevelopment",
+    translationbackendDevelopment:
+      "websiteMobileDesign.portfolio.categories.fuzzed.backendDevelopment",
+    translationDatabase:
+      "websiteMobileDesign.portfolio.categories.fuzzed.database",
     bgColor: "bg-violet-100",
     dotColor: "bg-violet-500",
   },
   {
+    image: "/portfolio/home-app.webp",
+    src: ["/portfolio/home-app.webp"],
+    translationName: "websiteMobileDesign.portfolio.categories.aviators.name",
+    translationContent:
+      "websiteMobileDesign.portfolio.categories.aviators.content",
+    translationdesign:
+      "websiteMobileDesign.portfolio.categories.aviators.design",
+    translationfontendDevelopment:
+      "websiteMobileDesign.portfolio.categories.aviators.frontendDevelopment",
+    translationbackendDevelopment:
+      "websiteMobileDesign.portfolio.categories.aviators.backendDevelopment",
+    translationDatabase:
+      "websiteMobileDesign.portfolio.categories.aviators.database",
     translationKey: "appDesign",
     bgColor: "bg-emerald-600",
     dotColor: "bg-emerald-500",
   },
   {
+    image: "/portfolio/app3.0.webp",
+    src: ["/portfolio/app3.0.webp", "/portfolio/app3.1.webp"],
+    translationName: "websiteMobileDesign.portfolio.categories.wiefly.name",
+    translationContent:
+      "websiteMobileDesign.portfolio.categories.wiefly.content",
+    translationdesign: "websiteMobileDesign.portfolio.categories.wiefly.design",
+    translationfrontendDevelopment:
+      "websiteMobileDesign.portfolio.categories.wiefly.frontendDevelopment",
+    translationbackendDevelopment:
+      "websiteMobileDesign.portfolio.categories.wiefly.backendDevelopment",
+    translationDatabase:
+      "websiteMobileDesign.portfolio.categories.wiefly.database",
     translationKey: "appDesign",
     bgColor: "bg-amber-400",
     dotColor: "bg-amber-500",
@@ -91,14 +129,19 @@ const portfolioItems = [
 
 export default function WebsiteMobileDesign() {
   const { t } = useTranslation("websiteMobileDesign");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedModal, setSelectedModal] = useState("");
+
+  const openModal = (item) => {
+    setSelectedModal(item);
+    setIsModalOpen(true);
+  };
 
   return (
     <div>
       {/* Hero Section */}
-      <div
-        className="flex relative bg-blue-200 flex-col h-screen gap-5 justify-center items-center"
-      >
-         <video
+      <div className="flex relative bg-blue-200 flex-col h-screen gap-5 justify-center items-center">
+        <video
           autoPlay
           loop
           muted
@@ -244,24 +287,23 @@ export default function WebsiteMobileDesign() {
           {portfolioItems.map((item, index) => (
             <div
               key={index}
-              className={`shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] relative rounded-3xl p-6 ${item.bgColor}`}
+              className={`shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] relative rounded-3xl p-2 ${item.bgColor}`}
             >
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+              <div className="relative aspect-[4/3] rounded-2xl -mr-1 overflow-hidden mb-3">
                 <img
-                  src="/api/placeholder/400/400"
-                  alt={t(
-                    `websiteMobileDesign.portfolio.categories.${item.translationKey}`
-                  )}
-                  className="w-full h-full object-cover"
+                  src={item.image}
+                  alt={t(item.translationName)}
+                  className="w-full h-full object-fill"
                 />
               </div>
               <div className="flex justify-between items-center">
                 <h3 className="text-lg font-medium">
-                  {t(
-                    `websiteMobileDesign.portfolio.categories.${item.translationKey}`
-                  )}
+                  {t(item.translationName)}
                 </h3>
-                <button className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors">
+                <button
+                  onClick={() => openModal(item)}
+                  className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors"
+                >
                   <ArrowUpRight className="w-6 h-6 text-white" />
                 </button>
               </div>
@@ -269,6 +311,12 @@ export default function WebsiteMobileDesign() {
           ))}
         </div>
       </div>
+      <PortfolioModal
+        item={selectedModal}
+        isOpen={isModalOpen}
+        setIsOpen={setIsModalOpen}
+        t={t}
+      />
 
       {/* FAQs Section */}
       <FAQs

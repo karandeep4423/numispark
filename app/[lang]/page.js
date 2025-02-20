@@ -24,7 +24,8 @@ import Technologies from "@/components/Technologies/page";
 import HowAgencyWorks from "@/components/Process/page";
 import Hero from "@/components/HomeHero/page";
 import { useTranslation } from "react-i18next";
-
+import PortfolioModal from "@/components/PortfolioModal/page";
+import React, { useState } from "react";
 const TECHNOLOGIES = [
   {
     name: "React Js",
@@ -231,13 +232,26 @@ const WhyUs = [
 
 const portfolioItems = [
   {
-    image: "/api/placeholder/400/400",
-    translationKey: "uiUx",
+    image: "/portfolio/website1.png",
+    src: "https://www.privatehonors.com/",
+    translationName: "home.portfolio.categories.private.name",
+    translationContent: "home.portfolio.categories.private.content",
+    translationdesign: "home.portfolio.categories.private.design",
+    translationfontendDevelopment: "home.portfolio.categories.private.frontendDevelopment",
+    translationbackendDevelopment: "home.portfolio.categories.private.backendDevelopment",
+    translationDatabase: "home.portfolio.categories.private.database",
     bgColor: "bg-violet-100",
     dotColor: "bg-violet-500",
   },
   {
-    image: "/api/placeholder/400/400",
+    image: "/portfolio/home-app.webp",
+    src: ["/portfolio/home-app.webp"],
+    translationName: "home.portfolio.categories.soluluc.name",
+    translationContent: "home.portfolio.categories.soluluc.content",
+    translationdesign: "home.portfolio.categories.soluluc.design",
+    translationfontendDevelopment: "home.portfolio.categories.soluluc.frontendDevelopment",
+    translationbackendDevelopment: "home.portfolio.categories.soluluc.backendDevelopment",
+    translationDatabase: "home.portfolio.categories.soluluc.database",
     translationKey: "appDesign",
     bgColor: "bg-emerald-600",
     dotColor: "bg-emerald-500",
@@ -252,6 +266,13 @@ const portfolioItems = [
 
 export default function Home() {
   const { t } = useTranslation();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedModal, setSelectedModal] = useState("");
+
+  const openModal = (item) => {
+    setSelectedModal(item);
+    setIsModalOpen(true);
+  };
 
   return (
     <div>
@@ -358,20 +379,23 @@ export default function Home() {
           {portfolioItems.map((item, index) => (
             <div
               key={index}
-              className={`shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] relative rounded-3xl p-6 ${item.bgColor}`}
+              className={`shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] relative rounded-3xl p-2 ${item.bgColor}`}
             >
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+              <div className="relative aspect-[4/3] rounded-2xl -mr-1 overflow-hidden mb-3">
                 <img
                   src={item.image}
-                  alt={t(`home.portfolio.categories.${item.translationKey}`)}
-                  className="w-full h-full object-cover"
+                  alt={t(item?.translationName)}
+                  className="w-full h-full object-fill"
                 />
               </div>
               <div className="flex justify-between items-center">
                 <h3 className="text-lg font-medium">
-                  {t(`home.portfolio.categories.${item.translationKey}`)}
+                {t(item?.translationName)}
                 </h3>
-                <button className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors">
+                <button
+                  onClick={() => openModal(item)}
+                  className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors"
+                >
                   <ArrowUpRight className="w-6 h-6 text-white" />
                 </button>
               </div>
@@ -379,7 +403,12 @@ export default function Home() {
           ))}
         </div>
       </div>
-
+      <PortfolioModal
+        item={selectedModal}
+        isOpen={isModalOpen}
+        setIsOpen={setIsModalOpen}
+        t={t}
+      />
       {/* FAQs Section */}
       <FAQs
         faqData={Object.keys(t("home.faq.items", { returnObjects: true })).map(

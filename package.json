@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.10",
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.2.0",
     "i18next": "^24.2.2",
     "i18next-http-backend": "^3.0.2",
     "lucide-react": "^0.469.0",

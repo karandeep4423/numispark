@@ -101,6 +101,22 @@
       "title": "Our Recent",
       "titleHighlight": "Work",
       "categories": {
+        "private": {
+          "name": "Website Development",
+          "content": "Explore our website development projects, ranging from simple landing pages to complex web applications.",
+          "frontendDevelopment": "Frontend Development with Next.js",
+          "backendDevelopment": "Backend Development with Node.js and Express",
+          "design": "UI/UX Design with Figma and Tailwind CSS",
+          "database": "Database Management with MongoDB"
+        },
+        "soluluc": {
+          "name": "Website Development",
+          "content": "Explore our website development projects, ranging from simple landing pages to complex web applications.",
+          "frontendDevelopment": "Frontend Development with Next.js",
+          "backendDevelopment": "Backend Development with Node.js and Express",
+          "design": "UI/UX Design with Figma and Tailwind CSS",
+          "database": "Database Management with MongoDB"
+        },
         "uiUx": "UI/UX Design",
         "appDesign": "App Design"
       }

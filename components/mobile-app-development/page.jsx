@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import {
   TrendingUp,
   CloudUpload,
@@ -22,6 +22,7 @@ import FAQs from "@/components/Faqs/page";
 import Technologies from "@/components/Technologies/page";
 import HowAgencyWorks from "@/components/Process/page";
 import { useTranslation } from "next-i18next";
+import PortfolioModal from "@/components/PortfolioModal/page";
 
 const TECHNOLOGIES = [
   {
@@ -67,14 +68,66 @@ const Benefits = [
 ];
 
 const portfolioItems = [
-  { translationKey: "uiUx", bgColor: "bg-violet-100" },
-  { translationKey: "appDesign", bgColor: "bg-emerald-600" },
-  { translationKey: "appDesign", bgColor: "bg-amber-400" },
+  {
+    image: "/portfolio/app2.0.webp",
+    src: ["/portfolio/app2.0.webp", "/portfolio/app2.1.webp"],
+    translationName: "mobileDevelopment.portfolio.categories.taskers.name",
+    translationContent:
+      "mobileDevelopment.portfolio.categories.taskers.content",
+    translationdesign: "mobileDevelopment.portfolio.categories.taskers.design",
+    translationfontendDevelopment:
+      "mobileDevelopment.portfolio.categories.taskers.frontendDevelopment",
+    translationbackendDevelopment:
+      "mobileDevelopment.portfolio.categories.taskers.backendDevelopment",
+    translationDatabase:
+      "mobileDevelopment.portfolio.categories.taskers.database",
+    bgColor: "bg-violet-100",
+    dotColor: "bg-violet-500",
+  },
+  {
+    image: "/portfolio/home-app.webp",
+    src: ["/portfolio/home-app.webp"],
+    translationName: "mobileDevelopment.portfolio.categories.aviators.name",
+    translationContent:
+      "mobileDevelopment.portfolio.categories.aviators.content",
+    translationdesign: "mobileDevelopment.portfolio.categories.aviators.design",
+    translationfontendDevelopment:
+      "mobileDevelopment.portfolio.categories.aviators.frontendDevelopment",
+    translationbackendDevelopment:
+      "mobileDevelopment.portfolio.categories.aviators.backendDevelopment",
+    translationDatabase:
+      "mobileDevelopment.portfolio.categories.aviators.database",
+    translationKey: "appDesign",
+    bgColor: "bg-emerald-600",
+    dotColor: "bg-emerald-500",
+  },
+  {
+    image: "/portfolio/app3.0.webp",
+    src: ["/portfolio/app3.0.webp", "/portfolio/app3.1.webp"],
+    translationName: "mobileDevelopment.portfolio.categories.wiefly.name",
+    translationContent: "mobileDevelopment.portfolio.categories.wiefly.content",
+    translationdesign: "mobileDevelopment.portfolio.categories.wiefly.design",
+    translationfrontendDevelopment:
+      "mobileDevelopment.portfolio.categories.wiefly.frontendDevelopment",
+    translationbackendDevelopment:
+      "mobileDevelopment.portfolio.categories.wiefly.backendDevelopment",
+    translationDatabase:
+      "mobileDevelopment.portfolio.categories.wiefly.database",
+    translationKey: "appDesign",
+    bgColor: "bg-amber-400",
+    dotColor: "bg-amber-500",
+  },
 ];
 
 const MobileDevelopment = () => {
   const { t } = useTranslation("mobileDevelopment");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedModal, setSelectedModal] = useState("");
 
+  const openModal = (item) => {
+    setSelectedModal(item);
+    setIsModalOpen(true);
+  };
   return (
     <div>
       {/* Hero Section */}
@@ -192,24 +245,21 @@ const MobileDevelopment = () => {
           {portfolioItems.map((item, index) => (
             <div
               key={index}
-              className={`shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] relative rounded-3xl p-6 ${item.bgColor}`}
+              className={`shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] relative rounded-3xl p-2 ${item.bgColor}`}
             >
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+              <div className="relative aspect-[4/3] rounded-2xl -mr-1 overflow-hidden mb-3">
                 <img
-                  src="/api/placeholder/400/400"
-                  alt={t(
-                    `mobileDevelopment.portfolio.categories.${item.translationKey}`
-                  )}
-                  className="w-full h-full object-cover"
+                  src={item.image}
+                  alt={t(item.translationName)}
+                  className="w-full h-full object-fill"
                 />
               </div>
               <div className="flex justify-between items-center">
-                <h3 className="text-lg font-medium">
-                  {t(
-                    `mobileDevelopment.portfolio.categories.${item.translationKey}`
-                  )}
-                </h3>
-                <button className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors">
+                <h3 className="text-lg font-medium">{t(item.translationName)}</h3>
+                <button
+                  onClick={() => openModal(item)}
+                  className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors"
+                >
                   <ArrowUpRight className="w-6 h-6 text-white" />
                 </button>
               </div>
@@ -217,6 +267,12 @@ const MobileDevelopment = () => {
           ))}
         </div>
       </div>
+      <PortfolioModal
+        item={selectedModal}
+        isOpen={isModalOpen}
+        setIsOpen={setIsModalOpen}
+        t={t}
+      />
 
       {/* FAQs Section */}
       <FAQs

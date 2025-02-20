@@ -108,7 +108,7 @@ export default function LanguageSwitcher() {
           />
         </svg>
       </button>
-      
+
       {isOpen && (
         <div className="origin-top-right z-auto absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
           <div

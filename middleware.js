@@ -7,7 +7,7 @@ export function middleware(request) {
   const { pathname } = request.nextUrl;
   
   // Early exit: if the request is for a static asset, skip localization.
-  if (/\.(gif|png|jpg|jpeg|svg|mp4)$/.test(pathname)) {
+  if (/\.(gif|png|jpg|jpeg|svg|mp4|webp)$/.test(pathname)) {
     return NextResponse.next();
   }
 
