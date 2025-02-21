@@ -257,7 +257,7 @@ const portfolioItems = [
     dotColor: "bg-emerald-500",
   },
   {
-    image: "/api/placeholder/400/400",
+    image: "/portfolio/seo1.png",
     translationKey: "appDesign",
     bgColor: "bg-amber-400",
     dotColor: "bg-amber-500",
