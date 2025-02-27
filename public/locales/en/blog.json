@@ -1,0 +1,13 @@
+{
+  "title": "Blog",
+  "readMore": "Read More",
+  "recentPosts": "Recent Posts",
+  "categories": "Categories",
+  "postedOn": "Posted on",
+  "by": "by",
+  "backToList": "Back to Blog List",
+  "relatedPosts": "Related Posts",
+  "readingTime": "{{time}} min read",
+  "noPostsFound": "No posts found",
+  "searchPlaceholder": "Search blog posts..."
+}

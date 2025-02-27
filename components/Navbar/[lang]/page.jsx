@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "../LanguageSwitcher/page";
+import LanguageSwitcher from "../../LanguageSwitcher/page";
 
 const Navbar = () => {
   const { t } = useTranslation("navbar");
@@ -231,6 +231,7 @@ const Navbar = () => {
           <Link onClick={toggleMenu} href="/contact-us">
             {t("navbar.links.contactUs")}
           </Link>
+          <Link href="/blog">Blog</Link>
           <Link
             className="hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] font-medium px-4 py-3 rounded-full bg-blue-600 text-white transition-all duration-300"
             onClick={toggleMenu}
