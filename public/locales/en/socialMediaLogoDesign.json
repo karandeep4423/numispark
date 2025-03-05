@@ -112,8 +112,9 @@
       "sectionTitle": "Our Recent",
       "sectionHighlight": "Work",
       "categories": {
-        "uiUx": "UI/ UX Design",
-        "appDesign": "App Design"
+        "logo": "Logo Design",
+        "other": "Other Design",
+        "social": "Social Media Post Design"
       }
     },
     "faq": {

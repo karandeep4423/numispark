@@ -1,126 +1,141 @@
 {
-    "home": {
-      "hero": {
-        "title": "Befähigen Sie Ihr Unternehmen mit",
-        "titleHighlight": "Weltklasse-Digitallösungen",
-        "subtitle": "Webentwicklung | Mobile Apps | UI/UX-Design | Digitales Marketing"
-      },
-      "services": {
-        "title": "Unser Kern",
-        "titleHighlight": "Dienstleistungen",
-        "subtitle": "Umfassende Lösungen, die auf Ihre Bedürfnisse zugeschnitten sind",
-        "items": {
-          "webDevelopment": {
-            "name": "Webentwicklung",
-            "description": "Erstellen Sie skalierbare, plattformunabhängige Weblösungen für verbesserte Zugänglichkeit und Reichweite."
-          },
-          "mobileAppDevelopment": {
-            "name": "Entwicklung mobiler Anwendungen",
-            "description": "Erstellen Sie robuste mobile Anwendungen, die für Android- und iOS-Plattformen konzipiert sind."
-          },
-          "digitalMarketing": {
-            "name": "Digitales Marketing",
-            "description": "Steigern Sie Ihre Online-Präsenz und fördern Sie das Engagement mit datengestützten Marketingstrategien."
-          },
-          "uiUxDesign": {
-            "name": "UI/UX-Design",
-            "description": "Gestalten Sie intuitive und ansprechende Schnittstellen für ein nahtloses Nutzererlebnis."
-          },
-          "saasDevelopment": {
-            "name": "SaaS-Entwicklung",
-            "description": "Entwickeln Sie sichere, skalierbare und anpassbare SaaS-Lösungen, die den Anforderungen Ihres Unternehmens gerecht werden."
-          },
-          "aiAutomation": {
-            "name": "KI und Automatisierung",
-            "description": "Nutzen Sie KI und Automatisierung, um Arbeitsabläufe zu optimieren und die Effizienz zu steigern."
-          },
-          "ecommerceDevelopment": {
-            "name": "E-Commerce-Entwicklung",
-            "description": "Erstellen Sie dynamische E-Commerce-Plattformen, um Ihre Online-Handelspräsenz zu stärken."
-          }
+  "home": {
+    "hero": {
+      "title": "Befähigen Sie Ihr Unternehmen mit",
+      "titleHighlight": "Weltklasse-Digitallösungen",
+      "subtitle": "Webentwicklung | Mobile Apps | UI/UX-Design | Digitales Marketing"
+    },
+    "services": {
+      "title": "Unser Kern",
+      "titleHighlight": "Dienstleistungen",
+      "subtitle": "Umfassende Lösungen, die auf Ihre Bedürfnisse zugeschnitten sind",
+      "items": {
+        "webDevelopment": {
+          "name": "Webentwicklung",
+          "description": "Erstellen Sie skalierbare, plattformunabhängige Weblösungen für verbesserte Zugänglichkeit und Reichweite."
+        },
+        "mobileAppDevelopment": {
+          "name": "Entwicklung mobiler Anwendungen",
+          "description": "Erstellen Sie robuste mobile Anwendungen, die für Android- und iOS-Plattformen konzipiert sind."
+        },
+        "digitalMarketing": {
+          "name": "Digitales Marketing",
+          "description": "Steigern Sie Ihre Online-Präsenz und fördern Sie das Engagement mit datengestützten Marketingstrategien."
+        },
+        "uiUxDesign": {
+          "name": "UI/UX-Design",
+          "description": "Gestalten Sie intuitive und ansprechende Schnittstellen für ein nahtloses Nutzererlebnis."
+        },
+        "saasDevelopment": {
+          "name": "SaaS-Entwicklung",
+          "description": "Entwickeln Sie sichere, skalierbare und anpassbare SaaS-Lösungen, die den Anforderungen Ihres Unternehmens gerecht werden."
+        },
+        "aiAutomation": {
+          "name": "KI und Automatisierung",
+          "description": "Nutzen Sie KI und Automatisierung, um Arbeitsabläufe zu optimieren und die Effizienz zu steigern."
+        },
+        "ecommerceDevelopment": {
+          "name": "E-Commerce-Entwicklung",
+          "description": "Erstellen Sie dynamische E-Commerce-Plattformen, um Ihre Online-Handelspräsenz zu stärken."
         }
-      },
-      "process": {
-        "title": "Wie die Agentur funktioniert",
-        "steps": {
-          "vision": {
-            "title": "Ihre Vision verstehen",
-            "description": "Wir arbeiten eng zusammen, um Ihre Ziele, Herausforderungen und Ambitionen zu verstehen und so einen klaren Weg für Ihr Projekt zu gewährleisten. Unsere Priorität ist es, uns von Anfang an an Ihrer Vision auszurichten."
-          },
-          "planning": {
-            "title": "Strategische Planung",
-            "description": "Auf Basis der in unseren Gesprächen gewonnenen Erkenntnisse entwickeln wir eine detaillierte Strategie, die konkrete Schritte definiert. Unser maßgeschneiderter Ansatz garantiert messbaren Erfolg für Ihr Projekt."
-          },
-          "development": {
-            "title": "Konzeption und Entwicklung",
-            "description": "Unsere kreativen und technischen Teams arbeiten zusammen, um Ihre Ideen zum Leben zu erwecken. Wir liefern visuell beeindruckende Designs in Verbindung mit leistungsstarker Entwicklung."
-          },
-          "launch": {
-            "title": "Launch und Bereitstellung",
-            "description": "Nach gründlichen Tests starten wir Ihr Projekt präzise. Unsere nahtlose Bereitstellung stellt sicher, dass Ihre Lösung einwandfrei funktioniert."
-          },
-          "support": {
-            "title": "Kontinuierliche Unterstützung",
-            "description": "Wir bieten nach dem Launch fortlaufenden Support, damit Ihr Projekt stets an der Spitze bleibt. Unser Team steht Ihnen jederzeit zur Unterstützung und weiteren Innovation zur Verfügung."
-          }
+      }
+    },
+    "process": {
+      "title": "Wie die Agentur funktioniert",
+      "steps": {
+        "vision": {
+          "title": "Ihre Vision verstehen",
+          "description": "Wir arbeiten eng zusammen, um Ihre Ziele, Herausforderungen und Ambitionen zu verstehen und so einen klaren Weg für Ihr Projekt zu gewährleisten. Unsere Priorität ist es, uns von Anfang an an Ihrer Vision auszurichten."
+        },
+        "planning": {
+          "title": "Strategische Planung",
+          "description": "Auf Basis der in unseren Gesprächen gewonnenen Erkenntnisse entwickeln wir eine detaillierte Strategie, die konkrete Schritte definiert. Unser maßgeschneiderter Ansatz garantiert messbaren Erfolg für Ihr Projekt."
+        },
+        "development": {
+          "title": "Konzeption und Entwicklung",
+          "description": "Unsere kreativen und technischen Teams arbeiten zusammen, um Ihre Ideen zum Leben zu erwecken. Wir liefern visuell beeindruckende Designs in Verbindung mit leistungsstarker Entwicklung."
+        },
+        "launch": {
+          "title": "Launch und Bereitstellung",
+          "description": "Nach gründlichen Tests starten wir Ihr Projekt präzise. Unsere nahtlose Bereitstellung stellt sicher, dass Ihre Lösung einwandfrei funktioniert."
+        },
+        "support": {
+          "title": "Kontinuierliche Unterstützung",
+          "description": "Wir bieten nach dem Launch fortlaufenden Support, damit Ihr Projekt stets an der Spitze bleibt. Unser Team steht Ihnen jederzeit zur Unterstützung und weiteren Innovation zur Verfügung."
         }
-      },
-      "whyUs": {
-        "title": "Warum",
-        "titleHighlight": "Partner",
-        "titleEnd": "Mit uns",
-        "subtitle": "Ihr Erfolg hat für uns Priorität",
-        "reasons": {
-          "team": {
-            "title": "Erfahrenes Expertenteam",
-            "description": "Unser erfahrenes Expertenteam liefert plattformunabhängige Geschäftslösungen für maximale Verfügbarkeit."
-          },
-          "technology": {
-            "title": "Modernste Werkzeuge und Technologien",
-            "description": "Wir nutzen die neuesten Technologien, um robuste und skalierbare Lösungen zu entwickeln, die auf Ihre Bedürfnisse zugeschnitten sind."
-          },
-          "approach": {
-            "title": "Kundenorientierter Ansatz",
-            "description": "Wir stellen Ihren Erfolg in den Vordergrund und sorgen dafür, dass jede Lösung mit Ihren individuellen Zielen übereinstimmt."
-          },
-          "track": {
-            "title": "Nachgewiesene Erfolgsbilanz mit messbaren Ergebnissen",
-            "description": "Unsere nachgewiesene Erfolgsbilanz garantiert messbare Ergebnisse und konstanten Erfolg für Ihr Unternehmen."
-          },
-          "communication": {
-            "title": "Transparente Kommunikation",
-            "description": "Wir pflegen eine transparente Kommunikation und halten Sie in jeder Phase auf dem Laufenden."
-          },
-          "delivery": {
-            "title": "Pünktliche Lieferung",
-            "description": "Wir schätzen Ihre Zeit und garantieren die pünktliche Lieferung aller Projekte, unabhängig von deren Umfang."
-          }
+      }
+    },
+    "whyUs": {
+      "title": "Warum",
+      "titleHighlight": "Partner",
+      "titleEnd": "Mit uns",
+      "subtitle": "Ihr Erfolg hat für uns Priorität",
+      "reasons": {
+        "team": {
+          "title": "Erfahrenes Expertenteam",
+          "description": "Unser erfahrenes Expertenteam liefert plattformunabhängige Geschäftslösungen für maximale Verfügbarkeit."
+        },
+        "technology": {
+          "title": "Modernste Werkzeuge und Technologien",
+          "description": "Wir nutzen die neuesten Technologien, um robuste und skalierbare Lösungen zu entwickeln, die auf Ihre Bedürfnisse zugeschnitten sind."
+        },
+        "approach": {
+          "title": "Kundenorientierter Ansatz",
+          "description": "Wir stellen Ihren Erfolg in den Vordergrund und sorgen dafür, dass jede Lösung mit Ihren individuellen Zielen übereinstimmt."
+        },
+        "track": {
+          "title": "Nachgewiesene Erfolgsbilanz mit messbaren Ergebnissen",
+          "description": "Unsere nachgewiesene Erfolgsbilanz garantiert messbare Ergebnisse und konstanten Erfolg für Ihr Unternehmen."
+        },
+        "communication": {
+          "title": "Transparente Kommunikation",
+          "description": "Wir pflegen eine transparente Kommunikation und halten Sie in jeder Phase auf dem Laufenden."
+        },
+        "delivery": {
+          "title": "Pünktliche Lieferung",
+          "description": "Wir schätzen Ihre Zeit und garantieren die pünktliche Lieferung aller Projekte, unabhängig von deren Umfang."
         }
-      },
-      "portfolio": {
-        "title": "Unsere neuesten",
-        "titleHighlight": "Arbeiten",
-        "categories": {
-          "uiUx": "UI/UX-Design",
-          "appDesign": "App-Design"
-        }
-      },
-      "faq": {
-        "items": {
-          "quote": {
-            "question": "Wie kann ich ein Angebot für ein Projekt anfordern?",
-            "answer": "Sie können ein Angebot anfordern, indem Sie unser Online-Formular ausfüllen oder direkt unser Vertriebsteam kontaktieren. Wir werden uns innerhalb von 24 Stunden mit einem detaillierten Vorschlag basierend auf den Anforderungen Ihres Projekts bei Ihnen melden."
-          },
-          "industries": {
-            "question": "Welche Branchen bedienen Sie?",
-            "answer": "Wir bedienen ein breites Spektrum an Branchen, darunter Technologie, Gesundheitswesen, Finanzen, Einzelhandel, Bildung und Fertigung. Unsere Lösungen werden individuell angepasst, um den spezifischen Anforderungen jeder Branche gerecht zu werden."
-          },
-          "timeline": {
-            "question": "Wie lange dauert ein typisches Projekt?",
-            "answer": "Die Projektzeiten variieren je nach Umfang und Komplexität. In der Regel dauern kleine Projekte 2 bis 4 Wochen, mittlere Projekte 1 bis 3 Monate und große Projekte 3 bis 6 Monate. Wir werden einen detaillierten Zeitplan während der ersten Beratung bereitstellen."
-          }
+      }
+    },
+    "portfolio": {
+      "title": "Unsere neuesten",
+      "titleHighlight": "Arbeiten",
+      "categories": {
+        "private": {
+          "name": "Website-Entwicklung",
+          "content": "Private Honors revolutioniert das Reisen. Sparen Sie bei jeder Buchung durch Cashback, verwalten Sie Ihre Reisen mühelos und genießen Sie einen VIP-Kundenservice. Entdecken Sie eine neue Art zu reisen – intelligenter und profitabler.",
+          "frontendDevelopment": "Frontend-Entwicklung mit Next.js",
+          "backendDevelopment": "Backend-Entwicklung mit Node.js und Express",
+          "design": "UI/UX-Design mit Figma und Tailwind CSS",
+          "database": "Datenbankverwaltung mit MongoDB"
+        },
+        "aviator": {
+          "name": "Mobile App-Entwicklung",
+          "content": "Die Entwicklung von Aviator's Oasis konzentrierte sich darauf, ein nahtloses Benutzererlebnis zu schaffen, das Funktionalität mit einer ansprechenden visuellen Gestaltung verbindet. Benutzer können mühelos durch verschiedene Features navigieren, darunter Foren zum Austausch über Flugerlebnisse, Fotogalerien zum Teilen und die Echtzeit-Flugverfolgung.",
+          "frontendDevelopment": "Frontend-Entwicklung mit Flutter",
+          "backendDevelopment": "Backend-Entwicklung mit Node.js und Express",
+          "design": "UI/UX-Design mit Figma",
+          "database": "Datenbankverwaltung mit MongoDB"
+        },
+        "uiUx": "UI/UX-Design",
+        "appDesign": "App-Design"
+      }
+    },
+    "faq": {
+      "items": {
+        "quote": {
+          "question": "Wie kann ich ein Angebot für ein Projekt anfordern?",
+          "answer": "Sie können ein Angebot anfordern, indem Sie unser Online-Formular ausfüllen oder direkt unser Vertriebsteam kontaktieren. Wir werden uns innerhalb von 24 Stunden mit einem detaillierten Vorschlag basierend auf den Anforderungen Ihres Projekts bei Ihnen melden."
+        },
+        "industries": {
+          "question": "Welche Branchen bedienen Sie?",
+          "answer": "Wir bedienen ein breites Spektrum an Branchen, darunter Technologie, Gesundheitswesen, Finanzen, Einzelhandel, Bildung und Fertigung. Unsere Lösungen werden individuell angepasst, um den spezifischen Anforderungen jeder Branche gerecht zu werden."
+        },
+        "timeline": {
+          "question": "Wie lange dauert ein typisches Projekt?",
+          "answer": "Die Projektzeiten variieren je nach Umfang und Komplexität. In der Regel dauern kleine Projekte 2 bis 4 Wochen, mittlere Projekte 1 bis 3 Monate und große Projekte 3 bis 6 Monate. Wir werden einen detaillierten Zeitplan während der ersten Beratung bereitstellen."
         }
       }
     }
   }
-  
+}

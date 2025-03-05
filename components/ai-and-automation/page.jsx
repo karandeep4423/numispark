@@ -135,27 +135,6 @@ const WhyUs = [
   },
 ];
 
-const portfolioItems = [
-  {
-    image: "/globe.svg",
-    translationKey: "portfolio.categories.uiUx",
-    bgColor: "bg-violet-100",
-    dotColor: "bg-violet-500",
-  },
-  {
-    image: "/globe.svg",
-    translationKey: "portfolio.categories.appDesign",
-    bgColor: "bg-emerald-600",
-    dotColor: "bg-emerald-500",
-  },
-  {
-    image: "/globe.svg",
-    translationKey: "portfolio.categories.appDesign",
-    bgColor: "bg-amber-400",
-    dotColor: "bg-amber-500",
-  },
-];
-
 export default function AiDevelopment() {
   const { t } = useTranslation("aiDevelopment");
 
@@ -293,40 +272,6 @@ export default function AiDevelopment() {
 
       {/* Process Section */}
       <HowAgencyWorks steps={steps} namespace="aiDevelopment" />
-
-      {/* Portfolio Section */}
-      <div className="max-w-7xl mx-auto px-4 py-12">
-        <h2 className="text-4xl text-center font-bold text-gray-800">
-          {t("aiDevelopment.portfolio.sectionTitle")}{" "}
-          <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            {t("aiDevelopment.portfolio.sectionHighlight")}
-          </span>
-        </h2>
-        <div className="grid mt-10 grid-cols-1 md:grid-cols-3 gap-6">
-          {portfolioItems.map((item, index) => (
-            <div
-              key={index}
-              className={`shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] relative rounded-3xl p-6 ${item.bgColor}`}
-            >
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
-                <img
-                  src={item.image}
-                  alt={t(`aiDevelopment.${item.translationKey}`)}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="flex justify-between items-center">
-                <h3 className="text-lg font-medium">
-                  {t(`aiDevelopment.${item.translationKey}`)}
-                </h3>
-                <button className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors">
-                  <ArrowUpRight className="w-6 h-6 text-white" />
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
 
       {/* FAQs Section */}
       <FAQs

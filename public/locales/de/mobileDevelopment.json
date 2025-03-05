@@ -81,10 +81,32 @@
     "portfolio": {
       "title": "Unsere neuesten",
       "titleHighlight": "Projekte",
-      "categories": {
-        "uiUx": "UI/UX-Design",
-        "appDesign": "App-Design"
-      }
+        "categories": {
+          "taskers": {
+            "name": "Taskers App-Entwicklung",
+            "content": "TaskerS Aufgabenmanagement-App Steigern Sie Ihre Produktivität mit unserer Aufgabenmanagement-App. Organisieren Sie Ihre Aufgaben, setzen Sie Prioritäten und erledigen Sie mehr in kürzerer Zeit.",
+            "design": "UI/UX-Design mit Figma",
+            "frontendDevelopment": "Frontend-Entwicklung mit Flutter",
+            "backendDevelopment": "Backend-Entwicklung mit Node.js und Express",
+            "database": "Datenbankverwaltung mit MongoDB"
+          },
+          "aviators": {
+            "name": "Aviator App-Entwicklung",
+            "content": "Die Entwicklung von Aviator’s Oasis legte den Fokus darauf, ein nahtloses Nutzererlebnis zu schaffen, das Funktionalität mit einer ansprechenden Benutzeroberfläche verbindet. Nutzer können problemlos durch verschiedene Funktionen navigieren, darunter Foren zum Austausch über Flugerlebnisse, Galerien zum Teilen von Fotos und eine Echtzeit-Flugverfolgung.",
+            "frontendDevelopment": "Frontend-Entwicklung mit Flutter",
+            "backendDevelopment": "Backend-Entwicklung mit Node.js und Express",
+            "design": "UI/UX-Design mit Figma",
+            "database": "Datenbankverwaltung mit MongoDB"
+          },
+          "wiefly": {
+            "name": "Wiefly App-Entwicklung",
+            "content": "Wiefly Reisebuchungs-App Buchen Sie Flüge ganz einfach mit unserer Flugbuchungs-App. Entdecken Sie eine Welt voller Reiseziele, finden Sie die besten Angebote und starten Sie Ihr nächstes Abenteuer ohne Stress.",
+            "design": "UI/UX-Design mit Figma",
+            "frontendDevelopment": "Frontend-Entwicklung mit Flutter",
+            "backendDevelopment": "Backend-Entwicklung mit Node.js und Express",
+            "database": "Datenbankverwaltung mit MongoDB"
+          }
+        }
     },
     "faq": {
       "items": {

@@ -1,118 +1,138 @@
 {
-    "webDevelopment": {
-      "hero": {
-        "title": "Custom Websites Tailored to Your Business Needs",
-        "subtitle": "Emphasizing scalability, responsiveness, and performance"
-      },
-      "keyFeatures": {
-        "title": "Key",
-        "titleHighlight": "Features",
-        "titleEnd": "of our websites",
-        "items": {
-          "mobileResponsive": {
-            "name": "Mobile Responsive Design",
-            "description": "We create mobile-friendly designs that ensure your website looks great and functions perfectly on all devices."
-          },
-          "seoFriendly": {
-            "name": "SEO-Friendly Development",
-            "description": "Our websites are optimized for search engines, helping you rank higher and attract more organic traffic."
-          },
-          "cms": {
-            "name": "Easy-to-Manage CMS",
-            "description": "We integrate user-friendly CMS platforms, empowering you to update and manage your website effortlessly."
-          },
-          "speedOptimization": {
-            "name": "Speed Optimization",
-            "description": "We implement advanced optimization techniques to enhance your website's speed and performance."
-          }
+  "webDevelopment": {
+    "hero": {
+      "title": "Custom Websites Tailored to Your Business Needs",
+      "subtitle": "Emphasizing scalability, responsiveness, and performance"
+    },
+    "keyFeatures": {
+      "title": "Key",
+      "titleHighlight": "Features",
+      "titleEnd": "of our websites",
+      "items": {
+        "mobileResponsive": {
+          "name": "Mobile Responsive Design",
+          "description": "We create mobile-friendly designs that ensure your website looks great and functions perfectly on all devices."
+        },
+        "seoFriendly": {
+          "name": "SEO-Friendly Development",
+          "description": "Our websites are optimized for search engines, helping you rank higher and attract more organic traffic."
+        },
+        "cms": {
+          "name": "Easy-to-Manage CMS",
+          "description": "We integrate user-friendly CMS platforms, empowering you to update and manage your website effortlessly."
+        },
+        "speedOptimization": {
+          "name": "Speed Optimization",
+          "description": "We implement advanced optimization techniques to enhance your website's speed and performance."
         }
-      },
-      "benefits": {
-        "title": "Benefits",
-        "titleEnd": "of Choosing Us",
-        "items": {
-          "userExperience": {
-            "name": "Enhanced User Experience",
-            "description": "We deliver intuitive and engaging websites designed to provide seamless navigation and a superior user experience."
-          },
-          "loadingTimes": {
-            "name": "Faster Loading Times",
-            "description": "Our development process ensures optimized loading speeds, improving user retention and satisfaction."
-          },
-          "scalability": {
-            "name": "Scalability for Future Growth",
-            "description": "We build scalable solutions that grow with your business, ensuring your website remains robust as traffic increases."
-          },
-          "support": {
-            "name": "Dedicated Post-Launch Support",
-            "description": "Our team provides ongoing support and maintenance to ensure your website stays secure, updated, and functional."
-          }
+      }
+    },
+    "benefits": {
+      "title": "Benefits",
+      "titleEnd": "of Choosing Us",
+      "items": {
+        "userExperience": {
+          "name": "Enhanced User Experience",
+          "description": "We deliver intuitive and engaging websites designed to provide seamless navigation and a superior user experience."
+        },
+        "loadingTimes": {
+          "name": "Faster Loading Times",
+          "description": "Our development process ensures optimized loading speeds, improving user retention and satisfaction."
+        },
+        "scalability": {
+          "name": "Scalability for Future Growth",
+          "description": "We build scalable solutions that grow with your business, ensuring your website remains robust as traffic increases."
+        },
+        "support": {
+          "name": "Dedicated Post-Launch Support",
+          "description": "Our team provides ongoing support and maintenance to ensure your website stays secure, updated, and functional."
         }
-      },
-      "process": {
-        "title": "Web Development Process",
-        "steps": {
-          "analysis": {
-            "title": "Requirement Analysis",
-            "description": "Collaborate to understand objectives, challenges, and goals. This ensures alignment with your website vision from the beginning."
-          },
-          "wireframing": {
-            "title": "Wireframing & Prototyping",
-            "description": "Translate ideas into structured plans with prototypes to visualize the final website and ensure strategic clarity."
-          },
-          "development": {
-            "title": "Development",
-            "description": "Transform concepts into a fully functional website with seamless design and robust development for optimal performance."
-          },
-          "testing": {
-            "title": "Testing",
-            "description": "Conduct rigorous testing to ensure your website is free of issues, optimized, and ready for seamless launch."
-          },
-          "deployment": {
-            "title": "Deployment",
-            "description": "Deploy the website with precision and provide post-launch support to keep it running smoothly and effectively."
-          }
+      }
+    },
+    "process": {
+      "title": "Web Development Process",
+      "steps": {
+        "analysis": {
+          "title": "Requirement Analysis",
+          "description": "Collaborate to understand objectives, challenges, and goals. This ensures alignment with your website vision from the beginning."
+        },
+        "wireframing": {
+          "title": "Wireframing & Prototyping",
+          "description": "Translate ideas into structured plans with prototypes to visualize the final website and ensure strategic clarity."
+        },
+        "development": {
+          "title": "Development",
+          "description": "Transform concepts into a fully functional website with seamless design and robust development for optimal performance."
+        },
+        "testing": {
+          "title": "Testing",
+          "description": "Conduct rigorous testing to ensure your website is free of issues, optimized, and ready for seamless launch."
+        },
+        "deployment": {
+          "title": "Deployment",
+          "description": "Deploy the website with precision and provide post-launch support to keep it running smoothly and effectively."
         }
-      },
-      "portfolio": {
-        "title": "Our Recent",
-        "titleHighlight": "Work",
-        "categories": {
-          "uiUx": "UI/UX Design",
-          "appDesign": "App Design"
+      }
+    },
+    "portfolio": {
+      "title": "Our Recent",
+      "titleHighlight": "Work",
+      "categories": {
+        "solulec": {
+          "name": "Solulec-Web App Development",
+          "content": "This web application is used to check eligibility for energy aid provided by French government.",
+          "design":"UI/UX design with Figma and Tailwind CSS",
+          "frontendDevelopment": "Frontend Development with React JS",
+          "backendDevelopment": "Backend Development with Node.js and Express",
+          "database": "Database Management with MongoDB"
+        },
+        "private": {
+          "name": "Website Development",
+          "content": "Private Honors is revolutionizing travel. Save on every booking by getting cashback, manage travel with ease and enjoy VIP customer service. Discover a new way to travel, smarter and more profitable.",
+          "frontendDevelopment": "Frontend Development with Next.js",
+          "backendDevelopment": "Backend Development with Node.js and Express",
+          "design": "UI/UX Design with Figma and Tailwind CSS",
+          "database": "Database Management with MongoDB"
+        },
+        "wiefly": {
+          "name": "Green Ackors- Wordpress",
+          "content": "Green Ackors offers different types of services related to landscaping and irrigation.",
+          "design": "UI/UX Design with Figma",
+          "frontendDevelopment": "This website has been built with wordpress."
         }
-      },
-      "faq": {
-        "items": {
-          "hosting": {
-            "question": "Do you provide website hosting services?",
-            "answer": "While we don't directly host websites, we can assist you in selecting and setting up reliable hosting solutions like AWS, Bluehost, or SiteGround."
-          },
-          "redesign": {
-            "question": "Can you redesign my existing website?",
-            "answer": "Absolutely. We offer website redesign services to improve aesthetics, functionality, and performance while maintaining your brand identity."
-          },
-          "content": {
-            "question": "Do you provide content for websites?",
-            "answer": "Yes, we offer content creation services, including copywriting, SEO-optimized content, and multimedia content for your website."
-          },
-          "seo": {
-            "question": "Will my website be optimized for search engines?",
-            "answer": "Yes, all websites we develop are SEO-friendly, ensuring faster indexing and improved search engine rankings."
-          },
-          "maintenance": {
-            "question": "Do you offer maintenance and updates after the website launch?",
-            "answer": "Yes, we offer post-launch support, including regular updates, security patches, and performance monitoring to keep your website running smoothly."
-          },
-          "training": {
-            "question": "Can you provide training on how to manage my website?",
-            "answer": "Yes, we provide training sessions and user guides to help you manage your website efficiently using the CMS or other tools we've implemented."
-          },
-          "multilingual": {
-            "question": "Do you support multilingual websites?",
-            "answer": "Yes, we can develop websites with multilingual support, allowing you to reach a global audience effectively."
-          }
+      }
+    },
+    "faq": {
+      "items": {
+        "hosting": {
+          "question": "Do you provide website hosting services?",
+          "answer": "While we don't directly host websites, we can assist you in selecting and setting up reliable hosting solutions like AWS, Bluehost, or SiteGround."
+        },
+        "redesign": {
+          "question": "Can you redesign my existing website?",
+          "answer": "Absolutely. We offer website redesign services to improve aesthetics, functionality, and performance while maintaining your brand identity."
+        },
+        "content": {
+          "question": "Do you provide content for websites?",
+          "answer": "Yes, we offer content creation services, including copywriting, SEO-optimized content, and multimedia content for your website."
+        },
+        "seo": {
+          "question": "Will my website be optimized for search engines?",
+          "answer": "Yes, all websites we develop are SEO-friendly, ensuring faster indexing and improved search engine rankings."
+        },
+        "maintenance": {
+          "question": "Do you offer maintenance and updates after the website launch?",
+          "answer": "Yes, we offer post-launch support, including regular updates, security patches, and performance monitoring to keep your website running smoothly."
+        },
+        "training": {
+          "question": "Can you provide training on how to manage my website?",
+          "answer": "Yes, we provide training sessions and user guides to help you manage your website efficiently using the CMS or other tools we've implemented."
+        },
+        "multilingual": {
+          "question": "Do you support multilingual websites?",
+          "answer": "Yes, we can develop websites with multilingual support, allowing you to reach a global audience effectively."
         }
       }
     }
+  }
 }

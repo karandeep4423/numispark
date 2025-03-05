@@ -78,8 +78,28 @@
       "title": "Unsere neuesten",
       "titleHighlight": "Projekte",
       "categories": {
-        "uiUx": "UI/UX-Design",
-        "appDesign": "App-Design"
+        "solulec": {
+          "name": "Solulec-Web App-Entwicklung",
+          "content": "Diese Webanwendung dient zur Überprüfung der Anspruchsberechtigung auf Energiehilfen, die von der französischen Regierung bereitgestellt werden.",
+          "design": "UI/UX-Design mit Figma und Tailwind CSS",
+          "frontendDevelopment": "Frontend-Entwicklung mit React JS",
+          "backendDevelopment": "Backend-Entwicklung mit Node.js und Express",
+          "database": "Datenbankverwaltung mit MongoDB"
+        },
+        "private": {
+          "name": "Website-Entwicklung",
+          "content": "Private Honors revolutioniert das Reisen. Sparen Sie bei jeder Buchung durch Cashback, verwalten Sie Ihre Reisen mühelos und genießen Sie einen VIP-Kundenservice. Entdecken Sie eine neue Art zu reisen – intelligenter und profitabler.",
+          "frontendDevelopment": "Frontend-Entwicklung mit Next.js",
+          "backendDevelopment": "Backend-Entwicklung mit Node.js und Express",
+          "design": "UI/UX-Design mit Figma und Tailwind CSS",
+          "database": "Datenbankverwaltung mit MongoDB"
+        },
+        "wiefly": {
+          "name": "Green Ackors - Wordpress",
+          "content": "Green Ackors bietet verschiedene Dienstleistungen im Bereich der Landschaftsgestaltung und Bewässerung an.",
+          "design": "UI/UX-Design mit Figma",
+          "frontendDevelopment": "Diese Website wurde mit Wordpress erstellt."
+        }
       }
     },
     "faq": {

@@ -31,7 +31,7 @@ const FAQs = ({ faqData }) => {
 
   return (
     <div className="max-w-3xl mb-5 mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 className="text-4xl font-bold text-gray-800 text-center mb-12">
+      <h1 className="text-4xl font-bold text-gray-800 text-center my-12">
         Frequently Asked Questions
       </h1>
       <div className="space-y-6">

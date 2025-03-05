@@ -282,7 +282,7 @@ export default function SocialMediaMarketing() {
       <HowAgencyWorks steps={steps} namespace="socialMediaMarketing" />
 
       {/* Portfolio Section */}
-      <div className="max-w-7xl mx-auto px-4 py-12">
+      <div className="max-w-7xl mx-auto px-4 pt-12">
         <h2 className="text-4xl text-center font-bold text-gray-800">
           {t("socialMediaMarketing.portfolio.title")}{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">

@@ -109,51 +109,45 @@ const steps = [
 ];
 const portfolioItems = [
   {
-    image: "/portfolio/app2.0.webp",
-    src: "https://www.lovisa.com/",
-    translationName: "ecommerce.portfolio.categories.taskers.name",
+    image: "/portfolio/ecommerce-cover.png",
+    src: ["/portfolio/ecommerce3.webp"],
+    translationName: "ecommerce.portfolio.categories.cloth.name",
     translationContent:
-      "ecommerce.portfolio.categories.taskers.content",
-    translationdesign: "ecommerce.portfolio.categories.taskers.design",
+      "ecommerce.portfolio.categories.cloth.content",
+    translationdesign: "ecommerce.portfolio.categories.cloth.design",
     translationfontendDevelopment:
-      "ecommerce.portfolio.categories.taskers.frontendDevelopment",
+      "ecommerce.portfolio.categories.cloth.frontendDevelopment",
     translationbackendDevelopment:
-      "ecommerce.portfolio.categories.taskers.backendDevelopment",
-    translationDatabase:
-      "ecommerce.portfolio.categories.taskers.database",
+      "ecommerce.portfolio.categories.cloth.backendDevelopment",
     bgColor: "bg-violet-100",
     dotColor: "bg-violet-500",
   },
   {
-    image: "/portfolio/home-app.webp",
-    src: "https://simonewalsh.com/",
-    translationName: "ecommerce.portfolio.categories.aviators.name",
+    image: "/portfolio/ecommerce.webp",
+    src: ["/portfolio/ecommerce.webp"],
+    translationName: "ecommerce.portfolio.categories.beauty.name",
     translationContent:
-      "ecommerce.portfolio.categories.aviators.content",
-    translationdesign: "ecommerce.portfolio.categories.aviators.design",
+      "ecommerce.portfolio.categories.beauty.content",
+    translationdesign: "ecommerce.portfolio.categories.beauty.design",
     translationfontendDevelopment:
-      "ecommerce.portfolio.categories.aviators.frontendDevelopment",
+      "ecommerce.portfolio.categories.beauty.frontendDevelopment",
     translationbackendDevelopment:
-      "ecommerce.portfolio.categories.aviators.backendDevelopment",
-    translationDatabase:
-      "ecommerce.portfolio.categories.aviators.database",
-    translationKey: "appDesign",
+      "ecommerce.portfolio.categories.beauty.backendDevelopment",
     bgColor: "bg-emerald-600",
     dotColor: "bg-emerald-500",
   },
   {
-    image: "/portfolio/app3.0.webp",
-    src: "https://www.nordstrom.com/",
-    translationName: "ecommerce.portfolio.categories.wiefly.name",
-    translationContent: "ecommerce.portfolio.categories.wiefly.content",
-    translationdesign: "ecommerce.portfolio.categories.wiefly.design",
+    image: "/portfolio/ecommerce2.webp",
+    src:  ["/portfolio/ecommerce2.webp"],
+    translationName: "ecommerce.portfolio.categories.porto.name",
+    translationContent: "ecommerce.portfolio.categories.porto.content",
+    translationdesign: "ecommerce.portfolio.categories.porto.design",
     translationfrontendDevelopment:
-      "ecommerce.portfolio.categories.wiefly.frontendDevelopment",
+      "ecommerce.portfolio.categories.porto.frontendDevelopment",
     translationbackendDevelopment:
-      "ecommerce.portfolio.categories.wiefly.backendDevelopment",
+      "ecommerce.portfolio.categories.porto.backendDevelopment",
     translationDatabase:
-      "ecommerce.portfolio.categories.wiefly.database",
-    translationKey: "appDesign",
+      "ecommerce.portfolio.categories.porto.database",
     bgColor: "bg-amber-400",
     dotColor: "bg-amber-500",
   },
@@ -278,7 +272,7 @@ export default function EcommerceDevelopment() {
       <HowAgencyWorks steps={steps} namespace="ecommerce" />
 
       {/* Portfolio Section */}
-      <div className="max-w-7xl mx-auto px-4 py-12">
+      <div className="max-w-7xl mx-auto px-4 pt-12">
         <h2 className="text-4xl text-center font-bold text-gray-800">
           {t("ecommerce.portfolio.title")}{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">

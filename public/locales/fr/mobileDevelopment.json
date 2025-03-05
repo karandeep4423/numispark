@@ -81,10 +81,32 @@
     "portfolio": {
       "title": "Nos Récentes",
       "titleHighlight": "Réalisations",
-      "categories": {
-        "uiUx": "Design UI/UX",
-        "appDesign": "Design d'Application"
-      }
+        "categories": {
+          "taskers": {
+            "name": "Développement de l’application Taskers",
+            "content": "Application de gestion des tâches TaskerS Boostez votre productivité avec notre application de gestion des tâches. Organisez vos tâches, définissez vos priorités et accomplissez plus en moins de temps.",
+            "design": "Design UI/UX avec Figma",
+            "frontendDevelopment": "Développement frontend avec Flutter",
+            "backendDevelopment": "Développement backend avec Node.js et Express",
+            "database": "Gestion de base de données avec MongoDB"
+          },
+          "aviators": {
+            "name": "Développement de l’application Aviator",
+            "content": "Le développement d’Aviator’s Oasis a mis l’accent sur une expérience utilisateur fluide, combinant fonctionnalité et une interface visuellement séduisante. Les utilisateurs peuvent explorer facilement diverses options, comme des forums pour échanger sur leurs expériences de vol, des galeries pour partager des photos et un suivi des vols en temps réel.",
+            "frontendDevelopment": "Développement frontend avec Flutter",
+            "backendDevelopment": "Développement backend avec Node.js et Express",
+            "design": "Design UI/UX avec Figma",
+            "database": "Gestion de base de données avec MongoDB"
+          },
+          "wiefly": {
+            "name": "Développement de l’application Wiefly",
+            "content": "Application de réservation de voyages Wiefly Réservez vos vols en toute simplicité avec notre application de réservation de vols. Explorez un monde de destinations, trouvez les meilleures offres et embarquez pour votre prochaine aventure sans tracas.",
+            "design": "Design UI/UX avec Figma",
+            "frontendDevelopment": "Développement frontend avec Flutter",
+            "backendDevelopment": "Développement backend avec Node.js et Express",
+            "database": "Gestion de base de données avec MongoDB"
+          }
+        }
     },
     "faq": {
       "items": {

@@ -83,22 +83,25 @@
       "titleHighlight": "Work",
       "categories": {
         "taskers": {
-          "name": "Taskers",
+          "name": "Taskers App Development",
           "content": "TaskerS Task Management App Enhance your productivity with our Task Management App. Organize your tasks, set priorities, and accomplish more in less time.",
+          "design": "UI/UX Design with Figma",
           "frontendDevelopment": "Frontend Development with Flutter",
           "backendDevelopment": "Backend Development with Node.js and Express",
           "database": "Database Management with MongoDB"
         },
-         "aviators":{
-          "name": "Aviators",
-          "content": "The development of Aviator's Oasis focused on creating a seamless user experience, blending functionality with a visually appealing interface. Users can effortlessly navigate through various features, including forums for discussing flight experiences, photo sharing galleries, and real-time flight tracking. The app's design emphasizes simplicity, with a minimalist aesthetic and intuitive controls ensuring accessibility for users of all skill levels. With its innovative approach to connecting aviation aficionados, Aviator's Oasis sets a new standard for social networking within the flying community.",
+         "aviators": {
+          "name": "Aviator App Development",
+          "content": "The development of Aviator's Oasis focused on creating a seamless user experience, blending functionality with a visually appealing interface. Users can effortlessly navigate through various features, including forums for discussing flight experiences, photo sharing galleries, and real-time flight tracking.",
           "frontendDevelopment": "Frontend Development with Flutter",
           "backendDevelopment": "Backend Development with Node.js and Express",
+          "design": "UI/UX Design with Figma",
           "database": "Database Management with MongoDB"
         },
         "wiefly":{
-          "name": "Wiefly",
+          "name": "Wiefly App Development",
           "content": "Wiefly Travel Booking App Book flights with ease using our Flight Booking App. Explore a world of destinations, find the best deals, and embark on your next adventure hassle-free.",
+          "design": "UI/UX Design with Figma",
          "frontendDevelopment": "Frontend Development with Flutter",
           "backendDevelopment": "Backend Development with Node.js and Express",
           "database": "Database Management with MongoDB"

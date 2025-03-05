@@ -111,8 +111,21 @@
       "title": "Nos récentes",
       "titleHighlight": "réalisations",
       "categories": {
-        "uiUx": "Design UI/UX",
-        "appDesign": "Design d'application"
+        "fuzzed": {
+          "name": "Fuzzed - Conception Figma",
+          "content": "Fuzzed est une application de rencontres.",
+          "design": "Design UI/UX avec Figma"
+        },
+        "mastery": {
+          "name": "Mastery - Conception Figma",
+          "content": "Mastery Hub vous propose des formations animées par des experts, conçues pour vous doter des compétences et des connaissances nécessaires pour réussir dans votre domaine.",
+          "design": "Design UI/UX avec Figma"
+        },
+        "wiefly": {
+          "name": "JobSeeker - Conception Figma",
+          "content": "JobSeek est une plateforme où l'on peut trouver un emploi et bénéficier de conseils pour sa carrière.",
+          "design": "Design UI/UX avec Figma"
+        }
       }
     },
     "faq": {

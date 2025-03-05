@@ -101,6 +101,22 @@
       "title": "Nos récents",
       "titleHighlight": "Travaux",
       "categories": {
+        "private": {
+          "name": "Développement de sites web",
+          "content": "Private Honors révolutionne le voyage. Économisez sur chaque réservation grâce au cashback, gérez vos déplacements en toute simplicité et profitez d’un service client VIP. Découvrez une nouvelle manière de voyager, plus intelligente et rentable.",
+          "frontendDevelopment": "Développement Frontend avec Next.js",
+          "backendDevelopment": "Développement Backend avec Node.js et Express",
+          "design": "Conception UI/UX avec Figma et Tailwind CSS",
+          "database": "Gestion de base de données avec MongoDB"
+        },
+        "aviator": {
+          "name": "Développement d'applications mobiles",
+          "content": "Le développement de l'Oasis d'Aviator a été pensé pour offrir une expérience utilisateur fluide, alliant fonctionnalité et interface visuellement attrayante. Les utilisateurs naviguent aisément à travers diverses fonctionnalités, dont des forums pour échanger sur leurs expériences de vol, des galeries de partage de photos et le suivi des vols en temps réel.",
+          "frontendDevelopment": "Développement Frontend avec Flutter",
+          "backendDevelopment": "Développement Backend avec Node.js et Express",
+          "design": "Conception UI/UX avec Figma",
+          "database": "Gestion de base de données avec MongoDB"
+        },
         "uiUx": "Conception UI/UX",
         "appDesign": "Conception d'applications"
       }

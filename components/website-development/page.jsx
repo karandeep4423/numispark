@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import {
   CloudUpload,
   Code,
@@ -23,6 +23,8 @@ import FAQs from "@/components/Faqs/page";
 import Technologies from "@/components/Technologies/page";
 import HowAgencyWorks from "@/components/Process/page";
 import { useTranslation } from "react-i18next";
+import PortfolioModal from "@/components/PortfolioModal/page";
+
 const TECHNOLOGIES = [
   {
     name: "React Js",
@@ -142,19 +144,46 @@ const benefits = [
 
 const portfolioItems = [
   {
-    image: "/api/placeholder/400/400",
-    translationKey: "uiUx",
+    image: "/portfolio/web-development-cover1.png",
+    src: "https://aid-calculation.vercel.app/",
+    translationName: "webDevelopment.portfolio.categories.solulec.name",
+    translationContent:
+      "webDevelopment.portfolio.categories.solulec.content",
+    translationdesign: "webDevelopment.portfolio.categories.solulec.design",
+    translationfrontendDevelopment:
+      "webDevelopment.portfolio.categories.solulec.frontendDevelopment",
+    translationbackendDevelopment:
+      "webDevelopment.portfolio.categories.solulec.backendDevelopment",
+    translationDatabase:
+      "webDevelopment.portfolio.categories.solulec.database",
     bgColor: "bg-violet-100",
     dotColor: "bg-violet-500",
   },
   {
-    image: "/api/placeholder/400/400",
+    image: "/portfolio/website1.png",
+    src: "https://www.privatehonors.com/",
+    translationName: "webDevelopment.portfolio.categories.private.name",
+    translationContent:
+      "webDevelopment.portfolio.categories.private.content",
+    translationdesign: "webDevelopment.portfolio.categories.private.design",
+    translationfontendDevelopment:
+      "webDevelopment.portfolio.categories.private.frontendDevelopment",
+    translationbackendDevelopment:
+      "webDevelopment.portfolio.categories.private.backendDevelopment",
+    translationDatabase:
+      "webDevelopment.portfolio.categories.private.database",
     translationKey: "appDesign",
     bgColor: "bg-emerald-600",
     dotColor: "bg-emerald-500",
   },
   {
-    image: "/api/placeholder/400/400",
+    image: "/portfolio/green-website-cover.png",
+    src: "https://greenackors.com/",
+    translationName: "webDevelopment.portfolio.categories.wiefly.name",
+    translationContent: "webDevelopment.portfolio.categories.wiefly.content",
+    translationdesign: "webDevelopment.portfolio.categories.wiefly.design",
+    translationfrontendDevelopment:
+      "webDevelopment.portfolio.categories.wiefly.frontendDevelopment",
     translationKey: "appDesign",
     bgColor: "bg-amber-400",
     dotColor: "bg-amber-500",
@@ -163,6 +192,13 @@ const portfolioItems = [
 
 const WebsiteDevelopment = () => {
   const { t } = useTranslation("webDevelopment");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedModal, setSelectedModal] = useState("");
+
+  const openModal = (item) => {
+    setSelectedModal(item);
+    setIsModalOpen(true);
+  };
 
   return (
     <div>
@@ -269,7 +305,7 @@ const WebsiteDevelopment = () => {
       <HowAgencyWorks steps={steps} namespace="webDevelopment" />
 
       {/* Portfolio Section */}
-      <div className="max-w-7xl mx-auto px-4 py-12">
+      <div className="max-w-7xl mx-auto px-4 pt-12">
         <h2 className="text-4xl text-center font-bold text-gray-800">
           {t("webDevelopment.portfolio.title")}{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
@@ -280,24 +316,23 @@ const WebsiteDevelopment = () => {
           {portfolioItems.map((item, index) => (
             <div
               key={index}
-              className={`shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] relative rounded-3xl p-6 ${item.bgColor}`}
+              className={`shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] relative rounded-3xl p-2 ${item.bgColor}`}
             >
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+              <div className="relative aspect-[4/3] rounded-2xl -mr-1 overflow-hidden mb-3">
                 <img
                   src={item.image}
-                  alt={t(
-                    `webDevelopment.portfolio.categories.${item.translationKey}`
-                  )}
-                  className="w-full h-full object-cover"
+                  alt={t(item.translationName)}
+                  className="w-full h-full object-fill"
                 />
               </div>
               <div className="flex justify-between items-center">
                 <h3 className="text-lg font-medium">
-                  {t(
-                    `webDevelopment.portfolio.categories.${item.translationKey}`
-                  )}
+                  {t(item.translationName)}
                 </h3>
-                <button className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors">
+                <button
+                  onClick={() => openModal(item)}
+                  className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors"
+                >
                   <ArrowUpRight className="w-6 h-6 text-white" />
                 </button>
               </div>
@@ -305,6 +340,12 @@ const WebsiteDevelopment = () => {
           ))}
         </div>
       </div>
+      <PortfolioModal
+        item={selectedModal}
+        isOpen={isModalOpen}
+        setIsOpen={setIsModalOpen}
+        t={t}
+      />
 
       {/* FAQs Section */}
       <FAQs

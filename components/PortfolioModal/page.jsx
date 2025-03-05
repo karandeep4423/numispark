@@ -72,7 +72,7 @@ export default function PortfolioModal({ item, isOpen, setIsOpen, t }) {
                       ></iframe>
                     )
                   ) : (
-                    <p>No website link provided.</p>
+                    null
                   )}
 
                   {item && item.translationContent && (

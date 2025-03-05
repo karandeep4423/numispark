@@ -112,25 +112,19 @@
         "titleHighlight": "Work",
         "categories": {
           "fuzzed": {
-            "name": "Fuzzed",
-            "content": "TaskerS Task Management App Enhance your productivity with our Task Management App. Organize your tasks, set priorities, and accomplish more in less time.",
-            "frontendDevelopment": "Frontend Development with Flutter",
-            "backendDevelopment": "Backend Development with Node.js and Express",
-            "database": "Database Management with MongoDB"
+            "name": "Fuzzed - Figma design",
+            "content": "Fuzzed is a dating app.",
+            "design":"UI/UX design with Figma"
           },
-           "aviators":{
-            "name": "Aviators",
-            "content": "The development of Aviator's Oasis focused on creating a seamless user experience, blending functionality with a visually appealing interface. Users can effortlessly navigate through various features, including forums for discussing flight experiences, photo sharing galleries, and real-time flight tracking. The app's design emphasizes simplicity, with a minimalist aesthetic and intuitive controls ensuring accessibility for users of all skill levels. With its innovative approach to connecting aviation aficionados, Aviator's Oasis sets a new standard for social networking within the flying community.",
-            "frontendDevelopment": "Frontend Development with Flutter",
-            "backendDevelopment": "Backend Development with Node.js and Express",
-            "database": "Database Management with MongoDB"
+           "mastery":{
+            "name": "Mastery- Figma design",
+            "content": "Mastery Hub, Provides you with expert-led Training that is designed to equip you with the skills and knowledge you need to succeed in your field.",
+            "design":"UI/UX design with Figma"
           },
           "wiefly":{
-            "name": "Wiefly",
-            "content": "Wiefly Travel Booking App Book flights with ease using our Flight Booking App. Explore a world of destinations, find the best deals, and embark on your next adventure hassle-free.",
-           "frontendDevelopment": "Frontend Development with Flutter",
-            "backendDevelopment": "Backend Development with Node.js and Express",
-            "database": "Database Management with MongoDB"
+            "name": "JobSeeker - Figma design",
+            "content": "JobSeek is a platform where people can find jobs and get career advice.",
+            "design":"UI/UX design with Figma"
           }
         }
       },

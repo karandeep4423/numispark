@@ -82,8 +82,30 @@
       "title": "Unsere aktuellen",
       "titleHighlight": "Projekte",
       "categories": {
-        "uiUx": "UI/UX-Design",
-        "appDesign": "App Design"
+        "private": {
+          "name": "Private-SaaS-Entwicklung",
+          "content": "Private Honors revolutioniert das Reisen. Sparen Sie bei jeder Buchung mit Cashback, verwalten Sie Ihre Reisen mühelos und genießen Sie einen VIP-Kundenservice. Entdecken Sie eine neue Art zu reisen – intelligenter und profitabler.",
+          "frontendDevelopment": "Frontend-Entwicklung mit Next.js",
+          "backendDevelopment": "Backend-Entwicklung mit Node.js und Express",
+          "design": "UI/UX-Design mit Figma und Tailwind CSS",
+          "database": "Datenbankverwaltung mit MongoDB"
+        },
+        "aviators": {
+          "name": "Backdoor - SaaS",
+          "content": "Backdoor Alert ist eine SaaS-Recruiting-Agentur.",
+          "design": "UI/UX-Design mit Figma und Tailwind CSS",
+          "frontendDevelopment": "Frontend-Entwicklung mit Angular JS",
+          "backendDevelopment": "Backend-Entwicklung mit Node.js und Express",
+          "database": "Datenbankverwaltung mit MongoDB"
+        },
+        "funding": {
+          "name": "Funding Talent - SaaS",
+          "content": "Funding Talent ist eine SaaS-Lösung für Trader.",
+          "design": "UI/UX-Design mit Figma und Tailwind CSS",
+          "frontendDevelopment": "Frontend-Entwicklung mit Vue js",
+          "backendDevelopment": "Backend-Entwicklung mit Node.js und Express",
+          "database": "Datenbankverwaltung mit MongoDB"
+        }
       }
     },
     "faq": {

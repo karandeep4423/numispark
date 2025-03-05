@@ -81,24 +81,23 @@
       "title": "Our Recent",
       "titleHighlight": "Work",
       "categories": {
-        "taskers": {
-          "name": "Taskers",
-          "content": "TaskerS Task Management App Enhance your productivity with our Task Management App. Organize your tasks, set priorities, and accomplish more in less time.",
-          "frontendDevelopment": "Frontend Development with Flutter",
-          "backendDevelopment": "Backend Development with Node.js and Express",
-          "database": "Database Management with MongoDB"
+        "cloth": {
+          "name": "Cloth - Shopify",
+          "content": "This e-commerce sells beauty clothes and was built with Shopify.",
+          "design": "UI/UX design with Figma",
+          "backendDevelopment": "Development with Shopify"
         },
-        "aviators": {
-          "name": "Aviators",
-          "content": "The development of Aviator's Oasis focused on creating a seamless user experience, blending functionality with a visually appealing interface. Users can effortlessly navigate through various features, including forums for discussing flight experiences, photo sharing galleries, and real-time flight tracking. The app's design emphasizes simplicity, with a minimalist aesthetic and intuitive controls ensuring accessibility for users of all skill levels. With its innovative approach to connecting aviation aficionados, Aviator's Oasis sets a new standard for social networking within the flying community.",
-          "frontendDevelopment": "Frontend Development with Flutter",
-          "backendDevelopment": "Backend Development with Node.js and Express",
-          "database": "Database Management with MongoDB"
+        "beauty": {
+          "name": "Beauty - Ecommerce",
+          "content": "This e-commerce sells beauty products and was built with Shopify.",
+          "design": "UI/UX design with Figma",
+          "backendDevelopment": "Development with Shopify"
         },
-        "wiefly": {
-          "name": "Wiefly",
-          "content": "Wiefly Travel Booking App Book flights with ease using our Flight Booking App. Explore a world of destinations, find the best deals, and embark on your next adventure hassle-free.",
-          "frontendDevelopment": "Frontend Development with Flutter",
+        "porto": {
+          "name": "Porto - Ecommerce",
+          "content": "This e-commerce store sells different types of products.",
+          "design": "UI/UX design with Figma",
+          "frontendDevelopment": "Frontend Development with React Js and Redux",
           "backendDevelopment": "Backend Development with Node.js and Express",
           "database": "Database Management with MongoDB"
         }

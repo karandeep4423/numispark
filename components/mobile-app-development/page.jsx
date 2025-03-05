@@ -75,7 +75,7 @@ const portfolioItems = [
     translationContent:
       "mobileDevelopment.portfolio.categories.taskers.content",
     translationdesign: "mobileDevelopment.portfolio.categories.taskers.design",
-    translationfontendDevelopment:
+    translationfrontendDevelopment:
       "mobileDevelopment.portfolio.categories.taskers.frontendDevelopment",
     translationbackendDevelopment:
       "mobileDevelopment.portfolio.categories.taskers.backendDevelopment",
@@ -91,13 +91,12 @@ const portfolioItems = [
     translationContent:
       "mobileDevelopment.portfolio.categories.aviators.content",
     translationdesign: "mobileDevelopment.portfolio.categories.aviators.design",
-    translationfontendDevelopment:
+    translationfrontendDevelopment:
       "mobileDevelopment.portfolio.categories.aviators.frontendDevelopment",
     translationbackendDevelopment:
       "mobileDevelopment.portfolio.categories.aviators.backendDevelopment",
     translationDatabase:
       "mobileDevelopment.portfolio.categories.aviators.database",
-    translationKey: "appDesign",
     bgColor: "bg-emerald-600",
     dotColor: "bg-emerald-500",
   },
@@ -113,7 +112,6 @@ const portfolioItems = [
       "mobileDevelopment.portfolio.categories.wiefly.backendDevelopment",
     translationDatabase:
       "mobileDevelopment.portfolio.categories.wiefly.database",
-    translationKey: "appDesign",
     bgColor: "bg-amber-400",
     dotColor: "bg-amber-500",
   },
@@ -234,7 +232,7 @@ const MobileDevelopment = () => {
       <HowAgencyWorks steps={steps} namespace="mobileDevelopment" />
 
       {/* Portfolio Section */}
-      <div className="max-w-7xl mx-auto px-4 py-12">
+      <div className="max-w-7xl mx-auto px-4 pt-12">
         <h2 className="text-4xl text-center font-bold text-gray-800">
           {t("mobileDevelopment.portfolio.title")}{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">

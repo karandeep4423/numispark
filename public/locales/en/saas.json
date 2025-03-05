@@ -82,8 +82,30 @@
       "title": "Our Recent",
       "titleHighlight": "Work",
       "categories": {
-        "uiUx": "UI/ UX Design",
-        "appDesign": "App Design"
+        "private": {
+          "name": "Private-SaaS Development",
+          "content": "Private Honors is revolutionizing travel. Save on every booking by getting cashback, manage travel with ease and enjoy VIP customer service. Discover a new way to travel, smarter and more profitable.",
+          "frontendDevelopment": "Frontend Development with Next.js",
+          "backendDevelopment": "Backend Development with Node.js and Express",
+          "design": "UI/UX Design with Figma and Tailwind CSS",
+          "database": "Database Management with MongoDB"
+        },
+        "aviators": {
+          "name": "Backdoor - SaaS",
+          "content": "Backdoor Alert is a SaaS recruitment agency.",
+          "design": "UI/UX Design with Figma and Tailwind CSS",
+          "frontendDevelopment": "Frontend Development with Angular JS",
+          "backendDevelopment": "Backend Development with Node.js and Express",
+          "database": "Database Management with MongoDB"
+        },
+        "funding": {
+          "name": "Funding Talent - SaaS",
+          "content": "Funding Talent is SaaS for traders.",
+          "design": "UI/UX Design with Figma and Tailwind CSS",
+          "frontendDevelopment": "Frontend Development with Vue js",
+          "backendDevelopment": "Backend Development with Node.js and Express",
+          "database": "Database Management with MongoDB"
+        }
       }
     },
     "faq": {

@@ -81,8 +81,26 @@
       "title": "Nos récentes",
       "titleHighlight": "Réalisations",
       "categories": {
-        "uiUx": "Design UI/UX",
-        "appDesign": "Design d'application"
+        "cloth": {
+          "name": "Cloth - Boutique Shopify",
+          "content": "Cette boutique en ligne propose une sélection de vêtements élégants et a été réalisée avec Shopify.",
+          "design": "Conception UI/UX avec Figma",
+          "backendDevelopment": "Développement avec Shopify"
+        },
+        "beauty": {
+          "name": "Beauty - Ecommerce",
+          "content": "Ce site e-commerce propose une gamme de produits de beauté et a été réalisé avec Shopify.",
+          "design": "Conception UI/UX avec Figma",
+          "backendDevelopment": "Développement avec Shopify"
+        },
+        "porto": {
+          "name": "Porto - Ecommerce",
+          "content": "Cette boutique en ligne propose une variété de produits.",
+          "design": "Conception UI/UX avec Figma",
+          "frontendDevelopment": "Développement Frontend avec React Js et Redux",
+          "backendDevelopment": "Développement Backend avec Node.js et Express",
+          "database": "Gestion de base de données avec MongoDB"
+        }
       }
     },
     "faq": {

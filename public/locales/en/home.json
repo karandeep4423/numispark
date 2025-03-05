@@ -103,18 +103,18 @@
       "categories": {
         "private": {
           "name": "Website Development",
-          "content": "Explore our website development projects, ranging from simple landing pages to complex web applications.",
+          "content": "Private Honors is revolutionizing travel. Save on every booking by getting cashback, manage travel with ease and enjoy VIP customer service. Discover a new way to travel, smarter and more profitable.",
           "frontendDevelopment": "Frontend Development with Next.js",
           "backendDevelopment": "Backend Development with Node.js and Express",
           "design": "UI/UX Design with Figma and Tailwind CSS",
           "database": "Database Management with MongoDB"
         },
-        "soluluc": {
-          "name": "Website Development",
-          "content": "Explore our website development projects, ranging from simple landing pages to complex web applications.",
-          "frontendDevelopment": "Frontend Development with Next.js",
+        "aviator": {
+          "name": "Mobile App Development",
+          "content": "The development of Aviator's Oasis focused on creating a seamless user experience, blending functionality with a visually appealing interface. Users can effortlessly navigate through various features, including forums for discussing flight experiences, photo sharing galleries, and real-time flight tracking.",
+          "frontendDevelopment": "Frontend Development with Flutter",
           "backendDevelopment": "Backend Development with Node.js and Express",
-          "design": "UI/UX Design with Figma and Tailwind CSS",
+          "design": "UI/UX Design with Figma",
           "database": "Database Management with MongoDB"
         },
         "uiUx": "UI/UX Design",

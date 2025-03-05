@@ -81,46 +81,27 @@ const portfolioItems = [
     translationContent:
       "websiteMobileDesign.portfolio.categories.fuzzed.content",
     translationdesign: "websiteMobileDesign.portfolio.categories.fuzzed.design",
-    translationfontendDevelopment:
-      "websiteMobileDesign.portfolio.categories.fuzzed.frontendDevelopment",
-    translationbackendDevelopment:
-      "websiteMobileDesign.portfolio.categories.fuzzed.backendDevelopment",
-    translationDatabase:
-      "websiteMobileDesign.portfolio.categories.fuzzed.database",
     bgColor: "bg-violet-100",
     dotColor: "bg-violet-500",
   },
   {
-    image: "/portfolio/home-app.webp",
-    src: ["/portfolio/home-app.webp"],
-    translationName: "websiteMobileDesign.portfolio.categories.aviators.name",
+    image: "/portfolio/mastery-design-cover.png",
+    src: ["/portfolio/website-design3.jpeg"],
+    translationName: "websiteMobileDesign.portfolio.categories.mastery.name",
     translationContent:
-      "websiteMobileDesign.portfolio.categories.aviators.content",
+      "websiteMobileDesign.portfolio.categories.mastery.content",
     translationdesign:
-      "websiteMobileDesign.portfolio.categories.aviators.design",
-    translationfontendDevelopment:
-      "websiteMobileDesign.portfolio.categories.aviators.frontendDevelopment",
-    translationbackendDevelopment:
-      "websiteMobileDesign.portfolio.categories.aviators.backendDevelopment",
-    translationDatabase:
-      "websiteMobileDesign.portfolio.categories.aviators.database",
-    translationKey: "appDesign",
+      "websiteMobileDesign.portfolio.categories.mastery.design",
     bgColor: "bg-emerald-600",
     dotColor: "bg-emerald-500",
   },
   {
-    image: "/portfolio/app3.0.webp",
-    src: ["/portfolio/app3.0.webp", "/portfolio/app3.1.webp"],
+    image: "/portfolio/website-design1.1.webp",
+    src: ["/portfolio/website-design1.1.webp", "/portfolio/website-design1.2.webp"],
     translationName: "websiteMobileDesign.portfolio.categories.wiefly.name",
     translationContent:
       "websiteMobileDesign.portfolio.categories.wiefly.content",
     translationdesign: "websiteMobileDesign.portfolio.categories.wiefly.design",
-    translationfrontendDevelopment:
-      "websiteMobileDesign.portfolio.categories.wiefly.frontendDevelopment",
-    translationbackendDevelopment:
-      "websiteMobileDesign.portfolio.categories.wiefly.backendDevelopment",
-    translationDatabase:
-      "websiteMobileDesign.portfolio.categories.wiefly.database",
     translationKey: "appDesign",
     bgColor: "bg-amber-400",
     dotColor: "bg-amber-500",
@@ -276,7 +257,7 @@ export default function WebsiteMobileDesign() {
       <HowAgencyWorks steps={steps} namespace="websiteMobileDesign" />
 
       {/* Portfolio Section */}
-      <div className="max-w-7xl mx-auto px-4 py-12">
+      <div className="max-w-7xl mx-auto px-4 pt-12">
         <h2 className="text-4xl text-center font-bold text-gray-800">
           {t("websiteMobileDesign.portfolio.title")}{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">

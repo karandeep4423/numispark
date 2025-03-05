@@ -1,140 +1,152 @@
 {
-    "websiteMobileDesign": {
-      "hero": {
-        "title": "Nutzerzentrierte Designs für beeindruckende",
-        "titleHighlight": "Website- & Mobile-Erlebnisse",
-        "subtitle": "Verwandeln Sie Ihre digitale Präsenz mit Designs, die Besucher in loyale Kunden umwandeln"
-      },
-      "services": {
-        "title": "Unsere Kernkompetenzen",
-        "titleHighlight": "Dienstleistungen",
-        "subtitle": "Umfassende Lösungen, maßgeschneidert für Ihre Bedürfnisse",
-        "items": {
-          "websiteDesign": {
-            "name": "Website-Design",
-            "description": "Erstellen Sie beeindruckende, responsive Websites, die Ihr Publikum fesseln. Unsere Designs vereinen visuelle Anziehungskraft mit intuitiver Navigation, um Interaktion und Konversionen zu fördern."
-          },
-          "mobileAppDesign": {
-            "name": "Mobile App-Design",
-            "description": "Entwerfen Sie nahtlose mobile Erlebnisse, die die Nutzer lieben. Wir gestalten native und plattformübergreifende Apps, die schöne Benutzeroberflächen mit reibungsloser Funktionalität verbinden."
-          },
-          "uiUxConsulting": {
-            "name": "UI/UX-Beratung",
-            "description": "Optimieren Sie Ihre digitalen Produkte mit professioneller UI/UX-Beratung. Wir analysieren das Nutzerverhalten und implementieren datengesteuerte Designverbesserungen, um die Nutzerzufriedenheit zu steigern."
-          },
-          "designSystems": {
-            "name": "Designsysteme",
-            "description": "Erstellen Sie skalierbare Design-Frameworks, die auf allen Plattformen Konsistenz gewährleisten. Unsere Designsysteme beschleunigen die Entwicklung und sorgen für Markenkohärenz."
-          }
+  "websiteMobileDesign": {
+    "hero": {
+      "title": "Nutzerzentrierte Designs für beeindruckende",
+      "titleHighlight": "Website- & Mobile-Erlebnisse",
+      "subtitle": "Verwandeln Sie Ihre digitale Präsenz mit Designs, die Besucher in loyale Kunden umwandeln"
+    },
+    "services": {
+      "title": "Unsere Kernkompetenzen",
+      "titleHighlight": "Dienstleistungen",
+      "subtitle": "Umfassende Lösungen, maßgeschneidert für Ihre Bedürfnisse",
+      "items": {
+        "websiteDesign": {
+          "name": "Website-Design",
+          "description": "Erstellen Sie beeindruckende, responsive Websites, die Ihr Publikum fesseln. Unsere Designs vereinen visuelle Anziehungskraft mit intuitiver Navigation, um Interaktion und Konversionen zu fördern."
+        },
+        "mobileAppDesign": {
+          "name": "Mobile App-Design",
+          "description": "Entwerfen Sie nahtlose mobile Erlebnisse, die die Nutzer lieben. Wir gestalten native und plattformübergreifende Apps, die schöne Benutzeroberflächen mit reibungsloser Funktionalität verbinden."
+        },
+        "uiUxConsulting": {
+          "name": "UI/UX-Beratung",
+          "description": "Optimieren Sie Ihre digitalen Produkte mit professioneller UI/UX-Beratung. Wir analysieren das Nutzerverhalten und implementieren datengesteuerte Designverbesserungen, um die Nutzerzufriedenheit zu steigern."
+        },
+        "designSystems": {
+          "name": "Designsysteme",
+          "description": "Erstellen Sie skalierbare Design-Frameworks, die auf allen Plattformen Konsistenz gewährleisten. Unsere Designsysteme beschleunigen die Entwicklung und sorgen für Markenkohärenz."
         }
-      },
-      "features": {
-        "title": "Wichtige",
-        "titleHighlight": "Merkmale",
-        "titleEnd": "unserer Designs",
-        "subtitle": "Ihr Erfolg ist unsere Priorität",
-        "items": {
-          "responsiveDesign": {
-            "name": "Responsives Design",
-            "description": "Designs, die sich perfekt an alle Bildschirmgrößen anpassen und ein konsistentes Erlebnis auf Desktop-, Tablet- und mobilen Geräten gewährleisten."
-          },
-          "interactivePrototypes": {
-            "name": "Interaktive Prototypen",
-            "description": "Testen und validieren Sie Ihre Designs vor der Entwicklung mit hochtreuen Prototypen, die das echte Nutzererlebnis simulieren."
-          },
-          "userFlowOptimization": {
-            "name": "Optimierung der Nutzerführung",
-            "description": "Erstellen Sie intuitive Nutzerreisen, die Besucher auf natürliche Weise durch Ihr digitales Produkt führen und die Konversionsraten verbessern."
-          },
-          "performanceFocus": {
-            "name": "Performance-Fokus",
-            "description": "Schnell ladende, effiziente Schnittstellen, optimiert für Geschwindigkeit und Leistung, um die Nutzer engagiert zu halten."
-          }
+      }
+    },
+    "features": {
+      "title": "Wichtige",
+      "titleHighlight": "Merkmale",
+      "titleEnd": "unserer Designs",
+      "subtitle": "Ihr Erfolg ist unsere Priorität",
+      "items": {
+        "responsiveDesign": {
+          "name": "Responsives Design",
+          "description": "Designs, die sich perfekt an alle Bildschirmgrößen anpassen und ein konsistentes Erlebnis auf Desktop-, Tablet- und mobilen Geräten gewährleisten."
+        },
+        "interactivePrototypes": {
+          "name": "Interaktive Prototypen",
+          "description": "Testen und validieren Sie Ihre Designs vor der Entwicklung mit hochtreuen Prototypen, die das echte Nutzererlebnis simulieren."
+        },
+        "userFlowOptimization": {
+          "name": "Optimierung der Nutzerführung",
+          "description": "Erstellen Sie intuitive Nutzerreisen, die Besucher auf natürliche Weise durch Ihr digitales Produkt führen und die Konversionsraten verbessern."
+        },
+        "performanceFocus": {
+          "name": "Performance-Fokus",
+          "description": "Schnell ladende, effiziente Schnittstellen, optimiert für Geschwindigkeit und Leistung, um die Nutzer engagiert zu halten."
         }
-      },
-      "benefits": {
-        "title": "Vorteile",
-        "titleEnd": "der Zusammenarbeit mit uns",
-        "items": {
-          "intuitiveInterfaces": {
-            "title": "Intuitive Benutzeroberflächen",
-            "description": "Bieten Sie nahtlose Nutzererlebnisse mit Interfaces, die sich natürlich und mühelos navigieren lassen. Unsere Designs minimieren die Lernkurve und maximieren das Nutzerengagement."
-          },
-          "optimizedAccessibility": {
-            "title": "Optimierte Barrierefreiheit",
-            "description": "Schaffen Sie inklusive Erlebnisse, die für alle Nutzer funktionieren. Unsere Designs entsprechen den WCAG-Richtlinien und stellen sicher, dass Ihr Produkt für jeden zugänglich ist."
-          },
-          "brandConsistency": {
-            "title": "Markenkonsistenz",
-            "description": "Bewahren Sie eine starke Markenidentität an allen Kontaktpunkten. Jedes Designelement stimmt perfekt mit Ihren Markenrichtlinien und Werten überein."
-          },
-          "rapidDevelopment": {
-            "title": "Schnelle Entwicklung",
-            "description": "Beschleunigen Sie Ihre Markteinführung mit unserem optimierten Designprozess. Klare Übergaben und detaillierte Dokumentation verkürzen die Entwicklungszeit."
-          },
-          "userSatisfaction": {
-            "title": "Nutzerzufriedenheit",
-            "description": "Begeistern Sie die Nutzer mit durchdachten Interaktionen und reibungslosen Erlebnissen. Zufriedene Nutzer werden zu loyalen Kunden und Markenbotschaftern."
-          },
-          "higherConversions": {
-            "title": "Höhere Konversionsraten",
-            "description": "Verwandeln Sie Besucher in Kunden mit konversionsfokussierten Designs. Strategische UX-Muster leiten die Nutzer auf natürliche Weise zu den gewünschten Aktionen."
-          }
+      }
+    },
+    "benefits": {
+      "title": "Vorteile",
+      "titleEnd": "der Zusammenarbeit mit uns",
+      "items": {
+        "intuitiveInterfaces": {
+          "title": "Intuitive Benutzeroberflächen",
+          "description": "Bieten Sie nahtlose Nutzererlebnisse mit Interfaces, die sich natürlich und mühelos navigieren lassen. Unsere Designs minimieren die Lernkurve und maximieren das Nutzerengagement."
+        },
+        "optimizedAccessibility": {
+          "title": "Optimierte Barrierefreiheit",
+          "description": "Schaffen Sie inklusive Erlebnisse, die für alle Nutzer funktionieren. Unsere Designs entsprechen den WCAG-Richtlinien und stellen sicher, dass Ihr Produkt für jeden zugänglich ist."
+        },
+        "brandConsistency": {
+          "title": "Markenkonsistenz",
+          "description": "Bewahren Sie eine starke Markenidentität an allen Kontaktpunkten. Jedes Designelement stimmt perfekt mit Ihren Markenrichtlinien und Werten überein."
+        },
+        "rapidDevelopment": {
+          "title": "Schnelle Entwicklung",
+          "description": "Beschleunigen Sie Ihre Markteinführung mit unserem optimierten Designprozess. Klare Übergaben und detaillierte Dokumentation verkürzen die Entwicklungszeit."
+        },
+        "userSatisfaction": {
+          "title": "Nutzerzufriedenheit",
+          "description": "Begeistern Sie die Nutzer mit durchdachten Interaktionen und reibungslosen Erlebnissen. Zufriedene Nutzer werden zu loyalen Kunden und Markenbotschaftern."
+        },
+        "higherConversions": {
+          "title": "Höhere Konversionsraten",
+          "description": "Verwandeln Sie Besucher in Kunden mit konversionsfokussierten Designs. Strategische UX-Muster leiten die Nutzer auf natürliche Weise zu den gewünschten Aktionen."
         }
-      },
-      "process": {
-        "title": "Designentwicklung",
-        "steps": {
-          "research": {
-            "title": "Recherche & Entdeckung",
-            "description": "Wir tauchen tief in die Bedürfnisse Ihrer Nutzer, Markttrends und das Wettbewerbsumfeld ein, um fundierte Designentscheidungen zu treffen."
-          },
-          "wireframing": {
-            "title": "Wireframing",
-            "description": "Erstellen Sie strukturierte Layouts und Nutzerflüsse, die die Grundlage für eine intuitive Navigation und Inhalts-Hierarchie bilden."
-          },
-          "visualDesign": {
-            "title": "Visuelles Design",
-            "description": "Verwandeln Sie Wireframes in beeindruckende visuelle Designs, die mit Ihrer Marke harmonieren und Ihre Nutzer begeistern."
-          },
-          "prototyping": {
-            "title": "Prototyping",
-            "description": "Intensives Testen auf verschiedenen Geräten und Plattformen, um einen fehlerfreien Start Ihres digitalen Produkts zu gewährleisten."
-          },
-          "testingLaunch": {
-            "title": "Testen & Einführung",
-            "description": "Intensives Testen auf verschiedenen Geräten und Plattformen, um einen fehlerfreien Start Ihres digitalen Produkts zu gewährleisten."
-          }
+      }
+    },
+    "process": {
+      "title": "Designentwicklung",
+      "steps": {
+        "research": {
+          "title": "Recherche & Entdeckung",
+          "description": "Wir tauchen tief in die Bedürfnisse Ihrer Nutzer, Markttrends und das Wettbewerbsumfeld ein, um fundierte Designentscheidungen zu treffen."
+        },
+        "wireframing": {
+          "title": "Wireframing",
+          "description": "Erstellen Sie strukturierte Layouts und Nutzerflüsse, die die Grundlage für eine intuitive Navigation und Inhalts-Hierarchie bilden."
+        },
+        "visualDesign": {
+          "title": "Visuelles Design",
+          "description": "Verwandeln Sie Wireframes in beeindruckende visuelle Designs, die mit Ihrer Marke harmonieren und Ihre Nutzer begeistern."
+        },
+        "prototyping": {
+          "title": "Prototyping",
+          "description": "Intensives Testen auf verschiedenen Geräten und Plattformen, um einen fehlerfreien Start Ihres digitalen Produkts zu gewährleisten."
+        },
+        "testingLaunch": {
+          "title": "Testen & Einführung",
+          "description": "Intensives Testen auf verschiedenen Geräten und Plattformen, um einen fehlerfreien Start Ihres digitalen Produkts zu gewährleisten."
         }
-      },
-      "portfolio": {
-        "title": "Unsere aktuellen",
-        "titleHighlight": "Arbeiten",
-        "categories": {
-          "uiUx": "UI/UX-Design",
-          "appDesign": "App-Design"
+      }
+    },
+    "portfolio": {
+      "title": "Unsere aktuellen",
+      "titleHighlight": "Arbeiten",
+      "categories": {
+        "fuzzed": {
+          "name": "Fuzzed - Figma-Design",
+          "content": "Fuzzed ist eine Dating-App.",
+          "design": "UI/UX-Design mit Figma"
+        },
+        "mastery": {
+          "name": "Mastery - Figma-Design",
+          "content": "Mastery Hub bietet fachkundige Schulungen, die darauf ausgelegt sind, Ihnen die Fähigkeiten und Kenntnisse zu vermitteln, die Sie für den Erfolg in Ihrem Bereich benötigen.",
+          "design": "UI/UX-Design mit Figma"
+        },
+        "wiefly": {
+          "name": "JobSeeker - Figma-Design",
+          "content": "JobSeek ist eine Plattform, auf der Menschen Jobs finden und Karriereberatung erhalten können.",
+          "design": "UI/UX-Design mit Figma"
         }
-      },
-      "faq": {
-        "items": {
-          "collaboration": {
-            "question": "Können Sie mit unserem Entwicklungsteam zusammenarbeiten?",
-            "answer": "Ja, wir integrieren uns nahtlos in Ihr Team, stellen klare Dokumentation bereit und pflegen während des gesamten Projekts eine offene Kommunikation."
-          },
-          "revisions": {
-            "question": "Bieten Sie Designrevisionen an?",
-            "answer": "Wir bieten mehrere Überarbeitungsrunden an, um Ihre vollständige Zufriedenheit mit dem finalen Design zu gewährleisten."
-          },
-          "timeline": {
-            "question": "Wie sieht Ihr typischer Projektzeitplan aus?",
-            "answer": "Die meisten Projekte dauern je nach Umfang und Komplexität 4-8 Wochen von der Konzeption bis zum Abschluss."
-          },
-          "designSystems": {
-            "question": "Bieten Sie Designsysteme an?",
-            "answer": "Ja, wir erstellen umfassende Designsysteme, um Konsistenz zu gewährleisten und die zukünftige Entwicklung zu beschleunigen."
-          }
+      }
+    },
+    "faq": {
+      "items": {
+        "collaboration": {
+          "question": "Können Sie mit unserem Entwicklungsteam zusammenarbeiten?",
+          "answer": "Ja, wir integrieren uns nahtlos in Ihr Team, stellen klare Dokumentation bereit und pflegen während des gesamten Projekts eine offene Kommunikation."
+        },
+        "revisions": {
+          "question": "Bieten Sie Designrevisionen an?",
+          "answer": "Wir bieten mehrere Überarbeitungsrunden an, um Ihre vollständige Zufriedenheit mit dem finalen Design zu gewährleisten."
+        },
+        "timeline": {
+          "question": "Wie sieht Ihr typischer Projektzeitplan aus?",
+          "answer": "Die meisten Projekte dauern je nach Umfang und Komplexität 4-8 Wochen von der Konzeption bis zum Abschluss."
+        },
+        "designSystems": {
+          "question": "Bieten Sie Designsysteme an?",
+          "answer": "Ja, wir erstellen umfassende Designsysteme, um Konsistenz zu gewährleisten und die zukünftige Entwicklung zu beschleunigen."
         }
       }
     }
   }
-  
+}

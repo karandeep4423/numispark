@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import {
   Clock,
   Code,
@@ -21,6 +21,8 @@ import FAQs from "@/components/Faqs/page";
 import Technologies from "@/components/Technologies/page";
 import HowAgencyWorks from "@/components/Process/page";
 import { useTranslation } from "next-i18next";
+import PortfolioModal from "@/components/PortfolioModal/page";
+
 const TECHNOLOGIES = [
   {
     name: "React Js",
@@ -91,27 +93,6 @@ const Benefits = [
   { translationKey: "dedicatedSupport", serviceIcon: "Headphones" },
 ];
 
-const portfolioItems = [
-  {
-    image: "/api/placeholder/400/400",
-    translationKey: "uiUx",
-    bgColor: "bg-violet-100",
-    dotColor: "bg-violet-500",
-  },
-  {
-    image: "/api/placeholder/400/400",
-    translationKey: "appDesign",
-    bgColor: "bg-emerald-600",
-    dotColor: "bg-emerald-500",
-  },
-  {
-    image: "/api/placeholder/400/400",
-    translationKey: "appDesign",
-    bgColor: "bg-amber-400",
-    dotColor: "bg-amber-500",
-  },
-];
-
 const steps = [
   {
     translationKey: "analysis",
@@ -135,8 +116,61 @@ const steps = [
   },
 ];
 
+const portfolioItems = [
+  {
+    image: "/portfolio/website1.png",
+    src: "https://privatehonors.com/",
+    translationName: "saas.portfolio.categories.private.name",
+    translationContent: "saas.portfolio.categories.private.content",
+    translationdesign: "saas.portfolio.categories.private.design",
+    translationfontendDevelopment:
+      "saas.portfolio.categories.private.frontendDevelopment",
+    translationbackendDevelopment:
+      "saas.portfolio.categories.private.backendDevelopment",
+    translationDatabase: "saas.portfolio.categories.private.database",
+    bgColor: "bg-violet-100",
+    dotColor: "bg-violet-500",
+  },
+  {
+    image: "/portfolio/ecommerce-black-cover.png",
+    src: ["/portfolio/saas.jpeg"],
+    translationName: "saas.portfolio.categories.aviators.name",
+    translationContent: "saas.portfolio.categories.aviators.content",
+    translationdesign: "saas.portfolio.categories.aviators.design",
+    translationfrontendDevelopment:
+      "saas.portfolio.categories.aviators.frontendDevelopment",
+    translationbackendDevelopment:
+      "saas.portfolio.categories.aviators.backendDevelopment",
+    translationDatabase: "saas.portfolio.categories.aviators.database",
+    translationKey: "appDesign",
+    bgColor: "bg-emerald-600",
+    dotColor: "bg-emerald-500",
+  },
+  {
+    image: "/portfolio/ecommerce-funding-cover.png",
+    src: ["/portfolio/saas3.webp"],
+    translationName: "saas.portfolio.categories.funding.name",
+    translationContent: "saas.portfolio.categories.funding.content",
+    translationdesign: "saas.portfolio.categories.funding.design",
+    translationfrontendDevelopment:
+      "saas.portfolio.categories.funding.frontendDevelopment",
+    translationbackendDevelopment:
+      "saas.portfolio.categories.funding.backendDevelopment",
+    translationDatabase: "saas.portfolio.categories.funding.database",
+    bgColor: "bg-amber-400",
+    dotColor: "bg-amber-500",
+  },
+];
+
 const SaaSDevelopment = () => {
   const { t } = useTranslation("saas");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedModal, setSelectedModal] = useState("");
+
+  const openModal = (item) => {
+    setSelectedModal(item);
+    setIsModalOpen(true);
+  };
 
   return (
     <div>
@@ -243,7 +277,7 @@ const SaaSDevelopment = () => {
       <HowAgencyWorks steps={steps} namespace="saas" />
 
       {/* Portfolio Section */}
-      <div className="max-w-7xl mx-auto px-4 py-12">
+      <div className="max-w-7xl mx-auto px-4 pt-12">
         <h2 className="text-4xl text-center font-bold text-gray-800">
           {t("saas.portfolio.title")}{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
@@ -254,20 +288,23 @@ const SaaSDevelopment = () => {
           {portfolioItems.map((item, index) => (
             <div
               key={index}
-              className={`shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] relative rounded-3xl p-6 ${item.bgColor}`}
+              className={`shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] relative rounded-3xl p-2 ${item.bgColor}`}
             >
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+              <div className="relative aspect-[4/3] rounded-2xl -mr-1 overflow-hidden mb-3">
                 <img
                   src={item.image}
-                  alt={t(`saas.portfolio.categories.${item.translationKey}`)}
-                  className="w-full h-full object-cover"
+                  alt={t(item.translationName)}
+                  className="w-full h-full object-fill"
                 />
               </div>
               <div className="flex justify-between items-center">
                 <h3 className="text-lg font-medium">
-                  {t(`saas.portfolio.categories.${item.translationKey}`)}
+                  {t(item.translationName)}
                 </h3>
-                <button className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors">
+                <button
+                  onClick={() => openModal(item)}
+                  className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors"
+                >
                   <ArrowUpRight className="w-6 h-6 text-white" />
                 </button>
               </div>
@@ -275,6 +312,12 @@ const SaaSDevelopment = () => {
           ))}
         </div>
       </div>
+      <PortfolioModal
+        item={selectedModal}
+        isOpen={isModalOpen}
+        setIsOpen={setIsModalOpen}
+        t={t}
+      />
 
       {/* FAQs Section */}
       <FAQs

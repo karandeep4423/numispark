@@ -1,4 +1,5 @@
 "use client";
+import React, { useState } from "react";
 import {
   FileType,
   ArrowUpRight,
@@ -25,6 +26,7 @@ import FAQs from "@/components/Faqs/page";
 import Technologies from "@/components/Technologies/page";
 import HowAgencyWorks from "@/components/Process/page";
 import { useTranslation } from "next-i18next";
+import PortfolioModal from "@/components/PortfolioModal/page";
 
 const TECHNOLOGIES = [
   {
@@ -43,122 +45,131 @@ const TECHNOLOGIES = [
 const steps = [
   {
     translationKey: "step1",
-    icon: <Brain className="text-white" size={80} />
+    icon: <Brain className="text-white" size={80} />,
   },
   {
     translationKey: "step2",
-    icon: <Search className="text-white" size={80} />
+    icon: <Search className="text-white" size={80} />,
   },
   {
     translationKey: "step3",
-    icon: <Pen className="text-white" size={80} />
+    icon: <Pen className="text-white" size={80} />,
   },
   {
     translationKey: "step4",
-    icon: <Palette className="text-white" size={80} />
+    icon: <Palette className="text-white" size={80} />,
   },
   {
     translationKey: "step5",
-    icon: <CloudDownload className="text-white" size={80} />
-  }
+    icon: <CloudDownload className="text-white" size={80} />,
+  },
 ];
 
 // Services array
 const Services = [
   {
     translationKey: "services.items.socialMediaDesign",
-    serviceIcon: Instagram
+    serviceIcon: Instagram,
   },
   {
     translationKey: "services.items.logoBrandIdentity",
-    serviceIcon: PenTool
+    serviceIcon: PenTool,
   },
   {
     translationKey: "services.items.brandKitDesign",
-    serviceIcon: PaletteIcon
+    serviceIcon: PaletteIcon,
   },
   {
     translationKey: "services.items.socialStrategy",
-    serviceIcon: Target
+    serviceIcon: Target,
   },
   {
     translationKey: "services.items.socialMediaTemplates",
-    serviceIcon: Copy
-  }
+    serviceIcon: Copy,
+  },
 ];
 
 // Features array
 const features = [
   {
     translationKey: "features.items.platformOptimization",
-    serviceIcon: Layout
+    serviceIcon: Layout,
   },
   {
     translationKey: "features.items.brandConsistency",
-    serviceIcon: PaletteIcon
+    serviceIcon: PaletteIcon,
   },
   {
     translationKey: "features.items.engagementFocus",
-    serviceIcon: MessageCircle
+    serviceIcon: MessageCircle,
   },
   {
     translationKey: "features.items.multiFormatDelivery",
-    serviceIcon: FileType
-  }
+    serviceIcon: FileType,
+  },
 ];
 
 // WhyUs array
 const WhyUs = [
   {
     translationKey: "whyUs.items.platformExpertise",
-    serviceIcon: Award
+    serviceIcon: Award,
   },
   {
     translationKey: "whyUs.items.brandFocusedDesign",
-    serviceIcon: Target
+    serviceIcon: Target,
   },
   {
     translationKey: "whyUs.items.engagementDriven",
-    serviceIcon: TrendingUp
+    serviceIcon: TrendingUp,
   },
   {
     translationKey: "whyUs.items.quickTurnaround",
-    serviceIcon: Clock
+    serviceIcon: Clock,
   },
   {
     translationKey: "whyUs.items.unlimitedRevisions",
-    serviceIcon: Cloud
+    serviceIcon: Cloud,
   },
   {
     translationKey: "whyUs.items.socialMediaStrategy",
-    serviceIcon: Target
-  }
+    serviceIcon: Target,
+  },
 ];
 
 // Portfolio items remain static if only images/categories are needed
 const portfolioItems = [
   {
-    image: "/api/placeholder/400/400",
-    translationKey: "portfolio.categories.uiUx",
+    image: "/portfolio/logo.webp",
+    src: ["/portfolio/logo3.webp", "/portfolio/logo.webp","/portfolio/logo2.webp"],
+    translationName: "socialMediaLogoDesign.portfolio.categories.logo",
     bgColor: "bg-violet-100",
-    dotColor: "bg-violet-500"
+    dotColor: "bg-violet-500",
   },
   {
-    image: "/api/placeholder/400/400",
-    translationKey: "portfolio.categories.appDesign",
-    bgColor: "bg-emerald-600",
-    dotColor: "bg-emerald-500"
-  },
-  {
-    image: "/api/placeholder/400/400",
-    translationKey: "portfolio.categories.appDesign",
+    image: "/portfolio/socialposter.png",
+    src: ["/portfolio/social1.jpg","/portfolio/social2.jpg"],
+    translationName: "socialMediaLogoDesign.portfolio.categories.social",
     bgColor: "bg-amber-400",
-    dotColor: "bg-amber-500"
-  }
+    dotColor: "bg-amber-500",
+  },
+  {
+    image: "/portfolio/other-design1.webp",
+    src: ["/portfolio/other-design1.webp","/portfolio/other-design2.webp","/portfolio/other-design3.jpg",],
+    translationName: "socialMediaLogoDesign.portfolio.categories.other",
+    bgColor: "bg-emerald-600",
+    dotColor: "bg-emerald-500",
+  },
 ];
-
 export default function SocialMediaLogoDesign() {
   const { t } = useTranslation("socialMediaLogoDesign");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedModal, setSelectedModal] = useState("");
+
+  const openModal = (item) => {
+    setSelectedModal(item);
+    setIsModalOpen(true);
+  };
 
   return (
     <div>
@@ -296,7 +307,7 @@ export default function SocialMediaLogoDesign() {
       <HowAgencyWorks steps={steps} namespace="socialMediaLogoDesign" />
 
       {/* Portfolio Section */}
-      <div className="max-w-7xl mx-auto px-4 py-12">
+      <div className="max-w-7xl mx-auto px-4 pt-12">
         <h2 className="text-4xl text-center font-bold text-gray-800">
           {t("socialMediaLogoDesign.portfolio.sectionTitle")}{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
@@ -307,18 +318,23 @@ export default function SocialMediaLogoDesign() {
           {portfolioItems.map((item, index) => (
             <div
               key={index}
-              className={`shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] relative rounded-3xl p-6 ${item.bgColor}`}
+              className={`shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] relative rounded-3xl p-2 ${item.bgColor}`}
             >
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+              <div className="relative aspect-[4/3] rounded-2xl -mr-1 overflow-hidden mb-3">
                 <img
                   src={item.image}
-                  alt={t(`socialMediaLogoDesign.${item.translationKey}`)}
-                  className="w-full h-full object-cover"
+                  alt={t(item.translationName)}
+                  className="w-full h-full object-fill"
                 />
               </div>
               <div className="flex justify-between items-center">
-                <h3 className="text-lg font-medium">{t(`socialMediaLogoDesign.${item.translationKey}`)}</h3>
-                <button className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors">
+                <h3 className="text-lg font-medium">
+                  {t(item.translationName)}
+                </h3>
+                <button
+                  onClick={() => openModal(item)}
+                  className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors"
+                >
                   <ArrowUpRight className="w-6 h-6 text-white" />
                 </button>
               </div>
@@ -326,12 +342,20 @@ export default function SocialMediaLogoDesign() {
           ))}
         </div>
       </div>
+      <PortfolioModal
+        item={selectedModal}
+        isOpen={isModalOpen}
+        setIsOpen={setIsModalOpen}
+        t={t}
+      />
 
       {/* FAQs Section */}
       <FAQs
-        faqData={Object.keys(t("socialMediaLogoDesign.faq.items", { returnObjects: true })).map((key) => ({
+        faqData={Object.keys(
+          t("socialMediaLogoDesign.faq.items", { returnObjects: true })
+        ).map((key) => ({
           question: t(`socialMediaLogoDesign.faq.items.${key}.question`),
-          answer: t(`socialMediaLogoDesign.faq.items.${key}.answer`)
+          answer: t(`socialMediaLogoDesign.faq.items.${key}.answer`),
         }))}
       />
 
