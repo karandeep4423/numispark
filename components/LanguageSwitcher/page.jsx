@@ -63,7 +63,28 @@ export default function LanguageSwitcher() {
     // Persist the selected language in a cookie (expires in 1 year)
     document.cookie = `userLocale=${code}; path=/; max-age=31536000`;
 
-    // Replace the first path segment with the selected language.
+    // Check if this is a blog post URL (contains '/blog/')
+    const isBlogPost = pathname.includes("/blog/");
+
+    if (isBlogPost) {
+      // For blog posts, we need to be extra careful with the path construction
+      const segments = pathname.split("/");
+
+      // Find the blog segment index
+      const blogIndex = segments.findIndex((segment) => segment === "blog");
+
+      if (blogIndex !== -1 && segments.length > blogIndex + 1) {
+        // Extract just the slug (the part after /blog/)
+        const slug = segments[blogIndex + 1];
+        // Construct a clean URL
+        const newPath = `/${code}/blog/${slug}`;
+        router.push(newPath);
+        setIsOpen(false);
+        return;
+      }
+    }
+
+    // For non-blog pages or if blog parsing fails, use the original logic
     const segments = pathname.split("/");
     if (segments.length > 1 && languages.some((l) => l.code === segments[1])) {
       segments[1] = code;
