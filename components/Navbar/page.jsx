@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "../../LanguageSwitcher/page";
+import LanguageSwitcher from "@/components/LanguageSwitcher/page";
 
 const Navbar = () => {
   const { t } = useTranslation("navbar");

@@ -2,12 +2,13 @@
 
 import { useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
+import i18n from '@/lib/i18n';
 
 export default function LanguageSwitcher() {
   const router = useRouter();
-  const pathname = usePathname(); // e.g. "/en/website-development"
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-  const [currentLang, setCurrentLang] = useState("en"); // default value
+  const [currentLang, setCurrentLang] = useState("fr"); // default to French
 
   const languages = [
     { code: "fr", label: "Français" },
@@ -17,6 +18,8 @@ export default function LanguageSwitcher() {
 
   // Helper function to read the userLocale cookie
   const getCookieLocale = () => {
+    if (typeof document === "undefined") return null;
+    
     const cookieString = document.cookie || "";
     const cookies = cookieString.split("; ").reduce((acc, cookie) => {
       const [key, value] = cookie.split("=");
@@ -26,8 +29,9 @@ export default function LanguageSwitcher() {
     return cookies.userLocale;
   };
 
-  // Determine the current language from the URL, cookie, or browser setting.
+  // Determine the current language
   useEffect(() => {
+    // Check for explicit locale in path
     let langFromPath = "";
     const pathSegments = pathname.split("/");
     if (
@@ -36,68 +40,73 @@ export default function LanguageSwitcher() {
     ) {
       langFromPath = pathSegments[1];
     }
+
+    // Get the cookie locale
     const cookieLang = getCookieLocale();
     let lang;
-    if (cookieLang && languages.some((l) => l.code === cookieLang)) {
-      // If there's a cookie, use it.
-      lang = cookieLang;
-    } else if (langFromPath) {
-      // Otherwise, if the URL contains a valid locale, use that.
+
+    if (langFromPath) {
+      // If URL has an explicit locale, it takes precedence
       lang = langFromPath;
+    } else if (cookieLang && languages.some((l) => l.code === cookieLang)) {
+      // If cookie is set and valid, use it
+      lang = cookieLang;
     } else {
-      // Fallback to the browser's language (or default "fr")
-      const browserLang = navigator.language.split("-")[0].toLowerCase();
-      lang = languages.some((l) => l.code === browserLang) ? browserLang : "fr";
+      // Default to French if no explicit locale is specified
+      lang = "fr";
     }
+
     setCurrentLang(lang);
-  }, [pathname]);
+
+    // Make sure i18n is synchronized
+    if (i18n.language !== lang) {
+      i18n.changeLanguage(lang);
+    }
+  }, [pathname, i18n]);
 
   // Handle language switch
   const handleLanguageChange = (code) => {
-    // If the language is already current, do nothing.
+    // If the language is already current, do nothing
     if (code === currentLang) {
       setIsOpen(false);
       return;
     }
 
-    // Persist the selected language in a cookie (expires in 1 year)
-    document.cookie = `userLocale=${code}; path=/; max-age=31536000`;
+    // Always persist the selected language in a cookie (expires in 1 year)
+    document.cookie = `userLocale=${code}; path=/; max-age=31536000; SameSite=Strict`;
 
-    // Check if this is a blog post URL (contains '/blog/')
-    const isBlogPost = pathname.includes("/blog/");
+    // Update i18n immediately
+    i18n.changeLanguage(code);
+    setCurrentLang(code);
 
-    if (isBlogPost) {
-      // For blog posts, we need to be extra careful with the path construction
-      const segments = pathname.split("/");
-
-      // Find the blog segment index
-      const blogIndex = segments.findIndex((segment) => segment === "blog");
-
-      if (blogIndex !== -1 && segments.length > blogIndex + 1) {
-        // Extract just the slug (the part after /blog/)
-        const slug = segments[blogIndex + 1];
-        // Construct a clean URL
-        const newPath = `/${code}/blog/${slug}`;
-        router.push(newPath);
-        setIsOpen(false);
-        return;
-      }
-    }
-
-    // For non-blog pages or if blog parsing fails, use the original logic
-    const segments = pathname.split("/");
-    if (segments.length > 1 && languages.some((l) => l.code === segments[1])) {
-      segments[1] = code;
+    // Construct the new URL
+    let newPath;
+    const pathWithoutLocale = removeLocaleFromPath(pathname);
+    
+    if (code === "fr") {
+      // For French, we don't add a locale prefix
+      newPath = pathWithoutLocale;
     } else {
-      // If no language segment exists, add it to the beginning.
-      segments.unshift(code);
+      // For other languages, we add the locale prefix
+      newPath = `/${code}${pathWithoutLocale}`;
     }
-    const newPath = segments.join("/") || `/${code}`;
+
     router.push(newPath);
     setIsOpen(false);
   };
 
-  // Get the label for the current language to display on the button.
+  // Helper to remove locale from path
+  const removeLocaleFromPath = (path) => {
+    const segments = path.split("/");
+    if (segments.length > 1 && languages.some((l) => l.code === segments[1])) {
+      // Remove the locale segment
+      segments.splice(1, 1);
+      return segments.join("/") || "/";
+    }
+    return path;
+  };
+
+  // Get the label for the current language
   const currentLanguageObj = languages.find(
     (lang) => lang.code === currentLang
   );
@@ -142,7 +151,11 @@ export default function LanguageSwitcher() {
               <button
                 key={lang.code}
                 onClick={() => handleLanguageChange(lang.code)}
-                className="w-full z-auto rounded-2xl text-left block px-4 py-2 text-sm text-gray-700 hover:bg-blue-600 hover:text-gray-100"
+                className={`w-full z-auto rounded-2xl text-left block px-4 py-2 text-sm ${
+                  lang.code === currentLang
+                    ? "bg-blue-100 text-blue-900"
+                    : "text-gray-700 hover:bg-blue-600 hover:text-gray-100"
+                }`}
                 role="menuitem"
               >
                 {lang.label}
