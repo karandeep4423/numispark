@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
-import i18n from '@/lib/i18n';
 
 export default function LanguageSwitcher() {
   const router = useRouter();
@@ -58,11 +57,7 @@ export default function LanguageSwitcher() {
 
     setCurrentLang(lang);
 
-    // Make sure i18n is synchronized
-    if (i18n.language !== lang) {
-      i18n.changeLanguage(lang);
-    }
-  }, [pathname, i18n]);
+  }, [pathname]);
 
   // Handle language switch
   const handleLanguageChange = (code) => {
@@ -74,10 +69,6 @@ export default function LanguageSwitcher() {
 
     // Always persist the selected language in a cookie (expires in 1 year)
     document.cookie = `userLocale=${code}; path=/; max-age=31536000; SameSite=Strict`;
-
-    // Update i18n immediately
-    i18n.changeLanguage(code);
-    setCurrentLang(code);
 
     // Construct the new URL
     let newPath;
