@@ -35,7 +35,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    setState((prev) => ({ ...prev, activeDropdown: "services" }));
+    setState((prev) => ({ ...prev, activeDropdown: "services"}));
   }, [pathname]);
 
   // toggleDropdown function to open and close the dropdown for services.
@@ -194,7 +194,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-blue-200">
+    <div className="bg-blue-200 sticky top-0 z-50">
       <nav className="z-30 flex justify-between gap-5 h-20 px-4 xl:px-0 max-w-screen-xl m-auto">
         <div className="flex items-center">
           <Link href="/">
@@ -231,7 +231,7 @@ const Navbar = () => {
           <Link onClick={toggleMenu} href="/contact-us">
             {t("navbar.links.contactUs")}
           </Link>
-          <Link href="/blog">Blog</Link>
+          <Link onClick={toggleMenu} href="/blog">Blog</Link>
           <Link
             className="hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] font-medium px-4 py-3 rounded-full bg-blue-600 text-white transition-all duration-300"
             onClick={toggleMenu}

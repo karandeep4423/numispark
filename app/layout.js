@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export default function RootLayout({ children, params }) {
+export default async function RootLayout({ children, params }) {
   // Get the language from params (passed from LangLayout)
-  const lang = params?.lang || 'en';
+  const lang = await params?.lang || 'fr';
   
   return (
     <html lang={lang}>
@@ -25,7 +25,7 @@ export default function RootLayout({ children, params }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ToastContainer autoClose={false} />
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
         <Footer />
       </body>

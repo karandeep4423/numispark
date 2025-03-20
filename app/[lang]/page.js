@@ -26,6 +26,8 @@ import Hero from "@/components/HomeHero/page";
 import { useTranslation } from "react-i18next";
 import PortfolioModal from "@/components/PortfolioModal/page";
 import React, { useState } from "react";
+import LogoCarousel from "@/components/Logo-clients/page";
+
 const TECHNOLOGIES = [
   {
     name: "React Js",
@@ -237,8 +239,10 @@ const portfolioItems = [
     translationName: "home.portfolio.categories.private.name",
     translationContent: "home.portfolio.categories.private.content",
     translationdesign: "home.portfolio.categories.private.design",
-    translationfrontendDevelopment: "home.portfolio.categories.private.frontendDevelopment",
-    translationbackendDevelopment: "home.portfolio.categories.private.backendDevelopment",
+    translationfrontendDevelopment:
+      "home.portfolio.categories.private.frontendDevelopment",
+    translationbackendDevelopment:
+      "home.portfolio.categories.private.backendDevelopment",
     translationDatabase: "home.portfolio.categories.private.database",
     bgColor: "bg-violet-100",
     dotColor: "bg-violet-500",
@@ -249,8 +253,10 @@ const portfolioItems = [
     translationName: "home.portfolio.categories.aviator.name",
     translationContent: "home.portfolio.categories.aviator.content",
     translationdesign: "home.portfolio.categories.aviator.design",
-    translationfrontendDevelopment: "home.portfolio.categories.aviator.frontendDevelopment",
-    translationbackendDevelopment: "home.portfolio.categories.aviator.backendDevelopment",
+    translationfrontendDevelopment:
+      "home.portfolio.categories.aviator.frontendDevelopment",
+    translationbackendDevelopment:
+      "home.portfolio.categories.aviator.backendDevelopment",
     translationDatabase: "home.portfolio.categories.aviator.database",
     translationKey: "appDesign",
     bgColor: "bg-emerald-600",
@@ -262,6 +268,17 @@ const portfolioItems = [
     bgColor: "bg-amber-400",
     dotColor: "bg-amber-500",
   },
+];
+
+const myCompanyLogos = [
+  "/portfolio/website1.png",
+  "/portfolio/website1.png",
+  "/portfolio/seo1.png",
+  "/portfolio/home-app.webp",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+  "https://cdn.brandfetch.io/idyLWe2HhF/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xd/xd-original.svg",
+  "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTYiIGhlaWdodD0iMjkyIiB2aWV3Qm94PSIwIDAgMjU2IDI5MiI+PHBhdGggZmlsbD0iIzk1YmY0NiIgZD0iTTIyMy43NzQgNTcuMzRjLS4yMDEtMS40Ni0xLjQ4LTIuMjY4LTIuNTM3LTIuMzU3YTE5NjE0IDE5NjE0IDAgMCAwLTIzLjM4My0xLjc0M3MtMTUuNTA3LTE1LjM5NS0xNy4yMDktMTcuMDk5Yy0xLjcwMy0xLjcwMy01LjAyOS0xLjE4NS02LjMyLS44MDVjLS4xOS4wNTYtMy4zODggMS4wNDMtOC42NzggMi42OGMtNS4xOC0xNC45MDYtMTQuMzIyLTI4LjYwNC0zMC40MDUtMjguNjA0Yy0uNDQ0IDAtLjkwMS4wMTgtMS4zNTguMDQ0QzEyOS4zMSAzLjQwNyAxMjMuNjQ0Ljc3OSAxMTguNzUuNzc5Yy0zNy40NjUgMC01NS4zNjQgNDYuODM1LTYwLjk3NiA3MC42MzVjLTE0LjU1OCA0LjUxMS0yNC45IDcuNzE4LTI2LjIyMSA4LjEzM2MtOC4xMjYgMi41NDktOC4zODMgMi44MDUtOS40NSAxMC40NjJDMjEuMyA5NS44MDYuMDM4IDI2MC4yMzUuMDM4IDI2MC4yMzVsMTY1LjY3OCAzMS4wNDJsODkuNzctMTkuNDJTMjIzLjk3MyA1OC44IDIyMy43NzUgNTcuMzRNMTU2LjQ5IDQwLjg0OGwtMTQuMDE5IDQuMzM5Yy4wMDUtLjk4OC4wMS0xLjk2LjAxLTMuMDIzYzAtOS4yNjQtMS4yODYtMTYuNzIzLTMuMzQ5LTIyLjYzNmM4LjI4NyAxLjA0IDEzLjgwNiAxMC40NjkgMTcuMzU4IDIxLjMybS0yNy42MzgtMTkuNDgzYzIuMzA0IDUuNzczIDMuODAyIDE0LjA1OCAzLjgwMiAyNS4yMzhjMCAuNTcyLS4wMDUgMS4wOTUtLjAxIDEuNjI0Yy05LjExNyAyLjgyNC0xOS4wMjQgNS44OS0yOC45NTMgOC45NjZjNS41NzUtMjEuNTE2IDE2LjAyNS0zMS45MDggMjUuMTYxLTM1LjgyOG0tMTEuMTMxLTEwLjUzN2MxLjYxNyAwIDMuMjQ2LjU0OSA0LjgwNSAxLjYyMmMtMTIuMDA3IDUuNjUtMjQuODc3IDE5Ljg4LTMwLjMxMiA0OC4yOTdsLTIyLjg4NiA3LjA4OEM3NS42OTQgNDYuMTYgOTAuODEgMTAuODI4IDExNy43MiAxMC44MjgiLz48cGF0aCBmaWxsPSIjNWU4ZTNlIiBkPSJNMjIxLjIzNyA1NC45ODNhMTk2MTQgMTk2MTQgMCAwIDAtMjMuMzgzLTEuNzQzcy0xNS41MDctMTUuMzk1LTE3LjIwOS0xNy4wOTljLS42MzctLjYzNC0xLjQ5Ni0uOTU5LTIuMzk0LTEuMDk5bC0xMi41MjcgMjU2LjIzM2w4OS43NjItMTkuNDE4UzIyMy45NzIgNTguOCAyMjMuNzc0IDU3LjM0Yy0uMjAxLTEuNDYtMS40OC0yLjI2OC0yLjUzNy0yLjM1NyIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Im0xMzUuMjQyIDEwNC41ODVsLTExLjA2OSAzMi45MjZzLTkuNjk4LTUuMTc2LTIxLjU4Ni01LjE3NmMtMTcuNDI4IDAtMTguMzA1IDEwLjkzNy0xOC4zMDUgMTMuNjkzYzAgMTUuMDM4IDM5LjIgMjAuOCAzOS4yIDU2LjAyNGMwIDI3LjcxMy0xNy41NzcgNDUuNTU4LTQxLjI3NyA0NS41NThjLTI4LjQ0IDAtNDIuOTg0LTE3LjctNDIuOTg0LTE3LjdsNy42MTUtMjUuMTZzMTQuOTUgMTIuODM1IDI3LjU2NSAxMi44MzVjOC4yNDMgMCAxMS41OTYtNi40OSAxMS41OTYtMTEuMjMyYzAtMTkuNjE2LTMyLjE2LTIwLjQ5MS0zMi4xNi01Mi43MjRjMC0yNy4xMjkgMTkuNDcyLTUzLjM4MiA1OC43NzgtNTMuMzgyYzE1LjE0NSAwIDIyLjYyNyA0LjMzOCAyMi42MjcgNC4zMzgiLz48L3N2Zz4=",
 ];
 
 export default function Home() {
@@ -278,7 +295,7 @@ export default function Home() {
     <div>
       {/* Hero Section */}
       <Hero technologies={TECHNOLOGIES} />
-
+      <LogoCarousel logos={myCompanyLogos} />
       {/* Services Section */}
       <div className="pt-16 bg-gray-50">
         <h2
@@ -390,7 +407,7 @@ export default function Home() {
               </div>
               <div className="flex justify-between items-center">
                 <h3 className="text-lg font-medium">
-                {t(item?.translationName)}
+                  {t(item?.translationName)}
                 </h3>
                 <button
                   onClick={() => openModal(item)}

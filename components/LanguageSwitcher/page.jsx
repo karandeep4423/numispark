@@ -1,19 +1,48 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useRouter, usePathname } from "next/navigation";
+import { createPortal } from "react-dom";
 
 export default function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [currentLang, setCurrentLang] = useState("fr"); // default to French
+  const [mounted, setMounted] = useState(false);
+  const buttonRef = useRef(null);
+  const dropdownRef = useRef(null);
 
   const languages = [
     { code: "fr", label: "Français" },
     { code: "en", label: "English" },
     { code: "de", label: "Deutsch" },
   ];
+
+  // Set mounted state once component is mounted
+  useEffect(() => {
+    setMounted(true);
+    return () => setMounted(false);
+  }, []);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target) &&
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   // Helper function to read the userLocale cookie
   const getCookieLocale = () => {
@@ -56,7 +85,6 @@ export default function LanguageSwitcher() {
     }
 
     setCurrentLang(lang);
-
   }, [pathname]);
 
   // Handle language switch
@@ -105,9 +133,22 @@ export default function LanguageSwitcher() {
     ? currentLanguageObj.label
     : "Select Language";
 
+  // Calculate dropdown position
+  const getDropdownPosition = () => {
+    if (!buttonRef.current) return { top: 0, left: 0, width: 0 };
+    
+    const rect = buttonRef.current.getBoundingClientRect();
+    return {
+      top: rect.bottom + window.scrollY,
+      left: rect.left + window.scrollX,
+      width: rect.width
+    };
+  };
+
   return (
     <div className="relative inline-block text-left">
       <button
+        ref={buttonRef}
         type="button"
         onClick={() => setIsOpen(!isOpen)}
         className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -130,8 +171,20 @@ export default function LanguageSwitcher() {
         </svg>
       </button>
 
-      {isOpen && (
-        <div className="origin-top-right z-auto absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+      {mounted && isOpen && createPortal(
+        <div 
+          ref={dropdownRef}
+          style={{
+            position: 'absolute',
+            zIndex: 99999,
+            top: getDropdownPosition().top,
+            left: getDropdownPosition().left,
+            width: getDropdownPosition().width,
+            mixBlendMode: 'normal',
+            isolation: 'isolate'
+          }}
+          className="rounded-md mt-1.5 shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+        >
           <div
             className="py-1"
             role="menu"
@@ -142,10 +195,10 @@ export default function LanguageSwitcher() {
               <button
                 key={lang.code}
                 onClick={() => handleLanguageChange(lang.code)}
-                className={`w-full z-auto rounded-2xl text-left block px-4 py-2 text-sm ${
+                className={`w-full text-left block px-4 py-2 text-sm ${
                   lang.code === currentLang
-                    ? "bg-blue-100 text-blue-900"
-                    : "text-gray-700 hover:bg-blue-600 hover:text-gray-100"
+                    ? "bg-blue-100 text-blue-900 rounded-2xl"
+                    : "text-gray-700 rounded-2xl hover:bg-blue-600 hover:text-gray-100"
                 }`}
                 role="menuitem"
               >
@@ -153,7 +206,8 @@ export default function LanguageSwitcher() {
               </button>
             ))}
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );
