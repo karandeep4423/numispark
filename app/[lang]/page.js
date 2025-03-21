@@ -27,6 +27,7 @@ import { useTranslation } from "react-i18next";
 import PortfolioModal from "@/components/PortfolioModal/page";
 import React, { useState } from "react";
 import LogoCarousel from "@/components/Logo-clients/page";
+import Link from "next/link";
 
 const TECHNOLOGIES = [
   {
@@ -155,30 +156,37 @@ const Services = [
   {
     serviceIcon: Code,
     translationKey: "webDevelopment",
+    href: "/website-development",
   },
   {
     serviceIcon: Smartphone,
     translationKey: "mobileAppDevelopment",
+    href: "/mobile-app-development",
   },
   {
     serviceIcon: Megaphone,
     translationKey: "digitalMarketing",
+    href: "/social-media-marketing",
   },
   {
     serviceIcon: Layout,
     translationKey: "uiUxDesign",
+    href: "/website-&-mobile-app-design",
   },
   {
     serviceIcon: Cloud,
     translationKey: "saasDevelopment",
+    href: "/saas-development",
   },
   {
     serviceIcon: Zap,
     translationKey: "aiAutomation",
+    href: "/ai-and-automation",
   },
   {
     serviceIcon: ShoppingCart,
     translationKey: "ecommerceDevelopment",
+    href: "/ecommerce-development",
   },
 ];
 
@@ -316,7 +324,7 @@ export default function Home() {
             const key = `home.services.items.${service.translationKey}`;
 
             return (
-              <div
+              <Link href={service?.href}
                 key={index}
                 className="flex flex-col items-center p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 md:hover:shadow-lg transition-shadow duration-300"
               >
@@ -329,7 +337,7 @@ export default function Home() {
                 <p className="text-gray-600 text-center">
                   {t(`${key}.description`)}
                 </p>
-              </div>
+              </Link>
             );
           })}
         </div>

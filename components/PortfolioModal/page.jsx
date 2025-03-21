@@ -5,7 +5,7 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 export default function PortfolioModal({ item, isOpen, setIsOpen, t }) {
   return (
     <Transition.Root show={isOpen} as={Fragment}>
-      <Dialog as="div" className="relative z-10" onClose={setIsOpen}>
+      <Dialog as="div" className="relative  z-10" onClose={setIsOpen}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -18,7 +18,7 @@ export default function PortfolioModal({ item, isOpen, setIsOpen, t }) {
           <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
         </Transition.Child>
 
-        <div className="fixed w-full inset-0 z-10 overflow-y-auto">
+        <div className="fixed mt-14 w-full inset-0 z-10 overflow-y-auto">
           <div className="flex w-full min-h-full items-center justify-center p-4 text-center">
             <Transition.Child
               as={Fragment}
