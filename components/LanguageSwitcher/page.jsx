@@ -276,6 +276,9 @@ export default function LanguageSwitcher() {
     const pathLang = getPathLocale(pathname);
     if (pathLang) {
       setCurrentLang(pathLang);
+    } else {
+      // If no language in path, assume it's French
+      setCurrentLang("fr");
     }
   }, [pathname]);
 
@@ -307,18 +310,19 @@ export default function LanguageSwitcher() {
     return null;
   };
 
-  // Helper to remove locale from path
-  const removeLocaleFromPath = (path) => {
+  // Helper to extract the path without locale
+  const getPathWithoutLocale = (path) => {
     const segments = path.split("/");
     if (segments.length > 1 && languages.some((l) => l.code === segments[1])) {
-      segments.splice(1, 1);
-      return segments.join("/") || "/";
+      // Remove the locale segment and join the rest
+      return "/" + segments.slice(2).join("/");
     }
+    // If no locale is present, return the original path
     return path;
   };
 
-  // Handle language switch with proper synchronization
-  const handleLanguageChange = async (code) => {
+  // Handle language switch with forced hard navigation
+  const handleLanguageChange = (code) => {
     // If the language is already current, do nothing
     if (code === currentLang) {
       setIsOpen(false);
@@ -331,25 +335,29 @@ export default function LanguageSwitcher() {
     // Always persist the selected language in a cookie (expires in 1 year)
     document.cookie = `userLocale=${code}; path=/; max-age=31536000; SameSite=Strict`;
 
-    // Construct the new URL
-    let newPath;
-    const pathWithoutLocale = removeLocaleFromPath(pathname);
+    // Extract the path without locale
+    const pathWithoutLocale = getPathWithoutLocale(pathname);
     
+    // Construct the new URL with appropriate prefix
+    let newPath;
     if (code === "fr") {
       // For French, we don't add a locale prefix
       newPath = pathWithoutLocale;
     } else {
       // For other languages, we add the locale prefix
-      newPath = `/${code}${pathWithoutLocale}`;
+      // Ensure we don't have double slashes
+      const cleanPath = pathWithoutLocale.startsWith('/') 
+        ? pathWithoutLocale 
+        : `/${pathWithoutLocale}`;
+      newPath = `/${code}${cleanPath}`;
     }
 
     // Close dropdown first
     setIsOpen(false);
     
-    // Wait a tick to ensure cookie is set
-    setTimeout(() => {
-      router.push(newPath);
-    }, 10);
+    // Perform a hard navigation by changing window.location
+    // This bypasses Next.js router caching issues
+    window.location.href = newPath;
   };
 
   // Get the label for the current language

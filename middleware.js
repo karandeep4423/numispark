@@ -88,23 +88,26 @@ export function middleware(request) {
     locale = hiddenLocale;
   }
 
-  // Check if pathname already has a locale
+  // Parse the pathname to check for locale prefix
   const pathSegments = pathname.split('/');
-  const pathLocale = pathSegments[1];
-  const hasLocalePrefix = supportedLocales.includes(pathLocale);
+  const firstSegment = pathSegments[1] || '';
+  const hasLocalePrefix = supportedLocales.includes(firstSegment);
+  const pathLocale = hasLocalePrefix ? firstSegment : null;
 
   // Case 1: URL already has a locale prefix
   if (hasLocalePrefix) {
+    // Check if the URL locale matches the desired locale from cookie
     if (pathLocale === locale) {
       // If URL locale matches the desired locale, proceed normally
       if (pathLocale === hiddenLocale) {
-        // For French, remove the prefix since it should be hidden
-        const newPathname = pathname.replace(`/${hiddenLocale}`, '') || '/';
-        return NextResponse.redirect(new URL(newPathname, request.url));
+        // For French, rewrite internally without modifying the URL
+        // This ensures French pages are served correctly but without /fr/ in URL
+        const newUrl = new URL(request.url);
+        return NextResponse.next();
       }
       return NextResponse.next();
     } else {
-      // If URL locale doesn't match the desired locale, redirect to the correct locale
+      // If URL locale doesn't match the cookie locale, redirect to correct locale
       const pathWithoutLocale = pathSegments.slice(2).join('/');
       const newPathname = locale === hiddenLocale
         ? `/${pathWithoutLocale}`
@@ -116,11 +119,14 @@ export function middleware(request) {
   // Case 2: URL doesn't have a locale prefix
   else {
     if (locale === hiddenLocale) {
-      // For French (hidden locale), just proceed without modifying the URL
-      return NextResponse.rewrite(new URL(`/${hiddenLocale}${pathname}`, request.url));
+      // For French (hidden locale), rewrite internally to include /fr/
+      // This makes Next.js find the correct page without changing the URL
+      const newUrl = new URL(`/${hiddenLocale}${pathname}`, request.url);
+      return NextResponse.rewrite(newUrl);
     } else {
       // For other locales, redirect to add the locale prefix
-      return NextResponse.redirect(new URL(`/${locale}${pathname}`, request.url));
+      const newPath = `/${locale}${pathname}`;
+      return NextResponse.redirect(new URL(newPath, request.url));
     }
   }
 }
