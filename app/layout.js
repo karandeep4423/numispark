@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 
 export default async function RootLayout({ children, params }) {
   // Get the language from params (passed from LangLayout)
-  const lang = await params?.lang || 'fr';
-  
+  const paramData = await params;
+  const lang = paramData?.lang || 'fr';
   return (
     <html lang={lang}>
       <body
