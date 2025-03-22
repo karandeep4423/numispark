@@ -3,7 +3,8 @@ import BlogCard from '@/components/blog/BlogCard';
 import BlogHeader from '@/components/blog/BlogHeader';
 
 export default async function BlogPage({ params }) {
-  const { lang } = params;
+  const paramData = await params;
+  const lang = paramData?.lang;
   const posts = getAllPosts(lang);
   
   return (

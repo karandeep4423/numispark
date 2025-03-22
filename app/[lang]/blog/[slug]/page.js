@@ -5,12 +5,13 @@ import BlogHeader from '@/components/blog/BlogHeader';
 import { parseISO, format } from 'date-fns';
 
 export async function generateStaticParams() {
-  const posts = getAllPostSlugs();
+  const posts = await getAllPostSlugs();
   return posts;
 }
 
 export async function generateMetadata({ params }) {
-  const { lang, slug } = params;
+  const paramData = await params;
+  const { lang, slug } = paramData;
   const post = getPostBySlug(slug, lang);
   
   // Handle not found case
@@ -33,8 +34,8 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function BlogPostPage({ params }) {
-  const { lang, slug } = params;
-  
+  const paramData = await params;
+  const { lang, slug } = paramData;  
   // Redirect to 404 if slug is invalid
   if (!slug || typeof slug !== 'string') {
     return notFound();

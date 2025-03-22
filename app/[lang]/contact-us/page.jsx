@@ -1,8 +1,10 @@
 import React from "react";
 import Contact from "@/components/contact-us/page";
 
-export async function generateMetadata({ params: { lang } }) {
+export async function generateMetadata({ params}) {
   // Load translations directly from JSON files
+  const paramData = await params;
+  const lang = paramData?.lang;
   const translations = await import(
     `@/public/locales/${lang}/metaData.json`
   );
