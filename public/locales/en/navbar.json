@@ -6,7 +6,8 @@
       "services": "Services",
       "aboutUs": "About Us",
       "contactUs": "Contact Us",
-      "startProject": "Start a Project"
+      "startProject": "Start a Project",
+      "portfolio": "Portfolio"
     },
     "dropdown": {
       "developmentServices": {

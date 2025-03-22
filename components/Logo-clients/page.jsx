@@ -55,7 +55,7 @@ const LogoCarousel = ({ logos }) => {
       {/* Left Arrow Button */}
       <button
         onClick={handleLeftClick}
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition-colors"
+        className="absolute left-1 top-1/2 transform -translate-y-1/2 z-10 bg-blue-200 text-white p-2 rounded-full hover:bg-blue-600 transition-colors"
       >
         ←
       </button>
@@ -105,7 +105,7 @@ const LogoCarousel = ({ logos }) => {
       {/* Right Arrow Button */}
       <button
         onClick={handleRightClick}
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 transition-colors"
+        className="absolute right-1 top-1/2 transform -translate-y-1/2 z-10 bg-blue-200 text-white p-2 rounded-full hover:bg-blue-600 transition-colors"
       >
         →
       </button>

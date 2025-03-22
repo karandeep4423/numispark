@@ -225,11 +225,11 @@ const Navbar = () => {
             {t("navbar.links.home")}
           </Link>
           {renderDropdown("services", serviceItems)}
+          <Link onClick={toggleMenu} href="/portfolio">
+            {t("navbar.links.portfolio")}
+          </Link>
           <Link onClick={toggleMenu} href="/about-us">
             {t("navbar.links.aboutUs")}
-          </Link>
-          <Link onClick={toggleMenu} href="/contact-us">
-            {t("navbar.links.contactUs")}
           </Link>
           <Link onClick={toggleMenu} href="/blog">Blog</Link>
           <Link

@@ -51,6 +51,7 @@ const Footer = () => {
             </h2>
             <Link href="/">{t("footer.navigation.links.home")}</Link>
             <Link href="/about-us">{t("footer.navigation.links.aboutUs")}</Link>
+            <Link href="/portfolio">{t("footer.navigation.links.portfolio")}</Link>
             <Link href="/contact-us">{t("footer.navigation.links.contactUs")}</Link>
           </div>
 
