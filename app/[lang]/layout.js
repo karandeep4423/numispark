@@ -1,15 +1,23 @@
 import { Providers } from "./providers";
-
+import "../globals.css";
+import Navbar from "@/components/Navbar/page";
+import Footer from "@/components/Footer/page";
 export default async function LangLayout({ children, params }) {
   const paramData = await params;
   const lang = paramData?.lang;
-  return <Providers lang={lang}>{children}</Providers>;
+  return (
+    <Providers lang={lang}>
+      <Navbar />
+      {children}
+      <Footer />
+    </Providers>
+  );
 }
 
 export async function generateMetadata({ params }) {
   const paramData = await params;
-  const language = paramData?.lang; 
-   if (!language) {
+  const language = paramData?.lang;
+  if (!language) {
     return {
       title: "Default Title",
       description: "Default Description",
