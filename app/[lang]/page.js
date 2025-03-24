@@ -28,6 +28,8 @@ import PortfolioModal from "@/components/PortfolioModal/page";
 import React, { useState } from "react";
 import LogoCarousel from "@/components/Logo-clients/page";
 import Link from "next/link";
+import ImageCarousel from "@/components/ImageCarousel/page";
+import Feedback from "@/components/Feedback/page";
 
 const TECHNOLOGIES = [
   {
@@ -434,6 +436,9 @@ export default function Home() {
         setIsOpen={setIsModalOpen}
         t={t}
       />
+      {/* Image Carousel Section */}
+      <ImageCarousel/>
+      <Feedback/>
       {/* FAQs Section */}
       <FAQs
         faqData={Object.keys(t("home.faq.items", { returnObjects: true })).map(
