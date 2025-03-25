@@ -21,9 +21,16 @@ import LanguageSwitcher from "@/components/LanguageSwitcher/page";
 const Navbar = () => {
   const { t } = useTranslation("navbar");
   const pathname = usePathname();
+  const [stateNav, setStateNav] = useState({
+    // isMenuOpen: false,
+    activeDropdown: null,
+    scrollDirection: "up",
+    isScrolled: false,
+    lastScrollTop: 0,
+  });
   const [state, setState] = useState({
     isMenuOpen: false,
-    activeDropdown: "services",
+    activeDropdown: null, // Change initial state to null
   });
 
   // toggleMenu(parent) function to open and close the menu for mobile view.
@@ -35,8 +42,32 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    setState((prev) => ({ ...prev, activeDropdown: "services"}));
+    // Reset activeDropdown when pathname changes
+    setState((prev) => ({ ...prev, activeDropdown: null }));
   }, [pathname]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      setState((prev) => {
+        const newScrollDirection =
+          currentScrollTop > prev.lastScrollTop ? "down" : "up";
+        const isScrolled = currentScrollTop > 100; // Adjust this value to control when navbar changes
+
+        return {
+          ...prev,
+          scrollDirection: newScrollDirection,
+          isScrolled: isScrolled,
+          lastScrollTop: currentScrollTop,
+        };
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // toggleDropdown function to open and close the dropdown for services.
   const toggleDropdown = (id) => {
@@ -145,6 +176,12 @@ const Navbar = () => {
       <div className="dropdown group">
         {/*Button to toggle the dropdown for services for mobile view. */}
         <button
+          onMouseEnter={() => {
+            // Always allow hover to open dropdown on larger screens
+            if (window.innerWidth >= 1024) {
+              setState((prev) => ({ ...prev, activeDropdown: id }));
+            }
+          }}
           onClick={() => toggleDropdown(id)}
           className="flex items-center hover:font-bold relative lg:py-5 cursor-pointer"
         >
@@ -177,7 +214,10 @@ const Navbar = () => {
                       href={link}
                       onClick={() => {
                         toggleMenu();
-                        toggleDropdown(id);
+                        // Close dropdown only on mobile
+                        if (window.innerWidth < 1024) {
+                          toggleDropdown(id);
+                        }
                       }}
                     >
                       {label}
@@ -194,13 +234,33 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-blue-200 sticky top-0 z-50">
+    <div
+      className={`
+        fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out
+        ${
+          state.isScrolled && state.scrollDirection === "down"
+            ? "opacity-70 h-20 my-4 -mt-2  px-4 mx-6 rounded-full translate-y-0"
+            : "opacity-100 h-20 translate-y-0"
+        }
+        ${
+          state.isScrolled
+            ? "bg-blue-200/70 backdrop-blur-sm my-4 px-4 mx-6 rounded-full"
+            : "bg-blue-200 relative"
+        }
+      `}
+      style={{
+        transform:
+          state.isScrolled && state.scrollDirection === "down"
+            ? "translateY(-100%)"
+            : "translateY(0)",
+        transition: "transform 0.3s ease-in-out, opacity 0.3s ease-in-out",
+      }}
+    >
       <nav className="z-30 flex justify-between gap-5 h-20 px-4 xl:px-0 max-w-screen-xl m-auto">
         <div className="flex items-center">
-          <Link href="/">
-            <p className="w-44 h-8 font-extrabold text-xl">
-              {t("navbar.brand")}
-            </p>
+          <Link className="w-44 h-8 font-extrabold text-2xl" href="/">
+            <span className="border-4 border-blue-600 ">Numi</span>
+            <span className="text-blue-600">Spark</span>
           </Link>
         </div>
 
@@ -231,7 +291,9 @@ const Navbar = () => {
           <Link onClick={toggleMenu} href="/about-us">
             {t("navbar.links.aboutUs")}
           </Link>
-          <Link onClick={toggleMenu} href="/blog">Blog</Link>
+          <Link onClick={toggleMenu} href="/blog">
+            Blog
+          </Link>
           <Link
             className="hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] font-medium px-4 py-3 rounded-full bg-blue-600 text-white transition-all duration-300"
             onClick={toggleMenu}

@@ -14,10 +14,11 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="flex flex-col items-center space-y-4 pt-10 w-64">
             <Link
-              className="font-bold text-gray-800 text-xl p-2.5 border-2 border-gray-800"
+              className="font-extrabold text-2xl p-2.5"
               href="/"
             >
-              {t("footer.brand")}
+              <span className="border-4 border-blue-600 ">Numi</span>
+              <span className="text-blue-600">Spark</span>
             </Link>
             {/* Social Icons */}
             <div className="flex gap-4">
@@ -35,10 +36,17 @@ const Footer = () => {
               >
                 <Facebook className="w-10 h-10 text-blue-600 hover:text-blue-400 transition-colors" />
               </Link>
-              <Link href="/" target="_blank" aria-label={t("footer.social.whatsapp")}>
+              <Link
+                href="/"
+                target="_blank"
+                aria-label={t("footer.social.whatsapp")}
+              >
                 <MessageCircle className="w-10 h-10 text-blue-600 hover:text-blue-400 transition-colors" />
               </Link>
-              <a href="mailto:contact@privatehonors.com" aria-label={t("footer.social.email")}>
+              <a
+                href="mailto:contact@privatehonors.com"
+                aria-label={t("footer.social.email")}
+              >
                 <Mail className="w-11 h-11 text-blue-600 hover:text-blue-400 transition-colors" />
               </a>
             </div>
@@ -51,8 +59,12 @@ const Footer = () => {
             </h2>
             <Link href="/">{t("footer.navigation.links.home")}</Link>
             <Link href="/about-us">{t("footer.navigation.links.aboutUs")}</Link>
-            <Link href="/portfolio">{t("footer.navigation.links.portfolio")}</Link>
-            <Link href="/contact-us">{t("footer.navigation.links.contactUs")}</Link>
+            <Link href="/portfolio">
+              {t("footer.navigation.links.portfolio")}
+            </Link>
+            <Link href="/contact-us">
+              {t("footer.navigation.links.contactUs")}
+            </Link>
           </div>
 
           {/* Development Services Section */}

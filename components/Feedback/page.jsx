@@ -239,7 +239,7 @@ export default function Feedback() {
 
       {/* Container with fixed height and overflow hidden */}
       <div
-        className="h-96 relative overflow-hidden mt-8"
+        className="h-96  relative overflow-hidden mt-8"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
