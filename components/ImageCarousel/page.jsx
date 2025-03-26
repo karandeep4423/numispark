@@ -1,5 +1,19 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import LogoCarousel from "@/components/Logo-clients/page";
+
+const schoolLogos = [ 
+  "/client/school/school1.jpeg",
+  "/client/school/school2.jpeg", 
+  "/client/school/school3.jpeg",
+  "/client/school/school4.jpeg",
+  "/client/school/school5.jpeg",
+  "/client/school/school6.jpeg",
+  "/client/school/school8.jpeg",
+  "/client/school/school9.jpeg",
+  "/client/school/school10.jpeg",
+  "/client/school/school11.jpeg",
+];
 
 export default function ImageCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -97,6 +111,7 @@ export default function ImageCarousel() {
         Our Gallery
       </h2>
       <p className="text-center  text-gray-600 pb-5"> Team members in school lectures and conferences for Development,Marketing and Design.</p>
+      <LogoCarousel logos={schoolLogos} />
       <div
         className="flex  transition-transform duration-300"
         style={{

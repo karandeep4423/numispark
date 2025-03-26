@@ -51,7 +51,7 @@ const Navbar = () => {
       const currentScrollTop =
         window.pageYOffset || document.documentElement.scrollTop;
 
-      setState((prev) => {
+      setStateNav((prev) => {
         const newScrollDirection =
           currentScrollTop > prev.lastScrollTop ? "down" : "up";
         const isScrolled = currentScrollTop > 100; // Adjust this value to control when navbar changes
@@ -236,21 +236,21 @@ const Navbar = () => {
   return (
     <div
       className={`
-        fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out
+        fixed  top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out
         ${
-          state.isScrolled && state.scrollDirection === "down"
+          stateNav.isScrolled && stateNav.scrollDirection === "down"
             ? "opacity-70 h-20 my-4 -mt-2  px-4 mx-6 rounded-full translate-y-0"
-            : "opacity-100 h-20 translate-y-0"
+            : "opacity-100 h-20  translate-y-0"
         }
         ${
-          state.isScrolled
-            ? "bg-blue-200/70 backdrop-blur-sm my-4 px-4 mx-6 rounded-full"
+          stateNav.isScrolled
+            ? "bg-blue-200/70  backdrop-blur-sm my-4 px-4 mx-6 rounded-full"
             : "bg-blue-200 relative"
         }
       `}
       style={{
         transform:
-          state.isScrolled && state.scrollDirection === "down"
+        stateNav.isScrolled && stateNav.scrollDirection === "down"
             ? "translateY(-100%)"
             : "translateY(0)",
         transition: "transform 0.3s ease-in-out, opacity 0.3s ease-in-out",
@@ -276,9 +276,9 @@ const Navbar = () => {
 
         <div
           className={`lg:space-x-5 gap-y-4 text-lg absolute justify-between flex flex-col items-center lg:flex-row z-50 lg:static lg:w-auto lg:py-0 pb-6 w-full left-0 ${
-            state.isMenuOpen
+            state.isMenuOpen && window.innerWidth < 1024
               ? "top-[64px] z-50 overflow-scroll lg:overflow-hidden bg-blue-200 pt-6"
-              : "hidden lg:flex"
+              : "hidden  lg:flex"
           }`}
         >
           <Link onClick={toggleMenu} href="/">

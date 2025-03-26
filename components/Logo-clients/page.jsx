@@ -51,7 +51,7 @@ const LogoCarousel = ({ logos }) => {
   };
 
   return (
-    <div className="relative w-full">
+    <div className="relative  w-full">
       {/* Left Arrow Button */}
       <button
         onClick={handleLeftClick}
@@ -62,13 +62,13 @@ const LogoCarousel = ({ logos }) => {
 
       {/* Viewport containing the scrolling logos */}
       <div className="overflow-hidden">
-        <div ref={innerRef} className="flex flex-nowrap gap-8">
+        <div ref={innerRef} className="flex py-3 flex-nowrap gap-8">
           {/* First set of logos */}
           {logos.map((logo, index) => (
             <img
               key={index}
               src={logo}
-              className="h-16" // No margin or padding to ensure no space between logos
+              className="h-20" // No margin or padding to ensure no space between logos
               alt={`Company logo ${index + 1}`}
             />
           ))}
@@ -77,7 +77,7 @@ const LogoCarousel = ({ logos }) => {
             <img
               key={index + logos.length}
               src={logo}
-              className="h-16"
+              className="h-20"
               alt={`Company logo ${index + 1}`}
             />
           ))}
@@ -86,7 +86,7 @@ const LogoCarousel = ({ logos }) => {
             <img
               key={index + logos.length}
               src={logo}
-              className="h-16"
+              className="h-20"
               alt={`Company logo ${index + 1}`}
             />
           ))}
@@ -95,7 +95,7 @@ const LogoCarousel = ({ logos }) => {
             <img
               key={index + logos.length}
               src={logo}
-              className="h-16"
+              className="h-20"
               alt={`Company logo ${index + 1}`}
             />
           ))}

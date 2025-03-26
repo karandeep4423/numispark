@@ -169,31 +169,24 @@ export default function Feedback() {
   const containerRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
 
-  const images = [
+  const Testimonials = [
     {
-      src: "/gallery/seo-cours.jpeg",
+      src: "/client/15.jpeg",
       alt: "Conference 2",
-      name: "Paul ceo of xyz",
+      name: "Lydia DUAN- Project manager",
       feedback:
         "Zaryab Birmingham,UKunjabi Lesson teachers are cooperative and helpful with myself when it comes to learning Punjabi; currently, we are focusing on writing, and I am enjoying it.",
     },
     {
-      src: "/gallery/seo-lecture.jpeg",
+      src:  "/client/13.jpeg",
       alt: "Conference 1",
       name: "Ruksar ceo of MOtivation",
       feedback:
         "Zaryab Birmingham,UKunjabi Lesson teachers are cooperative and helpful with myself when it comes to learning Punjabi; currently, we are focusing on writing, and I am enjoying it.",
     },
     {
-      src: "/gallery/seo-lecture1.jpeg",
-      alt: "Conference 2",
-      name: "Paul ceo of xyz",
-      feedback:
-        "Zaryab Birmingham,UKunjabi Lesson teachers are cooperative and helpful with myself when it comes to learning Punjabi; currently, we are focusing on writing, and I am enjoying it.",
-    },
-    {
-      src: "/gallery/copywriting1.jpeg",
-      alt: "Conference 1",
+      src:  "/client/school/school2.jpeg",
+      alt: "Conference rocket school",
       name: "Ruksar ceo of MOtivation",
       feedback:
         "Zaryab Birmingham,UKunjabi Lesson teachers are cooperative and helpful with myself when it comes to learning Punjabi; currently, we are focusing on writing, and I am enjoying it.",
@@ -201,7 +194,7 @@ export default function Feedback() {
   ];
 
   // Clone testimonials for continuous loop
-  const allTestimonials = [...images, ...images];
+  const allTestimonials = [...Testimonials, ...Testimonials];
 
   useEffect(() => {
     const container = containerRef.current;
