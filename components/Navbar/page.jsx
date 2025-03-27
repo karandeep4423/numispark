@@ -22,12 +22,11 @@ const Navbar = () => {
   const { t } = useTranslation("navbar");
   const pathname = usePathname();
   const [stateNav, setStateNav] = useState({
-    // isMenuOpen: false,
-    activeDropdown: null,
     scrollDirection: "up",
     isScrolled: false,
     lastScrollTop: 0,
   });
+
   const [state, setState] = useState({
     isMenuOpen: false,
     activeDropdown: null, // Change initial state to null
@@ -238,19 +237,23 @@ const Navbar = () => {
       className={`
         fixed  top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out
         ${
-          stateNav.isScrolled && stateNav.scrollDirection === "down"
-            ? "opacity-70 h-20 my-4 -mt-2  px-4 mx-6 rounded-full translate-y-0"
+          window.innerWidth > 1024 &&
+          stateNav.isScrolled &&
+          stateNav.scrollDirection === "down"
+            ? "opacity-70 h-20 my-4  -mt-2  px-4 mx-6 rounded-full translate-y-0"
             : "opacity-100 h-20  translate-y-0"
         }
         ${
-          stateNav.isScrolled
+          window.innerWidth > 1024 && stateNav.isScrolled
             ? "bg-blue-200/70  backdrop-blur-sm my-4 px-4 mx-6 rounded-full"
             : "bg-blue-200 relative"
         }
       `}
       style={{
         transform:
-        stateNav.isScrolled && stateNav.scrollDirection === "down"
+          window.innerWidth > 1024 &&
+          stateNav.isScrolled &&
+          stateNav.scrollDirection === "down"
             ? "translateY(-100%)"
             : "translateY(0)",
         transition: "transform 0.3s ease-in-out, opacity 0.3s ease-in-out",

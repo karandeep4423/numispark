@@ -225,14 +225,14 @@ export default function Feedback() {
   }, [isHovered]);
 
   return (
-    <div className="max-w-7xl relative mx-auto px-2">
+    <div className="max-w-7xl  relative mx-auto px-2">
       <h2 className="text-4xl text-center mt-10 font-bold text-gray-800">
         Our Clients Feedback
       </h2>
 
       {/* Container with fixed height and overflow hidden */}
       <div
-        className="h-96  relative overflow-hidden mt-8"
+        className="h-screen  relative overflow-hidden mt-8"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
