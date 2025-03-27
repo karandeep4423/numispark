@@ -2,9 +2,9 @@
 // import Image from "next/image";
 // import LogoCarousel from "@/components/Logo-clients/page";
 
-// const schoolLogos = [ 
+// const schoolLogos = [
 //   "/client/school/school1.jpeg",
-//   "/client/school/school2.jpeg", 
+//   "/client/school/school2.jpeg",
 //   "/client/school/school3.jpeg",
 //   "/client/school/school4.jpeg",
 //   "/client/school/school5.jpeg",
@@ -169,14 +169,14 @@
 //   );
 // }
 
-
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import LogoCarousel from "@/components/Logo-clients/page";
+import { useTranslation } from "react-i18next";
 
-const schoolLogos = [ 
+const schoolLogos = [
   "/client/school/school1.jpeg",
-  "/client/school/school2.jpeg", 
+  "/client/school/school2.jpeg",
   "/client/school/school3.jpeg",
   "/client/school/school4.jpeg",
   "/client/school/school5.jpeg",
@@ -191,6 +191,7 @@ export default function ImageCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoplay, setIsAutoplay] = useState(true);
   const [slidesPerView, setSlidesPerView] = useState(1);
+  const { t } = useTranslation("home");
 
   const images = [
     {
@@ -279,11 +280,14 @@ export default function ImageCarousel() {
 
   return (
     <div className="max-w-7xl relative mx-auto overflow-x-hidden px-2">
-      <h2 className="text-4xl text-center mt-5 font-bold text-gray-800">
-        Our Gallery
+      <h2 className="text-4xl text-center mt-10 font-bold text-gray-800">
+        {t("home.gallery.title")}
+        <span className="text-blue-600 ml-2 bg-blue-200 p-1.5 rounded-2xl">
+          {t("home.gallery.titleHighlight")}
+        </span>
       </h2>
-      <p className="text-center text-gray-600 pb-5"> 
-        Team members in school lectures and conferences for Development,Marketing and Design.
+      <p className="text-center text-gray-600 py-3">
+        {t("home.gallery.description")}
       </p>
       <LogoCarousel logos={schoolLogos} />
       <div className="relative">
@@ -312,7 +316,7 @@ export default function ImageCarousel() {
             </div>
           ))}
         </div>
-        
+
         {/* Centered Navigation Buttons */}
         <div className="absolute top-1/2 left-0 right-0 flex justify-between items-center transform -translate-y-1/2 px-4">
           <button

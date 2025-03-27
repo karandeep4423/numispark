@@ -20,6 +20,7 @@ import LanguageSwitcher from "@/components/LanguageSwitcher/page";
 
 const Navbar = () => {
   const { t } = useTranslation("navbar");
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
   const pathname = usePathname();
   const [stateNav, setStateNav] = useState({
     scrollDirection: "up",
@@ -39,6 +40,15 @@ const Navbar = () => {
       isMenuOpen: !prevState.isMenuOpen,
     }));
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth > 1024);
+    };
+    handleResize(); // Set initial value
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     // Reset activeDropdown when pathname changes
@@ -237,21 +247,21 @@ const Navbar = () => {
       className={`
         fixed  top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out
         ${
-          window.innerWidth > 1024 &&
+          isLargeScreen &&
           stateNav.isScrolled &&
           stateNav.scrollDirection === "down"
             ? "opacity-70 h-20 my-4  -mt-2  px-4 mx-6 rounded-full translate-y-0"
             : "opacity-100 h-20  translate-y-0"
         }
         ${
-          window.innerWidth > 1024 && stateNav.isScrolled
+          isLargeScreen && stateNav.isScrolled
             ? "bg-blue-200/70  backdrop-blur-sm my-4 px-4 mx-6 rounded-full"
             : "bg-blue-200 relative"
         }
       `}
       style={{
         transform:
-          window.innerWidth > 1024 &&
+          isLargeScreen &&
           stateNav.isScrolled &&
           stateNav.scrollDirection === "down"
             ? "translateY(-100%)"

@@ -121,6 +121,35 @@
         "appDesign": "Conception d'applications"
       }
     },
+    "testimonials": {
+      "title": "Nos Clients",
+      "titleHighlight": "Témoignages",
+      "feedback1": {
+        "alt": "seo-blog-article-feedback",
+        "name": "Lydia DUAN - Chef de projet",
+        "feedback": "Thomas a rédigé plusieurs articles de blog SEO en espagnol pour notre client spécialisé dans le voyage et le tourisme. Les articles qu'il a écrits sont de haute qualité et son style d'écriture est très flexible. Merci beaucoup pour ton travail, Thomas !"
+      },
+      "feedback2": {
+        "alt": "web-development-feedback",
+        "name": "Olivier LENOIR - Dirigeant",
+        "feedback": "Nous travaillons depuis plus d'un an presque quotidiennement avec Thomas. Il est toujours très impliqué et engagé pour mener au mieux les missions confiées. Il aime être force de proposition. Toujours disponible et agréable, je recommande vivement !!!"
+      },
+      "feedback3": {
+        "alt": "app-development-feedback",
+        "name": "Claire MAINAUD - Coach en développement personnel",
+        "feedback": "J'ai fait appel à Thomas pour mon site internet et ma stratégie de communication. Il est très agréable, s'est montré d'une grande disponibilité, force de proposition, et très à l'écoute. Je vous recommande de prendre contact avec lui pour vos projets professionnels, car je n'ai aucun doute qu'il saura répondre également à vos attentes ! Je n'hésite pas, en tout cas, à parler de lui à mon entourage !"
+      },
+      "feedback4": {
+        "alt": "seo-article-feedback",
+        "name": "Léo NISHIBAYASHI - Responsable pédagogique",
+        "feedback": "Thomas Pialles a été un excellent formateur dans notre école, la Rocket School ! Nous avons fait appel à lui pour une formation d'une semaine en copywriting et content marketing pour une promotion de Growth Hacker. Nos apprenants ont beaucoup apprécié son intervention ! Thomas est professionnel et possède une très bonne pédagogie : il sait s'adapter aux besoins de l'école et des apprenants. Nous pensons lui demander d'intervenir à nouveau sur des promotions de BizDev, CSM et Growth et avons hâte qu'il revienne rapidement."
+      }
+    },
+    "gallery": {
+      "title": "Notre",
+      "titleHighlight": "Galerie",
+      "description": "NumiSpark dans les écoles & événements"
+    },
     "faq": {
       "items": {
         "quote": {

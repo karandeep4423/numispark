@@ -121,6 +121,35 @@
         "appDesign": "App Design"
       }
     },
+    "testimonials": {
+      "title": "Our Clients",
+      "titleHighlight": "Feedback",
+      "feedback1": {
+        "alt": "seo-blog-article-feedback",
+        "name": "Lydia DUAN - Project Manager",
+        "feedback": "Thomas wrote several SEO blog articles in Spanish for our client specialized in Travel & Tourism. The articles are of high quality, and his adaptable writing style truly shines. Thank you so much for your outstanding work, Thomas!"
+      },
+      "feedback2": {
+        "alt": "web-development-feedback",
+        "name": "Olivier LENOIR - Executive",
+        "feedback": "We’ve been working with Thomas almost daily for over a year now. He is always deeply involved and dedicated to delivering the best results, constantly bringing fresh ideas to the table. Always available and a pleasure to work with, I highly recommend him!"
+      },
+      "feedback3": {
+        "alt": "app-development-feedback",
+        "name": "Claire MAINAUD - Personal Development Coach",
+        "feedback": "I reached out to Thomas for my website and communication strategy. He is incredibly pleasant, always available, proactive, and a great listener. I wholeheartedly recommend contacting him for your professional projects—I'm confident he will exceed your expectations! I never hesitate to speak highly of him to everyone in my network!"
+      },
+      "feedback4": {
+        "alt": "seo-article-feedback",
+        "name": "Léo NISHIBAYASHI - Educational Coordinator",
+        "feedback": "Thomas Pialles was an excellent trainer at our school, Rocket School! We engaged him for a one-week training session in copywriting and content marketing for a group of Growth Hackers. Our students really appreciated his session! Thomas is professional and has outstanding teaching skills—he perfectly adapts to the needs of both the institution and the learners. We’re already planning to invite him back for sessions on BizDev, CSM, and Growth, and we can’t wait for his return!"
+      }
+    },
+    "gallery":{
+      "title": "Our",
+      "titleHighlight": "Gallery",
+      "description": "NumiSpark at Schools & Events"
+    },
     "faq": {
       "items": {
         "quote": {

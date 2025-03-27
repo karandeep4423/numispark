@@ -97,6 +97,30 @@
         }
       }
     },
+    "testimonials": {
+      "title": "Unsere Kunden",
+      "titleHighlight": "Feedback",
+      "feedback1": {
+        "alt": "seo-blog-article-feedback",
+        "name": "Lydia DUAN - Projektmanagerin",
+        "feedback": "Thomas hat mehrere SEO-Blog-Artikel auf Spanisch für unseren Kunden, der auf Reisen und Tourismus spezialisiert ist, geschrieben. Die von ihm verfassten Artikel sind von hoher Qualität und sein Schreibstil ist sehr flexibel. Vielen Dank für deine Arbeit, Thomas!"
+      },
+      "feedback2": {
+        "alt": "web-development-feedback",
+        "name": "Olivier LENOIR - Geschäftsführer",
+        "feedback": "Wir arbeiten seit über einem Jahr fast täglich mit Thomas zusammen. Er ist stets sehr engagiert und bemüht, die ihm übertragenen Aufgaben bestmöglich zu erfüllen. Er bringt gerne eigene Vorschläge ein. Immer verfügbar und angenehm – ich empfehle ihn wärmstens!"
+      },
+      "feedback3": {
+        "alt": "app-development-feedback",
+        "name": "Claire MAINAUD - Coach für persönliche Entwicklung",
+        "feedback": "Ich habe Thomas für meine Webseite und meine Kommunikationsstrategie engagiert. Er ist sehr angenehm, zeigte sich äußerst verfügbar, brachte viele Ideen ein und hörte aufmerksam zu. Ich empfehle Ihnen, ihn für Ihre beruflichen Projekte zu kontaktieren, denn ich bin sicher, dass er auch Ihre Erwartungen erfüllen wird! Ich zögere nicht, ihn in meinem Umfeld weiterzuempfehlen!"
+      },
+      "feedback4": {
+        "alt": "seo-article-feedback",
+        "name": "Léo NISHIBAYASHI - Pädagogischer Leiter",
+        "feedback": "Thomas Pialles war ein ausgezeichneter Trainer an unserer Schule, der Rocket School! Wir haben ihn für eine einwöchige Schulung in Copywriting und Content Marketing für eine Gruppe von Growth Hackern engagiert. Unsere Teilnehmer haben seinen Einsatz sehr geschätzt! Thomas ist professionell und verfügt über eine hervorragende Pädagogik: Er weiß, wie man sich an die Bedürfnisse der Schule und der Lernenden anpasst. Wir planen, ihn erneut für Schulungen in den Bereichen BizDev, CSM und Growth einzusetzen und freuen uns auf seine baldige Rückkehr."
+      }
+    },
     "portfolio": {
       "title": "Unsere neuesten",
       "titleHighlight": "Arbeiten",
@@ -120,6 +144,11 @@
         "uiUx": "UI/UX-Design",
         "appDesign": "App-Design"
       }
+    },
+    "gallery": {
+      "title": "Unsere",
+      "titleHighlight": "Galerie",
+      "description": "NumiSpark in Schulen & Veranstaltungen"
     },
     "faq": {
       "items": {

@@ -164,32 +164,37 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export default function Feedback() {
   const containerRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
+  const { t } = useTranslation("home");
 
   const Testimonials = [
     {
       src: "/client/15.jpeg",
-      alt: "Conference 2",
-      name: "Lydia DUAN- Project manager",
-      feedback:
-        "Zaryab Birmingham,UKunjabi Lesson teachers are cooperative and helpful with myself when it comes to learning Punjabi; currently, we are focusing on writing, and I am enjoying it.",
+      alt: t("home.testimonials.feedback1.alt"),
+      name: t("home.testimonials.feedback1.name"),
+      feedback: t("home.testimonials.feedback1.feedback"),
     },
     {
-      src:  "/client/13.jpeg",
-      alt: "Conference 1",
-      name: "Ruksar ceo of MOtivation",
-      feedback:
-        "Zaryab Birmingham,UKunjabi Lesson teachers are cooperative and helpful with myself when it comes to learning Punjabi; currently, we are focusing on writing, and I am enjoying it.",
+      src: "/client/client12.jpeg",
+      alt: t("home.testimonials.feedback2.alt"),
+      name: t("home.testimonials.feedback2.name"),
+      feedback: t("home.testimonials.feedback2.feedback"),
     },
     {
-      src:  "/client/school/school2.jpeg",
-      alt: "Conference rocket school",
-      name: "Ruksar ceo of MOtivation",
-      feedback:
-        "Zaryab Birmingham,UKunjabi Lesson teachers are cooperative and helpful with myself when it comes to learning Punjabi; currently, we are focusing on writing, and I am enjoying it.",
+      src: "/client/13.jpeg",
+      alt: t("home.testimonials.feedback3.alt"),
+      name: t("home.testimonials.feedback3.name"),
+      feedback: t("home.testimonials.feedback3.feedback"),
+    },
+    {
+      src: "/client/school/school2.jpeg",
+      alt: t("home.testimonials.feedback4.alt"),
+      name: t("home.testimonials.feedback4.name"),
+      feedback: t("home.testimonials.feedback4.feedback"),
     },
   ];
 
@@ -227,7 +232,10 @@ export default function Feedback() {
   return (
     <div className="max-w-7xl  relative mx-auto px-2">
       <h2 className="text-4xl text-center mt-10 font-bold text-gray-800">
-        Our Clients Feedback
+        {t("home.testimonials.title")}
+        <span className="text-blue-600 bg-blue-200 p-1.5 rounded-2xl">
+          {t("home.testimonials.titleHighlight")}
+        </span>
       </h2>
 
       {/* Container with fixed height and overflow hidden */}
