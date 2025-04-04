@@ -119,10 +119,10 @@ const Footer = () => {
               {t("footer.contactInfo.heading")}
             </h2>
             <p>{t("footer.contactInfo.location")}</p>
-            <a href="mailto:contact@privatehonors.com">
+            <a href="mailto:contact@numispark.com">
               {t("footer.contactInfo.email")}
             </a>
-            <a href="tel:+33624610775">{t("footer.contactInfo.phone")}</a>
+            <a href="tel:+33602528771">{t("footer.contactInfo.phone")}</a>
           </div>
         </div>
         <p className="text-center text-gray-800 py-6">
