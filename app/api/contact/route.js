@@ -20,7 +20,7 @@ const createEmailTemplate = (data) => {
                 <!-- Header -->
                 <div style="text-align: center; margin-bottom: 30px;">
                   <h1 style="color: #2563eb; font-size: 24px; margin: 0;">New Contact Inquiry</h1>
-                  <p style="color: #64748b; margin-top: 8px;">From Punjabi Lesson Website</p>
+                  <p style="color: #64748b; margin-top: 8px;">From Numispark Website</p>
                 </div>
 
                 <!-- Contact Information -->
@@ -85,7 +85,7 @@ const createEmailTemplate = (data) => {
                 <!-- Footer -->
                 <div style="margin-top: 30px; text-align: center; padding-top: 20px; border-top: 1px solid #e2e8f0;">
                   <p style="margin: 0; color: #64748b; font-size: 14px;">Best regards,</p>
-                  <p style="margin: 4px 0 0; color: #2563eb; font-size: 16px; font-weight: bold;">Punjabi Lesson Team</p>
+                  <p style="margin: 4px 0 0; color: #2563eb; font-size: 16px; font-weight: bold;">Numispark Team</p>
                 </div>
               </div>
             </td>
@@ -99,18 +99,18 @@ const createEmailTemplate = (data) => {
 // Send mail function
 const sendMail = async (to, subject, html) => {
   const transporter = nodemailer.createTransport({
-    service: "gmail",
-    host: "smtp.gmail.com",
-    port: 587,
-    secure: false,
+    host: "mail.privateemail.com",
+    port: 465 || 587,
+    secure: true || false,
     auth: {
-      user: "lessonpunjabi@gmail.com",
+      user: "contact@numispark.com",
       pass: process.env.NEXT_PUBLIC_GMAIL_PASSWORD,
     },
   });
 
+  
   const mailOptions = {
-    from: '"Punjabi Lesson" <lessonpunjabi@gmail.com>',
+    from: '"NumiSpark" <contact@numispark.com>',
     to,
     subject,
     html,
@@ -150,7 +150,7 @@ export async function POST(request) {
       );
     }
 
-    const subject = "New Contact Inquiry - Punjabi Lesson";
+    const subject = "New Contact Inquiry - NumiSpark";
     const html = createEmailTemplate({
       name,
       email,
@@ -162,7 +162,7 @@ export async function POST(request) {
     });
 
     // Send email
-    await sendMail([email, "karanhanju9696@gmail.com"], subject, html);
+    await sendMail(["karanhanju9696@gmail.com","numisparkk@gmail.com"], subject, html);
 
     // Return success response
     return NextResponse.json(
