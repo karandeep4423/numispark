@@ -80,7 +80,7 @@ const Contact = () => {
     console.log("formData", formData);
 
     try {
-      const res = await fetch(`http://localhost:3000/api/contact`, {
+      const res = await fetch(`https://www.numispark.com/api/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
