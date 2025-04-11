@@ -12,6 +12,7 @@ export async function generateMetadata({ params }) {
     title: translations.metaData['social-media-post-&-logo-design'].title,
     description: translations.metaData['social-media-post-&-logo-design'].description,
     keywords: translations.metaData['social-media-post-&-logo-design'].keywords,
+    canonical: translations.metaData['social-media-post-&-logo-design'].canonical
   };
 }
 

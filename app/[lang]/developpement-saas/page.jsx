@@ -12,6 +12,7 @@ export async function generateMetadata({ params}) {
     title: translations.metaData['saas-development'].title,
     description: translations.metaData['saas-development'].description,
     keywords: translations.metaData['saas-development'].keywords,
+    canonical: translations.metaData['saas-development'].canonical
   };
 }
 

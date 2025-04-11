@@ -12,6 +12,7 @@ export async function generateMetadata({ params}) {
     title: translations.metaData['ai-and-automation'].title,
     description: translations.metaData['ai-and-automation'].description,
     keywords: translations.metaData['ai-and-automation'].keywords,
+    canonical: translations.metaData['ai-and-automation'].canonical
   };
 }
 

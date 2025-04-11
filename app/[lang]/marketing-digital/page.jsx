@@ -12,6 +12,7 @@ export async function generateMetadata({ params}) {
     title: translations.metaData['social-media-marketing'].title,
     description: translations.metaData['social-media-marketing'].description,
     keywords: translations.metaData['social-media-marketing'].keywords,
+    canonical: translations.metaData['social-media-marketing'].canonical
   };
 }
 

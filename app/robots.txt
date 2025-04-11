@@ -1,10 +1,10 @@
 User-agent: 
-Disallow: /
+Allow: /
 Disallow: /admin/
 Disallow: /private/
 Disallow: /api/
 Disallow: /temp/
 
 # Sitemap
-Sitemap: 
+Sitemap: https://www.numispark.com/sitemap.xml
 
