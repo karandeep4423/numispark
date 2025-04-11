@@ -179,9 +179,9 @@ export default function EcommerceDevelopment() {
         </video>
         <div className="relative z-20 flex w-full h-screen gap-5 justify-center items-center">
           <div className="mt-10 sm:mt-0 flex flex-col justify-center items-center">
-            <span className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
+            <h1 className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
               {t("ecommerce.hero.title")}
-            </span>
+            </h1>
             <HeroButtons />
           </div>
         </div>

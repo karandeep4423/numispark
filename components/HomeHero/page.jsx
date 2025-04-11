@@ -107,18 +107,19 @@ const Hero = ({ technologies }) => {
 
       {/* Hero content */}
       <div className="relative z-10 flex flex-col h-screen gap-5 justify-center items-center">
-        <span className="text-gray-800 text-4xl text-center font-bold">
-          {t("home.hero.title")}
-        </span>
+        <h1 className="flex flex-col items-center text-center">
+          <span className="text-gray-800 text-4xl text-center font-bold">
+            {t("home.hero.title")}
+          </span>
 
-        <span className="text-gray-800 text-5xl sm:text-6xl text-center font-extrabold">
-          {t("home.hero.titleHighlight")}
-        </span>
+          <span className="text-gray-800 text-5xl sm:text-6xl text-center font-extrabold">
+            {t("home.hero.titleHighlight")}
+          </span>
 
-        <span className="text-md text-gray-800 sm:text-2xl text-center font-bold">
-          {t("home.hero.subtitle")}
-        </span>
-
+          <span className="text-md text-gray-800 sm:text-2xl text-center font-bold">
+            {t("home.hero.subtitle")}
+          </span>
+        </h1>
         <HeroButtons />
       </div>
     </div>

@@ -54,6 +54,16 @@
       "title": "Social Media Marketing | Grow Your Online Presence",
       "description": "Boost your digital footprint with our targeted social media marketing strategies designed to increase brand awareness and engagement.",
       "keywords": "social media marketing, digital marketing, brand awareness, engagement, online growth"
+    },
+    "portfolio": {
+      "title": "Numispark Portfolio | Web, Mobile & Digital Marketing Projects",
+      "description": "Explore our web & mobile development, design and digital marketing projects. Discover how Numispark transforms our clients' visions into high-performing digital solutions.",
+      "keywords": "portfolio, projects, web development, mobile development, design, digital marketing, case studies"
+    },
+    "blog": {
+      "title": "Numispark Blog | Web, Mobile Development & Digital Marketing Expertise",
+      "description": "Read our articles on web & mobile development, SEO and digital marketing strategies. Stay informed about the latest trends and innovations with Numispark.",
+      "keywords": "blog, web development, mobile development, digital marketing, trends, tips, innovations"
     }
   }
 }

@@ -221,9 +221,9 @@ const Contact = () => {
         <div className="mx-5 lg:mx-32 flex flex-col items-center">
           <div className="flex flex-col mx-10">
             <div className="flex items-center justify-center">
-              <h1 className="text-gray-800 text-center my-10 sm:mb-0 text-4xl sm:text-5xl font-bold">
+              <h2 className="text-gray-800 text-center my-10 sm:mb-0 text-4xl sm:text-5xl font-bold">
                 {t("contact.heading")}
-              </h1>
+              </h2>
             </div>
           </div>
           <form

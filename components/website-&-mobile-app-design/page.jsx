@@ -132,12 +132,12 @@ export default function WebsiteMobileDesign() {
           <source src="/web-mob-d.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <span className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
+        <h1 className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
           {t("websiteMobileDesign.hero.title")}{" "}
           <span className="text-blue-600 p-1.5 rounded-2xl">
             {t("websiteMobileDesign.hero.titleHighlight")}
           </span>
-        </span>
+        </h1>
         <span className="max-w-screen-xl text-gray-800 text-2xl text-center font-bold">
           {t("websiteMobileDesign.hero.subtitle")}
         </span>

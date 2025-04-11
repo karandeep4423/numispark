@@ -2,6 +2,22 @@ import { getAllPosts } from '@/lib/blog';
 import BlogCard from '@/components/blog/BlogCard';
 import BlogHeader from '@/components/blog/BlogHeader';
 
+export async function generateMetadata({ params}) {
+  // Load translations directly from JSON files
+  const paramData = await params;
+  const lang = paramData?.lang;
+  const translations = await import(
+    `@/public/locales/${lang}/metaData.json`
+  );
+
+  return {
+    title: translations.metaData['blog'].title,
+    description: translations.metaData['blog'].description,
+    keywords: translations.metaData['blog'].keywords,
+  };
+}
+
+
 export default async function BlogPage({ params }) {
   const paramData = await params;
   const lang = paramData?.lang;

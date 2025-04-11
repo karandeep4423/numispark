@@ -156,9 +156,9 @@ export default function SocialMediaMarketing() {
       <div className="bg-blue-200">
         <div className="max-w-screen-xl m-auto p-5 flex flex-col sm:flex-row h-screen gap-5 justify-center items-center">
           <div className="w-full flex flex-col items-center">
-            <span className="text-5xl text-gray-800 sm:text-6xl text-center font-extrabold">
+            <h1 className="text-5xl text-gray-800 sm:text-6xl text-center font-extrabold">
               {t("socialMediaMarketing.hero.title")}
-            </span>
+            </h1>
             <span className="text-gray-800 text-2xl text-center font-bold">
               {t("socialMediaMarketing.hero.subtitle")}
             </span>

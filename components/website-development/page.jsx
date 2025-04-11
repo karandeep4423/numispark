@@ -212,9 +212,9 @@ const WebsiteDevelopment = () => {
         }}
         className="flex bg-blue-300 flex-col h-screen gap-5 justify-center items-center"
       >
-        <span className="text-5xl max-w-screen-xl opacity-100 text-gray-800 sm:text-6xl text-center font-extrabold">
+        <h1 className="text-5xl max-w-screen-xl opacity-100 text-gray-800 sm:text-6xl text-center font-extrabold">
           {t("webDevelopment.hero.title")}
-        </span>
+        </h1>
         <span className="max-w-screen-xl text-gray-900 text-2xl text-center font-bold">
           {t("webDevelopment.hero.subtitle")}
         </span>

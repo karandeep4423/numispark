@@ -32,9 +32,9 @@ export async function generateMetadata({ params }) {
     };
   } else if (language === "fr") {
     return {
-      title: "Solutions Digitales pour IT & Marketing | NumiSpark",
+      title: "Numispark | Agence Communication, création Web & Mobile, SEO & Marketing Digital",
       description:
-        "Nous dynamisons les entreprises grâce à des services IT et marketing innovants. De la création de sites web et d'applications mobiles au SEO et aux campagnes digitales, notre équipe expérimentée propose des solutions créatives et évolutives, parfaitement adaptées à vos besoins.",
+        "Numispark, agence digitale, propose des solutions innovantes en développement web & mobile, marketing digital, SEO et design, adaptées à vos besoins.",
       keywords:
         "services IT, marketing digital, développement web, création d'applications mobiles, SEO, marketing sur les réseaux sociaux, transformation digitale, Numispark",
     };

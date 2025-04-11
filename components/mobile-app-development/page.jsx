@@ -138,9 +138,9 @@ const MobileDevelopment = () => {
         }}
         className="bg-blue-300 flex w-full flex-col h-screen gap-5 justify-center items-center"
       >
-        <span className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
+        <h1 className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
           {t("mobileDevelopment.hero.title")}
-        </span>
+        </h1>
         <span className="text-gray-800 max-w-screen-xl text-2xl text-center font-bold">
           {t("mobileDevelopment.hero.subtitle")}
         </span>

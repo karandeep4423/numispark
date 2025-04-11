@@ -11,24 +11,24 @@
       "keywords": "à propos, histoire de l'entreprise, innovation digitale, équipe, NumiSpark"
     },
     "seo": {
-      "title": "Services SEO | Boostez votre visibilité en ligne",
-      "description": "Améliorez votre positionnement sur Google et attirez un trafic organique qualifié grâce à nos stratégies SEO expertes conçues pour développer votre activité en ligne.",
-      "keywords": "SEO, optimisation moteurs de recherche, trafic organique, marketing digital"
+      "title": "Agence SEO & Référencement | SEO Consultant & Marketing Digital",
+      "description": "Boostez votre visibilité en ligne avec notre agence SEO experte. Nos stratégies de référencement, combinées à un marketing digital performant, attirent un trafic organique qualifié pour développer votre activité.",
+      "keywords": "SEO, optimisation moteurs de recherche, trafic organique, marketing digital, agence seo, seo consultant, referencement seo, marketing"
     },
     "website-development": {
-      "title": "Développement de sites web | Solutions sur mesure",
-      "description": "Nos services de développement web offrent des sites personnalisés, évolutifs et responsive, conçus pour renforcer votre présence en ligne et augmenter vos conversions.",
-      "keywords": "développement web, site sur mesure, design responsive, solutions web"
+      "title": "Agence de Création de Site Web & Internet | Création Digitale",
+      "description": "Boostez votre présence en ligne avec notre agence experte en création de site web & internet et en développement web. Profitez d’une création digitale sur mesure pour dynamiser votre business.",
+      "keywords": "développement web, site sur mesure, design responsive, solutions web, agence de création de site web & internet, création digitale"
     },
     "mobile-app-development": {
-      "title": "Développement d'applications mobiles | Solutions innovantes",
-      "description": "Transformez vos idées en applications mobiles captivantes grâce à nos services dédiés à la performance et à l'expérience utilisateur.",
-      "keywords": "développement d'applications mobiles, design d'app, expérience utilisateur, innovation mobile"
+      "title": "Développement et Création d'Applications Mobiles | Solutions Innovantes",
+      "description": "Transformez vos idées en applications mobiles captivantes grâce à notre expertise en développement et création application mobile. Profitez de solutions dédiées à la performance et à une expérience utilisateur optimale.",
+      "keywords": "développement d'applications mobiles, design d'app, expérience utilisateur, innovation mobile, création application mobile"
     },
     "ecommerce-development": {
-      "title": "Développement e-commerce | Boutiques en ligne évolutives",
-      "description": "Créez une boutique en ligne performante avec nos services de développement e-commerce, optimisés pour la sécurité, la rapidité et la conversion.",
-      "keywords": "développement e-commerce, boutique en ligne, évolutif, sécurisé, conversion"
+      "title": "Agence E-commerce & Création Site e-commerce",
+      "description": "Créez une boutique en ligne performante avec nos services de développement e-commerce. Notre expertise inclut Shopify, PrestaShop, WooCommerce et bien plus pour sécuriser, optimiser et convertir vos visiteurs.",
+      "keywords": "développement e-commerce, boutique en ligne, évolutif, sécurisé, conversion, agence E-commerce, creation site e-commerce, Shopify, PrestaShop, WooCommerce"
     },
     "saas-development": {
       "title": "Développement SaaS | Transformez votre business",
@@ -41,9 +41,9 @@
       "keywords": "IA, automatisation, optimisation, réduction des coûts, solutions intelligentes"
     },
     "website-&-mobile-app-design": {
-      "title": "Design web & applications mobiles | Créatif et responsive",
-      "description": "Notre équipe de design conçoit des sites web et des applications mobiles esthétiques et intuitifs, valorisant votre marque et captivant votre audience.",
-      "keywords": "design web, design mobile, design responsive, créatif, expérience utilisateur"
+      "title": "Web Design & Mobile-Design | UX & UI Designer Innovant",
+      "description": "Découvrez notre expertise en conception de site web et design mobile. En tant qu'UX & UI designer, nous créons des expériences digitales esthétiques, intuitives et responsives pour valoriser votre marque.",
+      "keywords": "web design, mobile-design, ux designer, ui designer, conception de site web, design mobile, expérience utilisateur"
     },
     "social-media-post-&-logo-design": {
       "title": "Design pour réseaux sociaux & logos | Démarquez-vous en ligne",
@@ -54,6 +54,16 @@
       "title": "Marketing sur les réseaux sociaux | Développez votre présence en ligne",
       "description": "Augmentez votre visibilité digitale grâce à nos stratégies ciblées de marketing sur les réseaux sociaux, conçues pour renforcer la notoriété de votre marque et favoriser l'engagement.",
       "keywords": "marketing réseaux sociaux, marketing digital, notoriété, engagement, croissance en ligne"
+    },
+    "portfolio":{
+      "title":"Portfolio Numispark | Réalisations en Web, Mobile & Marketing Digital",
+      "description":"Explorez nos projets en développement web & mobile, design et marketing digital. Découvrez comment Numispark transforme les visions de nos clients en solutions digitales performantes.",
+      "keywords":"portfolio, projets, développement web, développement mobile, design, marketing digital, réalisations"
+    },
+    "blog":{
+      "title":"Blog Numispark | Expertise en Développement Web, Mobile & Marketing Digital",
+      "description":"Découvrez nos articles sur le développement web & mobile, le SEO et les stratégies de marketing digital. Restez informé des dernières tendances et innovations avec Numispark.",
+      "keywords":"blog, développement web, développement mobile, marketing digital, tendances, conseils, innovations"
     }
   }
 }

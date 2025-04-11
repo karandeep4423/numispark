@@ -289,12 +289,12 @@ const Portfolio = () => {
     <div>
       {/* Portfolio Section */}
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <h2 className="text-4xl text-center font-bold text-gray-800">
+        <h1 className="text-4xl text-center font-bold text-gray-800">
           {tEcommerce("ecommerce.portfolio.title")}{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
             {tEcommerce("ecommerce.portfolio.titleHighlight")}
           </span>
-        </h2>
+        </h1>
         <div className="grid mt-10 grid-cols-1 md:grid-cols-3 gap-10">
           {portfolioItems.map((item, index) => {
             // Get the translation function for the current item

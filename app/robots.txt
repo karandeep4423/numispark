@@ -8,5 +8,3 @@ Disallow: /temp/
 # Sitemap
 Sitemap: 
 
-# Crawl-delay
-Crawl-delay: 10

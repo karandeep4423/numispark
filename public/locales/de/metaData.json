@@ -54,6 +54,16 @@
       "title": "Social Media Marketing | Steigern Sie Ihre Online-Präsenz",
       "description": "Erhöhen Sie Ihre digitale Reichweite mit unseren zielgerichteten Social-Media-Marketing-Strategien, die Ihre Markenbekanntheit stärken und das Engagement nachhaltig fördern.",
       "keywords": "Social Media Marketing, digitales Marketing, Markenbekanntheit, Engagement, Online-Wachstum"
+    },
+    "portfolio": {
+      "title": "Numispark Portfolio | Web-, Mobile- & Digital-Marketing-Projekte",
+      "description": "Entdecken Sie unsere Projekte in Web- & Mobile-Entwicklung, Design und Digital-Marketing. Erfahren Sie, wie Numispark die Visionen unserer Kunden in leistungsstarke digitale Lösungen verwandelt.",
+      "keywords": "Portfolio, Projekte, Webentwicklung, Mobile-Entwicklung, Design, Digital-Marketing, Fallstudien"
+    },
+    "blog": {
+      "title": "Numispark Blog | Expertise in Web-, Mobile-Entwicklung & Digital-Marketing",
+      "description": "Lesen Sie unsere Artikel über Web- & Mobile-Entwicklung, SEO und Digital-Marketing-Strategien. Bleiben Sie mit Numispark über die neuesten Trends und Innovationen informiert.",
+      "keywords": "Blog, Webentwicklung, Mobile-Entwicklung, Digital-Marketing, Trends, Tipps, Innovationen"
     }
   }
 }

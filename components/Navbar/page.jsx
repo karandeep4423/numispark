@@ -113,31 +113,31 @@ const Navbar = () => {
           label: t(
             "navbar.dropdown.developmentServices.items.websiteDevelopment"
           ),
-          link: "/website-development",
+          link: "/agence-creation-site-web",
           icon: <Globe />,
         },
         {
           label: t(
             "navbar.dropdown.developmentServices.items.mobileAppDevelopment"
           ),
-          link: "/mobile-app-development",
+          link: "/developpement-application-mobile",
           icon: <Smartphone />,
         },
         {
           label: t(
             "navbar.dropdown.developmentServices.items.ecommerceDevelopment"
           ),
-          link: "/ecommerce-development",
+          link: "/developpement-ecommerce",
           icon: <ShoppingCart />,
         },
         {
           label: t("navbar.dropdown.developmentServices.items.saasDevelopment"),
-          link: "/saas-development",
+          link: "/developpement-saas",
           icon: <Cpu />,
         },
         {
           label: t("navbar.dropdown.developmentServices.items.aiAndAutomation"),
-          link: "/ai-and-automation",
+          link: "/agence-automatisation-ia",
           icon: <Activity />,
         },
       ],
@@ -147,14 +147,14 @@ const Navbar = () => {
       items: [
         {
           label: t("navbar.dropdown.uiUxDesign.items.websiteMobileAppDesign"),
-          link: "/website-&-mobile-app-design",
+          link: "/web-et-mobile-design",
           icon: <Edit />,
         },
         {
           label: t(
             "navbar.dropdown.uiUxDesign.items.socialMediaPostLogoDesign"
           ),
-          link: "/social-media-post-&-logo-design",
+          link: "/design-logo-et-posts-reseaux-sociaux",
           icon: <Image />,
         },
       ],
@@ -171,7 +171,7 @@ const Navbar = () => {
           label: t(
             "navbar.dropdown.digitalMarketing.items.socialMediaMarketing"
           ),
-          link: "/social-media-marketing",
+          link: "/marketing-digital",
           icon: <Share />,
         },
       ],
@@ -301,7 +301,7 @@ const Navbar = () => {
           <Link onClick={toggleMenu} href="/portfolio">
             {t("navbar.links.portfolio")}
           </Link>
-          <Link onClick={toggleMenu} href="/about-us">
+          <Link onClick={toggleMenu} href="/a-propos-de-nous">
             {t("navbar.links.aboutUs")}
           </Link>
           <Link onClick={toggleMenu} href="/blog">
@@ -310,7 +310,7 @@ const Navbar = () => {
           <Link
             className="hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] font-medium px-4 py-3 rounded-full bg-blue-600 text-white transition-all duration-300"
             onClick={toggleMenu}
-            href="/contact-us"
+            href="/contactez-nous"
           >
             {t("navbar.links.startProject")}
           </Link>

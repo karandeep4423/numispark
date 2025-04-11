@@ -58,11 +58,11 @@ const Footer = () => {
               {t("footer.navigation.heading")}
             </h2>
             <Link href="/">{t("footer.navigation.links.home")}</Link>
-            <Link href="/about-us">{t("footer.navigation.links.aboutUs")}</Link>
+            <Link href="/a-propos-de-nous">{t("footer.navigation.links.aboutUs")}</Link>
             <Link href="/portfolio">
               {t("footer.navigation.links.portfolio")}
             </Link>
-            <Link href="/contact-us">
+            <Link href="/contactez-nous">
               {t("footer.navigation.links.contactUs")}
             </Link>
           </div>
@@ -72,19 +72,19 @@ const Footer = () => {
             <h2 className="text-xl font-bold text-gray-800">
               {t("footer.developmentServices.heading")}
             </h2>
-            <Link href="/website-development">
+            <Link href="/agence-creation-site-web">
               {t("footer.developmentServices.links.websiteDevelopment")}
             </Link>
-            <Link href="/mobile-app-development">
+            <Link href="/developpement-application-mobile">
               {t("footer.developmentServices.links.mobileAppDevelopment")}
             </Link>
-            <Link href="/ecommerce-development">
+            <Link href="/developpement-ecommerce">
               {t("footer.developmentServices.links.ecommerceDevelopment")}
             </Link>
-            <Link href="/saas-development">
+            <Link href="/developpement-saas">
               {t("footer.developmentServices.links.saasDevelopment")}
             </Link>
-            <Link href="/ai-and-automation">
+            <Link href="/agence-automatisation-ia">
               {t("footer.developmentServices.links.aiAndAutomation")}
             </Link>
           </div>
@@ -94,10 +94,10 @@ const Footer = () => {
             <h2 className="text-xl font-bold text-gray-800">
               {t("footer.designServices.heading")}
             </h2>
-            <Link href="/website-&-mobile-app-design">
+            <Link href="/web-et-mobile-design">
               {t("footer.designServices.links.websiteMobileAppDesign")}
             </Link>
-            <Link href="/social-media-post-&-logo-design">
+            <Link href="/design-logo-et-posts-reseaux-sociaux">
               {t("footer.designServices.links.socialMediaPostLogoDesign")}
             </Link>
           </div>
@@ -108,7 +108,7 @@ const Footer = () => {
               {t("footer.digitalMarketing.heading")}
             </h2>
             <Link href="/seo">{t("footer.digitalMarketing.links.seo")}</Link>
-            <Link href="/social-media-marketing">
+            <Link href="/marketing-digital">
               {t("footer.digitalMarketing.links.socialMediaMarketing")}
             </Link>
           </div>
