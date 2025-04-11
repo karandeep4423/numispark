@@ -158,37 +158,37 @@ const Services = [
   {
     serviceIcon: Code,
     translationKey: "webDevelopment",
-    href: "/website-development",
+    href: "/agence-creation-site-web",
   },
   {
     serviceIcon: Smartphone,
     translationKey: "mobileAppDevelopment",
-    href: "/mobile-app-development",
+    href: "/developpement-application-mobile",
   },
   {
     serviceIcon: Megaphone,
     translationKey: "digitalMarketing",
-    href: "/social-media-marketing",
+    href: "/marketing-digital",
   },
   {
     serviceIcon: Layout,
     translationKey: "uiUxDesign",
-    href: "/website-&-mobile-app-design",
+    href: "/web-et-mobile-design",
   },
   {
     serviceIcon: Cloud,
     translationKey: "saasDevelopment",
-    href: "/saas-development",
+    href: "/developpement-saas",
   },
   {
     serviceIcon: Zap,
     translationKey: "aiAutomation",
-    href: "/ai-and-automation",
+    href: "/agence-automatisation-ia",
   },
   {
     serviceIcon: ShoppingCart,
     translationKey: "ecommerceDevelopment",
-    href: "/ecommerce-development",
+    href: "/developpement-ecommerce",
   },
 ];
 
