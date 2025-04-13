@@ -1,11 +1,12 @@
 {
   "footer": {
     "brand": "Digital Agentur",
+    "tagline": "Digitale Lösungen schaffen, die Innovationen vorantreiben und Wachstum fördern.",
     "social": {
       "instagram": "Instagram",
       "facebook": "Facebook",
-      "whatsapp": "WhatsApp",
-      "email": "Email"
+      "tiktok": "Tiktok",
+      "Linkedin": "Linkedin"
     },
     "navigation": {
       "heading": "Navigation",

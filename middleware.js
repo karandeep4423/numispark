@@ -8,7 +8,7 @@ export function middleware(request) {
   
   // Skip static assets and API routes
   if (
-    /\.(gif|png|jpg|jpeg|svg|mp4|webp|css|js|txt|xml)$/.test(pathname) ||
+    /\.(gif|png|jpg|jpeg|svg|mp4|webp|css|js|txt|xml|ico)$/.test(pathname) ||
     pathname.startsWith('/_next/') ||
     pathname.startsWith('/api/')
   ) {

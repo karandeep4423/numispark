@@ -1,11 +1,12 @@
 {
     "footer": {
       "brand": "Digital Agence",
+      "tagline": "Creating digital solutions that spark innovation and drive growth.",
       "social": {
         "instagram": "Instagram",
         "facebook": "Facebook",
-        "whatsapp": "WhatsApp",
-        "email": "Email"
+        "tiktok": "Tiktok",
+        "Linkedin": "Linkedin"
       },
       "navigation": {
         "heading": "Navigation",

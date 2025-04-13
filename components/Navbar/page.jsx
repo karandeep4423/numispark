@@ -17,6 +17,7 @@ import {
 import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "@/components/LanguageSwitcher/page";
+import { MdRocket } from "react-icons/md";
 
 const Navbar = () => {
   const { t } = useTranslation("navbar");
@@ -270,9 +271,11 @@ const Navbar = () => {
       }}
     >
       <nav className="z-30 flex justify-between gap-5 h-20 px-4 xl:px-0 max-w-screen-xl m-auto">
-        <div className="flex items-center">
+        <div className="flex  items-center">
           <Link className="w-44 h-8 font-extrabold text-2xl" href="/">
-            <span className="border-4 border-blue-600 ">Numi</span>
+            <span className="border-4 text-gray-800 border-blue-600 ">
+              Numi
+            </span>
             <span className="text-blue-600">Spark</span>
           </Link>
         </div>
@@ -308,11 +311,12 @@ const Navbar = () => {
             Blog
           </Link>
           <Link
-            className="hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] font-medium px-4 py-3 rounded-full bg-blue-600 text-white transition-all duration-300"
+            className="hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] font-medium px-4 py-3 rounded-full bg-blue-600 text-white transition-all duration-300 flex items-center gap-2"
             onClick={toggleMenu}
             href="/contactez-nous"
           >
-            {t("navbar.links.startProject")}
+            <span>{t("navbar.links.startProject")}</span>
+            <MdRocket className="w-5 h-5" />
           </Link>
           <LanguageSwitcher />
         </div>
