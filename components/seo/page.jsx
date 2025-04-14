@@ -96,7 +96,7 @@ export default function Seo() {
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover mix-blend-multiply"
+          className="absolute opacity-60 inset-0 w-full h-full object-cover mix-blend-multiply"
         >
           <source src="/seo.mp4" type="video/mp4" />
           Your browser does not support the video tag.

@@ -141,21 +141,29 @@ const WhyUs = [
 const portfolioItems = [
   {
     image: "/portfolio/logo.webp",
-    src: ["/portfolio/logo3.webp", "/portfolio/logo.webp","/portfolio/logo2.webp"],
+    src: [
+      "/portfolio/logo3.webp",
+      "/portfolio/logo.webp",
+      "/portfolio/logo2.webp",
+    ],
     translationName: "socialMediaLogoDesign.portfolio.categories.logo",
     bgColor: "bg-violet-100",
     dotColor: "bg-violet-500",
   },
   {
     image: "/portfolio/socialposter.png",
-    src: ["/portfolio/social1.jpg","/portfolio/social2.jpg"],
+    src: ["/portfolio/social1.jpg", "/portfolio/social2.jpg"],
     translationName: "socialMediaLogoDesign.portfolio.categories.social",
     bgColor: "bg-amber-400",
     dotColor: "bg-amber-500",
   },
   {
     image: "/portfolio/other-design1.webp",
-    src: ["/portfolio/other-design1.webp","/portfolio/other-design2.webp","/portfolio/other-design3.jpg",],
+    src: [
+      "/portfolio/other-design1.webp",
+      "/portfolio/other-design2.webp",
+      "/portfolio/other-design3.jpg",
+    ],
     translationName: "socialMediaLogoDesign.portfolio.categories.other",
     bgColor: "bg-emerald-600",
     dotColor: "bg-emerald-500",
@@ -176,21 +184,25 @@ export default function SocialMediaLogoDesign() {
       {/* Hero Section */}
       <div className="relative h-screen flex flex-col sm:flex-row justify-center items-center overflow-hidden bg-blue-200">
         <video
+          title="design-logo-et-posts-reseaux-sociaux"
           autoPlay
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-contain z-20 mix-blend-multiply"
+          className="absolute opacity-60 inset-0 w-full h-full object-contain z-20 mix-blend-multiply"
         >
-          <source src="/social-logo.mp4" type="video/mp4" />
+          <source
+            src="/design-logo-et-posts-reseaux-sociaux.mp4"
+            type="video/mp4"
+          />
           Your browser does not support the video tag.
         </video>
         <div className="relative z-20 flex w-full h-screen gap-5 justify-center items-center">
           <div className="mt-10 sm:mt-0 flex flex-col justify-center items-center">
-            <h1 className="text-5xl max-w-screen-xl text-gray-900 sm:text-6xl text-center font-extrabold">
+            <h1 className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
               {t("socialMediaLogoDesign.hero.title")}
             </h1>
-            <span className="max-w-screen-xl text-gray-900 text-2xl text-center font-bold">
+            <span className="max-w-screen-xl my-3 text-gray-800 text-2xl text-center font-bold">
               {t("socialMediaLogoDesign.hero.subtitle")}
             </span>
             <HeroButtons />

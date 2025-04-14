@@ -97,7 +97,10 @@ const portfolioItems = [
   },
   {
     image: "/portfolio/website-design1.1.webp",
-    src: ["/portfolio/website-design1.1.webp", "/portfolio/website-design1.2.webp"],
+    src: [
+      "/portfolio/website-design1.1.webp",
+      "/portfolio/website-design1.2.webp",
+    ],
     translationName: "websiteMobileDesign.portfolio.categories.wiefly.name",
     translationContent:
       "websiteMobileDesign.portfolio.categories.wiefly.content",
@@ -123,13 +126,17 @@ export default function WebsiteMobileDesign() {
       {/* Hero Section */}
       <div className="flex relative bg-blue-200 flex-col h-screen gap-5 justify-center items-center">
         <video
+          title="web-et-mobile-design-hero-animation"
           autoPlay
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover mix-blend-multiply"
+          className="absolute opacity-60 inset-0 w-full h-full object-cover mix-blend-multiply"
         >
-          <source src="/web-mob-d.mp4" type="video/mp4" />
+          <source
+            src="/web-et-mobile-design-hero-animation.mp4"
+            type="video/mp4"
+          />
           Your browser does not support the video tag.
         </video>
         <h1 className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
@@ -138,9 +145,9 @@ export default function WebsiteMobileDesign() {
             {t("websiteMobileDesign.hero.titleHighlight")}
           </span>
         </h1>
-        <span className="max-w-screen-xl text-gray-800 text-2xl text-center font-bold">
+        {/* <span className="max-w-screen-xl text-gray-800 text-2xl text-center font-bold">
           {t("websiteMobileDesign.hero.subtitle")}
-        </span>
+        </span> */}
         <HeroButtons />
       </div>
 

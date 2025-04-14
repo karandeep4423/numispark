@@ -129,22 +129,32 @@ const MobileDevelopment = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div
-        style={{
-          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('/mob-dev1.gif')`,
-          backgroundSize: "contain",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-        className="bg-blue-300 flex w-full flex-col h-screen gap-5 justify-center items-center"
-      >
-        <h1 className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
-          {t("mobileDevelopment.hero.title")}
-        </h1>
-        <span className="text-gray-800 max-w-screen-xl text-2xl text-center font-bold">
-          {t("mobileDevelopment.hero.subtitle")}
-        </span>
-        <HeroButtons />
+      <div className="relative h-screen flex flex-col sm:flex-row justify-center items-center overflow-hidden bg-blue-200">
+        <video
+          title="developpement-et-creation-applications-mobiles"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute opacity-60 inset-0 w-full h-full object-contain z-20 mix-blend-multiply"
+        >
+          <source
+            src="/developpement-et-creation-applications-mobiles.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div className="relative z-20 flex w-full h-screen gap-5 justify-center items-center">
+          <div className="mt-10 sm:mt-0 flex flex-col justify-center items-center">
+            <h1 className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
+              {t("mobileDevelopment.hero.title")}
+            </h1>
+            <span className="max-w-screen-xl my-3 text-gray-800 text-2xl text-center font-bold">
+              {t("mobileDevelopment.hero.subtitle")}
+            </span>
+            <HeroButtons />
+          </div>
+        </div>
       </div>
 
       {/* Technologies Section */}
@@ -253,7 +263,9 @@ const MobileDevelopment = () => {
                 />
               </div>
               <div className="flex justify-between items-center">
-                <h3 className="text-lg font-medium">{t(item.translationName)}</h3>
+                <h3 className="text-lg font-medium">
+                  {t(item.translationName)}
+                </h3>
                 <button
                   onClick={() => openModal(item)}
                   className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors"

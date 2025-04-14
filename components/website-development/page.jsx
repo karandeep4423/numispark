@@ -147,15 +147,13 @@ const portfolioItems = [
     image: "/portfolio/web-development-cover1.png",
     src: "https://aid-calculation.vercel.app/",
     translationName: "webDevelopment.portfolio.categories.solulec.name",
-    translationContent:
-      "webDevelopment.portfolio.categories.solulec.content",
+    translationContent: "webDevelopment.portfolio.categories.solulec.content",
     translationdesign: "webDevelopment.portfolio.categories.solulec.design",
     translationfrontendDevelopment:
       "webDevelopment.portfolio.categories.solulec.frontendDevelopment",
     translationbackendDevelopment:
       "webDevelopment.portfolio.categories.solulec.backendDevelopment",
-    translationDatabase:
-      "webDevelopment.portfolio.categories.solulec.database",
+    translationDatabase: "webDevelopment.portfolio.categories.solulec.database",
     bgColor: "bg-violet-100",
     dotColor: "bg-violet-500",
   },
@@ -163,15 +161,13 @@ const portfolioItems = [
     image: "/portfolio/website1.png",
     src: "https://www.privatehonors.com/",
     translationName: "webDevelopment.portfolio.categories.private.name",
-    translationContent:
-      "webDevelopment.portfolio.categories.private.content",
+    translationContent: "webDevelopment.portfolio.categories.private.content",
     translationdesign: "webDevelopment.portfolio.categories.private.design",
     translationfontendDevelopment:
       "webDevelopment.portfolio.categories.private.frontendDevelopment",
     translationbackendDevelopment:
       "webDevelopment.portfolio.categories.private.backendDevelopment",
-    translationDatabase:
-      "webDevelopment.portfolio.categories.private.database",
+    translationDatabase: "webDevelopment.portfolio.categories.private.database",
     translationKey: "appDesign",
     bgColor: "bg-emerald-600",
     dotColor: "bg-emerald-500",
@@ -203,22 +199,32 @@ const WebsiteDevelopment = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div
-        style={{
-          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('/web.gif')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-        className="flex bg-blue-300 flex-col h-screen gap-5 justify-center items-center"
-      >
-        <h1 className="text-5xl max-w-screen-xl opacity-100 text-gray-800 sm:text-6xl text-center font-extrabold">
-          {t("webDevelopment.hero.title")}
-        </h1>
-        <span className="max-w-screen-xl text-gray-900 text-2xl text-center font-bold">
-          {t("webDevelopment.hero.subtitle")}
-        </span>
-        <HeroButtons />
+      <div className=" relative h-screen flex flex-col sm:flex-row justify-center items-center overflow-hidden bg-blue-200">
+        <video
+          title="agence-creation-site-web-hero-animation"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute opacity-60 inset-0 w-full h-full object-contain z-20 mix-blend-multiply"
+        >
+          <source
+            src="/agence-creation-site-web-hero-animation.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div className=" relative z-20 flex w-full h-screen gap-5 justify-center items-center">
+          <div className="mt-10  sm:mt-0 flex flex-col justify-center items-center">
+            <h1 className="text-4xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
+              {t("webDevelopment.hero.title")}
+            </h1>
+            <span className="max-w-screen-xl my-3 text-gray-800 text-2xl text-center font-bold">
+              {t("webDevelopment.hero.subtitle")}
+            </span>
+            <HeroButtons />
+          </div>
+        </div>
       </div>
 
       {/* Technologies Section */}

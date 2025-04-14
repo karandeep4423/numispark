@@ -143,13 +143,17 @@ export default function AiDevelopment() {
       {/* Hero Section */}
       <div className="relative h-screen flex flex-col sm:flex-row justify-center items-center overflow-hidden bg-blue-200">
         <video
+          title="agence-automatisation-ia-hero-seaction-animation"
           autoPlay
           loop
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover z-20 mix-blend-multiply"
         >
-          <source src="/ai.mp4" type="video/mp4" />
+          <source
+            src="/agence-automatisation-ia-hero-seaction-animation.mp4"
+            type="video/mp4"
+          />
           Your browser does not support the video tag.
         </video>
         <div className="relative z-20 flex w-full h-screen gap-5 justify-center items-center">

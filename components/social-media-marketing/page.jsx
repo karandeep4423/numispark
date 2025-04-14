@@ -154,21 +154,30 @@ export default function SocialMediaMarketing() {
     <div>
       {/* Hero Section */}
       <div className="bg-blue-200">
-        <div className="max-w-screen-xl m-auto p-5 flex flex-col sm:flex-row h-screen gap-5 justify-center items-center">
+        <div className="max-w-screen-xl m-auto p-5 flex flex-col lg:flex-row h-screen gap-5 justify-center items-center">
           <div className="w-full flex flex-col items-center">
             <h1 className="text-5xl text-gray-800 sm:text-6xl text-center font-extrabold">
               {t("socialMediaMarketing.hero.title")}
             </h1>
-            <span className="text-gray-800 text-2xl text-center font-bold">
+            <span className="text-gray-800 my-2 text-2xl text-center font-bold">
               {t("socialMediaMarketing.hero.subtitle")}
             </span>
             <HeroButtons />
           </div>
-          <img
-            className="w-2/4 h-96"
-            src="/social-marketing.gif"
-            alt="Social Media Marketing"
-          />
+          <video
+            title="marketing-digital-hero-section-animation"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className=" w-2/4 h-96 object-contain z-20 mix-blend-multiply"
+          >
+            <source
+              src="/marketing-digital-hero-section-animation.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
 
@@ -317,12 +326,12 @@ export default function SocialMediaMarketing() {
 
       {/* FAQs Section */}
       <FAQs
-        faqData={Object.keys(t("socialMediaMarketing.faq.items", { returnObjects: true })).map(
-          (key) => ({
-            question: t(`socialMediaMarketing.faq.items.${key}.question`),
-            answer: t(`socialMediaMarketing.faq.items.${key}.answer`),
-          })
-        )}
+        faqData={Object.keys(
+          t("socialMediaMarketing.faq.items", { returnObjects: true })
+        ).map((key) => ({
+          question: t(`socialMediaMarketing.faq.items.${key}.question`),
+          answer: t(`socialMediaMarketing.faq.items.${key}.answer`),
+        }))}
       />
 
       {/* Contact Section */}

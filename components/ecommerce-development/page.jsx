@@ -23,7 +23,7 @@ import Technologies from "@/components/Technologies/page";
 import HowAgencyWorks from "@/components/Process/page";
 import { useTranslation } from "next-i18next";
 import PortfolioModal from "@/components/PortfolioModal/page";
-import React,{useState} from "react";
+import React, { useState } from "react";
 
 const TECHNOLOGIES = [
   {
@@ -112,8 +112,7 @@ const portfolioItems = [
     image: "/portfolio/ecommerce-cover.png",
     src: ["/portfolio/ecommerce3.webp"],
     translationName: "ecommerce.portfolio.categories.cloth.name",
-    translationContent:
-      "ecommerce.portfolio.categories.cloth.content",
+    translationContent: "ecommerce.portfolio.categories.cloth.content",
     translationdesign: "ecommerce.portfolio.categories.cloth.design",
     translationfontendDevelopment:
       "ecommerce.portfolio.categories.cloth.frontendDevelopment",
@@ -126,8 +125,7 @@ const portfolioItems = [
     image: "/portfolio/ecommerce.webp",
     src: ["/portfolio/ecommerce.webp"],
     translationName: "ecommerce.portfolio.categories.beauty.name",
-    translationContent:
-      "ecommerce.portfolio.categories.beauty.content",
+    translationContent: "ecommerce.portfolio.categories.beauty.content",
     translationdesign: "ecommerce.portfolio.categories.beauty.design",
     translationfontendDevelopment:
       "ecommerce.portfolio.categories.beauty.frontendDevelopment",
@@ -138,7 +136,7 @@ const portfolioItems = [
   },
   {
     image: "/portfolio/ecommerce2.webp",
-    src:  ["/portfolio/ecommerce2.webp"],
+    src: ["/portfolio/ecommerce2.webp"],
     translationName: "ecommerce.portfolio.categories.porto.name",
     translationContent: "ecommerce.portfolio.categories.porto.content",
     translationdesign: "ecommerce.portfolio.categories.porto.design",
@@ -146,8 +144,7 @@ const portfolioItems = [
       "ecommerce.portfolio.categories.porto.frontendDevelopment",
     translationbackendDevelopment:
       "ecommerce.portfolio.categories.porto.backendDevelopment",
-    translationDatabase:
-      "ecommerce.portfolio.categories.porto.database",
+    translationDatabase: "ecommerce.portfolio.categories.porto.database",
     bgColor: "bg-amber-400",
     dotColor: "bg-amber-500",
   },
@@ -168,18 +165,19 @@ export default function EcommerceDevelopment() {
       {/* Hero Section */}
       <div className="relative h-screen flex flex-col sm:flex-row justify-center items-center overflow-hidden bg-blue-200">
         <video
+          title="création-de-sites e-commerce"
           autoPlay
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover mix-blend-multiply"
+          className="absolute opacity-60 inset-0 w-full h-full object-cover mix-blend-multiply"
         >
-          <source src="/ecommerce1.mp4" type="video/mp4" />
+          <source src="/création-de-sites e-commerce.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="relative z-20 flex w-full h-screen gap-5 justify-center items-center">
           <div className="mt-10 sm:mt-0 flex flex-col justify-center items-center">
-            <h1 className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
+            <h1 className="text-5xl my-3 max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
               {t("ecommerce.hero.title")}
             </h1>
             <HeroButtons />
