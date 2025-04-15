@@ -76,13 +76,11 @@ export default function PortfolioModal({ item, isOpen, setIsOpen, t }) {
                   )}
 
                   {item && item.translationContent && (
-                    <p className="text-sm text-gray-500 mt-2">
-                      {t(item.translationContent)}
-                    </p>
+                    <div className=" text-gray-800 mt-2" dangerouslySetInnerHTML={{ __html: t(item.translationContent)}} />
                   )}
 
                   {item && (
-                    <ul className="mt-2 list-disc pl-5 text-sm text-gray-500">
+                    <ul className="mt-2 list-disc pl-5 text-sm text-gray-800">
                       {item.translationdesign && (
                         <li>{t(item.translationdesign)}</li>
                       )}

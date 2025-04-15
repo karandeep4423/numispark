@@ -240,6 +240,34 @@ const portfolioItems = [
     bgColor: "bg-emerald-600",
     dotColor: "bg-emerald-500",
   },
+  {
+    image: "/portfolio/seo-agence-de-immobilier.png",
+    src: ["/portfolio/seo-agence-de-immobilier.png"],
+    translationName: "seo.portfolio.categories.immobilier.name",
+    translationContent:
+      "seo.portfolio.categories.immobilier.content",
+    bgColor: "bg-violet-100",
+    dotColor: "bg-violet-500",
+  },
+  {
+    image: "/portfolio/seo-agence-ecommerce.png",
+    src: ["/portfolio/seo-agence-ecommerce.png"],
+    translationName: "seo.portfolio.categories.ecommerce.name",
+    translationContent:
+      "seo.portfolio.categories.ecommerce.content",
+    bgColor: "bg-emerald-600",
+    dotColor: "bg-emerald-500",
+  },
+  {
+    image: "/portfolio/seo-experte-référencement.png",
+    src: ["/portfolio/seo-experte-référencement.png"],
+    translationName: "seo.portfolio.categories.SFA.name",
+    translationContent:
+      "seo.portfolio.categories.SFA.content",
+    translationdesign: "seo.portfolio.categories.SFA.design",
+    bgColor: "bg-amber-400",
+    dotColor: "bg-amber-500",
+  },
 ];
 
 const Portfolio = () => {
@@ -250,6 +278,7 @@ const Portfolio = () => {
   const { t: tWebsiteMobileDesign } = useTranslation("websiteMobileDesign");
   const { t: tMobileDevelopment } = useTranslation("mobileDevelopment");
   const { t: tSocialMediaLogoDesign } = useTranslation("socialMediaLogoDesign");
+  const { t: tSeo } = useTranslation("seo");
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedModal, setSelectedModal] = useState(null);
@@ -270,6 +299,8 @@ const Portfolio = () => {
         return tMobileDevelopment;
       case "socialMediaLogoDesign":
         return tSocialMediaLogoDesign;
+      case "seo":
+        return tSeo;
       default:
         return (key) => key;
     }

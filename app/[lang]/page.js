@@ -273,8 +273,11 @@ const portfolioItems = [
     dotColor: "bg-emerald-500",
   },
   {
-    image: "/portfolio/seo1.png",
-    translationKey: "appDesign",
+    image: "/portfolio/seo-agence-ecommerce.png",
+    src: ["/portfolio/seo-agence-ecommerce.png"],
+    translationName: "home.portfolio.categories.ecommerce.name",
+    translationContent:
+      "home.portfolio.categories.ecommerce.content",
     bgColor: "bg-amber-400",
     dotColor: "bg-amber-500",
   },

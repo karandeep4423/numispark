@@ -141,8 +141,10 @@
           "design": "UI/UX-Design mit Figma",
           "database": "Datenbankverwaltung mit MongoDB"
         },
-        "uiUx": "UI/UX-Design",
-        "appDesign": "App-Design"
+        "ecommerce": {
+          "name": "E-commerce SEO",
+          "content": "<br>**Entwicklung der SEO-Strategie**<br>Wir führten eine umfassende SEO-Analyse durch, um zentrale Verbesserungspotentiale zu identifizieren, und entwickelten eine maßgeschneiderte SEO-Strategie für dieses E-Commerce-Projekt.<br><br>**On-Page SEO**<br>Wir optimierten den Produktinhalt, die Meta-Tags, Überschriften und Bilder, um die Relevanz der Keywords zu steigern und die Benutzererfahrung zu verbessern – mit besonderem Fokus auf blumenbezogene Keywords und saisonale Trends.<br><br>**Technisches SEO**<br>Wir gingen technische Herausforderungen an, indem wir die Website in die Google Search Console integrierten, die Sitemap optimierten und die robots.txt-Datei verfeinerten, um die Leistungsfähigkeit und Indexierbarkeit der Seite zu erhöhen.<br><br>**Off-Page SEO**<br>Mit einer gezielten Linkbuilding-Kampagne und dem strategischen Einsatz von Social-Media-Plattformen steigerten wir die Domain-Autorität und die Online-Präsenz, indem wir lokale Influencer und spezialisierte Blumenblogs ansprachen.<br><br>**Fazit**<br>Durch einen ganzheitlichen Ansatz, der Strategieentwicklung, On-Page-Optimierung, technische Verbesserungen und Off-Page-Maßnahmen umfasst, erzielten wir einen bemerkenswerten Anstieg des organischen Suchverkehrs – ein klarer Beweis für den Erfolg einer umfassenden SEO-Kampagne."
+        }
       }
     },
     "gallery": {

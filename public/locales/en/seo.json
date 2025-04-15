@@ -126,8 +126,18 @@
       "title": "Our Recent",
       "titleHighlight": "Work",
       "categories": {
-        "uiUx": "UI/UX Design",
-        "appDesign": "App Design"
+        "ecommerce": {
+          "name": "E-commerce SEO",
+          "content": "<br>**SEO Strategy Development**<br><br>We conducted a comprehensive SEO audit to identify key improvement areas and developed a customized strategy specifically tailored for this eCommerce project.<br><br>**On-Page SEO**<br><br>We enhanced product content, meta tags, headers, and images to boost keyword relevance and improve user experience, with a focus on floral keywords and seasonal trends.<br><br>**Technical SEO**<br><br>We resolved technical issues by integrating the website with Google Search Console, optimizing the sitemap, and refining the robots.txt file to enhance site performance and indexability.<br><br>**Off-Page SEO**<br><br>We executed a targeted link-building campaign and leveraged social media platforms to increase domain authority and boost online presence, targeting local influencers and specialized floral blogs.<br><br>**Conclusion**<br><br>Through a holistic approach covering strategy development, on-page optimizations, technical enhancements, and off-page initiatives, we achieved a remarkable improvement in organic search traffic, demonstrating the effectiveness of a comprehensive SEO campaign."
+        },
+        "immobilier": {
+          "name": "Real Estate - SEO",
+          "content": "<br>**Client: Real Estate Agency in Paris**<br><br>**SEO Strategy Development**<br>We conducted a full-scale SEO audit to identify areas for improvement and created a bespoke strategy tailored to the agency’s real estate market in Paris.<br><br>**On-Page SEO**<br>We optimized the website content, meta tags, headers, and images to increase keyword relevance and enhance user experience, aligning content with the agency’s target search intent.<br><br>**Technical SEO**<br>We resolved key technical issues by integrating the website with Google Search Console, optimizing the sitemap, and refining the robots.txt file—ensuring better performance and indexability.<br><br>**Off-Page SEO**<br>A focused link-building campaign and strategic use of social media platforms were implemented to increase domain authority and expand the agency’s online presence.<br><br>**Results**<br>- **Initial State**: 0 daily clicks from organic search.<br>- **Outcome**: Traffic surged to 40 daily clicks from organic sources.<br>- **Timeframe**: Achieved within just a few months of implementing the strategy.<br><br>**Conclusion**<br>Thanks to a holistic and targeted SEO approach—covering strategic planning, on-page improvements, technical fixes, and off-page efforts—the real estate agency experienced a substantial boost in organic search traffic, validating the impact of a well-executed SEO campaign."
+        },
+        "SFA": {
+          "name": "SFA - SEO",
+          "content": "<br>**Client Overview**<br>SFA is a leading football academy in France offering top-tier training programs to aspiring footballers from around the world. Focused on developing technical skills, fitness, and character, SFA shapes well-rounded athletes.<br><br>**Project Goals**<br>Our primary objective was to boost the academy’s online visibility, attract more aspiring players, and enhance user engagement through strategic, optimized content and effective SEO practices.<br><br>**Challenges and Solutions**<br>The academy’s website suffered from unoptimized content and technical SEO shortcomings, resulting in low search rankings. To overcome these issues, I conducted extensive keyword research, created high-quality SEO content, and optimized meta tags. I also implemented a robust internal linking strategy, improved site speed, and ensured mobile responsiveness to elevate the user experience.<br><br>**Results**<br>The project led to significant improvements in search engine rankings, increased organic traffic, and improved user engagement, enabling SFA to attract a broader audience and boost conversions."
+        }
       }
     },
     "faq": {

@@ -21,7 +21,9 @@ import HeroButtons from "@/components/HeroButtons/page";
 import FAQs from "@/components/Faqs/page";
 import Technologies from "@/components/Technologies/page";
 import HowAgencyWorks from "@/components/Process/page";
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from "next-i18next";
+import PortfolioModal from "@/components/PortfolioModal/page";
+import React, { useState } from "react";
 
 const TECHNOLOGIES = [
   {
@@ -49,7 +51,7 @@ const Services = [
   { serviceIcon: Code, translationKey: "technical" },
   { serviceIcon: MapPin, translationKey: "local" },
   { serviceIcon: FileText, translationKey: "content" },
-  { serviceIcon: BarChart, translationKey: "analytics" }
+  { serviceIcon: BarChart, translationKey: "analytics" },
 ];
 
 const features = [
@@ -58,7 +60,7 @@ const features = [
   { serviceIcon: Code, translationKey: "technicalExcellence" },
   { serviceIcon: Link, translationKey: "linkBuilding" },
   { serviceIcon: ShoppingCart, translationKey: "ecommerce" },
-  { serviceIcon: Zap, translationKey: "speed" }
+  { serviceIcon: Zap, translationKey: "speed" },
 ];
 
 const WhyUs = [
@@ -67,7 +69,7 @@ const WhyUs = [
   { serviceIcon: Target, translationKey: "custom" },
   { serviceIcon: Code, translationKey: "technical" },
   { serviceIcon: FileText, translationKey: "content" },
-  { serviceIcon: Rocket, translationKey: "innovation" }
+  { serviceIcon: Rocket, translationKey: "innovation" },
 ];
 
 const steps = [
@@ -75,17 +77,49 @@ const steps = [
   { icon: <Search size={80} />, translationKey: "research" },
   { icon: <FileText size={80} />, translationKey: "content" },
   { icon: <Code size={80} />, translationKey: "technical" },
-  { icon: <TrendingUp size={80} />, translationKey: "monitoring" }
+  { icon: <TrendingUp size={80} />, translationKey: "monitoring" },
 ];
 
 const portfolioItems = [
-  { translationKey: "uiUx", bgColor: "bg-violet-100" },
-  { translationKey: "appDesign", bgColor: "bg-emerald-600" },
-  { translationKey: "appDesign", bgColor: "bg-amber-400" }
+  {
+    image: "/portfolio/seo-agence-de-immobilier.png",
+    src: ["/portfolio/seo-agence-de-immobilier.png"],
+    translationName: "seo.portfolio.categories.immobilier.name",
+    translationContent:
+      "seo.portfolio.categories.immobilier.content",
+    bgColor: "bg-violet-100",
+    dotColor: "bg-violet-500",
+  },
+  {
+    image: "/portfolio/seo-agence-ecommerce.png",
+    src: ["/portfolio/seo-agence-ecommerce.png"],
+    translationName: "seo.portfolio.categories.ecommerce.name",
+    translationContent:
+      "seo.portfolio.categories.ecommerce.content",
+    bgColor: "bg-emerald-600",
+    dotColor: "bg-emerald-500",
+  },
+  {
+    image: "/portfolio/seo-experte-référencement.png",
+    src: ["/portfolio/seo-experte-référencement.png"],
+    translationName: "seo.portfolio.categories.SFA.name",
+    translationContent:
+      "seo.portfolio.categories.SFA.content",
+    translationdesign: "seo.portfolio.categories.SFA.design",
+    bgColor: "bg-amber-400",
+    dotColor: "bg-amber-500",
+  },
 ];
 
 export default function Seo() {
   const { t } = useTranslation("seo");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedModal, setSelectedModal] = useState("");
+
+  const openModal = (item) => {
+    setSelectedModal(item);
+    setIsModalOpen(true);
+  };
 
   return (
     <div>
@@ -148,9 +182,9 @@ export default function Seo() {
         </div>
       </div>
 
-       {/* Technologies Section */}
-       <Technologies technologies={TECHNOLOGIES} />
-       
+      {/* Technologies Section */}
+      <Technologies technologies={TECHNOLOGIES} />
+
       {/* Features Section */}
       <div className="py-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
@@ -236,20 +270,23 @@ export default function Seo() {
           {portfolioItems.map((item, index) => (
             <div
               key={index}
-              className={`shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] relative rounded-3xl p-6 ${item.bgColor}`}
+              className={`shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] relative rounded-3xl p-2 ${item.bgColor}`}
             >
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+              <div className="relative aspect-[4/3] rounded-2xl -mr-1 overflow-hidden mb-3">
                 <img
-                  src="/api/placeholder/400/400"
-                  alt={t(`portfolio.categories.${item.translationKey}`)}
-                  className="w-full h-full object-cover"
+                  src={item.image}
+                  alt={t(item.translationName)}
+                  className="w-full h-full object-fill"
                 />
               </div>
               <div className="flex justify-between items-center">
                 <h3 className="text-lg font-medium">
-                  {t(`seo.portfolio.categories.${item.translationKey}`)}
+                  {t(item.translationName)}
                 </h3>
-                <button className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors">
+                <button
+                  onClick={() => openModal(item)}
+                  className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition-colors"
+                >
                   <ArrowUpRight className="w-6 h-6 text-white" />
                 </button>
               </div>
@@ -257,6 +294,12 @@ export default function Seo() {
           ))}
         </div>
       </div>
+      <PortfolioModal
+        item={selectedModal}
+        isOpen={isModalOpen}
+        setIsOpen={setIsModalOpen}
+        t={t}
+      />
 
       {/* FAQs Section */}
       <FAQs

@@ -117,8 +117,10 @@
           "design": "Conception UI/UX avec Figma",
           "database": "Gestion de base de données avec MongoDB"
         },
-        "uiUx": "Conception UI/UX",
-        "appDesign": "Conception d'applications"
+        "ecommerce": {
+          "name": "E-commerce SEO",
+          "content": "<br>**Développement de la stratégie SEO**<br><br>Nous avons réalisé un audit SEO approfondi afin d'identifier les domaines clés à améliorer et avons élaboré une stratégie SEO sur mesure pour ce projet e-commerce.<br><br>**SEO sur la page**<br><br>Nous avons optimisé le contenu des produits, les balises méta, les titres et les images pour renforcer la pertinence des mots-clés et améliorer l'expérience utilisateur, en nous concentrant sur les mots-clés liés aux fleurs et les tendances saisonnières.<br><br>**SEO technique**<br><br>Nous avons résolu des problèmes techniques en intégrant le site à Google Search Console, en optimisant le plan du site et en ajustant le fichier robots.txt pour améliorer les performances et l’indexabilité du site.<br><br>**SEO hors-page**<br><br>Nous avons mis en place une campagne de netlinking ciblée et utilisé les plateformes de réseaux sociaux pour renforcer l'autorité du domaine et accroître la visibilité en ligne, en ciblant des influenceurs locaux et des blogs spécialisés dans le domaine floral.<br><br>**Conclusion**<br><br>Grâce à une approche globale qui couvre la stratégie, l'optimisation sur page, les améliorations techniques et les actions hors-page, nous avons constaté une augmentation remarquable du trafic organique, démontrant ainsi l'efficacité d'une campagne SEO complète."
+        }
       }
     },
     "testimonials": {
