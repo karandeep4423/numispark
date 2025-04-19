@@ -27,13 +27,13 @@ export async function generateMetadata({ params }) {
     };
   } else {
     return {
-      title: translations.metaData["home"].title,
+      title: translations?.metaData['home'].title,
       description:
-        translations.metaData["home"].description,
-      keywords: translations.metaData["home"].keywords,
+        translations?.metaData['home'].description,
+      keywords: translations?.metaData['home'].keywords,
       alternates: {
         canonical:
-          translations.metaData["home"].canonical,
+          translations?.metaData['home'].canonical,
       },
     };
   }
