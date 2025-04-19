@@ -12,7 +12,9 @@ export async function generateMetadata({ params}) {
     title: translations.metaData['seo'].title,
     description: translations.metaData['seo'].description,
     keywords: translations.metaData['seo'].keywords,
-    canonical: translations.metaData['seo'].canonical
+    alternates: {
+      canonical: translations.metaData['seo'].canonical,
+    },
   };
 }
 

@@ -13,7 +13,9 @@ export async function generateMetadata({ params}) {
     title: translations.metaData['contact-us'].title,
     description: translations.metaData['contact-us'].description,
     keywords: translations.metaData['contact-us'].keywords,
-    canonical: translations.metaData['contact-us'].canonical
+    alternates: {
+      canonical: translations.metaData['contact-us'].canonical,
+    },
   };
 }
 

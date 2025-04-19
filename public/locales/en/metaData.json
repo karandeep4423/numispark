@@ -1,5 +1,11 @@
 {
   "metaData": {
+    "home": {
+      "title": "Digital Solutions for IT & Marketing | NumiSpark",
+      "description": "Empowering businesses with innovative IT and marketing services. From web development and mobile app creation to SEO and digital campaigns, our experienced team delivers creative and scalable solutions tailored to your needs.",
+      "keywords": "IT services, digital marketing, web development, mobile app development, SEO, social media marketing, digital transformation, Numispark",
+      "canonical": "https://www.numispark.com/en"
+    },
     "contact-us": {
       "title": "Contact Us | NumiSpark",
       "description": "Get in touch with NumiSpark for expert digital solutions, responsive support, and creative services tailored to your needs.",
@@ -17,77 +23,66 @@
       "description": "Improve your search rankings and drive organic traffic with our expert SEO strategies designed to grow your business online.",
       "keywords": "SEO, search engine optimization, organic traffic, online marketing",
       "canonical": "https://www.numispark.com/en/seo"
-
     },
     "website-development": {
       "title": "Website Development | Custom Web Solutions",
       "description": "Our website development services provide custom, scalable, and responsive websites built to enhance your online presence and drive conversions.",
       "keywords": "website development, custom website, responsive design, web solutions",
       "canonical": "https://www.numispark.com/en/agence-creation-site-web"
-
     },
     "mobile-app-development": {
       "title": "Mobile App Development | Innovative Mobile Solutions",
       "description": "Transform your ideas into engaging mobile applications with our mobile app development services that focus on performance and user experience.",
       "keywords": "mobile app development, app design, user experience, mobile innovation",
       "canonical": "https://www.numispark.com/en/developpement-application-mobile"
-
     },
     "ecommerce-development": {
       "title": "Ecommerce Development | Scalable Online Stores",
       "description": "Build a robust online store with our ecommerce development services, optimized for performance, security, and conversion.",
       "keywords": "ecommerce development, online store, scalable, secure, conversion optimization",
       "canonical": "https://www.numispark.com/en/developpement-ecommerce"
-
     },
     "saas-development": {
       "title": "SaaS Development | Transform Your Business",
       "description": "Leverage our SaaS development expertise to create scalable, cloud‑based solutions that drive efficiency and business growth.",
       "keywords": "SaaS development, cloud solutions, business transformation, software as a service",
       "canonical": "https://www.numispark.com/en/developpement-saas"
-
     },
     "ai-and-automation": {
       "title": "AI & Automation | Smart Business Solutions",
       "description": "Harness the power of artificial intelligence and automation with our solutions designed to optimize operations and reduce costs.",
       "keywords": "AI, automation, business optimization, cost reduction, smart solutions",
       "canonical": "https://www.numispark.com/en/agence-automatisation-ia"
-
     },
     "website-&-mobile-app-design": {
       "title": "Web & Mobile App Design | Creative & Responsive",
       "description": "Our design team crafts visually stunning and user‑friendly websites and mobile apps that elevate your brand and engage your audience.",
       "keywords": "web design, mobile app design, responsive design, creative design, user experience",
       "canonical": "https://www.numispark.com/en/web-et-mobile-design"
-
     },
     "social-media-post-&-logo-design": {
       "title": "Social Media & Logo Design | Stand Out Online",
       "description": "Enhance your brand identity with our creative social media posts and logo design services that capture attention and drive engagement.",
       "keywords": "social media design, logo design, branding, creative design, digital marketing",
       "canonical": "https://www.numispark.com/en/design-logo-et-posts-reseaux-sociaux"
-
     },
     "social-media-marketing": {
       "title": "Social Media Marketing | Grow Your Online Presence",
       "description": "Boost your digital footprint with our targeted social media marketing strategies designed to increase brand awareness and engagement.",
       "keywords": "social media marketing, digital marketing, brand awareness, engagement, online growth",
       "canonical": "https://www.numispark.com/en/marketing-digital"
-
     },
     "portfolio": {
       "title": "Numispark Portfolio | Web, Mobile & Digital Marketing Projects",
       "description": "Explore our web & mobile development, design and digital marketing projects. Discover how Numispark transforms our clients' visions into high-performing digital solutions.",
       "keywords": "portfolio, projects, web development, mobile development, design, digital marketing, case studies",
       "canonical": "https://www.numispark.com/en/portfolio"
-
     },
     "blog": {
       "title": "Numispark Blog | Web, Mobile Development & Digital Marketing Expertise",
       "description": "Read our articles on web & mobile development, SEO and digital marketing strategies. Stay informed about the latest trends and innovations with Numispark.",
       "keywords": "blog, web development, mobile development, digital marketing, trends, tips, innovations",
       "canonical": "https://www.numispark.com/en/blog"
-
     }
   }
 }

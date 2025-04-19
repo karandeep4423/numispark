@@ -1,18 +1,18 @@
-import AiDevelopment from '@/components/ai-and-automation/page';
+import AiDevelopment from "@/components/ai-and-automation/page";
 
-export async function generateMetadata({ params}) {
+export async function generateMetadata({ params }) {
   // Load translations directly from JSON files
   const paramData = await params;
   const lang = paramData?.lang;
-  const translations = await import(
-    `@/public/locales/${lang}/metaData.json`
-  );
+  const translations = await import(`@/public/locales/${lang}/metaData.json`);
 
   return {
-    title: translations.metaData['ai-and-automation'].title,
-    description: translations.metaData['ai-and-automation'].description,
-    keywords: translations.metaData['ai-and-automation'].keywords,
-    canonical: translations.metaData['ai-and-automation'].canonical
+    title: translations.metaData["ai-and-automation"].title,
+    description: translations.metaData["ai-and-automation"].description,
+    keywords: translations.metaData["ai-and-automation"].keywords,
+    alternates: {
+      canonical: translations.metaData["ai-and-automation"].canonical,
+    },
   };
 }
 

@@ -12,7 +12,9 @@ export async function generateMetadata({ params}) {
     title: translations.metaData['ecommerce-development'].title,
     description: translations.metaData['ecommerce-development'].description,
     keywords: translations.metaData['ecommerce-development'].keywords,
-    canonical: translations.metaData['ecommerce-development'].canonical
+    alternates: {
+      canonical: translations.metaData['ecommerce-development'].canonical,
+    },
   };
 }
 

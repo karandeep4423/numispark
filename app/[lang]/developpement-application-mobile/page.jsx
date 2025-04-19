@@ -12,7 +12,9 @@ export async function generateMetadata({ params}) {
     title: translations.metaData['mobile-app-development'].title,
     description: translations.metaData['mobile-app-development'].description,
     keywords: translations.metaData['mobile-app-development'].keywords,
-    canonical: translations.metaData['mobile-app-development'].canonical
+    alternates: {
+      canonical: translations.metaData['mobile-app-development'].canonical,
+    },
   };
 }
 

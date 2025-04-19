@@ -1,25 +1,25 @@
 import About from "@/components/about-us/page";
 
-export async function generateMetadata({ params}) {
+export async function generateMetadata({ params }) {
   // Load translations directly from JSON files
   const paramData = await params;
   const lang = paramData?.lang;
-  const translations = await import(
-    `@/public/locales/${lang}/metaData.json`
-  );
+  const translations = await import(`@/public/locales/${lang}/metaData.json`);
 
   return {
-    title: translations.metaData['about-us'].title,
-    description: translations.metaData['about-us'].description,
-    keywords: translations.metaData['about-us'].keywords,
-    canonical: translations.metaData['about-us'].canonical
+    title: translations.metaData["about-us"].title,
+    description: translations.metaData["about-us"].description,
+    keywords: translations.metaData["about-us"].keywords,
+    alternates: {
+      canonical: translations.metaData["about-us"].canonical,
+    },
   };
 }
 
 const AboutUs = () => {
   return (
     <div>
-        <About />
+      <About />
     </div>
   );
 };
