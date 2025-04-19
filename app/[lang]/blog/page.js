@@ -63,9 +63,7 @@ export async function generateMetadata({ params }) {
       description:
         translations?.metaData?.blog?.description || "Latest blog posts",
       keywords: translations?.metaData?.blog?.keywords || "blog",
-      alternates: {
-        canonical: translations?.metaData?.blog?.canonical || "/blog",
-      },
+      canonical: translations?.metaData?.blog?.canonical || "/blog",
     };
   } catch (error) {
     // Return fallback metadata if there's an error

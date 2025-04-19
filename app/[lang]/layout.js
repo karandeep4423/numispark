@@ -20,21 +20,12 @@ export async function generateMetadata({ params }) {
   const lang = paramData?.lang;
   const translations = await import(`@/public/locales/${lang}/metaData.json`);
 
-  if (!lang) {
-    return {
-      title: "Default Title",
-      description: "Default Description",
-    };
-  } else {
-    return {
-      title: translations?.metaData['home'].title,
-      description:
-        translations?.metaData['home'].description,
-      keywords: translations?.metaData['home'].keywords,
-      alternates: {
-        canonical:
-          translations?.metaData['home'].canonical,
-      },
-    };
-  }
+  return {
+    title: translations?.metaData["home"]?.title,
+    description: translations?.metaData["home"]?.description,
+    keywords: translations?.metaData["home"]?.keywords,
+    alternates: {
+      canonical: translations?.metaData["home"]?.canonical,
+    },
+  };
 }
