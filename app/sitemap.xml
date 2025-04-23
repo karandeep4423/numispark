@@ -6,67 +6,67 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://www.numispark.com/</loc>
+  <loc>https://numispark.com/</loc>
   <lastmod>2025-04-11T11:16:23+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.numispark.com/agence-creation-site-web</loc>
+  <loc>https://numispark.com/agence-creation-site-web</loc>
+  <lastmod>2025-04-11T11:16:23+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://numispark.com/developpement-application-mobile</loc>
   <lastmod>2025-04-11T11:16:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.numispark.com/developpement-application-mobile</loc>
+  <loc>https://numispark.com/developpement-ecommerce</loc>
   <lastmod>2025-04-11T11:16:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.numispark.com/developpement-ecommerce</loc>
+  <loc>https://numispark.com/developpement-saas</loc>
   <lastmod>2025-04-11T11:16:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.numispark.com/developpement-saas</loc>
+  <loc>https://numispark.com/agence-automatisation-ia</loc>
   <lastmod>2025-04-11T11:16:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.numispark.com/agence-automatisation-ia</loc>
+  <loc>https://numispark.com/web-et-mobile-design</loc>
   <lastmod>2025-04-11T11:16:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.numispark.com/web-et-mobile-design</loc>
+  <loc>https://numispark.com/design-logo-et-posts-reseaux-sociaux</loc>
   <lastmod>2025-04-11T11:16:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.numispark.com/design-logo-et-posts-reseaux-sociaux</loc>
+  <loc>https://numispark.com/seo</loc>
+  <lastmod>2025-04-11T11:16:23+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://numispark.com/marketing-digital</loc>
   <lastmod>2025-04-11T11:16:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.numispark.com/seo</loc>
+  <loc>https://numispark.com/portfolio</loc>
   <lastmod>2025-04-11T11:16:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.numispark.com/marketing-digital</loc>
+  <loc>https://numispark.com/a-propos-de-nous</loc>
   <lastmod>2025-04-11T11:16:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.numispark.com/portfolio</loc>
-  <lastmod>2025-04-11T11:16:23+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.numispark.com/a-propos-de-nous</loc>
-  <lastmod>2025-04-11T11:16:23+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.numispark.com/contactez-nous</loc>
+  <loc>https://numispark.com/contactez-nous</loc>
   <lastmod>2025-04-11T11:16:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
