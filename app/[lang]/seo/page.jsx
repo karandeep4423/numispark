@@ -1,4 +1,4 @@
-import SEO from '@/components/seo/page';
+import Seo from '@/components/seo/page';
 
 export async function generateMetadata({ params}) {
   // Load translations directly from JSON files
@@ -18,12 +18,12 @@ export async function generateMetadata({ params}) {
   };
 }
 
-const Seo = () => {
+const SEO = () => {
   return (
     <div>
-      <SEO />
+      <Seo />
     </div>
   );
 };
 
-export default Seo;
+export default SEO;
