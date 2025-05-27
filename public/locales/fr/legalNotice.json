@@ -1,0 +1,97 @@
+{
+  "legalNotice": {
+    "title": "Mentions Légales",
+    "company_info": {
+      "title": "Informations sur l'entreprise",
+      "labelName": "Nom de l'entreprise",
+      "labelLegalForm": "Forme juridique",
+      "labelCapital": "Capital social",
+      "labelAddress": "Adresse",
+      "labelSiren": "SIREN",
+      "labelSiret": "SIRET",
+      "labelApe": "Code APE",
+      "labelRcs": "RCS",
+      "labelVatNumber": "Numéro de TVA",
+      "labelCreationDate": "Date de création",
+      "name": "Numispark",
+      "legal_form": "Société à Responsabilité Limitée Unipersonnelle (EURL)",
+      "capital": "70 euros",
+      "address": "832 Route Tilleul Fol Enfant, 27300 Saint-Martin-du-Tilleul, France",
+      "siren": "943 468 926",
+      "siret": "94346892600010",
+      "ape": "6201Z - Programmation informatique",
+      "rcs": "En cours d'immatriculation",
+      "vat_number": "FR[XX] 943 468 926",
+      "creation_date": "18/04/2025"
+    },
+    "management": {
+      "labelManager": "Gérant",
+      "labelPublisher": "Éditeur",
+      "title": "Direction et publication",
+      "manager": "Singh Karandeep Singh",
+      "publisher": "Singh Karandeep Singh",
+      "residence": "Saint-Martin-du-Tilleul"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "contact@numispark.com",
+      "website": "https://numispark.com"
+    },
+    "hosting": {
+      "labelHosting": "Hébergement",
+      "labelCompany": "Société d'hébergement",
+      "labelAddress": "Adresse de l'hébergeur",
+      "labelWebsite": "Site web de l'hébergeur",
+      "title": "Hébergement",
+      "company": "Vercel Inc.",
+      "address": "340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis",
+      "website": "https://vercel.com"
+    },
+    "intellectual_property": {
+      "title": "Propriété intellectuelle",
+      "content": "Le contenu du présent site web (textes, images, vidéos, etc.) est la propriété exclusive de Numispark, sauf mention contraire. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de Numispark.",
+      "unauthorized_use": "Toute exploitation non autorisée du site ou de son contenu engagera la responsabilité civile et/ou pénale de l'utilisateur."
+    },
+    "data_collection": {
+      "title": "Collecte des données personnelles",
+      "protection_laws": "Les données personnelles sont notamment protégées par la loi n° 78-17 du 6 janvier 1978 modifiée, le RGPD du 27 avril 2016, et l'article L. 226-13 du Code pénal.",
+      "collected_info": "Ce site ne collecte des informations personnelles que pour les besoins des services proposés, notamment : Formulaire de contact, Demandes de devis, Newsletter, Candidatures.",
+      "user_consent": "L'utilisateur fournit ces informations en toute connaissance de cause.",
+      "mandatory_info_notice": "Il est précisé à l'utilisateur le caractère obligatoire ou facultatif des informations demandées."
+    },
+    "cookies": {
+      "title": "Cookies et données de navigation",
+      "usage": "Nous utilisons des cookies pour améliorer votre expérience de navigation et analyser l'utilisation de notre site.",
+      "google_analytics": {
+        "description": "Ce site utilise Google Analytics, un service d'analyse fourni par Google Inc.",
+        "data_usage": "Les données générées par les cookies concernant votre utilisation du site seront transmises à Google.",
+        "consent": "En utilisant ce site, vous consentez expressément au traitement de vos données par Google."
+      },
+      "disable_notice": "Vous pouvez désactiver les cookies via les paramètres de votre navigateur. Cela pourrait empêcher l'utilisation de certaines fonctionnalités."
+    },
+    "rights": {
+      "title": "Droit de rectification",
+      "description": "Conformément à la loi et au RGPD, l'utilisateur dispose de droits d'accès, rectification, suppression et opposition.",
+      "exercise_rights": "Pour exercer ces droits, contactez Numispark par email avec vos informations d'identité."
+    },
+    "liability": {
+      "title": "Responsabilité",
+      "accuracy": "Les informations sur ce site sont aussi précises que possible mais peuvent contenir des erreurs ou omissions.",
+      "report_issue": "Signalez tout problème par email à [email à compléter].",
+      "hardware_damage": "Numispark ne peut être tenue responsable des dommages matériels causés par l'utilisation du site."
+    },
+    "links": {
+      "title": "Liens hypertextes",
+      "external_links": "En cliquant sur certains liens, l'utilisateur quitte le site. Numispark n'est pas responsable du contenu des sites externes."
+    },
+    "jurisdiction": {
+      "title": "Droit applicable",
+      "text": "Tout litige relatif à l'utilisation du site est soumis au droit français. Attribution exclusive aux tribunaux de Évreux sauf exceptions légales."
+    },
+    "updates": {
+      "title": "Évolution des mentions légales",
+      "text": "Numispark peut modifier ces mentions légales à tout moment. L'utilisateur s'engage à les consulter régulièrement.",
+      "last_update": "27-05-2025"
+    }
+  }
+}

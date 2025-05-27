@@ -83,6 +83,18 @@
       "description": "Découvrez nos articles sur le développement web & mobile, le SEO et les stratégies de marketing digital. Restez informé des dernières tendances et innovations avec Numispark.",
       "keywords": "blog, développement web, développement mobile, marketing digital, tendances, conseils, innovations",
       "canonical": "https://numispark.com/blog"
+    },
+    "mentions-legales": {
+      "title": "Mentions legales | NumiSpark",
+      "description": "Consultez les conditions générales d'utilisation de NumiSpark pour comprendre vos droits et obligations lors de l'utilisation de nos services.",
+      "keywords": "conditions générales, utilisation, NumiSpark, CGU",
+      "canonical": "https://numispark.com/mentions-legales"
+    },
+    "privacy-policy": {
+      "title": "Politique de Confidentialité | NumiSpark",
+      "description": "Découvrez comment NumiSpark collecte, utilise et protège vos données personnelles. Consultez notre politique de confidentialité pour en savoir plus.",
+      "keywords": "politique de confidentialité, données personnelles, protection des données, NumiSpark",
+      "canonical": "https://numispark.com/politique-de-confidentialite"
     }
   }
 }

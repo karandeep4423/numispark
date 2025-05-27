@@ -22,6 +22,7 @@ const Footer = () => {
                 <span className="border-4 border-blue-600 ">Numi</span>
                 <span className="text-blue-600 ">Spark</span>
               </div>
+              <p className="text-sm p-1.5 text-gray-700">SIREN: 943468926</p>
             </Link>
 
             <p className="text-gray-700">{t("footer.tagline")}</p>
@@ -199,16 +200,16 @@ const Footer = () => {
           </p>
           <div className="flex gap-6 text-sm">
             <Link
-              href="/privacy-policy"
+              href="/mentions-legales"
               className="text-gray-700 hover:text-blue-600 transition-colors"
             >
-              {t("footer.legal.privacy", "Privacy Policy")}
+              {t("footer.termsOfService")}
             </Link>
             <Link
-              href="/terms"
+              href="/politique-de-confidentialite"
               className="text-gray-700 hover:text-blue-600 transition-colors"
             >
-              {t("footer.legal.terms", "Terms of Service")}
+              {t("footer.privacyPolicy")}
             </Link>
           </div>
         </div>

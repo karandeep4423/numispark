@@ -1,53 +1,54 @@
 {
-    "footer": {
-      "brand": "Digital Agence",
-      "tagline": "Creating digital solutions that spark innovation and drive growth.",
-      "social": {
-        "instagram": "Instagram",
-        "facebook": "Facebook",
-        "tiktok": "Tiktok",
-        "Linkedin": "Linkedin"
-      },
-      "navigation": {
-        "heading": "Navigation",
-        "links": {
-          "home": "Home",
-          "aboutUs": "About us",
-          "portfolio": "Portfolio",
-          "contactUs": "Contact us"
-        }
-      },
-      "developmentServices": {
-        "heading": "Development Services",
-        "links": {
-          "websiteDevelopment": "Website Development",
-          "mobileAppDevelopment": "Mobile App Development",
-          "ecommerceDevelopment": "Ecommerce Development",
-          "saasDevelopment": "SaaS Development",
-          "aiAndAutomation": "AI and Automation"
-        }
-      },
-      "designServices": {
-        "heading": "Design Services",
-        "links": {
-          "websiteMobileAppDesign": "Website & Mobile App Design",
-          "socialMediaPostLogoDesign": "Social Media Post & Logo Design"
-        }
-      },
-      "digitalMarketing": {
-        "heading": "Digital Marketing",
-        "links": {
-          "seo": "SEO",
-          "socialMediaMarketing": "Social Media Marketing"
-        }
-      },
-      "contactInfo": {
+  "footer": {
+    "brand": "Digital Agence",
+    "tagline": "Creating digital solutions that spark innovation and drive growth.",
+    "social": {
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "tiktok": "Tiktok",
+      "Linkedin": "Linkedin"
+    },
+    "navigation": {
+      "heading": "Navigation",
+      "links": {
+        "home": "Home",
+        "aboutUs": "About us",
+        "portfolio": "Portfolio",
+        "contactUs": "Contact us"
+      }
+    },
+    "developmentServices": {
+      "heading": "Development Services",
+      "links": {
+        "websiteDevelopment": "Website Development",
+        "mobileAppDevelopment": "Mobile App Development",
+        "ecommerceDevelopment": "Ecommerce Development",
+        "saasDevelopment": "SaaS Development",
+        "aiAndAutomation": "AI and Automation"
+      }
+    },
+    "designServices": {
+      "heading": "Design Services",
+      "links": {
+        "websiteMobileAppDesign": "Website & Mobile App Design",
+        "socialMediaPostLogoDesign": "Social Media Post & Logo Design"
+      }
+    },
+    "digitalMarketing": {
+      "heading": "Digital Marketing",
+      "links": {
+        "seo": "SEO",
+        "socialMediaMarketing": "Social Media Marketing"
+      }
+    },
+    "contactInfo": {
       "heading": "Contact us",
       "location": "16 Bis Rue Froide, Caen",
       "email": "contact@numispark.com",
       "phone": "+33602528771"
     },
-      "copyright": "Copyright ©2025 All rights reserved"
-    }
+    "copyright": "Copyright ©2025 All rights reserved",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
   }
-  
+}
