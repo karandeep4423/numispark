@@ -15,8 +15,8 @@ import HeroButtons from "@/components/HeroButtons/page";
 import { useTranslation } from "next-i18next";
 
 const teamMembers = [
-  { translationKey: "jessica", image: "/api/placeholder/400/400" },
-  { translationKey: "drew", image: "/api/placeholder/400/400" },
+  { translationKey: "jessica", image: "/team/Thomas1.png" },
+  { translationKey: "drew", image: "" },
   { translationKey: "sasha", image: "/api/placeholder/400/400" },
   { translationKey: "emily", image: "/api/placeholder/400/400" },
   { translationKey: "orlando", image: "/api/placeholder/400/400" },
@@ -117,20 +117,20 @@ const About = () => {
               return (
                 <div
                   key={index}
-                  className="group relative flex flex-col items-center p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+                  className="group relative flex flex-col items-center  shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow duration-300"
                 >
-                  <div className="aspect-square overflow-hidden rounded-lg bg-white">
+                  <div className="aspect-square overflow-hidden rounded-lg bg-blue-200">
                     <img
                       src={member.image}
                       alt={t(`${key}.name`)}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 p-4 ">
-                    <h3 className="text-lg font-semibold text-gray-900">
+                    <h3 className="text-lg font-semibold text-gray-200">
                       {t(`${key}.name`)}
                     </h3>
-                    <p className="text-sm text-gray-600">{t(`${key}.role`)}</p>
+                    <p className="text-sm text-gray-200">{t(`${key}.role`)}</p>
                   </div>
                 </div>
               );

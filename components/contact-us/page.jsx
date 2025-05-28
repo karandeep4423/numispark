@@ -77,10 +77,9 @@ const Contact = () => {
     }
 
     setIsSubmitting(true);
-    console.log("formData", formData);
 
     try {
-      const res = await fetch(`https://www.numispark.com/api/contact`, {
+      const res = await fetch(`https://numispark.com/api/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
