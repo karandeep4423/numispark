@@ -19,20 +19,47 @@ export default function LanguageSwitcher() {
     { code: "de", label: "Deutsch" },
   ];
 
+  // Helper function to detect browser language
+  const detectBrowserLanguage = () => {
+    if (typeof navigator === "undefined") return null;
+    
+    // Get browser language preference
+    const browserLang = navigator.language || navigator.languages?.[0];
+    if (!browserLang) return null;
+    
+    // Extract primary language code (e.g., 'en' from 'en-US')
+    const primaryLang = browserLang.toLowerCase().split('-')[0];
+    
+    // Check if we support this language
+    return languages.some(l => l.code === primaryLang) ? primaryLang : null;
+  };
+
   // Set mounted state once component is mounted
   useEffect(() => {
     setMounted(true);
     
-    // Initialize current language correctly
-    const cookieLang = getCookieLocale();
+    // Initialize current language with priority:
+    // 1. Path locale (current URL)
+    // 2. Cookie locale (user's previous choice)
+    // 3. Browser language (if supported)
+    // 4. Fallback to English for unsupported languages
     const pathLang = getPathLocale(pathname);
+    const cookieLang = getCookieLocale();
+    const browserLang = detectBrowserLanguage();
     
     if (pathLang) {
       setCurrentLang(pathLang);
     } else if (cookieLang && languages.some(l => l.code === cookieLang)) {
       setCurrentLang(cookieLang);
+    } else if (browserLang) {
+      setCurrentLang(browserLang);
+      // Set cookie for browser-detected language if no cookie exists
+      if (!cookieLang) {
+        document.cookie = `userLocale=${browserLang}; path=/; max-age=31536000; SameSite=Strict`;
+      }
     } else {
-      setCurrentLang("fr");
+      // Fallback to English instead of French for unsupported languages
+      setCurrentLang("en");
     }
     
     return () => setMounted(false);
@@ -63,8 +90,18 @@ export default function LanguageSwitcher() {
     if (pathLang) {
       setCurrentLang(pathLang);
     } else {
-      // If no language in path, assume it's French
-      setCurrentLang("fr");
+      // If no language in path, check cookie, then browser, then fallback to English
+      const cookieLang = getCookieLocale();
+      const browserLang = detectBrowserLanguage();
+      
+      if (cookieLang && languages.some(l => l.code === cookieLang)) {
+        setCurrentLang(cookieLang);
+      } else if (browserLang) {
+        setCurrentLang(browserLang);
+      } else {
+        // Fallback to English instead of French
+        setCurrentLang("en");
+      }
     }
   }, [pathname]);
 
@@ -119,11 +156,11 @@ export default function LanguageSwitcher() {
     setCurrentLang(code);
     
     // Always persist the selected language in a cookie (expires in 1 year)
+    // This overrides any browser language detection
     document.cookie = `userLocale=${code}; path=/; max-age=31536000; SameSite=Strict`;
 
     // Extract the path without locale
     const pathWithoutLocale = getPathWithoutLocale(pathname);
-    
     // Construct the new URL with appropriate prefix
     let newPath;
     if (code === "fr") {
