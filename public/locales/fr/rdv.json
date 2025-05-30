@@ -1,0 +1,67 @@
+{
+  "title": "Obtenez votre pré-audit gratuit",
+  "titleHighlight": "en 30 minutes",
+  "description": "Prenez rendez-vous pour une analyse approfondie de votre présence en ligne et optimisez votre stratégie digitale.",
+  "testimonial": {
+    "quote": "Une équipe réactive et professionnelle qui a su répondre à nos besoins spécifiques.",
+    "author": "SELMI Jugurtha",
+    "role": "Directeur Marketing, numispark"
+  },
+  "analysisSection": {
+    "title": "Qu’allons nous analyser ?",
+    "items": {
+      "seoPerformance": {
+        "title": "Performance SEO",
+        "description": "Analyse de votre positionnement sur les moteurs de recherche."
+      },
+      "seaStrategy": {
+        "title": "Stratégie SEA",
+        "description": "Évaluation de vos campagnes publicitaires en ligne."
+      },
+      "competitors": {
+        "title": "Concurrence",
+        "description": "Benchmark de vos concurrents sur le web."
+      },
+      "technicalIssues": {
+        "title": "Problèmes techniques",
+        "description": "Détection des erreurs techniques sur votre site."
+      },
+      "netlinking": {
+        "title": "Netlinking",
+        "description": "Analyse de la qualité de vos backlinks."
+      },
+      "content": {
+        "title": "Contenu",
+        "description": "Évaluation de la pertinence de votre contenu."
+      }
+    }
+  },
+  "form": {
+    "input": {
+      "email": "Email",
+      "name": "Nom complet",
+      "phone": "Numéro de téléphone",
+      "city": "Ville",
+      "companyName": "Nom de l’entreprise",
+      "website": "Site web (facultatif)",
+      "textarea": {
+        "placeholder": "Parlez-nous de votre projet"
+      }
+    },
+    "submit": "Envoyer",
+    "submitting": "Envoi en cours...",
+    "errors": {
+      "required": "Ce champ est requis",
+      "invalidEmail": "Email invalide",
+      "invalidPhone": "Numéro de téléphone invalide",
+      "invalidWebsite": "URL du site web invalide",
+      "pleaseFixErrors": "Veuillez corriger les erreurs dans le formulaire"
+    },
+    "success": "Formulaire envoyé avec succès !",
+    "server": "Une erreur est survenue, veuillez réessayer."
+  },
+
+  "highlight": {
+    "reimbursementText": "Nous offrons un remboursement"
+  }
+}

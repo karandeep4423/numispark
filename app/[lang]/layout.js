@@ -2,14 +2,38 @@ import { Providers } from "./providers";
 import "../globals.css";
 import Navbar from "@/components/Navbar/page";
 import Footer from "@/components/Footer/page";
+import AnimatedCircle from "@/components/AnimatedCircle";
+
+async function loadTranslations(locale) {
+  const translations = await import(`@/public/locales/${locale}/rdv.json`).catch(() => ({
+    default: {},
+  }));
+  return translations.default;
+}
+
 export default async function LangLayout({ children, params }) {
   const paramData = await params;
-  const lang = paramData?.lang;
+  const lang = paramData?.lang || "fr"; // Fallback à "fr" si lang est undefined
+  const translations = await loadTranslations(lang);
+
+  const t = (key) => {
+    const keys = key.split(".");
+    let value = translations;
+    for (const k of keys) {
+      value = value?.[k] ?? key;
+      if (typeof value !== "object") break;
+    }
+    return value;
+  };
+
   return (
     <Providers lang={lang}>
       <Navbar />
       {children}
       <Footer />
+      <div className="fixed-circle">
+        <AnimatedCircle text={t("highlight.reimbursementText") || "Nous offrons un remboursement"} />
+      </div>
     </Providers>
   );
 }
@@ -53,7 +77,7 @@ export async function generateMetadata({ params }) {
       keywords:
         "IT-Dienstleistungen, digitales Marketing, Webentwicklung, mobile App-Entwicklung, SEO, Social Media Marketing, digitale Transformation, Numispark",
       alternates: {
-        canonical:"https://numispark.com/de",
+        canonical: "https://numispark.com/de",
       },
     };
   }

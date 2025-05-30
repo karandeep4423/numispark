@@ -95,6 +95,12 @@
       "description": "Découvrez comment NumiSpark collecte, utilise et protège vos données personnelles. Consultez notre politique de confidentialité pour en savoir plus.",
       "keywords": "politique de confidentialité, données personnelles, protection des données, NumiSpark",
       "canonical": "https://numispark.com/politique-de-confidentialite"
-    }
+    },
+    "rdv": {
+    "title": "Prenez rendez-vous - Consultation gratuite",
+    "description": "Planifiez une consultation avec nos experts en web, SEO ou e-commerce",
+    "keywords": "rendez-vous, consultation, SEO, développement web",
+    "canonical": "https://example.com/rdv"
+  }
   }
 }
