@@ -313,7 +313,7 @@ const Navbar = () => {
           <Link
             className="hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] font-medium px-4 py-3 rounded-full bg-blue-600 text-white transition-all duration-300 flex items-center gap-2"
             onClick={toggleMenu}
-            href="/contactez-nous"
+            href="/rdv"
           >
             <span>{t("navbar.links.startProject")}</span>
             <MdRocket className="w-5 h-5" />

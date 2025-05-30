@@ -1,0 +1,66 @@
+{
+  "title": "Get Your Free Pre-Audit",
+  "titleHighlight": "in 30 Minutes",
+  "description": "Schedule an appointment for an in-depth analysis of your online presence and optimize your digital strategy.",
+  "testimonial": {
+    "quote": "A responsive and professional team that met our specific needs.",
+    "author": "SELMI Jugurtha",
+    "role": "Marketing Director, numispark"
+  },
+  "analysisSection": {
+    "title": "What Will We Analyze?",
+    "items": {
+      "seoPerformance": {
+        "title": "SEO Performance",
+        "description": "Analysis of your positioning on search engines."
+      },
+      "seaStrategy": {
+        "title": "SEA Strategy",
+        "description": "Evaluation of your online advertising campaigns."
+      },
+      "competitors": {
+        "title": "Competitors",
+        "description": "Benchmarking your competitors on the web."
+      },
+      "technicalIssues": {
+        "title": "Technical Issues",
+        "description": "Detection of technical errors on your website."
+      },
+      "netlinking": {
+        "title": "Netlinking",
+        "description": "Analysis of the quality of your backlinks."
+      },
+      "content": {
+        "title": "Content",
+        "description": "Evaluation of the relevance of your content."
+      }
+    }
+  },
+  "form": {
+    "input": {
+      "email": "Email",
+      "name": "Full Name",
+      "phone": "Phone Number",
+      "city": "City",
+      "companyName": "Company Name",
+      "website": "Website (optional)",
+      "textarea": {
+        "placeholder": "Tell us about your project"
+      }
+    },
+    "submit": "Submit",
+    "submitting": "Submitting...",
+    "errors": {
+      "required": "This field is required",
+      "invalidEmail": "Invalid email",
+      "invalidPhone": "Invalid phone number",
+      "invalidWebsite": "Invalid website URL",
+      "pleaseFixErrors": "Please fix the errors in the form"
+    },
+    "success": "Form submitted successfully!",
+    "server": "An error occurred, please try again."
+  },
+  "highlight": {
+    "reimbursementText": "We offer a refund"
+  }
+}

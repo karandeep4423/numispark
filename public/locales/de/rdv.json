@@ -1,0 +1,66 @@
+{
+  "title": "Buchen Sie Ihren Kostenlosen Pre-Audit",
+  "titleHighlight": "in 30 Minuten",
+  "description": "Vereinbaren Sie einen Termin für eine detaillierte Analyse Ihrer Online-Präsenz und optimieren Sie Ihre digitale Strategie.",
+  "testimonial": {
+    "quote": "Ein reaktives und professionelles Team, das unsere spezifischen Bedürfnisse erfüllt hat.",
+    "author": "SELMI Jugurtha",
+    "role": "Marketingdirektor, numispark"
+  },
+  "analysisSection": {
+    "title": "Was werden wir analysieren?",
+    "items": {
+      "seoPerformance": {
+        "title": "Ihre SEO-Leistung",
+        "description": "Bewertung Ihrer Sichtbarkeit in Suchmaschinen."
+      },
+      "seaStrategy": {
+        "title": "Ihre SEA-Strategie",
+        "description": "Analyse Ihrer bezahlten Werbekampagnen."
+      },
+      "competitors": {
+        "title": "Ihre Konkurrenten",
+        "description": "Studie der Konkurrenz, um Möglichkeiten zu identifizieren."
+      },
+      "technicalIssues": {
+        "title": "Technische Blockaden",
+        "description": "Erkennung technischer Probleme, die Ihre Website beeinträchtigen."
+      },
+      "netlinking": {
+        "title": "Ihr Netlinking",
+        "description": "Analyse Ihrer Backlinks, um Ihre Autorität zu stärken."
+      },
+      "content": {
+        "title": "Ihr Inhalt",
+        "description": "Bewertung der Qualität und Relevanz Ihres Inhalts."
+      }
+    }
+  },
+  "form": {
+    "input": {
+      "email": "E-Mail",
+      "name": "Vollständiger Name",
+      "phone": "Telefonnummer",
+      "city": "Stadt",
+      "companyName": "Firmenname",
+      "website": "Website (optional)",
+      "textarea": {
+        "placeholder": "Erzählen Sie uns von Ihrem Projekt"
+      }
+    },
+    "submit": "Absenden",
+    "submitting": "Wird gesendet...",
+    "errors": {
+      "required": "Dieses Feld ist erforderlich",
+      "invalidEmail": "Ungültige E-Mail",
+      "invalidPhone": "Ungültige Telefonnummer",
+      "invalidWebsite": "Ungültige Website-URL",
+      "pleaseFixErrors": "Bitte beheben Sie die Fehler im Formular"
+    },
+    "success": "Formular erfolgreich gesendet!",
+    "server": "Ein Fehler ist aufgetreten, bitte versuchen Sie es erneut."
+  },
+  "highlight": {
+    "reimbursementText": "Wir bieten eine Rückerstattung"
+   }
+}
