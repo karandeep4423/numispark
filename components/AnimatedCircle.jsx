@@ -3,13 +3,13 @@ import React from "react";
 
 const AnimatedCircle = ({ text }) => {
   return (
-    <div className="relative w-28 h-28 fixed bottom-6 right-6 z-50">
+    <div className="w-24 h-24 sm:w-28 sm:h-28 fixed bottom-4 sm:bottom-6 sm:right-6 right-4 z-50">
       {/* Fond vert fluo */}
-      <div className="absolute w-full h-full rounded-full bg-lime-300"></div>
+      <div className="absolute w-full h-full  rounded-full bg-blue-200"></div>
 
       {/* Texte circulaire tournant (2x) */}
       <div className="absolute w-full h-full animate-spin-slow">
-        <svg viewBox="0 0 100 100" className="w-full h-full">
+        <svg viewBox="0 0 100 100" className="p-2 w-full h-full">
           <defs>
             <path
               id="circlePath"
@@ -18,9 +18,8 @@ const AnimatedCircle = ({ text }) => {
           </defs>
           <text
             fill="black"
-            fontSize="7"
+            fontSize="15"
             fontWeight="bold"
-            letterSpacing="1"
           >
             <textPath href="#circlePath" startOffset="0%">
               {text} • {text}

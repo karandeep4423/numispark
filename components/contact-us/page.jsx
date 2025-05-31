@@ -88,7 +88,6 @@ const Contact = () => {
       });
 
       const result = await res.json();
-      console.log(result);
       if (result.success === true) {
         toast.success(t("contact.form.errors.success"));
         resetForm();

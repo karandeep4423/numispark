@@ -2,7 +2,17 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 const createEmailTemplate = (data) => {
-  const { name, email, phone, message, city, serviceType, budget } = data;
+  const {
+    name,
+    email,
+    phone,
+    message,
+    city,
+    serviceType,
+    budget,
+    companyName,
+    website,
+  } = data;
 
   return `
     <!DOCTYPE html>
@@ -62,17 +72,33 @@ const createEmailTemplate = (data) => {
                   <h2 style="color: #2563eb; font-size: 18px; margin: 0 0 16px;">Project Details</h2>
                   <table style="width: 100%;">
                     <tr>
-                      <td style="padding: 8px 0;">
-                        <p style="margin: 0; color: #94a3b8; font-size: 14px;">Service Type</p>
-                        <p style="margin: 4px 0 0; color: #1e293b; font-size: 16px;">${serviceType}</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="padding: 8px 0;">
-                        <p style="margin: 0; color: #94a3b8; font-size: 14px;">Budget Range</p>
-                        <p style="margin: 4px 0 0; color: #1e293b; font-size: 16px;">${budget}</p>
-                      </td>
-                    </tr>
+  <td style="padding: 8px 0;">
+    <p style="margin: 0; color: #94a3b8; font-size: 14px;">
+      ${
+        serviceType?.trim()
+          ? "Service Type"
+          : companyName?.trim()
+          ? "Company Name"
+          : ""
+      }
+    </p>
+    <p style="margin: 4px 0 0; color: #1e293b; font-size: 16px;">
+      ${serviceType?.trim() || companyName?.trim() || ""}
+    </p>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 8px 0;">
+    <p style="margin: 0; color: #94a3b8; font-size: 14px;">
+      ${budget?.trim() ? "Budget Range" : website?.trim() ? "Website" : ""}
+    </p>
+    <p style="margin: 4px 0 0; color: #1e293b; font-size: 16px;">
+      ${budget?.trim() || website?.trim() || ""}
+    </p>
+  </td>
+</tr>
+
                   </table>
                 </div>
 
@@ -108,7 +134,6 @@ const sendMail = async (to, subject, html) => {
     },
   });
 
-  
   const mailOptions = {
     from: '"NumiSpark" <contact@numispark.com>',
     to,
@@ -119,7 +144,6 @@ const sendMail = async (to, subject, html) => {
   try {
     await transporter.sendMail(mailOptions);
   } catch (err) {
-    console.error("Email sending error:", err);
     throw new Error("Error sending email");
   }
 };
@@ -129,18 +153,20 @@ export async function POST(request) {
   try {
     // Parse the request body
     const body = await request.json();
-    const { email, name, phone, message, city, serviceType, budget } = body;
+    const {
+      email,
+      name,
+      phone,
+      message,
+      city,
+      serviceType,
+      budget,
+      companyName,
+      website,
+    } = body;
 
     // Validate required fields
-    if (
-      !email ||
-      !name ||
-      !phone ||
-      !message ||
-      !city ||
-      !serviceType ||
-      !budget
-    ) {
+    if (!email || !name || !phone || !message || !city) {
       return NextResponse.json(
         {
           success: false,
@@ -159,10 +185,16 @@ export async function POST(request) {
       city,
       serviceType,
       budget,
+      companyName,
+      website,
     });
 
     // Send email
-    await sendMail(["karanhanju9696@gmail.com","numisparkk@gmail.com"], subject, html);
+    await sendMail(
+      ["karanhanju9696@gmail.com", "numisparkk@gmail.com"],
+      subject,
+      html
+    );
 
     // Return success response
     return NextResponse.json(
