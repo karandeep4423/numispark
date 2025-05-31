@@ -20,7 +20,13 @@ const createEmailTemplate = (data) => {
       <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>New Contact Inquiry</title>
+        <title>${
+        serviceType?.trim()
+          ? "New Contact Inquiry"
+          : companyName?.trim()
+          ? "Free Seo Audit Inquiry"
+          : ""
+      }</title>
       </head>
       <body style="margin: 0; padding: 0; background-color: #f6f9fc; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
         <table cellpadding="0" cellspacing="0" style="width: 100%; max-width: 600px; margin: 0 auto; padding: 20px;">
