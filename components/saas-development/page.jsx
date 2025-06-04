@@ -191,12 +191,12 @@ const SaaSDevelopment = () => {
         {/* Overlay Content */}
         <div className="relative z-20 flex w-full h-screen justify-center items-center">
           <div className="w-full px-4 flex flex-col items-center gap-6">
-            <h1 className="text-5xl max-w-screen-xl sm:text-4xl lg:text-6xl text-center font-extrabold text-gray-200">
+            <h1 className="max-w-screen-xl text-4xl lg:text-5xl text-center font-extrabold text-gray-200">
               {t("saas.hero.title")}
             </h1>
-            <p className="max-w-screen-xl text-2xl text-center font-bold text-gray-200">
+            {/* <p className="max-w-screen-xl text-2xl text-center font-bold text-gray-200">
               {t("saas.hero.subtitle")}
-            </p>
+            </p> */}
             <HeroButtons />
           </div>
         </div>
