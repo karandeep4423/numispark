@@ -33,37 +33,33 @@
       "titleHighlight": "Team",
       "subtitle": "Meet the talented individuals who make our digital innovation possible.",
       "members": {
-        "jessica": {
-          "name": "Jessica Dobrev",
-          "role": "Backend Lead"
+        "thomas": {
+          "name": "Thomas",
+          "role": "Co-founder & Project Manager"
         },
-        "drew": {
-          "name": "Drew Cano",
-          "role": "Head of UX"
+        "karan": {
+          "name": "Karandeep",
+          "role": "Founder & CEO"
         },
-        "sasha": {
-          "name": "Sasha Kindred",
-          "role": "VP of Marketing"
+        "samuel": {
+          "name": "Samuel",
+          "role": "Lead Developer"
         },
-        "emily": {
-          "name": "Emily Donnavan",
-          "role": "Product Lead"
+        "metheo": {
+          "name": "Methéo",
+          "role": "Frontend Developer"
         },
-        "orlando": {
-          "name": "Orlando Diggs",
-          "role": "Co-Founder and COO"
+        "lucas": {
+          "name": "Lucas",
+          "role": "Backend Developer"
         },
-        "sophie": {
-          "name": "Sophie Chamberlain",
-          "role": "Head of Sales"
+        "sophia": {
+          "name": "Sophia",
+          "role": "Digital Marketing Specialist"
         },
-        "lana": {
-          "name": "Lana Steiner",
-          "role": "VP of Customer Success"
-        },
-        "emmy": {
-          "name": "Emmy Rosum",
-          "role": "Co-Founder and CEO"
+        "charlotte": {
+          "name": "Charlotte",
+          "role": "Graphic & UI/UX Designer"
         }
       }
     },

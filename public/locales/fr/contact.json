@@ -38,10 +38,11 @@
             "SocialMediaPost&LogoDesign": "Conception de publications sur les médias sociaux et de logos"
           },
           "budget": {
-            "below1000": "$0 - $1,000",
-            "1000to5000": "$1,000 - $5,000",
-            "5000to10000": "$5,000 - $10,000",
-            "above10000": "Plus de 10 000 $"
+            "below1000": "€0 - €1,000",
+            "1000to3000": "€1,000 - €3,000",
+            "3000to5000": "€3,000 - €5,000",
+            "5000to10000": "€5,000 - €10,000",
+            "above10000": "Plus de 10,000€"
           }
         }
       },

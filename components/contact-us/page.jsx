@@ -198,8 +198,12 @@ const Contact = () => {
           label: t("contact.form.select.options.budget.below1000"),
         },
         {
-          value: t("contact.form.select.options.budget.1000to5000"),
-          label: t("contact.form.select.options.budget.1000to5000"),
+          value: t("contact.form.select.options.budget.1000to3000"),
+          label: t("contact.form.select.options.budget.1000to3000"),
+        },
+         {
+          value: t("contact.form.select.options.budget.3000to5000"),
+          label: t("contact.form.select.options.budget.3000to5000"),
         },
         {
           value: t("contact.form.select.options.budget.5000to10000"),

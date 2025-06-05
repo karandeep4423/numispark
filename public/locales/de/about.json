@@ -32,38 +32,34 @@
       "title": "Lernen Sie unser",
       "titleHighlight": "Team",
       "subtitle": "Lernen Sie die talentierten Köpfe kennen, die unsere digitale Innovation ermöglichen.",
-      "members": {
-        "jessica": {
-          "name": "Jessica Dobrev",
-          "role": "Backend-Leiterin"
+       "members": {
+        "thomas": {
+          "name": "Thomas",
+          "role": "Mitgründer & Projektmanager"
         },
-        "drew": {
-          "name": "Drew Cano",
-          "role": "UX-Leiter"
+        "karan": {
+          "name": "Karandeep",
+          "role": "Gründer & Geschäftsführer"
         },
-        "sasha": {
-          "name": "Sasha Kindred",
-          "role": "VP Marketing"
+        "samuel": {
+          "name": "Samuel",
+          "role": "Leitender Entwickler"
         },
-        "emily": {
-          "name": "Emily Donnavan",
-          "role": "Produktleiterin"
+        "metheo": {
+          "name": "Methéo",
+          "role": "Frontend-Entwickler"
         },
-        "orlando": {
-          "name": "Orlando Diggs",
-          "role": "Mitgründer und COO"
+        "lucas": {
+          "name": "Lucas",
+          "role": "Backend-Entwickler"
         },
-        "sophie": {
-          "name": "Sophie Chamberlain",
-          "role": "Vertriebsleiterin"
+        "sophia": {
+          "name": "Sophia",
+          "role": "Digital Marketing Spezialist"
         },
-        "lana": {
-          "name": "Lana Steiner",
-          "role": "VP Customer Success"
-        },
-        "emmy": {
-          "name": "Emmy Rosum",
-          "role": "Mitgründerin und CEO"
+        "charlotte": {
+          "name": "Charlotte",
+          "role": "Grafik- & UI/UX-Designer"
         }
       }
     },

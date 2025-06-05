@@ -15,14 +15,13 @@ import HeroButtons from "@/components/HeroButtons/page";
 import { useTranslation } from "next-i18next";
 
 const teamMembers = [
-  { translationKey: "jessica", image: "/team/Thomas1.png" },
-  { translationKey: "drew", image: "" },
-  { translationKey: "sasha", image: "/api/placeholder/400/400" },
-  { translationKey: "emily", image: "/api/placeholder/400/400" },
-  { translationKey: "orlando", image: "/api/placeholder/400/400" },
-  { translationKey: "sophie", image: "/api/placeholder/400/400" },
-  { translationKey: "lana", image: "/api/placeholder/400/400" },
-  { translationKey: "emmy", image: "/api/placeholder/400/400" },
+  { translationKey: "karan", image: "/team/Karan.png" },
+  { translationKey: "thomas", image: "/team/Thomas.png" },
+  { translationKey: "samuel", image: "/team/Samuel.png" },
+  { translationKey: "metheo", image: "/team/Matheo.png" },
+  { translationKey: "lucas", image: "/team/Matheo.png" },
+  { translationKey: "charlotte", image: "/team/Charlotte.png" },
+  { translationKey: "sophia", image: "/team/Sophia.png" },
 ];
 
 const coreValues = [
@@ -123,14 +122,16 @@ const About = () => {
                     <img
                       src={member.image}
                       alt={t(`${key}.name`)}
-                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                      className="w-full mix-blend-multiply h-full object-contain group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-4 ">
-                    <h3 className="text-lg font-semibold text-gray-200">
+                  <div className="absolute bottom-0 left-0 right-0 p-2">
+                    <h3 className="inline-block text-lg font-semibold bg-blue-600/80 text-blue-100 px-1  rounded">
                       {t(`${key}.name`)}
                     </h3>
-                    <p className="text-sm text-gray-200">{t(`${key}.role`)}</p>
+                    <p className="inline-block text-sm font-semibold bg-gray-100/80 text-blue-600 px-1  rounded mt-1">
+                      {t(`${key}.role`)}
+                    </p>
                   </div>
                 </div>
               );
