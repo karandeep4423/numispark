@@ -129,22 +129,27 @@
       "feedback1": {
         "alt": "seo-blog-article-feedback",
         "name": "Lydia DUAN - Chef de projet",
-        "feedback": "Thomas a rédigé plusieurs articles de blog SEO en espagnol pour notre client spécialisé dans le voyage et le tourisme. Les articles qu'il a écrits sont de haute qualité et son style d'écriture est très flexible. Merci beaucoup pour ton travail, Thomas !"
+        "feedback": "Numispark a rédigé plusieurs articles de blog SEO en espagnol pour notre client spécialisé dans le voyage et le tourisme. Les articles sont de haute qualité et leur style d'écriture est très flexible. Merci beaucoup pour votre excellent travail, Numispark !"
       },
       "feedback2": {
         "alt": "web-development-feedback",
         "name": "Olivier LENOIR - Dirigeant",
-        "feedback": "Nous travaillons depuis plus d'un an presque quotidiennement avec Thomas. Il est toujours très impliqué et engagé pour mener au mieux les missions confiées. Il aime être force de proposition. Toujours disponible et agréable, je recommande vivement !!!"
+        "feedback": "Nous travaillons depuis plus d'un an presque quotidiennement avec Numispark. L’équipe est toujours très impliquée et engagée pour mener au mieux les missions confiées. Ils aiment être force de proposition. Toujours disponibles et agréables, je recommande vivement Numispark !"
       },
       "feedback3": {
         "alt": "app-development-feedback",
         "name": "Claire MAINAUD - Coach en développement personnel",
-        "feedback": "J'ai fait appel à Thomas pour mon site internet et ma stratégie de communication. Il est très agréable, s'est montré d'une grande disponibilité, force de proposition, et très à l'écoute. Je vous recommande de prendre contact avec lui pour vos projets professionnels, car je n'ai aucun doute qu'il saura répondre également à vos attentes ! Je n'hésite pas, en tout cas, à parler de lui à mon entourage !"
+        "feedback": "J'ai fait appel à Numispark pour mon site internet et ma stratégie de communication. L’équipe est très agréable, d’une grande disponibilité, force de proposition et très à l’écoute. Je vous recommande de prendre contact avec Numispark pour vos projets professionnels, car je n'ai aucun doute qu'ils sauront répondre à toutes vos attentes ! Je n’hésite pas à parler d’eux à mon entourage !"
       },
       "feedback4": {
         "alt": "seo-article-feedback",
         "name": "Léo NISHIBAYASHI - Responsable pédagogique",
-        "feedback": "Thomas Pialles a été un excellent formateur dans notre école, la Rocket School ! Nous avons fait appel à lui pour une formation d'une semaine en copywriting et content marketing pour une promotion de Growth Hacker. Nos apprenants ont beaucoup apprécié son intervention ! Thomas est professionnel et possède une très bonne pédagogie : il sait s'adapter aux besoins de l'école et des apprenants. Nous pensons lui demander d'intervenir à nouveau sur des promotions de BizDev, CSM et Growth et avons hâte qu'il revienne rapidement."
+        "feedback": "Numispark a été un excellent formateur dans notre école, la Rocket School ! Nous avons fait appel à eux pour une formation d'une semaine en copywriting et content marketing pour une promotion de Growth Hackers. Nos apprenants ont beaucoup apprécié leur intervention ! Numispark est professionnel et possède une excellente pédagogie : ils savent s’adapter aux besoins de l'école et des apprenants. Nous prévoyons de les solliciter à nouveau pour des promotions en BizDev, CSM et Growth, et avons hâte de les accueillir de nouveau !"
+      },
+      "feedback5": {
+        "alt": "privatehonors-feedback",
+        "name": "Private Honors - Directeur",
+        "feedback": "J’ai fait appel à Numispark pour développer notre application web Private Honors. L’équipe de développement a été très agréable et a parfaitement compris les besoins de notre produit. Je suis ravi du résultat et je collabore désormais avec eux sur le SEO et le marketing."
       }
     },
     "gallery": {

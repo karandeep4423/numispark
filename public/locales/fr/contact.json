@@ -7,7 +7,7 @@
         "email": "Email",
         "name": "Nom complet",
         "phone": "Numéro de téléphone",
-        "city": "Ville"
+        "company": "Société (ou nom du projet)"
       },
       "errors": {
         "invalidEmail": "Veuillez saisir une adresse e-mail valide",
@@ -42,7 +42,10 @@
             "1000to3000": "€1,000 - €3,000",
             "3000to5000": "€3,000 - €5,000",
             "5000to10000": "€5,000 - €10,000",
-            "above10000": "Plus de 10,000€"
+            "10000to20000": "€10,000 - €20,000",
+            "20000to30000": "€20,000 - €30,000",
+            "30000to40000": "€30,000 - €40,000",
+            "above50000": "Plus de 50,000€"
           }
         }
       },

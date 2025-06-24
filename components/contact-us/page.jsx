@@ -4,7 +4,7 @@ import {
   Mail,
   User,
   Phone,
-  MapPin,
+  Building,
   ChevronDown,
   Briefcase,
   BadgeEuro,
@@ -121,10 +121,10 @@ const Contact = () => {
       Icon: Phone,
     },
     {
-      name: "city",
+      name: "company",
       type: "text",
-      placeholder: t("contact.form.input.city"),
-      Icon: MapPin,
+      placeholder: t("contact.form.input.company"),
+      Icon: Building,
     },
   ];
 
@@ -210,8 +210,20 @@ const Contact = () => {
           label: t("contact.form.select.options.budget.5000to10000"),
         },
         {
-          value: t("contact.form.select.options.budget.above10000"),
-          label: t("contact.form.select.options.budget.above10000"),
+          value: t("contact.form.select.options.budget.10000to20000"),
+          label: t("contact.form.select.options.budget.10000to20000"),
+        },
+        {
+          value: t("contact.form.select.options.budget.20000to30000"),
+          label: t("contact.form.select.options.budget.20000to30000"),
+        },
+        {
+          value: t("contact.form.select.options.budget.30000to40000"),
+          label: t("contact.form.select.options.budget.30000to40000"),
+        },
+        {
+          value: t("contact.form.select.options.budget.above50000"),
+          label: t("contact.form.select.options.budget.above50000"),
         },
       ],
     },
