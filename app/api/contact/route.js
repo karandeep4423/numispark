@@ -64,7 +64,7 @@ const createEmailTemplate = (data) => {
                         </tr>
                         <tr>
                           <td style="padding: 8px;">
-                            <p style="margin: 0; color: #94a3b8; font-size: 14px;">City</p>
+                            <p style="margin: 0; color: #94a3b8; font-size: 14px;">Company</p>
                             <p style="margin: 4px 0 0; color: #1e293b; font-size: 16px;">${city}</p>
                           </td>
                         </tr>
