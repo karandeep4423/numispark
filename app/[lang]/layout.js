@@ -3,7 +3,7 @@ import "../globals.css";
 import Navbar from "@/components/Navbar/page";
 import Footer from "@/components/Footer/page";
 import AnimatedCircle from "@/components/AnimatedCircle";
-
+import Google from "@/components/google-login/page"; // Import Google component
 async function loadTranslations(locale) {
   const translations = await import(`@/public/locales/${locale}/rdv.json`).catch(() => ({
     default: {},
@@ -30,6 +30,7 @@ export default async function LangLayout({ children, params }) {
     <Providers lang={lang}>
       <Navbar />
       {children}
+      <Google /> {/* Render the Google component for login */}
       <Footer />
       <div className="fixed-circle">
         <AnimatedCircle text={t("highlight.reimbursementText") || "Nous offrons un remboursement"} />

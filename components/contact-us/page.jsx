@@ -275,7 +275,7 @@ const Contact = () => {
           <div className="sm:flex-row flex flex-col justify-center">
             {/* Video Section */}
             <div className="flex flex-col sm:flex-col justify-around sm:justify-normal items-center sm:items-start">
-              <div className="relative mt-8 w-56 h-[360px]">
+              <div className="relative mt-8 w-56 h-[335px]">
                 <video
                   ref={videoRef}
                   title="contact-us"
@@ -284,7 +284,7 @@ const Contact = () => {
                   muted
                   loop
                   controls={false}
-                  className="rounded-3xl shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] w-full h-full object-cover"
+                  className="rounded-3xl shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] w-full h-full object-top object-cover"
                 >
                   <source src="/agence-intro.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
