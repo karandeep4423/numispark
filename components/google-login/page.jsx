@@ -141,12 +141,12 @@ export default function Google() {
   // };
 
   // Get stored user info
-  const getUserInfo = () => {
-    const userInfo = localStorage.getItem('user_info');
-    return userInfo ? JSON.parse(userInfo) : null;
-  };
+  // const getUserInfo = () => {
+  //   const userInfo = localStorage.getItem('user_info');
+  //   return userInfo ? JSON.parse(userInfo) : null;
+  // };
 
-  const userInfo = getUserInfo();
+  // const userInfo = getUserInfo();
 
   return (
     <div>
