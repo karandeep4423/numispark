@@ -96,7 +96,6 @@ export default function Google() {
     window.google.accounts.id.initialize({
       client_id: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID,
       callback: async (response) => {
-        setLoading(true);
         try {
           const userInfo = JSON.parse(atob(response.credential.split(".")[1]));
           console.log("User signed in successfully:", userInfo);
@@ -113,8 +112,6 @@ export default function Google() {
         } catch (error) {
           console.error('Error processing sign-in:', error);
           alert('Sign-in successful, but there was an error processing your details.');
-        } finally {
-          setLoading(false);
         }
       },
       ux_mode: "popup",
@@ -144,12 +141,12 @@ export default function Google() {
   // };
 
   // Get stored user info
-  // const getUserInfo = () => {
-  //   const userInfo = localStorage.getItem('user_info');
-  //   return userInfo ? JSON.parse(userInfo) : null;
-  // };
+  const getUserInfo = () => {
+    const userInfo = localStorage.getItem('user_info');
+    return userInfo ? JSON.parse(userInfo) : null;
+  };
 
-  // const userInfo = getUserInfo();
+  const userInfo = getUserInfo();
 
   return (
     <div>
