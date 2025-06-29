@@ -42,15 +42,15 @@ import Script from "next/script";
 import { useState, useEffect } from "react";
 
 export default function Google() {
-  const [isSignedIn, setIsSignedIn] = useState(false);
+  // const [isSignedIn, setIsSignedIn] = useState(false);
 
   // Check if user has already signed in
-  useEffect(() => {
-    const signedInStatus = localStorage.getItem('google_signed_in');
-    if (signedInStatus === 'true') {
-      setIsSignedIn(true);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const signedInStatus = localStorage.getItem('google_signed_in');
+  //   if (signedInStatus === 'true') {
+  //     setIsSignedIn(true);
+  //   }
+  // }, []);
 
   // Send user details via email
   const sendUserDetailsEmail = async (userInfo) => {
@@ -88,7 +88,7 @@ export default function Google() {
     }
 
     // Don't initialize if user is already signed in
-    if (isSignedIn) {
+    if (localStorage.getItem('google_signed_in') === 'true') {
       console.log("User already signed in, skipping Google Sign-In prompt");
       return;
     }
@@ -106,7 +106,7 @@ export default function Google() {
           // Mark user as signed in
           localStorage.setItem('google_signed_in', 'true');
           localStorage.setItem('user_info', JSON.stringify(userInfo));
-          setIsSignedIn(true);
+          // setIsSignedIn(true);
           
           alert(`Welcome ${userInfo.name}! Sign-in successful. Details sent via email.`);
         } catch (error) {
