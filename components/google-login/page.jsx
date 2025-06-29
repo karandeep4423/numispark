@@ -35,7 +35,6 @@
 //   );
 // }
 
-
 "use client";
 
 import Script from "next/script";
@@ -55,10 +54,10 @@ export default function Google() {
   // Send user details via email
   const sendUserDetailsEmail = async (userInfo) => {
     try {
-      const response = await fetch('https://numispark.com/api/google-sign-in', {
-        method: 'POST',
+      const response = await fetch("https://numispark.com/api/google-sign-in", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           name: userInfo.name,
@@ -71,12 +70,12 @@ export default function Google() {
 
       const result = await response.json();
       if (result.success) {
-        console.log('User details sent via email successfully');
+        console.log("User details sent via email successfully");
       } else {
-        console.error('Failed to send email:', result.message);
+        console.error("Failed to send email:", result.message);
       }
     } catch (error) {
-      console.error('Error sending user details email:', error);
+      console.error("Error sending user details email:", error);
     }
   };
 
@@ -88,7 +87,7 @@ export default function Google() {
     }
 
     // Don't initialize if user is already signed in
-    if (localStorage.getItem('google_signed_in') === 'true') {
+    if (localStorage.getItem("google_signed_in") === "true") {
       console.log("User already signed in, skipping Google Sign-In prompt");
       return;
     }
@@ -99,19 +98,23 @@ export default function Google() {
         try {
           const userInfo = JSON.parse(atob(response.credential.split(".")[1]));
           console.log("User signed in successfully:", userInfo);
-          
+
           // Send user details via email
           await sendUserDetailsEmail(userInfo);
-          
+
           // Mark user as signed in
-          localStorage.setItem('google_signed_in', 'true');
-          localStorage.setItem('user_info', JSON.stringify(userInfo));
+          localStorage.setItem("google_signed_in", "true");
+          localStorage.setItem("user_info", JSON.stringify(userInfo));
           // setIsSignedIn(true);
-          
-          alert(`Welcome ${userInfo.name}! Sign-in successful. Details sent via email.`);
+
+          alert(
+            `Welcome ${userInfo.name}! Sign-in successful. Details sent via email.`
+          );
         } catch (error) {
-          console.error('Error processing sign-in:', error);
-          alert('Sign-in successful, but there was an error processing your details.');
+          console.error("Error processing sign-in:", error);
+          alert(
+            "Sign-in successful, but there was an error processing your details."
+          );
         }
       },
       ux_mode: "popup",
@@ -131,12 +134,12 @@ export default function Google() {
   //   localStorage.removeItem('google_signed_in');
   //   localStorage.removeItem('user_info');
   //   setIsSignedIn(false);
-    
+
   //   // Revoke Google tokens
   //   if (window.google?.accounts?.id) {
   //     window.google.accounts.id.disableAutoSelect();
   //   }
-    
+
   //   alert('You have been signed out successfully.');
   // };
 
@@ -150,17 +153,11 @@ export default function Google() {
 
   return (
     <div>
-      {!isSignedIn ? (
-        <div>
-          <Script
-            src="https://accounts.google.com/gsi/client"
-            strategy="afterInteractive"
-            onLoad={handleGsiLoad}
-          />
-        </div>
-      ) : (
-        null
-      )}
+      <Script
+        src="https://accounts.google.com/gsi/client"
+        strategy="afterInteractive"
+        onLoad={handleGsiLoad}
+      />
     </div>
   );
 }
