@@ -152,7 +152,7 @@ const createGoogleSignInEmailTemplate = (userDetails) => {
 
 // Send mail function
 const sendMail = async (to, subject, html) => {
-  const transporter = nodemailer.createTransporter({
+  const transporter = nodemailer.createTransport({
     host: "mail.privateemail.com",
     port: 465,
     secure: true,
@@ -164,7 +164,7 @@ const sendMail = async (to, subject, html) => {
 
   const mailOptions = {
     from: '"NumiSpark" <contact@numispark.com>',
-    to: Array.isArray(to) ? to.join(', ') : to,
+    to,
     subject,
     html,
   };
@@ -208,7 +208,7 @@ export async function POST(request) {
 
     // Send email to your notification addresses
     await sendMail(
-      ["numisparkk@gmail.com"],
+      "numisparkk@gmail.com",
       subject,
       html
     );
