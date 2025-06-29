@@ -275,7 +275,7 @@ const Contact = () => {
           <div className="sm:flex-row flex flex-col justify-center">
             {/* Video Section */}
             <div className="flex flex-col sm:flex-col justify-around sm:justify-normal items-center sm:items-start">
-              <div className="relative mt-8 w-56 h-[335px]">
+              <div className="relative mt-8 w-56 h-[360px]">
                 <video
                   ref={videoRef}
                   title="contact-us"
