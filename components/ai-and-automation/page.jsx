@@ -151,7 +151,7 @@ export default function AiDevelopment() {
           className="absolute inset-0 w-full h-full object-cover z-20 mix-blend-multiply"
         >
           <source
-            src="/agence-automatisation-ia-hero-seaction-animation.mp4"
+            src="https://d3h46s6jorvpfj.cloudfront.net/agence-automatisation-ia-hero-seaction-animation.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.

@@ -172,7 +172,7 @@ export default function EcommerceDevelopment() {
           playsInline
           className="absolute opacity-60 inset-0 w-full h-full object-cover mix-blend-multiply"
         >
-          <source src="/création-de-sites e-commerce.mp4" type="video/mp4" />
+          <source src="https://d3h46s6jorvpfj.cloudfront.net/création-de-sites e-commerce.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="relative z-20 flex w-full h-screen gap-5 justify-center items-center">

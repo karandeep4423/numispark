@@ -185,7 +185,7 @@ const SaaSDevelopment = () => {
           playsInline
           className="absolute inset-0 w-full h-full object-cover mix-blend-darken"
         >
-          <source src="/creation-developpement-saas.mp4" type="video/mp4" />
+          <source src="https://d3h46s6jorvpfj.cloudfront.net/creation-developpement-saas.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         {/* Overlay Content */}

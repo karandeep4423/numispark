@@ -152,7 +152,7 @@ export default function SocialMediaMarketing() {
             className=" w-2/4 h-96 object-contain z-20 mix-blend-multiply"
           >
             <source
-              src="/marketing-digital-hero-section-animation.mp4"
+              src="https://d3h46s6jorvpfj.cloudfront.net/marketing-digital-hero-section-animation.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.

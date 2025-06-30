@@ -209,7 +209,7 @@ const WebsiteDevelopment = () => {
           className="absolute opacity-60 inset-0 w-full h-full object-contain z-20 mix-blend-multiply"
         >
           <source
-            src="/agence-creation-site-web-hero-animation.mp4"
+            src="https://d3h46s6jorvpfj.cloudfront.net/agence-creation-site-web-hero-animation.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.

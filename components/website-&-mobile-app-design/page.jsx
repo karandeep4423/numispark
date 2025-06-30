@@ -134,7 +134,7 @@ export default function WebsiteMobileDesign() {
           className="absolute opacity-60 inset-0 w-full h-full object-cover mix-blend-multiply"
         >
           <source
-            src="/web-et-mobile-design-hero-animation.mp4"
+            src="https://d3h46s6jorvpfj.cloudfront.net/web-et-mobile-design-hero-animation.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
