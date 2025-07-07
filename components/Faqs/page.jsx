@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { PlusCircle, MinusCircle } from "lucide-react";
 
 const FAQs = ({ faqData }) => {
   const [openIndex, setOpenIndex] = useState(null);
+  const [language, setLanguage] = useState('fr'); // default to French
 
   const FAQItem = ({ question, children, isOpen, onClick }) => {
     return (
@@ -29,10 +30,29 @@ const FAQs = ({ faqData }) => {
     );
   };
 
+  // Translation object for the title
+  const translations = {
+    en: "Frequently Asked Questions",
+    de: "Häufig gestellte Fragen",
+    fr: "Questions fréquemment posées"
+  };
+
+  useEffect(() => {
+    // Get language from URL
+    const path = window.location.pathname;
+    if (path.includes('/en')) {
+      setLanguage('en');
+    } else if (path.includes('/de')) {
+      setLanguage('de');
+    } else {
+      setLanguage('fr'); // default for root path
+    }
+  }, []);
+
   return (
     <div className="max-w-3xl mb-5 mx-auto px-4 sm:px-6 lg:px-8">
       <h1 className="text-4xl font-bold text-gray-800 text-center my-12">
-        Frequently Asked Questions
+        {translations[language]}
       </h1>
       <div className="space-y-6">
         {faqData.map((faq, index) => (
