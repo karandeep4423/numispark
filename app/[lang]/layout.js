@@ -67,9 +67,9 @@ export async function generateMetadata({ params }) {
   } else if (language === "fr") {
     return {
       title:
-        "Numispark | Agence Communication, création Web & Mobile, SEO & Marketing Digital",
+        "Numispark | Agence Communication, création Web & Mobile, SEO & Marketing Digital à Caen, Bernay et Rennes Normandie",
       description:
-        "Numispark, agence digitale, propose des solutions innovantes en développement web & mobile, marketing digital, SEO et design, adaptées à vos besoins.",
+        "Numispark, agence digitale, propose des solutions innovantes en développement web & mobile, marketing digital, SEO et design, adaptées à vos besoins  à Caen, Bernay et Rennes Normandie.",
       keywords:
         "services IT, marketing digital, développement web, création d'applications mobiles, SEO, marketing sur les réseaux sociaux, transformation digitale, Numispark",
       alternates: {
