@@ -286,7 +286,7 @@ const Contact = () => {
                   controls={false}
                   className="rounded-3xl shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] w-full h-full object-top object-cover"
                 >
-                  <source src="/agence-intro.mp4" type="video/mp4" />
+                  <source src="https://d3h46s6jorvpfj.cloudfront.net/agence-intro.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
 
