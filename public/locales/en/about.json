@@ -53,6 +53,14 @@
           "name": "Lucas",
           "role": "Backend Developer"
         },
+         "antoine": {
+          "name": "Antoine",
+          "role": "Full Stack Developer"
+        },
+         "louis": {
+          "name": "Louis",
+          "role": "Mobile Developer"
+        },
         "sophia": {
           "name": "Sophia",
           "role": "Digital Marketing Specialist"

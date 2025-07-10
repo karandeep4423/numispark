@@ -2,11 +2,6 @@
   "title": "Obtenez votre pré-audit gratuit",
   "titleHighlight": "en 30 minutes",
   "description": "Prenez rendez-vous pour une analyse approfondie de votre présence en ligne et optimisez votre stratégie digitale.",
-  "testimonial": {
-    "quote": "Une équipe réactive et professionnelle qui a su répondre à nos besoins spécifiques.",
-    "author": "SELMI Jugurtha",
-    "role": "Directeur Marketing, numispark"
-  },
   "analysisSection": {
     "title": "Qu’allons nous ",
     "subTitle":"analyser ?",
@@ -42,8 +37,7 @@
       "email": "Email",
       "name": "Nom complet",
       "phone": "Numéro de téléphone",
-      "city": "Ville",
-      "companyName": "Nom de l’entreprise",
+      "company": "Nom de l’entreprise",
       "website": "Site web (facultatif)",
       "textarea": {
         "placeholder": "Parlez-nous de votre projet"
@@ -54,6 +48,7 @@
     "errors": {
       "required": "Ce champ est requis",
       "invalidEmail": "Email invalide",
+      "company": "Veuillez saisir votre société",
       "invalidPhone": "Numéro de téléphone invalide",
       "invalidWebsite": "URL du site web invalide",
       "pleaseFixErrors": "Veuillez corriger les erreurs dans le formulaire"

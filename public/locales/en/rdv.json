@@ -42,8 +42,7 @@
       "email": "Email",
       "name": "Full Name",
       "phone": "Phone Number",
-      "city": "City",
-      "companyName": "Company Name",
+      "company": "Company Name",
       "website": "Website (optional)",
       "textarea": {
         "placeholder": "Tell us about your project"

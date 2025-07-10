@@ -16,7 +16,7 @@
         "pleaseFixErrors": "Please fix the errors above",
         "name": "Please enter your full name",
         "invalidPhone": "Please enter a valid phone number",
-        "city": "Please enter your city",
+        "company": "Please enter your company",
         "serviceType": "Please select the type of service",
         "budget": "Please select your budget",
         "message": "Please enter a message",

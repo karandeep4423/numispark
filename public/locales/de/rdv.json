@@ -2,11 +2,6 @@
   "title": "Buchen Sie Ihren Kostenlosen Pre-Audit",
   "titleHighlight": "in 30 Minuten",
   "description": "Vereinbaren Sie einen Termin für eine detaillierte Analyse Ihrer Online-Präsenz und optimieren Sie Ihre digitale Strategie.",
-  "testimonial": {
-    "quote": "Ein reaktives und professionelles Team, das unsere spezifischen Bedürfnisse erfüllt hat.",
-    "author": "SELMI Jugurtha",
-    "role": "Marketingdirektor, numispark"
-  },
   "analysisSection": {
     "title": "Was werden wir ",
     "subTitle": "analysieren?",
@@ -42,8 +37,7 @@
       "email": "E-Mail",
       "name": "Vollständiger Name",
       "phone": "Telefonnummer",
-      "city": "Stadt",
-      "companyName": "Firmenname",
+      "companyName": "Firma",
       "website": "Website (optional)",
       "textarea": {
         "placeholder": "Erzählen Sie uns von Ihrem Projekt"

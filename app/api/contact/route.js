@@ -7,10 +7,9 @@ const createEmailTemplate = (data) => {
     email,
     phone,
     message,
-    city,
     serviceType,
     budget,
-    companyName,
+    company,
     website,
   } = data;
 
@@ -23,7 +22,7 @@ const createEmailTemplate = (data) => {
         <title>${
         serviceType?.trim()
           ? "New Contact Inquiry"
-          : companyName?.trim()
+          : website?.trim()
           ? "Free Seo Audit Inquiry"
           : ""
       }</title>
@@ -65,7 +64,7 @@ const createEmailTemplate = (data) => {
                         <tr>
                           <td style="padding: 8px;">
                             <p style="margin: 0; color: #94a3b8; font-size: 14px;">Company</p>
-                            <p style="margin: 4px 0 0; color: #1e293b; font-size: 16px;">${city}</p>
+                            <p style="margin: 4px 0 0; color: #1e293b; font-size: 16px;">${company}</p>
                           </td>
                         </tr>
                       </table>
@@ -83,13 +82,11 @@ const createEmailTemplate = (data) => {
       ${
         serviceType?.trim()
           ? "Service Type"
-          : companyName?.trim()
-          ? "Company Name"
           : ""
       }
     </p>
     <p style="margin: 4px 0 0; color: #1e293b; font-size: 16px;">
-      ${serviceType?.trim() || companyName?.trim() || ""}
+      ${serviceType?.trim()|| ""}
     </p>
   </td>
 </tr>
@@ -164,15 +161,14 @@ export async function POST(request) {
       name,
       phone,
       message,
-      city,
       serviceType,
       budget,
-      companyName,
+      company,
       website,
     } = body;
 
     // Validate required fields
-    if (!email || !name || !phone || !message || !city) {
+    if (!email || !name || !phone || !message) {
       return NextResponse.json(
         {
           success: false,
@@ -188,10 +184,9 @@ export async function POST(request) {
       email,
       phone,
       message,
-      city,
       serviceType,
       budget,
-      companyName,
+      company,
       website,
     });
 

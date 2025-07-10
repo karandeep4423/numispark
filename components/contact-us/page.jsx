@@ -18,7 +18,7 @@ const INITIAL_FORM_STATE = {
   name: "",
   phone: "",
   message: "",
-  city: "",
+  company: "",
   serviceType: "",
   budget: "",
 };

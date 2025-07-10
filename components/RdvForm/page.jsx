@@ -21,8 +21,7 @@ const INITIAL_FORM_STATE = {
   name: "",
   phone: "",
   message: "",
-  city: "",
-  companyName: "",
+  company: "",
   website: "",
 };
 
@@ -135,15 +134,9 @@ const RdvForm = ({ translations}) => {
       Icon: Phone,
     },
     {
-      name: "city",
+      name: "company",
       type: "text",
-      placeholder: t("form.input.city"),
-      Icon: MapPin,
-    },
-    {
-      name: "companyName",
-      type: "text",
-      placeholder: t("form.input.companyName"),
+      placeholder: t("form.input.company"),
       Icon: Briefcase,
     },
     {

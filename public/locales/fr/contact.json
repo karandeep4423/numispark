@@ -16,7 +16,7 @@
         "pleaseFixErrors": "Veuillez corriger les erreurs ci-dessus",
         "name": "Veuillez saisir votre nom complet",
         "invalidPhone": "Veuillez saisir un numéro de téléphone valide",
-        "city": "Veuillez saisir votre ville",
+        "company": "Veuillez saisir votre société",
         "serviceType": "Veuillez sélectionner le type de service",
         "budget": "Veuillez sélectionner votre budget",
         "message": "Veuillez saisir un message",
