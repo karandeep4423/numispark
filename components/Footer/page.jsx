@@ -165,10 +165,10 @@ const Footer = () => {
             <h2 className="text-xl text-gray-800 font-bold">
               {t("footer.contactInfo.heading")}
             </h2>
-            <div className="flex items-center gap-2">
+            <address className="flex items-center gap-2">
               <MdLocationOn className="text-blue-600 flex-shrink-0" />
               <p>{t("footer.contactInfo.location")}</p>
-            </div>
+            </address>
             <div className="flex items-center gap-2">
               <MdEmail className="text-blue-600 flex-shrink-0" />
               <a

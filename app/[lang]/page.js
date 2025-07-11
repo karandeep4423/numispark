@@ -325,7 +325,7 @@ export default function Home() {
           className="text-4xl px-2 text-center font-bold text-gray-800"
         >
           {t("home.services.title")}
-          <span className="text-blue-600 bg-blue-200 p-1.5 rounded-2xl">
+          <span className="text-blue-600 bg-blue-200 ml-2 p-1.5 rounded-2xl">
             {t("home.services.titleHighlight")}
           </span>
         </h2>

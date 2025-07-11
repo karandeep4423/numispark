@@ -23,6 +23,7 @@ const teamMembers = [
   { translationKey: "antoine", image: "/team/Antoine.png" },
   { translationKey: "louis", image: "/team/Louis.png" },
   { translationKey: "charlotte", image: "/team/Charlotte.png" },
+  { translationKey: "amelie", image: "/team/Amélie.png" },
   { translationKey: "sophia", image: "/team/Sophia.png" },
 ];
 
@@ -100,7 +101,7 @@ const About = () => {
       {/* Team Section */}
       <div className="pb-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="text-4xl px-2 text-center font-bold text-gray-800">
               {t("about.team.title")}{" "}
               <span className="text-blue-600 m-1 bg-blue-200 p-1.5 rounded-2xl">
