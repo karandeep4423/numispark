@@ -310,7 +310,7 @@ const Navbar = () => {
           {/* <Link onClick={toggleMenu} href="/blog">
             Blog
           </Link> */}
-          <Link onClick={toggleMenu} href="/contact" className="relative">
+          <Link onClick={toggleMenu} href="/contactez-nous" className="relative">
             {t("navbar.links.contact")}
             <span className="absolute -top-1.5 -right-1 flex size-3">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-500 opacity-75"></span>
