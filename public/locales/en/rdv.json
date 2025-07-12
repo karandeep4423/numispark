@@ -61,6 +61,7 @@
     "server": "An error occurred, please try again."
   },
   "highlight": {
-    "reimbursementText": "We offer a refund"
+    "reimbursementText": "We offer a refund",
+    "reimbursementTextHighlight": "if you are not satisfied"
   }
 }
