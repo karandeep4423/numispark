@@ -36,9 +36,6 @@ export default async function LangLayout({ children, params }) {
       <Footer />
       <div className="fixed-circle">
         <AnimatedCircle
-          text={
-            t("highlight.reimbursementText") || "Nous offrons un remboursement"
-          }
         />
       </div>
     </Providers>

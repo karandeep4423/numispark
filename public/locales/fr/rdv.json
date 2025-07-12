@@ -58,6 +58,7 @@
   },
 
   "highlight": {
-    "reimbursementText": "Nous offrons un remboursement"
+    "reimbursementText": "Nous offrons un remboursement",
+    "reimbursementTextHighlight": "si vous n'êtes pas satisfait"
   }
 }
