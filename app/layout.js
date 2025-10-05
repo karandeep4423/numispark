@@ -14,6 +14,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const metadata = {
+  metadataBase: new URL('https://numispark.com'),
+};
+
 export default async function RootLayout({ children, params }) {
   // Get the language from params (passed from LangLayout)
   const lang = params?.lang || "fr";

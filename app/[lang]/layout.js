@@ -45,6 +45,7 @@ export default async function LangLayout({ children, params }) {
 export async function generateMetadata({ params }) {
   const paramData = await params;
   const language = paramData?.lang;
+  
   if (!language) {
     return {
       title: "Default Title",
@@ -58,7 +59,26 @@ export async function generateMetadata({ params }) {
       keywords:
         "IT services, digital marketing, web development, mobile app development, SEO, social media marketing, digital transformation, Numispark",
       alternates: {
-        canonical: `https://numispark.com/en${paramData.pathname || ''}`,
+        canonical: "https://numispark.com/en",
+        languages: {
+          'fr': 'https://numispark.com',
+          'en': 'https://numispark.com/en',
+          'de': 'https://numispark.com/de',
+          'x-default': 'https://numispark.com',
+        },
+      },
+      openGraph: {
+        title: "Digital Solutions for IT & Marketing | NumiSpark",
+        description: "Empowering businesses with innovative IT and marketing services. From web development and mobile app creation to SEO and digital campaigns.",
+        url: "https://numispark.com/en",
+        siteName: "NumiSpark",
+        locale: "en_US",
+        type: "website",
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "Digital Solutions for IT & Marketing | NumiSpark",
+        description: "Empowering businesses with innovative IT and marketing services.",
       },
     };
   } else if (language === "fr") {
@@ -70,7 +90,26 @@ export async function generateMetadata({ params }) {
       keywords:
         "services IT, marketing digital, développement web, création d'applications mobiles, SEO, marketing sur les réseaux sociaux, transformation digitale, Numispark",
       alternates: {
-        canonical: `https://numispark.com${paramData.pathname || ''}`,
+        canonical: "https://numispark.com",
+        languages: {
+          'fr': 'https://numispark.com',
+          'en': 'https://numispark.com/en',
+          'de': 'https://numispark.com/de',
+          'x-default': 'https://numispark.com',
+        },
+      },
+      openGraph: {
+        title: "Numispark | Agence Communication, création Web & Mobile, SEO & Marketing Digital",
+        description: "Numispark, agence digitale, propose des solutions innovantes en développement web & mobile, marketing digital, SEO et design.",
+        url: "https://numispark.com",
+        siteName: "NumiSpark",
+        locale: "fr_FR",
+        type: "website",
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "Numispark | Agence Communication, création Web & Mobile, SEO & Marketing Digital",
+        description: "Numispark, agence digitale, propose des solutions innovantes en développement web & mobile, marketing digital, SEO et design.",
       },
     };
   } else if (language === "de") {
@@ -81,7 +120,26 @@ export async function generateMetadata({ params }) {
       keywords:
         "IT-Dienstleistungen, digitales Marketing, Webentwicklung, mobile App-Entwicklung, SEO, Social Media Marketing, digitale Transformation, Numispark",
       alternates: {
-        canonical: `https://numispark.com/de${paramData.pathname || ''}`,
+        canonical: "https://numispark.com/de",
+        languages: {
+          'fr': 'https://numispark.com',
+          'en': 'https://numispark.com/en',
+          'de': 'https://numispark.com/de',
+          'x-default': 'https://numispark.com',
+        },
+      },
+      openGraph: {
+        title: "Digitale Lösungen für IT & Marketing | NumiSpark",
+        description: "Wir unterstützen Unternehmen mit innovativen IT- und Marketingdienstleistungen.",
+        url: "https://numispark.com/de",
+        siteName: "NumiSpark",
+        locale: "de_DE",
+        type: "website",
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "Digitale Lösungen für IT & Marketing | NumiSpark",
+        description: "Wir unterstützen Unternehmen mit innovativen IT- und Marketingdienstleistungen.",
       },
     };
   }

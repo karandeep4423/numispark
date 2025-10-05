@@ -259,8 +259,8 @@ const portfolioItems = [
     dotColor: "bg-emerald-500",
   },
   {
-    image: "/portfolio/seo-experte-référencement.png",
-    src: ["/portfolio/seo-experte-référencement.png"],
+    image: "/portfolio/seo-experte-referencement.png",
+    src: ["/portfolio/seo-experte-referencement.png"],
     translationName: "seo.portfolio.categories.SFA.name",
     translationContent:
       "seo.portfolio.categories.SFA.content",

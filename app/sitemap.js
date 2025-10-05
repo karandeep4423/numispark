@@ -1,8 +1,8 @@
 const siteUrl = 'https://numispark.com';
 
-// Add other static paths here
-const staticPaths = [
-  '', // for homepage
+// Define all your pages
+const pages = [
+  '', // homepage
   '/a-propos-de-nous',
   '/agence-automatisation-ia',
   '/agence-creation-site-web',
@@ -22,17 +22,61 @@ const staticPaths = [
 ];
 
 export default function sitemap() {
-  const sitemapEntries = staticPaths.map((path) => ({
-    url: `${siteUrl}${path}`,
-    lastModified: new Date(),
-    alternates: {
-      languages: {
-        fr: `${siteUrl}${path}`,
-        en: `${siteUrl}/en${path}`,
-        'x-default': `${siteUrl}${path}`,
+  const sitemapEntries = [];
+  
+  // Add French pages (default language at root)
+  pages.forEach((path) => {
+    sitemapEntries.push({
+      url: `${siteUrl}${path}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: path === '' ? 1.0 : 0.8,
+      alternates: {
+        languages: {
+          fr: `${siteUrl}${path}`,
+          en: `${siteUrl}/en${path}`,
+          de: `${siteUrl}/de${path}`,
+          'x-default': `${siteUrl}${path}`,
+        },
       },
-    },
-  }));
+    });
+  });
+  
+  // Add English pages
+  pages.forEach((path) => {
+    sitemapEntries.push({
+      url: `${siteUrl}/en${path}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+      alternates: {
+        languages: {
+          fr: `${siteUrl}${path}`,
+          en: `${siteUrl}/en${path}`,
+          de: `${siteUrl}/de${path}`,
+          'x-default': `${siteUrl}${path}`,
+        },
+      },
+    });
+  });
+  
+  // Add German pages
+  pages.forEach((path) => {
+    sitemapEntries.push({
+      url: `${siteUrl}/de${path}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+      alternates: {
+        languages: {
+          fr: `${siteUrl}${path}`,
+          en: `${siteUrl}/en${path}`,
+          de: `${siteUrl}/de${path}`,
+          'x-default': `${siteUrl}${path}`,
+        },
+      },
+    });
+  });
 
   return sitemapEntries;
 }
