@@ -58,7 +58,7 @@ export async function generateMetadata({ params }) {
       keywords:
         "IT services, digital marketing, web development, mobile app development, SEO, social media marketing, digital transformation, Numispark",
       alternates: {
-        canonical: "https://numispark.com/en",
+        canonical: `https://numispark.com/en${paramData.pathname || ''}`,
       },
     };
   } else if (language === "fr") {
@@ -70,7 +70,7 @@ export async function generateMetadata({ params }) {
       keywords:
         "services IT, marketing digital, développement web, création d'applications mobiles, SEO, marketing sur les réseaux sociaux, transformation digitale, Numispark",
       alternates: {
-        canonical: "https://numispark.com",
+        canonical: `https://numispark.com${paramData.pathname || ''}`,
       },
     };
   } else if (language === "de") {
@@ -81,7 +81,7 @@ export async function generateMetadata({ params }) {
       keywords:
         "IT-Dienstleistungen, digitales Marketing, Webentwicklung, mobile App-Entwicklung, SEO, Social Media Marketing, digitale Transformation, Numispark",
       alternates: {
-        canonical: "https://numispark.com/de",
+        canonical: `https://numispark.com/de${paramData.pathname || ''}`,
       },
     };
   }

@@ -31,7 +31,14 @@ function detectBrowserLanguage(acceptLanguageHeader) {
 }
 
 export function middleware(request) {
-  const { pathname } = request.nextUrl;
+  const { pathname, host } = request.nextUrl;
+
+  // Redirect www to non-www for SEO
+  if (host === 'www.numispark.com') {
+    const newUrl = new URL(pathname, 'https://numispark.com');
+    return NextResponse.redirect(newUrl, 301);
+  }
+  
   
   // Skip static assets and API routes
   if (

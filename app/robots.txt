@@ -5,7 +5,12 @@ Disallow: /private/
 Disallow: /api/
 Disallow: /temp/
 
-Sitemap: https://www.numispark.com/sitemap.xml
+Sitemap: https://numispark.com/sitemap.xml
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GPTBot
+Allow: /
 
 
- 
