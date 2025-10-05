@@ -9,7 +9,6 @@ Sitemap: https://numispark.com/sitemap.xml
 
 User-agent: Google-Extended
 Allow: /
-
 User-agent: GPTBot
 Allow: /
 
