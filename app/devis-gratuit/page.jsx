@@ -203,7 +203,7 @@ const DevisGratuitLandingPage = () => {
         </div>
       </section>
       {/* Stats Section */}
-      <section className="bg-blue-200 shadow-2xl  text-white py-8 px-6">
+      <section className="bg-blue-200/70  backdrop-blur-sm text-white py-8 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="space-y-1">
