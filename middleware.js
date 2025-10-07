@@ -44,7 +44,8 @@ export function middleware(request) {
   if (
     /\.(gif|png|jpg|jpeg|svg|mp4|webp|css|js|txt|xml|ico)$/.test(pathname) ||
     pathname.startsWith('/_next/') ||
-    pathname.startsWith('/api/')
+    pathname.startsWith('/api/') ||
+    pathname.startsWith('/devis-gratuit')
   ) {
     return NextResponse.next();
   }
