@@ -112,7 +112,7 @@ const DevisGratuitLandingPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header with Logo and Tagline */}
-      <header className="bg-blue-200 text-white py-4 px-6  sticky top-0 z-50">
+      <header className="bg-blue-200 text-white py-4 px-2 sm:px-6  sticky top-0 z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <Link className="w-44 h-8 font-extrabold text-2xl" href="/devis-gratuit">
             <span className="border-4 text-gray-800 border-blue-600 ">
@@ -120,7 +120,7 @@ const DevisGratuitLandingPage = () => {
             </span>
             <span className="text-blue-600">Spark</span>
           </Link>
-          <div className="hidden md:flex items-center gap-6">
+          <div className="flex items-center gap-6">
             <a
               href="tel:+33602528771"
               className="flex items-center gap-2 text-gray-900 hover:text-blue-400 transition-colors"
@@ -218,7 +218,7 @@ const DevisGratuitLandingPage = () => {
               <div className="flex justify-center mb-2">
                 <Users className="text-blue-600" size={32} />
               </div>
-              <p className="text-2xl font-bold text-blue-600">100</p>
+              <p className="text-2xl font-bold text-blue-600">50</p>
               <p className="text-sm font-semibold">Partenaires</p>
               <p className="text-xs text-gray-400">qui nous font confiance</p>
             </div>

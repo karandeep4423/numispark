@@ -244,17 +244,16 @@ export default function DemarrerDevis() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header (minimal) */}
-     {/* Header with Logo and Tagline */}
-      <header className="bg-blue-200  text-white py-4 px-6  sticky top-0 z-50">
-        <div className="max-w-7xl  mx-auto flex justify-between items-center">
+      {/* Header with sticky progress bar */}
+      <header className="bg-blue-200 text-white sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto flex justify-between items-center py-4 px-2 sm:px-6">
           <Link className="w-44 h-8 font-extrabold text-2xl" href="/devis-gratuit/demarrer">
             <span className="border-4 text-gray-800 border-blue-600 ">
               Numi
             </span>
             <span className="text-blue-600">Spark</span>
           </Link>
-          <div className="hidden md:flex items-center gap-6">
+          <div className="flex items-center gap-6">
             <a
               href="tel:+33602528771"
               className="flex items-center gap-2 text-gray-900 hover:text-blue-400 transition-colors"
@@ -264,15 +263,20 @@ export default function DemarrerDevis() {
             </a>
           </div>
         </div>
-      </header>
-
-      {/* Full-width progress bar directly below header */}
-      <div className="w-full h-1 bg-blue-100 overflow-hidden">
+        {/* Progress bar inside the sticky header for constant visibility */}
         <div
-          className="h-1 bg-blue-600 transition-all duration-300"
-          style={{ width: `${(step / 6) * 100}%` }}
-        />
-      </div>
+          className="w-full h-1 bg-blue-100 overflow-hidden"
+          role="progressbar"
+          aria-valuenow={Math.round((step / 6) * 100)}
+          aria-valuemin={0}
+          aria-valuemax={100}
+        >
+          <div
+            className="h-1 bg-blue-600 transition-all duration-300"
+            style={{ width: `${(step / 6) * 100}%` }}
+          />
+        </div>
+      </header>
 
       {/* Content */}
       <main className="max-w-3xl mx-auto px-6 py-10 pb-10">
