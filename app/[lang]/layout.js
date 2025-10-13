@@ -1,9 +1,7 @@
 import { Providers } from "./providers";
 import "../globals.css";
-import Navbar from "@/components/Navbar/page";
-import Footer from "@/components/Footer/page";
-import AnimatedCircle from "@/components/AnimatedCircle";
-import Google from "@/components/google-login/page"; // Import Google component
+import LayoutWrapper from "./LayoutWrapper";
+import { GoogleTagManager } from "@next/third-parties/google";
 async function loadTranslations(locale) {
   const translations = await import(
     `@/public/locales/${locale}/rdv.json`
@@ -30,14 +28,10 @@ export default async function LangLayout({ children, params }) {
 
   return (
     <Providers lang={lang}>
-      <Navbar />
-      {children}
-      <Google />
-      <Footer />
-      <div className="fixed-circle">
-        <AnimatedCircle
-        />
-      </div>
+      <GoogleTagManager gtmId="GTM-M5MSM548" />
+      <LayoutWrapper>
+        {children}
+      </LayoutWrapper>
     </Providers>
   );
 }

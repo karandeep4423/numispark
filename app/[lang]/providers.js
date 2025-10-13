@@ -4,7 +4,7 @@ import { I18nextProvider } from 'react-i18next';
 import i18n from '@/lib/i18n';
 
 export function Providers({ children, lang }) {
-  const [initialized, setInitialized] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     // Only change language if it's different from current language
@@ -20,13 +20,10 @@ export function Providers({ children, lang }) {
       document.cookie = `userLocale=${lang}; path=/; max-age=31536000; SameSite=Strict`;
     }
 
-    setInitialized(true);
+    setMounted(true);
   }, [lang]);
 
-  if (!initialized && typeof window !== 'undefined') {
-    return <div className="min-h-screen flex items-center justify-center">Loading...</div>;
-  }
-
+  // Always render children to avoid hydration mismatch
   return (
     <I18nextProvider i18n={i18n}>
       {children}

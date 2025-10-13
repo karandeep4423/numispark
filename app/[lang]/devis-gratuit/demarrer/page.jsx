@@ -115,7 +115,14 @@ export default function DemarrerDevis() {
 
     setLoading(true);
     try {
-  const message = `Demande de devis\n\nType de site: ${form.siteType}\nStatut: ${form.status}\nActivité: ${form.activity}\nObjectifs: ${(form.objectives || []).join(', ')}\nSite existant: ${form.existingWebsite}\nDate souhaitée: ${form.projectDate}`;
+  const message = `Demande de devis
+
+Type de site: ${form.siteType}
+Statut: ${form.status}
+Activité: ${form.activity}
+Objectifs: ${(form.objectives || []).join(', ') || 'Autre'}
+Site existant: ${form.existingWebsite}
+Date souhaitée: ${form.projectDate}`;
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

@@ -108,7 +108,7 @@ const createEmailTemplate = (data) => {
                 <!-- Message -->
                 <div style="background-color: #f8fafc; border-radius: 8px; padding: 20px;">
                   <h2 style="color: #2563eb; font-size: 18px; margin: 0 0 16px;">Message</h2>
-                  <p style="margin: 0; color: #1e293b; font-size: 16px; line-height: 1.5;">${message}</p>
+                  <p style="margin: 0; color: #1e293b; font-size: 16px; line-height: 1.8; white-space: pre-line;">${message}</p>
                 </div>
 
                 <!-- Footer -->
