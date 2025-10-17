@@ -23,7 +23,7 @@ const teamMembers = [
   { translationKey: "antoine", image: "/team/Antoine.png" },
   { translationKey: "louis", image: "/team/Louis.png" },
   { translationKey: "charlotte", image: "/team/Charlotte.png" },
-  { translationKey: "amelie", image: "/team/Amélie.png" },
+  { translationKey: "amelie", image: "/team/Amelie.png" },
   { translationKey: "sophia", image: "/team/Sophia.png" },
 ];
 
