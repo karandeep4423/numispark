@@ -1,5 +1,18 @@
 {
   "contact": {
+    "hero": {
+      "title": "Lassen Sie uns über Ihr digitales Projekt sprechen"
+    },
+    "intro": {
+      "description": "Haben Sie ein Web-, Mobile- oder Digitalprojekt? Unsere Numispark-Experten stehen Ihnen zur Verfügung, um Sie zu beraten und Ihnen die besten Lösungen anzubieten.",
+      "cta": "Füllen Sie das untenstehende Formular aus oder kontaktieren Sie uns direkt. Wir werden schnell antworten."
+    },
+    "benefits": {
+      "response24h": "Antwort innerhalb von 24 Stunden",
+      "freeConsultation": "Kostenlose Beratung",
+      "noCommitment": "Unverbindlich",
+      "availableTeam": "Verfügbares Team"
+    },
     "heading": "Bereit, loszulegen?",
     "contactDetail": "Unsere Kontaktdaten",
     "subHeading": "Bereit, loszulegen? Wir würden uns freuen, von Ihnen zu hören.",
@@ -55,6 +68,42 @@
       },
       "submit": "Senden",
       "submitting": "Senden..."
+    },
+    "faq": {
+      "items": {
+        "responseTime": {
+          "question": "Wie schnell antworten Sie?",
+          "answer": "Wir antworten auf alle Anfragen innerhalb von 24 Werktagen. Für Notfälle rufen Sie uns direkt an unter +33 6 02 52 87 71 von Montag bis Freitag 9-18 Uhr MEZ."
+        },
+        "initialConsultation": {
+          "question": "Ist die erste Beratung kostenpflichtig?",
+          "answer": "Nein, unsere erste Beratung und unser erstes Audit sind kostenlos und unverbindlich. Es ist eine Gelegenheit, Ihre Bedürfnisse zu besprechen und mögliche Lösungen zu erkunden."
+        },
+        "budgetPlanning": {
+          "question": "Welches Budget sollte ich für mein Projekt einplanen?",
+          "answer": "Es variiert je nach Ihren Zielen, der Komplexität und den Technologien. Wir bieten Lösungen für alle Budgets — von einigen hundert bis mehreren zehntausend Euro. Füllen Sie das Formular aus, um ein kostenloses und personalisiertes Angebot zu erhalten."
+        },
+        "inPersonMeeting": {
+          "question": "Können Sie uns persönlich treffen?",
+          "answer": "Auf jeden Fall! Wir haben unseren Sitz in Caen und stehen für Vor-Ort-Termine zur Verfügung. Wir können auch Videokonferenzen durchführen, wenn das für Sie praktischer ist."
+        },
+        "industryExperience": {
+          "question": "Haben Sie Erfahrung in meiner Branche?",
+          "answer": "Wir haben branchenübergreifende Erfahrung: E-Commerce, Tourismus, Bildung, Dienstleistungen, SaaS usw. Unser Ansatz passt sich Ihrem Bereich und seinen Besonderheiten an. Beschreiben Sie Ihre Branche im Formular und wir bestätigen unsere Expertise."
+        },
+        "smeSupport": {
+          "question": "Arbeiten Sie mit KMU/Kleinunternehmen?",
+          "answer": "Ja, wir arbeiten mit allen Arten von Unternehmen: Kleinstunternehmen, KMU, Startups, Vereine. Unser Ansatz ist flexibel und an Ihre Größe und Ressourcen angepasst."
+        },
+        "documentSharing": {
+          "question": "Wie kann ich Dokumente mit Ihnen teilen?",
+          "answer": "Sie können Dateien an das Kontaktformular anhängen. Nach unserem ersten Austausch stellen wir Ihnen sichere Freigabemöglichkeiten zur Verfügung (Cloud, Download-Link usw.)."
+        },
+        "maintenancePackages": {
+          "question": "Bieten Sie Wartungspakete nach dem Projekt an?",
+          "answer": "Ja, wir bieten technische Wartungs-, Hosting- und Supportpakete an, um die Nachhaltigkeit und Leistung Ihrer Projekte zu gewährleisten."
+        }
+      }
     }
   }
 }

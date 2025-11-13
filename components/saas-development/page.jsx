@@ -1,21 +1,25 @@
 "use client";
 import React, { useState } from "react";
 import {
-  Clock,
-  Code,
-  CheckCircle,
-  Users,
-  TrendingUp,
-  Layout,
-  Cloud,
-  DollarSign,
-  Headphones,
-  Brain,
-  PenTool,
   ArrowUpRight,
+  Code,
   Rocket,
+  BookOpen,
+  Layout,
+  CloudUpload,
+  Briefcase,
+  Handshake,
+  HeartHandshake,
+  Lightbulb,
+  CheckCircle2,
+  Users,
+  Cloud,
+  Database,
+  ShieldCheck,
+  CreditCard,
+  Server,
 } from "lucide-react";
-import Contact from "@/components/contact-us/page";
+import FormCTA from "@/components/Form-CTA/page";
 import HeroButtons from "@/components/HeroButtons/page";
 import FAQs from "@/components/Faqs/page";
 import Technologies from "@/components/Technologies/page";
@@ -77,43 +81,29 @@ const TECHNOLOGIES = [
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg",
   },
 ];
-// Define arrays with translation keys and icon mappings
+
+const Services = [
+  { translationKey: "custom", icon: Server },
+  { translationKey: "multiTenant", icon: Users },
+  { translationKey: "cloud", icon: Cloud },
+  { translationKey: "integrations", icon: Code },
+  { translationKey: "security", icon: ShieldCheck },
+  { translationKey: "billing", icon: CreditCard },
+];
+
+const AppTypes = [
+  { translationKey: "b2b", icon: Briefcase },
+  { translationKey: "b2c", icon: Users },
+  { translationKey: "marketplace", icon: Server },
+  { translationKey: "vertical", icon: Database },
+];
+
 const WhyUs = [
-  { translationKey: "multiTenant", serviceIcon: "Users" },
-  { translationKey: "cloudSolutions", serviceIcon: "Cloud" },
-  { translationKey: "agileDevelopment", serviceIcon: "Clock" },
-  { translationKey: "support24", serviceIcon: "Headphones" },
-];
-
-const Benefits = [
-  { translationKey: "timeToMarket", serviceIcon: "Clock" },
-  { translationKey: "userFriendly", serviceIcon: "Layout" },
-  { translationKey: "costSavings", serviceIcon: "DollarSign" },
-  { translationKey: "scalability", serviceIcon: "TrendingUp" },
-  { translationKey: "dedicatedSupport", serviceIcon: "Headphones" },
-];
-
-const steps = [
-  {
-    translationKey: "analysis",
-    icon: <Brain className="text-white" size={80} />,
-  },
-  {
-    translationKey: "wireframing",
-    icon: <PenTool className="text-white" size={80} />,
-  },
-  {
-    translationKey: "development",
-    icon: <Code className="text-white" size={80} />,
-  },
-  {
-    translationKey: "testing",
-    icon: <CheckCircle className="text-white" size={80} />,
-  },
-  {
-    translationKey: "deployment",
-    icon: <Rocket className="text-white" size={80} />,
-  },
+  { translationKey: "expertise", icon: Briefcase },
+  { translationKey: "metrics", icon: Rocket },
+  { translationKey: "scalable", icon: Handshake },
+  { translationKey: "product", icon: HeartHandshake },
+  { translationKey: "support", icon: Lightbulb },
 ];
 
 const portfolioItems = [
@@ -142,7 +132,6 @@ const portfolioItems = [
     translationbackendDevelopment:
       "saas.portfolio.categories.aviators.backendDevelopment",
     translationDatabase: "saas.portfolio.categories.aviators.database",
-    translationKey: "appDesign",
     bgColor: "bg-emerald-600",
     dotColor: "bg-emerald-500",
   },
@@ -162,7 +151,7 @@ const portfolioItems = [
   },
 ];
 
-const SaaSDevelopment = () => {
+export default function SaaSDevelopment() {
   const { t } = useTranslation("saas");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedModal, setSelectedModal] = useState("");
@@ -191,12 +180,17 @@ const SaaSDevelopment = () => {
         {/* Overlay Content */}
         <div className="relative z-20 flex w-full h-screen justify-center items-center">
           <div className="w-full px-4 flex flex-col items-center gap-6">
-            <h1 className="max-w-screen-xl text-4xl lg:text-5xl text-center font-extrabold text-gray-200">
+          <h1 className="text-5xl max-w-screen-xl text-gray-200 sm:text-6xl text-center font-extrabold">
               {t("saas.hero.title")}
             </h1>
-            {/* <p className="max-w-screen-xl text-2xl text-center font-bold text-gray-200">
+            <span className="max-w-screen-xl my-3 text-gray-200 text-2xl text-center font-bold">
               {t("saas.hero.subtitle")}
-            </p> */}
+            </span>
+            {t("saas.hero.description") && (
+              <p className="max-w-3xl text-center text-gray-200 text-lg mt-4">
+                {t("saas.hero.description")}
+              </p>
+            )}
             <HeroButtons />
           </div>
         </div>
@@ -205,69 +199,57 @@ const SaaSDevelopment = () => {
       {/* Technologies Section */}
       <Technologies technologies={TECHNOLOGIES} />
 
-      {/* Key Features Section */}
-      <div className="pb-16 bg-gray-50">
-        <h2 className="text-4xl text-center font-bold text-gray-800">
-          {t("saas.keyFeatures.title")}
-          <span className="text-blue-600 bg-blue-200 p-2 m-1 rounded-2xl">
-            {t("saas.keyFeatures.titleHighlight")}
-          </span>
-          {t("saas.keyFeatures.titleEnd")}
+      {/* Services Section */}
+      <div className="pt-16 pb-16 bg-gray-50">
+        <h2 className="text-4xl px-2 text-center font-bold text-gray-800">
+          {t("saas.services.title")}
         </h2>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {WhyUs.map((service, index) => {
-            const Icon = { Users, Cloud, Clock, Headphones }[
-              service.serviceIcon
-            ];
-            const key = `saas.keyFeatures.items.${service.translationKey}`;
-            return (
-              <div
-                key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
-                  <Icon className="text-blue-600 w-14 h-14" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {t(`${key}.name`)}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {t(`${key}.description`)}
-                </p>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 px-4 max-w-6xl">
+          {Services.map((service, index) => {
+            const Icon = service.icon;
+            const serviceData = t("saas.services.items", {
+              returnObjects: true,
+            })[index];
+            const expertise = serviceData?.expertise || [];
+            const conclusion = serviceData?.conclusion || "";
 
-      {/* Benefits Section */}
-      <div className="pb-16 bg-gray-50">
-        <h2 className="text-4xl text-center font-bold text-gray-800">
-          <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            {t("saas.benefits.title")}
-          </span>
-          {t("saas.benefits.titleEnd")}
-        </h2>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {Benefits.map((service, index) => {
-            const Icon = { Layout, Headphones, DollarSign, TrendingUp, Clock }[
-              service.serviceIcon
-            ];
-            const key = `saas.benefits.items.${service.translationKey}`;
             return (
               <div
                 key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300"
+                className="flex flex-col p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 bg-white"
               >
-                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
-                  <Icon className="text-blue-600 w-14 h-14" />
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl">
+                    <Icon className="text-blue-600 w-10 h-10" />
+                  </div>
+                  <h3 className="text-2xl font-semibold text-gray-800">
+                    {serviceData?.name}
+                  </h3>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {t(`${key}.name`)}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {t(`${key}.description`)}
-                </p>
+                <p className="text-gray-700 mb-4">{serviceData?.description}</p>
+                <div className="mt-auto">
+                  <p className="text-blue-600 font-semibold mb-3 flex items-center gap-2">
+                    <Lightbulb className="w-5 h-5" />
+                    {serviceData?.expertiseTitle}
+                  </p>
+                  <ul className="space-y-2.5 mb-4">
+                    {Array.isArray(expertise) &&
+                      expertise.map((item, i) => (
+                        <li
+                          key={i}
+                          className="flex items-start gap-2.5 text-gray-600 text-sm"
+                        >
+                          <CheckCircle2 className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                  </ul>
+                  {conclusion && (
+                    <p className="text-sm text-gray-600 italic bg-blue-50 p-3 rounded-lg">
+                      {conclusion}
+                    </p>
+                  )}
+                </div>
               </div>
             );
           })}
@@ -275,10 +257,111 @@ const SaaSDevelopment = () => {
       </div>
 
       {/* Process Section */}
-      <HowAgencyWorks steps={steps} namespace="saas" />
+      <HowAgencyWorks
+        steps={[
+          {
+            translationKey: "0",
+            icon: <BookOpen className="text-white" size={80} />,
+          },
+          {
+            translationKey: "1",
+            icon: <Layout className="text-white" size={80} />,
+          },
+          {
+            translationKey: "2",
+            icon: <Code className="text-white" size={80} />,
+          },
+          {
+            translationKey: "3",
+            icon: <CheckCircle2 className="text-white" size={80} />,
+          },
+          {
+            translationKey: "4",
+            icon: <CloudUpload className="text-white" size={80} />,
+          },
+        ]}
+        namespace="saas"
+      />
+
+      {/* App Types / Solutions Section */}
+      <div className="py-16 bg-gray-50">
+        <h2 className="text-4xl text-center font-bold text-gray-800 mb-12 px-4">
+          {t("saas.appTypes.title")}
+        </h2>
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4 max-w-6xl">
+          {AppTypes.map((appType, index) => {
+            const Icon = appType.icon;
+            const typeData = t("saas.appTypes.types", {
+              returnObjects: true,
+            })[index];
+            const points = typeData?.points || [];
+
+            return (
+              <div
+                key={index}
+                className="flex flex-col p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 bg-white"
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl">
+                    <Icon className="text-blue-600 w-10 h-10" />
+                  </div>
+                  <h3 className="text-2xl font-semibold text-gray-800">
+                    {typeData?.name}
+                  </h3>
+                </div>
+                <p className="text-gray-700 mb-4">{typeData?.description}</p>
+                <ul className="space-y-2.5">
+                  {Array.isArray(points) &&
+                    points.map((item, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start gap-2.5 text-gray-600 text-sm"
+                      >
+                        <CheckCircle2 className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Why Choose Us Section */}
+      <div className="py-16 bg-gray-50">
+        <h2 className="text-4xl text-center font-bold text-gray-800 mb-12 px-4">
+          {t("saas.whyUs.title")}
+        </h2>
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
+          {WhyUs.map((reason, index) => {
+            const Icon = reason.icon;
+            const reasonData = t("saas.whyUs.reasons", {
+              returnObjects: true,
+            })[index];
+
+            return (
+              <div
+                key={index}
+                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300 bg-white"
+              >
+                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
+                  <Icon className="text-blue-600 w-14 h-14" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
+                  {reasonData?.title}
+                </h3>
+                <p className="text-gray-600 text-center">
+                  {reasonData?.description}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
 
       {/* Portfolio Section */}
-      <div className="max-w-7xl mx-auto px-4 pt-12">
+      <div className="max-w-7xl mx-auto px-4 py-12">
         <h2 className="text-4xl text-center font-bold text-gray-800">
           {t("saas.portfolio.title")}{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
@@ -322,18 +405,17 @@ const SaaSDevelopment = () => {
 
       {/* FAQs Section */}
       <FAQs
-        faqData={Object.keys(t("saas.faq.items", { returnObjects: true })).map(
-          (key) => ({
-            question: t(`saas.faq.items.${key}.question`),
-            answer: t(`saas.faq.items.${key}.answer`),
-          })
-        )}
+        title={t("saas.faq.title")}
+        faqData={Object.keys(
+          t("saas.faq.items", { returnObjects: true })
+        ).map((key) => ({
+          question: t(`saas.faq.items.${key}.question`),
+          answer: t(`saas.faq.items.${key}.answer`),
+        }))}
       />
 
       {/* Contact Section */}
-      <Contact />
+      <FormCTA />
     </div>
   );
-};
-
-export default SaaSDevelopment;
+}

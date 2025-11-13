@@ -46,6 +46,7 @@
 // export default HeroButtons;
 
 
+"use client";
 import Link from "next/link";
 import { Search, MessageCircleCode } from "lucide-react";
 import { useTranslation } from "react-i18next";

@@ -1,67 +1,188 @@
 {
   "home": {
     "hero": {
-      "title": "Empowering Your Business with",
-      "titleHighlight": "World-Class Digital Solutions",
-      "subtitle": "Web Development | Mobile Apps | UI/UX Design | Digital Marketing"
+      "title": "Digital Agency in France - Website Creation & Mobile App Development",
+      "subtitle": "Your partner for successful digital transformation",
+      "description": "Numispark is your web agency in France specializing in website creation and custom application development.",
+      "details": "Ideally located in France and operating throughout France, we support businesses in their digital transformation with creativity, technical expertise, and a results-focused approach."
+    },
+    "about": {
+      "title": "Who are we?",
+      "description": "Numispark is a French digital agency that supports businesses in their digital development.",
+      "mission": "Our multidisciplinary team combines technical expertise and creative vision to design high-performance web and mobile solutions.",
+      "valuesTitle": "Our values",
+      "values": {
+        "innovation": "Innovation",
+        "availability": "Availability",
+        "transparency": "Transparency",
+        "excellence": "Technical excellence"
+      },
+      "experience": "With over 60 projects completed for clients across all sectors, from small businesses to large corporations, we put our expertise at the service of your digital growth."
     },
     "services": {
-      "title": "Our Core",
+      "title": "Our",
       "titleHighlight": "Services",
-      "subtitle": "Comprehensive Solutions Tailored to Your Needs",
       "items": {
         "webDevelopment": {
-          "name": "Web Development",
-          "description": "Build scalable, platform-independent web solutions for enhanced accessibility and reach."
+          "name": "Website Creation",
+          "description": "We build custom, responsive websites optimized for search engines that convert your visitors into customers.",
+          "expertiseTitle": "Our expertise",
+          "expertise": [
+            "Mobile-first design for optimal user experience on all devices",
+            "Custom development or CMS according to your needs",
+            "SEO optimization integrated from conception",
+            "High-performance showcase sites and scalable e-commerce sites",
+            "Intuitive administrative interfaces for easy management"
+          ]
         },
         "mobileAppDevelopment": {
           "name": "Mobile App Development",
-          "description": "Create robust mobile applications tailored for Android and iOS platforms."
+          "description": "We create robust and intuitive iOS and Android applications that meet the specific needs of your business and users.",
+          "expertiseTitle": "Our expertise",
+          "expertise": [
+            "Native and hybrid applications for iOS and Android",
+            "Smooth and intuitive user experience",
+            "Modern and customized interfaces",
+            "Rigorous testing on all target devices",
+            "Continuous updates and maintenance"
+          ]
         },
         "digitalMarketing": {
-          "name": "Digital Marketing",
-          "description": "Boost your online presence and drive engagement with data-driven marketing strategies."
+          "name": "Web Marketing & SEO Strategy",
+          "description": "Boost your online visibility with our custom digital strategies, based on data analysis and conversion-oriented.",
+          "expertiseTitle": "Our expertise",
+          "expertise": [
+            "Natural (SEO) and paid (SEA) referencing",
+            "Content marketing and optimized web writing",
+            "Social media presence strategy",
+            "Performance analysis and continuous optimization",
+            "Email campaigns and marketing automation"
+          ]
         },
         "uiUxDesign": {
-          "name": "UI/UX Design",
-          "description": "Design intuitive and visually appealing interfaces for a seamless user experience."
+          "name": "UX/UI Design",
+          "description": "We design aesthetic and ergonomic user interfaces that maximize engagement and facilitate conversion.",
+          "expertiseTitle": "Our expertise",
+          "expertise": [
+            "Analysis of user needs and your business objectives",
+            "Wireframing and interactive prototyping",
+            "Responsive and accessible design",
+            "User testing to validate experience",
+            "Continuous optimization based on usage data"
+          ]
         },
         "saasDevelopment": {
-          "name": "SaaS Development",
-          "description": "Develop secure, scalable, and customizable SaaS solutions for your business needs."
+          "name": "SaaS Solutions",
+          "description": "Develop your own online software to optimize your internal processes or create new business opportunities.",
+          "expertiseTitle": "Our expertise",
+          "expertise": [
+            "Secure and scalable web applications",
+            "Customized administrator interfaces",
+            "Integration with your existing systems",
+            "Robust and high-performance cloud architecture",
+            "Technical support and continuous evolution"
+          ]
         },
         "aiAutomation": {
-          "name": "AI and Automation",
-          "description": "Leverage AI and automation to optimize workflows and drive efficiency."
+          "name": "Artificial Intelligence & Automation",
+          "description": "Optimize your business processes and gain efficiency through AI and intelligent automation of your workflows.",
+          "expertiseTitle": "Our expertise",
+          "expertise": [
+            "Automation of repetitive and time-consuming processes",
+            "AI integration for predictive analysis and decision-making",
+            "Intelligent chatbots and virtual assistants",
+            "Automated data and document processing",
+            "Business workflow optimization"
+          ]
         },
         "ecommerceDevelopment": {
-          "name": "Ecommerce Development",
-          "description": "Create dynamic e-commerce platforms to enhance your online retail presence."
+          "name": "E-commerce",
+          "description": "Develop your online business with high-performance, secure e-commerce solutions adapted to your business model.",
+          "expertiseTitle": "Our expertise",
+          "expertise": [
+            "Custom online store creation",
+            "Conversion funnel optimization",
+            "Integration of secure payment solutions",
+            "Inventory and logistics management",
+            "Connection with marketplaces (Amazon, Cdiscount, etc.)"
+          ]
+        }
+      }
+    },
+    "differentiators": {
+      "title": "Our differentiating assets",
+      "items": {
+        "experience": {
+          "title": "Multi-sector experience",
+          "description": "We support companies of all sizes and sectors:",
+          "sectors": [
+            "Startups and scale-ups",
+            "Growing small and medium businesses",
+            "Large accounts and institutions",
+            "E-commerce and retail",
+            "B2B and B2C services",
+            "Education and training",
+            "Tourism and leisure",
+            "Coaching and personal development"
+          ]
+        },
+        "approach": {
+          "title": "Collaborative approach",
+          "description": "We favor a relationship of proximity and transparency with our clients:",
+          "points": [
+            "In-depth understanding of your business objectives",
+            "Co-construction of digital strategy",
+            "Clear and regular communication",
+            "Agile and iterative process",
+            "Detailed project progress tracking"
+          ]
+        },
+        "support": {
+          "title": "End-to-end support",
+          "description": "We support you at every stage of your digital project:",
+          "steps": [
+            "Strategy definition",
+            "User experience design",
+            "Technical development",
+            "Testing and validation",
+            "Deployment and production launch",
+            "Training and post-launch support"
+          ]
         }
       }
     },
     "process": {
-      "title": "How Agency Works",
+      "title": "Our collaboration process",
       "steps": {
         "vision": {
-          "title": "Understanding Your Vision",
-          "description": "We collaborate closely to understand your objectives, challenges, and goals, ensuring a clear path forward for your project. Our focus is to align with your vision right from the start."
+          "title": "Discovery and Analysis",
+          "number": "1",
+          "description": "We work closely together to understand your objectives, challenges, and ambitions. This phase includes analysis of your market, competition, and current trends to identify the best opportunities.",
+          "deliverables": "Deliverables: Complete audit, analysis report, strategic recommendations"
         },
         "planning": {
-          "title": "Strategic Planning",
-          "description": "Using insights from our discussions, we craft a detailed strategy that outlines actionable steps. Our tailored approach ensures measurable success for your project."
+          "title": "UX Design and Prototyping",
+          "number": "2",
+          "description": "Transformation of ideas into structured plans with prototypes to visualize the final project and ensure strategic clarity. This approach allows us to refine the user experience and optimize conversion paths.",
+          "deliverables": "Deliverables: Wireframes, mockups, interactive prototypes"
         },
         "development": {
-          "title": "Design & Development",
-          "description": "Our creative and technical teams work together to bring your ideas to life. We deliver visually stunning designs paired with high-performing development."
+          "title": "Agile Development",
+          "number": "3",
+          "description": "Transformation of concepts into fully functional solutions through harmonious design and robust development for optimal performance. We work in iterations, allowing you to track progress and adjust the project along the way.",
+          "deliverables": "Deliverables: Progressive functional versions, weekly progress reports"
         },
         "launch": {
-          "title": "Launch & Deployment",
-          "description": "After rigorous testing, we launch your project with precision. Our seamless deployment ensures that your solution is ready to perform flawlessly."
+          "title": "Testing and Deployment",
+          "number": "4",
+          "description": "Rigorous testing to ensure your solution is problem-free, optimized, and ready for a smooth launch. We verify cross-browser and cross-device compatibility, security, and performance.",
+          "deliverables": "Deliverables: Test reports, optimized final version, user training"
         },
         "support": {
-          "title": "Ongoing Support",
-          "description": "We provide post-launch support to ensure your project stays ahead of the curve. Our team is always here to assist and innovate further."
+          "title": "Maintenance and Evolution",
+          "number": "5",
+          "description": "Precise deployment and post-launch support to maintain smooth and efficient operation, with regular updates and continuous improvement recommendations.",
+          "deliverables": "Options: Custom maintenance contracts, technical support, continuous optimization"
         }
       }
     },
@@ -158,20 +279,33 @@
       "description": "NumiSpark at Schools & Events"
     },
     "faq": {
+      "title": "Frequently asked questions",
       "items": {
-        "quote": {
-          "question": "How can I request a quote for a project?",
-          "answer": "You can request a quote by filling out our online form or contacting our sales team directly. We'll get back to you within 24 hours with a detailed proposal based on your project requirements."
+        "projectTypes": {
+          "question": "What types of projects can a web agency like Numispark handle?",
+          "answer": "As a web agency in France, Numispark supports businesses with all their digital needs: website creation (showcase, e-commerce, portal), web and mobile application development, existing site redesign, SEO strategy, web marketing, UX/UI design, and custom SaaS solution development. Our multidisciplinary team adapts to the size and complexity of your project."
         },
-        "industries": {
-          "question": "What industries do you serve?",
-          "answer": "We serve a wide range of industries including technology, healthcare, finance, retail, education, and manufacturing. Our solutions are customized to meet the specific needs of each sector."
+        "industryAdaptation": {
+          "question": "Does Numispark adapt to my industry?",
+          "answer": "Absolutely! Our experience covers many sectors: e-commerce, B2B and B2C services, education, coaching, tourism, real estate, healthcare, industry, etc. We take the time to understand the specificities of your sector to offer solutions adapted to your challenges and your audience. Our client references testify to our ability to adapt to various environments."
+        },
+        "ownership": {
+          "question": "Do I own my site/application upon delivery?",
+          "answer": "Yes, you are fully owner of your site or application once the project is delivered and paid. We transfer all source codes, access, and necessary documentation. We also favor open-source technologies and solutions without proprietary dependencies to guarantee your long-term independence."
+        },
+        "postLaunch": {
+          "question": "Can I get support after launch?",
+          "answer": "We offer several post-launch support packages to ensure the sustainability of your project: technical maintenance contracts, user support, functional developments, and continuous optimization."
         },
         "timeline": {
-          "question": "What is the typical timeline for a project?",
-          "answer": "Project timelines vary depending on scope and complexity. Typically, small projects take 2-4 weeks, medium projects 1-3 months, and large projects 3-6 months. We'll provide a detailed timeline during the initial consultation."
+          "question": "What are your timelines and how do you guarantee punctuality?",
+          "answer": "Our timelines vary depending on project complexity. Our agile methodology, with regular checkpoints and detailed planning, allows us to meet agreed deadlines. In case of unforeseen circumstances, we inform you immediately and propose adapted solutions."
         }
       }
+    },
+    "cta": {
+      "title": "Transform your digital project into reality",
+      "description": "Ready to bring your vision to life? Our team of experts is available to discuss your needs and offer adapted solutions. Benefit from a free audit of your online presence and a personalized quote with no commitment."
     }
   }
 }

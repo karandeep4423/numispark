@@ -1,100 +1,222 @@
 {
   "aiDevelopment": {
     "hero": {
-      "title": "Transformez votre entreprise avec l'IA et l'automatisation",
-      "subtitle": "Des chatbots aux modèles d'IA personnalisés, nous créons des solutions intelligentes pour améliorer l'efficacité"
+      "title": "Transformez vos processus métier en avantage concurrentiel",
+      "subtitle": "L'automatisation intelligente peut libérer jusqu'à 40% du temps de vos collaborateurs",
+      "description": "Chez Numispark, nous concevons des solutions d'automatisation IA sur-mesure qui s'intègrent parfaitement à vos systèmes existants et génèrent un ROI mesurable dès les premières semaines."
     },
     "services": {
-      "sectionTitle": "Nos Offres Principales",
-      "sectionSubtitle": "Des solutions complètes adaptées à vos besoins",
-      "items": {
-        "customAI": {
-          "serviceName": "Développement de modèles d'IA personnalisés",
-          "serviceDes": "Transformez votre entreprise avec des solutions d'IA sur mesure qui s'adaptent à vos défis uniques. Nos modèles personnalisés exploitent une technologie de pointe pour offrir une précision et une efficacité sans précédent dans vos opérations."
+      "title": "Nos services d'automatisation IA",
+      "items": [
+        {
+          "name": "Automatisation du Marketing Digital",
+          "description": "Nous développons des solutions d'automatisation intelligente qui exploitent pleinement les capacités de l'IA générative pour une stratégie marketing optimale.",
+          "expertiseTitle": "Notre expertise",
+          "expertise": [
+            "Création de contenu assistée par IA (posts réseaux sociaux, articles de blog, emailings)",
+            "Personnalisation dynamique des campagnes selon le comportement utilisateur",
+            "Automatisation complète des workflows email marketing et nurturing",
+            "Lead scoring et qualification automatique des prospects",
+            "Analyse prédictive des performances pour optimisation continue"
+          ],
+          "conclusion": "Nos clients marketing voient leurs taux de conversion augmenter de 35% en moyenne grâce à la personnalisation IA et économisent 15h par semaine sur la création de contenu."
         },
-        "chatbot": {
-          "serviceName": "Intégration de Chatbots",
-          "serviceDes": "Révolutionnez votre service client avec des chatbots intelligents qui comprennent, apprennent et évoluent. Offrez un support 24/7 tout en réduisant les coûts et en améliorant la satisfaction client."
+        {
+          "name": "Chatbots et Assistants Virtuels IA",
+          "description": "Optimisez votre relation client et accélérez votre support avec nos solutions d'IA conversationnelle qui permettent d'offrir un service d'excellence 24/7.",
+          "expertiseTitle": "Notre expertise",
+          "expertise": [
+            "Déploiement de chatbots conversationnels capables de comprendre le langage naturel",
+            "Assistants vocaux IA pour interaction naturelle",
+            "Gestion autonome des demandes clients courantes",
+            "Intégration multicanal : WhatsApp, Instagram, site web, téléphone",
+            "Analyse des sentiments pour priorisation intelligente"
+          ],
+          "conclusion": "Résultat : 80% de réduction du temps de réponse client, équipes support libérées pour traiter les cas complexes, satisfaction client améliorée."
         },
-        "automation": {
-          "serviceName": "Automatisation des processus métier",
-          "serviceDes": "Éliminez les tâches répétitives et rationalisez vos flux de travail avec des solutions d'automatisation intelligentes. Nos systèmes s'adaptent à vos processus métier, réduisant les erreurs et permettant à votre équipe de se concentrer sur des initiatives stratégiques."
+        {
+          "name": "Automatisation des Processus Métier (BPA)",
+          "description": "Nous créons des solutions d'automatisation intelligente, intuitives et centrées sur l'utilisateur pour maximiser l'efficacité et la productivité de vos équipes.",
+          "expertiseTitle": "Notre expertise",
+          "expertise": [
+            "Automatisation des workflows internes et des tâches administratives",
+            "Traitement automatisé de documents (factures, contrats, formulaires)",
+            "Distribution et qualification automatique des leads",
+            "Synchronisation multi-outils (CRM, Google Sheets, Notion, etc.)",
+            "Reporting et tableaux de bord automatisés avec insights intelligents"
+          ],
+          "conclusion": "Nos clients constatent en moyenne une réduction de 60% du temps passé sur les processus automatisés et un ROI positif en moins de 6 mois."
         },
-        "analytics": {
-          "serviceName": "Apprentissage automatique et analyses prédictives",
-          "serviceDes": "Exploitez la puissance de vos données grâce à des analyses avancées qui prédisent les tendances, identifient les opportunités et favorisent une prise de décision éclairée. Transformez les insights en actions avec nos solutions complètes d'apprentissage automatique."
+        {
+          "name": "Analyse de Données et IA Prédictive",
+          "description": "Nous assurons la valorisation et la performance de vos données avec nos services complets d'analyse intelligente et de prédiction.",
+          "expertiseTitle": "Notre expertise",
+          "expertise": [
+            "Analyse de grands volumes de données structurées et non-structurées",
+            "Détection automatique de tendances et insights cachés",
+            "Prédiction des comportements clients et anticipation des besoins",
+            "Optimisation des décisions business basée sur la data",
+            "Analyse sémantique et analyse de sentiments"
+          ],
+          "conclusion": "Transformez vos données en décisions rentables : nos algorithmes identifient des patterns invisibles et prédisent les comportements clients avec 85% de précision."
         }
-      }
-    },
-    "features": {
-      "sectionTitle": "Fonctionnalités clés",
-      "sectionSubtitle": "de nos chatbots",
-      "sectionTagline": "Votre succès est notre priorité",
-      "items": {
-        "nlu": {
-          "serviceName": "Compréhension du langage naturel (NLU)",
-          "serviceDes": "Permettez des interactions fluides entre humains et machines grâce à nos capacités avancées de compréhension du langage naturel. Traitez et comprenez le langage humain avec une précision sans précédent, prenant en charge de nombreux cas d'utilisation, du service client à l'analyse de données."
-        },
-        "multilingual": {
-          "serviceName": "Support multilingue",
-          "serviceDes": "Brisez les barrières linguistiques et développez-vous à l'international grâce à nos solutions d'IA multilingues. Prenez en charge plus de 100 langues avec une compréhension et des capacités de réponse proches de celles d'un natif."
-        },
-        "integration": {
-          "serviceName": "Intégration avec des plateformes populaires",
-          "serviceDes": "Intégrez harmonieusement nos solutions d'IA à votre infrastructure technologique existante. Qu'il s'agisse de Slack, Microsoft Teams ou de plateformes personnalisées, nous assurons une intégration fluide et des performances optimales."
-        },
-        "realtime": {
-          "serviceName": "Analyses en temps réel",
-          "serviceDes": "Surveillez et optimisez vos solutions d'IA en temps réel. Obtenez des informations exploitables sur les indicateurs de performance, l'engagement des utilisateurs et la santé du système grâce à notre tableau de bord analytique complet."
-        }
-      }
-    },
-    "whyUs": {
-      "sectionTitle": "Avantages",
-      "sectionSubtitle": "de nous choisir",
-      "items": {
-        "cuttingEdge": {
-          "serviceName": "Expertise dans les technologies d'IA de pointe",
-          "serviceDes": "Associez-vous à une équipe qui reste à la pointe de l'innovation en IA. Nos experts se spécialisent dans les technologies les plus récentes, y compris GPT-4, la vision par ordinateur et le deep learning, garantissant des solutions pérennes qui apportent une réelle valeur ajoutée à votre entreprise."
-        },
-        "customSolutions": {
-          "serviceName": "Solutions personnalisées pour les besoins de votre entreprise",
-          "serviceDes": "Obtenez des solutions d'IA parfaitement alignées avec les objectifs de votre entreprise. Nous ne croyons pas à l'approche « unique pour tous » : notre équipe analyse vos défis uniques et développe des solutions d'IA personnalisées offrant un retour sur investissement mesurable."
-        },
-        "costEffective": {
-          "serviceName": "Solutions économiques et évolutives",
-          "serviceDes": "Maximisez votre investissement avec des solutions qui évoluent avec votre entreprise. Nos systèmes d'IA sont conçus pour être évolutifs, vous permettant de démarrer en petit et d'étendre les capacités au fur et à mesure que vos besoins évoluent, tout en maintenant une efficacité en termes de coûts."
-        },
-        "speedOptimization": {
-          "serviceName": "Optimisation de la vitesse",
-          "serviceDes": "Découvrez des performances ultra-rapides grâce à nos solutions d'IA optimisées. Nous utilisons des techniques avancées de compression de modèles et de calcul en périphérie pour offrir des temps de réponse rapides sans compromettre la précision."
-        }
-      }
+      ]
     },
     "process": {
-      "title": "Développement d'IA",
+      "title": "Notre processus d'automatisation IA",
       "steps": {
-        "vision": {
-          "title": "Comprendre votre vision",
-          "description": "Nous plongeons au cœur de vos besoins et défis commerciaux grâce à des sessions de découverte ciblées. Notre équipe veille à ne pas simplement comprendre vos exigences, mais à identifier des opportunités d'innovation et de croissance."
+        "0": {
+          "title": "Audit & Diagnostic",
+          "description": "Nous commençons par comprendre en profondeur vos processus actuels, vos objectifs business et vos contraintes techniques. Cette phase inclut l'analyse approfondie de vos processus actuels, l'identification des opportunités d'automatisation à fort ROI, la définition du MVP (Minimum Viable Product), le choix des technologies adaptées (no-code vs développement sur-mesure), et la planification des phases d'implémentation pour garantir un déploiement stratégique."
         },
-        "planning": {
-          "title": "Planification stratégique",
-          "description": "En transformant les insights en stratégies concrètes, nous créons une feuille de route claire pour votre projet. Notre planification détaillée garantit un développement efficace, le respect des délais et des résultats mesurables."
+        "1": {
+          "title": "Conception & Prototypage",
+          "description": "Nous concevons la solution d'automatisation et l'architecture de votre projet. Cette étape comprend l'élaboration de solutions sur-mesure avec validation par itérations, la création de workflows d'automatisation optimisés, la définition d'une architecture technique respectant vos contraintes existantes, le développement de prototypes fonctionnels pour validation, et des tests utilisateurs préliminaires pour assurer l'adéquation avec vos besoins."
         },
-        "development": {
-          "title": "Conception et développement",
-          "description": "Notre équipe d'experts donne vie à votre vision en utilisant des technologies d'IA de pointe et un code propre. Des mises à jour régulières et des démonstrations vous impliquent tout au long du processus de développement."
+        "2": {
+          "title": "Développement Agile",
+          "description": "Nous développons votre solution par itérations, avec des démonstrations régulières. Cette phase inclut la mise en place d'une architecture technique robuste et évolutive, le développement frontend (interfaces) et backend (API, intégrations), l'intégration des fonctionnalités prioritaires, la réalisation de tests unitaires et d'intégration continus, ainsi que des démonstrations et ajustements réguliers pour s'assurer de votre satisfaction."
         },
-        "launch": {
-          "title": "Lancement et déploiement",
-          "description": "Nous assurons une transition en douceur du développement au déploiement grâce à des tests et une optimisation complets. Votre solution est lancée en toute confiance, soutenue par une assurance qualité rigoureuse."
+        "3": {
+          "title": "Tests & Assurance Qualité",
+          "description": "Nous garantissons la qualité de votre solution avec des tests rigoureux. Cette étape comprend des tests fonctionnels sur tous les environnements cibles, des tests de performance et d'optimisation, des tests de sécurité et de protection des données, des tests avec utilisateurs réels, ainsi que des corrections et optimisations pour assurer une solution irréprochable avant le déploiement."
         },
-        "support": {
-          "title": "Support continu",
-          "description": "Nous fournissons un support continu, des mises à jour régulières et une maintenance proactive pour garantir des performances optimales de votre solution."
+        "4": {
+          "title": "Déploiement & Formation",
+          "description": "Nous assurons le lancement réussi et la formation de vos équipes. Cette dernière phase inclut la mise en place en parfaite intégration avec vos systèmes existants, la formation des équipes pour une utilisation autonome, le transfert de compétences, la mise en place d'outils de monitoring et d'analyse, un support technique post-lancement, et le suivi des performances avec optimisations régulières."
         }
       }
+    },
+    "appTypes": {
+      "title": "Types de solutions que nous développons",
+      "types": [
+        {
+          "name": "Solutions E-commerce & Retail",
+          "description": "Transformez votre activité commerciale avec des solutions d'automatisation offrant une expérience client fluide et personnalisée",
+          "points": [
+            "Automatisation de la gestion des stocks et commandes",
+            "Personnalisation des recommandations produits",
+            "Automatisation du service client et support",
+            "Programmes de fidélité automatisés",
+            "Notifications push intelligentes",
+            "Intégration avec vos systèmes de gestion existants"
+          ]
+        },
+        {
+          "name": "Solutions Entreprise & B2B",
+          "description": "Optimisez vos processus métiers avec des solutions sur-mesure pour vos collaborateurs ou clients professionnels",
+          "points": [
+            "Automatisation des tâches administratives et RH",
+            "Workflows de validation et d'approbation",
+            "Portails clients et fournisseurs automatisés",
+            "Tableaux de bord et reporting intelligents",
+            "Intégration avec vos systèmes d'information",
+            "Synchronisation multi-plateformes"
+          ]
+        },
+        {
+          "name": "Solutions de Services & Marketplaces",
+          "description": "Créez de nouvelles opportunités business avec des plateformes automatisées de mise en relation et de services",
+          "points": [
+            "Automatisation de la gestion des réservations",
+            "Plateformes et marketplaces automatisées",
+            "Services de logistique et livraison intelligents",
+            "Solutions basées sur la géolocalisation",
+            "Systèmes de paiement automatisés",
+            "Gestion automatique des évaluations et avis"
+          ]
+        },
+        {
+          "name": "Solutions Innovantes & Sectorielles",
+          "description": "Explorez de nouveaux territoires avec des solutions connectant IA et expériences sectorielles",
+          "points": [
+            "Automatisation pour l'IoT (Internet des Objets)",
+            "Solutions de santé et bien-être automatisées",
+            "Automatisation pour l'immobilier et la finance",
+            "Solutions éducatives et de formation",
+            "Automatisation utilisant la vision par ordinateur",
+            "Expériences gamifiées et personnalisées"
+          ]
+        }
+      ]
+    },
+    "whyUs": {
+      "title": "Pourquoi choisir Numispark pour votre automatisation IA",
+      "reasons": [
+        {
+          "title": "Expertise Technique Prouvée",
+          "description": "15+ projets d'automatisation IA déployés avec succès. Notre équipe maîtrise les dernières technologies (GPT-4, Claude, Make) et comprend les contraintes opérationnelles réelles des entreprises françaises."
+        },
+        {
+          "title": "ROI Garanti Dès le Premier Mois",
+          "description": "Chaque automatisation est conçue pour être rentable rapidement. Nous commençons toujours par un pilote à 3000€ qui démontre la valeur avant tout investissement plus important."
+        },
+        {
+          "title": "Méthodologie Transparente",
+          "description": "Notre processus agile vous implique à chaque étape, avec des démonstrations régulières, un suivi précis de l'avancement et une communication claire sur les choix techniques."
+        },
+        {
+          "title": "Vision Business",
+          "description": "Nous ne développons pas simplement des outils d'automatisation, nous créons des solutions stratégiques alignées avec vos objectifs business, avec une attention particulière portée au ROI."
+        },
+        {
+          "title": "Accompagnement Complet",
+          "description": "De l'audit initial à la maintenance long-terme, nous vous accompagnons à chaque étape de votre transformation, vous garantissant un partenariat durable."
+        },
+        {
+          "title": "Solutions pour TPE et PME",
+          "description": "Contrairement aux ESN traditionnelles, nous avons développé des forfaits accessibles dès 3000€. 70% de nos clients sont des PME de moins de 50 salariés qui automatisent efficacement leurs processus."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions Fréquentes",
+      "items": {
+        "cost": {
+          "question": "Quel est le coût d'un projet d'automatisation IA ?",
+          "answer": "Le coût varie considérablement selon la complexité, les fonctionnalités et les intégrations nécessaires. Un projet simple peut débuter autour de 3 000€, tandis qu'une solution complexe multi-processus peut représenter un investissement de 50 000€ ou plus. Nous proposons des approches par phase pour répartir l'investissement et valider le concept progressivement."
+        },
+        "timeline": {
+          "question": "Combien de temps faut-il pour mettre en place une solution IA ?",
+          "answer": "Les délais typiques varient de quelques jours pour des automatisations no-code simples à 3-6 mois pour des solutions complexes sur-mesure. Notre approche agile permet de livrer des versions fonctionnelles incrémentales, avec une première version testable généralement disponible dans les 2-4 semaines après le lancement du projet."
+        },
+        "difference": {
+          "question": "Quelle est la différence entre automatisation classique et automatisation IA ?",
+          "answer": "L'automatisation classique (RPA) fonctionne avec des règles fixes, tandis que l'automatisation IA ajoute apprentissage continu, adaptabilité, compréhension du langage naturel, prédiction et prise de décision intelligente. Nous recommandons l'approche la plus adaptée selon votre projet, budget et priorités."
+        },
+        "security": {
+          "question": "Comment assurez-vous la sécurité des données dans vos solutions ?",
+          "answer": "La sécurité est une priorité absolue. Nous implémentons les meilleures pratiques : conformité RGPD intégrale, hébergement sécurisé en Europe, chiffrement des données sensibles, politique de minimisation des données, audits de sécurité réguliers et processus documentés de gestion des incidents."
+        },
+        "integration": {
+          "question": "Comment gérez-vous l'intégration avec nos systèmes existants ?",
+          "answer": "Nous développons des APIs sécurisées et des connecteurs permettant l'intégration transparente avec vos systèmes existants (CRM, ERP, e-commerce, etc.). Notre expertise en développement et en intégration de systèmes nous permet de créer des solutions cohérentes avec votre écosystème technique actuel."
+        },
+        "maintenance": {
+          "question": "Proposez-vous des services de maintenance après le déploiement ?",
+          "answer": "Oui, nous offrons plusieurs formules de maintenance adaptées à vos besoins : support technique, amélioration continue, développement de nouvelles fonctionnalités, et accompagnement stratégique. Nos contrats de maintenance débutent à partir de 500€/mois et incluent un temps de réponse garanti."
+        },
+        "replacement": {
+          "question": "L'IA va-t-elle remplacer nos équipes ?",
+          "answer": "Non, l'IA ne remplace pas vos équipes, elle les augmente. L'objectif est d'éliminer les tâches répétitives à faible valeur ajoutée pour permettre à vos collaborateurs de se concentrer sur des activités à plus forte valeur : créativité, stratégie, relation client, innovation."
+        },
+        "measurement": {
+          "question": "Comment mesurez-vous le succès d'un projet d'automatisation IA ?",
+          "answer": "Nous définissons ensemble des KPIs pertinents (gain de temps, réduction des coûts, amélioration de la qualité, augmentation des revenus) et mettons en place des outils d'analytics pour les suivre. Des rapports réguliers vous permettent d'évaluer les performances et d'identifier les opportunités d'amélioration."
+        },
+        "testing": {
+          "question": "Puis-je tester avant d'investir massivement ?",
+          "answer": "Absolument. Nous recommandons systématiquement une approche progressive : preuve de concept (PoC) pour validation technique sur périmètre limité, pilote sur un service/processus spécifique, puis scaling et extension progressive. Cette approche minimise les risques et permet de valider le ROI à chaque étape."
+        },
+        "audit": {
+          "question": "Proposez-vous un audit gratuit ?",
+          "answer": "Oui, nous proposons un audit gratuit et sans engagement comprenant : analyse de vos processus actuels, identification des opportunités d'automatisation à fort ROI, recommandations stratégiques, estimation préliminaire des gains potentiels, et proposition de feuille de route."
+        }
+      }
+    },
+    "cta": {
+      "title": "Prêt à automatiser vos processus avec l'IA ?",
+      "description": "Discutons de votre projet et découvrez comment nous pouvons libérer le potentiel de votre entreprise avec des solutions d'automatisation intelligente."
     },
     "portfolio": {
       "sectionTitle": "Nos récentes",
@@ -102,30 +224,6 @@
       "categories": {
         "uiUx": "Design UI/UX",
         "appDesign": "Design d'application"
-      }
-    },
-    "faq": {
-      "items": {
-        "quote": {
-          "question": "Comment puis-je demander un devis pour un projet ?",
-          "answer": "Commencez votre parcours en IA en programmant une consultation gratuite via notre formulaire en ligne ou en nous appelant directement. Dans les 24 heures, nos experts analyseront vos exigences et vous fourniront une proposition détaillée incluant le calendrier, les livrables et des options de tarification adaptées à vos besoins."
-        },
-        "industries": {
-          "question": "Dans quels secteurs intervenez-vous ?",
-          "answer": "Nous avons mis en œuvre avec succès des solutions d'IA dans divers secteurs, notamment la santé (optimisation des soins aux patients), la finance (évaluation des risques), le commerce de détail (gestion des stocks), la fabrication (maintenance prédictive) et l'éducation (apprentissage personnalisé). Notre approche adaptable garantit des solutions efficaces, quel que soit votre secteur."
-        },
-        "timeline": {
-          "question": "Quel est le délai typique pour un projet ?",
-          "answer": "Les délais des projets varient en fonction de la complexité et de l'étendue. Les intégrations simples de chatbots prennent généralement 2 à 4 semaines, tandis que le développement de modèles d'IA personnalisés peut nécessiter 2 à 3 mois. Les solutions d'automatisation à l'échelle de l'entreprise s'étendent généralement sur 3 à 6 mois. Nous fournissons des jalons détaillés et des mises à jour régulières tout au long du cycle de développement."
-        },
-        "security": {
-          "question": "Comment assurez-vous la sécurité des solutions d'IA ?",
-          "answer": "La sécurité est primordiale dans notre processus de développement. Nous mettons en œuvre un cryptage de niveau entreprise, des audits de sécurité réguliers et nous conformons aux normes du secteur (RGPD, HIPAA, etc.). Toutes nos solutions d'IA sont soumises à des tests rigoureux pour détecter d'éventuelles vulnérabilités avant leur déploiement."
-        },
-        "supportAfter": {
-          "question": "Quel type de support fournissez-vous après le déploiement ?",
-          "answer": "Nous offrons un support post-déploiement complet incluant une surveillance 24/7, une optimisation régulière des performances, un réentraînement des modèles et un support technique dédié. Nos forfaits de maintenance garantissent que vos solutions d'IA continuent d'évoluer et de s'améliorer avec le temps."
-        }
       }
     }
   }

@@ -1,204 +1,301 @@
 {
   "socialMediaMarketing": {
     "hero": {
-      "title": "Build Your Brand on Social Media Platforms",
-      "subtitle": "Empower your business with tailored strategies"
+      "title": "Boost your visibility and growth with high-performing digital strategies",
+      "subtitle": "Digital Marketing & Social Media",
+      "description": "Your digital presence is essential to capture attention, engage your audience, and convert. Numispark develops custom digital marketing strategies that generate concrete results for your business."
     },
     "services": {
-      "sectionTitle": "Our Core",
-      "sectionTitleHighlight":"Services",
-      "sectionSubtitle": "Comprehensive Solutions Tailored to Your Needs",
-      "items": {
-        "contentCreation": {
-          "serviceName": "Content Creation",
-          "serviceDes": "Create visually engaging and impactful posts, videos, and stories tailored to your brand and audience."
+      "items": [
+        {
+          "name": "Social Media Strategy",
+          "description": "We develop comprehensive and personalized social media strategies to achieve your business objectives and maximize your digital impact.",
+          "expertiseTitle": "Our expertise",
+          "expertise": [
+            "Audit of your current digital presence",
+            "Competitive analysis and benchmarking",
+            "Priority platform definition",
+            "Brand positioning and voice",
+            "Strategic editorial planning",
+            "Relevant KPI definition",
+            "Organic growth recommendations"
+          ],
+          "conclusion": "A well-thought-out social media strategy forms the foundation of your success on social platforms, aligning your daily actions with your long-term business objectives."
         },
-        "campaignManagement": {
-          "serviceName": "Campaign Management",
-          "serviceDes": "Plan, execute, and monitor social media campaigns to drive meaningful engagement and conversions."
+        {
+          "name": "Social Media Content Creation",
+          "description": "We design creative and relevant content that resonates with your audience and strengthens your brand identity on social media.",
+          "expertiseTitle": "Our expertise",
+          "expertise": [
+            "Creation of engaging posts for each platform",
+            "Graphic design adapted to social formats",
+            "Impactful copywriting",
+            "Production of optimized photos and videos",
+            "Stories, Reels and ephemeral content",
+            "Carousels and educational infographics",
+            "Interactive content (polls, quizzes, questions)"
+          ],
+          "conclusion": "Our creative approach combines aesthetics, added value and technical optimization to maximize engagement and reach of your publications."
         },
-        "analyticsReporting": {
-          "serviceName": "Analytics & Reporting",
-          "serviceDes": "Analyze performance metrics to optimize strategies and provide actionable insights."
+        {
+          "name": "Community Management",
+          "description": "We animate your communities daily to create a lasting relationship with your audience and transform your followers into ambassadors.",
+          "expertiseTitle": "Our expertise",
+          "expertise": [
+            "Regular publishing according to editorial calendar",
+            "Moderation and response to comments",
+            "Management of private messages and requests",
+            "Community animation (games, contests, discussions)",
+            "Monitoring and strategic interactions",
+            "Crisis management and sensitive situations",
+            "Monthly performance reporting"
+          ],
+          "conclusion": "Our community management combines responsiveness, adapted tone and engagement strategy to build an active and loyal community around your brand."
         },
-        "influencerMarketing": {
-          "serviceName": "Influencer Marketing",
-          "serviceDes": "Partner with influencers to amplify your brand's voice and reach targeted audiences."
+        {
+          "name": "Social Media Advertising (Social Ads)",
+          "description": "We design and optimize targeted advertising campaigns on social media to achieve your acquisition, conversion and loyalty objectives.",
+          "expertiseTitle": "Our expertise",
+          "expertise": [
+            "Multi-platform advertising strategy",
+            "Facebook & Instagram Ads campaign creation",
+            "LinkedIn advertising for B2B",
+            "TikTok campaigns for young audiences",
+            "Audience definition and segmentation",
+            "Visual and ad copy creation",
+            "Continuous performance optimization",
+            "Retargeting and lookalike audiences",
+            "A/B testing to maximize ROI"
+          ],
+          "conclusion": "Our advertising campaigns are designed to maximize your return on investment through precise targeting and constant data-based optimization."
         },
-        "socialStrategyDev": {
-          "serviceName": "Social Media Strategy Development",
-          "serviceDes": "Craft a custom strategy to align with your business goals and social media objectives."
+        {
+          "name": "Social Media Analytics and Reporting",
+          "description": "We deeply analyze the performance of your social media actions to continuously improve your strategy and demonstrate ROI.",
+          "expertiseTitle": "Our expertise",
+          "expertise": [
+            "Implementation of advanced tracking tools",
+            "Monitoring of relevant KPIs and metrics",
+            "Audience behavior analysis",
+            "Engagement rate evaluation",
+            "Conversion and ROI measurement",
+            "Detailed and actionable reporting",
+            "Optimization recommendations"
+          ],
+          "conclusion": "Our data-driven approach allows you to precisely understand the impact of your digital actions and adjust your strategy for ever better results."
         },
-        "paidAdvertising": {
-          "serviceName": "Paid Advertising Management",
-          "serviceDes": "Optimize paid ads on platforms like Facebook, Instagram, and LinkedIn for maximum ROI."
-        },
-        "competitorAnalysis": {
-          "serviceName": "Competitor Analysis",
-          "serviceDes": "Gain insights into competitors' strategies to stay ahead in the market and refine your approach."
-        },
-        "performanceOptimization": {
-          "serviceName": "Performance Optimization",
-          "serviceDes": "Continuously improve your campaigns for better engagement, reach, and results."
+        {
+          "name": "Influencer Marketing",
+          "description": "We design and deploy influence strategies to amplify your visibility and strengthen your credibility with new audiences.",
+          "expertiseTitle": "Our expertise",
+          "expertise": [
+            "Identification of relevant influencers",
+            "Verification of metrics and real engagement",
+            "Negotiation and partnership management",
+            "Creative briefing and content validation",
+            "Publication coordination",
+            "Performance and conversion tracking",
+            "Return on investment analysis"
+          ],
+          "conclusion": "Our collaborations with influencers are always aligned with your values and marketing objectives, creating authentic and measurable impact."
         }
-      }
+      ]
     },
-    "features": {
-      "sectionTitle": "Key",
-      "sectionHighlight":"Features",
-      "sectionSubtitle": "of Social Media Marketing",
-      "sectionTagline": "Your Success Is Our Priority",
-      "items": {
-        "platformExpertise": {
-          "serviceName": "Platform-Specific Expertise",
-          "serviceDes": "Our team understands the nuances of each social media platform, tailoring strategies to maximize engagement and reach on Facebook, Instagram, LinkedIn, TikTok, and more."
+    "process": {
+      "title": "Our digital marketing process",
+      "steps": [
+        {
+          "title": "Audit & Strategy",
+          "number": "01",
+          "description": "We begin by analyzing your current situation and defining a personalized strategy. This phase includes analysis of your existing digital presence, study of your audience and personas, competitive benchmarking, SMART objectives definition, selection of priority platforms, content strategy development, and action and budget planning."
         },
-        "creativeContent": {
-          "serviceName": "Creative Content Creation",
-          "serviceDes": "Develop visually appealing graphics, videos, and written content that align with your brand and captivate your audience."
+        {
+          "title": "Creation & Production",
+          "number": "02",
+          "description": "We develop creative and high-performing content for each platform. This phase includes editorial calendar development, graphic template creation, photo and video production, key message and copy writing, advertising asset design, validation and adjustments, as well as content scheduling."
         },
-        "engagementOptimization": {
-          "serviceName": "Engagement Optimization",
-          "serviceDes": "Boost interactions with your audience by fostering conversations, responding to comments, and creating engaging polls and stories."
+        {
+          "title": "Distribution & Animation",
+          "number": "03",
+          "description": "We deploy and animate your presence on social media. This includes publishing according to the established schedule, daily community animation, responses to comments and messages, advertising campaign launches, real-time optimization, trend monitoring and reactivity, as well as interaction and community management."
         },
-        "realTimeAnalytics": {
-          "serviceName": "Real-Time Analytics & Reporting",
-          "serviceDes": "Monitor the performance of your social media campaigns in real-time and receive detailed reports to inform strategic decisions."
+        {
+          "title": "Analysis & Optimization",
+          "number": "04",
+          "description": "We measure performance and continuously optimize. This phase includes daily tracking of key metrics, weekly performance analysis, optimization of ongoing campaigns, editorial schedule adjustments, A/B testing on different formats, detailed monthly reporting, and improvement recommendations."
         },
-        "brandVoice": {
-          "serviceName": "Brand Voice Consistency",
-          "serviceDes": "Maintain a consistent tone and message across platforms, reinforcing your brand identity and values."
-        },
-        "socialListening": {
-          "serviceName": "Social Listening & Sentiment Analysis",
-          "serviceDes": "Monitor online conversations about your brand and industry to stay responsive to trends and customer sentiment."
-        },
-        "videoMarketing": {
-          "serviceName": "Video Marketing",
-          "serviceDes": "Create impactful video content, including reels, live sessions, and ads, to capture your audience’s attention and drive engagement."
-        },
-        "trendUtilization": {
-          "serviceName": "Trend Utilization",
-          "serviceDes": "Stay ahead by leveraging the latest trends, challenges, and viral content to keep your brand relevant and relatable."
-        },
-        "advancedTargeting": {
-          "serviceName": "Advanced Targeting",
-          "serviceDes": "Reach the right audience by leveraging precise demographic, geographic, and interest-based targeting options for organic and paid campaigns."
+        {
+          "title": "Evolution & Scaling",
+          "number": "05",
+          "description": "We evolve your strategy to amplify results. This final phase includes in-depth quarterly analysis, identification of performing content, scaling of profitable campaigns, exploration of new platforms, global strategy adjustment, integration of new features, and future action planning."
         }
-      }
+      ]
+    },
+    "appTypes": {
+      "title": "Platforms and specialties",
+      "types": [
+        {
+          "name": "Facebook & Instagram",
+          "points": [
+            "Organic and paid strategies",
+            "Stories, Reels and IGTV",
+            "Facebook & Instagram Shopping",
+            "Engaged groups and communities",
+            "Product shops and catalogs",
+            "Events and live streaming",
+            "Messaging and chatbots"
+          ]
+        },
+        {
+          "name": "LinkedIn",
+          "points": [
+            "Professional content strategy",
+            "In-depth articles and expertise",
+            "Employer marketing and recruitment",
+            "B2B lead generation campaigns",
+            "InMail and sponsored messages",
+            "Company pages and showcases",
+            "Professional groups and networking"
+          ]
+        },
+        {
+          "name": "TikTok",
+          "points": [
+            "Viral content creation",
+            "Challenge participation",
+            "Collaboration with TikTok creators",
+            "TikTok Ads and advertising formats",
+            "Hashtag strategies",
+            "Custom filters and effects",
+            "Live streaming and monetization"
+          ]
+        },
+        {
+          "name": "Twitter & Pinterest",
+          "points": [
+            "Monitoring and reactivity on Twitter",
+            "Twitter for customer service",
+            "Brand Awareness campaigns",
+            "Pinterest for e-commerce traffic",
+            "Commercial and shoppable Pins",
+            "Seasonal strategies and trends",
+            "Social ecosystem integration"
+          ]
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Use cases by sector",
+      "types": [
+        {
+          "name": "E-commerce",
+          "points": [
+            "Interactive product catalogs",
+            "Facebook & Instagram Shopping",
+            "Dynamic product ads",
+            "Customer testimonials and UGC",
+            "Lifestyle and inspirational content",
+            "Remarketing strategies",
+            "Flash sales and exclusive offers"
+          ]
+        },
+        {
+          "name": "B2B & Professional Services",
+          "points": [
+            "Thought leadership on LinkedIn",
+            "Webinars and educational content",
+            "Case studies and testimonials",
+            "Lead magnets and premium content",
+            "Lead generation campaigns",
+            "Sponsored message nurturing",
+            "Decision-maker marketing"
+          ]
+        },
+        {
+          "name": "Startups & Scale-ups",
+          "points": [
+            "Social media growth hacking",
+            "Viral content strategies",
+            "Impactful product launches",
+            "User acquisition campaigns",
+            "Influencer collaborations",
+            "Engaging community building",
+            "Founder vision storytelling"
+          ]
+        },
+        {
+          "name": "Specialized Sectors",
+          "points": [
+            "Finance and insurance",
+            "Health and wellness",
+            "Education and training",
+            "Real estate and construction",
+            "Tourism and hospitality",
+            "Luxury and premium",
+            "Public sector and associations"
+          ]
+        }
+      ]
     },
     "whyUs": {
-      "sectionTitle": "Benefits",
-      "sectionSubtitle": "of Choosing Us",
-      "items": {
-        "brandAwareness": {
-          "serviceName": "Increased Brand Awareness",
-          "serviceDes": "Enhance your brand's visibility and recognition through tailored strategies and campaigns."
+      "title": "Why choose Numispark for your digital marketing",
+      "reasons": [
+        {
+          "title": "Multi-Platform Expertise",
+          "description": "Our team masters the technical and strategic specificities of each social network, allowing you to deploy a consistent yet platform-adapted presence."
         },
-        "targetedCampaigns": {
-          "serviceName": "Targeted Campaigns for Higher ROI",
-          "serviceDes": "Reach the right audience with data-driven targeting for better campaign performance."
+        {
+          "title": "Results Focus",
+          "description": "We don't just create attractive content, but design conversion-oriented strategies with measurable ROI, aligned with your business objectives."
         },
-        "consistentEngagement": {
-          "serviceName": "Consistent Engagement with Followers",
-          "serviceDes": "Foster meaningful connections with your audience through regular and interactive content."
+        {
+          "title": "Strategic Creativity",
+          "description": "Our approach combines creativity and data-driven strategy to design content that stands out while generating concrete and measurable results."
         },
-        "realTimeAnalytics": {
-          "serviceName": "Real-Time Analytics",
-          "serviceDes": "Monitor campaign performance and make informed decisions with up-to-date analytics."
+        {
+          "title": "Reactivity and Agility",
+          "description": "Our structure allows us to be extremely reactive to opportunities, trends and algorithm changes, ensuring an always relevant digital presence."
         },
-        "customerLoyalty": {
-          "serviceName": "Enhanced Customer Loyalty",
-          "serviceDes": "Build long-term relationships with your audience through authentic and responsive interactions."
-        },
-        "costEffective": {
-          "serviceName": "Cost-Effective Marketing",
-          "serviceDes": "Maximize your marketing budget by focusing on strategies that deliver measurable results."
+        {
+          "title": "Total Transparency",
+          "description": "Our detailed reports and open communication allow you to clearly understand the impact of each action and the evolution of your digital presence."
         }
-      }
-    },
-    "portfolio": {
-        "title": "Our Recent",
-        "titleHighlight": "Work",
-        "categories": {
-          "uiUx": "UI/UX Design",
-          "appDesign": "App Design"
-        }
-      },
-    "process": {
-      "title": "How Marketing Works",
-      "steps": {
-        "step1": {
-          "title": "Understanding Your Goals",
-          "description": "We start by thoroughly understanding your business objectives, target audience, and market dynamics to ensure our strategies are aligned with your goals. This foundational step is crucial for tailoring an effective digital marketing approach."
-        },
-        "step2": {
-          "title": "Market Research & Analysis",
-          "description": "In-depth market research helps us identify industry trends, competitor strategies, and consumer behavior, providing valuable insights that inform our marketing tactics and campaign planning."
-        },
-        "step3": {
-          "title": "Strategy Development",
-          "description": "We develop a comprehensive digital marketing strategy that includes channel selection, campaign objectives, and a detailed content plan to engage your audience effectively and meet your business goals."
-        },
-        "step4": {
-          "title": "Implementation & Campaign Launch",
-          "description": "Once the strategy and content are ready, we implement the campaigns across selected digital channels. This phase involves setting up ads, scheduling posts, and ensuring everything is optimized for maximum impact."
-        },
-        "step5": {
-          "title": "Reporting & Analysis",
-          "description": "We provide detailed reports that analyze campaign performance, including key metrics and insights. This transparency helps you understand the impact of our efforts and informs future marketing strategies."
-        }
-      },
-      "portfolio": {
-        "sectionTitle": "Our Recent",
-        "sectionHighlight": "Work",
-        "categories": {
-          "uiUx": "UI/ UX Design",
-          "appDesign": "App Design"
-        }
-      }
+      ]
     },
     "faq": {
+      "title": "FAQ - Frequently Asked Questions",
       "items": {
+        "budget": {
+          "question": "What budget should I plan for an effective social media strategy?",
+          "answer": "The cost entirely depends on your project scope. Our digital marketing services can range from a few hundred euros for basic management, up to 10,000 euros or more for complete multi-channel strategies with premium content production and large-scale advertising campaigns. We adapt our proposals to your budget and objectives, prioritizing high-impact actions."
+        },
+        "timeline": {
+          "question": "How long does it take to see results on social media?",
+          "answer": "Timelines vary according to your objectives and starting point. First results in terms of engagement can be visible from the first weeks, but real organic growth generally takes 3 to 6 months of constant work. Advertising campaigns can generate immediate results in terms of visibility and traffic. Our phased approach allows quick wins while building a solid long-term presence."
+        },
         "platforms": {
-          "question": "Which social media platforms do you specialize in?",
-          "answer": "We specialize in managing campaigns across popular platforms such as Facebook, Instagram, LinkedIn, Twitter, TikTok, Pinterest, and YouTube. Our team tailors strategies to suit the unique features and audience of each platform."
+          "question": "Which social platforms should my business be present on?",
+          "answer": "Platform selection depends on your target audience, business sector and resources. Rather than being present everywhere superficially, we recommend concentrating your efforts on 2-3 strategic platforms where your audience is active. During our first consultation, we analyze your situation to recommend the most relevant social networks to achieve your objectives."
         },
-        "paidAds": {
-          "question": "Can you manage paid social media ads for us?",
-          "answer": "Absolutely! We create and manage targeted ad campaigns, including audience research, ad design, and performance optimization, to maximize your ROI on platforms like Facebook Ads, Instagram Ads, LinkedIn Ads, and TikTok Ads."
+        "roi": {
+          "question": "How do you measure ROI of social media actions?",
+          "answer": "We define with you specific KPIs aligned with your business objectives: conversion, lead generation, qualified traffic, awareness, etc. We implement precise tracking via native platform analytics tools, Google Analytics and advanced tracking tools. Our monthly reports allow you to clearly visualize the impact of each action and the evolution of your social ROI."
         },
-        "postingFrequency": {
-          "question": "How often will you post on our social media accounts?",
-          "answer": "The posting frequency depends on your specific goals and chosen plan. Typically, we recommend 3-5 posts per week per platform to maintain consistent engagement with your audience."
+        "expertise": {
+          "question": "Do you have specific sector expertise in digital marketing?",
+          "answer": "Our team has developed expertise in several sectors: e-commerce and retail, B2B and professional services, training and education, health and wellness, real estate, tourism, and consumer products. This experience allows us to quickly understand the specifics of your market and adapt our strategies to the particularities of your sector."
         },
-        "contentCreation": {
-          "question": "Do you provide content creation as part of your service?",
-          "answer": "Yes, we handle content creation, including designing graphics, writing captions, producing videos, and curating content that aligns with your brand’s voice and engages your audience effectively."
+        "collaboration": {
+          "question": "How is collaboration with Numispark organized for digital marketing?",
+          "answer": "After an initial kickoff to define objectives and strategy, we establish a fluid collaboration process: shared editorial calendar, content validation process, accessible performance dashboards, weekly progress meetings, and monthly results analysis meetings. Our collaborative approach involves you at each key stage while freeing you from daily management."
         },
-        "successMetrics": {
-          "question": "How do you measure the success of social media campaigns?",
-          "answer": "We track metrics such as follower growth, engagement rates, click-through rates, reach, impressions, and conversions. Additionally, we provide detailed reports with actionable insights to optimize future campaigns."
+        "contentProduction": {
+          "question": "Do you produce photo and video content yourselves?",
+          "answer": "Yes, our team includes graphic designers, photographers and videographers capable of producing quality visual content for your social media. According to your needs, we can organize regular photo/video shoots, create reusable graphic templates, or produce premium content for your important campaigns. We can also work with your existing teams or resources."
         },
-        "resultsTimeline": {
-          "question": "How long does it take to see results from social media marketing?",
-          "answer": "Results vary based on your goals and the competitive landscape. While you may see initial engagement improvements within a few weeks, consistent efforts over 3-6 months typically yield significant growth in brand awareness and ROI."
-        },
-        "smallBusiness": {
-          "question": "Do you offer social media management for small businesses?",
-          "answer": "Yes, our services are tailored to businesses of all sizes. We create cost-effective strategies designed to meet the needs and budgets of small businesses while delivering measurable results."
-        },
-        "clientInput": {
-          "question": "Will I have input in the social media content and strategy?",
-          "answer": "Of course! We work collaboratively with you to ensure the content and strategies align with your brand’s vision and goals. Your feedback is an integral part of the process."
-        },
-        "followerGrowth": {
-          "question": "Can you help grow our follower count organically?",
-          "answer": "Yes, we use proven techniques like engaging content creation, strategic posting, hashtags, collaborations, and community interaction to grow your follower base organically over time."
-        },
-        "tools": {
-          "question": "What tools do you use for social media management?",
-          "answer": "We utilize industry-leading tools such as Hootsuite, Buffer, Facebook Ads Manager, and other analytics tools to schedule posts, monitor performance, and optimize campaigns."
+        "algorithms": {
+          "question": "How do you adapt your strategy to algorithm changes?",
+          "answer": "Our permanent monitoring of platform evolution allows us to anticipate and quickly adapt our strategies to algorithm changes. We never depend on a single tactic, favoring a diversified approach that remains effective despite evolutions. Our agility and technical expertise allow us to adjust our content and campaigns to constantly maintain and improve your performance."
         }
       }
     }

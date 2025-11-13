@@ -17,8 +17,16 @@ import {
   Brain,
   Target,
   Rocket,
+  Lightbulb,
+  UserCheck,
+  Eye,
+  Award,
+  CheckCircle2,
+  Briefcase,
+  Handshake,
+  HeartHandshake,
 } from "lucide-react";
-import Contact from "@/components/contact-us/page";
+import FormCTA from "@/components/Form-CTA/page";
 import FAQs from "@/components/Faqs/page";
 import Technologies from "@/components/Technologies/page";
 import HowAgencyWorks from "@/components/Process/page";
@@ -276,8 +284,7 @@ const portfolioItems = [
     image: "/portfolio/seo-agence-ecommerce.png",
     src: ["/portfolio/seo-agence-ecommerce.png"],
     translationName: "home.portfolio.categories.ecommerce.name",
-    translationContent:
-      "home.portfolio.categories.ecommerce.content",
+    translationContent: "home.portfolio.categories.ecommerce.content",
     bgColor: "bg-amber-400",
     dotColor: "bg-amber-500",
   },
@@ -318,8 +325,63 @@ export default function Home() {
       {/* Hero Section */}
       <Hero technologies={TECHNOLOGIES} />
       <LogoCarousel logos={myCompanyLogos} />
+
+      {/* About Section - Qui sommes-nous */}
+      <div className="my-16 mx-5 bg-white p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl ">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl text-center font-bold  mb-8">
+            <span className="text-blue-600 bg-blue-200 ml-2 p-1.5 rounded-2xl">
+              {t("home.about.title")}
+            </span>
+          </h2>
+          <p className="text-xl text-center text-gray-700 mb-6">
+            {t("home.about.description")}
+          </p>
+          <p className="text-lg text-center text-gray-600 mb-8">
+            {t("home.about.mission")}
+          </p>
+
+          {/* Values */}
+          <div className="mt-10">
+            <h3 className="text-2xl font-bold text-gray-800 text-center mb-6">
+              {t("home.about.valuesTitle")}
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+              <div className="flex flex-col items-center justify-center bg-blue-100 p-4 rounded-lg">
+                <Lightbulb className="text-blue-600 w-8 h-8 mb-2" />
+                <span className="text-blue-600 font-semibold text-center">
+                  {t("home.about.values.innovation")}
+                </span>
+              </div>
+              <div className="flex flex-col items-center justify-center bg-blue-100 p-4 rounded-lg">
+                <UserCheck className="text-blue-600 w-8 h-8 mb-2" />
+                <span className="text-blue-600 font-semibold text-center">
+                  {t("home.about.values.availability")}
+                </span>
+              </div>
+              <div className="flex flex-col items-center justify-center bg-blue-100 p-4 rounded-lg">
+                <Eye className="text-blue-600 w-8 h-8 mb-2" />
+                <span className="text-blue-600 font-semibold text-center">
+                  {t("home.about.values.transparency")}
+                </span>
+              </div>
+              <div className="flex flex-col items-center justify-center bg-blue-100 p-4 rounded-lg">
+                <Award className="text-blue-600 w-8 h-8 mb-2" />
+                <span className="text-blue-600 font-semibold text-center">
+                  {t("home.about.values.excellence")}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <p className="text-lg text-center text-gray-600 mt-10">
+            {t("home.about.experience")}
+          </p>
+        </div>
+      </div>
+
       {/* Services Section */}
-      <div className="pt-16 bg-gray-50">
+      <div className="pt-16 pb-16 bg-gray-50">
         <h2
           id="services"
           className="text-4xl px-2 text-center font-bold text-gray-800"
@@ -329,29 +391,49 @@ export default function Home() {
             {t("home.services.titleHighlight")}
           </span>
         </h2>
-        <p className="px-2 text-xl text-center font-medium text-gray-600 mt-4">
-          {t("home.services.subtitle")}
-        </p>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 px-4 max-w-6xl">
           {Services.map((service, index) => {
             const Icon = service.serviceIcon;
             const key = `home.services.items.${service.translationKey}`;
+            const expertise = t(`${key}.expertise`, { returnObjects: true });
 
             return (
-              <Link href={service?.href}
+              <div
                 key={index}
-                className="flex flex-col items-center p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 md:hover:shadow-lg transition-shadow duration-300"
+                className="flex flex-col p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 bg-white"
               >
-                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
-                  <Icon className="text-blue-600 w-14 h-14" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {t(`${key}.name`)}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {t(`${key}.description`)}
-                </p>
-              </Link>
+                <Link href={service?.href} className="flex flex-col flex-grow">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl">
+                      <Icon className="text-blue-600 w-10 h-10" />
+                    </div>
+                    <h3 className="text-2xl font-semibold text-gray-800">
+                      {t(`${key}.name`)}
+                    </h3>
+                  </div>
+                  <p className="text-gray-700 mb-4">
+                    {t(`${key}.description`)}
+                  </p>
+                  <div className="mt-auto">
+                    <p className="text-blue-600 font-semibold mb-3 flex items-center gap-2">
+                      <Lightbulb className="w-5 h-5" />
+                      {t(`${key}.expertiseTitle`)}
+                    </p>
+                    <ul className="space-y-2.5">
+                      {Array.isArray(expertise) &&
+                        expertise.map((item, i) => (
+                          <li
+                            key={i}
+                            className="flex items-start gap-2.5 text-gray-600 text-sm"
+                          >
+                            <CheckCircle2 className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                    </ul>
+                  </div>
+                </Link>
+              </div>
             );
           })}
         </div>
@@ -362,6 +444,102 @@ export default function Home() {
 
       {/* Process Section */}
       <HowAgencyWorks steps={steps} namespace="home" />
+
+      {/* Differentiators Section - Nos atouts différenciants */}
+      <div className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl text-center font-bold text-gray-800 mb-12">
+            {t("home.differentiators.title")}
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Multi-sector Experience */}
+            <div className="bg-blue-50 p-6 rounded-2xl shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)]  border border-gray-200">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-2 bg-blue-200 rounded-xl">
+                  <Briefcase className="w-6 h-6 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800">
+                  {t("home.differentiators.items.experience.title")}
+                </h3>
+              </div>
+              <p className="text-gray-700 mb-4">
+                {t("home.differentiators.items.experience.description")}
+              </p>
+              <ul className="space-y-2.5">
+                {t("home.differentiators.items.experience.sectors", {
+                  returnObjects: true,
+                }).map((sector, index) => (
+                  <li
+                    key={index}
+                    className="flex items-start gap-2.5 text-gray-600 text-sm"
+                  >
+                    <CheckCircle2 className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <span>{sector}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Collaborative Approach */}
+            <div className="bg-green-50 p-6 rounded-2xl shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)]  border border-gray-200">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-2 bg-green-200 rounded-xl">
+                  <Handshake className="w-6 h-6 text-green-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800">
+                  {t("home.differentiators.items.approach.title")}
+                </h3>
+              </div>
+              <p className="text-gray-700 mb-4">
+                {t("home.differentiators.items.approach.description")}
+              </p>
+              <ul className="space-y-2.5">
+                {t("home.differentiators.items.approach.points", {
+                  returnObjects: true,
+                }).map((point, index) => (
+                  <li
+                    key={index}
+                    className="flex items-start gap-2.5 text-gray-600 text-sm"
+                  >
+                    <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* End-to-End Support */}
+            <div className="bg-purple-50 p-6 rounded-2xl shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)]  border border-gray-200">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-2 bg-purple-200 rounded-xl">
+                  <HeartHandshake className="w-6 h-6 text-purple-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800">
+                  {t("home.differentiators.items.support.title")}
+                </h3>
+              </div>
+              <p className="text-gray-700 mb-4">
+                {t("home.differentiators.items.support.description")}
+              </p>
+              <ul className="space-y-2.5">
+                {t("home.differentiators.items.support.steps", {
+                  returnObjects: true,
+                }).map((step, index) => (
+                  <li
+                    key={index}
+                    className="flex items-start gap-2.5 text-gray-600 text-sm"
+                  >
+                    <CheckCircle2 className="w-4 h-4 text-purple-600 mt-0.5 flex-shrink-0" />
+                    <span>{step}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Why Partner with Us Section */}
       <div className="py-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
@@ -449,8 +627,9 @@ export default function Home() {
         t={t}
       />
       {/* Image Carousel Section */}
-      <ImageCarousel/>
-      <Feedback/>
+      <ImageCarousel />
+
+      <Feedback />
       {/* FAQs Section */}
       <FAQs
         faqData={Object.keys(t("home.faq.items", { returnObjects: true })).map(
@@ -462,7 +641,7 @@ export default function Home() {
       />
 
       {/* Contact Section */}
-      <Contact />
+      <FormCTA />
     </div>
   );
 }

@@ -1,14 +1,19 @@
 "use client"
 import { useInView } from "react-intersection-observer";
 import { useTranslation } from "react-i18next";
+import { CheckCircle2 } from "lucide-react";
 
-const HowAgencyWorks = ({ steps, namespace }) => {
+const HowAgencyWorks = ({ steps, namespace, title }) => {
   const { t } = useTranslation([namespace]);
+  
+  // Use provided title or fallback to translation
+  const processTitle = title || t(`${namespace}.process.title`, "How Agency Works");
+  
   return (
     <div className="bg-black text-white">
       <div className="flex items-center justify-center">
         <h2 className="relative mt-16 text-center text-5xl font-bold">
-          {t(`${namespace}.process.title`, "How Agency Works")}
+          {processTitle}
         </h2>
         <div className="bg-sky-400 mt-16 absolute mix-blend-multiply filter blur-2xl h-16 w-56"></div>
       </div>
@@ -27,6 +32,13 @@ const HowAgencyWorks = ({ steps, namespace }) => {
           const description =
             step.description ||
             t(`${namespace}.process.steps.${step.translationKey}.description`);
+          
+          // Get deliverables if they exist
+          const deliverables = step.deliverables || 
+            t(`${namespace}.process.steps.${step.translationKey}.deliverables`, { 
+              returnObjects: true, 
+              defaultValue: null 
+            });
 
           return (
             <div key={index} className="w-full flex flex-col items-center">
@@ -52,13 +64,25 @@ const HowAgencyWorks = ({ steps, namespace }) => {
                 <div className="mt-3 lg:mt-0 flex-shrink-0 bg-gray-700 rounded-xl p-6 flex justify-center items-center">
                   {step.icon}
                 </div>
-                <div>
-                  <h3 className="mt-3 lg:mt-0 text-3xl px-3 text-center font-bold">
+                <div className="flex-1">
+                  <h3 className="mt-3 lg:mt-0 text-3xl px-3 text-center lg:text-left font-bold">
                     {title}
                   </h3>
-                  <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-10 sm:px-10 lg:p-0 lg:py-4">
+                  <p className="ml-3 lg:ml-6 lg:pr-4 p-4 sm:pb-4 sm:px-10 lg:p-0 lg:py-4">
                     {description}
                   </p>
+                  
+                  {/* Deliverables List */}
+                  {deliverables && Array.isArray(deliverables) && deliverables.length > 0 && (
+                    <ul className="ml-3 lg:ml-6 lg:pr-4 px-4 sm:px-10 lg:px-0 space-y-2 pb-4">
+                      {deliverables.map((deliverable, idx) => (
+                        <li key={idx} className="flex items-start gap-3">
+                          <CheckCircle2 className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                          <span className="text-base">{deliverable}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </div>
 

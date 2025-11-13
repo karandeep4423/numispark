@@ -1,0 +1,259 @@
+{
+  "hero": {
+    "title": "Créez des expériences digitales captivantes et performantes",
+    "subtitle": "Web & Mobile Design",
+    "description": "Un design exceptionnel est votre meilleur atout pour capter l'intérêt, engager les utilisateurs et convertir. Chez Numispark, nous concevons des interfaces web et mobile qui allient esthétique, fonctionnalité et performance business."
+  },
+  "services": {
+    "items": [
+      {
+        "name": "Web Design Responsive",
+        "description": "Nous créons des sites web esthétiques et fonctionnels qui s'adaptent parfaitement à tous les appareils, offrant une expérience utilisateur cohérente et optimale.",
+        "expertiseTitle": "Notre expertise",
+        "expertise": [
+          "Design mobile-first pour une adaptation parfaite sur tous les écrans",
+          "Interfaces modernes et épurées reflétant votre identité de marque",
+          "Parcours utilisateur fluides et intuitifs",
+          "Hiérarchie visuelle claire pour guider l'attention",
+          "Optimisation des éléments de conversion (CTA, formulaires)",
+          "Grilles et layouts flexibles pour tous types de contenus",
+          "Micro-interactions et animations subtiles pour l'engagement"
+        ],
+        "conclusion": "Notre approche responsive garantit une expérience utilisateur optimale, quel que soit l'appareil utilisé, tout en maintenant cohérence visuelle et performances techniques."
+      },
+      {
+        "name": "UI/UX Design Mobile",
+        "description": "Nous concevons des interfaces mobiles intuitives et engageantes qui répondent aux attentes des utilisateurs tout en atteignant vos objectifs business.",
+        "expertiseTitle": "Notre expertise",
+        "expertise": [
+          "Design d'interfaces natives iOS et Android",
+          "Respect des guidelines de chaque plateforme (Material Design, Human Interface)",
+          "Optimisation pour l'interaction tactile (taille des éléments, zones d'action)",
+          "Navigation intuitive adaptée au contexte mobile",
+          "Expériences personnalisées selon le contexte utilisateur",
+          "Design pour différents formats (smartphones, tablettes)",
+          "Prototypes interactifs pour validation avant développement"
+        ],
+        "conclusion": "Notre design mobile combine esthétique contemporaine et usabilité intuitive pour créer des applications que les utilisateurs adorent utiliser au quotidien."
+      },
+      {
+        "name": "Design Système & Bibliothèque de Composants",
+        "description": "Nous créons des systèmes de design évolutifs qui garantissent cohérence, efficacité et scalabilité pour vos produits digitaux.",
+        "expertiseTitle": "Notre expertise",
+        "expertise": [
+          "Création de bibliothèques de composants réutilisables",
+          "Documentation des règles d'usage et variantes",
+          "Systèmes typographiques et grilles cohérentes",
+          "Palettes de couleurs accessibles et adaptables",
+          "Iconographie personnalisée et cohérente",
+          "Principes d'interaction et comportements standardisés",
+          "Évolutivité et maintenance simplifiée"
+        ],
+        "conclusion": "Ces systèmes de design rationalisent le développement, garantissent la cohérence visuelle et facilitent l'évolution de vos produits digitaux à long terme."
+      },
+      {
+        "name": "Prototypage & User Testing",
+        "description": "Nous validons les concepts avant le développement grâce à des prototypes interactifs et des tests utilisateurs pour optimiser l'expérience finale.",
+        "expertiseTitle": "Notre expertise",
+        "expertise": [
+          "Wireframes et maquettes basse fidélité pour itérations rapides",
+          "Prototypes interactifs haute fidélité pour simulation réaliste",
+          "Tests utilisateurs avec analyse des comportements",
+          "Itérations basées sur les retours d'utilisateurs réels",
+          "A/B testing des concepts d'interface",
+          "Démonstrations client pour validation avant développement",
+          "Documentation des enseignements pour amélioration continue"
+        ],
+        "conclusion": "Cette approche centrée utilisateur réduit les risques de développement et garantit des interfaces qui répondent véritablement aux besoins des utilisateurs."
+      },
+      {
+        "name": "Design d'Optimisation de Conversion (CRO)",
+        "description": "Nous optimisons vos interfaces pour transformer visiteurs en clients grâce à un design stratégique basé sur les données et les comportements utilisateurs.",
+        "expertiseTitle": "Notre expertise",
+        "expertise": [
+          "Analyse des parcours utilisateurs et points de friction",
+          "Optimisation des pages d'atterrissage et tunnels de conversion",
+          "Design de formulaires efficaces avec minimisation des abandons",
+          "Hiérarchisation visuelle des éléments clés",
+          "Éléments de réassurance stratégiquement placés",
+          "Tests A/B des éléments de conversion",
+          "Amélioration continue basée sur les données d'usage"
+        ],
+        "conclusion": "Notre design orienté conversion garantit que chaque élément d'interface contribue efficacement à vos objectifs business."
+      },
+      {
+        "name": "Design Accessible & Inclusif",
+        "description": "Nous concevons des interfaces accessibles à tous les utilisateurs, quelles que soient leurs capacités ou contraintes, tout en préservant l'esthétique.",
+        "expertiseTitle": "Notre expertise",
+        "expertise": [
+          "Respect des normes WCAG (Web Content Accessibility Guidelines)",
+          "Contraste de couleurs optimal pour lisibilité",
+          "Structures sémantiques pour lecteurs d'écran",
+          "Navigation au clavier facilitée",
+          "Alternatives textuelles pour contenus non-textuels",
+          "Design inclusif considérant divers handicaps",
+          "Tests avec utilisateurs aux besoins spécifiques"
+        ],
+        "conclusion": "Cette approche inclusive élargit votre audience potentielle tout en répondant aux exigences légales et éthiques d'accessibilité."
+      }
+    ]
+  },
+  "process": {
+    "title": "Notre processus de design",
+    "steps": [
+      {
+        "title": "Discovery & Recherche",
+        "number": "01",
+        "description": "Nous commençons par comprendre en profondeur votre entreprise, vos utilisateurs et vos objectifs. Nous analysons votre marque et positionnement, étudions les utilisateurs cibles et créons des personas détaillés. Un benchmark concurrentiel et une analyse de marché nous permettent de définir les objectifs et métriques de succès. Nous cartographions ensuite les parcours utilisateurs, identifions les besoins fonctionnels et contraintes techniques, et définissons la direction créative qui guidera l'ensemble du projet."
+      },
+      {
+        "title": "Architecture & Wireframing",
+        "number": "02",
+        "description": "Nous structurons l'information et concevons les premiers schémas d'interface. Cette phase comprend l'architecture de l'information optimisée, la hiérarchisation des contenus et fonctionnalités, et la création de wireframes pour les écrans clés. Nous définissons les parcours et flux utilisateurs, validons les concepts avec les parties prenantes, et itérons basé sur les premiers retours. Cette préparation rigoureuse assure une transition fluide vers la phase de design visuel."
+      },
+      {
+        "title": "Design UI & Exploration Visuelle",
+        "number": "03",
+        "description": "Nous transformons les wireframes en interfaces visuellement attractives. Cette phase créative commence par la création de moodboards et directions visuelles, suivie du design d'interface pour les écrans principaux. Nous définissons la typographie, les couleurs et les composants, créons des éléments graphiques personnalisés, et adaptons le design en responsive pour tous les appareils. Plusieurs itérations permettent de raffiner le design jusqu'à la présentation et validation client finale."
+      },
+      {
+        "title": "Prototypage & Testing",
+        "number": "04",
+        "description": "Nous validons les concepts grâce à des prototypes interactifs qui simulent les interactions principales. Des tests utilisateurs sur ces prototypes nous permettent d'analyser les retours et comportements réels. Les enseignements recueillis guident les ajustements nécessaires pour raffiner l'expérience utilisateur. Cette étape cruciale inclut également la documentation détaillée des interactions pour faciliter le développement, garantissant ainsi que le produit final réponde parfaitement aux attentes."
+      },
+      {
+        "title": "Finalisation & Handoff",
+        "number": "05",
+        "description": "Nous préparons tous les assets pour une implémentation parfaite. Cette phase finale comprend la finalisation de tous les écrans et états, la création des composants et variantes, et la documentation des interactions et animations. Nous préparons les assets pour développement avec des spécifications techniques détaillées et un guide d'implémentation complet pour les développeurs. Notre équipe assure également un support continu pendant la phase de développement pour garantir une fidélité parfaite au design."
+      }
+    ]
+  },
+  "appTypes": {
+    "title": "Types de projets design",
+    "types": [
+      {
+        "name": "Sites Web Corporate & Vitrines",
+        "points": [
+          "Design reflétant l'identité et les valeurs de votre marque",
+          "Parcours utilisateur optimisé pour la conversion",
+          "Storytelling visuel impactant",
+          "Responsive design parfaitement adaptatif",
+          "Expérience cohérente sur tous les appareils",
+          "Focus sur les objectifs business (leads, contacts)",
+          "Intégration avec votre écosystème marketing"
+        ]
+      },
+      {
+        "name": "E-commerce & Marketplaces",
+        "points": [
+          "Parcours d'achat fluides et sans friction",
+          "Mises en valeur des produits et catalogues",
+          "Tunnels de conversion optimisés",
+          "Fiches produits engageantes et informatives",
+          "Navigation et recherche intuitives",
+          "Mobile checkout simplifié",
+          "Design orienté confiance et réassurance"
+        ]
+      },
+      {
+        "name": "Applications Mobiles",
+        "points": [
+          "Design iOS respectant les Human Interface Guidelines",
+          "Design Android suivant Material Design",
+          "Expérience tactile intuitive et fluide",
+          "Navigation adaptée aux contraintes mobiles",
+          "Interaction optimisée pour une main",
+          "Parcours utilisateur contextualisés",
+          "Micro-interactions engageantes"
+        ]
+      },
+      {
+        "name": "Dashboards & Interfaces Complexes",
+        "points": [
+          "Organisation claire de données complexes",
+          "Tableaux de bord personnalisables",
+          "Visualisations de données intuitives",
+          "Interfaces d'administration simplifiées",
+          "Design orienté efficacité et productivité",
+          "Réduction de la charge cognitive",
+          "Adaptation aux différents niveaux d'utilisateurs"
+        ]
+      },
+      {
+        "name": "Produits SaaS & Webapps",
+        "points": [
+          "Design système évolutif et maintenable",
+          "Onboarding utilisateur optimisé",
+          "Parcours adaptés aux différents personas",
+          "States et feedback utilisateur clairs",
+          "Interface progressive (progressive disclosure)",
+          "Cohérence cross-platform",
+          "Design supportant les évolutions fonctionnelles"
+        ]
+      }
+    ]
+  },
+  "whyUs": {
+    "title": "Pourquoi choisir Numispark pour votre design web & mobile",
+    "reasons": [
+      {
+        "title": "Équilibre Créativité-Stratégie",
+        "description": "Notre approche combine créativité inspirée et méthodologie stratégique pour créer des designs qui non seulement impressionnent visuellement mais répondent également à vos objectifs business concrets."
+      },
+      {
+        "title": "Design Centré Utilisateur",
+        "description": "Nous plaçons l'utilisateur au cœur de notre processus, garantissant des interfaces intuitives et engageantes qui répondent aux besoins et attentes de vos cibles, tout en considérant les contraintes techniques."
+      },
+      {
+        "title": "Expertise Multi-Plateformes",
+        "description": "Notre équipe maîtrise les spécificités du design web responsive, des applications mobiles natives et des interfaces complexes, vous assurant une expérience cohérente à travers tous les points de contact."
+      },
+      {
+        "title": "Focus sur les Résultats",
+        "description": "Nous ne créons pas simplement de beaux designs, mais des interfaces qui convertissent, engagent et fidélisent, avec un impact mesurable sur vos KPIs et votre croissance."
+      },
+      {
+        "title": "Collaboration Transparente",
+        "description": "Notre processus itératif vous implique à chaque étape clé, garantissant que le résultat final correspond parfaitement à votre vision tout en bénéficiant de notre expertise."
+      }
+    ]
+  },
+  "faq": {
+    "title": "FAQ - Questions Fréquentes",
+    "items": {
+      "cost": {
+        "question": "Quel est le coût d'un projet de design web ou mobile ?",
+        "answer": "Le coût dépend entièrement de l'envergure de votre projet. Nos services de design peuvent aller de quelques centaines d'euros pour une refonte partielle, jusqu'à 10 000 euros ou plus pour un design complet de plateforme ou d'application complexe. Lors de notre premier échange, nous analysons précisément vos besoins pour vous proposer un devis personnalisé et transparent."
+      },
+      "timeline": {
+        "question": "Combien de temps faut-il pour réaliser un projet de design ?",
+        "answer": "Les délais varient selon la complexité de votre projet. Un design simple peut être réalisé en 2-3 semaines, tandis qu'une refonte complète ou une application complexe peut nécessiter plusieurs mois. Notre approche itérative permet cependant de visualiser rapidement les premières directions créatives et d'affiner progressivement le design."
+      },
+      "collaboration": {
+        "question": "Comment se déroule la collaboration avec votre équipe design ?",
+        "answer": "Après un briefing initial pour comprendre vos objectifs, nous établissons un processus de collaboration transparent avec des étapes de validation clairement définies. Vous avez accès à nos outils de design collaboratif pour suivre l'avancement et fournir des retours en temps réel. Des points réguliers permettent de valider chaque phase et d'ajuster la direction si nécessaire. Notre objectif est de créer un partenariat fluide où votre vision et notre expertise se combinent pour un résultat optimal."
+      },
+      "deliverables": {
+        "question": "Quels livrables vais-je recevoir à la fin du projet ?",
+        "answer": "Nos livrables standards comprennent les fichiers source de design (Figma, XD, Sketch), les assets graphiques optimisés pour le développement, la documentation des interactions et animations, un guide de style ou design system, et des spécifications techniques pour les développeurs. Pour les projets plus complexes, nous fournissons également des prototypes interactifs, des guides d'implémentation détaillés et un support pendant la phase de développement."
+      },
+      "development": {
+        "question": "Comment garantissez-vous que le design sera facile à développer ?",
+        "answer": "Notre équipe design travaille en étroite collaboration avec les développeurs pour assurer que nos créations sont techniquement réalisables et optimisées pour l'implémentation. Nous utilisons des pratiques comme le design modulaire, les design systems, et la documentation technique détaillée. Nos designers comprennent les contraintes techniques et créent des interfaces qui allient esthétique et faisabilité, réduisant ainsi les écarts entre design et développement."
+      },
+      "accessibility": {
+        "question": "Comment abordez-vous l'accessibilité dans vos designs ?",
+        "answer": "L'accessibilité est intégrée dès le début de notre processus de design. Nous suivons les normes WCAG et testons nos interfaces avec divers outils d'accessibilité. Nous portons une attention particulière aux contrastes de couleurs, à la navigation au clavier, à la compatibilité avec les lecteurs d'écran, et aux alternatives textuelles. Notre objectif est de créer des designs inclusifs qui fonctionnent pour tous les utilisateurs, quelles que soient leurs capacités, sans compromettre l'esthétique ou l'expérience globale."
+      },
+      "implementation": {
+        "question": "Prenez-vous en charge également le développement de vos designs ?",
+        "answer": "Absolument ! Notre expertise s'étend du design au développement, ce qui nous permet d'assurer une implémentation fidèle de vos maquettes. Nos équipes design et développement travaillent en synergie pour garantir que chaque pixel et interaction soit parfaitement reproduit. Si vous disposez déjà d'une équipe de développement, nous fournissons tous les assets et la documentation nécessaires, et pouvons assurer un suivi pendant l'implémentation pour garantir la qualité du résultat final."
+      },
+      "success": {
+        "question": "Comment mesurez-vous le succès d'un design ?",
+        "answer": "Nous définissons avec vous des métriques de succès alignées sur vos objectifs business : taux de conversion, engagement utilisateur, taux de rebond, satisfaction utilisateur, etc. Après le lancement, nous analysons ces données pour évaluer l'impact du design et identifier des opportunités d'optimisation. Notre approche data-driven nous permet de faire évoluer continuellement le design pour maximiser sa performance, en combinant esthétique et efficacité mesurable."
+      }
+    }
+  }
+}
+

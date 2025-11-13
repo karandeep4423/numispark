@@ -15,8 +15,19 @@ import {
   RefreshCw,
   Shield,
   ArrowUpRight,
+  CheckCircle2,
+  Lightbulb,
+  ShoppingCart,
+  Briefcase,
+  Users,
+  Sparkles,
+  Target,
+  Handshake,
+  Eye,
+  Rocket,
+  HeartHandshake,
 } from "lucide-react";
-import Contact from "@/components/contact-us/page";
+import FormCTA from "@/components/Form-CTA/page";
 import HeroButtons from "@/components/HeroButtons/page";
 import FAQs from "@/components/Faqs/page";
 import Technologies from "@/components/Technologies/page";
@@ -41,30 +52,6 @@ const TECHNOLOGIES = [
     name: "Flutter",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
   },
-];
-
-// Update data arrays
-const steps = [
-  { translationKey: "analysis", icon: <BookOpen size={80} /> },
-  { translationKey: "wireframing", icon: <Layout size={80} /> },
-  { translationKey: "development", icon: <Code size={80} /> },
-  { translationKey: "testing", icon: <CheckCircle size={80} /> },
-  { translationKey: "deployment", icon: <CloudUpload size={80} /> },
-];
-
-const Features = [
-  { translationKey: "nativeApps", serviceIcon: "Smartphone" },
-  { translationKey: "crossPlatform", serviceIcon: "Layers" },
-  { translationKey: "scalableSecure", serviceIcon: "Shield" },
-  { translationKey: "speedOptimization", serviceIcon: "Zap" },
-];
-
-const Benefits = [
-  { translationKey: "userExperience", serviceIcon: "UserCheck" },
-  { translationKey: "expertDevelopers", serviceIcon: "Code" },
-  { translationKey: "appStoreSuccess", serviceIcon: "TrendingUp" },
-  { translationKey: "fastSecure", serviceIcon: "ShieldCheck" },
-  { translationKey: "updatesMaintenance", serviceIcon: "RefreshCw" },
 ];
 
 const portfolioItems = [
@@ -126,6 +113,29 @@ const MobileDevelopment = () => {
     setSelectedModal(item);
     setIsModalOpen(true);
   };
+
+  const Services = [
+    { translationKey: "nativeApps", icon: Smartphone },
+    { translationKey: "crossPlatform", icon: Layers },
+    { translationKey: "uxuiDesign", icon: Layout },
+    { translationKey: "maintenance", icon: RefreshCw },
+  ];
+
+  const AppTypes = [
+    { translationKey: "ecommerce", icon: ShoppingCart },
+    { translationKey: "business", icon: Briefcase },
+    { translationKey: "marketplace", icon: Users },
+    { translationKey: "innovative", icon: Sparkles },
+  ];
+
+  const WhyUs = [
+    { translationKey: "expertise", icon: Code },
+    { translationKey: "userCentric", icon: UserCheck },
+    { translationKey: "transparency", icon: Eye },
+    { translationKey: "business", icon: Target },
+    { translationKey: "support", icon: HeartHandshake },
+  ];
+
   return (
     <div>
       {/* Hero Section */}
@@ -145,13 +155,18 @@ const MobileDevelopment = () => {
           Your browser does not support the video tag.
         </video>
         <div className="relative z-20 flex w-full h-screen gap-5 justify-center items-center">
-          <div className="mt-10 sm:mt-0 flex flex-col justify-center items-center">
+          <div className="mt-10 sm:mt-0 flex flex-col justify-center items-center px-4">
             <h1 className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
               {t("mobileDevelopment.hero.title")}
             </h1>
             <span className="max-w-screen-xl my-3 text-gray-800 text-2xl text-center font-bold">
               {t("mobileDevelopment.hero.subtitle")}
             </span>
+            {t("mobileDevelopment.hero.description") && (
+              <p className="max-w-3xl text-center text-gray-700 text-lg mt-4">
+                {t("mobileDevelopment.hero.description")}
+              </p>
+            )}
             <HeroButtons />
           </div>
         </div>
@@ -160,78 +175,58 @@ const MobileDevelopment = () => {
       {/* Technologies Section */}
       <Technologies technologies={TECHNOLOGIES} />
 
-      {/* Key Features */}
-      <div className="py-16 bg-gray-50">
-        <h2 className="text-4xl text-center font-bold text-gray-800">
-          {t("mobileDevelopment.keyFeatures.title")}
-          <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            {t("mobileDevelopment.keyFeatures.titleHighlight")}
-          </span>{" "}
-          {t("mobileDevelopment.keyFeatures.titleEnd")}
+      {/* Services Section */}
+      <div className="pt-16 pb-16 bg-gray-50">
+        <h2 className="text-4xl px-2 text-center font-bold text-gray-800">
+          {t("mobileDevelopment.services.title")}
+          <span className="text-blue-600 bg-blue-200 ml-2 p-1.5 rounded-2xl">
+            {t("mobileDevelopment.services.titleHighlight")}
+          </span>
         </h2>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {Features.map((feature, index) => {
-            const Icon = {
-              Smartphone,
-              Layers,
-              Shield,
-              Zap,
-            }[feature.serviceIcon];
-            const key = `mobileDevelopment.keyFeatures.items.${feature.translationKey}`;
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 px-4 max-w-6xl">
+          {Services.map((service, index) => {
+            const Icon = service.icon;
+            const key = `mobileDevelopment.services.items.${service.translationKey}`;
+            const expertise = t(`${key}.expertise`, { returnObjects: true });
+            const conclusion = t(`${key}.conclusion`, { defaultValue: "" });
 
             return (
               <div
                 key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300"
+                className="flex flex-col p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 bg-white"
               >
-                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
-                  <Icon className="text-blue-600 w-14 h-14" />
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl">
+                    <Icon className="text-blue-600 w-10 h-10" />
+                  </div>
+                  <h3 className="text-2xl font-semibold text-gray-800">
+                    {t(`${key}.name`)}
+                  </h3>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {t(`${key}.name`)}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {t(`${key}.description`)}
-                </p>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* Benefits Section */}
-      <div className="pb-16 bg-gray-50">
-        <h2 className="text-4xl text-center font-bold text-gray-800">
-          <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            {t("mobileDevelopment.benefits.title")}
-          </span>{" "}
-          {t("mobileDevelopment.benefits.titleEnd")}
-        </h2>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {Benefits.map((benefit, index) => {
-            const Icon = {
-              UserCheck,
-              Code,
-              TrendingUp,
-              ShieldCheck,
-              RefreshCw,
-            }[benefit.serviceIcon];
-            const key = `mobileDevelopment.benefits.items.${benefit.translationKey}`;
-
-            return (
-              <div
-                key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
-                  <Icon className="text-blue-600 w-14 h-14" />
+                <p className="text-gray-700 mb-4">{t(`${key}.description`)}</p>
+                <div className="mt-auto">
+                  <p className="text-blue-600 font-semibold mb-3 flex items-center gap-2">
+                    <Lightbulb className="w-5 h-5" />
+                    {t(`${key}.expertiseTitle`)}
+                  </p>
+                  <ul className="space-y-2.5 mb-4">
+                    {Array.isArray(expertise) &&
+                      expertise.map((item, i) => (
+                        <li
+                          key={i}
+                          className="flex items-start gap-2.5 text-gray-600 text-sm"
+                        >
+                          <CheckCircle2 className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                  </ul>
+                  {conclusion && (
+                    <p className="text-sm text-gray-600 italic bg-blue-50 p-3 rounded-lg">
+                      {conclusion}
+                    </p>
+                  )}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {t(`${key}.name`)}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {t(`${key}.description`)}
-                </p>
               </div>
             );
           })}
@@ -239,10 +234,92 @@ const MobileDevelopment = () => {
       </div>
 
       {/* Process Section */}
-      <HowAgencyWorks steps={steps} namespace="mobileDevelopment" />
+      <HowAgencyWorks
+        steps={[
+          { translationKey: "definition", icon: <BookOpen className="text-white" size={80} /> },
+          { translationKey: "design", icon: <Layout className="text-white" size={80} /> },
+          { translationKey: "development", icon: <Code className="text-white" size={80} /> },
+          { translationKey: "testing", icon: <CheckCircle className="text-white" size={80} /> },
+          { translationKey: "deployment", icon: <CloudUpload className="text-white" size={80} /> },
+        ]}
+        namespace="mobileDevelopment"
+      />
+
+      {/* App Types Section */}
+      <div className="py-16 bg-gray-50">
+        <h2 className="text-4xl text-center font-bold text-gray-800 mb-12 px-4">
+          {t("mobileDevelopment.appTypes.title")}
+        </h2>
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4 max-w-6xl">
+          {AppTypes.map((appType, index) => {
+            const Icon = appType.icon;
+            const key = `mobileDevelopment.appTypes.items.${appType.translationKey}`;
+            const features = t(`${key}.features`, { returnObjects: true });
+
+            return (
+              <div
+                key={index}
+                className="flex flex-col p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 bg-white"
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl">
+                    <Icon className="text-blue-600 w-10 h-10" />
+                  </div>
+                  <h3 className="text-2xl font-semibold text-gray-800">
+                    {t(`${key}.name`)}
+                  </h3>
+                </div>
+                <p className="text-gray-700 mb-4">{t(`${key}.description`)}</p>
+                <ul className="space-y-2.5">
+                  {Array.isArray(features) &&
+                    features.map((item, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start gap-2.5 text-gray-600 text-sm"
+                      >
+                        <CheckCircle2 className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Why Choose Us Section */}
+      <div className="py-16 bg-gray-50">
+        <h2 className="text-4xl text-center font-bold text-gray-800 mb-12 px-4">
+          {t("mobileDevelopment.whyUs.title")}
+        </h2>
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
+          {WhyUs.map((reason, index) => {
+            const Icon = reason.icon;
+            const key = `mobileDevelopment.whyUs.reasons.${reason.translationKey}`;
+
+            return (
+              <div
+                key={index}
+                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300 bg-white"
+              >
+                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
+                  <Icon className="text-blue-600 w-14 h-14" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
+                  {t(`${key}.title`)}
+                </h3>
+                <p className="text-gray-600 text-center">
+                  {t(`${key}.description`)}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
 
       {/* Portfolio Section */}
-      <div className="max-w-7xl mx-auto px-4 pt-12">
+      <div className="max-w-7xl mx-auto px-4 py-12">
         <h2 className="text-4xl text-center font-bold text-gray-800">
           {t("mobileDevelopment.portfolio.title")}{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
@@ -286,6 +363,7 @@ const MobileDevelopment = () => {
 
       {/* FAQs Section */}
       <FAQs
+        title={t("mobileDevelopment.faq.title")}
         faqData={Object.keys(
           t("mobileDevelopment.faq.items", { returnObjects: true })
         ).map((key) => ({
@@ -295,7 +373,7 @@ const MobileDevelopment = () => {
       />
 
       {/* Contact Section */}
-      <Contact />
+      <FormCTA />
     </div>
   );
 };

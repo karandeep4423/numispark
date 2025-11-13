@@ -6,17 +6,23 @@ import {
   FileText,
   Code,
   Layout,
-  Zap,
-  ShoppingCart,
-  Brain,
   Target,
-  Rocket,
-  BarChart,
   LineChart,
   MapPin,
   Link,
+  BarChart,
+  Briefcase,
+  Handshake,
+  HeartHandshake,
+  Users,
+  Globe,
+  Lightbulb,
+  CheckCircle2,
+  Brain,
+  PenTool,
+  Rocket,
 } from "lucide-react";
-import Contact from "@/components/contact-us/page";
+import FormCTA from "@/components/Form-CTA/page";
 import HeroButtons from "@/components/HeroButtons/page";
 import FAQs from "@/components/Faqs/page";
 import Technologies from "@/components/Technologies/page";
@@ -44,40 +50,36 @@ const TECHNOLOGIES = [
   },
 ];
 
-// Update data arrays
 const Services = [
-  { serviceIcon: Layout, translationKey: "onPage" },
-  { serviceIcon: Link, translationKey: "offPage" },
-  { serviceIcon: Code, translationKey: "technical" },
-  { serviceIcon: MapPin, translationKey: "local" },
-  { serviceIcon: FileText, translationKey: "content" },
-  { serviceIcon: BarChart, translationKey: "analytics" },
+  { serviceIcon: Search, translationKey: 0 },
+  { serviceIcon: Target, translationKey: 1 },
+  { serviceIcon: Code, translationKey: 2 },
+  { serviceIcon: FileText, translationKey: 3 },
+  { serviceIcon: Link, translationKey: 4 },
+  { serviceIcon: BarChart, translationKey: 5 },
 ];
 
-const features = [
-  { serviceIcon: Search, translationKey: "keyword" },
-  { serviceIcon: FileText, translationKey: "contentQuality" },
-  { serviceIcon: Code, translationKey: "technicalExcellence" },
-  { serviceIcon: Link, translationKey: "linkBuilding" },
-  { serviceIcon: ShoppingCart, translationKey: "ecommerce" },
-  { serviceIcon: Zap, translationKey: "speed" },
+const AppTypes = [
+  { serviceIcon: MapPin, translationKey: 0 },
+  { serviceIcon: Layout, translationKey: 1 },
+  { serviceIcon: Briefcase, translationKey: 2 },
+  { serviceIcon: Globe, translationKey: 3 },
 ];
 
 const WhyUs = [
-  { serviceIcon: LineChart, translationKey: "dataDriven" },
-  { serviceIcon: BarChart, translationKey: "transparent" },
-  { serviceIcon: Target, translationKey: "custom" },
-  { serviceIcon: Code, translationKey: "technical" },
-  { serviceIcon: FileText, translationKey: "content" },
-  { serviceIcon: Rocket, translationKey: "innovation" },
+  { serviceIcon: Briefcase, translationKey: 0 },
+  { serviceIcon: Handshake, translationKey: 1 },
+  { serviceIcon: HeartHandshake, translationKey: 2 },
+  { serviceIcon: Target, translationKey: 3 },
+  { serviceIcon: Users, translationKey: 4 },
 ];
 
-const steps = [
-  { icon: <Brain size={80} />, translationKey: "goals" },
-  { icon: <Search size={80} />, translationKey: "research" },
-  { icon: <FileText size={80} />, translationKey: "content" },
-  { icon: <Code size={80} />, translationKey: "technical" },
-  { icon: <TrendingUp size={80} />, translationKey: "monitoring" },
+const getSteps = (processSteps) => [
+  { icon: <Brain size={80} />, title: processSteps[0]?.title, description: processSteps[0]?.description },
+  { icon: <PenTool size={80} />, title: processSteps[1]?.title, description: processSteps[1]?.description },
+  { icon: <Code size={80} />, title: processSteps[2]?.title, description: processSteps[2]?.description },
+  { icon: <LineChart size={80} />, title: processSteps[3]?.title, description: processSteps[3]?.description },
+  { icon: <Rocket size={80} />, title: processSteps[4]?.title, description: processSteps[4]?.description },
 ];
 
 const portfolioItems = [
@@ -85,8 +87,7 @@ const portfolioItems = [
     image: "/portfolio/seo-agence-de-immobilier.png",
     src: ["/portfolio/seo-agence-de-immobilier.png"],
     translationName: "seo.portfolio.categories.immobilier.name",
-    translationContent:
-      "seo.portfolio.categories.immobilier.content",
+    translationContent: "seo.portfolio.categories.immobilier.content",
     bgColor: "bg-violet-100",
     dotColor: "bg-violet-500",
   },
@@ -94,8 +95,7 @@ const portfolioItems = [
     image: "/portfolio/seo-agence-ecommerce.png",
     src: ["/portfolio/seo-agence-ecommerce.png"],
     translationName: "seo.portfolio.categories.ecommerce.name",
-    translationContent:
-      "seo.portfolio.categories.ecommerce.content",
+    translationContent: "seo.portfolio.categories.ecommerce.content",
     bgColor: "bg-emerald-600",
     dotColor: "bg-emerald-500",
   },
@@ -103,8 +103,7 @@ const portfolioItems = [
     image: "/portfolio/seo-experte-referencement.png",
     src: ["/portfolio/seo-experte-referencement.png"],
     translationName: "seo.portfolio.categories.SFA.name",
-    translationContent:
-      "seo.portfolio.categories.SFA.content",
+    translationContent: "seo.portfolio.categories.SFA.content",
     translationdesign: "seo.portfolio.categories.SFA.design",
     bgColor: "bg-amber-400",
     dotColor: "bg-amber-500",
@@ -115,6 +114,10 @@ export default function Seo() {
   const { t } = useTranslation("seo");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedModal, setSelectedModal] = useState("");
+
+  // Get process steps from translations
+  const processSteps = t("seo.process.steps", { returnObjects: true });
+  const steps = getSteps(processSteps);
 
   const openModal = (item) => {
     setSelectedModal(item);
@@ -135,119 +138,67 @@ export default function Seo() {
           <source src="https://d3h46s6jorvpfj.cloudfront.net/seo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="relative z-10 flex flex-col h-screen gap-5 justify-center items-center">
-          <h1 className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
+        <div className="relative z-10 flex flex-col h-screen gap-5 justify-center items-center px-4">
+          <h1 className="text-4xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
             {t("seo.hero.title")}
           </h1>
-          <span className="text-gray-800 max-w-screen-xl text-2xl text-center font-bold">
-            {t("seo.hero.subtitle")}
-          </span>
+          <p className="max-w-3xl text-gray-700 text-lg text-center font-medium">
+            {t("seo.hero.description")}
+          </p>
           <HeroButtons />
-        </div>
-      </div>
-
-      {/* Services Section */}
-      <div className="pt-16 bg-gray-50">
-        <h2 className="text-4xl px-2 text-center font-bold text-gray-800">
-          {t("seo.services.title")}{" "}
-          <span className="text-blue-600 bg-blue-200 p-1.5 rounded-2xl">
-            {t("seo.services.titleHighlight")}
-          </span>
-        </h2>
-        <p className="px-2 text-xl text-center font-medium text-gray-600 mt-4">
-          {t("seo.services.subtitle")}
-        </p>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {Services.map((service, index) => {
-            const Icon = service.serviceIcon;
-            const key = `seo.services.items.${service.translationKey}`;
-
-            return (
-              <div
-                key={index}
-                className="flex flex-col items-center p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 md:hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
-                  <Icon className="text-blue-600 w-14 h-14" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {t(`${key}.name`)}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {t(`${key}.description`)}
-                </p>
-              </div>
-            );
-          })}
         </div>
       </div>
 
       {/* Technologies Section */}
       <Technologies technologies={TECHNOLOGIES} />
 
-      {/* Features Section */}
+      {/* Services Section */}
       <div className="py-16 bg-gray-50">
-        <h2 className="text-4xl text-center font-bold text-gray-800">
-          {t("seo.features.title")}{" "}
-          <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            {t("seo.features.titleHighlight")}
-          </span>{" "}
-          {t("seo.features.titleEnd")}
+        <h2 className="text-4xl px-2 text-center font-bold text-gray-800 mb-12">
+          Nos services de{" "}
+          <span className="text-blue-600 bg-blue-200 p-1.5 rounded-2xl">
+            référencement naturel
+          </span>
         </h2>
-        <p className="text-xl text-center font-medium text-gray-600 mt-4">
-          {t("seo.features.subtitle")}
-        </p>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {features.map((feature, index) => {
-            const Icon = feature.serviceIcon;
-            const key = `seo.features.items.${feature.translationKey}`;
+        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-4">
+          {Services.map((service, index) => {
+            const Icon = service.serviceIcon;
+            const serviceData = t("seo.services.items", {
+              returnObjects: true,
+            })[service.translationKey];
 
             return (
               <div
                 key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300"
+                className="p-6 bg-white shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 transition-shadow duration-300"
               >
-                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
-                  <Icon className="text-blue-600 w-14 h-14" />
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center justify-center p-3 bg-blue-200 rounded-xl">
+                    <Icon className="text-blue-600 w-8 h-8" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800">
+                    {serviceData.name}
+                  </h3>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {t(`${key}.name`)}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {t(`${key}.description`)}
-                </p>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* Benefits Section */}
-      <div className="pb-16 bg-gray-50">
-        <h2 className="text-4xl text-center font-bold text-gray-800">
-          <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            {t("seo.benefits.title")}
-          </span>{" "}
-          {t("seo.benefits.titleEnd")}
-        </h2>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {WhyUs.map((benefit, index) => {
-            const Icon = benefit.serviceIcon;
-            const key = `seo.benefits.items.${benefit.translationKey}`;
-
-            return (
-              <div
-                key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
-                  <Icon className="text-blue-600 w-14 h-14" />
+                <p className="text-gray-700 mb-4">{serviceData.description}</p>
+                <div className="mb-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Lightbulb className="w-5 h-5 text-blue-600" />
+                    <h4 className="font-semibold text-gray-800">
+                      {serviceData.expertiseTitle}
+                    </h4>
+                  </div>
+                  <ul className="space-y-2">
+                    {serviceData.expertise.map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
+                        <span className="text-gray-600 text-sm">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {t(`${key}.name`)}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {t(`${key}.description`)}
+                <p className="text-sm italic text-gray-700 bg-blue-50 p-3 rounded-lg">
+                  {serviceData.conclusion}
                 </p>
               </div>
             );
@@ -256,10 +207,83 @@ export default function Seo() {
       </div>
 
       {/* Process Section */}
-      <HowAgencyWorks steps={steps} namespace="seo" />
+      <HowAgencyWorks 
+        steps={steps} 
+        namespace="seo"
+        title={t("seo.process.title")}
+      />
+
+      {/* App Types Section */}
+      <div className="py-16 bg-gray-50">
+        <h2 className="text-4xl px-2 text-center font-bold text-gray-800 mb-12">
+          {t("seo.appTypes.title")}
+        </h2>
+        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-4">
+          {AppTypes.map((type, index) => {
+            const Icon = type.serviceIcon;
+            const typeData = t("seo.appTypes.types", {
+              returnObjects: true,
+            })[type.translationKey];
+
+            return (
+              <div
+                key={index}
+                className="p-6 bg-white shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 transition-shadow duration-300"
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center justify-center p-3 bg-blue-200 rounded-xl">
+                    <Icon className="text-blue-600 w-8 h-8" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800">
+                    {typeData.name}
+                  </h3>
+                </div>
+                <ul className="space-y-2">
+                  {typeData.points.map((point, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
+                      <span className="text-gray-600 text-sm">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Why Choose Us Section */}
+      <div className="py-16 bg-white">
+        <h2 className="text-4xl px-2 text-center font-bold text-gray-800 mb-12">
+          {t("seo.whyUs.title")}
+        </h2>
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+          {WhyUs.map((reason, index) => {
+            const Icon = reason.serviceIcon;
+            const reasonData = t("seo.whyUs.reasons", {
+              returnObjects: true,
+            })[reason.translationKey];
+
+            return (
+              <div
+                key={index}
+                className="flex flex-col items-center text-center p-6 bg-gray-50 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 transition-shadow duration-300"
+              >
+                <div className="flex items-center justify-center p-4 bg-blue-200 rounded-2xl mb-4">
+                  <Icon className="text-blue-600 w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">
+                  {reasonData.title}
+                </h3>
+                <p className="text-gray-600">{reasonData.description}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
 
       {/* Portfolio Section */}
-      <div className="max-w-7xl mx-auto px-4 pt-12">
+      <div className="max-w-7xl mx-auto px-4 py-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
           {t("seo.portfolio.title")}{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
@@ -303,16 +327,17 @@ export default function Seo() {
 
       {/* FAQs Section */}
       <FAQs
-        faqData={Object.keys(t("seo.faq.items", { returnObjects: true })).map(
-          (key) => ({
-            question: t(`seo.faq.items.${key}.question`),
-            answer: t(`seo.faq.items.${key}.answer`),
-          })
-        )}
+        title={t("seo.faq.title")}
+        faqData={Object.keys(
+          t("seo.faq.items", { returnObjects: true })
+        ).map((key) => ({
+          question: t(`seo.faq.items.${key}.question`),
+          answer: t(`seo.faq.items.${key}.answer`),
+        }))}
       />
 
       {/* Contact Section */}
-      <Contact />
+      <FormCTA />
     </div>
   );
 }

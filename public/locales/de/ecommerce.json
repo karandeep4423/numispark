@@ -1,129 +1,276 @@
 {
   "ecommerce": {
     "hero": {
-      "title": "Leistungsstarke E-Commerce-Lösungen zur Steigerung Ihres Umsatzes"
+      "title": "Transformieren Sie Ihr Geschäft mit einem leistungsstarken Online-Shop",
+      "subtitle": "Ihr E-Commerce-Erfolg basiert auf einer robusten, intuitiven und conversion-optimierten Plattform",
+      "description": "Bei Numispark entwickeln wir maßgeschneiderte E-Commerce-Lösungen, die Ihre Besucher in treue Kunden verwandeln und Ihren Umsatz steigern."
     },
-    "keyFeatures": {
-      "title": "Haupt",
-      "titleHighlight": "Merkmale",
-      "titleEnd": "unseres E-Commerce",
-      "items": {
-        "securePaymentGateways": {
-          "name": "Sichere Zahlungsgateways",
-          "description": "Wir setzen robuste Sicherheitsmaßnahmen ein, um die Daten Ihrer Kunden zu schützen und sichere Transaktionen zu gewährleisten."
+    "services": {
+      "title": "Unsere E-Commerce-Entwicklungsdienstleistungen",
+      "items": [
+        {
+          "name": "Erstellung maßgeschneiderter Online-Shops",
+          "description": "Wir entwerfen vollständig personalisierte E-Commerce-Websites, die Ihre Marke perfekt widerspiegeln und den spezifischen Bedürfnissen Ihres Unternehmens entsprechen.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "Robuste und skalierbare E-Commerce-Architekturen",
+            "Einzigartiges Design, perfekt auf Ihre Identität abgestimmt",
+            "Fließendes und intuitives Einkaufserlebnis",
+            "Erweiterte und angepasste Funktionen",
+            "Von Anfang an integrierte SEO-Optimierung",
+            "Optimale Leistung und Ladegeschwindigkeit",
+            "Multi-Geräte-Kompatibilität (responsive Design)"
+          ],
+          "conclusion": "Dieser maßgeschneiderte Ansatz ist ideal für Unternehmen mit spezifischen Anforderungen, die von Standardlösungen nicht abgedeckt werden, oder die sich mit einem einzigartigen Einkaufserlebnis abheben möchten."
         },
-        "userFriendlyDesign": {
-          "name": "Benutzerfreundliches Design",
-          "description": "Unsere Designs sind intuitiv und reaktionsschnell, was ein nahtloses Einkaufserlebnis auf allen Geräten garantiert."
+        {
+          "name": "PrestaShop-Entwicklung",
+          "description": "Nutzen Sie das volle Potenzial der beliebtesten französischen Open-Source-E-Commerce-Lösung, um einen leistungsstarken und skalierbaren Shop zu erstellen.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "Erweiterte Installation und Konfiguration",
+            "Entwicklung benutzerdefinierter Themes",
+            "Erstellung maßgeschneiderter Module",
+            "Migration und Versions-Upgrades",
+            "Leistungsoptimierung",
+            "Multi-Shop- und mehrsprachige Integration",
+            "Anbindung an Ihre Geschäftstools (ERP, CRM, Logistik)"
+          ],
+          "conclusion": "PrestaShop bietet ein ausgezeichnetes Gleichgewicht zwischen Leistung, Flexibilität und Kosten, ideal für KMU und ehrgeizige B2C- oder B2B-E-Commerce-Projekte."
         },
-        "inventoryManagement": {
-          "name": "Lagerverwaltung",
-          "description": "Unsere Systeme erleichtern die Echtzeitüberwachung und -verwaltung Ihres Inventars, wodurch Lagerprobleme reduziert werden."
+        {
+          "name": "Shopify & Shopify Plus Entwicklung",
+          "description": "Starten Sie schnell einen leistungsstarken Shop dank der marktführenden SaaS-Plattform, die für ihre Stabilität und Benutzerfreundlichkeit bekannt ist.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "Vollständige Bereitstellung und Anpassung",
+            "Entwicklung maßgeschneiderter Themes",
+            "Erstellung privater Shopify-Apps",
+            "Conversion-Optimierung",
+            "Konfiguration von Zahlungsgateways",
+            "Integration mit Ihren bestehenden Systemen",
+            "Automatisierungs- und Skalierungsstrategien"
+          ],
+          "conclusion": "Shopify ist die ideale Lösung für Startups und Marken, die einen schnellen Markteintritt und eine skalierbare Plattform ohne technische Wartung wünschen."
         },
-        "advancedAnalytics": {
-          "name": "Erweiterte Analysen und Berichte",
-          "description": "Wir liefern detaillierte Analysen, um datenbasierte Entscheidungen zu treffen und die Leistung zu optimieren."
+        {
+          "name": "WooCommerce-Entwicklung",
+          "description": "Verwandeln Sie Ihre WordPress-Website in einen leistungsstarken und flexiblen Online-Shop, perfekt in Ihr bestehendes Ökosystem integriert.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "Optimierte Installation und Konfiguration",
+            "Benutzerdefinierte Themes und Erweiterungen",
+            "Entwicklung spezifischer Funktionen",
+            "Leistungsoptimierung",
+            "Verstärkte Sicherheit",
+            "Integration mit dem WordPress-Ökosystem",
+            "Erweiterte Zahlungslösungen"
+          ],
+          "conclusion": "WooCommerce ist besonders geeignet für Unternehmen, die bereits eine WordPress-Website haben, oder die redaktionelle Inhalte und E-Commerce kombinieren möchten."
+        },
+        {
+          "name": "E-Commerce-Redesign und Migration",
+          "description": "Verwandeln Sie Ihren bestehenden Shop in eine moderne, leistungsstarke und wachstumsfördernde Plattform.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "Vollständiges Audit Ihrer aktuellen Plattform",
+            "Strategische und technische Empfehlungen",
+            "Datenmigration (Produkte, Kunden, Bestellungen)",
+            "UX/UI-Redesign zur Maximierung der Conversions",
+            "SEO-Erhalt und Weiterleitungen",
+            "Nahtloser Übergang ohne Geschäftsunterbrechung",
+            "Schulung und Unterstützung nach der Migration"
+          ],
+          "conclusion": "Unser Redesign-Prozess bewahrt Ihre Errungenschaften und beseitigt gleichzeitig technische Einschränkungen, die Ihr Wachstum bremsen."
+        },
+        {
+          "name": "E-Commerce-Optimierung & Conversion",
+          "description": "Maximieren Sie die Leistung Ihres Online-Shops mit gezielten Optimierungen der Benutzererfahrung und Conversion.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "Analyse der Kaufprozesse und Reibungspunkte",
+            "Optimierung des Conversion-Trichters",
+            "A/B-Testing der Schlüsselelemente",
+            "Verbesserung der mobilen Erfahrung",
+            "Optimierung der Produktseiten",
+            "Implementierung von Cross-Selling- und Upselling-Strategien",
+            "Datenbasierte kontinuierliche Analyse und Verbesserung"
+          ],
+          "conclusion": "Diese Optimierungen ermöglichen es Ihnen, Ihre Conversion-Rate und Ihren durchschnittlichen Warenkorb deutlich zu erhöhen, ohne ein vollständiges Redesign zu benötigen."
         }
-      }
-    },
-    "benefits": {
-      "title": "Vorteile",
-      "titleEnd": "mit uns zu wählen",
-      "items": {
-        "easyIntegration": {
-          "name": "Einfache Integration mit Zahlungssystemen",
-          "description": "Wir ermöglichen eine nahtlose Integration mit mehreren Zahlungsgateways, um sichere und problemlose Transaktionen für Ihre Kunden zu gewährleisten."
-        },
-        "scalablePlatforms": {
-          "name": "Skalierbare Plattformen",
-          "description": "Unsere Lösungen sind darauf ausgelegt, mit Ihrem Unternehmen zu wachsen, wodurch eine Expansion möglich ist, ohne die Leistung zu beeinträchtigen."
-        },
-        "enhancedConversion": {
-          "name": "Verbesserte Konversionsraten",
-          "description": "Wir optimieren Ihren Shop, um die Konversionsraten zu steigern und sicherzustellen, dass Besucher zu treuen Kunden werden."
-        },
-        "seamlessExperience": {
-          "name": "Nahtloses Benutzererlebnis",
-          "description": "Wir entwerfen benutzerfreundliche Schnittstellen für eine mühelose Navigation, was das gesamte Einkaufserlebnis verbessert."
-        },
-        "postLaunchSupport": {
-          "name": "Support und Wartung nach dem Launch",
-          "description": "Unser Team sorgt für regelmäßige Updates und Wartung, um sicherzustellen, dass Ihre Plattform sicher und auf dem neuesten Stand bleibt."
-        }
-      }
+      ]
     },
     "process": {
-      "title": "E-Commerce-Entwicklung",
+      "title": "Unser E-Commerce-Entwicklungsprozess",
       "steps": {
-        "vision": {
-          "title": "Ihre Vision verstehen",
-          "description": "Wir beginnen mit einer umfassenden Beratung, um Ihre Geschäftsziele, Ihre Zielgruppe und Ihre einzigartigen Wertangebote zu verstehen."
+        "0": {
+          "title": "Analyse & Strategie",
+          "description": "Wir beginnen damit, Ihr Geschäft, Ihre Produkte, Ihren Markt und Ihre Geschäftsziele zu verstehen. Unsere Analysephase umfasst ein Audit Ihrer bestehenden Plattform (bei Redesign), eine eingehende Wettbewerbsanalyse, die Definition idealer Kundenreisen, die Auswahl der am besten geeigneten technischen Lösung für Ihre Bedürfnisse, die Planung der Prioritätsfunktionen und die Erstellung eines Bereitstellungszeitplans, um einen erfolgreichen Launch zu gewährleisten."
         },
-        "planning": {
-          "title": "Strategische Planung",
-          "description": "Unser Team entwickelt eine umfassende Strategie, die die Schlüsselfunktionen, Features und Zeitpläne definiert. Wir konzentrieren uns darauf, ein intuitives Benutzererlebnis zu schaffen, die Konversionsraten zu optimieren und die besten SEO- und Marketingpraktiken zu integrieren."
+        "1": {
+          "title": "E-Commerce UX/UI Design",
+          "description": "Wir entwerfen ein Einkaufserlebnis, das auf Conversion optimiert ist. Diese Phase umfasst die Erstellung von Wireframes der Schlüsselseiten (Startseite, Kategorien, Produktseiten, Warenkorb, Checkout), die Entwicklung von Desktop- und mobilen grafischen Mockups, die Optimierung der Einkaufsreisen zur Maximierung der Conversions, die Erstellung interaktiver Prototypen zur Validierung und die Gestaltung eines responsiven Designs, das für alle Geräte angepasst ist."
         },
-        "designDevelopment": {
-          "title": "Design und Entwicklung",
-          "description": "Unsere Designer erstellen eine visuell ansprechende und benutzerfreundliche Oberfläche, während unsere Entwickler eine robuste Backend-Infrastruktur aufbauen."
+        "2": {
+          "title": "Entwicklung & Integration",
+          "description": "Wir entwickeln Ihren Shop mit Fokus auf Qualität, Leistung und Skalierbarkeit. Diese Stufe umfasst die Plattform- und Hosting-Konfiguration, die Frontend- und Backend-Entwicklung Ihrer Lösung, die vollständige Integration des Produktkatalogs, die Einrichtung sicherer Zahlungsgateways, die Anbindung an Ihre Geschäftstools (ERP, Logistik) und die Durchführung von Funktions- und Integrationstests zur Gewährleistung der Systemzuverlässigkeit."
         },
-        "launchDeployment": {
-          "title": "Launch und Deployment",
-          "description": "Sobald alles optimiert ist, bereiten wir den Launch vor. Unser Team stellt sicher, dass alle Systeme funktionsfähig sind und dass Ihre E-Commerce-Website für Ihre Kunden bereitsteht."
+        "3": {
+          "title": "Tests & Qualitätssicherung",
+          "description": "Wir validieren jeden Aspekt Ihres Shops sorgfältig, um ein tadelloses Benutzererlebnis zu gewährleisten. Diese Phase umfasst Tests auf allen Geräten und Browsern, die vollständige Simulation der Einkaufsreisen, Last- und Leistungstests zur Sicherstellung der Stabilität, die Validierung von Sicherheit und Compliance, Tests der Geschäftsprozesse (Bestellungen, Lagerbestände usw.) und die finale Optimierung vor dem Launch."
         },
-        "ongoingSupport": {
-          "title": "Kontinuierliche Unterstützung",
-          "description": "Nach dem Launch bieten wir kontinuierlichen Support, einschließlich regelmäßiger Updates, Leistungsüberwachung und Entwicklungsstrategien, um das Wachstum Ihres Unternehmens zu unterstützen."
+        "4": {
+          "title": "Launch & Begleitung",
+          "description": "Wir gewährleisten eine kontrollierte Bereitstellung und Nachverfolgung nach dem Launch, um Ihren Erfolg zu garantieren. Diese letzte Stufe umfasst die Produktionsmigration, die umfassende Schulung Ihres Teams, die Bereitstellung einer detaillierten technischen und Benutzerdokumentation, reaktionsschnellen technischen Support nach dem Launch, die Analyse der ersten Verkaufsdaten zur Identifizierung von Chancen und die Durchführung kontinuierlicher Optimierungen und Anpassungen."
         }
       }
+    },
+    "appTypes": {
+      "title": "E-Commerce-Lösungen, die auf Ihre Bedürfnisse zugeschnitten sind",
+      "types": [
+        {
+          "name": "B2C E-Commerce",
+          "description": "Lösungen optimiert für den Verkauf an Verbraucher",
+          "points": [
+            "Attraktive Produktkataloge",
+            "Vereinfachte Einkaufsreisen",
+            "Promotions- und Treueverwaltung",
+            "Integration von sozialen Medien und Marktplätzen",
+            "Kundenbewertungen und Produktbewertungen",
+            "Multiple Zahlungsoptionen (Karte, PayPal, Apple Pay...)",
+            "Mobile Optimierung für Impulskäufe"
+          ]
+        },
+        {
+          "name": "B2B E-Commerce",
+          "description": "Spezialisierte Plattformen für den Verkauf an Profis",
+          "points": [
+            "Personalisierte Preise und Online-Angebote",
+            "Kundenkonten mit Zugriffshierarchie",
+            "Kundenspezifische Kataloge und Bedingungen",
+            "Prozesse zur Bestellvalidierung",
+            "Rechnungsstellung und aufgeschobene Zahlung",
+            "Integration mit Ihren ERP-Systemen",
+            "Wiederkehrende und Großbestellungen"
+          ]
+        },
+        {
+          "name": "Marktplätze & Multi-Vendor-Plattformen",
+          "description": "Lösungen zur Erstellung Ihrer eigenen Verbindungsplattform",
+          "points": [
+            "Verwaltung von Verkäufern und Provisionen",
+            "Bewertungs- und Review-System",
+            "Interne Messaging",
+            "Streitbeilegung",
+            "Sichere Zahlungen und Treuhand",
+            "Verkäufer-Dashboard",
+            "Erweiterte Analysen und Berichte"
+          ]
+        },
+        {
+          "name": "Internationaler E-Commerce",
+          "description": "Shops optimiert für internationalen Verkauf",
+          "points": [
+            "Multi-Währung und mehrsprachig",
+            "Anpassung an lokale Besonderheiten",
+            "Verwaltung von MwSt. und internationalen Steuern",
+            "Grenzüberschreitende Logistikintegration",
+            "Lokalisierung von Inhalten",
+            "Mehrsprachige SEO-Optimierung",
+            "Internationale Zahlungsmethoden"
+          ]
+        }
+      ]
+    },
+    "whyUs": {
+      "title": "Warum Numispark für Ihren E-Commerce wählen",
+      "reasons": [
+        {
+          "title": "Vollständiges E-Commerce-Fachwissen",
+          "description": "Unser Team vereint technisches Fachwissen und Verständnis der geschäftlichen Herausforderungen im E-Commerce, um Lösungen zu schaffen, die konkrete Ergebnisse liefern."
+        },
+        {
+          "title": "Fokus auf Conversion",
+          "description": "Wir erstellen nicht nur schöne Websites, sondern Plattformen, die Ihre Besucher durch optimierte Einkaufsreisen in Kunden verwandeln."
+        },
+        {
+          "title": "Evolutionsfähigkeit & Skalierbarkeit",
+          "description": "Unsere Lösungen sind darauf ausgelegt, mit Ihrem Geschäft zu wachsen, von Ihren ersten Kunden bis zu bedeutenden Bestellvolumen, ohne die Leistung zu beeinträchtigen."
+        },
+        {
+          "title": "Sicherheit & Compliance",
+          "description": "Wir implementieren die strengsten Standards in Bezug auf Zahlungssicherheit (PCI-DSS) und Datenschutz (DSGVO) für absolute Sicherheit."
+        },
+        {
+          "title": "Datengesteuerter Ansatz",
+          "description": "Unsere Entscheidungen sind datengesteuert, mit Implementierung von Analysetools zur präzisen Messung Ihrer Leistung und Identifizierung von Chancen."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "items": {
+        "platform": {
+          "question": "Welche E-Commerce-Plattform empfehlen Sie mir?",
+          "answer": "Die Wahl hängt von Ihren spezifischen Anforderungen, Ihrem Budget und Ihren Wachstumszielen ab. PrestaShop bietet Flexibilität und vollständige Anpassung zu kontrollierten Kosten. Shopify ermöglicht einen schnellen Start mit weniger technischer Wartung. WooCommerce ist ideal, wenn Sie bereits eine WordPress-Website haben. Während unserer ersten Beratung analysieren wir Ihre Bedürfnisse, um die am besten geeignete Lösung zu empfehlen."
+        },
+        "cost": {
+          "question": "Wie viel kostet die Erstellung einer E-Commerce-Website?",
+          "answer": "Das Budget variiert erheblich je nach Komplexität und Funktionen. Eine Standard-E-Commerce-Website beginnt bei etwa 2.000 € bis 10.000 €, während eine maßgeschneiderte Lösung mit komplexen Integrationen eine Investition von 10.000 € bis 50.000 € darstellen kann. Wir bieten phasenweise Ansätze an, die es ermöglichen, die Investition zu verteilen und gleichzeitig schnell eine funktionale erste Version zu starten."
+        },
+        "timeline": {
+          "question": "Wie lange dauert die Erstellung eines Online-Shops?",
+          "answer": "Typische Zeiträume reichen von 6-8 Wochen für einen Standardshop bis zu 3-6 Monaten für ein komplexes E-Commerce-Projekt mit zahlreichen Integrationen. Unser agiler Ansatz ermöglicht es uns, schnell eine funktionale erste Version zu starten und dann die Funktionen progressiv zu erweitern."
+        },
+        "traffic": {
+          "question": "Wie generieren Sie Traffic zu meinem Online-Shop?",
+          "answer": "Unser Ansatz kombiniert mehrere Hebel: technische SEO-Optimierung von Anfang an, Erstellung von für Ihre strategischen Keywords optimierten Inhalten, Implementierung gezielter Google Ads- und Social-Media-Kampagnen, Remarketing-Strategien und Integration mit relevanten Preisvergleichsseiten und Marktplätzen. Wir bieten auch ergänzende digitale Marketing-Dienstleistungen an, um Ihre Sichtbarkeit zu maximieren."
+        },
+        "maintenance": {
+          "question": "Bieten Sie E-Commerce-Wartungsdienste an?",
+          "answer": "Ja, wir bieten mehrere an Ihre Bedürfnisse angepasste Wartungspakete an: technische Wartung (Fehlerbehebungen, Sicherheitsupdates), evolutionäre Wartung (Hinzufügen von Funktionen) und strategische Wartung (kontinuierliche Conversion-Optimierung). Unsere Wartungsverträge beginnen bei 250€/Monat und beinhalten garantierte Reaktionszeiten und regelmäßige Leistungsberichte."
+        },
+        "security": {
+          "question": "Wie stellen Sie die Sicherheit meines Online-Shops sicher?",
+          "answer": "Sicherheit ist unsere Priorität. Wir implementieren Best Practices: sicheres Hosting, SSL-Zertifikate, Schutz vor Angriffen (XSS, CSRF, SQL-Injektionen), automatische Backups, PCI-DSS-Konformität für Zahlungen, DSGVO-Konformität für Kundendaten und regelmäßige Sicherheitsaudits. Unsere Lösungen umfassen auch Notfallwiederherstellungspläne im Falle eines Vorfalls."
+        },
+        "management": {
+          "question": "Kann ich meinen Shop nach dem Launch selbst verwalten?",
+          "answer": "Auf jeden Fall! Wir entwickeln intuitive Administrationsoberflächen, die auf Ihre Bedürfnisse zugeschnitten sind. Eine umfassende Schulung ist in unseren Projekten enthalten, um Ihnen zu ermöglichen, Ihren Katalog, Ihre Bestellungen und Ihre Inhalte autonom zu verwalten. Eine detaillierte Dokumentation und Support nach dem Launch begleiten Sie bei dieser Einarbeitung."
+        },
+        "optimization": {
+          "question": "Wie optimiere ich meine E-Commerce-Conversion-Rate?",
+          "answer": "Die Conversion-Optimierung ist ein kontinuierlicher Prozess. Wir implementieren bewährte Strategien: Vereinfachung des Checkout-Prozesses, Reduzierung von Reibungen, Optimierung der Produktseiten, Implementierung von Vertrauenselementen, Verbesserung der mobilen Leistung und A/B-Testing von Schlüsselelementen. Unsere kontinuierlichen Optimierungsdienste analysieren regelmäßig Ihre Daten, um Reibungspunkte zu identifizieren und zu korrigieren."
+        }
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihr E-Commerce-Geschäft zu transformieren?",
+      "description": "Lassen Sie uns über Ihr Projekt sprechen und entdecken, wie wir einen Online-Shop erstellen können, der konkrete Ergebnisse liefert."
     },
     "portfolio": {
       "title": "Unsere neuesten",
       "titleHighlight": "Realisierungen",
       "categories": {
         "cloth": {
-          "name": "Cloth - Shopify",
-          "content": "Dieser Onlineshop verkauft modische Kleidung und wurde mit Shopify erstellt.",
+          "name": "Cloth - Shopify-Shop",
+          "content": "Dieser Online-Shop bietet eine Auswahl eleganter Kleidung und wurde mit Shopify erstellt.",
           "design": "UI/UX-Design mit Figma",
           "backendDevelopment": "Entwicklung mit Shopify"
         },
         "beauty": {
           "name": "Beauty - Ecommerce",
-          "content": "Dieser Onlineshop bietet eine Auswahl an Schönheitsprodukten und wurde mit Shopify erstellt.",
+          "content": "Diese E-Commerce-Website bietet eine Palette von Schönheitsprodukten und wurde mit Shopify erstellt.",
           "design": "UI/UX-Design mit Figma",
           "backendDevelopment": "Entwicklung mit Shopify"
         },
         "porto": {
           "name": "Porto - Ecommerce",
-          "content": "Dieser Onlineshop verkauft verschiedene Arten von Produkten.",
+          "content": "Dieser Online-Shop bietet eine Vielzahl von Produkten.",
           "design": "UI/UX-Design mit Figma",
           "frontendDevelopment": "Frontend-Entwicklung mit React Js und Redux",
           "backendDevelopment": "Backend-Entwicklung mit Node.js und Express",
           "database": "Datenbankverwaltung mit MongoDB"
-        }
-      }
-    },
-    "faq": {
-      "items": {
-        "platforms": {
-          "question": "Mit welchen E-Commerce-Plattformen arbeiten Sie?",
-          "answer": "Wir spezialisieren uns auf Plattformen wie Shopify, WooCommerce, Magento sowie maßgeschneiderte Lösungen, die auf Ihre Bedürfnisse zugeschnitten sind."
-        },
-        "features": {
-          "question": "Welche Funktionen können Sie in meine E-Commerce-Website integrieren?",
-          "answer": "Wir können Funktionen wie die Produktanzeige, den Warenkorb, Kundenbewertungen, Wunschlisten, sichere Zahlungsabwicklung, Bestellverfolgung und personalisierte Empfehlungen integrieren, um das Benutzererlebnis zu verbessern."
-        },
-        "digitalMarketing": {
-          "question": "Können Sie mir beim digitalen Marketing für meinen Online-Shop helfen?",
-          "answer": "Ja, wir bieten umfassende digitale Marketing-Dienstleistungen an, einschließlich SEO, Social Media Marketing, E-Mail-Marketing und Pay-per-Click-Werbung, um Ihre Zielgruppe zu erreichen und Traffic auf Ihren Shop zu lenken."
-        },
-        "seo": {
-          "question": "Wie handhaben Sie SEO für E-Commerce-Websites?",
-          "answer": "Wir setzen die besten SEO-Praktiken ein, einschließlich Keyword-Recherche, On-Page-Optimierung, Optimierung der Produktbeschreibungen, Hinzufügen von Alt-Tags zu Bildern und Netlinking-Strategien, um die Sichtbarkeit Ihrer Website in den Suchergebnissen zu verbessern."
-        },
-        "support": {
-          "question": "Welche Art von Support bieten Sie nach dem Launch der Website an?",
-          "answer": "Wir bieten kontinuierlichen Support, einschließlich regelmäßiger Updates, Wartung, Problemlösung und Leistungsüberwachung, um den reibungslosen Betrieb Ihrer E-Commerce-Website zu gewährleisten."
         }
       }
     }

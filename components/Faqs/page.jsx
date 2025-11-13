@@ -1,7 +1,8 @@
+ "use client";
 import { useState, useEffect } from "react";
 import { PlusCircle, MinusCircle } from "lucide-react";
 
-const FAQs = ({ faqData }) => {
+const FAQs = ({ faqData, title }) => {
   const [openIndex, setOpenIndex] = useState(null);
   const [language, setLanguage] = useState('fr'); // default to French
 
@@ -52,7 +53,7 @@ const FAQs = ({ faqData }) => {
   return (
     <div className="max-w-3xl mb-5 mx-auto px-4 sm:px-6 lg:px-8">
       <h1 className="text-4xl font-bold text-gray-800 text-center my-12">
-        {translations[language]}
+        {title || translations[language]}
       </h1>
       <div className="space-y-6">
         {faqData.map((faq, index) => (

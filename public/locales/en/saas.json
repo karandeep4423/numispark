@@ -1,90 +1,260 @@
 {
   "saas": {
     "hero": {
-      "title": "Build Scalable SaaS Solutions Tailored to Your Business",
-      "subtitle": "From concept to deployment, we create robust SaaS platforms that deliver results"
+      "title": "Transform Your Idea into a Scalable and Profitable SaaS Platform",
+      "subtitle": "In today's digital economy, the SaaS model represents a strategic opportunity",
+      "description": "At Numispark, we develop innovative and robust SaaS platforms that enable our clients to transform their expertise into software solutions accessible via the cloud."
     },
-    "keyFeatures": {
-      "title": "Key",
-      "titleHighlight": "Features",
-      "titleEnd": "of our SaaS",
-      "items": {
-        "multiTenant": {
-          "name": "Expertise in Multi-Tenant Architecture",
-          "description": "Our skilled team excels in SaaS development, delivering secure and efficient multi-tenant architecture for maximum availability."
+    "services": {
+      "title": "Our SaaS Development Services",
+      "items": [
+        {
+          "name": "Custom SaaS Platform Design and Development",
+          "description": "We create complete SaaS applications, from initial concept to functional solution, perfectly adapted to your vision and target market.",
+          "expertiseTitle": "Our Expertise",
+          "expertise": [
+            "Robust and scalable SaaS architecture",
+            "Intuitive and engaging user experience",
+            "Authentication and user management systems",
+            "Customized administration dashboards",
+            "Integrated analytics and reporting tools",
+            "Billing and subscription management features",
+            "Cloud infrastructure optimized for performance and costs"
+          ],
+          "conclusion": "Our custom approach allows you to differentiate yourself in the market with a unique solution that perfectly reflects your vision and precisely meets your users' needs."
         },
-        "cloudSolutions": {
-          "name": "Secure and Scalable Cloud Solutions",
-          "description": "We build secure and scalable cloud-based SaaS solutions, utilizing the latest technologies tailored to meet your business needs."
+        {
+          "name": "Multi-tenant Architecture",
+          "description": "We design multi-tenant SaaS architectures that allow hosting multiple clients on shared infrastructure while ensuring data isolation and customization.",
+          "expertiseTitle": "Our Expertise",
+          "expertise": [
+            "Design of secure multi-tenant databases",
+            "Efficient data isolation between tenants",
+            "Large-scale performance optimization",
+            "Per-tenant customization without code duplication",
+            "Seamless migration and upgrades",
+            "Per-tenant metrics and billing systems",
+            "Hybrid architectures adapted to your constraints"
+          ],
+          "conclusion": "This multi-tenant approach optimizes your infrastructure and maintenance costs while providing exceptional scalability for your future growth."
         },
-        "agileDevelopment": {
-          "name": "Agile Development Process for Quick Delivery",
-          "description": "Our agile SaaS development process ensures quick delivery while prioritizing your success and aligning with your unique goals."
+        {
+          "name": "Scalable Cloud Infrastructure",
+          "description": "We deploy your SaaS solution on robust cloud infrastructures, designed to adapt instantly to your growth and ensure maximum availability.",
+          "expertiseTitle": "Our Expertise",
+          "expertise": [
+            "Cloud-native architectures (AWS, Google Cloud, Azure)",
+            "Infrastructure as Code (Terraform, CloudFormation)",
+            "Containerization with Docker and Kubernetes orchestration",
+            "Auto-scaling and load balancing",
+            "Replication and high availability strategies",
+            "Performance and cost optimization",
+            "Proactive monitoring and alerting"
+          ],
+          "conclusion": "Our cloud-native approach gives you the agility needed to scale your SaaS solution according to your growth, without compromising performance."
         },
-        "support24": {
-          "name": "24/7 Post-Launch Support",
-          "description": "We provide 24/7 support after launching your SaaS solution, ensuring consistent success and measurable results for your business."
+        {
+          "name": "Integrations and APIs",
+          "description": "We create connected SaaS ecosystems that integrate seamlessly with your existing tools and allow your clients to connect your solution to their technology stack.",
+          "expertiseTitle": "Our Expertise",
+          "expertise": [
+            "Design of robust and documented RESTful and GraphQL APIs",
+            "Integrations with major third-party services (CRM, ERP, marketing...)",
+            "Webhook and callback systems",
+            "OAuth authentication and token management",
+            "SDKs and client libraries to facilitate adoption",
+            "Integration and plugin marketplace",
+            "API versioning and backward compatibility strategies"
+          ],
+          "conclusion": "These integration capabilities strengthen the value of your SaaS solution and create exit barriers, ensuring customer loyalty."
+        },
+        {
+          "name": "SaaS Security and Compliance",
+          "description": "We implement the highest security standards to protect your data and that of your clients, and ensure compliance with current regulations.",
+          "expertiseTitle": "Our Expertise",
+          "expertise": [
+            "Multi-factor authentication and SSO",
+            "Data encryption at rest and in transit",
+            "Fine-grained permission management and access control (RBAC)",
+            "Security audits and penetration testing",
+            "GDPR, HIPAA, SOC2 compliance as per your needs",
+            "Backup policies and disaster recovery plans",
+            "Security monitoring and intrusion detection"
+          ],
+          "conclusion": "Our 'security by design' approach integrates security at every development stage, saving you from costly refactoring later."
+        },
+        {
+          "name": "Billing and Subscription Management Systems",
+          "description": "We implement complete subscription management solutions that maximize your recurring revenue and offer flexibility to your clients.",
+          "expertiseTitle": "Our Expertise",
+          "expertise": [
+            "Integration of major payment gateways",
+            "Flexible subscription models (monthly, annual, usage-based)",
+            "Automated billing and tax management",
+            "Free trials and conversions",
+            "Management of upgrades, downgrades, and prorations",
+            "Dunning management and churn reduction",
+            "Financial dashboards and SaaS metrics"
+          ],
+          "conclusion": "These robust systems allow you to test different business models and optimize your MRR/ARR without friction for your clients."
         }
-      }
-    },
-    "benefits": {
-      "title": "Benefits",
-      "titleEnd": "of Choosing Us",
-      "items": {
-        "timeToMarket": {
-          "name": "Reduced Time-to-Market",
-          "description": "Our experienced team specializes in SaaS development, delivering platform-independent solutions quickly for maximum availability."
-        },
-        "userFriendly": {
-          "name": "User-Friendly Interfaces",
-          "description": "We leverage the latest technologies in SaaS development to create intuitive and scalable user interfaces tailored to your needs."
-        },
-        "costSavings": {
-          "name": "Cost Savings with Optimized Architecture",
-          "description": "Our SaaS solutions utilize optimized architecture to minimize costs while providing robust and scalable applications."
-        },
-        "scalability": {
-          "name": "Scalability for Future Growth",
-          "description": "We prioritize your success in SaaS development by ensuring every solution is scalable and aligns with your unique business goals."
-        },
-        "dedicatedSupport": {
-          "name": "Dedicated Post-Launch Support",
-          "description": "Our commitment to your SaaS project continues post-launch, with dedicated support ensuring measurable results and ongoing success."
-        }
-      }
+      ]
     },
     "process": {
-      "title": "SaaS Development",
+      "title": "Our SaaS Development Process",
       "steps": {
-        "analysis": {
-          "title": "Requirement Analysis",
-          "description": "We collaborate closely to understand your objectives, challenges, and goals, ensuring a clear path forward for your project. Our focus is to align with your vision right from the start."
+        "0": {
+          "title": "Strategy & Design",
+          "description": "We define your vision together and transform your idea into a concrete action plan. This phase includes market and competitive analysis, value proposition definition, identification of MVP critical features, technical architecture design, business model and pricing definition, and product roadmap planning to ensure strategic and targeted development."
         },
-        "wireframing": {
-          "title": "Wireframing & Prototyping",
-          "description": "Using insights from our discussions, we craft a detailed strategy that outlines actionable steps. Our tailored approach ensures measurable success for your project."
+        "1": {
+          "title": "UX/UI Design",
+          "description": "We design an intuitive user experience that promotes adoption and reduces churn. This stage includes creating wireframes of main interfaces, optimizing user journeys, developing responsive graphic mockups, creating a scalable design system, producing interactive prototypes for validation, and user testing with iterations to ensure optimal experience."
         },
-        "development": {
-          "title": "Building a secure and scalable SaaS platform",
-          "description": "Our creative and technical teams work together to bring your ideas to life. We deliver visually stunning designs paired with high-performing development."
+        "2": {
+          "title": "Agile Development",
+          "description": "We build your SaaS platform iteratively, with regular demonstrations. This phase includes setting up a multi-tenant backend architecture, developing reactive frontend interfaces, creating robust and well-documented APIs, implementing authentication and user management systems, priority third-party integrations, and setting up billing and subscription management."
         },
-        "testing": {
-          "title": "Testing",
-          "description": "After rigorous testing, we launch your project with precision. Our seamless deployment ensures that your solution is ready to perform flawlessly."
+        "3": {
+          "title": "Testing & Quality Assurance",
+          "description": "We ensure the reliability and performance of your SaaS platform. This stage includes implementing automated tests (unit, integration, E2E), load and performance testing, comprehensive security audits, multi-browser and multi-device validation, regression testing, and validation of critical use cases to ensure impeccable quality."
         },
-        "deployment": {
-          "title": "Deployment",
-          "description": "We provide post-launch support to ensure your project stays ahead of the curve. Our team is always here to assist and innovate further."
+        "4": {
+          "title": "Deployment & Growth",
+          "description": "We ensure launch and support your continuous growth. This final phase includes cloud infrastructure configuration, implementing a continuous deployment strategy (CI/CD), setting up monitoring and alerting, establishing user support, integrating analytics and optimization, as well as continuous evolutions and improvements to ensure your success."
         }
       }
+    },
+    "appTypes": {
+      "title": "Types of SaaS Platforms We Develop",
+      "types": [
+        {
+          "name": "B2B SaaS Solutions",
+          "description": "Professional applications that meet specific business needs",
+          "points": [
+            "Productivity and collaboration tools",
+            "CRM and customer relationship management solutions",
+            "Marketing and sales enablement platforms",
+            "Business intelligence and reporting tools",
+            "Specialized industry-specific software",
+            "HR management and recruitment solutions",
+            "ERP and financial management platforms"
+          ]
+        },
+        {
+          "name": "B2C SaaS Solutions",
+          "description": "Applications for end users, with simplified interfaces and freemium models",
+          "points": [
+            "Personal productivity applications",
+            "Financial management solutions",
+            "Learning and training platforms",
+            "Creative and design tools",
+            "Health and wellness applications",
+            "Storage and sharing services",
+            "Entertainment platforms"
+          ]
+        },
+        {
+          "name": "Marketplaces and Multi-party Platforms",
+          "description": "Solutions connecting different user categories",
+          "points": [
+            "B2B and B2C marketplaces",
+            "Connection platforms",
+            "Crowdsourcing applications",
+            "Booking and scheduling systems",
+            "Gig economy solutions",
+            "Collaborative economy platforms",
+            "Community applications"
+          ]
+        },
+        {
+          "name": "Vertical SaaS Solutions",
+          "description": "Specialized platforms for specific industries",
+          "points": [
+            "FinTech and financial services",
+            "HealthTech and medical applications",
+            "EdTech and e-learning",
+            "PropTech and real estate",
+            "LegalTech and legal services",
+            "RetailTech and e-commerce",
+            "HRTech and talent management"
+          ]
+        }
+      ]
+    },
+    "whyUs": {
+      "title": "Why Choose Numispark for Your SaaS",
+      "reasons": [
+        {
+          "title": "Specialized SaaS Expertise",
+          "description": "Our team has deep expertise in designing multi-tenant SaaS architectures, cloud scalability, and subscription models, ensuring a robust and scalable platform."
+        },
+        {
+          "title": "Focus on SaaS Metrics",
+          "description": "We integrate from the design phase the necessary tools to track and optimize your critical KPIs (CAC, LTV, Churn, MRR), aligning technical development with your business objectives."
+        },
+        {
+          "title": "Scalable Architecture",
+          "description": "Our solutions are designed to evolve with your business, from your initial MVP to millions of users, without requiring major refactoring or complex migration."
+        },
+        {
+          "title": "Product Approach",
+          "description": "We're not just technical executors, but true product partners who help you refine your value proposition, test your hypotheses, and iterate quickly."
+        },
+        {
+          "title": "Post-launch Maintenance and Support",
+          "description": "Our commitment doesn't stop at launch. We offer maintenance, monitoring, and continuous evolution services to ensure the long-term success of your SaaS platform."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": {
+        "cost": {
+          "question": "What is the cost of developing a SaaS platform?",
+          "answer": "The cost depends entirely on the scope of your project. Our SaaS solutions can range from a few hundred euros for simple configurations, to 10,000 euros or more for complex platforms with advanced features and multiple integrations. We provide a personalized quote after precisely understanding your needs, product vision, and constraints."
+        },
+        "timeline": {
+          "question": "How long does it take to develop a SaaS platform?",
+          "answer": "Timelines vary depending on your project's complexity. A functional MVP can be developed in a few weeks, while a complete SaaS platform with all features may require several months of development. Our phased agile approach allows for quickly launching a usable first version, then progressively enriching features based on user feedback."
+        },
+        "mvp": {
+          "question": "Is it better to start with an MVP or develop the complete solution directly?",
+          "answer": "For most SaaS projects, we strongly recommend the MVP (Minimum Viable Product) approach. This allows you to validate your concept with real users, obtain valuable feedback, and adjust your value proposition before investing in complete development. This approach significantly reduces risks and increases your chances of long-term success."
+        },
+        "architecture": {
+          "question": "What architecture do you recommend for a SaaS solution?",
+          "answer": "We generally favor microservices architectures deployed on cloud infrastructures like AWS, GCP, or Azure, with databases adapted to your specific needs (SQL or NoSQL). For multi-tenant solutions, we implement either a shared database model with tenant_id isolation, or separate schemas, depending on your security and customization requirements."
+        },
+        "security": {
+          "question": "How do you handle data security in a SaaS platform?",
+          "answer": "Security is integrated at every level of our SaaS developments: data encryption at rest and in transit, multi-factor authentication, role-based access controls (RBAC), regular security audits, and compliance with applicable regulations (GDPR, etc.). We also implement intrusion detection mechanisms and proactive monitoring to ensure continuous protection of your data and that of your clients."
+        },
+        "monetization": {
+          "question": "How can I monetize my SaaS platform?",
+          "answer": "We implement different monetization models according to your strategy: recurring subscriptions (monthly, annual), usage-based pricing, freemium models, per-user or per-feature licenses. Our solutions include automated billing systems, free trial management tools, and conversion mechanisms to maximize your acquisition and retention rates."
+        },
+        "maintenance": {
+          "question": "Do you offer maintenance services after launch?",
+          "answer": "Yes, we offer several post-launch maintenance and evolution packages: responsive technical support, 24/7 monitoring, security updates, new feature development, and continuous optimization based on usage metrics. These services ensure the sustainability and evolution of your SaaS platform in a constantly evolving technological environment."
+        },
+        "scalability": {
+          "question": "How do you ensure platform scalability with the growth of my user base?",
+          "answer": "We design from the start architectures ready for horizontal and vertical scalability: stateless services, partitioned databases, distributed caching, and auto-scalable cloud infrastructure. Our solutions are load-tested to identify and eliminate potential bottlenecks. As your user base grows, the infrastructure automatically adapts to maintain optimal performance."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to transform your idea into a SaaS platform?",
+      "description": "Let's discuss your project and discover how we can create a scalable SaaS solution that generates recurring revenue."
     },
     "portfolio": {
       "title": "Our Recent",
       "titleHighlight": "Work",
       "categories": {
         "private": {
-          "name": "Private-SaaS Development",
-          "content": "Private Honors is revolutionizing travel. Save on every booking by getting cashback, manage travel with ease and enjoy VIP customer service. Discover a new way to travel, smarter and more profitable.",
+          "name": "Private SaaS Development",
+          "content": "Private Honors revolutionizes travel. Save on every booking with cashback refunds, organize your trips with ease, and enjoy VIP customer service.",
           "frontendDevelopment": "Frontend Development with Next.js",
           "backendDevelopment": "Backend Development with Node.js and Express",
           "design": "UI/UX Design with Figma and Tailwind CSS",
@@ -100,39 +270,11 @@
         },
         "funding": {
           "name": "Funding Talent - SaaS",
-          "content": "Funding Talent is SaaS for traders.",
+          "content": "Funding Talent is a SaaS solution dedicated to traders.",
           "design": "UI/UX Design with Figma and Tailwind CSS",
           "frontendDevelopment": "Frontend Development with Vue js",
           "backendDevelopment": "Backend Development with Node.js and Express",
           "database": "Database Management with MongoDB"
-        }
-      }
-    },
-    "faq": {
-      "items": {
-        "included": {
-          "question": "What is included in your SaaS development services?",
-          "answer": "Our SaaS development services include requirement analysis, UX/UI design, backend and frontend development, quality assurance testing, deployment, and ongoing support. We ensure that your SaaS application is scalable, secure, and tailored to your business needs."
-        },
-        "migration": {
-          "question": "Can you help with migrating my existing software to a SaaS model?",
-          "answer": "Yes, we offer migration services to help you transition your existing software to a SaaS model. Our team will assess your current setup, develop a migration plan, and ensure a smooth transition to the cloud without disrupting your business operations."
-        },
-        "technologies": {
-          "question": "What technologies do you use for SaaS development?",
-          "answer": "We utilize modern technologies and frameworks suitable for SaaS development, including cloud platforms like AWS or Azure, programming languages such as JavaScript, Python, and Ruby, and frontend libraries like React or Angular. We choose the best technology stack based on your specific requirements."
-        },
-        "timeline": {
-          "question": "How long does it take to develop a SaaS application?",
-          "answer": "The timeline for developing a SaaS application varies based on complexity and features. Typically, it can take anywhere from a few weeks to several months. We will provide you with a detailed timeline after discussing your project requirements during our initial consultation."
-        },
-        "support": {
-          "question": "How do you handle ongoing support and maintenance for SaaS applications?",
-          "answer": "We offer comprehensive post-launch support and maintenance packages to ensure your SaaS application runs smoothly. Our support includes bug fixes, updates, feature enhancements, and technical assistance to help you address any issues that may arise."
-        },
-        "integration": {
-          "question": "Can you integrate my SaaS application with other tools or platforms?",
-          "answer": "Yes, we can integrate your SaaS application with various third-party tools and platforms, such as payment gateways, CRM systems, and marketing automation tools. Our team will work with you to identify the best integration options for your business."
         }
       }
     }

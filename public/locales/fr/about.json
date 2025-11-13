@@ -1,102 +1,282 @@
 {
   "about": {
     "hero": {
-      "titlePart1": "Donner du pouvoir à votre entreprise avec",
-      "titlePart2": "des solutions numériques innovantes",
-      "subtitle": "Nous sommes une équipe d'artisans du digital passionnés, transformant des idées innovantes en solutions numériques puissantes qui stimulent la croissance de l'entreprise."
+      "title": "À Propos de Numispark",
+      "subtitle": "Votre agence digitale française qui transforme vos idées en succès concrets",
+      "description1": "Vos concurrents ont déjà pris une longueur d'avance digitale ? Vous cherchez un partenaire technique qui comprend vraiment vos enjeux business ?",
+      "description2": "Depuis 3 ans, Numispark accompagne 60+ entreprises françaises dans leur transformation numérique avec un taux de satisfaction de 92%.",
+      "description3": "Nous concevons des solutions web et mobiles sur-mesure qui génèrent des résultats mesurables dès les premières semaines."
     },
-    "coreValues": {
-      "title": "Nos valeurs fondamentales",
-      "titleHighlight": "Valeurs",
-      "subtitle": "Des solutions complètes adaptées à vos besoins",
-      "items": {
-        "quality": {
-          "title": "Qualité avant tout",
-          "description": "Nous ne faisons jamais de compromis sur la qualité, garantissant que chaque projet répond à nos normes d'excellence élevées."
-        },
-        "delivery": {
-          "title": "Livraison à temps",
-          "description": "Nous respectons les délais et veillons à ce que les projets soient livrés dans les temps sans compromettre la qualité."
-        },
-        "innovation": {
-          "title": "Innovation",
-          "description": "Nous restons à la pointe des tendances technologiques pour offrir des solutions de pointe à nos clients."
-        },
-        "partnership": {
-          "title": "Partenariat client",
-          "description": "Nous établissons des relations durables avec nos clients, devenant leurs partenaires technologiques de confiance."
-        }
-      }
-    },
-    "team": {
-      "title": "Rencontrez notre",
-      "titleHighlight": "équipe",
-      "subtitle": "Découvrez les talents qui rendent notre innovation digitale possible.",
-      "members": {
-        "thomas": {
-          "name": "Thomas",
-          "role": "Co-fondateur & Chef de projet"
-        },
+    "story": {
+      "title": "Notre histoire et nos fondateurs",
+      "subtitle": "L'Aventure Numispark (2022-2025)",
+      "description": "Créée en 2022 par Karandeep et Thomas, Numispark est née d'un constat simple : les TPE et PME françaises méritent la même expertise technique que les grandes entreprises, mais avec une approche plus humaine et des tarifs adaptés.",
+      "founders": {
+        "title": "Les fondateurs :",
         "karan": {
           "name": "Karandeep",
-          "role": "Fondateur & Directeur Général"
+          "role": "Fondateur & Directeur Général",
+          "description": "Expert en développement et stratégie digitale, ancienne expérience en startups parisiennes"
         },
+        "thomas": {
+          "name": "Thomas",
+          "role": "Co-fondateur & Chef de projet",
+          "description": "Spécialiste gestion de projet digital, garant de la méthodologie et des délais"
+        }
+      },
+      "stats": {
+        "title": "Quelques chiffres qui nous définissent :",
+        "years": "3 années d'expertise confirmée",
+        "projects": "60+ projets livrés avec succès",
+        "experts": "10 experts à votre service",
+        "satisfaction": "92% de clients satisfaits",
+        "retention": "85% de taux de fidélisation"
+      },
+      "location": "Basés à Caen au cœur de la Normandie dynamique, nous rayonnons aujourd'hui dans toute la France avec des clients de Paris à Marseille."
+    },
+    "mission": {
+      "title": "Notre Vision et Mission",
+      "mission": "Démocratiser l'excellence digitale pour toutes les entreprises françaises, quelle que soit leur taille.",
+      "vision": "Devenir le partenaire technique de référence des entreprises normandes et françaises qui veulent réussir leur transformation digitale."
+    },
+    "team": {
+      "title": "Notre équipe d'experts",
+      "devTeam": "Équipe Développement",
+      "designTeam": "Équipe Design & Marketing",
+      "members": {
         "samuel": {
           "name": "Samuel",
-          "role": "Développeur principal"
-        },
-        "metheo": {
-          "name": "Methéo",
-          "role": "Développeur Frontend"
+          "role": "Développeur Principal",
+          "description": "Architecte technique de nos projets complexes, maîtrise des frameworks modernes et de l'architecture évolutive.",
+          "quote": "Un bon code est comme une bonne architecture : il doit être solide, fonctionnel et conçu pour durer."
         },
         "lucas": {
           "name": "Lucas",
-          "role": "Développeur Backend"
+          "role": "Développeur Backend",
+          "description": "Spécialiste infrastructures serveur, bases de données, sécurité et optimisation des performances.",
+          "quote": "La partie invisible d'une application est souvent la plus importante. C'est là que se joue la performance et la sécurité."
         },
-         "antoine": {
+        "metheo": {
+          "name": "Methéo",
+          "role": "Développeur Frontend",
+          "description": "Expert interfaces utilisateur modernes, transformation des maquettes en expériences fluides et engageantes.",
+          "quote": "L'interface est le point de rencontre entre l'humain et la technologie. Elle doit être intuitive, réactive et agréable."
+        },
+        "antoine": {
           "name": "Antoine",
-          "role": "Développeur Full Stack"
+          "role": "Développeur Full Stack",
+          "description": "Polyvalent sur l'ensemble de la chaîne de développement, vision globale des projets complexes.",
+          "quote": "La force d'un développeur full stack est de pouvoir comprendre l'écosystème complet d'une application pour créer des solutions cohérentes."
         },
-         "louis": {
+        "louis": {
           "name": "Louis",
-          "role": "Développeur Mobile"
-        },
-        "sophia": {
-          "name": "Sophia",
-          "role": "Spécialiste Marketing Digital"
-        },
-        "amelie": {
-          "name": "Amélie",
-          "role": "Experte SEO"
+          "role": "Développeur Mobile",
+          "description": "Passionné technologies mobiles, conception d'applications natives et hybrides iOS/Android.",
+          "quote": "Le mobile n'est plus une option mais une nécessité. Chaque application doit offrir une expérience optimale, quel que soit l'appareil utilisé."
         },
         "charlotte": {
           "name": "Charlotte",
-          "role": "Designer Graphique & UI/UX"
+          "role": "Designer Graphique & UI/UX",
+          "description": "Créative et méthodique, conçoit des interfaces alliant esthétique et ergonomie avec une approche centrée utilisateur.",
+          "quote": "Le design n'est pas seulement ce que l'on voit, c'est comment ça fonctionne. Un bon design est invisible, il se fond dans l'expérience."
+        },
+        "amelie": {
+          "name": "Amélie",
+          "role": "Experte SEO",
+          "description": "Stratège du référencement naturel, optimise la visibilité en ligne avec des stratégies SEO durables.",
+          "quote": "Le SEO est un marathon, pas un sprint. C'est un travail de fond qui construit une visibilité pérenne pour votre entreprise."
+        },
+        "sophia": {
+          "name": "Sophia",
+          "role": "Spécialiste Marketing Digital",
+          "description": "Experte stratégies digitales globales, orchestre les actions marketing pour amplifier l'impact de vos projets.",
+          "quote": "Le marketing digital efficace n'est pas celui qui crie le plus fort, mais celui qui parle le mieux à la bonne personne au bon moment."
+        },
+        "karan": {
+          "name": "Karandeep",
+          "role": "Fondateur & Directeur Général",
+          "description": "Expert en développement et stratégie digitale, ancienne expérience en startups parisiennes"
+        },
+        "thomas": {
+          "name": "Thomas",
+          "role": "Co-fondateur & Chef de projet",
+          "description": "Spécialiste gestion de projet digital, garant de la méthodologie et des délais"
+        }
+      }
+    },
+    "sectors": {
+      "title": "Notre expertise sectorielle",
+      "subtitle": "Secteurs d'Activité Maîtrisés",
+      "approach": {
+        "title": "Approche Personnalisée",
+        "description": "Chaque entreprise est unique. Notre méthode commence toujours par une phase d'écoute approfondie pour comprendre vos enjeux spécifiques avant de proposer des solutions adaptées."
+      },
+      "items": {
+        "tourism": {
+          "title": "Tourisme et Loisirs",
+          "description": "Sites de réservation, applications de découverte locale, plateformes de mise en relation touristique."
+        },
+        "ecommerce": {
+          "title": "E-commerce & Retail",
+          "description": "Boutiques en ligne, marketplaces, stratégies de conversion, systèmes de gestion des stocks."
+        },
+        "education": {
+          "title": "Éducation et Formation",
+          "description": "Plateformes LMS, outils pédagogiques digitaux, solutions d'apprentissage en ligne."
+        },
+        "b2b": {
+          "title": "Services B2B",
+          "description": "Applications métier spécialisées, intranets collaboratifs, outils de productivité sur-mesure."
+        },
+        "coaching": {
+          "title": "Coaching et Développement Personnel",
+          "description": "Sites vitrines optimisés, outils d'accompagnement, plateformes de réservation."
+        },
+        "industry": {
+          "title": "Industrie et Artisanat",
+          "description": "Digitalisation des processus, présence en ligne optimisée, catalogues produits interactifs."
+        }
+      }
+    },
+    "technologies": {
+      "title": "Technologies utilisées",
+      "frontend": {
+        "title": "Développement Frontend",
+        "items": ["React, Vue.js, Angular", "HTML5/CSS3 responsive", "JavaScript/TypeScript", "Frameworks UI modernes"]
+      },
+      "backend": {
+        "title": "Développement Backend",
+        "items": ["PHP/Laravel", "Node.js", "Python", "APIs REST et GraphQL"]
+      },
+      "mobile": {
+        "title": "Développement Mobile",
+        "items": ["React Native", "Swift (iOS natif)", "Kotlin (Android natif)", "Applications hybrides"]
+      },
+      "cms": {
+        "title": "CMS & E-commerce",
+        "items": ["WordPress sur-mesure", "Shopify Plus", "PrestaShop", "Drupal"]
+      },
+      "infrastructure": {
+        "title": "Infrastructure & Cloud",
+        "items": ["AWS, Google Cloud, Azure", "Docker et conteneurisation", "MySQL, PostgreSQL, MongoDB", "Systèmes de cache et CDN"]
+      },
+      "tools": {
+        "title": "Outils Design & Projet",
+        "items": ["Figma, Adobe XD", "Git et intégration continue", "Méthodes Agile/Scrum", "Monitoring et analytics"]
+      }
+    },
+    "values": {
+      "title": "Nos valeurs et engagements",
+      "items": {
+        "quality": {
+          "title": "Qualité Sans Compromis",
+          "description": "Processus rigoureux de développement avec phases de tests approfondis. Nous préférons prendre le temps nécessaire plutôt que de compromettre la qualité finale.",
+          "quote": "La qualité n'est jamais un accident ; c'est toujours le résultat d'un effort intelligent."
+        },
+        "deadlines": {
+          "title": "Respect des Délais Garantis",
+          "description": "Méthodologie agile et planification rigoureuse pour livrer dans les délais convenus. Suivi détaillé avec points d'étape réguliers.",
+          "testimonial": "Toujours disponibles et agréables",
+          "author": "Olivier LENOIR"
+        },
+        "innovation": {
+          "title": "Innovation Technologique Continue",
+          "description": "Veille technologique constante, formations régulières de l'équipe, adoption des dernières technologies pour vous donner une longueur d'avance."
+        },
+        "partnership": {
+          "title": "Partenariat Durable",
+          "description": "85% de taux de fidélisation client. Nous construisons des relations long-terme et devenons votre partenaire technologique de confiance."
+        },
+        "transparency": {
+          "title": "Transparence Totale",
+          "description": "Communication claire et régulière, pas de jargon technique, rapports d'avancement détaillés, facturation transparente."
+        },
+        "education": {
+          "title": "Formation et Transmission",
+          "description": "Engagement dans l'écosystème éducatif avec nos formations à la Rocket School et notre contribution au développement des compétences digitales."
         }
       }
     },
     "whyChooseUs": {
-      "title": "Pourquoi",
-      "titleHighlight": "s'associer",
-      "titleEnd": "avec nous",
-      "subtitle": "Des solutions complètes adaptées à vos besoins",
+      "title": "Pourquoi choisir Numispark",
       "items": {
-        "experts": {
-          "title": "Une équipe d'experts dévoués",
-          "description": "Notre équipe est composée de vétérans de l'industrie, de professionnels certifiés et d'esprits créatifs qui apportent une expertise diversifiée à chaque projet."
+        "expertise": {
+          "title": "Expertise Technique Prouvée",
+          "description": "3 ans d'expérience, 60+ projets réussis, maîtrise complète de la chaîne de développement web et mobile."
         },
-        "solutions": {
-          "title": "Des solutions sur mesure pour chaque client",
-          "description": "Nous comprenons que chaque entreprise est unique. Notre approche vise à créer des solutions personnalisées qui s'alignent parfaitement sur vos besoins spécifiques."
+        "local": {
+          "title": "Approche Locale, Ambition Nationale",
+          "description": "Ancrés à Caen (16 Bis Rue Froide, 14000 Caen), nous servons des clients dans toute la France avec la proximité normande et l'expertise parisienne."
         },
-        "success": {
-          "title": "Un palmarès éprouvé de succès",
-          "description": "Notre portfolio parle de lui-même, avec de nombreux projets réussis dans divers secteurs. Nous avons aidé des entreprises à atteindre leurs objectifs digitaux."
+        "humanSize": {
+          "title": "Taille Humaine, Expertise Pointue",
+          "description": "Équipe de 10 experts permettant réactivité et accompagnement personnalisé tout en maîtrisant les technologies les plus avancées."
         },
-        "communication": {
-          "title": "Communication transparente",
-          "description": "Nous croyons en la construction de la confiance grâce à la transparence. Nos canaux de communication clairs et nos processus bien définis vous garantissent d'être toujours informé."
+        "roi": {
+          "title": "ROI Mesurable",
+          "description": "92% de satisfaction client, projets conçus pour générer un impact positif et durable sur votre business."
+        },
+        "support": {
+          "title": "Support Long-Terme",
+          "description": "Maintenance, évolutions, support technique réactif. Nous restons votre partenaire après la livraison."
         }
+      }
+    },
+    "testimonials": {
+      "title": "Témoignages clients",
+      "items": {
+        "privateHonors": {
+          "name": "Private Honors",
+          "role": "Directeur",
+          "text": "J'ai fait appel à Numispark pour développer notre application web Private Honors. L'équipe de développement a été très agréable et a parfaitement compris les besoins de notre produit. Je suis ravi du résultat et je collabore désormais avec eux sur le SEO et le marketing."
+        },
+        "lydia": {
+          "name": "Lydia DUAN",
+          "role": "Chef de projet",
+          "text": "Numispark a rédigé plusieurs articles de blog SEO en espagnol pour notre client spécialisé dans le voyage et le tourisme. Les articles sont de haute qualité et leur style d'écriture est très flexible. Merci beaucoup pour votre excellent travail, Numispark !"
+        },
+        "olivier": {
+          "name": "Olivier LENOIR",
+          "role": "Dirigeant",
+          "text": "Nous travaillons depuis plus d'un an presque quotidiennement avec Numispark. L'équipe est toujours très impliquée et engagée pour mener au mieux les missions confiées. Ils aiment être force de proposition. Toujours disponibles et agréables, je recommande vivement Numispark !"
+        },
+        "leo": {
+          "name": "Léo NISHIBAYASHI",
+          "role": "Rocket School",
+          "text": "Numispark a été un excellent formateur dans notre école... Nos apprenants ont beaucoup apprécié leur intervention !"
+        }
+      }
+    },
+    "future": {
+      "title": "Notre vision d'avenir",
+      "subtitle": "Objectifs 2025-2027",
+      "items": {
+        "territorial": {
+          "title": "Rayonnement Territorial",
+          "description": "Devenir l'agence digitale de référence en Normandie tout en renforçant notre présence nationale."
+        },
+        "innovation": {
+          "title": "Innovation Technologique",
+          "description": "Expertise approfondie en IA, technologies immersives (AR/VR), et solutions IoT pour anticiper les besoins de demain."
+        },
+        "education": {
+          "title": "Écosystème Éducatif",
+          "description": "Renforcement des partenariats avec les écoles et universités pour former les talents digitaux de demain."
+        },
+        "impact": {
+          "title": "Impact Responsable",
+          "description": "Contribution active à la transition digitale responsable des entreprises françaises avec des solutions éco-conçues."
+        }
+      },
+      "ambition": "Faire de Numispark non seulement une agence digitale d'excellence, mais un véritable catalyseur d'innovation et de croissance pour nos clients et notre territoire normand."
+    },
+    "cta": {
+      "title": "Discutons de votre projet",
+      "description": "Vous avez un projet digital ambitieux ? Une idée à concrétiser rapidement ? Des questions sur nos services ? Notre équipe vous répond sous 24h pour échanger sur vos besoins et vous proposer des solutions concrètes.",
+      "contact": {
+        "address": "16 Bis Rue Froide, 14000 Caen, Normandie",
+        "expertise": "Web, Mobile, E-commerce, SEO, Marketing Digital",
+        "zone": "France entière, spécialisation Normandie"
       }
     }
   }

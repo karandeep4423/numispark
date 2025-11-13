@@ -17,7 +17,7 @@ import {
   Search,
   ArrowUpRight,
 } from "lucide-react";
-import Contact from "@/components/contact-us/page";
+import FormCTA from "@/components/Form-CTA/page";
 import HeroButtons from "@/components/HeroButtons/page";
 import FAQs from "@/components/Faqs/page";
 import Technologies from "@/components/Technologies/page";
@@ -364,7 +364,7 @@ const WebsiteDevelopment = () => {
       />
 
       {/* Contact Section */}
-      <Contact />
+      <FormCTA />
     </div>
   );
 };

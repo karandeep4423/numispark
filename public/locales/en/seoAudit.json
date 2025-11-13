@@ -1,0 +1,293 @@
+{
+  "seoAudit": {
+    "hero": {
+      "title": "Free SEO Audit: Discover What's Holding Back Your Google Visibility",
+      "subtitle": "Quickly identify technical issues, on-page optimization opportunities and off-page improvement areas to boost your organic ranking and generate more qualified traffic.",
+      "benefits": [
+        "100% free with no commitment",
+        "Detailed report in 24-48h",
+        "Analysis by an SEO expert",
+        "Personalized and actionable recommendations"
+      ],
+      "cta": "Request your free audit"
+    },
+    "problem": {
+      "title": "Why doesn't your site appear on Google's first page?",
+      "intro": "You may be facing one of these common problems:",
+      "issues": [
+        "Your site remains invisible on Google while your competitors dominate search results",
+        "You invest time and money in your site, but your organic traffic stagnates",
+        "Hidden technical problems block your pages' indexing without you knowing",
+        "Your content is not optimized for the right keywords targeting your audience",
+        "Your external link strategy is insufficient or poorly directed"
+      ],
+      "solution": "A professional SEO audit allows you to precisely determine the barriers to your visibility, identify improvement opportunities and establish a prioritized action plan to propel your site to the first page of search results."
+    },
+    "benefits": {
+      "title": "Immediate benefits of our free SEO audit",
+      "items": [
+        "Understand why your site isn't performing as it should",
+        "Identify \"quick wins\" (quick actions with high impact)",
+        "Get a clear and prioritized roadmap",
+        "Make informed decisions for your SEO strategy"
+      ]
+    },
+    "pillars": {
+      "title": "Our free SEO audit covers the 3 essential pillars of SEO",
+      "items": [
+        {
+          "name": "Technical SEO Audit",
+          "description": "Technical SEO constitutes the solid foundations of your SEO. Without an optimized technical base, your content and link efforts will be compromised.",
+          "subtitle": "What we analyze",
+          "sections": [
+            {
+              "title": "Site structure and architecture",
+              "points": [
+                "Crawlability and indexability",
+                "XML sitemap and robots.txt",
+                "Information architecture",
+                "Page hierarchy"
+              ]
+            },
+            {
+              "title": "Performance and speed",
+              "points": [
+                "Core Web Vitals",
+                "Loading time",
+                "Mobile optimization",
+                "Technical user experience"
+              ]
+            },
+            {
+              "title": "Critical technical issues",
+              "points": [
+                "Indexation errors",
+                "Orphan pages",
+                "Redirect chains",
+                "404 and 5xx errors",
+                "Canonicalization issues",
+                "HTTPS security"
+              ]
+            }
+          ],
+          "outcome": "A complete diagnosis of technical problems blocking your visibility, with prioritized recommendations to strengthen your site's technical foundations."
+        },
+        {
+          "name": "On-Page SEO Audit",
+          "description": "On-page optimization determines how Google interprets and ranks your content. This analysis reveals how to optimize each page to maximize its relevance.",
+          "subtitle": "What we analyze",
+          "sections": [
+            {
+              "title": "Content optimization",
+              "points": [
+                "Content relevance and quality",
+                "Title structure and hierarchy (H1-H6)",
+                "Keyword density and placement",
+                "Duplicate or cannibalized content",
+                "Readability and engagement"
+              ]
+            },
+            {
+              "title": "Tags and metadata optimization",
+              "points": [
+                "Title tags and meta descriptions",
+                "Structural tags (header, footer, nav)",
+                "Structured data and schema.org",
+                "Image alt attributes"
+              ]
+            },
+            {
+              "title": "Internal linking",
+              "points": [
+                "Internal link structure",
+                "Anchor text and relevance",
+                "Link juice distribution",
+                "Page depth"
+              ]
+            }
+          ],
+          "outcome": "A detailed page-by-page analysis with concrete recommendations to optimize your content, tags and internal linking to significantly improve your ranking."
+        },
+        {
+          "name": "Off-Page SEO Audit",
+          "description": "Off-page SEO evaluates your authority and reputation in Google's eyes. This analysis reveals how to strengthen your credibility in your sector.",
+          "subtitle": "What we analyze",
+          "sections": [
+            {
+              "title": "Backlink profile",
+              "points": [
+                "Quantity and quality of inbound links",
+                "Source and domain diversity",
+                "Thematic relevance of links",
+                "Toxicity and penalty risks"
+              ]
+            },
+            {
+              "title": "Domain authority",
+              "points": [
+                "Authority metrics (DR, DA, etc.)",
+                "Comparison with competitors",
+                "Trust Flow and Citation Flow"
+              ]
+            },
+            {
+              "title": "Link building opportunities",
+              "points": [
+                "Identification of potential sources",
+                "Competitor backlink analysis",
+                "Gaps and unexploited opportunities"
+              ]
+            }
+          ],
+          "outcome": "A complete evaluation of your online authority with strategic recommendations to develop a quality link profile and improve your credibility with Google."
+        }
+      ]
+    },
+    "process": {
+      "title": "How does it work? Our 4-step SEO audit process",
+      "steps": [
+        {
+          "title": "Fill out the form",
+          "description": "Simply enter your website URL, name, email and phone number in the form below.",
+          "duration": "2 minutes"
+        },
+        {
+          "title": "Our in-depth analysis",
+          "description": "Our team of SEO experts analyzes your site from 3 fundamental angles: technical, on-page and off-page. We use professional tools (Screaming Frog, Ahrefs, Semrush, Pagespeed Insights) for reliable and complete diagnosis.",
+          "duration": "24 to 48h"
+        },
+        {
+          "title": "You receive your detailed report",
+          "description": "You receive by email a complete SEO audit report (PDF format) with diagnosis of the 3 SEO pillars, list of identified issues by priority order, actionable recommendations for each pillar, and concrete prioritized action plan.",
+          "duration": "Personalized PDF report"
+        },
+        {
+          "title": "Advisory discussion (optional)",
+          "description": "We offer a phone or video conference call (20-30 minutes) to present the audit results and answer your questions about the 3 analyzed pillars.",
+          "duration": "Presentation call or Teams meeting"
+        }
+      ],
+      "note": "This audit is 100% free with no commitment. No purchase or service subscription obligation."
+    },
+    "whyChooseUs": {
+      "title": "Why choose our free SEO audit?",
+      "reasons": [
+        {
+          "title": "Holistic analysis of the 3 SEO pillars",
+          "description": "Unlike automated tools that mainly focus on technical aspects, our audit examines the 3 fundamental dimensions of SEO: technical, on-page and off-page, for a complete vision of your optimization potential."
+        },
+        {
+          "title": "Human analysis by an SEO expert",
+          "description": "Our audit is performed manually by an experienced SEO consultant who understands your sector's specificities and your business objectives, not by a simple automatic tool."
+        },
+        {
+          "title": "Personalized and actionable recommendations",
+          "description": "We don't just list problems. We give you concrete solutions, prioritized and adapted to your context (budget, resources, technical level) for each of the 3 pillars."
+        },
+        {
+          "title": "Clear and understandable report",
+          "description": "No incomprehensible technical jargon. We explain each point in simple language so you understand exactly what to do, whether for the technical, on-page or off-page aspect."
+        },
+        {
+          "title": "ROI-oriented strategic approach",
+          "description": "Our analysis goes beyond technical aspects to focus on what will actually generate qualified traffic and conversions for your business."
+        }
+      ]
+    },
+    "forWho": {
+      "title": "Who is this complete SEO audit for?",
+      "targets": [
+        {
+          "name": "SMEs and entrepreneurs",
+          "description": "You want to improve your local or national visibility but don't have the resources to hire a full-time SEO agency."
+        },
+        {
+          "name": "Startups and scale-ups",
+          "description": "You're looking to accelerate your organic growth and reduce your dependence on paid acquisition channels."
+        },
+        {
+          "name": "E-commerce",
+          "description": "You want to increase your qualified traffic, product visibility and online sales through organic SEO."
+        },
+        {
+          "name": "Corporate and B2B sites",
+          "description": "You want to generate more qualified leads and strengthen your online authority in your sector."
+        },
+        {
+          "name": "Existing sites losing momentum",
+          "description": "Your organic traffic has recently dropped and you want to understand why and reverse the trend."
+        },
+        {
+          "name": "Website redesign projects",
+          "description": "You're preparing a site redesign and want to ensure you don't lose your existing SEO capital."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions about our free SEO audit",
+      "items": {
+        "isFree": {
+          "question": "Is this audit really free? Are there hidden fees?",
+          "answer": "Yes, the audit is 100% free with no obligation whatsoever. We don't ask for your banking details and there are no hidden fees. Our goal is to show you the quality of our expertise to establish a trust relationship."
+        },
+        "threePillars": {
+          "question": "Does the audit really cover the 3 SEO pillars (technical, on-page, off-page)?",
+          "answer": "Absolutely. Our audit is complete and covers the three fundamental dimensions of organic SEO: your site's technical structure, your content optimization (on-page) and your link strategy (off-page). This holistic approach ensures that all aspects impacting your visibility are analyzed."
+        },
+        "timeline": {
+          "question": "How long does it take to receive the audit report?",
+          "answer": "You will receive your detailed SEO audit report within 24 to 48 business hours after your request. For large sites (more than 500 pages), the delay may be slightly longer."
+        },
+        "reportContent": {
+          "question": "What exactly does the SEO audit report contain?",
+          "answer": "The report includes three main sections corresponding to SEO pillars: a complete technical analysis, an in-depth on-page audit, and an evaluation of your off-page strategy (backlinks and authority). Each section contains personalized recommendations ranked by priority order."
+        },
+        "subscription": {
+          "question": "Will I have to subscribe to a service after the audit?",
+          "answer": "No. Our SEO audit has no commitment and you're free to implement the recommendations yourself. If you want to be accompanied in the implementation, we can offer our services, but with no obligation on your part."
+        },
+        "requiredInfo": {
+          "question": "What information do I need to provide for the audit?",
+          "answer": "Your website URL, name, email and phone number are the only necessary information. If you have access to Google Search Console or Google Analytics, you can also give us temporary access for even more precise analysis, but this is not mandatory."
+        },
+        "implementation": {
+          "question": "How will I implement the recommendations after the audit?",
+          "answer": "The report contains actionable recommendations for each of the 3 pillars, with different levels of technical complexity. Some can be easily implemented by yourself, others may require a developer or SEO expert's intervention. We clearly indicate the difficulty level for each action."
+        },
+        "competitorAnalysis": {
+          "question": "Does the audit include competitor analysis?",
+          "answer": "Yes, we analyze your main competitors to identify their SEO strategies (technical, on-page and off-page) and spot opportunities they've missed that you could exploit. This comparative analysis is included in the audit report."
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Ready to Boost Your Google Visibility?",
+      "subtitle": "Your Google visibility starts with an in-depth SEO audit of the 3 fundamental SEO pillars.",
+      "description": "Request your free SEO audit now and get a clear roadmap to propel your site to Google's first page. Complete analysis in 48h, no commitment."
+    },
+    "form": {
+      "input": {
+        "email": "Email",
+        "name": "Full name",
+        "phone": "Phone number",
+        "company": "Company name",
+        "website": "Your website URL",
+        "textarea": {
+          "placeholder": "Tell us about your SEO goals and current challenges"
+        }
+      },
+      "submit": "Request my free SEO audit",
+      "submitting": "Sending...",
+      "errors": {
+        "required": "This field is required",
+        "invalidEmail": "Invalid email",
+        "invalidPhone": "Invalid phone number",
+        "invalidWebsite": "Invalid website URL",
+        "pleaseFixErrors": "Please correct the errors in the form"
+      },
+      "success": "Your SEO audit request has been sent successfully! We will contact you within 24h.",
+      "server": "An error occurred, please try again."
+    }
+  }
+}
+

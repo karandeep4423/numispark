@@ -1,138 +1,240 @@
 {
   "mobileDevelopment": {
     "hero": {
-      "title": "Innovative Mobile Anwendungen zur Belebung Ihres Unternehmens",
-      "subtitle": "Mit Fokus auf Skalierbarkeit, Reaktionsfähigkeit und Leistung"
+      "title": "Verwandeln Sie Ihre Vision in leistungsstarke mobile Anwendungen",
+      "description": "Eine leistungsstarke mobile Anwendung zu haben, ist ein echter Wachstumshebel. Bei Numispark entwerfen und entwickeln wir maßgeschneiderte mobile Anwendungen, die perfekt Ihre Geschäftsziele und die Erwartungen Ihrer Benutzer erfüllen."
     },
-    "keyFeatures": {
-      "title": "Haupt",
-      "titleHighlight": "Eigenschaften",
-      "titleEnd": "unserer Anwendungen",
+    "services": {
+      "title": "Unsere mobilen",
+      "titleHighlight": "Entwicklungsdienstleistungen",
       "items": {
         "nativeApps": {
-          "name": "Native Anwendungen (iOS & Android)",
-          "description": "Nutzen Sie die plattformspezifischen Funktionen und optimale Leistung dank nativer Anwendungen, die mit Expertise für iOS und Android entwickelt wurden. Unsere Anwendungen bieten ein unvergleichliches Nutzererlebnis."
+          "name": "Native iOS & Android Apps",
+          "description": "Wir entwickeln hochleistungsfähige native Anwendungen, die die Fähigkeiten jeder Plattform voll ausschöpfen für optimale Benutzererfahrung.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "iOS-Entwicklung mit Swift und SwiftUI",
+            "Android-Entwicklung mit Kotlin und Jetpack Compose",
+            "Perfekte Integration mit nativen Gerätefunktionen",
+            "Optimierung von Leistung und Batterieverbrauch",
+            "Kompatibilität mit neuesten iOS- und Android-Versionen",
+            "Einhaltung der Apple- und Google-Design-Richtlinien"
+          ],
+          "conclusion": "Native Anwendungen bieten überlegene Leistung, bessere Benutzererfahrung und vollständigen Zugriff auf Gerätefunktionen, die für komplexe oder hochwertige Anwendungen unerlässlich sind."
         },
         "crossPlatform": {
-          "name": "Plattformübergreifende Anwendungen",
-          "description": "Vereinfachen Sie die Entwicklung Ihrer Anwendung und erreichen Sie ein breiteres Publikum. Wir nutzen modernste Frameworks, um leistungsstarke Anwendungen zu erstellen, die nahtlos auf allen Plattformen funktionieren."
+          "name": "Cross-Platform-Anwendungen",
+          "description": "Optimieren Sie Ihr Budget und beschleunigen Sie Ihre Markteinführung mit unseren Cross-Platform-Lösungen, die es ermöglichen, eine einzige Codebasis für iOS und Android zu entwickeln.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "Entwicklung mit React Native für native-nahe Erfahrung",
+            "Flutter-Lösungen für flüssige und animierte Benutzeroberflächen",
+            "Maximale Code-Wiederverwendung zwischen Plattformen (bis zu 80%)",
+            "Gleichzeitige Bereitstellung auf iOS und Android",
+            "Integration nativer Module für spezifische Funktionen",
+            "Leistungsoptimierung für flüssige Benutzererfahrung"
+          ],
+          "conclusion": "Dieser Ansatz ist ideal für Startups, KMUs oder Projekte, die einen schnellen Markteintritt erfordern, während sie eine native-nahe Qualität bewahren."
         },
-        "scalableSecure": {
-          "name": "Skalierbare und sichere Anwendungen",
-          "description": "Ihr Wachstum ist unsere Priorität. Wir entwickeln Anwendungen, die sich an die Entwicklung Ihres Unternehmens anpassen und dabei in jeder Phase höchste Sicherheit gewährleisten."
+        "uxuiDesign": {
+          "name": "Mobile UX/UI-Design",
+          "description": "Wir erstellen intuitive, ästhetische und benutzerorientierte Oberflächen, um Engagement und Benutzerzufriedenheit zu maximieren.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "Analyse von Benutzerreisen und Wireframing",
+            "Oberflächendesign unter Einhaltung der iOS- und Android-Richtlinien",
+            "Interaktive Prototypenerstellung zum Testen der Erfahrung vor der Entwicklung",
+            "Optimierung von Touch-Interaktionen und Gesten",
+            "Adaptives Design für alle Bildschirmgrößen",
+            "Animationen und Mikrointeraktionen für ansprechende Erfahrung",
+            "Benutzertests zur Validierung und Verfeinerung der Oberflächen"
+          ],
+          "conclusion": "Unser benutzerzentrierter Ansatz garantiert Anwendungen, die nicht nur funktional, sondern wirklich angenehm zu verwenden sind und Akzeptanz und Bindung fördern."
         },
-        "speedOptimization": {
-          "name": "Geschwindigkeitsoptimierung",
-          "description": "Niemand mag eine langsame Anwendung! Unsere Optimierungstechniken garantieren ultraschnelle Ladezeiten, die die Zufriedenheit und das Engagement der Nutzer steigern."
-        }
-      }
-    },
-    "benefits": {
-      "title": "Vorteile",
-      "titleEnd": "bei uns zu wählen",
-      "items": {
-        "userExperience": {
-          "name": "Verbessertes Nutzererlebnis",
-          "description": "Unser Expertenteam ist auf die Entwicklung flüssiger und intuitiver mobiler Anwendungen spezialisiert, was maximale Verfügbarkeit und Benutzerfreundlichkeit für Ihre Zielgruppe gewährleistet."
-        },
-        "expertDevelopers": {
-          "name": "Erfahrene Expert-Entwickler",
-          "description": "Mit jahrelanger Erfahrung und tiefgreifendem Wissen über moderne Technologien entwickeln unsere Entwickler robuste, skalierbare und maßgeschneiderte Anwendungen, die perfekt auf Ihre einzigartigen Bedürfnisse zugeschnitten sind."
-        },
-        "appStoreSuccess": {
-          "name": "Optimiert für den Erfolg im App Store",
-          "description": "Wir gehen über die reine Entwicklung hinaus, indem wir uns auf Strategien konzentrieren, die Ihre Anwendung in den App Stores hervorheben. Unsere Lösungen sind darauf ausgelegt, Ihnen zu helfen, Ihre Ziele zu erreichen und die Nutzer zu begeistern."
-        },
-        "fastSecure": {
-          "name": "Schnelle und sichere Anwendungen",
-          "description": "Schnelligkeit und Sicherheit stehen im Mittelpunkt unseres Entwicklungsprozesses. Wir stellen sicher, dass Ihre Anwendung herausragende Leistungen bietet und gleichzeitig sensible Daten schützt, was Ihnen einen Wettbewerbsvorteil verschafft."
-        },
-        "updatesMaintenance": {
-          "name": "Regelmäßige Updates und Wartung",
-          "description": "Bleiben Sie auf dem neuesten Stand mit Anwendungen, die sich an Ihre Bedürfnisse anpassen. Unser Engagement für regelmäßige Updates und Wartung stellt sicher, dass Ihre Anwendung aktuell, funktionsfähig und industriekonform bleibt."
+        "maintenance": {
+          "name": "Wartung und Weiterentwicklung",
+          "description": "Wir gewährleisten die Nachhaltigkeit und Leistung Ihrer Anwendung mit unseren umfassenden Wartungs- und Weiterentwicklungsdiensten.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "Regelmäßige Updates für Kompatibilität mit neuen Betriebssystemen",
+            "Leistungsüberwachung und kontinuierliche Optimierungen",
+            "Fehlerbehebungen und Verbesserungen",
+            "Entwicklung neuer Funktionen",
+            "Analyse von Nutzungsdaten zur Steuerung der Weiterentwicklung",
+            "ASO-Optimierung (App Store Optimization)",
+            "Reaktiver technischer Support und strategische Begleitung"
+          ],
+          "conclusion": "Unsere flexiblen Wartungspakete passen sich Ihren Bedürfnissen an, von einfachen technischen Updates bis zur vollständigen Anwendungsentwicklung."
         }
       }
     },
     "process": {
-      "title": "Mobiler Entwicklungsprozess",
+      "title": "Unser mobiler Entwicklungsprozess",
       "steps": {
-        "analysis": {
-          "title": "Bedarfsanalyse",
-          "description": "Unser Team beginnt damit, die Ziele, die Zielgruppe und die Schlüsselfunktionen Ihrer mobilen Anwendung zu verstehen. Dieser Schritt sichert eine gemeinsame Vision und legt die Grundlage für eine erfolgreiche App."
+        "definition": {
+          "title": "Definition & Strategie",
+          "description": "Wir beginnen damit, Ihre Geschäftsziele, Zielgruppe und technischen Einschränkungen gründlich zu verstehen. Diese Phase umfasst die Analyse von Bedürfnissen und Zielen, Wettbewerbs- und Marktstudien, MVP-Definition (Minimum Viable Product), Auswahl geeigneter Technologien (nativ vs. Cross-Platform) und Planung der Entwicklungsphasen."
         },
-        "wireframing": {
-          "title": "Erstellung von Wireframes und Prototypen",
-          "description": "Wir erstellen detaillierte Wireframes und interaktive Prototypen, um den Ablauf und das Nutzererlebnis der Anwendung zu visualisieren. Diese Phase ermöglicht es Ihnen, Ihre Ideen zu verfeinern, bevor die Entwicklung beginnt."
+        "design": {
+          "title": "UX/UI-Design",
+          "description": "Wir gestalten die Benutzererfahrung und Oberfläche Ihrer Anwendung mit detaillierten Wireframes, optimierten Benutzerreisen, Oberflächendesign unter Einhaltung der Richtlinien jeder Plattform, interaktiven Prototypen zur Validierung und vorläufigen Benutzertests."
         },
         "development": {
-          "title": "Entwicklung",
-          "description": "Unsere Entwickler nutzen modernste Technologien und Frameworks, um skalierbare, reaktionsfähige und leistungsstarke mobile Anwendungen zu entwickeln, die speziell auf Ihre Bedürfnisse zugeschnitten sind."
+          "title": "Agile Entwicklung",
+          "description": "Wir entwickeln Ihre Anwendung iterativ mit regelmäßigen Demonstrationen. Unser Ansatz umfasst eine robuste und skalierbare technische Architektur, Frontend- und Backend-Entwicklung, Integration prioritärer Funktionen, kontinuierliche Unit- und Integrationstests sowie regelmäßige Demonstrationen und Anpassungen."
         },
         "testing": {
-          "title": "Tests",
-          "description": "Wir testen Ihre mobile Anwendung gründlich, um ihre Funktionalität, Leistung und Kompatibilität auf verschiedenen Geräten sicherzustellen, wodurch ein reibungsloses Nutzererlebnis gewährleistet und Fehler eliminiert werden."
+          "title": "Tests & Qualitätssicherung",
+          "description": "Wir garantieren die Qualität Ihrer Anwendung mit rigorosen Tests: funktionale Tests auf allen Zielgeräten, Leistungs- und Optimierungstests, Sicherheits- und Datenschutztests, echte Benutzertests, dann Korrekturen und Optimierungen."
         },
         "deployment": {
-          "title": "Bereitstellung im App Store",
-          "description": "Sobald Ihre Anwendung fertiggestellt und getestet ist, übernehmen wir den Launch in den App Stores. Wir sorgen dafür, dass die Richtlinien der Plattformen eingehalten werden und bieten Unterstützung, um die Sichtbarkeit Ihrer Anwendung zu optimieren."
+          "title": "Bereitstellung & Nachverfolgung",
+          "description": "Wir gewährleisten eine erfolgreiche Einführung und Nachverfolgung Ihrer Anwendung mit Vorbereitung der App Store- und Google Play-Einträge, ASO-Optimierung für Sichtbarkeit, Verwaltung des Apple/Google-Validierungsprozesses, Einrichtung von Analyse- und Überwachungstools, technischem Support nach der Einführung und Analyse von Benutzerfeedback mit Iterationen."
+        }
+      }
+    },
+    "appTypes": {
+      "title": "Arten von Anwendungen, die wir entwickeln",
+      "items": {
+        "ecommerce": {
+          "name": "E-Commerce- & Retail-Anwendungen",
+          "description": "Verwandeln Sie Ihren Online-Shop mit einer mobilen Anwendung, die ein reibungsloses und personalisiertes Einkaufserlebnis bietet.",
+          "features": [
+            "Interaktive Produktkataloge",
+            "Optimierter Kaufprozess",
+            "Sichere Zahlungen",
+            "Treueprogramme",
+            "Push-Benachrichtigungen für Werbeaktionen",
+            "Integration mit Ihren Verwaltungssystemen"
+          ]
+        },
+        "business": {
+          "name": "Unternehmens- & B2B-Anwendungen",
+          "description": "Optimieren Sie Ihre Geschäftsprozesse mit maßgeschneiderten Anwendungen für Ihre Mitarbeiter oder professionellen Kunden.",
+          "features": [
+            "Produktivitäts- und Verwaltungstools",
+            "Spezifische Geschäftsanwendungen",
+            "Kunden- und Lieferantenportale",
+            "Dashboards und Reporting",
+            "Integration mit Ihren Informationssystemen",
+            "Offline-/Online-Synchronisation"
+          ]
+        },
+        "marketplace": {
+          "name": "Service- & Marketplace-Anwendungen",
+          "description": "Schaffen Sie neue Geschäftsmöglichkeiten mit Verbindungsplattformen und Dienstleistungen.",
+          "features": [
+            "Buchungsanwendungen",
+            "Marktplätze und Community-Plattformen",
+            "Liefer- und Logistikdienste",
+            "Standortbasierte Anwendungen",
+            "Integrierte Zahlungslösungen",
+            "Bewertungs- und Rezensionssysteme"
+          ]
+        },
+        "innovative": {
+          "name": "Innovative & IoT-Anwendungen",
+          "description": "Erkunden Sie neue Gebiete mit Anwendungen, die intelligente Objekte und immersive Erfahrungen verbinden.",
+          "features": [
+            "IoT-Anwendungen (Internet der Dinge)",
+            "Erweiterte und virtuelle Realität",
+            "Integration von Wearables und vernetzten Objekten",
+            "Gesundheits- und Wellnesslösungen",
+            "Anwendungen mit künstlicher Intelligenz",
+            "Gamifizierte Erfahrungen"
+          ]
+        }
+      }
+    },
+    "whyUs": {
+      "title": "Warum Numispark wählen",
+      "reasons": {
+        "expertise": {
+          "title": "Fortgeschrittene technische Expertise",
+          "description": "Unser Team aus erfahrenen Entwicklern beherrscht die neuesten Technologien und Best Practices der mobilen Entwicklung für leistungsstarke und skalierbare Anwendungen."
+        },
+        "userCentric": {
+          "title": "Benutzerzentrierter Ansatz",
+          "description": "Wir stellen die Benutzererfahrung in den Mittelpunkt unseres Ansatzes und gewährleisten intuitive und ansprechende Anwendungen, die den tatsächlichen Erwartungen Ihrer Benutzer entsprechen."
+        },
+        "transparency": {
+          "title": "Transparente Methodik",
+          "description": "Unser agiler Prozess bezieht Sie in jeder Phase ein, mit regelmäßigen Demonstrationen, präziser Fortschrittsverfolgung und klarer Kommunikation über technische Entscheidungen."
+        },
+        "business": {
+          "title": "Geschäftsvision",
+          "description": "Wir entwickeln nicht nur Anwendungen, wir schaffen strategische Tools, die auf Ihre Geschäftsziele abgestimmt sind, mit besonderem Augenmerk auf ROI."
+        },
+        "support": {
+          "title": "Vollständige Begleitung",
+          "description": "Vom ersten Entwurf bis zur langfristigen Wartung begleiten wir Sie in jeder Phase des Lebens Ihrer Anwendung und garantieren eine dauerhafte Partnerschaft."
         }
       }
     },
     "portfolio": {
       "title": "Unsere neuesten",
       "titleHighlight": "Projekte",
-        "categories": {
-          "taskers": {
-            "name": "Taskers App-Entwicklung",
-            "content": "TaskerS Aufgabenmanagement-App Steigern Sie Ihre Produktivität mit unserer Aufgabenmanagement-App. Organisieren Sie Ihre Aufgaben, setzen Sie Prioritäten und erledigen Sie mehr in kürzerer Zeit.",
-            "design": "UI/UX-Design mit Figma",
-            "frontendDevelopment": "Frontend-Entwicklung mit Flutter",
-            "backendDevelopment": "Backend-Entwicklung mit Node.js und Express",
-            "database": "Datenbankverwaltung mit MongoDB"
-          },
-          "aviators": {
-            "name": "Aviator App-Entwicklung",
-            "content": "Die Entwicklung von Aviator’s Oasis legte den Fokus darauf, ein nahtloses Nutzererlebnis zu schaffen, das Funktionalität mit einer ansprechenden Benutzeroberfläche verbindet. Nutzer können problemlos durch verschiedene Funktionen navigieren, darunter Foren zum Austausch über Flugerlebnisse, Galerien zum Teilen von Fotos und eine Echtzeit-Flugverfolgung.",
-            "frontendDevelopment": "Frontend-Entwicklung mit Flutter",
-            "backendDevelopment": "Backend-Entwicklung mit Node.js und Express",
-            "design": "UI/UX-Design mit Figma",
-            "database": "Datenbankverwaltung mit MongoDB"
-          },
-          "wiefly": {
-            "name": "Wiefly App-Entwicklung",
-            "content": "Wiefly Reisebuchungs-App Buchen Sie Flüge ganz einfach mit unserer Flugbuchungs-App. Entdecken Sie eine Welt voller Reiseziele, finden Sie die besten Angebote und starten Sie Ihr nächstes Abenteuer ohne Stress.",
-            "design": "UI/UX-Design mit Figma",
-            "frontendDevelopment": "Frontend-Entwicklung mit Flutter",
-            "backendDevelopment": "Backend-Entwicklung mit Node.js und Express",
-            "database": "Datenbankverwaltung mit MongoDB"
-          }
+      "categories": {
+        "taskers": {
+          "name": "Taskers-App-Entwicklung",
+          "content": "TaskerS Aufgabenverwaltungsanwendung. Steigern Sie Ihre Produktivität mit unserer Aufgabenverwaltungsanwendung. Organisieren Sie Ihre Aufgaben, setzen Sie Prioritäten und erreichen Sie mehr in kürzerer Zeit.",
+          "design": "UI/UX-Design mit Figma",
+          "frontendDevelopment": "Frontend-Entwicklung mit Flutter",
+          "backendDevelopment": "Backend-Entwicklung mit Node.js und Express",
+          "database": "Datenbankverwaltung mit MongoDB"
+        },
+        "aviators": {
+          "name": "Aviator-App-Entwicklung",
+          "content": "Die Entwicklung von Aviator's Oasis konzentrierte sich auf eine reibungslose Benutzererfahrung, die Funktionalität mit einer visuell ansprechenden Oberfläche verbindet. Benutzer können verschiedene Optionen leicht erkunden, wie Foren zum Austausch über Flugerfahrungen, Galerien zum Teilen von Fotos und Echtzeit-Flugverfolgung.",
+          "frontendDevelopment": "Frontend-Entwicklung mit Flutter",
+          "backendDevelopment": "Backend-Entwicklung mit Node.js und Express",
+          "design": "UI/UX-Design mit Figma",
+          "database": "Datenbankverwaltung mit MongoDB"
+        },
+        "wiefly": {
+          "name": "Wiefly-App-Entwicklung",
+          "content": "Wiefly Reisebuchungsanwendung. Buchen Sie Ihre Flüge mit Leichtigkeit mit unserer Flugbuchungsanwendung. Erkunden Sie eine Welt von Destinationen, finden Sie die besten Angebote und begeben Sie sich problemlos auf Ihr nächstes Abenteuer.",
+          "design": "UI/UX-Design mit Figma",
+          "frontendDevelopment": "Frontend-Entwicklung mit Flutter",
+          "backendDevelopment": "Backend-Entwicklung mit Node.js und Express",
+          "database": "Datenbankverwaltung mit MongoDB"
         }
+      }
     },
     "faq": {
+      "title": "Häufig gestellte Fragen",
       "items": {
-        "quote": {
-          "question": "Wie kann ich ein Angebot für ein Projekt anfordern?",
-          "answer": "Sie können ein Angebot anfordern, indem Sie unser Online-Formular ausfüllen oder direkt unser Vertriebsteam kontaktieren. Wir werden Ihnen innerhalb von 24 Stunden einen detaillierten Vorschlag basierend auf Ihren Anforderungen zukommen lassen."
-        },
-        "industries": {
-          "question": "Welche Branchen bedienen wir?",
-          "answer": "Wir sind in einem breiten Spektrum von Branchen tätig, darunter Technologie, Gesundheitswesen, Finanzen, Einzelhandel, Bildung und Industrie. Unsere Lösungen sind maßgeschneidert, um den spezifischen Anforderungen jeder Branche gerecht zu werden."
+        "cost": {
+          "question": "Was kostet die Entwicklung einer mobilen Anwendung?",
+          "answer": "Die Kosten variieren erheblich je nach Komplexität, Funktionen und Zielplattformen. Ein einfaches MVP kann bei etwa 10.000 € beginnen, während eine komplexe Multi-Plattform-Anwendung mit fortgeschrittenem Backend eine Investition von 50.000 € oder mehr darstellen kann. Wir bieten phasenweise Ansätze an, um die Investition zu verteilen und das Konzept schrittweise zu validieren."
         },
         "timeline": {
-          "question": "Wie lange dauert ein typisches Projekt?",
-          "answer": "Die Dauer variiert je nach Umfang und Komplexität des Projekts. In der Regel dauern kleine Projekte 2 bis 4 Wochen, mittlere Projekte 1 bis 3 Monate und große Projekte 3 bis 6 Monate. Wir werden Ihnen einen detaillierten Zeitplan während der Erstberatung zur Verfügung stellen."
+          "question": "Wie lange dauert die Entwicklung einer mobilen Anwendung?",
+          "answer": "Typische Zeiträume variieren von 1-2 Monaten für ein MVP bis zu 3-5 Monaten für eine vollständige Multi-Plattform-Anwendung. Unser agiler Ansatz ermöglicht es, inkrementelle funktionale Versionen zu liefern, wobei eine erste testbare Version in der Regel innerhalb von 2-4 Wochen nach Projektstart verfügbar ist."
         },
-        "improveExisting": {
-          "question": "Können Sie meine bestehende mobile Anwendung verbessern?",
-          "answer": "Absolut! Wir bieten Audit-, Redesign- und Verbesserungsservices an, um die Leistung und das Nutzererlebnis Ihrer bestehenden mobilen Anwendung zu optimieren."
+        "nativeVsCross": {
+          "question": "Was ist der Unterschied zwischen einer nativen und einer Cross-Platform-Anwendung?",
+          "answer": "Native Anwendungen werden speziell für iOS oder Android entwickelt und bieten optimale Leistung und vollständigen Zugriff auf Gerätefunktionen. Cross-Platform-Lösungen (React Native, Flutter) ermöglichen es, eine einzige Codebasis für beide Plattformen zu entwickeln, wodurch Kosten und Zeitrahmen reduziert werden. Wir empfehlen den am besten geeigneten Ansatz basierend auf Ihrem Projekt, Budget und Prioritäten."
         },
-        "appStoreHelp": {
-          "question": "Helfen Sie bei der Einreichung der Anwendung in den App Stores?",
-          "answer": "Ja, wir übernehmen den gesamten Einreichungsprozess, sorgen dafür, dass die Richtlinien eingehalten werden, erstellen visuelle Elemente für den App Store und kümmern uns um Updates."
+        "security": {
+          "question": "Wie gewährleisten Sie die Datensicherheit in Ihren Anwendungen?",
+          "answer": "Sicherheit hat absolute Priorität. Wir implementieren Best Practices: Verschlüsselung sensibler Daten, sichere Authentifizierung (OAuth 2.0, JWT), Schutz vor SQL-Injektionen und XSS, DSGVO-Konformität, regelmäßige Sicherheitsaudits und proaktive Updates gegen neue Schwachstellen."
         },
-        "support": {
-          "question": "Bieten Sie nach dem Launch Support an?",
-          "answer": "Ja, wir bieten kontinuierlichen Support und Wartung, damit Ihre Anwendung stets aktuell, sicher und funktionsfähig bleibt."
+        "storePublishing": {
+          "question": "Wie handhaben Sie die Veröffentlichung in den Stores (App Store und Google Play)?",
+          "answer": "Wir übernehmen den gesamten Veröffentlichungsprozess: Vorbereitung der Assets (Icons, Screenshots), Verfassen ASO-optimierter Beschreibungen, Konfiguration der Produkteinträge, Einreichung in den Stores und Verwaltung von Validierungs-Feedback. Wir begleiten Sie auch bei der Erstellung von Entwicklerkonten, falls erforderlich."
+        },
+        "maintenance": {
+          "question": "Bieten Sie Wartungsdienste nach der Einführung an?",
+          "answer": "Ja, wir bieten mehrere Wartungspakete an, die auf Ihre Bedürfnisse zugeschnitten sind: technische Wartung (Fehlerbehebungen, Kompatibilität mit neuen Betriebssystemen), evolutionäre Wartung (neue Funktionen) und Benutzersupport. Unsere Wartungsverträge beginnen ab 500€/Monat und beinhalten garantierte Reaktionszeiten und regelmäßige Berichte."
+        },
+        "integration": {
+          "question": "Wie integrieren Sie meine Anwendung mit meinen bestehenden Systemen?",
+          "answer": "Wir entwickeln sichere APIs und Konnektoren, die eine nahtlose Integration mit Ihren bestehenden Systemen (CRM, ERP, E-Commerce usw.) ermöglichen. Unsere Expertise in Backend-Entwicklung und Systemintegration ermöglicht es uns, Lösungen zu erstellen, die mit Ihrem aktuellen technischen Ökosystem konsistent sind."
+        },
+        "success": {
+          "question": "Wie messen Sie den Erfolg einer mobilen Anwendung?",
+          "answer": "Wir definieren gemeinsam relevante KPIs (Downloads, Retention, Engagement, Conversions) und implementieren Analyse-Tools, um sie zu verfolgen. Regelmäßige Berichte ermöglichen es Ihnen, die Leistung zu bewerten und Verbesserungsmöglichkeiten zu identifizieren. Unser datengetriebener Ansatz leitet zukünftige Anwendungsentwicklungen."
         }
       }
     }

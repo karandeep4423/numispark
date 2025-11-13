@@ -1,102 +1,312 @@
 {
   "about": {
     "hero": {
-      "titlePart1": "Empowering Your Business with",
-      "titlePart2": "Innovative Digital Solutions",
-      "subtitle": "We're a team of passionate digital craftsmen, turning innovative ideas into powerful digital solutions that drive business growth."
+      "title": "About Numispark",
+      "subtitle": "Your French digital agency transforming your ideas into tangible success",
+      "description1": "Are your competitors already a step ahead digitally? Are you looking for a technical partner who truly understands your business challenges?",
+      "description2": "For the past 3 years, Numispark has supported 60+ French companies in their digital transformation with a 92% satisfaction rate.",
+      "description3": "We design tailor-made web and mobile solutions that deliver measurable results from the very first weeks."
     },
-    "coreValues": {
-      "title": "Our Core",
-      "titleHighlight": "Values",
-      "subtitle": "Comprehensive Solutions Tailored to Your Needs",
-      "items": {
-        "quality": {
-          "title": "Quality First",
-          "description": "We never compromise on quality, ensuring every project meets our high standards of excellence."
-        },
-        "delivery": {
-          "title": "Timely Delivery",
-          "description": "We respect deadlines and ensure projects are delivered on time without sacrificing quality."
-        },
-        "innovation": {
-          "title": "Innovation",
-          "description": "We stay ahead of technological trends to provide cutting-edge solutions for our clients."
-        },
-        "partnership": {
-          "title": "Client Partnership",
-          "description": "We build lasting relationships with our clients, becoming their trusted technology partners."
-        }
-      }
-    },
-    "team": {
-      "title": "Meet Our",
-      "titleHighlight": "Team",
-      "subtitle": "Meet the talented individuals who make our digital innovation possible.",
-      "members": {
-        "thomas": {
-          "name": "Thomas",
-          "role": "Co-founder & Project Manager"
-        },
+    "story": {
+      "title": "Our Story and Founders",
+      "subtitle": "The Numispark Journey (2022-2025)",
+      "description": "Founded in 2022 by Karandeep and Thomas, Numispark was born from a simple observation: French SMBs deserve the same technical expertise as large enterprises, but with a more human approach and adapted pricing.",
+      "founders": {
+        "title": "The founders:",
         "karan": {
           "name": "Karandeep",
-          "role": "Founder & CEO"
+          "role": "Founder & CEO",
+          "description": "Expert in development and digital strategy with prior experience in Parisian startups."
         },
+        "thomas": {
+          "name": "Thomas",
+          "role": "Co-founder & Project Lead",
+          "description": "Specialist in digital project management, guaranteeing methodology and timelines."
+        }
+      },
+      "stats": {
+        "title": "A few numbers that define us:",
+        "years": "3 years of proven expertise",
+        "projects": "60+ projects delivered successfully",
+        "experts": "10 experts at your service",
+        "satisfaction": "92% satisfied clients",
+        "retention": "85% client retention rate"
+      },
+      "location": "Based in Caen in the heart of dynamic Normandy, we now operate throughout France with clients from Paris to Marseille."
+    },
+    "mission": {
+      "title": "Our Vision and Mission",
+      "mission": "Democratize digital excellence for every French company, whatever its size.",
+      "vision": "Become the technical partner of reference for Normandy and French companies that want to succeed in their digital transformation."
+    },
+    "team": {
+      "title": "Our Team of Experts",
+      "devTeam": "Development Team",
+      "designTeam": "Design & Marketing Team",
+      "members": {
         "samuel": {
           "name": "Samuel",
-          "role": "Lead Developer"
-        },
-        "metheo": {
-          "name": "Methéo",
-          "role": "Frontend Developer"
+          "role": "Lead Developer",
+          "description": "Technical architect of our complex projects, mastering modern frameworks and scalable architecture.",
+          "quote": "Good code is like good architecture: it must be solid, functional, and built to last."
         },
         "lucas": {
           "name": "Lucas",
-          "role": "Backend Developer"
+          "role": "Backend Developer",
+          "description": "Specialist in server infrastructures, databases, security, and performance optimization.",
+          "quote": "The invisible part of an application is often the most important. That's where performance and security happen."
         },
-         "antoine": {
+        "metheo": {
+          "name": "Methéo",
+          "role": "Frontend Developer",
+          "description": "Expert in modern user interfaces, transforming mockups into fluid and engaging experiences.",
+          "quote": "The interface is the meeting point between humans and technology. It has to be intuitive, responsive, and pleasant."
+        },
+        "antoine": {
           "name": "Antoine",
-          "role": "Full Stack Developer"
+          "role": "Full Stack Developer",
+          "description": "Versatile across the entire development chain, with a global vision of complex projects.",
+          "quote": "The strength of a full-stack developer lies in understanding an application's complete ecosystem to create coherent solutions."
         },
-         "louis": {
+        "louis": {
           "name": "Louis",
-          "role": "Mobile Developer"
-        },
-        "sophia": {
-          "name": "Sophia",
-          "role": "Digital Marketing Specialist"
-        },
-        "amelie": {
-          "name": "Amélie",
-          "role": "SEO Expert"
+          "role": "Mobile Developer",
+          "description": "Passionate about mobile technologies, designing native and hybrid iOS/Android applications.",
+          "quote": "Mobile is no longer optional but essential. Every app must deliver an optimal experience on any device."
         },
         "charlotte": {
           "name": "Charlotte",
-          "role": "Graphic & UI/UX Designer"
+          "role": "Graphic & UI/UX Designer",
+          "description": "Creative and methodical, she designs interfaces combining aesthetics and ergonomics with a user-centred approach.",
+          "quote": "Design is not only what you see, it's how it works. Good design is invisible; it blends into the experience."
+        },
+        "amelie": {
+          "name": "Amélie",
+          "role": "SEO Expert",
+          "description": "Strategist in natural referencing, boosting online visibility with sustainable SEO strategies.",
+          "quote": "SEO is a marathon, not a sprint. It is a long-term effort that builds lasting visibility for your business."
+        },
+        "sophia": {
+          "name": "Sophia",
+          "role": "Digital Marketing Specialist",
+          "description": "Expert in comprehensive digital strategies, orchestrating marketing actions to amplify your projects' impact.",
+          "quote": "Effective digital marketing isn't the loudest voice, but the one that speaks best to the right person at the right time."
+        },
+        "karan": {
+          "name": "Karandeep",
+          "role": "Founder & CEO",
+          "description": "Expert in development and digital strategy with prior experience in Parisian startups."
+        },
+        "thomas": {
+          "name": "Thomas",
+          "role": "Co-founder & Project Lead",
+          "description": "Specialist in digital project management, guaranteeing methodology and timelines."
+        }
+      }
+    },
+    "sectors": {
+      "title": "Our Sector Expertise",
+      "subtitle": "Mastered Business Sectors",
+      "approach": {
+        "title": "Personalised Approach",
+        "description": "Every company is unique. Our method always starts with an in-depth listening phase to understand your specific challenges before proposing tailored solutions."
+      },
+      "items": {
+        "tourism": {
+          "title": "Tourism & Leisure",
+          "description": "Booking websites, local discovery apps, and tourism matchmaking platforms."
+        },
+        "ecommerce": {
+          "title": "E-commerce & Retail",
+          "description": "Online stores, marketplaces, conversion strategies, and inventory management systems."
+        },
+        "education": {
+          "title": "Education & Training",
+          "description": "LMS platforms, digital learning tools, and online education solutions."
+        },
+        "b2b": {
+          "title": "B2B Services",
+          "description": "Specialized business applications, collaborative intranets, and custom productivity tools."
+        },
+        "coaching": {
+          "title": "Coaching & Personal Development",
+          "description": "Optimized showcase sites, support tools, and booking platforms."
+        },
+        "industry": {
+          "title": "Industry & Craftsmanship",
+          "description": "Process digitalisation, optimized online presence, and interactive product catalogues."
+        }
+      }
+    },
+    "technologies": {
+      "title": "Technologies We Use",
+      "frontend": {
+        "title": "Frontend Development",
+        "items": [
+          "React, Vue.js, Angular",
+          "Responsive HTML5/CSS3",
+          "JavaScript/TypeScript",
+          "Modern UI frameworks"
+        ]
+      },
+      "backend": {
+        "title": "Backend Development",
+        "items": [
+          "PHP/Laravel",
+          "Node.js",
+          "Python",
+          "REST and GraphQL APIs"
+        ]
+      },
+      "mobile": {
+        "title": "Mobile Development",
+        "items": [
+          "React Native",
+          "Swift (native iOS)",
+          "Kotlin (native Android)",
+          "Hybrid applications"
+        ]
+      },
+      "cms": {
+        "title": "CMS & E-commerce",
+        "items": [
+          "Custom WordPress",
+          "Shopify Plus",
+          "PrestaShop",
+          "Drupal"
+        ]
+      },
+      "infrastructure": {
+        "title": "Infrastructure & Cloud",
+        "items": [
+          "AWS, Google Cloud, Azure",
+          "Docker and containerisation",
+          "MySQL, PostgreSQL, MongoDB",
+          "Caching systems and CDNs"
+        ]
+      },
+      "tools": {
+        "title": "Design & Project Tools",
+        "items": [
+          "Figma, Adobe XD",
+          "Git and continuous integration",
+          "Agile/Scrum methods",
+          "Monitoring and analytics"
+        ]
+      }
+    },
+    "values": {
+      "title": "Our Values and Commitments",
+      "items": {
+        "quality": {
+          "title": "Uncompromising Quality",
+          "description": "Rigorous development processes with in-depth testing phases. We prefer taking the necessary time rather than compromising on final quality.",
+          "quote": "Quality is never an accident; it is always the result of intelligent effort."
+        },
+        "deadlines": {
+          "title": "Guaranteed On-Time Delivery",
+          "description": "Agile methodology and meticulous planning to deliver within the agreed timelines. Detailed follow-up with regular checkpoints.",
+          "testimonial": "Always available and pleasant",
+          "author": "Olivier LENOIR"
+        },
+        "innovation": {
+          "title": "Continuous Technological Innovation",
+          "description": "Ongoing tech watch, regular team training, and adoption of the latest technologies to give you a head start."
+        },
+        "partnership": {
+          "title": "Long-Term Partnership",
+          "description": "85% client retention rate. We build long-term relationships and become your trusted technology partner."
+        },
+        "transparency": {
+          "title": "Total Transparency",
+          "description": "Clear and regular communication, no technical jargon, detailed progress reports, and transparent billing."
+        },
+        "education": {
+          "title": "Training and Knowledge Sharing",
+          "description": "Commitment to the educational ecosystem with our training at Rocket School and contribution to developing digital skills."
         }
       }
     },
     "whyChooseUs": {
-      "title": "Why",
-      "titleHighlight": "Partner",
-      "titleEnd": "With Us",
-      "subtitle": "Comprehensive Solutions Tailored to Your Needs",
+      "title": "Why Choose Numispark",
       "items": {
-        "experts": {
-          "title": "Dedicated Team of Experts",
-          "description": "Our team comprises industry veterans, certified professionals, and creative minds who bring diverse expertise to every project."
+        "expertise": {
+          "title": "Proven Technical Expertise",
+          "description": "3 years of experience, 60+ successful projects, and full mastery of the web and mobile development lifecycle."
         },
-        "solutions": {
-          "title": "Tailored Solutions for Every Client",
-          "description": "We understand that every business is unique. Our approach focuses on creating customized solutions that align perfectly with your specific needs."
+        "local": {
+          "title": "Local Approach, National Ambition",
+          "description": "Rooted in Caen (16 Bis Rue Froide, 14000 Caen), we serve clients across France with Norman proximity and Parisian expertise."
         },
-        "success": {
-          "title": "Proven Track Record of Success",
-          "description": "Our portfolio speaks for itself, with numerous successful projects across various industries. We've helped businesses achieve their digital goals."
+        "humanSize": {
+          "title": "Human-Sized Team, Sharp Expertise",
+          "description": "A team of 10 experts ensuring responsiveness and personalised support while mastering cutting-edge technologies."
         },
-        "communication": {
-          "title": "Transparent Communication",
-          "description": "We believe in building trust through transparency. Our clear communication channels and well-defined processes ensure you're always informed."
+        "roi": {
+          "title": "Measurable ROI",
+          "description": "92% client satisfaction, projects designed to generate a positive and lasting impact on your business."
+        },
+        "support": {
+          "title": "Long-Term Support",
+          "description": "Maintenance, enhancements, and responsive technical support. We remain your partner after delivery."
         }
+      }
+    },
+    "testimonials": {
+      "title": "Client Testimonials",
+      "items": {
+        "privateHonors": {
+          "name": "Private Honors",
+          "role": "Director",
+          "text": "I called on Numispark to develop our Private Honors web application. The development team was very pleasant and perfectly understood our product needs. I'm delighted with the result and now work with them on SEO and marketing."
+        },
+        "lydia": {
+          "name": "Lydia DUAN",
+          "role": "Project Manager",
+          "text": "Numispark wrote several SEO blog articles in Spanish for our client in the travel and tourism sector. The articles are high quality and their writing style is very flexible. Thank you so much for your excellent work, Numispark!"
+        },
+        "olivier": {
+          "name": "Olivier LENOIR",
+          "role": "CEO",
+          "text": "We have been working almost daily with Numispark for over a year. The team is always very involved and committed to carrying out the assignments entrusted to them. They love being proactive. Always available and pleasant, I highly recommend Numispark!"
+        },
+        "leo": {
+          "name": "Léo NISHIBAYASHI",
+          "role": "Rocket School",
+          "text": "Numispark was an excellent trainer at our school... Our students really appreciated their contribution!"
+        }
+      }
+    },
+    "future": {
+      "title": "Our Vision for the Future",
+      "subtitle": "Goals 2025-2027",
+      "items": {
+        "territorial": {
+          "title": "Regional Outreach",
+          "description": "Become the benchmark digital agency in Normandy while strengthening our national presence."
+        },
+        "innovation": {
+          "title": "Technological Innovation",
+          "description": "Deepen our expertise in AI, immersive technologies (AR/VR), and IoT solutions to anticipate tomorrow's needs."
+        },
+        "education": {
+          "title": "Educational Ecosystem",
+          "description": "Strengthen partnerships with schools and universities to train the digital talents of tomorrow."
+        },
+        "impact": {
+          "title": "Responsible Impact",
+          "description": "Actively contribute to the responsible digital transformation of French companies with eco-designed solutions."
+        }
+      },
+      "ambition": "Make Numispark not only an agency of digital excellence, but a true catalyst of innovation and growth for our clients and our Normandy territory."
+    },
+    "cta": {
+      "title": "Let's Talk About Your Project",
+      "description": "Do you have an ambitious digital project? An idea to bring to life quickly? Questions about our services? Our team responds within 24h to discuss your needs and propose concrete solutions.",
+      "contact": {
+        "address": "16 Bis Rue Froide, 14000 Caen, Normandy",
+        "expertise": "Web, Mobile, E-commerce, SEO, Digital Marketing",
+        "zone": "Throughout France, specialising in Normandy"
       }
     }
   }

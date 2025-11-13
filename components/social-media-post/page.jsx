@@ -1,26 +1,23 @@
 "use client";
 import React, { useState } from "react";
 import {
-  FileType,
-  ArrowUpRight,
-  Search,
-  Award,
-  Copy,
+  Pen,
   Instagram,
   Palette,
-  PaletteIcon,
-  TrendingUp,
-  MessageCircle,
-  Clock,
-  Layout,
-  Cloud,
+  ArrowUpRight,
+  Search,
   Brain,
   Target,
   PenTool,
-  Pen,
   CloudDownload,
+  Briefcase,
+  Handshake,
+  HeartHandshake,
+  Users,
+  Lightbulb,
+  CheckCircle2,
 } from "lucide-react";
-import Contact from "@/components/contact-us/page";
+import FormCTA from "@/components/Form-CTA/page";
 import HeroButtons from "@/components/HeroButtons/page";
 import FAQs from "@/components/Faqs/page";
 import Technologies from "@/components/Technologies/page";
@@ -42,99 +39,25 @@ const TECHNOLOGIES = [
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xd/xd-original.svg",
   },
 ];
-const steps = [
-  {
-    translationKey: "step1",
-    icon: <Brain className="text-white" size={80} />,
-  },
-  {
-    translationKey: "step2",
-    icon: <Search className="text-white" size={80} />,
-  },
-  {
-    translationKey: "step3",
-    icon: <Pen className="text-white" size={80} />,
-  },
-  {
-    translationKey: "step4",
-    icon: <Palette className="text-white" size={80} />,
-  },
-  {
-    translationKey: "step5",
-    icon: <CloudDownload className="text-white" size={80} />,
-  },
-];
 
-// Services array
 const Services = [
-  {
-    translationKey: "services.items.socialMediaDesign",
-    serviceIcon: Instagram,
-  },
-  {
-    translationKey: "services.items.logoBrandIdentity",
-    serviceIcon: PenTool,
-  },
-  {
-    translationKey: "services.items.brandKitDesign",
-    serviceIcon: PaletteIcon,
-  },
-  {
-    translationKey: "services.items.socialStrategy",
-    serviceIcon: Target,
-  },
-  {
-    translationKey: "services.items.socialMediaTemplates",
-    serviceIcon: Copy,
-  },
+  { serviceIcon: PenTool, translationKey: 0 },
+  { serviceIcon: Instagram, translationKey: 1 },
+  { serviceIcon: Palette, translationKey: 2 },
 ];
 
-// Features array
-const features = [
-  {
-    translationKey: "features.items.platformOptimization",
-    serviceIcon: Layout,
-  },
-  {
-    translationKey: "features.items.brandConsistency",
-    serviceIcon: PaletteIcon,
-  },
-  {
-    translationKey: "features.items.engagementFocus",
-    serviceIcon: MessageCircle,
-  },
-  {
-    translationKey: "features.items.multiFormatDelivery",
-    serviceIcon: FileType,
-  },
-];
-
-// WhyUs array
 const WhyUs = [
-  {
-    translationKey: "whyUs.items.platformExpertise",
-    serviceIcon: Award,
-  },
-  {
-    translationKey: "whyUs.items.brandFocusedDesign",
-    serviceIcon: Target,
-  },
-  {
-    translationKey: "whyUs.items.engagementDriven",
-    serviceIcon: TrendingUp,
-  },
-  {
-    translationKey: "whyUs.items.quickTurnaround",
-    serviceIcon: Clock,
-  },
-  {
-    translationKey: "whyUs.items.unlimitedRevisions",
-    serviceIcon: Cloud,
-  },
-  {
-    translationKey: "whyUs.items.socialMediaStrategy",
-    serviceIcon: Target,
-  },
+  { serviceIcon: Briefcase, translationKey: 0 },
+  { serviceIcon: Handshake, translationKey: 1 },
+  { serviceIcon: HeartHandshake, translationKey: 2 },
+  { serviceIcon: Users, translationKey: 3 },
+];
+
+const getSteps = (processSteps) => [
+  { icon: <Brain size={80} />, title: processSteps[0]?.title, description: processSteps[0]?.description },
+  { icon: <Search size={80} />, title: processSteps[1]?.title, description: processSteps[1]?.description },
+  { icon: <Pen size={80} />, title: processSteps[2]?.title, description: processSteps[2]?.description },
+  { icon: <CloudDownload size={80} />, title: processSteps[3]?.title, description: processSteps[3]?.description },
 ];
 
 // Portfolio items remain static if only images/categories are needed
@@ -169,10 +92,15 @@ const portfolioItems = [
     dotColor: "bg-emerald-500",
   },
 ];
+
 export default function SocialMediaLogoDesign() {
   const { t } = useTranslation("socialMediaLogoDesign");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedModal, setSelectedModal] = useState("");
+
+  // Get process steps from translations
+  const processSteps = t("socialMediaLogoDesign.process.steps", { returnObjects: true });
+  const steps = getSteps(processSteps);
 
   const openModal = (item) => {
     setSelectedModal(item);
@@ -197,117 +125,70 @@ export default function SocialMediaLogoDesign() {
           />
           Your browser does not support the video tag.
         </video>
-        <div className="relative z-20 flex w-full h-screen gap-5 justify-center items-center">
-          <div className="mt-10 sm:mt-0 flex flex-col justify-center items-center">
-            <h1 className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
-              {t("socialMediaLogoDesign.hero.title")}
-            </h1>
-            <span className="max-w-screen-xl my-3 text-gray-800 text-2xl text-center font-bold">
-              {t("socialMediaLogoDesign.hero.subtitle")}
-            </span>
-            <HeroButtons />
-          </div>
-        </div>
-      </div>
-
-      {/* Services Section */}
-      <div className="pt-16 bg-gray-50">
-        <h2 className="text-4xl px-2 text-center font-bold text-gray-800">
-          {t("socialMediaLogoDesign.services.sectionTitle")}{" "}
-          <span className="text-blue-600 bg-blue-200 p-1.5 rounded-2xl">
-            {t("socialMediaLogoDesign.services.sectionTitleHighlight")}
-          </span>
-        </h2>
-        <p className="px-2 text-xl text-center font-medium text-gray-600 mt-4">
-          {t("socialMediaLogoDesign.services.sectionSubtitle")}
-        </p>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {Services.map((service, index) => {
-            const Icon = service.serviceIcon;
-            const key = service.translationKey;
-            return (
-              <div
-                key={index}
-                className="flex flex-col items-center p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 md:hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
-                  <Icon className="text-blue-600 w-14 h-14" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {t(`socialMediaLogoDesign.${key}.serviceName`)}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {t(`socialMediaLogoDesign.${key}.serviceDes`)}
-                </p>
-              </div>
-            );
-          })}
+        <div className="relative z-20 flex w-full h-screen gap-5 justify-center items-center flex-col px-4">
+          <h2 className="text-2xl max-w-screen-xl text-gray-800 text-center font-bold">
+            {t("socialMediaLogoDesign.hero.subtitle")}
+          </h2>
+          <h1 className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
+            {t("socialMediaLogoDesign.hero.title")}
+          </h1>
+          <p className="max-w-3xl text-gray-700 text-lg text-center font-medium">
+            {t("socialMediaLogoDesign.hero.description")}
+          </p>
+          <HeroButtons />
         </div>
       </div>
 
       {/* Technologies Section */}
       <Technologies technologies={TECHNOLOGIES} />
 
-      {/* Features Section */}
-      <div className="pb-16 bg-gray-50">
-        <h2 className="text-4xl text-center font-bold text-gray-800">
-          {t("socialMediaLogoDesign.features.sectionTitle")}{" "}
-          <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            {t("socialMediaLogoDesign.features.sectionSubtitle")}
+      {/* Services Section */}
+      <div className="py-16 bg-gray-50">
+        <h2 className="text-4xl px-2 text-center font-bold text-gray-800 mb-12">
+          Nos services de{" "}
+          <span className="text-blue-600 bg-blue-200 p-1.5 rounded-2xl">
+            design graphique
           </span>
         </h2>
-        <p className="text-xl text-center font-medium text-gray-600 mt-4">
-          {t("socialMediaLogoDesign.features.sectionTagline")}
-        </p>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {features.map((feature, index) => {
-            const Icon = feature.serviceIcon;
-            const key = feature.translationKey;
-            return (
-              <div
-                key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
-                  <Icon className="text-blue-600 w-14 h-14" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {t(`socialMediaLogoDesign.${key}.serviceName`)}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {t(`socialMediaLogoDesign.${key}.serviceDes`)}
-                </p>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* Why Us Section */}
-      <div className="pb-16 bg-gray-50">
-        <h2 className="text-4xl text-center font-bold text-gray-800">
-          <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            {t("socialMediaLogoDesign.whyUs.sectionTitle")}
-          </span>{" "}
-          {t("socialMediaLogoDesign.whyUs.sectionSubtitle")}
-        </h2>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {WhyUs.map((service, index) => {
+        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-4">
+          {Services.map((service, index) => {
             const Icon = service.serviceIcon;
-            const key = service.translationKey;
+            const serviceData = t("socialMediaLogoDesign.services.items", {
+              returnObjects: true,
+            })[service.translationKey];
+
             return (
               <div
                 key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300"
+                className="p-6 bg-white shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 transition-shadow duration-300"
               >
-                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
-                  <Icon className="text-blue-600 w-14 h-14" />
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center justify-center p-3 bg-blue-200 rounded-xl">
+                    <Icon className="text-blue-600 w-8 h-8" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800">
+                    {serviceData.name}
+                  </h3>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {t(`socialMediaLogoDesign.${key}.serviceName`)}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {t(`socialMediaLogoDesign.${key}.serviceDes`)}
+                <p className="text-gray-700 mb-4">{serviceData.description}</p>
+                <div className="mb-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Lightbulb className="w-5 h-5 text-blue-600" />
+                    <h4 className="font-semibold text-gray-800">
+                      {serviceData.expertiseTitle}
+                    </h4>
+                  </div>
+                  <ul className="space-y-2">
+                    {serviceData.expertise.map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
+                        <span className="text-gray-600 text-sm">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <p className="text-sm italic text-gray-700 bg-blue-50 p-3 rounded-lg">
+                  {serviceData.conclusion}
                 </p>
               </div>
             );
@@ -316,10 +197,44 @@ export default function SocialMediaLogoDesign() {
       </div>
 
       {/* Process Section */}
-      <HowAgencyWorks steps={steps} namespace="socialMediaLogoDesign" />
+      <HowAgencyWorks 
+        steps={steps} 
+        namespace="socialMediaLogoDesign"
+        title={t("socialMediaLogoDesign.process.title")}
+      />
+
+      {/* Why Choose Us Section */}
+      <div className="py-16 bg-white">
+        <h2 className="text-4xl px-2 text-center font-bold text-gray-800 mb-12">
+          {t("socialMediaLogoDesign.whyUs.title")}
+        </h2>
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-4">
+          {WhyUs.map((reason, index) => {
+            const Icon = reason.serviceIcon;
+            const reasonData = t("socialMediaLogoDesign.whyUs.reasons", {
+              returnObjects: true,
+            })[reason.translationKey];
+
+            return (
+              <div
+                key={index}
+                className="flex flex-col items-center text-center p-6 bg-gray-50 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 transition-shadow duration-300"
+              >
+                <div className="flex items-center justify-center p-4 bg-blue-200 rounded-2xl mb-4">
+                  <Icon className="text-blue-600 w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">
+                  {reasonData.title}
+                </h3>
+                <p className="text-gray-600">{reasonData.description}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
 
       {/* Portfolio Section */}
-      <div className="max-w-7xl mx-auto px-4 pt-12">
+      <div className="max-w-7xl mx-auto px-4 py-16 bg-gray-50">
         <h2 className="text-4xl text-center font-bold text-gray-800">
           {t("socialMediaLogoDesign.portfolio.sectionTitle")}{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
@@ -363,6 +278,7 @@ export default function SocialMediaLogoDesign() {
 
       {/* FAQs Section */}
       <FAQs
+        title={t("socialMediaLogoDesign.faq.title")}
         faqData={Object.keys(
           t("socialMediaLogoDesign.faq.items", { returnObjects: true })
         ).map((key) => ({
@@ -372,7 +288,7 @@ export default function SocialMediaLogoDesign() {
       />
 
       {/* Contact Section */}
-      <Contact />
+      <FormCTA />
     </div>
   );
 }

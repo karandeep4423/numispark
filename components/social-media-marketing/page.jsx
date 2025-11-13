@@ -1,35 +1,26 @@
 "use client";
 import {
-  UserPlus,
-  Map,
-  ArrowUpRight,
-  Search,
-  Palette,
-  CloudDownload,
-  PieChart,
-  Headphones,
-  Eye,
-  Pen,
-  Mic,
-  Heart,
-  Video,
-  Activity,
-  BarChart2,
-  Edit3,
-  DollarSign,
-  Smile,
-  FileText,
-  Image,
-  Instagram,
-  TrendingUp,
-  MessageCircle,
-  Globe,
   Brain,
-  Target,
+  Pen,
   BarChart,
-  Play,
+  Users,
+  Target,
+  Briefcase,
+  Handshake,
+  HeartHandshake,
+  Globe,
+  MessageCircle,
+  Lightbulb,
+  CheckCircle2,
+  Instagram,
+  Facebook,
+  Linkedin,
+  TrendingUp,
+  Edit3,
+  ShoppingCart,
+  Rocket,
 } from "lucide-react";
-import Contact from "@/components/contact-us/page";
+import FormCTA from "@/components/Form-CTA/page";
 import HeroButtons from "@/components/HeroButtons/page";
 import FAQs from "@/components/Faqs/page";
 import Technologies from "@/components/Technologies/page";
@@ -54,211 +45,135 @@ const TECHNOLOGIES = [
     logo: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTUuNyIgaGVpZ2h0PSIxMDQiIHZpZXdCb3g9IjAgMCAyNTYgMTcxIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImxvZ29zTWV0YUljb24wIiB4MT0iMTMuODc4JSIgeDI9Ijg5LjE0NCUiIHkxPSI1NS45MzQlIiB5Mj0iNTguNjk0JSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNjRlMSIvPjxzdG9wIG9mZnNldD0iNDAlIiBzdG9wLWNvbG9yPSIjMDA2NGUxIi8+PHN0b3Agb2Zmc2V0PSI4MyUiIHN0b3AtY29sb3I9IiMwMDczZWUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDgyZmIiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0ibG9nb3NNZXRhSWNvbjEiIHgxPSI1NC4zMTUlIiB4Mj0iNTQuMzE1JSIgeTE9IjgyLjc4MiUiIHkyPSIzOS4zMDclIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDA4MmZiIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDA2NGUwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0iIzAwODFmYiIgZD0iTTI3LjY1MSAxMTIuMTM2YzAgOS43NzUgMi4xNDYgMTcuMjggNC45NSAyMS44MmMzLjY3NyA1Ljk0NyA5LjE2IDguNDY2IDE0Ljc1MSA4LjQ2NmM3LjIxMSAwIDEzLjgwOC0xLjc5IDI2LjUyLTE5LjM3MmMxMC4xODUtMTQuMDkyIDIyLjE4Ni0zMy44NzQgMzAuMjYtNDYuMjc1bDEzLjY3NS0yMS4wMWM5LjQ5OS0xNC41OTEgMjAuNDkzLTMwLjgxMSAzMy4xLTQxLjgwNkMxNjEuMTk2IDQuOTg1IDE3Mi4yOTggMCAxODMuNDcgMGMxOC43NTggMCAzNi42MjUgMTAuODcgNTAuMyAzMS4yNTdDMjQ4LjczNSA1My41ODQgMjU2IDgxLjcwNyAyNTYgMTEwLjcyOWMwIDE3LjI1My0zLjQgMjkuOTMtOS4xODcgMzkuOTQ2Yy01LjU5MSA5LjY4Ni0xNi40ODggMTkuMzYzLTM0LjgxOCAxOS4zNjN2LTI3LjYxNmMxNS42OTUgMCAxOS42MTItMTQuNDIyIDE5LjYxMi0zMC45MjdjMC0yMy41Mi01LjQ4NC00OS42MjMtMTcuNTY0LTY4LjI3M2MtOC41NzQtMTMuMjMtMTkuNjg0LTIxLjMxMy0zMS45MDctMjEuMzEzYy0xMy4yMiAwLTIzLjg1OSA5Ljk3LTM1LjgxNSAyNy43NWMtNi4zNTYgOS40NDUtMTIuODgyIDIwLjk1Ni0yMC4yMDggMzMuOTQ0bC04LjA2NiAxNC4yODljLTE2LjIwMyAyOC43MjgtMjAuMzA3IDM1LjI3MS0yOC40MDggNDYuMDdjLTE0LjIgMTguOTEtMjYuMzI0IDI2LjA3Ni00Mi4yODcgMjYuMDc2Yy0xOC45MzUgMC0zMC45MS04LjItMzguMzI1LTIwLjU1NkMyLjk3MyAxMzkuNDEzIDAgMTI2LjIwMiAwIDExMS4xNDh6Ii8+PHBhdGggZmlsbD0idXJsKCNsb2dvc01ldGFJY29uMCkiIGQ9Ik0yMS44MDIgMzMuMjA2QzM0LjQ4IDEzLjY2NiA1Mi43NzQgMCA3My43NTcgMEM4NS45MSAwIDk3Ljk5IDMuNTk3IDExMC42MDUgMTMuODk3YzEzLjc5OCAxMS4yNjEgMjguNTA1IDI5LjgwNSA0Ni44NTMgNjAuMzY4bDYuNTggMTAuOTY3YzE1Ljg4MSAyNi40NTkgMjQuOTE3IDQwLjA3IDMwLjIwNSA0Ni40OWM2LjgwMiA4LjI0MyAxMS41NjUgMTAuNyAxNy43NTIgMTAuN2MxNS42OTUgMCAxOS42MTItMTQuNDIyIDE5LjYxMi0zMC45MjdsMjQuMzkzLS43NjZjMCAxNy4yNTMtMy40IDI5LjkzLTkuMTg3IDM5Ljk0NmMtNS41OTEgOS42ODYtMTYuNDg4IDE5LjM2My0zNC44MTggMTkuMzYzYy0xMS4zOTUgMC0yMS40OS0yLjQ3NS0zMi42NTQtMTMuMDA3Yy04LjU4Mi04LjA4My0xOC42MTUtMjIuNDQzLTI2LjMzNC0zNS4zNTJsLTIyLjk2LTM4LjM1MkMxMTguNTI4IDY0LjA4IDEwNy45NiA0OS43MyAxMDEuODQ1IDQzLjIzYy02LjU3OC02Ljk4OC0xNS4wMzYtMTUuNDI4LTI4LjUzMi0xNS40MjhjLTEwLjkyMyAwLTIwLjIgNy42NjYtMjcuOTYzIDE5LjM5eiIvPjxwYXRoIGZpbGw9InVybCgjbG9nb3NNZXRhSWNvbjEpIiBkPSJNNzMuMzEyIDI3LjgwMmMtMTAuOTIzIDAtMjAuMiA3LjY2Ni0yNy45NjMgMTkuMzljLTEwLjk3NiAxNi41NjgtMTcuNjk4IDQxLjI0NS0xNy42OTggNjQuOTQ0YzAgOS43NzUgMi4xNDYgMTcuMjggNC45NSAyMS44Mkw5LjAyNyAxNDkuNDgyQzIuOTczIDEzOS40MTMgMCAxMjYuMjAyIDAgMTExLjE0OEMwIDgzLjc3MiA3LjUxNCA1NS4yNCAyMS44MDIgMzMuMjA2QzM0LjQ4IDEzLjY2NiA1Mi43NzQgMCA3My43NTcgMHoiLz48L3N2Zz4=",
   },
 ];
+
 const Services = [
-  { translationKey: "services.items.contentCreation", serviceIcon: Edit3 },
-  {
-    translationKey: "services.items.campaignManagement",
-    serviceIcon: Activity,
-  },
-  {
-    translationKey: "services.items.analyticsReporting",
-    serviceIcon: BarChart2,
-  },
-  {
-    translationKey: "services.items.influencerMarketing",
-    serviceIcon: UserPlus,
-  },
-  { translationKey: "services.items.socialStrategyDev", serviceIcon: Map },
-  { translationKey: "services.items.paidAdvertising", serviceIcon: DollarSign },
-  { translationKey: "services.items.competitorAnalysis", serviceIcon: Eye },
-  {
-    translationKey: "services.items.performanceOptimization",
-    serviceIcon: TrendingUp,
-  },
+  { serviceIcon: Target, translationKey: 0 },
+  { serviceIcon: Edit3, translationKey: 1 },
+  { serviceIcon: Users, translationKey: 2 },
+  { serviceIcon: TrendingUp, translationKey: 3 },
+  { serviceIcon: BarChart, translationKey: 4 },
+  { serviceIcon: MessageCircle, translationKey: 5 },
 ];
-const features = [
-  { translationKey: "features.items.platformExpertise", serviceIcon: Globe },
-  { translationKey: "features.items.creativeContent", serviceIcon: Image },
-  {
-    translationKey: "features.items.engagementOptimization",
-    serviceIcon: MessageCircle,
-  },
-  { translationKey: "features.items.realTimeAnalytics", serviceIcon: PieChart },
-  { translationKey: "features.items.brandVoice", serviceIcon: Mic },
-  { translationKey: "features.items.socialListening", serviceIcon: Headphones },
-  { translationKey: "features.items.videoMarketing", serviceIcon: Video },
-  {
-    translationKey: "features.items.trendUtilization",
-    serviceIcon: TrendingUp,
-  },
-  { translationKey: "features.items.advancedTargeting", serviceIcon: Map }, // using Map for targeting
+
+const AppTypes = [
+  { serviceIcon: Instagram, translationKey: 0 },
+  { serviceIcon: Linkedin, translationKey: 1 },
+  { serviceIcon: Globe, translationKey: 2 },
+  { serviceIcon: Facebook, translationKey: 3 },
+];
+
+const UseCases = [
+  { serviceIcon: ShoppingCart, translationKey: 0 },
+  { serviceIcon: Briefcase, translationKey: 1 },
+  { serviceIcon: Rocket, translationKey: 2 },
+  { serviceIcon: Globe, translationKey: 3 },
 ];
 
 const WhyUs = [
-  { translationKey: "whyUs.items.brandAwareness", serviceIcon: Globe },
-  { translationKey: "whyUs.items.targetedCampaigns", serviceIcon: Target },
-  { translationKey: "whyUs.items.consistentEngagement", serviceIcon: Heart },
-  { translationKey: "whyUs.items.realTimeAnalytics", serviceIcon: BarChart2 },
-  { translationKey: "whyUs.items.customerLoyalty", serviceIcon: Smile },
-  { translationKey: "whyUs.items.costEffective", serviceIcon: DollarSign },
+  { serviceIcon: Briefcase, translationKey: 0 },
+  { serviceIcon: Handshake, translationKey: 1 },
+  { serviceIcon: HeartHandshake, translationKey: 2 },
+  { serviceIcon: Target, translationKey: 3 },
+  { serviceIcon: Users, translationKey: 4 },
 ];
 
-const steps = [
-  {
-    translationKey: "step1",
-    icon: <Brain className="text-white" size={80} />,
-  },
-  {
-    translationKey: "step2",
-    icon: <Search className="text-white" size={80} />,
-  },
-  {
-    translationKey: "step3",
-    icon: <Pen className="text-white" size={80} />,
-  },
-  {
-    translationKey: "step4",
-    icon: <Palette className="text-white" size={80} />,
-  },
-  {
-    translationKey: "step5",
-    icon: <CloudDownload className="text-white" size={80} />,
-  },
+const getSteps = (processSteps) => [
+  { icon: <Brain size={80} />, title: processSteps[0]?.title, description: processSteps[0]?.description },
+  { icon: <Edit3 size={80} />, title: processSteps[1]?.title, description: processSteps[1]?.description },
+  { icon: <TrendingUp size={80} />, title: processSteps[2]?.title, description: processSteps[2]?.description },
+  { icon: <BarChart size={80} />, title: processSteps[3]?.title, description: processSteps[3]?.description },
+  { icon: <Rocket size={80} />, title: processSteps[4]?.title, description: processSteps[4]?.description },
 ];
 
 export default function SocialMediaMarketing() {
   const { t } = useTranslation("socialMediaMarketing");
 
+  // Get process steps from translations
+  const processSteps = t("socialMediaMarketing.process.steps", { returnObjects: true });
+  const steps = getSteps(processSteps);
+
   return (
     <div>
       {/* Hero Section */}
-      <div className="bg-blue-200">
-        <div className="max-w-screen-xl m-auto p-5 flex flex-col lg:flex-row h-screen gap-5 justify-center items-center">
-          <div className="w-full flex flex-col items-center">
-            <h1 className="text-5xl text-gray-800 sm:text-6xl text-center font-extrabold">
-              {t("socialMediaMarketing.hero.title")}
-            </h1>
-            <span className="text-gray-800 my-2 text-2xl text-center font-bold">
-              {t("socialMediaMarketing.hero.subtitle")}
-            </span>
-            <HeroButtons />
-          </div>
-          <video
-            title="marketing-digital-hero-section-animation"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className=" w-2/4 h-96 object-contain z-20 mix-blend-multiply"
-          >
-            <source
+      <div className="relative h-screen flex flex-col sm:flex-row justify-center items-center overflow-hidden bg-blue-200">
+        <video
+          title="design-logo-et-posts-reseaux-sociaux"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute opacity-60 inset-0 w-full h-full object-contain z-20 mix-blend-multiply"
+        >
+          <source
               src="https://d3h46s6jorvpfj.cloudfront.net/marketing-digital-hero-section-animation.mp4"
               type="video/mp4"
             />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-
-      {/* Services Section */}
-      <div className="pt-16 bg-gray-50">
-        <h2 className="text-4xl px-2 text-center font-bold text-gray-800">
-          {t("socialMediaMarketing.services.sectionTitle")}{" "}
-          <span className="text-blue-600 bg-blue-200 p-1.5 rounded-2xl">
-            {t("socialMediaMarketing.services.sectionTitleHighlight")}
-          </span>
-        </h2>
-        <p className="px-2 text-xl text-center font-medium text-gray-600 mt-4">
-          {t("socialMediaMarketing.services.sectionSubtitle")}
-        </p>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {Services.map((service, index) => {
-            const Icon = service.serviceIcon;
-            const key = service.translationKey;
-            return (
-              <div
-                key={index}
-                className="flex flex-col items-center p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 md:hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
-                  <Icon className="text-blue-600 w-14 h-14" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {t(`socialMediaMarketing.${key}.serviceName`)}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {t(`socialMediaMarketing.${key}.serviceDes`)}
-                </p>
-              </div>
-            );
-          })}
+          Your browser does not support the video tag.
+        </video>
+        <div className="relative z-20 flex w-full h-screen gap-5 justify-center items-center flex-col px-4">
+          <h2 className="text-2xl max-w-screen-xl text-gray-800 text-center font-bold">
+            {t("socialMediaMarketing.hero.subtitle")}
+          </h2>
+          <h1 className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
+            {t("socialMediaMarketing.hero.title")}
+          </h1>
+          <p className="max-w-3xl text-gray-700 text-lg text-center font-medium">
+            {t("socialMediaMarketing.hero.description")}
+          </p>
+          <HeroButtons />
         </div>
       </div>
 
       {/* Technologies Section */}
       <Technologies technologies={TECHNOLOGIES} />
 
-      {/* Features Section */}
-      <div className="pb-16 bg-gray-50">
-        <h2 className="text-4xl text-center font-bold text-gray-800">
-          {t("socialMediaMarketing.features.sectionTitle")}{" "}
-          <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            {t("socialMediaMarketing.features.sectionHighlight")}
+      {/* Services Section */}
+      <div className="py-16 bg-gray-50">
+        <h2 className="text-4xl px-2 text-center font-bold text-gray-800 mb-12">
+          Nos services de{" "}
+          <span className="text-blue-600 bg-blue-200 p-1.5 rounded-2xl">
+            marketing digital
           </span>
-          {t("socialMediaMarketing.features.sectionSubtitle")}{" "}
         </h2>
-        <p className="text-xl text-center font-medium text-gray-600 mt-4">
-          {t("socialMediaMarketing.features.sectionTagline")}
-        </p>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {features.map((feature, index) => {
-            const Icon = feature.serviceIcon;
-            const key = feature.translationKey;
-            return (
-              <div
-                key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
-                  <Icon className="text-blue-600 w-14 h-14" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {t(`socialMediaMarketing.${key}.serviceName`)}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {t(`socialMediaMarketing.${key}.serviceDes`)}
-                </p>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* Why Us Section */}
-      <div className="pb-16 bg-gray-50">
-        <h2 className="text-4xl text-center font-bold text-gray-800">
-          <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            {t("socialMediaMarketing.whyUs.sectionTitle")}
-          </span>{" "}
-          {t("socialMediaMarketing.whyUs.sectionSubtitle")}
-        </h2>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {WhyUs.map((service, index) => {
+        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-4">
+          {Services.map((service, index) => {
             const Icon = service.serviceIcon;
-            const key = service.translationKey;
+            const serviceData = t("socialMediaMarketing.services.items", {
+              returnObjects: true,
+            })[service.translationKey];
+
             return (
               <div
                 key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300"
+                className="p-6 bg-white shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 transition-shadow duration-300"
               >
-                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
-                  <Icon className="text-blue-600 w-14 h-14" />
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center justify-center p-3 bg-blue-200 rounded-xl">
+                    <Icon className="text-blue-600 w-8 h-8" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800">
+                    {serviceData.name}
+                  </h3>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {t(`socialMediaMarketing.${key}.serviceName`)}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {t(`socialMediaMarketing.${key}.serviceDes`)}
+                <p className="text-gray-700 mb-4">{serviceData.description}</p>
+                <div className="mb-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Lightbulb className="w-5 h-5 text-blue-600" />
+                    <h4 className="font-semibold text-gray-800">
+                      {serviceData.expertiseTitle}
+                    </h4>
+                  </div>
+                  <ul className="space-y-2">
+                    {serviceData.expertise.map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
+                        <span className="text-gray-600 text-sm">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <p className="text-sm italic text-gray-700 bg-blue-50 p-3 rounded-lg">
+                  {serviceData.conclusion}
                 </p>
               </div>
             );
@@ -267,10 +182,123 @@ export default function SocialMediaMarketing() {
       </div>
 
       {/* Process Section */}
-      <HowAgencyWorks steps={steps} namespace="socialMediaMarketing" />
+      <HowAgencyWorks 
+        steps={steps} 
+        namespace="socialMediaMarketing"
+        title={t("socialMediaMarketing.process.title")}
+      />
+
+      {/* Platforms Section */}
+      <div className="py-16 bg-gray-50">
+        <h2 className="text-4xl px-2 text-center font-bold text-gray-800 mb-12">
+          {t("socialMediaMarketing.appTypes.title")}
+        </h2>
+        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-4">
+          {AppTypes.map((type, index) => {
+            const Icon = type.serviceIcon;
+            const typeData = t("socialMediaMarketing.appTypes.types", {
+              returnObjects: true,
+            })[type.translationKey];
+
+            return (
+              <div
+                key={index}
+                className="p-6 bg-white shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 transition-shadow duration-300"
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center justify-center p-3 bg-blue-200 rounded-xl">
+                    <Icon className="text-blue-600 w-8 h-8" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800">
+                    {typeData.name}
+                  </h3>
+                </div>
+                <ul className="space-y-2">
+                  {typeData.points.map((point, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
+                      <span className="text-gray-600 text-sm">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Use Cases Section */}
+      <div className="py-16 bg-white">
+        <h2 className="text-4xl px-2 text-center font-bold text-gray-800 mb-12">
+          {t("socialMediaMarketing.useCases.title")}
+        </h2>
+        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-4">
+          {UseCases.map((useCase, index) => {
+            const Icon = useCase.serviceIcon;
+            const useCaseData = t("socialMediaMarketing.useCases.types", {
+              returnObjects: true,
+            })[useCase.translationKey];
+
+            return (
+              <div
+                key={index}
+                className="p-6 bg-gray-50 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 transition-shadow duration-300"
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center justify-center p-3 bg-blue-200 rounded-xl">
+                    <Icon className="text-blue-600 w-8 h-8" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800">
+                    {useCaseData.name}
+                  </h3>
+                </div>
+                <ul className="space-y-2">
+                  {useCaseData.points.map((point, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
+                      <span className="text-gray-600 text-sm">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Why Choose Us Section */}
+      <div className="py-16 bg-gray-50">
+        <h2 className="text-4xl px-2 text-center font-bold text-gray-800 mb-12">
+          {t("socialMediaMarketing.whyUs.title")}
+        </h2>
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+          {WhyUs.map((reason, index) => {
+            const Icon = reason.serviceIcon;
+            const reasonData = t("socialMediaMarketing.whyUs.reasons", {
+              returnObjects: true,
+            })[reason.translationKey];
+
+            return (
+              <div
+                key={index}
+                className="flex flex-col items-center text-center p-6 bg-white shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 transition-shadow duration-300"
+              >
+                <div className="flex items-center justify-center p-4 bg-blue-200 rounded-2xl mb-4">
+                  <Icon className="text-blue-600 w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">
+                  {reasonData.title}
+                </h3>
+                <p className="text-gray-600">{reasonData.description}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
 
       {/* FAQs Section */}
       <FAQs
+        title={t("socialMediaMarketing.faq.title")}
         faqData={Object.keys(
           t("socialMediaMarketing.faq.items", { returnObjects: true })
         ).map((key) => ({
@@ -280,7 +308,7 @@ export default function SocialMediaMarketing() {
       />
 
       {/* Contact Section */}
-      <Contact />
+      <FormCTA />
     </div>
   );
 }

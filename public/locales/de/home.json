@@ -1,67 +1,188 @@
 {
   "home": {
     "hero": {
-      "title": "Befähigen Sie Ihr Unternehmen mit",
-      "titleHighlight": "Weltklasse-Digitallösungen",
-      "subtitle": "Webentwicklung | Mobile Apps | UI/UX-Design | Digitales Marketing"
+      "title": "Digitalagentur in Frankreich - Website-Erstellung & Mobile App-Entwicklung",
+      "subtitle": "Ihr Partner für erfolgreiche digitale Transformation",
+      "description": "Numispark ist Ihre Webagentur in Frankreich, spezialisiert auf Website-Erstellung und maßgeschneiderte Anwendungsentwicklung.",
+      "details": "Ideal gelegen in Frankreich und in ganz Frankreich tätig, unterstützen wir Unternehmen bei ihrer digitalen Transformation mit Kreativität, technischer Expertise und einem ergebnisorientierten Ansatz."
+    },
+    "about": {
+      "title": "Wer sind wir?",
+      "description": "Numispark ist eine französische Digitalagentur, die Unternehmen bei ihrer digitalen Entwicklung unterstützt.",
+      "mission": "Unser multidisziplinäres Team vereint technisches Fachwissen und kreative Vision, um leistungsstarke Web- und Mobillösungen zu entwickeln.",
+      "valuesTitle": "Unsere Werte",
+      "values": {
+        "innovation": "Innovation",
+        "availability": "Verfügbarkeit",
+        "transparency": "Transparenz",
+        "excellence": "Technische Exzellenz"
+      },
+      "experience": "Mit über 60 abgeschlossenen Projekten für Kunden aus allen Branchen, von kleinen Unternehmen bis zu Großkonzernen, stellen wir unser Fachwissen in den Dienst Ihres digitalen Wachstums."
     },
     "services": {
-      "title": "Unser Kern",
+      "title": "Unsere",
       "titleHighlight": "Dienstleistungen",
-      "subtitle": "Umfassende Lösungen, die auf Ihre Bedürfnisse zugeschnitten sind",
       "items": {
         "webDevelopment": {
-          "name": "Webentwicklung",
-          "description": "Erstellen Sie skalierbare, plattformunabhängige Weblösungen für verbesserte Zugänglichkeit und Reichweite."
+          "name": "Website-Erstellung",
+          "description": "Wir erstellen maßgeschneiderte, responsive Websites, die für Suchmaschinen optimiert sind und Ihre Besucher in Kunden verwandeln.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "Mobile-First-Design für optimale Benutzererfahrung auf allen Geräten",
+            "Individuelle Entwicklung oder CMS nach Ihren Bedürfnissen",
+            "SEO-Optimierung von Anfang an integriert",
+            "Leistungsstarke Präsentationsseiten und skalierbare E-Commerce-Seiten",
+            "Intuitive administrative Oberflächen für einfache Verwaltung"
+          ]
         },
         "mobileAppDevelopment": {
-          "name": "Entwicklung mobiler Anwendungen",
-          "description": "Erstellen Sie robuste mobile Anwendungen, die für Android- und iOS-Plattformen konzipiert sind."
+          "name": "Mobile App-Entwicklung",
+          "description": "Wir entwickeln robuste und intuitive iOS- und Android-Anwendungen, die den spezifischen Anforderungen Ihres Unternehmens und Ihrer Benutzer entsprechen.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "Native und hybride Anwendungen für iOS und Android",
+            "Flüssige und intuitive Benutzererfahrung",
+            "Moderne und angepasste Oberflächen",
+            "Gründliche Tests auf allen Zielgeräten",
+            "Kontinuierliche Updates und Wartung"
+          ]
         },
         "digitalMarketing": {
-          "name": "Digitales Marketing",
-          "description": "Steigern Sie Ihre Online-Präsenz und fördern Sie das Engagement mit datengestützten Marketingstrategien."
+          "name": "Webmarketing & SEO-Strategie",
+          "description": "Steigern Sie Ihre Online-Sichtbarkeit mit unseren maßgeschneiderten digitalen Strategien, basierend auf Datenanalyse und Conversion-orientiert.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "Natürliche (SEO) und bezahlte (SEA) Suchmaschinenoptimierung",
+            "Content-Marketing und optimiertes Web-Texten",
+            "Social-Media-Präsenzstrategie",
+            "Leistungsanalyse und kontinuierliche Optimierung",
+            "E-Mail-Kampagnen und Marketing-Automatisierung"
+          ]
         },
         "uiUxDesign": {
-          "name": "UI/UX-Design",
-          "description": "Gestalten Sie intuitive und ansprechende Schnittstellen für ein nahtloses Nutzererlebnis."
+          "name": "UX/UI-Design",
+          "description": "Wir gestalten ästhetische und ergonomische Benutzeroberflächen, die das Engagement maximieren und die Conversion erleichtern.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "Analyse der Benutzerbedürfnisse und Ihrer Geschäftsziele",
+            "Wireframing und interaktive Prototypenerstellung",
+            "Responsive und zugängliches Design",
+            "Benutzertests zur Validierung der Erfahrung",
+            "Kontinuierliche Optimierung basierend auf Nutzungsdaten"
+          ]
         },
         "saasDevelopment": {
-          "name": "SaaS-Entwicklung",
-          "description": "Entwickeln Sie sichere, skalierbare und anpassbare SaaS-Lösungen, die den Anforderungen Ihres Unternehmens gerecht werden."
+          "name": "SaaS-Lösungen",
+          "description": "Entwickeln Sie Ihre eigene Online-Software, um Ihre internen Prozesse zu optimieren oder neue Geschäftsmöglichkeiten zu schaffen.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "Sichere und skalierbare Webanwendungen",
+            "Angepasste Administrator-Oberflächen",
+            "Integration mit Ihren bestehenden Systemen",
+            "Robuste und leistungsstarke Cloud-Architektur",
+            "Technischer Support und kontinuierliche Weiterentwicklung"
+          ]
         },
         "aiAutomation": {
-          "name": "KI und Automatisierung",
-          "description": "Nutzen Sie KI und Automatisierung, um Arbeitsabläufe zu optimieren und die Effizienz zu steigern."
+          "name": "Künstliche Intelligenz & Automatisierung",
+          "description": "Optimieren Sie Ihre Geschäftsprozesse und steigern Sie die Effizienz durch KI und intelligente Automatisierung Ihrer Arbeitsabläufe.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "Automatisierung wiederkehrender und zeitaufwändiger Prozesse",
+            "KI-Integration für prädiktive Analyse und Entscheidungsfindung",
+            "Intelligente Chatbots und virtuelle Assistenten",
+            "Automatisierte Daten- und Dokumentenverarbeitung",
+            "Optimierung geschäftlicher Workflows"
+          ]
         },
         "ecommerceDevelopment": {
-          "name": "E-Commerce-Entwicklung",
-          "description": "Erstellen Sie dynamische E-Commerce-Plattformen, um Ihre Online-Handelspräsenz zu stärken."
+          "name": "E-Commerce",
+          "description": "Entwickeln Sie Ihr Online-Geschäft mit leistungsstarken, sicheren E-Commerce-Lösungen, die an Ihr Geschäftsmodell angepasst sind.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "Maßgeschneiderte Online-Shop-Erstellung",
+            "Optimierung des Conversion-Funnels",
+            "Integration sicherer Zahlungslösungen",
+            "Bestands- und Logistikverwaltung",
+            "Anbindung an Marktplätze (Amazon, Cdiscount, etc.)"
+          ]
+        }
+      }
+    },
+    "differentiators": {
+      "title": "Unsere Differenzierungsmerkmale",
+      "items": {
+        "experience": {
+          "title": "Branchenübergreifende Erfahrung",
+          "description": "Wir unterstützen Unternehmen aller Größen und Branchen:",
+          "sectors": [
+            "Startups und Scale-ups",
+            "Wachsende kleine und mittlere Unternehmen",
+            "Großkunden und Institutionen",
+            "E-Commerce und Einzelhandel",
+            "B2B- und B2C-Dienstleistungen",
+            "Bildung und Weiterbildung",
+            "Tourismus und Freizeit",
+            "Coaching und Persönlichkeitsentwicklung"
+          ]
+        },
+        "approach": {
+          "title": "Kollaborativer Ansatz",
+          "description": "Wir bevorzugen eine enge und transparente Beziehung zu unseren Kunden:",
+          "points": [
+            "Tiefgreifendes Verständnis Ihrer Geschäftsziele",
+            "Gemeinsame Entwicklung der digitalen Strategie",
+            "Klare und regelmäßige Kommunikation",
+            "Agiler und iterativer Prozess",
+            "Detailliertes Projekt-Fortschritts-Tracking"
+          ]
+        },
+        "support": {
+          "title": "Rundum-Betreuung",
+          "description": "Wir begleiten Sie in jeder Phase Ihres digitalen Projekts:",
+          "steps": [
+            "Strategiedefinition",
+            "Benutzererfahrungsdesign",
+            "Technische Entwicklung",
+            "Tests und Validierung",
+            "Bereitstellung und Produktionsstart",
+            "Schulung und Support nach der Einführung"
+          ]
         }
       }
     },
     "process": {
-      "title": "Wie die Agentur funktioniert",
+      "title": "Unser Zusammenarbeitsprozess",
       "steps": {
         "vision": {
-          "title": "Ihre Vision verstehen",
-          "description": "Wir arbeiten eng zusammen, um Ihre Ziele, Herausforderungen und Ambitionen zu verstehen und so einen klaren Weg für Ihr Projekt zu gewährleisten. Unsere Priorität ist es, uns von Anfang an an Ihrer Vision auszurichten."
+          "title": "Entdeckung und Analyse",
+          "number": "1",
+          "description": "Wir arbeiten eng zusammen, um Ihre Ziele, Herausforderungen und Ambitionen zu verstehen. Diese Phase umfasst die Analyse Ihres Marktes, Ihrer Konkurrenz und aktueller Trends, um die besten Chancen zu identifizieren.",
+          "deliverables": "Ergebnisse: Vollständige Prüfung, Analysebericht, strategische Empfehlungen"
         },
         "planning": {
-          "title": "Strategische Planung",
-          "description": "Auf Basis der in unseren Gesprächen gewonnenen Erkenntnisse entwickeln wir eine detaillierte Strategie, die konkrete Schritte definiert. Unser maßgeschneiderter Ansatz garantiert messbaren Erfolg für Ihr Projekt."
+          "title": "UX-Design und Prototyping",
+          "number": "2",
+          "description": "Transformation von Ideen in strukturierte Pläne mit Prototypen zur Visualisierung des Endprojekts und zur Gewährleistung strategischer Klarheit. Dieser Ansatz ermöglicht es uns, die Benutzererfahrung zu verfeinern und Conversion-Pfade zu optimieren.",
+          "deliverables": "Ergebnisse: Wireframes, Mockups, interaktive Prototypen"
         },
         "development": {
-          "title": "Konzeption und Entwicklung",
-          "description": "Unsere kreativen und technischen Teams arbeiten zusammen, um Ihre Ideen zum Leben zu erwecken. Wir liefern visuell beeindruckende Designs in Verbindung mit leistungsstarker Entwicklung."
+          "title": "Agile Entwicklung",
+          "number": "3",
+          "description": "Transformation von Konzepten in voll funktionsfähige Lösungen durch harmonisches Design und robuste Entwicklung für optimale Leistung. Wir arbeiten in Iterationen, sodass Sie den Fortschritt verfolgen und das Projekt unterwegs anpassen können.",
+          "deliverables": "Ergebnisse: Progressive funktionale Versionen, wöchentliche Fortschrittsberichte"
         },
         "launch": {
-          "title": "Launch und Bereitstellung",
-          "description": "Nach gründlichen Tests starten wir Ihr Projekt präzise. Unsere nahtlose Bereitstellung stellt sicher, dass Ihre Lösung einwandfrei funktioniert."
+          "title": "Tests und Bereitstellung",
+          "number": "4",
+          "description": "Rigorose Tests, um sicherzustellen, dass Ihre Lösung problemfrei, optimiert und bereit für einen reibungslosen Start ist. Wir überprüfen die Browser- und Gerätekompatibilität, Sicherheit und Leistung.",
+          "deliverables": "Ergebnisse: Testberichte, optimierte Endversion, Benutzerschulung"
         },
         "support": {
-          "title": "Kontinuierliche Unterstützung",
-          "description": "Wir bieten nach dem Launch fortlaufenden Support, damit Ihr Projekt stets an der Spitze bleibt. Unser Team steht Ihnen jederzeit zur Unterstützung und weiteren Innovation zur Verfügung."
+          "title": "Wartung und Weiterentwicklung",
+          "number": "5",
+          "description": "Präzise Bereitstellung und Post-Launch-Support zur Aufrechterhaltung eines reibungslosen und effizienten Betriebs mit regelmäßigen Updates und kontinuierlichen Verbesserungsempfehlungen.",
+          "deliverables": "Optionen: Maßgeschneiderte Wartungsverträge, technischer Support, kontinuierliche Optimierung"
         }
       }
     },
@@ -158,20 +279,33 @@
       "description": "NumiSpark in Schulen & Veranstaltungen"
     },
     "faq": {
+      "title": "Häufig gestellte Fragen",
       "items": {
-        "quote": {
-          "question": "Wie kann ich ein Angebot für ein Projekt anfordern?",
-          "answer": "Sie können ein Angebot anfordern, indem Sie unser Online-Formular ausfüllen oder direkt unser Vertriebsteam kontaktieren. Wir werden uns innerhalb von 24 Stunden mit einem detaillierten Vorschlag basierend auf den Anforderungen Ihres Projekts bei Ihnen melden."
+        "projectTypes": {
+          "question": "Welche Projekttypen kann eine Webagentur wie Numispark übernehmen?",
+          "answer": "Als Webagentur in Frankreich unterstützt Numispark Unternehmen bei allen digitalen Anforderungen: Website-Erstellung (Präsentation, E-Commerce, Portal), Web- und Mobile-App-Entwicklung, Neugestaltung bestehender Websites, SEO-Strategie, Webmarketing, UX/UI-Design und maßgeschneiderte SaaS-Lösungsentwicklung. Unser multidisziplinäres Team passt sich der Größe und Komplexität Ihres Projekts an."
         },
-        "industries": {
-          "question": "Welche Branchen bedienen Sie?",
-          "answer": "Wir bedienen ein breites Spektrum an Branchen, darunter Technologie, Gesundheitswesen, Finanzen, Einzelhandel, Bildung und Fertigung. Unsere Lösungen werden individuell angepasst, um den spezifischen Anforderungen jeder Branche gerecht zu werden."
+        "industryAdaptation": {
+          "question": "Passt sich Numispark an meine Branche an?",
+          "answer": "Absolut! Unsere Erfahrung umfasst viele Bereiche: E-Commerce, B2B- und B2C-Dienstleistungen, Bildung, Coaching, Tourismus, Immobilien, Gesundheitswesen, Industrie usw. Wir nehmen uns die Zeit, die Besonderheiten Ihrer Branche zu verstehen, um Lösungen anzubieten, die auf Ihre Herausforderungen und Ihre Zielgruppe zugeschnitten sind. Unsere Kundenreferenzen bezeugen unsere Fähigkeit, uns an verschiedene Umgebungen anzupassen."
+        },
+        "ownership": {
+          "question": "Gehört mir meine Website/Anwendung bei der Auslieferung?",
+          "answer": "Ja, Sie sind vollständiger Eigentümer Ihrer Website oder Anwendung, sobald das Projekt geliefert und bezahlt ist. Wir übertragen alle Quellcodes, Zugänge und erforderlichen Dokumentationen. Wir bevorzugen auch Open-Source-Technologien und Lösungen ohne proprietäre Abhängigkeiten, um Ihre langfristige Unabhängigkeit zu gewährleisten."
+        },
+        "postLaunch": {
+          "question": "Kann ich nach dem Start Unterstützung erhalten?",
+          "answer": "Wir bieten mehrere Post-Launch-Support-Pakete an, um die Nachhaltigkeit Ihres Projekts zu gewährleisten: technische Wartungsverträge, Benutzer-Support, funktionale Entwicklungen und kontinuierliche Optimierung."
         },
         "timeline": {
-          "question": "Wie lange dauert ein typisches Projekt?",
-          "answer": "Die Projektzeiten variieren je nach Umfang und Komplexität. In der Regel dauern kleine Projekte 2 bis 4 Wochen, mittlere Projekte 1 bis 3 Monate und große Projekte 3 bis 6 Monate. Wir werden einen detaillierten Zeitplan während der ersten Beratung bereitstellen."
+          "question": "Was sind Ihre Zeitpläne und wie garantieren Sie Pünktlichkeit?",
+          "answer": "Unsere Zeitpläne variieren je nach Projektkomplexität. Unsere agile Methodik mit regelmäßigen Kontrollpunkten und detaillierter Planung ermöglicht es uns, vereinbarte Fristen einzuhalten. Im Falle unvorhergesehener Umstände informieren wir Sie sofort und schlagen angepasste Lösungen vor."
         }
       }
+    },
+    "cta": {
+      "title": "Verwandeln Sie Ihr digitales Projekt in Realität",
+      "description": "Bereit, Ihre Vision zum Leben zu erwecken? Unser Expertenteam steht Ihnen zur Verfügung, um Ihre Bedürfnisse zu besprechen und angepasste Lösungen anzubieten. Profitieren Sie von einer kostenlosen Prüfung Ihrer Online-Präsenz und einem personalisierten Angebot ohne Verpflichtung."
     }
   }
 }

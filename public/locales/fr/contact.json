@@ -1,5 +1,18 @@
 {
   "contact": {
+    "hero": {
+      "title": "Parlons de votre projet digital"
+    },
+    "intro": {
+      "description": "Vous avez un projet web, mobile ou digital ? Nos experts Numispark sont disponibles pour vous conseiller et vous proposer les meilleures solutions.",
+      "cta": "Remplissez le formulaire ci-dessous ou contactez-nous directement. Nous vous répondrons rapidement."
+    },
+    "benefits": {
+      "response24h": "Réponse sous 24h",
+      "freeConsultation": "Consultation gratuite",
+      "noCommitment": "Sans engagement",
+      "availableTeam": "Équipe disponible"
+    },
     "heading": "Prêt à commencer?",
     "contactDetail": "Nos coordonnées",
     "subHeading": "Prêt à commencer ? Nous serions ravis de vous entendre.",
@@ -55,6 +68,42 @@
       },
       "submit": "Envoyer",
       "submitting": "Envoi..."
+    },
+    "faq": {
+      "items": {
+        "responseTime": {
+          "question": "Quel est votre délai de réponse ?",
+          "answer": "Nous répondons à toutes les demandes sous 24h ouvrables. Pour une urgence, appelez-nous directement au +33 6 02 52 87 71 du lundi au vendredi 9h-18h CET."
+        },
+        "initialConsultation": {
+          "question": "La consultation initiale est-elle payante ?",
+          "answer": "Non, notre première consultation et notre audit initial sont gratuits et sans engagement. C'est l'occasion de discuter vos besoins et d'explorer les solutions possibles."
+        },
+        "budgetPlanning": {
+          "question": "Quel budget prévoir pour mon projet ?",
+          "answer": "Cela varie selon vos objectifs, la complexité et les technologies. Nous proposons des solutions pour tous les budgets — de quelques centaines à plusieurs dizaines de milliers d'euros. Remplissez le formulaire pour obtenir un devis gratuit et personnalisé."
+        },
+        "inPersonMeeting": {
+          "question": "Pouvez-vous nous rencontrer en personne ?",
+          "answer": "Absolument ! Nous sommes basés à Caen et disponibles pour des rendez-vous sur site. Nous pouvons aussi faire des visioconférences si c'est plus pratique pour vous."
+        },
+        "industryExperience": {
+          "question": "Avez-vous de l'expérience dans mon secteur d'activité ?",
+          "answer": "Nous avons une expérience multisectorielle : e-commerce, tourisme, éducation, services, SaaS, etc. Notre approche s'adapte à votre domaine et ses spécificités. Décrivez votre secteur dans le formulaire et nous confirmerons notre expertise."
+        },
+        "smeSupport": {
+          "question": "Travaillez-vous avec les PME/TPE ?",
+          "answer": "Oui, nous travaillons avec tous types d'entreprises : TPE, PME, startups, associations. Notre approche est flexible et adaptée à votre taille et vos ressources."
+        },
+        "documentSharing": {
+          "question": "Comment puis-je partager des documents avec vous ?",
+          "answer": "Vous pouvez joindre des fichiers au formulaire de contact. Après notre premier échange, nous vous fournirons des moyens de partage sécurisés (cloud, lien de téléchargement, etc.)."
+        },
+        "maintenancePackages": {
+          "question": "Vous proposez des forfaits de maintenance après le projet ?",
+          "answer": "Oui, nous proposons des forfaits de maintenance technique, d'hébergement et de support pour assurer la pérennité et la performance de vos projets."
+        }
+      }
     }
   }
 }

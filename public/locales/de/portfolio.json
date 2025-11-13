@@ -1,0 +1,57 @@
+{
+  "portfolio": {
+    "hero": {
+      "title": "Entdecken Sie unsere digitalen Erfolge, die transformieren und inspirieren",
+      "subtitle": "Willkommen in unserer Projektgalerie. Bei Numispark schaffen wir einzigartige digitale Erlebnisse, die den Geschäftszielen unserer Kunden entsprechen.",
+      "description": "Erkunden Sie unsere Erfolge in verschiedenen Branchen und Technologien, um zu entdecken, wie wir Ihre Vision in die Realität umsetzen können.",
+      "benefits": {
+        "customSolutions": "Maßgeschneiderte Lösungen",
+        "userCenteredDesign": "Benutzerzentriertes Design",
+        "cuttingEdgeTech": "Modernste Technologien",
+        "measurableResults": "Messbare Ergebnisse"
+      },
+      "cta": "Besprechen Sie Ihr Projekt"
+    },
+    "categories": {
+      "title": "Unsere Projekte nach Kategorie",
+      "all": "Alle",
+      "webDevelopment": "Webseiten",
+      "saas": "SaaS",
+      "ecommerce": "E-Commerce",
+      "websiteMobileDesign": "Web & Mobile Design",
+      "mobileDevelopment": "Mobile Apps",
+      "socialMediaLogoDesign": "Design & Logo",
+      "seo": "SEO"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen zu unseren Erfolgen",
+      "items": {
+        "process": {
+          "question": "Wie läuft der Projekterstellungsprozess mit Numispark ab?",
+          "answer": "Unser Prozess beginnt mit einer Entdeckungsphase, in der wir Ihre Bedürfnisse, Ziele und Einschränkungen analysieren. Anschließend entwickeln wir ein detailliertes Angebot mit Zeitplan, Budget und Ergebnissen. Nach der Validierung folgen wir einer agilen Methodik mit regelmäßigen Checkpoints und Zwischendemonstrationen, um Sie in jeden Schritt einzubeziehen. Dieser Ansatz gewährleistet Transparenz, Agilität und perfekte Ausrichtung auf Ihre Erwartungen."
+        },
+        "projectTypes": {
+          "question": "Welche Art von Projekten kann Numispark realisieren?",
+          "answer": "Unser multidisziplinäres Team kann eine breite Palette digitaler Projekte zum Leben erwecken: Websites (Showcase, E-Commerce, Portale), mobile Anwendungen (iOS, Android, plattformübergreifend), SaaS-Plattformen, intelligente Automatisierung, E-Commerce-Lösungen, digitale Marketingstrategien und vollständige visuelle Identitäten. Wir passen unser Fachwissen an die Größe und Komplexität jedes Projekts an, von kleinen Unternehmen bis zu großen Konzernen."
+        },
+        "technologies": {
+          "question": "Welche Technologien verwenden Sie für Ihre Entwicklungen?",
+          "answer": "Wir wählen die am besten geeigneten Technologien für jedes Projekt basierend auf Ihren Bedürfnissen, Einschränkungen und Zielen aus. Unser Technologie-Stack umfasst: HTML5/CSS3/JavaScript, React, Vue.js, Angular für Frontend; Node.js, PHP/Laravel, Python/Django für Backend; React Native, Swift, Kotlin, Flutter für Mobile; WordPress, Shopify, PrestaShop für CMS; und AWS, Google Cloud, Azure für Cloud-Infrastruktur."
+        },
+        "quality": {
+          "question": "Wie garantieren Sie die Qualität Ihrer Erfolge?",
+          "answer": "Qualität ist in jeder Phase unseres Prozesses integriert: systematische Code-Reviews, automatisierte Tests, UX-Validierung mit echten Benutzern, Leistungsoptimierungen und Sicherheitsaudits. Wir folgen Best Practices in Entwicklung und Design und verwenden moderne CI/CD-Tools, um zuverlässige, qualitativ hochwertige Lieferungen zu gewährleisten."
+        },
+        "examples": {
+          "question": "Kann ich andere Beispiele für Projekte sehen, die meinem ähnlich sind?",
+          "answer": "Natürlich! Über die auf dieser Seite präsentierten Projekte hinaus verfügen wir über ein umfangreiches Portfolio von Erfolgen in verschiedenen Branchen. Kontaktieren Sie uns unter Angabe Ihres Tätigkeitsbereichs und Ihrer Bedürfnisse, und wir teilen Ihnen relevante und detaillierte Beispiele mit, die Ihrem Projekt entsprechen."
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Bereit, Ihre Vision in digitale Realität zu verwandeln?",
+      "description": "Lassen Sie uns über Ihr Projekt sprechen und entdecken Sie, wie unser Fachwissen Ihnen helfen kann, Ihre Ziele zu erreichen. Ob Sie eine Website, mobile Anwendung, SaaS-Lösung oder Marketingstrategie benötigen, wir sind bereit, die Herausforderung anzunehmen.",
+      "button": "Kontaktieren Sie uns"
+    }
+  }
+}

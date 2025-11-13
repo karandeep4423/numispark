@@ -1,0 +1,57 @@
+{
+  "portfolio": {
+    "hero": {
+      "title": "Discover our digital achievements that transform and inspire",
+      "subtitle": "Welcome to our project gallery. At Numispark, we create unique digital experiences that meet our clients' business objectives.",
+      "description": "Explore our achievements across different sectors and technologies to discover how we can transform your vision into reality.",
+      "benefits": {
+        "customSolutions": "Custom solutions",
+        "userCenteredDesign": "User-centered design",
+        "cuttingEdgeTech": "Cutting-edge technologies",
+        "measurableResults": "Measurable results"
+      },
+      "cta": "Discuss your project"
+    },
+    "categories": {
+      "title": "Our projects by category",
+      "all": "All",
+      "webDevelopment": "Websites",
+      "saas": "SaaS",
+      "ecommerce": "E-commerce",
+      "websiteMobileDesign": "Web & Mobile Design",
+      "mobileDevelopment": "Mobile Apps",
+      "socialMediaLogoDesign": "Design & Logo",
+      "seo": "SEO"
+    },
+    "faq": {
+      "title": "Frequently asked questions about our achievements",
+      "items": {
+        "process": {
+          "question": "How does the project creation process work with Numispark?",
+          "answer": "Our process begins with a discovery phase where we analyze your needs, objectives, and constraints. We then develop a detailed proposal including timeline, budget, and deliverables. After validation, we follow an agile methodology with regular checkpoints and intermediate demonstrations to involve you at every step. This approach ensures transparency, agility, and perfect alignment with your expectations."
+        },
+        "projectTypes": {
+          "question": "What type of projects can Numispark realize?",
+          "answer": "Our multidisciplinary team can bring to life a wide range of digital projects: websites (showcase, e-commerce, portals), mobile applications (iOS, Android, cross-platform), SaaS platforms, intelligent automation, e-commerce solutions, digital marketing strategies, and complete visual identities. We adapt our expertise to the size and complexity of each project, from small businesses to large enterprises."
+        },
+        "technologies": {
+          "question": "What technologies do you use for your developments?",
+          "answer": "We select the most suitable technologies for each project based on your needs, constraints, and objectives. Our technology stack includes: HTML5/CSS3/JavaScript, React, Vue.js, Angular for frontend; Node.js, PHP/Laravel, Python/Django for backend; React Native, Swift, Kotlin, Flutter for mobile; WordPress, Shopify, PrestaShop for CMS; and AWS, Google Cloud, Azure for cloud infrastructure."
+        },
+        "quality": {
+          "question": "How do you guarantee the quality of your achievements?",
+          "answer": "Quality is integrated at every stage of our process: systematic code review, automated testing, UX validation with real users, performance optimizations, and security audits. We follow best practices in development and design, and use modern CI/CD tools to ensure reliable, high-quality deliveries."
+        },
+        "examples": {
+          "question": "Can I see other examples of projects similar to mine?",
+          "answer": "Of course! Beyond the projects presented on this page, we have an extensive portfolio of achievements in various sectors. Contact us specifying your field of activity and needs, and we will share relevant and detailed examples corresponding to your project."
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Ready to transform your vision into digital reality?",
+      "description": "Let's discuss your project and discover how our expertise can help you achieve your goals. Whether you need a website, mobile application, SaaS solution, or marketing strategy, we are ready to take on the challenge.",
+      "button": "Contact us"
+    }
+  }
+}

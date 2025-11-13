@@ -2,21 +2,21 @@
 import {
   ArrowUpRight,
   Code,
-  Layout,
-  Brain,
-  RefreshCw,
-  Target,
-  CreditCard,
-  Layers,
-  BarChart,
-  Wrench,
   Rocket,
-  Shield,
-  Monitor,
-  Archive,
-  PieChart,
+  BookOpen,
+  Layout,
+  CloudUpload,
+  Briefcase,
+  Handshake,
+  HeartHandshake,
+  Lightbulb,
+  CheckCircle2,
+  ShoppingCart,
+  Smartphone,
+  Globe,
+  Store,
 } from "lucide-react";
-import Contact from "@/components/contact-us/page";
+import FormCTA from "@/components/Form-CTA/page";
 import HeroButtons from "@/components/HeroButtons/page";
 import FAQs from "@/components/Faqs/page";
 import Technologies from "@/components/Technologies/page";
@@ -43,70 +43,31 @@ const TECHNOLOGIES = [
     logo: "https://cdn.brandfetch.io/idjqrHQc8M/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B",
   },
 ];
-const Features = [
-  {
-    translationKey: "securePaymentGateways",
-    serviceIcon: "Shield",
-  },
-  {
-    translationKey: "userFriendlyDesign",
-    serviceIcon: "Monitor",
-  },
-  {
-    translationKey: "inventoryManagement",
-    serviceIcon: "Archive",
-  },
-  {
-    translationKey: "advancedAnalytics",
-    serviceIcon: "PieChart",
-  },
+
+const Services = [
+  { translationKey: "custom", icon: Store },
+  { translationKey: "prestashop", icon: ShoppingCart },
+  { translationKey: "shopify", icon: Smartphone },
+  { translationKey: "woocommerce", icon: Globe },
+  { translationKey: "migration", icon: Rocket },
+  { translationKey: "optimization", icon: Lightbulb },
 ];
 
-const Benefits = [
-  {
-    translationKey: "easyIntegration",
-    serviceIcon: "CreditCard",
-  },
-  {
-    translationKey: "scalablePlatforms",
-    serviceIcon: "Layers",
-  },
-  {
-    translationKey: "enhancedConversion",
-    serviceIcon: "BarChart",
-  },
-  {
-    translationKey: "seamlessExperience",
-    serviceIcon: "Layout",
-  },
-  {
-    translationKey: "postLaunchSupport",
-    serviceIcon: "Wrench",
-  },
+const AppTypes = [
+  { translationKey: "b2c", icon: ShoppingCart },
+  { translationKey: "b2b", icon: Briefcase },
+  { translationKey: "marketplace", icon: Store },
+  { translationKey: "international", icon: Globe },
 ];
 
-const steps = [
-  {
-    translationKey: "vision",
-    icon: <Brain className="text-white" size={80} />,
-  },
-  {
-    translationKey: "planning",
-    icon: <Target className="text-white" size={80} />,
-  },
-  {
-    translationKey: "designDevelopment",
-    icon: <Code className="text-white" size={80} />,
-  },
-  {
-    translationKey: "launchDeployment",
-    icon: <Rocket className="text-white" size={80} />,
-  },
-  {
-    translationKey: "ongoingSupport",
-    icon: <RefreshCw className="text-white" size={80} />,
-  },
+const WhyUs = [
+  { translationKey: "expertise", icon: Briefcase },
+  { translationKey: "conversion", icon: Rocket },
+  { translationKey: "scalability", icon: Handshake },
+  { translationKey: "security", icon: HeartHandshake },
+  { translationKey: "datadriven", icon: Lightbulb },
 ];
+
 const portfolioItems = [
   {
     image: "/portfolio/ecommerce-cover.png",
@@ -176,10 +137,18 @@ export default function EcommerceDevelopment() {
           Your browser does not support the video tag.
         </video>
         <div className="relative z-20 flex w-full h-screen gap-5 justify-center items-center">
-          <div className="mt-10 sm:mt-0 flex flex-col justify-center items-center">
-            <h1 className="text-5xl my-3 max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
+          <div className="mt-10 sm:mt-0 flex flex-col justify-center items-center px-4">
+            <h1 className="text-5xl max-w-screen-xl text-gray-800 sm:text-6xl text-center font-extrabold">
               {t("ecommerce.hero.title")}
             </h1>
+            <span className="max-w-screen-xl my-3 text-gray-800 text-2xl text-center font-bold">
+              {t("ecommerce.hero.subtitle")}
+            </span>
+            {t("ecommerce.hero.description") && (
+              <p className="max-w-3xl text-center text-gray-700 text-lg mt-4">
+                {t("ecommerce.hero.description")}
+              </p>
+            )}
             <HeroButtons />
           </div>
         </div>
@@ -188,78 +157,55 @@ export default function EcommerceDevelopment() {
       {/* Technologies Section */}
       <Technologies technologies={TECHNOLOGIES} />
 
-      {/* Key Features Section */}
-      <div className="pb-16 bg-gray-50">
-        <h2 className="text-4xl text-center font-bold text-gray-800">
-          {t("ecommerce.keyFeatures.title")}{" "}
-          <span className="text-blue-600 m-1 bg-blue-200 p-2.5 rounded-2xl">
-            {t("ecommerce.keyFeatures.titleHighlight")}
-          </span>{" "}
-          {t("ecommerce.keyFeatures.titleEnd")}
+      {/* Services Section */}
+      <div className="pt-16 pb-16 bg-gray-50">
+        <h2 className="text-4xl px-2 text-center font-bold text-gray-800">
+          {t("ecommerce.services.title")}
         </h2>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {Features.map((feature, index) => {
-            const Icon = {
-              Shield,
-              Monitor,
-              Archive,
-              PieChart,
-            }[feature.serviceIcon];
-            const key = `ecommerce.keyFeatures.items.${feature.translationKey}`;
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 px-4 max-w-6xl">
+          {Services.map((service, index) => {
+            const Icon = service.icon;
+            const serviceData = t("ecommerce.services.items", { returnObjects: true })[index];
+            const expertise = serviceData?.expertise || [];
+            const conclusion = serviceData?.conclusion || "";
 
             return (
               <div
                 key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300"
+                className="flex flex-col p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 bg-white"
               >
-                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
-                  <Icon className="text-blue-600 w-14 h-14" />
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl">
+                    <Icon className="text-blue-600 w-10 h-10" />
+                  </div>
+                  <h3 className="text-2xl font-semibold text-gray-800">
+                    {serviceData?.name}
+                  </h3>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {t(`${key}.name`)}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {t(`${key}.description`)}
-                </p>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* Benefits Section */}
-      <div className="pb-16 bg-gray-50">
-        <h2 className="text-4xl text-center font-bold text-gray-800">
-          <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            {t("ecommerce.benefits.title")}
-          </span>{" "}
-          {t("ecommerce.benefits.titleEnd")}
-        </h2>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
-          {Benefits.map((benefit, index) => {
-            const Icon = {
-              CreditCard,
-              Layers,
-              BarChart,
-              Layout,
-              Wrench,
-            }[benefit.serviceIcon];
-            const key = `ecommerce.benefits.items.${benefit.translationKey}`;
-
-            return (
-              <div
-                key={index}
-                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
-                  <Icon className="text-blue-600 w-14 h-14" />
+                <p className="text-gray-700 mb-4">{serviceData?.description}</p>
+                <div className="mt-auto">
+                  <p className="text-blue-600 font-semibold mb-3 flex items-center gap-2">
+                    <Lightbulb className="w-5 h-5" />
+                    {serviceData?.expertiseTitle}
+                  </p>
+                  <ul className="space-y-2.5 mb-4">
+                    {Array.isArray(expertise) &&
+                      expertise.map((item, i) => (
+                        <li
+                          key={i}
+                          className="flex items-start gap-2.5 text-gray-600 text-sm"
+                        >
+                          <CheckCircle2 className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                  </ul>
+                  {conclusion && (
+                    <p className="text-sm text-gray-600 italic bg-blue-50 p-3 rounded-lg">
+                      {conclusion}
+                    </p>
+                  )}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
-                  {t(`${key}.name`)}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {t(`${key}.description`)}
-                </p>
               </div>
             );
           })}
@@ -267,10 +213,92 @@ export default function EcommerceDevelopment() {
       </div>
 
       {/* Process Section */}
-      <HowAgencyWorks steps={steps} namespace="ecommerce" />
+      <HowAgencyWorks
+        steps={[
+          { translationKey: "0", icon: <BookOpen className="text-white" size={80} /> },
+          { translationKey: "1", icon: <Layout className="text-white" size={80} /> },
+          { translationKey: "2", icon: <Code className="text-white" size={80} /> },
+          { translationKey: "3", icon: <CheckCircle2 className="text-white" size={80} /> },
+          { translationKey: "4", icon: <CloudUpload className="text-white" size={80} /> },
+        ]}
+        namespace="ecommerce"
+      />
+
+      {/* App Types / Solutions Section */}
+      <div className="py-16 bg-gray-50">
+        <h2 className="text-4xl text-center font-bold text-gray-800 mb-12 px-4">
+          {t("ecommerce.appTypes.title")}
+        </h2>
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4 max-w-6xl">
+          {AppTypes.map((appType, index) => {
+            const Icon = appType.icon;
+            const typeData = t("ecommerce.appTypes.types", { returnObjects: true })[index];
+            const points = typeData?.points || [];
+
+            return (
+              <div
+                key={index}
+                className="flex flex-col p-6 shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 bg-white"
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl">
+                    <Icon className="text-blue-600 w-10 h-10" />
+                  </div>
+                  <h3 className="text-2xl font-semibold text-gray-800">
+                    {typeData?.name}
+                  </h3>
+                </div>
+                <p className="text-gray-700 mb-4">{typeData?.description}</p>
+                <ul className="space-y-2.5">
+                  {Array.isArray(points) &&
+                    points.map((item, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start gap-2.5 text-gray-600 text-sm"
+                      >
+                        <CheckCircle2 className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Why Choose Us Section */}
+      <div className="py-16 bg-gray-50">
+        <h2 className="text-4xl text-center font-bold text-gray-800 mb-12 px-4">
+          {t("ecommerce.whyUs.title")}
+        </h2>
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-4">
+          {WhyUs.map((reason, index) => {
+            const Icon = reason.icon;
+            const reasonData = t("ecommerce.whyUs.reasons", { returnObjects: true })[index];
+
+            return (
+              <div
+                key={index}
+                className="flex flex-col items-center shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] p-6 rounded-2xl border border-slate-200 md:hover:shadow-lg transition-shadow duration-300 bg-white"
+              >
+                <div className="flex items-center justify-center p-2 bg-blue-200 rounded-2xl mb-4">
+                  <Icon className="text-blue-600 w-14 h-14" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
+                  {reasonData?.title}
+                </h3>
+                <p className="text-gray-600 text-center">
+                  {reasonData?.description}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
 
       {/* Portfolio Section */}
-      <div className="max-w-7xl mx-auto px-4 pt-12">
+      <div className="max-w-7xl mx-auto px-4 py-12">
         <h2 className="text-4xl text-center font-bold text-gray-800">
           {t("ecommerce.portfolio.title")}{" "}
           <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
@@ -314,6 +342,7 @@ export default function EcommerceDevelopment() {
 
       {/* FAQs Section */}
       <FAQs
+        title={t("ecommerce.faq.title")}
         faqData={Object.keys(
           t("ecommerce.faq.items", { returnObjects: true })
         ).map((key) => ({
@@ -323,7 +352,7 @@ export default function EcommerceDevelopment() {
       />
 
       {/* Contact Section */}
-      <Contact />
+      <FormCTA />
     </div>
   );
 }

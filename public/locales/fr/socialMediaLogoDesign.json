@@ -1,111 +1,133 @@
 {
   "socialMediaLogoDesign": {
     "hero": {
-      "title": "Des designs accrocheurs pour les réseaux sociaux et le logo de votre marque",
-      "subtitle": "Augmentez l'engagement et établissez une identité de marque unique"
-    },
-    "process": {
-      "title": "Notre processus de conception",
-      "steps": {
-        "step1": {
-          "title": "Comprendre votre vision",
-          "description": "Nous commençons par discuter de vos objectifs, de l'identité de votre marque et des préférences de votre public afin d'aligner nos designs sur vos besoins en matière de réseaux sociaux et de logo."
-        },
-        "step2": {
-          "title": "Recherche et inspiration",
-          "description": "Nous analysons les tendances, les concurrents et la dynamique du marché pour recueillir l'inspiration nécessaire à la création de visuels percutants pour les réseaux sociaux et de logos mémorables."
-        },
-        "step3": {
-          "title": "Création de concepts",
-          "description": "Nos designers élaborent des concepts uniques, incluant des mises en page pour les publications sur les réseaux sociaux et des esquisses initiales de logo, afin de définir une direction créative."
-        },
-        "step4": {
-          "title": "Conception et perfectionnement",
-          "description": "En utilisant vos retours, nous finalisons des designs soignés avec des visuels accrocheurs pour les réseaux sociaux et un logo qui représente authentiquement votre marque."
-        },
-        "step5": {
-          "title": "Livraison finale",
-          "description": "Nous fournissons des fichiers de haute qualité pour vos publications sur les réseaux sociaux et vos logos, prêts à renforcer la présence en ligne et l'identité de votre marque."
-        }
-      }
+      "title": "Donnez vie à votre identité visuelle et captivez votre audience",
+      "subtitle": "Design de Logo & Publications Réseaux Sociaux",
+      "description": "Une identité visuelle forte et cohérente est essentielle pour se démarquer dans un environnement digital saturé. Chez Numispark, nous concevons des designs percutants qui reflètent l'essence de votre marque et captent l'attention de votre audience cible."
     },
     "services": {
-      "sectionTitle": "Nos offres principales",
-      "sectionTitleHighlight": "Services",
-      "sectionSubtitle": "Des solutions complètes adaptées à vos besoins",
-      "items": {
-        "socialMediaDesign": {
-          "serviceName": "Design pour les réseaux sociaux",
-          "serviceDes": "Créez des publications percutantes sur les réseaux sociaux qui augmentent l'engagement. Nos designs sont optimisés pour répondre aux exigences uniques de chaque plateforme et aux préférences de votre audience."
+      "items": [
+        {
+          "name": "Création de Logo & Identité Visuelle",
+          "description": "Votre logo est bien plus qu'un simple graphisme - c'est le fondement de votre identité de marque. Notre approche stratégique du design de logo garantit que chaque élément visuel raconte votre histoire et communique vos valeurs.",
+          "expertiseTitle": "Ce que nous créons pour vous",
+          "expertise": [
+            "Logo principal et déclinaisons",
+            "Palette de couleurs professionnelle",
+            "Sélection typographique distinctive",
+            "Éléments graphiques complémentaires",
+            "Mockups d'application du logo"
+          ],
+          "conclusion": "Notre processus de création inclut une phase de découverte approfondie pour comprendre votre entreprise, votre marché et vos objectifs. Nous explorons ensuite plusieurs concepts créatifs avant de développer et perfectionner votre identité visuelle unique."
         },
-        "logoBrandIdentity": {
-          "serviceName": "Logo et identité de marque",
-          "serviceDes": "Création professionnelle de logos avec plusieurs concepts et variations, accompagnée de directives complètes pour une identité de marque cohérente."
+        {
+          "name": "Design de Posts Réseaux Sociaux",
+          "description": "Transformez votre présence sur les réseaux sociaux avec des visuels professionnels et cohérents qui maximisent l'engagement et la reconnaissance de marque.",
+          "expertiseTitle": "Formats de contenus que nous concevons",
+          "expertise": [
+            "Posts Instagram, Facebook, LinkedIn et TikTok",
+            "Stories et Reels optimisés",
+            "Carrousels et infographies impactants",
+            "Visuels d'événements et promotions",
+            "Templates personnalisables pour votre équipe"
+          ],
+          "conclusion": "Chaque design est optimisé pour les spécifications techniques de chaque plateforme tout en maintenant une cohérence visuelle parfaite avec votre identité de marque."
         },
-        "brandKitDesign": {
-          "serviceName": "Création de kit de marque",
-          "serviceDes": "Élaborez des kits de marque complets incluant des palettes de couleurs, des typographies et des éléments de design garantissant une cohérence sur toutes les plateformes."
-        },
-        "socialStrategy": {
-          "serviceName": "Stratégie sur les réseaux sociaux",
-          "serviceDes": "Bénéficiez de conseils d'experts en stratégie de contenu, planning de publication et techniques d'engagement pour maximiser votre présence sur les réseaux sociaux."
-        },
-        "socialMediaTemplates": {
-          "serviceName": "Modèles pour réseaux sociaux",
-          "serviceDes": "Des modèles réutilisables pour les stories, publications et carrousels que votre équipe peut facilement personnaliser tout en maintenant la cohérence de la marque."
+        {
+          "name": "Kits de Marque Complets",
+          "description": "Assurez la cohérence de votre communication visuelle grâce à un kit de marque complet - l'outil indispensable pour une gestion professionnelle de votre image.",
+          "expertiseTitle": "Composants du kit de marque",
+          "expertise": [
+            "Guide d'utilisation du logo",
+            "Charte graphique détaillée",
+            "Templates pour documents internes et externes",
+            "Guidelines pour les réseaux sociaux",
+            "Assets digitaux prêts à l'emploi"
+          ],
+          "conclusion": "Livré dans des formats professionnels (PDF, Figma, Adobe XD), votre kit de marque permet à toute votre équipe de créer des communications alignées avec votre identité visuelle."
         }
-      }
+      ]
     },
-    "features": {
-      "sectionTitle": "Caractéristiques clés",
-      "sectionSubtitle": "de nos designs",
-      "sectionTagline": "Votre succès est notre priorité",
-      "items": {
-        "platformOptimization": {
-          "serviceName": "Optimisation des plateformes",
-          "serviceDes": "Des designs parfaitement dimensionnés et optimisés selon les spécifications et les meilleures pratiques de chaque plateforme sociale."
+    "process": {
+      "title": "Notre processus créatif",
+      "steps": [
+        {
+          "title": "Découverte & Stratégie",
+          "number": "01",
+          "description": "Nous commençons par comprendre votre entreprise, votre marché et vos objectifs. Cette phase inclut un questionnaire détaillé, une analyse des concurrents et la définition de votre positionnement visuel pour garantir que chaque élément créatif soit stratégiquement aligné avec vos ambitions business."
         },
-        "brandConsistency": {
-          "serviceName": "Cohérence de la marque",
-          "serviceDes": "Maintenez une identité visuelle forte sur toutes les publications et plateformes tout en laissant place à la flexibilité créative."
+        {
+          "title": "Recherche & Concepts",
+          "number": "02",
+          "description": "Nous développons plusieurs directions créatives basées sur votre brief. Chaque concept est pensé pour refléter votre unicité et résonner avec votre audience cible. Cette phase d'exploration créative nous permet d'identifier les meilleures pistes visuelles avant d'investir dans le développement complet."
         },
-        "engagementFocus": {
-          "serviceName": "Axé sur l'engagement",
-          "serviceDes": "Créez des designs qui génèrent des likes, des commentaires et des partages grâce à une hiérarchie visuelle stratégique et des appels à l'action efficaces."
+        {
+          "title": "Design & Affinement",
+          "number": "03",
+          "description": "Après sélection du concept, nous affinons le design jusqu'à la perfection. Vous bénéficiez de révisions illimitées pour garantir votre entière satisfaction. Chaque détail est soigneusement travaillé pour créer une identité visuelle qui vous distingue véritablement de vos concurrents."
         },
-        "multiFormatDelivery": {
-          "serviceName": "Livraison multi-format",
-          "serviceDes": "Recevez vos designs dans tous les formats nécessaires - des fichiers prêts pour le web aux vecteurs de qualité imprimable."
+        {
+          "title": "Finalisation & Livraison",
+          "number": "04",
+          "description": "Nous préparons tous les fichiers dans les formats adaptés à vos besoins (web, print, réseaux sociaux) et vous fournissons un guide d'utilisation complet. Vous recevez l'intégralité des fichiers sources, vous offrant une flexibilité totale pour tous vos futurs besoins de communication."
         }
-      }
+      ]
     },
     "whyUs": {
-      "sectionTitle": "Avantages",
-      "sectionSubtitle": "de nous choisir",
+      "title": "Pourquoi choisir Numispark pour votre design graphique",
+      "reasons": [
+        {
+          "title": "Approche Stratégique",
+          "description": "Nous ne créons pas simplement des designs esthétiques - nous développons des identités visuelles qui soutiennent vos objectifs business et renforcent votre positionnement de marque."
+        },
+        {
+          "title": "Expertise Multi-Plateforme",
+          "description": "Notre équipe maîtrise les spécificités techniques et les tendances de chaque plateforme sociale pour maximiser l'impact de vos contenus."
+        },
+        {
+          "title": "Processus Collaboratif",
+          "description": "Nous vous impliquons à chaque étape du processus créatif pour garantir que le résultat final soit parfaitement aligné avec votre vision."
+        },
+        {
+          "title": "Fichiers Sources Inclus",
+          "description": "Vous recevez l'intégralité des fichiers sources de votre projet, vous offrant une flexibilité totale pour l'avenir."
+        }
+      ]
+    },
+    "faq": {
+      "title": "FAQ - Questions Fréquentes",
       "items": {
-        "platformExpertise": {
-          "serviceName": "Expertise des plateformes",
-          "serviceDes": "Une compréhension approfondie des exigences uniques et des comportements d'audience de chaque plateforme sociale."
+        "cost": {
+          "question": "Combien coûte la création d'un logo et d'une identité visuelle ?",
+          "answer": "Le tarif varie selon la complexité du projet et les livrables souhaités. Nos forfaits débutent à partir de quelques centaines d'euros pour un logo simple et peuvent aller jusqu'à plusieurs milliers d'euros pour une identité visuelle complète avec kit de marque. Contactez-nous pour un devis personnalisé gratuit."
         },
-        "brandFocusedDesign": {
-          "serviceName": "Design axé sur la marque",
-          "serviceDes": "Chaque élément de design est soigneusement élaboré pour renforcer et promouvoir l'identité de votre marque."
+        "formats": {
+          "question": "Quels formats de fichiers recevrai-je pour mon logo ?",
+          "answer": "Vous recevrez votre logo dans tous les formats nécessaires : fichiers vectoriels (AI, EPS, SVG) pour une utilisation sans perte de qualité à toute échelle, ainsi que des formats raster (PNG, JPG) optimisés pour le web et les réseaux sociaux. Les fichiers sources modifiables sont systématiquement inclus."
         },
-        "engagementDriven": {
-          "serviceName": "Axé sur l'engagement",
-          "serviceDes": "Des designs stratégiques qui encouragent l'interaction des utilisateurs et stimulent l'engagement sur les réseaux sociaux."
+        "timeline": {
+          "question": "Combien de temps faut-il pour créer une identité visuelle complète ?",
+          "answer": "Le délai moyen pour un projet d'identité visuelle complète est de 2 à 3 semaines. La création d'un logo seul peut être réalisée en 1 à 2 semaines. Ces délais peuvent varier selon la complexité du projet et votre réactivité dans les phases de feedback."
         },
-        "quickTurnaround": {
-          "serviceName": "Délai de livraison rapide",
-          "serviceDes": "Livraison rapide de designs pour maintenir une présence sur les réseaux sociaux fraîche et cohérente."
+        "monthlyPackages": {
+          "question": "Proposez-vous des forfaits mensuels pour le design de posts réseaux sociaux ?",
+          "answer": "Oui, nous proposons des forfaits mensuels pour la création régulière de contenus visuels pour vos réseaux sociaux. Ces forfaits peuvent inclure un nombre défini de posts par mois, adaptés à différentes plateformes, avec des tarifs dégressifs sur engagement."
         },
-        "unlimitedRevisions": {
-          "serviceName": "Révisions illimitées",
-          "serviceDes": "Nous peaufinons votre logo et vos designs jusqu'à ce qu'ils correspondent parfaitement à votre vision et aux exigences de votre marque."
+        "collaboration": {
+          "question": "Comment se déroule la collaboration pour les projets de design ?",
+          "answer": "Après un brief initial approfondi, nous travaillons par itérations en vous présentant des concepts que vous pouvez commenter. Notre processus collaboratif utilise des outils comme Figma qui vous permettent de visualiser l'avancement et d'apporter des retours précis directement sur les designs."
         },
-        "socialMediaStrategy": {
-          "serviceName": "Stratégie pour les réseaux sociaux",
-          "serviceDes": "Des designs alignés avec votre stratégie de réseaux sociaux pour vous aider à atteindre vos objectifs marketing."
+        "ai": {
+          "question": "Utilisez-vous l'intelligence artificielle pour créer vos designs ?",
+          "answer": "Nous utilisons l'IA comme outil complémentaire dans notre processus créatif, notamment pour l'exploration et l'inspiration. Cependant, tous nos designs sont créés et finalisés par nos designers professionnels pour garantir originalité, pertinence stratégique et qualité technique irréprochable."
+        },
+        "templates": {
+          "question": "Puis-je modifier moi-même les templates de posts que vous créez ?",
+          "answer": "Absolument. Nous créons des templates modifiables sur des plateformes accessibles comme Canva, ou dans des formats professionnels comme Photoshop ou Illustrator selon vos préférences. Nous pouvons également former votre équipe à leur utilisation."
+        },
+        "satisfaction": {
+          "question": "Que se passe-t-il si je ne suis pas satisfait du design proposé ?",
+          "answer": "Votre satisfaction est notre priorité. Nous offrons des révisions illimitées jusqu'à ce que vous soyez pleinement satisfait du résultat. Si malgré nos efforts vous n'êtes pas convaincu, nous proposons une garantie satisfaction ou remboursement."
         }
       }
     },
@@ -113,52 +135,9 @@
       "sectionTitle": "Nos récentes",
       "sectionHighlight": "réalisations",
       "categories": {
-        "uiUx": "Design UI/UX",
-        "appDesign": "Design d'application"
-      }
-    },
-    "faq": {
-      "items": {
-        "logoConcepts": {
-          "question": "Combien de concepts de logo vais-je recevoir lors de la phase initiale de conception ?",
-          "answer": "Notre forfait standard de logo comprend 3 à 5 concepts uniques. Chaque concept est accompagné de différentes variations et applications pour vous aider à visualiser comment le logo fonctionnera sur diverses plateformes."
-        },
-        "templatePackage": {
-          "question": "Que comprend le forfait de modèles pour les réseaux sociaux ?",
-          "answer": "Le forfait comprend des modèles personnalisables pour : les publications Instagram (fil, stories et reels), les publications et images de couverture Facebook, les graphismes pour la page entreprise LinkedIn, les publications et images d'en-tête Twitter, ainsi que des modèles d'animation basiques pour les stories et reels."
-        },
-        "editableTemplates": {
-          "question": "Fournissez-vous des modèles modifiables pour que notre équipe puisse les utiliser ?",
-          "answer": "Oui ! Nous créons des modèles faciles à modifier sur Canva ou des plateformes similaires, permettant à votre équipe de maintenir une cohérence de marque tout en créant du contenu quotidien pour les réseaux sociaux."
-        },
-        "turnaround": {
-          "question": "Quel est le délai de livraison pour le contenu des réseaux sociaux ?",
-          "answer": "Les publications régulières sont livrées en 24 à 48 heures. Pour les forfaits de contenu mensuels (15 à 20 publications), nous livrons l'ensemble du package en 5 à 7 jours ouvrables."
-        },
-        "rushDelivery": {
-          "question": "Proposez-vous une livraison express pour les publications urgentes sur les réseaux sociaux ?",
-          "answer": "Oui, nous proposons une livraison le jour même pour les publications urgentes sur les réseaux sociaux moyennant un supplément, sous réserve de disponibilité."
-        },
-        "brandGuide": {
-          "question": "Que comprend le guide de style de la marque ?",
-          "answer": "Le guide complet inclut : les règles d'utilisation du logo, des palettes de couleurs avec tous les codes (RGB, CMJN, HEX), des directives typographiques, des lignes directrices pour le style des images, des modèles de publications pour les réseaux sociaux et les meilleures pratiques pour maintenir la cohérence de la marque."
-        },
-        "seasonalCampaigns": {
-          "question": "Pouvez-vous aider avec des campagnes saisonnières sur les réseaux sociaux ?",
-          "answer": "Oui ! Nous créons des forfaits de contenu thématiques pour les vacances, événements spéciaux et promotions saisonnières, incluant à la fois des publications statiques et animées."
-        },
-        "contentCalendar": {
-          "question": "Fournissez-vous des calendriers de contenu pour les réseaux sociaux ?",
-          "answer": "Oui, nous pouvons fournir un calendrier de contenu stratégique en complément de vos designs, suggérant les meilleurs moments de publication et le meilleur mix de contenu pour un engagement maximal."
-        },
-        "revisions": {
-          "question": "Puis-je apporter des modifications aux designs ?",
-          "answer": "Absolument ! Nous offrons des révisions illimitées pendant le processus de conception jusqu'à ce que vous soyez entièrement satisfait. Pour les logos, les révisions sont incluses jusqu'à l'approbation finale. Pour les publications sur les réseaux sociaux, nous offrons 2 cycles de révisions par publication."
-        },
-        "brandAssetUsage": {
-          "question": "Fournissez-vous des conseils sur l'utilisation des logos et des éléments de marque ?",
-          "answer": "Oui, chaque forfait de logo inclut un document détaillé de directives de marque expliquant l'utilisation correcte, les tailles minimales, les exigences d'espacement ainsi que les bonnes et mauvaises pratiques pour votre logo et vos éléments de marque."
-        }
+        "logo": "Design de logo",
+        "social": "Publications réseaux sociaux",
+        "other": "Autres designs"
       }
     }
   }

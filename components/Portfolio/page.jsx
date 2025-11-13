@@ -3,6 +3,9 @@ import { ArrowUpRight } from "lucide-react";
 import React, { useState } from "react";
 import { useTranslation } from "next-i18next";
 import PortfolioModal from "@/components/PortfolioModal/page";
+import FAQs from "@/components/Faqs/page";
+import FormCTA from "@/components/Form-CTA/page";
+import HeroButtons from "@/components/HeroButtons/page";
 
 const portfolioItems = [
   {
@@ -279,9 +282,11 @@ const Portfolio = () => {
   const { t: tMobileDevelopment } = useTranslation("mobileDevelopment");
   const { t: tSocialMediaLogoDesign } = useTranslation("socialMediaLogoDesign");
   const { t: tSeo } = useTranslation("seo");
+  const { t: tPortfolio } = useTranslation("portfolio");
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedModal, setSelectedModal] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState("all");
 
   // Helper to select the proper translation function based on the translation key
   const getTranslationFunc = (translationKey) => {
@@ -316,18 +321,73 @@ const Portfolio = () => {
     ? getTranslationFunc(selectedModal.translationName)
     : (key) => key;
 
+  // Get category from translation key
+  const getCategoryFromItem = (item) => {
+    const namespace = item.translationName.split(".")[0];
+    return namespace;
+  };
+
+  // Filter portfolio items by category
+  const filteredItems = selectedCategory === "all" 
+    ? portfolioItems 
+    : portfolioItems.filter(item => getCategoryFromItem(item) === selectedCategory);
+
+  // Category mapping
+  const categories = [
+    { key: "all", label: tPortfolio("portfolio.categories.all") },
+    { key: "webDevelopment", label: tPortfolio("portfolio.categories.webDevelopment") },
+    { key: "saas", label: tPortfolio("portfolio.categories.saas") },
+    { key: "ecommerce", label: tPortfolio("portfolio.categories.ecommerce") },
+    { key: "websiteMobileDesign", label: tPortfolio("portfolio.categories.websiteMobileDesign") },
+    { key: "mobileDevelopment", label: tPortfolio("portfolio.categories.mobileDevelopment") },
+    { key: "socialMediaLogoDesign", label: tPortfolio("portfolio.categories.socialMediaLogoDesign") },
+    { key: "seo", label: tPortfolio("portfolio.categories.seo") },
+  ];
+
   return (
     <div>
-      {/* Portfolio Section */}
+      {/* Hero Section */}
+      <div className="bg-blue-200">
+        <div className="flex flex-col h-screen gap-5 justify-center items-center mx-3 sm:mx-6 lg:mx-12">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl text-center font-extrabold text-gray-800 max-w-5xl">
+            {tPortfolio("portfolio.hero.title")}
+          </h1>
+          <div className="max-w-4xl mx-auto space-y-3 sm:space-y-4 text-base sm:text-lg text-gray-700 text-center px-4">
+            <p>{tPortfolio("portfolio.hero.subtitle")}</p>
+            <p className="font-semibold text-gray-800">
+              {tPortfolio("portfolio.hero.description")}
+            </p>
+          </div>
+          <HeroButtons />
+        </div>
+      </div>
+
+      {/* Category Filter Section */}
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <h1 className="text-4xl text-center font-bold text-gray-800">
-          {tEcommerce("ecommerce.portfolio.title")}{" "}
-          <span className="text-blue-600 bg-blue-200 p-2.5 rounded-2xl">
-            {tEcommerce("ecommerce.portfolio.titleHighlight")}
-          </span>
-        </h1>
-        <div className="grid mt-10 grid-cols-1 md:grid-cols-3 gap-10">
-          {portfolioItems.map((item, index) => {
+        <h2 className="text-3xl text-center font-bold text-gray-800 mb-8">
+          {tPortfolio("portfolio.categories.title")}
+        </h2>
+        
+        {/* Category Buttons */}
+        <div className="flex flex-wrap justify-center gap-3 mb-12">
+          {categories.map((category) => (
+            <button
+              key={category.key}
+              onClick={() => setSelectedCategory(category.key)}
+              className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
+                selectedCategory === category.key
+                  ? "bg-blue-600 text-white shadow-md"
+                  : "bg-white text-gray-700 border-2 border-gray-200 hover:border-blue-300"
+              }`}
+            >
+              {category.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Portfolio Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          {filteredItems.map((item, index) => {
             // Get the translation function for the current item
             const currentT = getTranslationFunc(item.translationName);
             return (
@@ -364,6 +424,24 @@ const Portfolio = () => {
         setIsOpen={setIsModalOpen}
         t={modalTranslation} // now passing a single translation function
       />
+
+      {/* FAQ Section */}
+      <div className="bg-gray-50 py-12">
+        <FAQs
+          title={tPortfolio("portfolio.faq.title")}
+          faqData={Object.keys(
+            tPortfolio("portfolio.faq.items", { returnObjects: true })
+          ).map((key) => ({
+            question: tPortfolio(`portfolio.faq.items.${key}.question`),
+            answer: tPortfolio(`portfolio.faq.items.${key}.answer`),
+          }))}
+        />
+      </div>
+
+      {/* Contact Section */}
+      <div id="contact">
+        <FormCTA />
+      </div>
     </div>
   );
 };

@@ -1,5 +1,18 @@
 {
   "contact": {
+    "hero": {
+      "title": "Let's Talk About Your Digital Project"
+    },
+    "intro": {
+      "description": "Do you have a web, mobile or digital project? Our Numispark experts are available to advise you and offer you the best solutions.",
+      "cta": "Fill out the form below or contact us directly. We will respond quickly."
+    },
+    "benefits": {
+      "response24h": "Response within 24h",
+      "freeConsultation": "Free Consultation",
+      "noCommitment": "No Commitment",
+      "availableTeam": "Available Team"
+    },
     "heading": "Ready to start?",
     "contactDetail": "Our Contact",
     "subHeading": "Ready to get started? We would love to hear from you.",
@@ -55,6 +68,42 @@
       },
       "submit": "Send",
       "submitting": "Sending..."
+    },
+    "faq": {
+      "items": {
+        "responseTime": {
+          "question": "What is your response time?",
+          "answer": "We respond to all requests within 24 business hours. For emergencies, call us directly at +33 6 02 52 87 71 Monday to Friday 9am-6pm CET."
+        },
+        "initialConsultation": {
+          "question": "Is the initial consultation paid?",
+          "answer": "No, our first consultation and initial audit are free and without commitment. It's an opportunity to discuss your needs and explore possible solutions."
+        },
+        "budgetPlanning": {
+          "question": "What budget should I plan for my project?",
+          "answer": "It varies according to your objectives, complexity and technologies. We offer solutions for all budgets — from a few hundred to several tens of thousands of euros. Fill out the form to get a free and personalized quote."
+        },
+        "inPersonMeeting": {
+          "question": "Can you meet us in person?",
+          "answer": "Absolutely! We are based in Caen and available for on-site meetings. We can also do video conferences if that's more convenient for you."
+        },
+        "industryExperience": {
+          "question": "Do you have experience in my industry?",
+          "answer": "We have multi-sector experience: e-commerce, tourism, education, services, SaaS, etc. Our approach adapts to your field and its specificities. Describe your sector in the form and we will confirm our expertise."
+        },
+        "smeSupport": {
+          "question": "Do you work with SMEs/VSEs?",
+          "answer": "Yes, we work with all types of companies: VSEs, SMEs, startups, associations. Our approach is flexible and adapted to your size and resources."
+        },
+        "documentSharing": {
+          "question": "How can I share documents with you?",
+          "answer": "You can attach files to the contact form. After our first exchange, we will provide you with secure sharing means (cloud, download link, etc.)."
+        },
+        "maintenancePackages": {
+          "question": "Do you offer maintenance packages after the project?",
+          "answer": "Yes, we offer technical maintenance, hosting and support packages to ensure the sustainability and performance of your projects."
+        }
+      }
     }
   }
 }

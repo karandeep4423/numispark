@@ -1,67 +1,188 @@
 {
   "home": {
     "hero": {
-      "title": "Votre Agence de Communication avec",
-      "titleHighlight": "Solutions numériques de classe mondiale",
-      "subtitle": "Développement web | Applications mobiles | Design UI/UX | Marketing numérique"
+      "title": "Agence Web en France - Création de Sites Internet & Applications Mobile",
+      "subtitle": "Votre partenaire pour une transformation digitale réussie",
+      "description": "Numispark est votre agence web en France spécialiste dans la création de sites internet et le développement d'applications sur mesure.",
+      "details": "Idéalement situés en France et intervenant dans toute la France, nous accompagnons les entreprises dans leur transformation digitale avec créativité, expertise technique et une approche centrée sur vos résultats."
+    },
+    "about": {
+      "title": "Qui sommes-nous ?",
+      "description": "Numispark est une agence digitale française qui accompagne les entreprises dans leur développement numérique.",
+      "mission": "Notre équipe pluridisciplinaire combine expertise technique et vision créative pour concevoir des solutions web et mobile performantes.",
+      "valuesTitle": "Nos valeurs",
+      "values": {
+        "innovation": "Innovation",
+        "availability": "Disponibilité",
+        "transparency": "Transparence",
+        "excellence": "Excellence technique"
+      },
+      "experience": "Avec plus de 60 projets réalisés pour des clients de tous secteurs, de la TPE au grand compte, nous mettons notre savoir-faire au service de votre croissance digitale."
     },
     "services": {
       "title": "Nos",
       "titleHighlight": "Services",
-      "subtitle": "Solutions complètes adaptées à vos besoins",
       "items": {
         "webDevelopment": {
-          "name": "Développement Web",
-          "description": "Construisez des solutions web évolutives et indépendantes de la plateforme pour une accessibilité et une portée améliorées."
+          "name": "Création de sites web",
+          "description": "Nous construisons des sites internet sur-mesure, responsives et optimisés pour les moteurs de recherche, qui convertissent vos visiteurs en clients.",
+          "expertiseTitle": "Notre expertise",
+          "expertise": [
+            "Design mobile-first pour une expérience utilisateur optimale sur tous les appareils",
+            "Développement personnalisé ou CMS selon vos besoins",
+            "Optimisation SEO intégrée dès la conception",
+            "Sites vitrines performants et sites e-commerce évolutifs",
+            "Interfaces administratives intuitives pour une gestion facilitée"
+          ]
         },
         "mobileAppDevelopment": {
           "name": "Développement d'applications mobiles",
-          "description": "Créez des applications mobiles robustes, conçues pour les plateformes Android et iOS."
+          "description": "Nous créons des applications iOS et Android robustes et intuitives qui répondent aux besoins spécifiques de votre entreprise et de vos utilisateurs.",
+          "expertiseTitle": "Notre expertise",
+          "expertise": [
+            "Applications natives et hybrides pour iOS et Android",
+            "Expérience utilisateur fluide et intuitive",
+            "Interfaces modernes et personnalisées",
+            "Tests rigoureux sur l'ensemble des appareils cibles",
+            "Mises à jour et maintenance continues"
+          ]
         },
         "digitalMarketing": {
-          "name": "Marketing numérique",
-          "description": "Boostez votre présence en ligne et stimulez l'engagement avec des stratégies de marketing basées sur les données."
+          "name": "Stratégie webmarketing & référencement",
+          "description": "Boostez votre visibilité en ligne avec nos stratégies digitales sur-mesure, basées sur l'analyse de données et orientées vers la conversion.",
+          "expertiseTitle": "Notre expertise",
+          "expertise": [
+            "Référencement naturel (SEO) et payant (SEA)",
+            "Content marketing et rédaction web optimisée",
+            "Stratégie de présence sur les réseaux sociaux",
+            "Analyse de performance et optimisation continue",
+            "Campagnes emailing et marketing automation"
+          ]
         },
         "uiUxDesign": {
-          "name": "Conception UI/UX",
-          "description": "Concevez des interfaces intuitives et esthétiques pour une expérience utilisateur fluide."
+          "name": "Conception UX/UI",
+          "description": "Nous concevons des interfaces utilisateur esthétiques et ergonomiques qui maximisent l'engagement et facilitent la conversion.",
+          "expertiseTitle": "Notre expertise",
+          "expertise": [
+            "Analyse des besoins utilisateurs et de vos objectifs business",
+            "Wireframing et prototypage interactif",
+            "Design responsive et accessible",
+            "Tests utilisateurs pour valider l'expérience",
+            "Optimisation continue basée sur les données d'usage"
+          ]
         },
         "saasDevelopment": {
-          "name": "Développement SaaS",
-          "description": "Développez des solutions SaaS sécurisées, évolutives et personnalisables pour répondre aux besoins de votre entreprise."
+          "name": "Solutions SaaS",
+          "description": "Développez votre propre logiciel en ligne pour optimiser vos processus internes ou créer de nouvelles opportunités commerciales.",
+          "expertiseTitle": "Notre expertise",
+          "expertise": [
+            "Applications web sécurisées et évolutives",
+            "Interfaces administrateur personnalisées",
+            "Intégration avec vos systèmes existants",
+            "Architecture cloud robuste et performante",
+            "Support technique et évolutions continues"
+          ]
         },
         "aiAutomation": {
-          "name": "IA et automatisation",
-          "description": "Exploitez l'IA et l'automatisation pour optimiser les flux de travail et améliorer l'efficacité."
+          "name": "Intelligence Artificielle & Automatisation",
+          "description": "Optimisez vos processus métiers et gagnez en efficacité grâce à l'IA et l'automatisation intelligente de vos flux de travail.",
+          "expertiseTitle": "Notre expertise",
+          "expertise": [
+            "Automatisation de processus répétitifs et chronophages",
+            "Intégration d'IA pour l'analyse prédictive et la prise de décision",
+            "Chatbots et assistants virtuels intelligents",
+            "Traitement automatisé de données et documents",
+            "Optimisation des workflows métiers"
+          ]
         },
         "ecommerceDevelopment": {
-          "name": "Développement e-commerce",
-          "description": "Créez des plateformes e-commerce dynamiques pour renforcer votre présence dans le commerce en ligne."
+          "name": "E-commerce",
+          "description": "Développez votre activité commerciale en ligne avec des solutions e-commerce performantes, sécurisées et adaptées à votre modèle d'affaires.",
+          "expertiseTitle": "Notre expertise",
+          "expertise": [
+            "Création de boutiques en ligne sur-mesure",
+            "Optimisation du tunnel de conversion",
+            "Intégration des solutions de paiement sécurisées",
+            "Gestion des stocks et logistique",
+            "Connexion avec les marketplaces (Amazon, Cdiscount, etc.)"
+          ]
+        }
+      }
+    },
+    "differentiators": {
+      "title": "Nos atouts différenciants",
+      "items": {
+        "experience": {
+          "title": "Une expérience multisectorielle",
+          "description": "Nous accompagnons des entreprises de toutes tailles et de tous secteurs :",
+          "sectors": [
+            "Startups et scale-ups",
+            "TPE et PME en croissance",
+            "Grands comptes et institutions",
+            "E-commerce et retail",
+            "Services B2B et B2C",
+            "Éducation et formation",
+            "Tourisme et loisirs",
+            "Coaching et développement personnel"
+          ]
+        },
+        "approach": {
+          "title": "Une approche collaborative",
+          "description": "Nous privilégions une relation de proximité et de transparence avec nos clients :",
+          "points": [
+            "Compréhension approfondie de vos objectifs business",
+            "Co-construction de la stratégie digitale",
+            "Communication claire et régulière",
+            "Processus agile et itératif",
+            "Suivi détaillé de l'avancement du projet"
+          ]
+        },
+        "support": {
+          "title": "Un accompagnement de A à Z",
+          "description": "Nous vous accompagnons à chaque étape de votre projet digital :",
+          "steps": [
+            "Définition de la stratégie",
+            "Conception de l'expérience utilisateur",
+            "Développement technique",
+            "Tests et validation",
+            "Déploiement et mise en production",
+            "Formation et support post-lancement"
+          ]
         }
       }
     },
     "process": {
-      "title": "Comment fonctionne l'agence",
+      "title": "Notre processus de collaboration",
       "steps": {
         "vision": {
-          "title": "Comprendre votre vision",
-          "description": "Nous collaborons étroitement pour comprendre vos objectifs, défis et ambitions, garantissant ainsi une trajectoire claire pour votre projet. Notre priorité est de nous aligner sur votre vision dès le début."
+          "title": "Découverte et Analyse",
+          "number": "1",
+          "description": "Nous collaborons étroitement pour comprendre vos objectifs, défis et ambitions. Cette phase inclut l'analyse de votre marché, de votre concurrence et des tendances actuelles pour identifier les meilleures opportunités.",
+          "deliverables": "Livrables : Audit complet, rapport d'analyse, recommandations stratégiques"
         },
         "planning": {
-          "title": "Planification stratégique",
-          "description": "En nous appuyant sur les informations recueillies lors de nos échanges, nous élaborons une stratégie détaillée qui définit des étapes concrètes. Notre approche sur mesure garantit le succès mesurable de votre projet."
+          "title": "Conception UX et Prototypage",
+          "number": "2",
+          "description": "Transformation des idées en plans structurés avec des prototypes pour visualiser le projet final et assurer une clarté stratégique. Cette approche permet d'affiner l'expérience utilisateur et d'optimiser les parcours de conversion.",
+          "deliverables": "Livrables : Wireframes, maquettes, prototypes interactifs"
         },
         "development": {
-          "title": "Conception et développement",
-          "description": "Nos équipes créatives et techniques travaillent ensemble pour donner vie à vos idées. Nous fournissons des conceptions visuellement époustouflantes associées à un développement performant."
+          "title": "Développement Agile",
+          "number": "3",
+          "description": "Transformation des concepts en solutions entièrement fonctionnelles grâce à un design harmonieux et un développement robuste pour une performance optimale. Nous travaillons par itérations, vous permettant de suivre l'avancement et d'ajuster le projet en cours de route.",
+          "deliverables": "Livrables : Versions fonctionnelles progressives, rapports d'avancement hebdomadaires"
         },
         "launch": {
-          "title": "Lancement et déploiement",
-          "description": "Après des tests rigoureux, nous lançons votre projet avec précision. Notre déploiement sans faille garantit que votre solution est prête à fonctionner parfaitement."
+          "title": "Tests et Déploiement",
+          "number": "4",
+          "description": "Réalisation de tests rigoureux pour s'assurer que votre solution est exempte de problèmes, optimisée et prête pour un lancement sans accrocs. Nous vérifions la compatibilité cross-navigateurs et cross-devices, la sécurité et les performances.",
+          "deliverables": "Livrables : Rapports de tests, version finale optimisée, formation utilisateur"
         },
         "support": {
-          "title": "Support continu",
-          "description": "Nous assurons un support après lancement pour que votre projet reste à la pointe. Notre équipe est toujours présente pour vous aider et innover davantage."
+          "title": "Maintenance et Évolution",
+          "number": "5",
+          "description": "Déploiement avec précision et support post-lancement pour maintenir un fonctionnement fluide et efficace, avec des mises à jour régulières et des recommandations d'amélioration continue.",
+          "deliverables": "Options : Contrats de maintenance sur-mesure, support technique, optimisation continue"
         }
       }
     },
@@ -124,32 +245,30 @@
       }
     },
     "testimonials": {
-      "title": "Nos Clients",
-      "titleHighlight": "Témoignages",
+      "title": "Ce que disent nos clients",
       "feedback1": {
-        "alt": "seo-blog-article-feedback",
-        "name": "Lydia DUAN - Chef de projet",
-        "feedback": "Numispark a rédigé plusieurs articles de blog SEO en espagnol pour notre client spécialisé dans le voyage et le tourisme. Les articles sont de haute qualité et leur style d'écriture est très flexible. Merci beaucoup pour votre excellent travail, Numispark !"
-      },
-      "feedback2": {
-        "alt": "web-development-feedback",
-        "name": "Olivier LENOIR - Dirigeant",
-        "feedback": "Nous travaillons depuis plus d'un an presque quotidiennement avec Numispark. L’équipe est toujours très impliquée et engagée pour mener au mieux les missions confiées. Ils aiment être force de proposition. Toujours disponibles et agréables, je recommande vivement Numispark !"
-      },
-      "feedback3": {
-        "alt": "app-development-feedback",
-        "name": "Claire MAINAUD - Coach en développement personnel",
-        "feedback": "J'ai fait appel à Numispark pour mon site internet et ma stratégie de communication. L’équipe est très agréable, d’une grande disponibilité, force de proposition et très à l’écoute. Je vous recommande de prendre contact avec Numispark pour vos projets professionnels, car je n'ai aucun doute qu'ils sauront répondre à toutes vos attentes ! Je n’hésite pas à parler d’eux à mon entourage !"
-      },
-      "feedback4": {
-        "alt": "seo-article-feedback",
-        "name": "Léo NISHIBAYASHI - Responsable pédagogique",
-        "feedback": "Numispark a été un excellent formateur dans notre école, la Rocket School ! Nous avons fait appel à eux pour une formation d'une semaine en copywriting et content marketing pour une promotion de Growth Hackers. Nos apprenants ont beaucoup apprécié leur intervention ! Numispark est professionnel et possède une excellente pédagogie : ils savent s’adapter aux besoins de l'école et des apprenants. Nous prévoyons de les solliciter à nouveau pour des promotions en BizDev, CSM et Growth, et avons hâte de les accueillir de nouveau !"
-      },
-      "feedback5": {
         "alt": "privatehonors-feedback",
         "name": "Private Honors - Directeur",
-        "feedback": "J’ai fait appel à Numispark pour développer notre application web Private Honors. L’équipe de développement a été très agréable et a parfaitement compris les besoins de notre produit. Je suis ravi du résultat et je collabore désormais avec eux sur le SEO et le marketing."
+        "project": "Projet : Développement d'application web & Marketing digital",
+        "feedback": "J'ai fait appel à Numispark pour développer notre application web Private Honors. L'équipe de développement a été très agréable et a parfaitement compris les besoins de notre produit. Je suis ravi du résultat et je collabore désormais avec eux sur le SEO et le marketing."
+      },
+      "feedback2": {
+        "alt": "seo-blog-article-feedback",
+        "name": "Lydia DUAN - Chef de projet",
+        "project": "Projet : Content Marketing international & SEO",
+        "feedback": "Numispark a rédigé plusieurs articles de blog SEO en espagnol pour notre client spécialisé dans le voyage et le tourisme. Les articles sont de haute qualité et leur style d'écriture est très flexible. Merci beaucoup pour votre excellent travail, Numispark !"
+      },
+      "feedback3": {
+        "alt": "web-development-feedback",
+        "name": "Olivier LENOIR - Dirigeant",
+        "project": "Projet : Partenariat digital long-terme",
+        "feedback": "Nous travaillons depuis plus d'un an presque quotidiennement avec Numispark. L'équipe est toujours très impliquée et engagée pour mener au mieux les missions confiées. Ils aiment être force de proposition. Toujours disponibles et agréables, je recommande vivement Numispark !"
+      },
+      "feedback4": {
+        "alt": "app-development-feedback",
+        "name": "Claire MAINAUD - Coach en développement personnel",
+        "project": "Projet : Site web & Stratégie de communication",
+        "feedback": "J'ai fait appel à Numispark pour mon site internet et ma stratégie de communication. L'équipe est très agréable, d'une grande disponibilité, force de proposition et très à l'écoute. Je vous recommande de prendre contact avec Numispark pour vos projets professionnels, car je n'ai aucun doute qu'ils sauront répondre à toutes vos attentes ! Je n'hésite pas à parler d'eux à mon entourage !"
       }
     },
     "gallery": {
@@ -158,20 +277,33 @@
       "description": "NumiSpark dans les écoles & événements"
     },
     "faq": {
+      "title": "Questions fréquemment posées",
       "items": {
-        "quote": {
-          "question": "Comment puis-je demander un devis pour un projet ?",
-          "answer": "Vous pouvez demander un devis en remplissant notre formulaire en ligne ou en contactant directement notre équipe commerciale. Nous vous répondrons dans les 24 heures avec une proposition détaillée basée sur les exigences de votre projet."
+        "projectTypes": {
+          "question": "Quels types de projets une agence web comme Numispark peut-elle prendre en charge ?",
+          "answer": "En tant qu'agence web en France, Numispark accompagne les entreprises sur l'ensemble de leurs besoins digitaux : création de sites internet (vitrine, e-commerce, portail), développement d'applications web et mobiles, refonte de sites existants, stratégie de référencement, webmarketing, conception UX/UI, et développement de solutions SaaS sur-mesure. Notre équipe pluridisciplinaire s'adapte à la taille et à la complexité de votre projet."
         },
-        "industries": {
-          "question": "Quels secteurs desservez-vous ?",
-          "answer": "Nous desservons un large éventail de secteurs, y compris la technologie, la santé, la finance, le commerce de détail, l'éducation et la fabrication. Nos solutions sont personnalisées pour répondre aux besoins spécifiques de chaque secteur."
+        "industryAdaptation": {
+          "question": "Est-ce que Numispark s'adapte à mon secteur d'activité ?",
+          "answer": "Absolument ! Notre expérience couvre de nombreux secteurs : e-commerce, services B2B et B2C, éducation, coaching, tourisme, immobilier, santé, industrie, etc. Nous prenons le temps de comprendre les spécificités de votre secteur pour vous proposer des solutions adaptées à vos enjeux et à votre audience. Nos références clients témoignent de notre capacité à nous adapter à des univers variés."
+        },
+        "ownership": {
+          "question": "Suis-je propriétaire de mon site/application à la livraison ?",
+          "answer": "Oui, vous êtes entièrement propriétaire de votre site ou application une fois le projet livré et soldé. Nous vous transmettons l'ensemble des codes sources, accès et documentations nécessaires. Nous privilégions également les technologies open-source et les solutions sans dépendances propriétaires pour garantir votre indépendance à long terme."
+        },
+        "postLaunch": {
+          "question": "Est-ce que je peux avoir un accompagnement après la mise en ligne ?",
+          "answer": "Nous proposons plusieurs formules d'accompagnement post-lancement pour assurer la pérennité de votre projet : contrats de maintenance technique, support utilisateur, évolutions fonctionnelles, et optimisation continue."
         },
         "timeline": {
-          "question": "Quel est le délai typique pour un projet ?",
-          "answer": "Les délais des projets varient en fonction de l'ampleur et de la complexité. En général, les petits projets prennent 2 à 4 semaines, les projets moyens 1 à 3 mois, et les grands projets 3 à 6 mois. Nous fournirons un calendrier détaillé lors de la consultation initiale."
+          "question": "Quels sont vos délais et comment garantissez-vous la ponctualité ?",
+          "answer": "Nos délais varient selon la complexité du projet. Notre méthodologie agile, avec des points d'étape réguliers et un planning détaillé, nous permet de respecter les échéances fixées. En cas d'imprévu, nous vous en informons immédiatement et proposons des solutions adaptées."
         }
       }
+    },
+    "cta": {
+      "title": "Transformez votre projet digital en réalité",
+      "description": "Prêt à donner vie à votre vision ? Notre équipe d'experts est disponible pour échanger sur vos besoins et vous proposer des solutions adaptées. Bénéficiez d'un audit gratuit de votre présence en ligne et d'un devis personnalisé sans engagement."
     }
   }
 }

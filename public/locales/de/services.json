@@ -1,0 +1,208 @@
+{
+  "services": {
+    "hero": {
+      "title": "Entdecken Sie unsere Dienstleistungen",
+      "subtitle": "Komplette digitale Lösungen zur Unterstützung Ihres Wachstums",
+      "description": "Vom Design bis zur Einführung unterstützen wir Ihr digitales Projekt mit Fachwissen und Leidenschaft. Entdecken Sie unsere maßgeschneiderten Dienstleistungen für Ihre Bedürfnisse."
+    },
+    "keyPointsTitle": "Wichtige Punkte",
+    "learnMore": "Mehr erfahren",
+    "servicesTitle": "Entdecken Sie unsere",
+    "servicesTitleHighlight": "Dienstleistungen",
+    "servicesSubtitle": "Komplette digitale Lösungen zur Unterstützung Ihres Wachstums",
+    "items": [
+      {
+        "id": "web-development",
+        "name": "Website-Erstellung",
+        "shortDescription": "Professionelle, schnelle und optimierte Websites für alle Geräte.",
+        "icon": "Globe",
+        "highlights": [
+          "Showcase- und Corporate-Websites",
+          "Responsive und leistungsstarke Seiten",
+          "Individuelles WordPress-CMS",
+          "Hosting und Wartung"
+        ],
+        "link": "/agence-creation-site-web"
+      },
+      {
+        "id": "seo-audit",
+        "name": "Kostenloses SEO-Audit",
+        "shortDescription": "Vollständige Analyse Ihrer SEO zur Identifizierung von Verbesserungsmöglichkeiten.",
+        "icon": "Search",
+        "highlights": [
+          "Vollständiges technisches Audit",
+          "On-Page- und Off-Page-Analyse",
+          "Detaillierter Bericht in 48 Stunden",
+          "100% kostenlos und unverbindlich"
+        ],
+        "link": "/audit-seo-gratuit"
+      },
+      {
+        "id": "mobile-development",
+        "name": "Mobile App-Entwicklung",
+        "shortDescription": "Native und plattformübergreifende mobile Anwendungen für iOS und Android.",
+        "icon": "Smartphone",
+        "highlights": [
+          "Native iOS- und Android-Apps",
+          "Plattformübergreifend (React Native, Flutter)",
+          "Intuitives UX/UI-Design",
+          "Wartung und Weiterentwicklung"
+        ],
+        "link": "/developpement-application-mobile"
+      },
+      {
+        "id": "ecommerce",
+        "name": "E-Commerce-Entwicklung",
+        "shortDescription": "Hochleistungs-Onlineshops optimiert für Konversion und Benutzererfahrung.",
+        "icon": "ShoppingCart",
+        "highlights": [
+          "Maßgeschneiderte und schlüsselfertige Onlineshops",
+          "PrestaShop, Shopify, WooCommerce",
+          "Sichere Zahlungsintegration",
+          "Shop-Migration und Redesign"
+        ],
+        "link": "/developpement-ecommerce"
+      },
+      {
+        "id": "saas",
+        "name": "SaaS-Entwicklung",
+        "shortDescription": "Skalierbare, sichere und intuitive Cloud-basierte Softwarelösungen.",
+        "icon": "Cloud",
+        "highlights": [
+          "Multi-Tenant-Cloud-Architektur",
+          "Automatisiertes Abonnementmanagement",
+          "Erweiterte Sicherheit und Compliance",
+          "Drittanbieter-Integrationen"
+        ],
+        "link": "/developpement-saas"
+      },
+      {
+        "id": "ai-automation",
+        "name": "KI & Automatisierungsagentur",
+        "shortDescription": "Intelligente Automatisierungs- und KI-Lösungen zur Optimierung Ihrer Prozesse.",
+        "icon": "Brain",
+        "highlights": [
+          "Prozessautomatisierung mit KI",
+          "Intelligente Chatbots",
+          "Prädiktive Analysen",
+          "CRM- und ERP-Integration"
+        ],
+        "link": "/agence-automatisation-ia"
+      },
+      {
+        "id": "web-mobile-design",
+        "name": "Web & Mobile Design",
+        "shortDescription": "Kreative und funktionale Designs, die Ihre Benutzer fesseln und konvertieren.",
+        "icon": "Palette",
+        "highlights": [
+          "Modernes UX/UI-Design",
+          "Optimierte Benutzererfahrung",
+          "Interaktive Prototypen",
+          "Responsive Design"
+        ],
+        "link": "/web-et-mobile-design"
+      },
+      {
+        "id": "social-media-design",
+        "name": "Social Media & Logo-Design",
+        "shortDescription": "Wirkungsvolle visuelle Identitäten und ansprechende Inhalte für Ihre sozialen Netzwerke.",
+        "icon": "PenTool",
+        "highlights": [
+          "Individuelles Logo-Design",
+          "Social-Media-Posts",
+          "Visuelle Charta",
+          "Print- und Digital-Branding"
+        ],
+        "link": "/design-logo-et-posts-reseaux-sociaux"
+      },
+      {
+        "id": "seo",
+        "name": "Natürliche Suchmaschinenoptimierung",
+        "shortDescription": "SEO-Strategien zur Verbesserung Ihrer Sichtbarkeit und Platzierung bei Google.",
+        "icon": "TrendingUp",
+        "highlights": [
+          "Technisches und On-Page-SEO",
+          "Keyword-Recherche",
+          "Qualitäts-Linkaufbau",
+          "SEO-Content-Strategie"
+        ],
+        "link": "/seo"
+      },
+      {
+        "id": "digital-marketing",
+        "name": "Digitales Marketing",
+        "shortDescription": "Hochleistungs-Digitalstrategien zur Steigerung Ihrer Sichtbarkeit und Konversionen.",
+        "icon": "Target",
+        "highlights": [
+          "Social-Media-Strategie",
+          "Facebook-, Instagram-, LinkedIn-Anzeigen",
+          "Community-Management",
+          "Analytics und Reporting"
+        ],
+        "link": "/marketing-digital"
+      }
+    ],
+    "whyChooseUs": {
+      "title": "Warum Numispark wählen?",
+      "reasons": [
+        {
+          "icon": "Users",
+          "title": "Erfahrenes Team",
+          "description": "Unser Expertenteam kombiniert technische Fähigkeiten und Kreativität, um außergewöhnliche digitale Lösungen zu liefern."
+        },
+        {
+          "icon": "Rocket",
+          "title": "Bewährte Ergebnisse",
+          "description": "Über 200 erfolgreiche Projekte und eine 98%ige Zufriedenheitsrate zeigen unser Engagement für Exzellenz."
+        },
+        {
+          "icon": "Lightbulb",
+          "title": "Innovation & Kreativität",
+          "description": "Wir bleiben an der Spitze der Technologie, um Ihnen innovative und differenzierende Lösungen anzubieten."
+        },
+        {
+          "icon": "HeartHandshake",
+          "title": "Persönliche Unterstützung",
+          "description": "Wir hören auf Ihre Bedürfnisse und arbeiten eng mit Ihnen zusammen, um den Erfolg Ihres Projekts sicherzustellen."
+        },
+        {
+          "icon": "BarChart",
+          "title": "Datengesteuerte Herangehensweise",
+          "description": "Unsere Entscheidungen basieren auf Daten und gründlichen Analysen, um Ihren ROI zu maximieren."
+        },
+        {
+          "icon": "Clock",
+          "title": "Pünktliche Lieferung",
+          "description": "Wir halten unsere Verpflichtungen ein und liefern Ihre Projekte termingerecht mit kompromissloser Qualität."
+        }
+      ]
+    },
+    "process": {
+      "title": "Unser Arbeitsprozess",
+      "description": "Eine bewährte Methodik zur Sicherstellung Ihres Projekterfolgs",
+      "steps": [
+        {
+          "title": "Entdeckung & Analyse",
+          "description": "Wir beginnen damit, Ihre Bedürfnisse, Ziele und Zielgruppe zu verstehen, um die beste Strategie zu definieren."
+        },
+        {
+          "title": "Design & Konzept",
+          "description": "Unser kreatives Team entwirft Mockups und Prototypen, die mit Ihrer Vision und Markenidentität übereinstimmen."
+        },
+        {
+          "title": "Entwicklung",
+          "description": "Unsere Entwickler verwandeln Designs in funktionale Lösungen mit sauberem und optimiertem Code."
+        },
+        {
+          "title": "Tests & Optimierung",
+          "description": "Wir testen jede Funktion sorgfältig und optimieren die Leistung vor dem Go-Live."
+        },
+        {
+          "title": "Start & Support",
+          "description": "Wir sorgen für einen reibungslosen Start und stehen Ihnen für Wartung und zukünftige Entwicklungen zur Seite."
+        }
+      ]
+    }
+  }
+}
+

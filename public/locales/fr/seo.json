@@ -1,124 +1,247 @@
 {
   "seo": {
     "hero": {
-      "title": "Boostez votre visibilité et transformez votre trafic avec notre agence SEO experte en référencement et marketing digital",
-      "subtitle": "Stimulez l'engagement et établissez une identité de marque unique"
+      "title": "Boostez votre visibilité et votre trafic organique grâce à une stratégie SEO sur-mesure",
+      "subtitle": "Référencement Naturel (SEO)",
+      "description": "Le référencement naturel (SEO) est un levier essentiel pour générer un trafic qualifié et durable vers votre site. Chez Numispark, nous développons des stratégies SEO sur-mesure qui améliorent votre visibilité sur Google et transforment le trafic organique en résultats concrets pour votre entreprise."
     },
     "services": {
-      "title": "Nos offres principales",
-      "titleHighlight": "Services",
-      "subtitle": "Des solutions complètes adaptées à vos besoins",
-      "items": {
-        "onPage": {
-          "name": "Optimisation On-Page",
-          "description": "Optimisez le contenu et la structure de votre site pour améliorer votre positionnement dans les moteurs de recherche et l'expérience utilisateur."
+      "items": [
+        {
+          "name": "Audit SEO Complet",
+          "description": "Nous analysons en profondeur la performance actuelle de votre site pour identifier les opportunités d'amélioration et les blocages techniques qui limitent votre visibilité.",
+          "expertiseTitle": "Notre expertise",
+          "expertise": [
+            "Analyse technique complète (indexation, vitesse, structure)",
+            "Évaluation du contenu et de la pertinence SEO",
+            "Audit des balises et éléments on-page",
+            "Analyse de la structure des liens (internes et externes)",
+            "Étude du profil de backlinks",
+            "Benchmark concurrentiel détaillé",
+            "Recommandations priorisées et actionnables"
+          ],
+          "conclusion": "Nos audits vont au-delà du simple diagnostic pour vous fournir une feuille de route claire et priorisée, adaptée à vos ressources et objectifs business."
         },
-        "offPage": {
-          "name": "Stratégies Off-Page",
-          "description": "Renforcez l'autorité et la visibilité de votre site grâce à une stratégie de netlinking et une optimisation externe."
+        {
+          "name": "Stratégie SEO Sur-mesure",
+          "description": "Nous élaborons des stratégies de référencement personnalisées qui s'alignent avec vos objectifs business et votre secteur d'activité.",
+          "expertiseTitle": "Notre expertise",
+          "expertise": [
+            "Recherche approfondie de mots-clés stratégiques",
+            "Analyse d'intention de recherche",
+            "Cartographie des contenus à développer",
+            "Structuration de l'architecture du site optimisée SEO",
+            "Planification des optimisations techniques",
+            "Stratégie de création de contenu à valeur ajoutée",
+            "Plan de netlinking qualitatif",
+            "Définition des KPIs et objectifs mesurables"
+          ],
+          "conclusion": "Notre approche stratégique combine vision à long terme et quick wins pour des résultats à la fois rapides et durables."
         },
-        "technical": {
-          "name": "SEO Technique",
-          "description": "Assurez-vous que la base technique de votre site est solide, notamment la vitesse, l'adaptabilité mobile et la facilité d'exploration par les moteurs de recherche."
+        {
+          "name": "Optimisation SEO Technique",
+          "description": "Nous améliorons les fondations techniques de votre site pour garantir une indexation optimale et une expérience utilisateur irréprochable.",
+          "expertiseTitle": "Notre expertise",
+          "expertise": [
+            "Optimisation de la structure du site et de l'arborescence",
+            "Amélioration des performances (Core Web Vitals)",
+            "Correction des erreurs d'indexation",
+            "Configuration des fichiers robots.txt et sitemaps",
+            "Mise en place de données structurées (Schema.org)",
+            "Optimisation pour mobile et responsive design",
+            "Résolution des problèmes de duplicate content",
+            "Sécurisation HTTPS et redirections"
+          ],
+          "conclusion": "Ces optimisations techniques constituent le socle indispensable d'une stratégie SEO performante et durable."
         },
-        "local": {
-          "name": "SEO Local",
-          "description": "Boostez votre présence en recherche locale pour attirer des clients à proximité et améliorer votre visibilité dans les recherches basées sur la localisation."
+        {
+          "name": "Content Marketing SEO",
+          "description": "Nous créons des contenus stratégiques qui répondent aux intentions de recherche de vos cibles tout en positionnant votre expertise.",
+          "expertiseTitle": "Notre expertise",
+          "expertise": [
+            "Création de pages cornerstone et pillar content",
+            "Rédaction d'articles de blog optimisés SEO",
+            "Enrichissement des pages produits et services",
+            "Optimisation des balises title et meta descriptions",
+            "Structuration hiérarchique (H1, H2, H3)",
+            "Intégration naturelle des mots-clés principaux et secondaires",
+            "Création de contenus multiformats (guides, FAQ, infographies)",
+            "Optimisation des images et éléments multimédias"
+          ],
+          "conclusion": "Notre approche content combine pertinence SEO et valeur ajoutée réelle pour vos visiteurs et clients potentiels."
         },
-        "content": {
-          "name": "Stratégie de Contenu",
-          "description": "Développez et mettez en œuvre une stratégie de contenu alignée sur vos objectifs SEO et engageant votre audience cible."
+        {
+          "name": "Netlinking & Link Building",
+          "description": "Nous développons votre autorité en ligne grâce à des stratégies d'acquisition de backlinks qualitatifs et pertinents.",
+          "expertiseTitle": "Notre expertise",
+          "expertise": [
+            "Audit de votre profil de backlinks actuel",
+            "Identification d'opportunités de liens qualifiés",
+            "Outreach et relations avec sites partenaires",
+            "Création de contenus link-worthy (infographies, études)",
+            "Guest posting sur des sites autoritaires",
+            "Récupération de mentions non liées (link reclamation)",
+            "Analyse des backlinks concurrents",
+            "Diversification des ancres de liens"
+          ],
+          "conclusion": "Notre approche privilégie toujours la qualité à la quantité pour construire un profil de liens naturel et pérenne."
         },
-        "analytics": {
-          "name": "Analytique & Reporting",
-          "description": "Suivez et analysez la performance de votre SEO grâce à des rapports détaillés qui mesurent le succès et identifient les axes d'amélioration."
+        {
+          "name": "Suivi et Reporting SEO",
+          "description": "Nous analysons en continu l'efficacité de vos actions SEO et ajustons la stratégie en fonction des résultats et des évolutions algorithmiques.",
+          "expertiseTitle": "Notre expertise",
+          "expertise": [
+            "Monitoring des positions sur les mots-clés stratégiques",
+            "Analyse de l'évolution du trafic organique",
+            "Suivi des conversions issues du canal SEO",
+            "Reporting mensuel clair et actionnable",
+            "Analyses de performance par page et segment",
+            "Veille algorithmique et adaptation",
+            "Identification des nouvelles opportunités",
+            "Recommandations d'optimisation continue"
+          ],
+          "conclusion": "Nos reportings combinent données techniques et impacts business pour une vision claire de votre ROI SEO."
         }
-      }
-    },
-    "features": {
-      "title": "Principales",
-      "titleHighlight": "Caractéristiques",
-      "titleEnd": "de notre SEO",
-      "subtitle": "Votre succès est notre priorité",
-      "items": {
-        "keyword": {
-          "name": "Optimisation des Mots-Clés",
-          "description": "Optimisez stratégiquement les mots-clés pour améliorer votre positionnement dans les moteurs de recherche et générer un trafic ciblé."
-        },
-        "contentQuality": {
-          "name": "Qualité du Contenu",
-          "description": "Créez un contenu de haute qualité et engageant, conforme aux meilleures pratiques SEO et aux intentions des utilisateurs."
-        },
-        "technicalExcellence": {
-          "name": "Excellence Technique",
-          "description": "Assurez-vous que les aspects techniques de votre site, tels que la vitesse de chargement et l'optimisation mobile, sont optimisés pour le SEO."
-        },
-        "linkBuilding": {
-          "name": "Création de Liens",
-          "description": "Acquérez des backlinks de haute qualité provenant de sources autorisées pour renforcer l'autorité de votre site."
-        },
-        "ecommerce": {
-          "name": "SEO E-commerce",
-          "description": "Optimisation spécialisée pour les boutiques en ligne afin d'augmenter la visibilité des produits et générer davantage de ventes."
-        },
-        "speed": {
-          "name": "Optimisation de la Vitesse du Site",
-          "description": "Optimisez les performances pour améliorer les temps de chargement des pages et les Core Web Vitals pour de meilleurs classements."
-        }
-      }
-    },
-    "benefits": {
-      "title": "Avantages",
-      "titleEnd": "de nous choisir",
-      "items": {
-        "dataDriven": {
-          "name": "Résultats Pilotés par les Données",
-          "description": "Nous utilisons des outils d'analyse avancés et de suivi pour mesurer la performance et fournir un ROI mesurable sur votre investissement SEO."
-        },
-        "transparent": {
-          "name": "Reporting Transparent",
-          "description": "Des rapports détaillés réguliers qui montrent l'évolution de votre positionnement, la croissance du trafic et les améliorations des conversions en termes clairs."
-        },
-        "custom": {
-          "name": "Stratégie sur Mesure",
-          "description": "Une approche SEO personnalisée basée sur votre secteur, la concurrence et vos objectifs commerciaux, plutôt que des solutions universelles."
-        },
-        "technical": {
-          "name": "Excellence Technique",
-          "description": "Optimisation experte des éléments techniques du SEO, incluant la structure du site, la vitesse et la réactivité mobile."
-        },
-        "content": {
-          "name": "Optimisation du Contenu",
-          "description": "Création et optimisation stratégique de contenu qui se positionne bien dans les moteurs de recherche tout en engageant votre audience cible."
-        },
-        "innovation": {
-          "name": "Innovation Continue",
-          "description": "Restez à la pointe des dernières tendances SEO et des mises à jour d'algorithmes grâce à notre approche proactive de l'optimisation."
-        }
-      }
+      ]
     },
     "process": {
-      "title": "Comment fonctionne le SEO",
-      "steps": {
-        "goals": {
-          "title": "Comprendre Vos Objectifs",
-          "description": "Nous commençons par analyser vos objectifs commerciaux, votre audience cible et la concurrence afin d'aligner nos stratégies SEO sur votre vision."
+      "title": "Notre processus SEO",
+      "steps": [
+        {
+          "title": "Analyse & Découverte",
+          "number": "01",
+          "description": "Nous commençons par une analyse approfondie de votre situation actuelle et de vos objectifs. Cela inclut un audit technique complet de votre site, une analyse de votre secteur et de la concurrence, l'étude des intentions de recherche de votre cible, l'identification des opportunités de mots-clés, la définition des objectifs et KPIs, ainsi qu'un benchmark des meilleures pratiques sectorielles."
         },
-        "research": {
-          "title": "Recherche et Analyse de Mots-Clés",
-          "description": "Notre équipe effectue une recherche approfondie pour identifier des mots-clés performants qui résonnent avec votre audience, garantissant ainsi une visibilité optimale."
+        {
+          "title": "Élaboration de la Stratégie",
+          "number": "02",
+          "description": "Nous définissons une stratégie personnalisée basée sur les données recueillies. Cette phase comprend la sélection des mots-clés prioritaires, la planification des optimisations techniques, l'élaboration d'une stratégie de contenu et d'un planning éditorial, un plan d'amélioration de l'architecture du site, une stratégie de netlinking, et la priorisation des actions à fort impact."
+        },
+        {
+          "title": "Implémentation & Optimisation",
+          "number": "03",
+          "description": "Nous mettons en œuvre les actions définies dans la stratégie. Cela inclut les corrections techniques et optimisations, la production et optimisation de contenus, l'amélioration de la structure interne, les actions de link building, l'optimisation des éléments on-page, ainsi que la mise en place du tracking et des mesures de performance."
+        },
+        {
+          "title": "Suivi & Analyse",
+          "number": "04",
+          "description": "Nous mesurons les résultats et ajustons la stratégie en continu. Cette phase comprend le monitoring des positions, l'analyse du trafic et des conversions, l'identification des performances par page, les ajustements basés sur les données, la veille des mises à jour algorithmiques, et un reporting régulier et transparent sur l'évolution de votre visibilité."
+        },
+        {
+          "title": "Évolution & Scale",
+          "number": "05",
+          "description": "Nous faisons évoluer votre stratégie pour amplifier les résultats. Cette phase finale inclut l'expansion vers de nouveaux territoires de mots-clés, le renforcement des contenus performants, le scaling des stratégies de netlinking efficaces, l'adaptation aux évolutions du marché, l'innovation et le test de nouvelles approches, ainsi que l'intégration SEO dans votre écosystème marketing global."
+        }
+      ]
+    },
+    "appTypes": {
+      "title": "SEO adapté à vos besoins",
+      "types": [
+        {
+          "name": "SEO Local",
+          "points": [
+            "Optimisation Google My Business / Google Business Profile",
+            "Référencement local ciblé par ville/région",
+            "Gestion des avis et réputation locale",
+            "Citations et annuaires locaux",
+            "Stratégie de contenu géo-localisé",
+            "Optimisation des pages locales"
+          ]
+        },
+        {
+          "name": "SEO E-commerce",
+          "points": [
+            "Optimisation des fiches produits et catégories",
+            "Structuration technique des catalogues volumineux",
+            "Gestion du duplicate content",
+            "Optimisation de la recherche interne",
+            "Rich snippets et données structurées e-commerce",
+            "Stratégies pour les produits saisonniers"
+          ]
+        },
+        {
+          "name": "SEO B2B",
+          "points": [
+            "Ciblage de mots-clés à forte intention d'achat",
+            "Création de contenus démontrant l'expertise",
+            "Optimisation des pages services et solutions",
+            "Stratégie de génération de leads par le contenu",
+            "Netlinking dans les écosystèmes professionnels",
+            "Positionnement d'experts et thought leadership"
+          ]
+        },
+        {
+          "name": "SEO International",
+          "points": [
+            "Stratégies multilingues (hreflang, traductions)",
+            "Ciblage géographique précis",
+            "Adaptation culturelle des contenus",
+            "Acquisition de backlinks locaux",
+            "Optimisation pour moteurs de recherche internationaux",
+            "Stratégies d'expansion par pays/langue"
+          ]
+        }
+      ]
+    },
+    "whyUs": {
+      "title": "Pourquoi choisir Numispark pour votre SEO",
+      "reasons": [
+        {
+          "title": "Expertise SEO Avancée",
+          "description": "Notre équipe combine expertise technique et compétences stratégiques pour naviguer efficacement dans l'écosystème complexe et changeant du référencement naturel."
+        },
+        {
+          "title": "Approche Data-Driven",
+          "description": "Nous basons chaque décision sur des données concrètes et mesurables, privilégiant les actions à fort impact qui génèrent un ROI démontrable pour votre entreprise."
+        },
+        {
+          "title": "Transparence Totale",
+          "description": "Nos méthodes sont 100% white hat et durables, avec une communication claire sur les actions menées et les résultats obtenus, sans promesses irréalistes."
+        },
+        {
+          "title": "Vision Business",
+          "description": "Nous ne nous limitons pas aux métriques SEO mais alignons notre stratégie sur vos objectifs business concrets : leads, ventes, chiffre d'affaires et ROI."
+        },
+        {
+          "title": "Adaptabilité Constante",
+          "description": "Notre veille permanente sur les évolutions des algorithmes et des bonnes pratiques garantit l'adaptabilité et la pérennité de votre stratégie SEO."
+        }
+      ]
+    },
+    "faq": {
+      "title": "FAQ - Questions Fréquentes",
+      "items": {
+        "timeline": {
+          "question": "Combien de temps faut-il pour voir des résultats en SEO ?",
+          "answer": "Le délai dépend de nombreux facteurs : l'état actuel de votre site, la compétitivité de votre secteur, l'historique de votre domaine, etc. Généralement, les premiers résultats sont visibles entre 3 et 6 mois après le début des optimisations. Les corrections techniques peuvent montrer des améliorations rapides, tandis que les stratégies de contenu et de netlinking nécessitent plus de temps pour porter leurs fruits. Notre approche priorise les quick wins tout en construisant une stratégie durable à long terme."
+        },
+        "cost": {
+          "question": "Quel est le coût d'une prestation SEO ?",
+          "answer": "Le coût dépend entièrement de l'envergure de votre projet. Nos prestations SEO peuvent aller de quelques centaines d'euros pour un audit ponctuel, jusqu'à plusieurs milliers d'euros pour un accompagnement complet incluant stratégie, optimisations techniques, création de contenu et netlinking. Nous adaptons nos propositions à votre budget et vos objectifs, avec une approche transparente sur les résultats attendus."
+        },
+        "measureSuccess": {
+          "question": "Comment mesurez-vous le succès d'une stratégie SEO ?",
+          "answer": "Nous définissons avec vous des KPIs précis alignés sur vos objectifs business : positionnement sur les mots-clés stratégiques, croissance du trafic organique qualifié, taux de conversion des visiteurs en leads/clients, visibilité sur des requêtes à forte intention, et ultimement ROI de l'investissement SEO. Nos reportings mensuels vous permettent de suivre ces métriques et l'évolution de votre performance SEO de manière transparente."
+        },
+        "algorithms": {
+          "question": "Comment restez-vous à jour avec les changements d'algorithmes de Google ?",
+          "answer": "Notre équipe SEO maintient une veille constante sur les mises à jour algorithmiques via les canaux officiels, les communautés spécialisées, et les outils de monitoring. Nous participons régulièrement à des formations et conférences pour rester à la pointe des bonnes pratiques. Notre approche privilégie les méthodes white hat et durables qui résistent aux évolutions algorithmiques, plutôt que des tactiques à court terme risquées."
+        },
+        "penalty": {
+          "question": "Mon site a subi une pénalité Google, pouvez-vous m'aider ?",
+          "answer": "Oui, nous avons l'expertise pour diagnostiquer et résoudre les problèmes de pénalités, qu'elles soient algorithmiques ou manuelles. Notre processus inclut l'identification précise de la cause (contenu dupliqué, backlinks toxiques, problèmes techniques, etc.), la mise en œuvre d'un plan de correction méthodique, et la soumission d'une demande de reconsidération si nécessaire. La récupération peut prendre du temps, mais notre approche méthodique maximise vos chances de retrouver votre visibilité."
+        },
+        "seoVsSea": {
+          "question": "Quelle est la différence entre SEO et SEA (Google Ads) ?",
+          "answer": "Le SEO (référencement naturel) vise à améliorer votre visibilité dans les résultats organiques non-payants, tandis que le SEA (Search Engine Advertising) concerne les annonces payantes. Le SEO est un investissement à long terme qui génère un trafic durable sans coût par clic, mais nécessite du temps pour montrer des résultats. Le SEA offre une visibilité immédiate mais avec un coût continu par clic. La stratégie idéale combine souvent ces deux approches de manière complémentaire, et nous pouvons vous conseiller sur le mix optimal."
         },
         "content": {
-          "title": "Développement de la Stratégie de Contenu",
-          "description": "Nous élaborons un plan de contenu robuste, axé sur un contenu de haute qualité et riche en mots-clés pour générer du trafic, engager les utilisateurs et améliorer le positionnement."
+          "question": "Rédigez-vous vous-mêmes les contenus SEO ?",
+          "answer": "Oui, notre équipe inclut des rédacteurs spécialisés SEO qui maîtrisent à la fois les exigences techniques du référencement et l'art de créer des contenus engageants pour vos lecteurs. Nous pouvons prendre en charge l'intégralité de votre stratégie de contenu, de la recherche de mots-clés à la rédaction et l'optimisation, ou travailler en collaboration avec vos équipes internes selon vos préférences."
         },
-        "technical": {
-          "title": "Mise en Œuvre du SEO Technique",
-          "description": "De l'optimisation de la structure du site à l'amélioration de la vitesse de chargement et à la mise en place de balises schema, nous veillons à ce que votre site soit adapté aux moteurs de recherche."
-        },
-        "monitoring": {
-          "title": "Suivi et Optimisation des Performances",
-          "description": "Après le lancement, nous suivons en continu les performances à l'aide d'outils d'analyse, en affinant nos stratégies pour maximiser votre classement et votre ROI."
+        "allIndustries": {
+          "question": "Le SEO fonctionne-t-il pour tous les secteurs d'activité ?",
+          "answer": "Le SEO est bénéfique pour pratiquement tous les secteurs, mais les stratégies et les attentes doivent être adaptées à chaque contexte. Certains marchés très concurrentiels (comme la finance ou l'assurance) nécessitent des investissements plus importants et une patience accrue, tandis que des niches moins disputées peuvent montrer des résultats plus rapides. Notre expertise couvre de nombreux secteurs B2B et B2C, et nous adaptons notre approche aux spécificités de votre marché, qu'il s'agisse de e-commerce, services professionnels, SaaS, ou industries spécialisées."
         }
       }
     },
@@ -128,43 +251,15 @@
       "categories": {
         "ecommerce": {
           "name": "E-commerce SEO",
-          "content": "<br>**Développement de la stratégie SEO**<br><br>Nous avons réalisé un audit SEO approfondi afin d'identifier les domaines clés à améliorer et avons élaboré une stratégie SEO sur mesure pour ce projet e-commerce.<br><br>**SEO sur la page**<br><br>Nous avons optimisé le contenu des produits, les balises méta, les titres et les images pour renforcer la pertinence des mots-clés et améliorer l'expérience utilisateur, en nous concentrant sur les mots-clés liés aux fleurs et les tendances saisonnières.<br><br>**SEO technique**<br><br>Nous avons résolu des problèmes techniques en intégrant le site à Google Search Console, en optimisant le plan du site et en ajustant le fichier robots.txt pour améliorer les performances et l’indexabilité du site.<br><br>**SEO hors-page**<br><br>Nous avons mis en place une campagne de netlinking ciblée et utilisé les plateformes de réseaux sociaux pour renforcer l'autorité du domaine et accroître la visibilité en ligne, en ciblant des influenceurs locaux et des blogs spécialisés dans le domaine floral.<br><br>**Conclusion**<br><br>Grâce à une approche globale qui couvre la stratégie, l'optimisation sur page, les améliorations techniques et les actions hors-page, nous avons constaté une augmentation remarquable du trafic organique, démontrant ainsi l'efficacité d'une campagne SEO complète."
+          "content": "<br>**Développement de la stratégie SEO**<br><br>Nous avons réalisé un audit SEO approfondi afin d'identifier les domaines clés à améliorer et avons élaboré une stratégie SEO sur mesure pour ce projet e-commerce.<br><br>**SEO sur la page**<br><br>Nous avons optimisé le contenu des produits, les balises méta, les titres et les images pour renforcer la pertinence des mots-clés et améliorer l'expérience utilisateur, en nous concentrant sur les mots-clés liés aux fleurs et les tendances saisonnières.<br><br>**SEO technique**<br><br>Nous avons résolu des problèmes techniques en intégrant le site à Google Search Console, en optimisant le plan du site et en ajustant le fichier robots.txt pour améliorer les performances et l'indexabilité du site.<br><br>**SEO hors-page**<br><br>Nous avons mis en place une campagne de netlinking ciblée et utilisé les plateformes de réseaux sociaux pour renforcer l'autorité du domaine et accroître la visibilité en ligne, en ciblant des influenceurs locaux et des blogs spécialisés dans le domaine floral.<br><br>**Conclusion**<br><br>Grâce à une approche globale qui couvre la stratégie, l'optimisation sur page, les améliorations techniques et les actions hors-page, nous avons constaté une augmentation remarquable du trafic organique, démontrant ainsi l'efficacité d'une campagne SEO complète."
         },
         "immobilier": {
           "name": "Immobilier - SEO",
-          "content": "<br>**Client : Agence immobilière à Paris**<br><br>**Développement de la stratégie SEO**<br>Nous avons réalisé un audit SEO complet afin d’identifier les axes d’amélioration et avons conçu une stratégie sur mesure adaptée au marché immobilier parisien.<br><br>**SEO On-Page**<br>Optimisation du contenu du site, des balises méta, des en-têtes et des images pour renforcer la pertinence des mots-clés et améliorer l’expérience utilisateur, en lien avec les intentions de recherche des clients.<br><br>**SEO Technique**<br>Résolution des problèmes techniques en intégrant le site à Google Search Console, en optimisant le sitemap et en ajustant le fichier robots.txt pour améliorer la performance et l’indexabilité du site.<br><br>**SEO Off-Page**<br>Mise en place d’une campagne de netlinking ciblée et utilisation stratégique des réseaux sociaux pour renforcer l’autorité du domaine et accroître la visibilité en ligne de l’agence.<br><br>**Résultats**<br>- **État initial** : 0 clic par jour en recherche organique.<br>- **Résultat** : Hausse significative à 40 clics par jour.<br>- **Délai** : Résultats observés en quelques mois après la mise en œuvre de la stratégie.<br><br>**Conclusion**<br>Grâce à une approche SEO globale et bien pensée—de la stratégie à la technique en passant par le contenu et le netlinking—l’agence immobilière a connu une nette augmentation de son trafic organique, prouvant l’efficacité d’une campagne SEO bien structurée."
+          "content": "<br>**Client : Agence immobilière à Paris**<br><br>**Développement de la stratégie SEO**<br>Nous avons réalisé un audit SEO complet afin d'identifier les axes d'amélioration et avons conçu une stratégie sur mesure adaptée au marché immobilier parisien.<br><br>**SEO On-Page**<br>Optimisation du contenu du site, des balises méta, des en-têtes et des images pour renforcer la pertinence des mots-clés et améliorer l'expérience utilisateur, en lien avec les intentions de recherche des clients.<br><br>**SEO Technique**<br>Résolution des problèmes techniques en intégrant le site à Google Search Console, en optimisant le sitemap et en ajustant le fichier robots.txt pour améliorer la performance et l'indexabilité du site.<br><br>**SEO Off-Page**<br>Mise en place d'une campagne de netlinking ciblée et utilisation stratégique des réseaux sociaux pour renforcer l'autorité du domaine et accroître la visibilité en ligne de l'agence.<br><br>**Résultats**<br>- **État initial** : 0 clic par jour en recherche organique.<br>- **Résultat** : Hausse significative à 40 clics par jour.<br>- **Délai** : Résultats observés en quelques mois après la mise en œuvre de la stratégie.<br><br>**Conclusion**<br>Grâce à une approche SEO globale et bien pensée—de la stratégie à la technique en passant par le contenu et le netlinking—l'agence immobilière a connu une nette augmentation de son trafic organique, prouvant l'efficacité d'une campagne SEO bien structurée."
         },
         "SFA": {
           "name": "SFA - SEO",
-          "content": "<br>**Vue d'ensemble du client**<br>SFA est une académie de football de premier plan en France, offrant des programmes de formation de haut niveau aux footballeurs en herbe du monde entier. Axée sur le développement des compétences techniques, la condition physique et le caractère, SFA forme des athlètes complets.<br><br>**Objectifs du projet**<br>L’objectif principal était d’accroître la visibilité en ligne de l’académie, d’attirer davantage de joueurs prometteurs et d’améliorer l’engagement des utilisateurs grâce à un contenu optimisé et des stratégies SEO efficaces.<br><br>**Défis et Solutions**<br>Le site web de l’académie souffrait d’un contenu non optimisé et de lacunes techniques en SEO, ce qui se traduisait par de faibles positions dans les résultats de recherche. Pour remédier à cela, j’ai effectué une recherche approfondie de mots-clés, créé un contenu SEO de qualité supérieure et optimisé les balises méta. J’ai également mis en place une stratégie de maillage interne solide, amélioré la vitesse du site et assuré sa compatibilité mobile pour offrir une meilleure expérience utilisateur.<br><br>**Résultats**<br>Le projet a permis d’améliorer significativement les positions dans les moteurs de recherche, d’augmenter le trafic organique et de renforcer l’engagement des utilisateurs, aidant ainsi SFA à toucher un public plus large et à augmenter les taux de conversion."
-        }
-      }
-    },
-    "faq": {
-      "items": {
-        "whatIsSeo": {
-          "question": "Qu'est-ce que le SEO et comment fonctionne-t-il ?",
-          "answer": "Le SEO (Search Engine Optimization) est la pratique consistant à optimiser votre site pour augmenter sa visibilité dans les résultats des moteurs de recherche. Il repose sur diverses techniques, notamment l'optimisation des mots-clés, la création de contenu de qualité, les améliorations techniques et l'acquisition de backlinks d'autorité."
-        },
-        "timeline": {
-          "question": "Combien de temps faut-il pour voir les résultats du SEO ?",
-          "answer": "Le SEO est une stratégie à long terme, prenant généralement de 3 à 6 mois pour observer des résultats initiaux. Cependant, des améliorations significatives du classement et du trafic apparaissent habituellement dans les 6 à 12 mois d'efforts constants."
-        },
-        "services": {
-          "question": "Que comprennent vos services SEO ?",
-          "answer": "Nos services SEO incluent la recherche de mots-clés, l'optimisation on-page, les audits techniques SEO, la stratégie de contenu, la création de liens, l'optimisation du SEO local et la production de rapports mensuels détaillés avec analyses approfondies."
-        },
-        "guarantee": {
-          "question": "Garantissez-vous un positionnement en première page ?",
-          "answer": "Bien que nous utilisions des stratégies SEO éprouvées et que nous ayons un solide bilan de succès, nous ne pouvons garantir des classements spécifiques, car les moteurs de recherche mettent fréquemment à jour leurs algorithmes et le classement dépend de nombreux facteurs, notamment la concurrence."
-        },
-        "measureSuccess": {
-          "question": "Comment mesurez-vous le succès du SEO ?",
-          "answer": "Nous suivons plusieurs indicateurs, tels que le classement des mots-clés, la croissance du trafic organique, les taux de conversion, les taux de rebond, les temps de chargement des pages et le ROI. Des rapports mensuels fournissent des informations détaillées sur la performance de votre SEO."
-        },
-        "cost": {
-          "question": "Combien coûte le SEO ?",
-          "answer": "Les tarifs SEO varient en fonction de l'état actuel de votre site, du niveau de concurrence et de vos objectifs. Nous proposons des forfaits personnalisés allant de l'optimisation de base à des campagnes SEO complètes. Contactez-nous pour obtenir un devis détaillé."
+          "content": "<br>**Vue d'ensemble du client**<br>SFA est une académie de football de premier plan en France, offrant des programmes de formation de haut niveau aux footballeurs en herbe du monde entier. Axée sur le développement des compétences techniques, la condition physique et le caractère, SFA forme des athlètes complets.<br><br>**Objectifs du projet**<br>L'objectif principal était d'accroître la visibilité en ligne de l'académie, d'attirer davantage de joueurs prometteurs et d'améliorer l'engagement des utilisateurs grâce à un contenu optimisé et des stratégies SEO efficaces.<br><br>**Défis et Solutions**<br>Le site web de l'académie souffrait d'un contenu non optimisé et de lacunes techniques en SEO, ce qui se traduisait par de faibles positions dans les résultats de recherche. Pour remédier à cela, j'ai effectué une recherche approfondie de mots-clés, créé un contenu SEO de qualité supérieure et optimisé les balises méta. J'ai également mis en place une stratégie de maillage interne solide, amélioré la vitesse du site et assuré sa compatibilité mobile pour offrir une meilleure expérience utilisateur.<br><br>**Résultats**<br>Le projet a permis d'améliorer significativement les positions dans les moteurs de recherche, d'augmenter le trafic organique et de renforcer l'engagement des utilisateurs, aidant ainsi SFA à toucher un public plus large et à augmenter les taux de conversion."
         }
       }
     }

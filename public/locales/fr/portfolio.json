@@ -1,0 +1,57 @@
+{
+  "portfolio": {
+    "hero": {
+      "title": "Découvrez nos réalisations digitales qui transforment et inspirent",
+      "subtitle": "Bienvenue dans notre galerie de projets. Chez Numispark, nous créons des expériences digitales uniques qui répondent aux objectifs business de nos clients.",
+      "description": "Explorez nos réalisations à travers différents secteurs et technologies pour découvrir comment nous pouvons transformer votre vision en réalité.",
+      "benefits": {
+        "customSolutions": "Solutions sur-mesure",
+        "userCenteredDesign": "Design centré utilisateur",
+        "cuttingEdgeTech": "Technologies de pointe",
+        "measurableResults": "Résultats mesurables"
+      },
+      "cta": "Discuter de votre projet"
+    },
+    "categories": {
+      "title": "Nos projets par catégorie",
+      "all": "Tous",
+      "webDevelopment": "Sites Web",
+      "saas": "SaaS",
+      "ecommerce": "E-commerce",
+      "websiteMobileDesign": "Design Web & Mobile",
+      "mobileDevelopment": "Applications Mobiles",
+      "socialMediaLogoDesign": "Design & Logo",
+      "seo": "SEO"
+    },
+    "faq": {
+      "title": "Questions fréquentes sur nos réalisations",
+      "items": {
+        "process": {
+          "question": "Comment se déroule le processus de création d'un projet avec Numispark ?",
+          "answer": "Notre processus commence par une phase de découverte où nous analysons vos besoins, objectifs et contraintes. Nous élaborons ensuite une proposition détaillée incluant planning, budget et livrables. Après validation, nous suivons une méthodologie agile avec des points réguliers et des démonstrations intermédiaires pour vous impliquer à chaque étape. Cette approche garantit transparence, agilité et alignement parfait avec vos attentes."
+        },
+        "projectTypes": {
+          "question": "Quel type de projets Numispark peut-il réaliser ?",
+          "answer": "Notre équipe pluridisciplinaire peut concrétiser une large gamme de projets digitaux : sites web (vitrine, e-commerce, portails), applications mobiles (iOS, Android, cross-platform), plateformes SaaS, automatisations intelligentes, solutions e-commerce, stratégies marketing digital, et identités visuelles complètes. Nous adaptons notre expertise à la taille et complexité de chaque projet, de la TPE à la grande entreprise."
+        },
+        "technologies": {
+          "question": "Quelles technologies utilisez-vous pour vos développements ?",
+          "answer": "Nous sélectionnons les technologies les plus adaptées à chaque projet en fonction de vos besoins, contraintes et objectifs. Notre stack technologique inclut : HTML5/CSS3/JavaScript, React, Vue.js, Angular pour le frontend; Node.js, PHP/Laravel, Python/Django pour le backend; React Native, Swift, Kotlin, Flutter pour le mobile; WordPress, Shopify, PrestaShop pour les CMS; et AWS, Google Cloud, Azure pour l'infrastructure cloud."
+        },
+        "quality": {
+          "question": "Comment garantissez-vous la qualité de vos réalisations ?",
+          "answer": "La qualité est intégrée à chaque étape de notre processus : code review systématique, tests automatisés, validation UX avec utilisateurs réels, optimisations de performance, et audits de sécurité. Nous suivons les meilleures pratiques de développement et design, et utilisons des outils modernes de CI/CD pour assurer des livraisons fiables et de haute qualité."
+        },
+        "examples": {
+          "question": "Puis-je voir d'autres exemples de projets similaires au mien ?",
+          "answer": "Bien sûr ! Au-delà des projets présentés sur cette page, nous disposons d'un portfolio étendu de réalisations dans divers secteurs. Contactez-nous en précisant votre domaine d'activité et vos besoins, et nous vous partagerons des exemples pertinents et détaillés correspondant à votre projet."
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Prêt à transformer votre vision en réalité digitale ?",
+      "description": "Discutons de votre projet et découvrez comment notre expertise peut vous aider à atteindre vos objectifs. Que vous ayez besoin d'un site web, d'une application mobile, d'une solution SaaS ou d'une stratégie marketing, nous sommes prêts à relever le défi.",
+      "button": "Contactez-nous"
+    }
+  }
+}

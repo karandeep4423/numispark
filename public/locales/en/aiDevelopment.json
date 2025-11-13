@@ -1,131 +1,229 @@
 {
   "aiDevelopment": {
     "hero": {
-      "title": "Transform Your Business with AI & Automation",
-      "subtitle": "From chatbots to custom AI models, we create intelligent solutions to boost efficiency"
+      "title": "Transform Your Business Processes into Competitive Advantage",
+      "subtitle": "Intelligent automation can free up to 40% of your team's time",
+      "description": "At Numispark, we design custom AI automation solutions that integrate seamlessly with your existing systems and generate measurable ROI from the first weeks."
     },
     "services": {
-      "sectionTitle": "Our Core",
-      "sectionSubtitle": "Comprehensive Solutions Tailored to Your Needs",
-      "items": {
-        "customAI": {
-          "serviceName": "Custom AI Model Development",
-          "serviceDes": "Transform your business with tailor-made AI solutions that adapt to your unique challenges. Our custom models leverage cutting-edge technology to deliver unprecedented accuracy and efficiency in your operations."
+      "title": "Our AI Automation Services",
+      "items": [
+        {
+          "name": "Digital Marketing Automation",
+          "description": "We develop intelligent automation solutions that fully leverage generative AI capabilities for optimal marketing strategy.",
+          "expertiseTitle": "Our Expertise",
+          "expertise": [
+            "AI-assisted content creation (social media posts, blog articles, email campaigns)",
+            "Dynamic campaign personalization based on user behavior",
+            "Complete automation of email marketing and nurturing workflows",
+            "Automatic lead scoring and qualification",
+            "Predictive performance analysis for continuous optimization"
+          ],
+          "conclusion": "Our marketing clients see their conversion rates increase by 35% on average thanks to AI personalization and save 15 hours per week on content creation."
         },
-        "chatbot": {
-          "serviceName": "Chatbot Integration",
-          "serviceDes": "Revolutionize your customer service with intelligent chatbots that understand, learn, and evolve. Provide 24/7 support while reducing costs and improving customer satisfaction."
+        {
+          "name": "AI Chatbots and Virtual Assistants",
+          "description": "Optimize your customer relations and accelerate your support with our conversational AI solutions that enable 24/7 excellence service.",
+          "expertiseTitle": "Our Expertise",
+          "expertise": [
+            "Deployment of conversational chatbots capable of understanding natural language",
+            "AI voice assistants for natural interaction",
+            "Autonomous handling of common customer requests",
+            "Multichannel integration: WhatsApp, Instagram, website, phone",
+            "Sentiment analysis for intelligent prioritization"
+          ],
+          "conclusion": "Result: 80% reduction in customer response time, support teams freed to handle complex cases, improved customer satisfaction."
         },
-        "automation": {
-          "serviceName": "Business Process Automation",
-          "serviceDes": "Eliminate repetitive tasks and streamline workflows with intelligent automation solutions. Our systems adapt to your business processes, reducing errors and freeing your team to focus on strategic initiatives."
+        {
+          "name": "Business Process Automation (BPA)",
+          "description": "We create intelligent, intuitive, and user-centered automation solutions to maximize your team's efficiency and productivity.",
+          "expertiseTitle": "Our Expertise",
+          "expertise": [
+            "Automation of internal workflows and administrative tasks",
+            "Automated document processing (invoices, contracts, forms)",
+            "Automatic lead distribution and qualification",
+            "Multi-tool synchronization (CRM, Google Sheets, Notion, etc.)",
+            "Automated reporting and dashboards with intelligent insights"
+          ],
+          "conclusion": "Our clients see an average 60% reduction in time spent on automated processes and positive ROI in less than 6 months."
         },
-        "analytics": {
-          "serviceName": "Machine Learning and Predictive Analytics",
-          "serviceDes": "Harness the power of your data with advanced analytics that predict trends, identify opportunities, and drive informed decision-making. Turn insights into action with our comprehensive ML solutions."
+        {
+          "name": "Data Analysis and Predictive AI",
+          "description": "We ensure the value and performance of your data with our comprehensive intelligent analysis and prediction services.",
+          "expertiseTitle": "Our Expertise",
+          "expertise": [
+            "Analysis of large volumes of structured and unstructured data",
+            "Automatic detection of trends and hidden insights",
+            "Prediction of customer behaviors and anticipation of needs",
+            "Optimization of business decisions based on data",
+            "Semantic analysis and sentiment analysis"
+          ],
+          "conclusion": "Transform your data into profitable decisions: our algorithms identify invisible patterns and predict customer behaviors with 85% accuracy."
         }
-      }
-    },
-    "features": {
-      "sectionTitle": "Key Features",
-      "sectionSubtitle": "of Our Chatbots",
-      "sectionTagline": "Your Success Is Our Priority",
-      "items": {
-        "nlu": {
-          "serviceName": "Natural Language Understanding (NLU)",
-          "serviceDes": "Enable seamless human-machine interactions with our advanced NLU capabilities. Process and understand human language with unprecedented accuracy, supporting multiple use cases from customer service to data analysis."
-        },
-        "multilingual": {
-          "serviceName": "Multilingual Support",
-          "serviceDes": "Break language barriers and expand globally with our multilingual AI solutions. Support 100+ languages with native-like understanding and response capabilities."
-        },
-        "integration": {
-          "serviceName": "Integration with Popular Platforms",
-          "serviceDes": "Seamlessly connect our AI solutions with your existing tech stack. Whether it's Slack, Microsoft Teams, or custom platforms, we ensure smooth integration and optimal performance."
-        },
-        "realtime": {
-          "serviceName": "Real-Time Analytics",
-          "serviceDes": "Monitor and optimize your AI solutions in real-time. Get actionable insights into performance metrics, user engagement, and system health with our comprehensive analytics dashboard."
-        }
-      }
-    },
-    "whyUs": {
-      "sectionTitle": "Benefits",
-      "sectionSubtitle": "of Choosing Us",
-      "items": {
-        "cuttingEdge": {
-          "serviceName": "Expertise in Cutting-Edge AI Technologies",
-          "serviceDes": "Partner with a team that stays ahead of AI innovation. Our experts specialize in the latest technologies including GPT-4, computer vision, and deep learning, ensuring you get future-proof solutions that drive real business value."
-        },
-        "customSolutions": {
-          "serviceName": "Custom Solutions for Your Business Needs",
-          "serviceDes": "Get AI solutions perfectly aligned with your business goals. We don't believe in one-size-fits-all - our team analyzes your unique challenges and develops custom AI solutions that deliver measurable ROI."
-        },
-        "costEffective": {
-          "serviceName": "Cost-Effective and Scalable Solutions",
-          "serviceDes": "Maximize your investment with solutions that grow with your business. Our AI systems are built for scalability, allowing you to start small and expand capabilities as your needs evolve, all while maintaining cost efficiency."
-        },
-        "speedOptimization": {
-          "serviceName": "Speed Optimization",
-          "serviceDes": "Experience lightning-fast performance with our optimized AI solutions. We employ advanced techniques in model compression and edge computing to deliver rapid response times without compromising accuracy."
-        }
-      }
+      ]
     },
     "process": {
-      "title": "AI Development",
+      "title": "Our AI Automation Process",
       "steps": {
-        "vision": {
-          "title": "Understanding Your Vision",
-          "description": "We dive deep into your business needs and challenges through focused discovery sessions. Our team ensures we're not just understanding your requirements, but uncovering opportunities for innovation and growth."
+        "0": {
+          "title": "Audit & Diagnosis",
+          "description": "We start by deeply understanding your current processes, business objectives, and technical constraints. This phase includes in-depth analysis of your current processes, identification of high-ROI automation opportunities, MVP (Minimum Viable Product) definition, selection of appropriate technologies (no-code vs custom development), and planning of implementation phases to ensure strategic deployment."
         },
-        "planning": {
-          "title": "Strategic Planning",
-          "description": "Transforming insights into actionable strategies, we create a clear roadmap for your project. Our detailed planning ensures efficient development, timeline adherence, and measurable outcomes."
+        "1": {
+          "title": "Design & Prototyping",
+          "description": "We design the automation solution and your project's architecture. This stage includes developing custom solutions with iterative validation, creating optimized automation workflows, defining technical architecture respecting your existing constraints, developing functional prototypes for validation, and preliminary user testing to ensure alignment with your needs."
         },
-        "development": {
-          "title": "Design & Development",
-          "description": "Our expert team brings your vision to life using cutting-edge AI technologies and clean code. Regular updates and demonstrations keep you involved throughout the development process."
+        "2": {
+          "title": "Agile Development",
+          "description": "We develop your solution iteratively, with regular demonstrations. This phase includes setting up robust and scalable technical architecture, frontend (interfaces) and backend (API, integrations) development, integration of priority features, continuous unit and integration testing, and regular demonstrations and adjustments to ensure your satisfaction."
         },
-        "launch": {
-          "title": "Launch & Deployment",
-          "description": "We ensure a smooth transition from development to deployment with comprehensive testing and optimization. Your solution launches with confidence, backed by thorough quality assurance."
+        "3": {
+          "title": "Testing & Quality Assurance",
+          "description": "We guarantee the quality of your solution with rigorous testing. This stage includes functional testing on all target environments, performance and optimization testing, security and data protection testing, real user testing, and corrections and optimizations to ensure a flawless solution before deployment."
         },
-        "support": {
-          "title": "Ongoing Support",
-          "description": "We provide continuous support, regular updates, and proactive maintenance to keep your solution performing at its best."
+        "4": {
+          "title": "Deployment & Training",
+          "description": "We ensure successful launch and team training. This final phase includes seamless integration with your existing systems, team training for autonomous use, skills transfer, implementation of monitoring and analytics tools, post-launch technical support, and performance tracking with regular optimizations."
         }
       }
+    },
+    "appTypes": {
+      "title": "Types of Solutions We Develop",
+      "types": [
+        {
+          "name": "E-commerce & Retail Solutions",
+          "description": "Transform your commercial activity with automation solutions offering smooth and personalized customer experience",
+          "points": [
+            "Automation of inventory and order management",
+            "Personalization of product recommendations",
+            "Automation of customer service and support",
+            "Automated loyalty programs",
+            "Intelligent push notifications",
+            "Integration with your existing management systems"
+          ]
+        },
+        {
+          "name": "Enterprise & B2B Solutions",
+          "description": "Optimize your business processes with custom solutions for your employees or professional clients",
+          "points": [
+            "Automation of administrative and HR tasks",
+            "Validation and approval workflows",
+            "Automated client and supplier portals",
+            "Intelligent dashboards and reporting",
+            "Integration with your information systems",
+            "Multi-platform synchronization"
+          ]
+        },
+        {
+          "name": "Services & Marketplace Solutions",
+          "description": "Create new business opportunities with automated connection and service platforms",
+          "points": [
+            "Automation of booking management",
+            "Automated platforms and marketplaces",
+            "Intelligent logistics and delivery services",
+            "Geolocation-based solutions",
+            "Automated payment systems",
+            "Automatic review and rating management"
+          ]
+        },
+        {
+          "name": "Innovative & Industry-specific Solutions",
+          "description": "Explore new territories with solutions connecting AI and industry experiences",
+          "points": [
+            "Automation for IoT (Internet of Things)",
+            "Automated health and wellness solutions",
+            "Automation for real estate and finance",
+            "Educational and training solutions",
+            "Automation using computer vision",
+            "Gamified and personalized experiences"
+          ]
+        }
+      ]
+    },
+    "whyUs": {
+      "title": "Why Choose Numispark for Your AI Automation",
+      "reasons": [
+        {
+          "title": "Proven Technical Expertise",
+          "description": "15+ successfully deployed AI automation projects. Our team masters the latest technologies (GPT-4, Claude, Make) and understands the real operational constraints of French companies."
+        },
+        {
+          "title": "ROI Guaranteed From First Month",
+          "description": "Each automation is designed to be profitable quickly. We always start with a €3,000 pilot that demonstrates value before any larger investment."
+        },
+        {
+          "title": "Transparent Methodology",
+          "description": "Our agile process involves you at every step, with regular demonstrations, precise progress tracking, and clear communication on technical choices."
+        },
+        {
+          "title": "Business Vision",
+          "description": "We don't simply develop automation tools, we create strategic solutions aligned with your business objectives, with particular attention to ROI."
+        },
+        {
+          "title": "Complete Support",
+          "description": "From initial audit to long-term maintenance, we support you at every stage of your transformation, guaranteeing you a lasting partnership."
+        },
+        {
+          "title": "Solutions for Small Businesses",
+          "description": "Unlike traditional IT service companies, we've developed packages accessible from €3,000. 70% of our clients are SMEs with fewer than 50 employees who effectively automate their processes."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": {
+        "cost": {
+          "question": "What is the cost of an AI automation project?",
+          "answer": "The cost varies considerably depending on complexity, features, and necessary integrations. A simple project can start around €3,000, while a complex multi-process solution can represent an investment of €50,000 or more. We offer phased approaches to spread the investment and progressively validate the concept."
+        },
+        "timeline": {
+          "question": "How long does it take to implement an AI solution?",
+          "answer": "Typical timelines vary from a few days for simple no-code automations to 3-6 months for complex custom solutions. Our agile approach allows us to deliver incremental functional versions, with a testable first version generally available within 2-4 weeks after project launch."
+        },
+        "difference": {
+          "question": "What is the difference between classic automation and AI automation?",
+          "answer": "Classic automation (RPA) works with fixed rules, while AI automation adds continuous learning, adaptability, natural language understanding, prediction, and intelligent decision-making. We recommend the most suitable approach based on your project, budget, and priorities."
+        },
+        "security": {
+          "question": "How do you ensure data security in your solutions?",
+          "answer": "Security is an absolute priority. We implement best practices: full GDPR compliance, secure hosting in Europe, sensitive data encryption, data minimization policy, regular security audits, and documented incident management processes."
+        },
+        "integration": {
+          "question": "How do you handle integration with our existing systems?",
+          "answer": "We develop secure APIs and connectors enabling seamless integration with your existing systems (CRM, ERP, e-commerce, etc.). Our expertise in development and system integration allows us to create solutions consistent with your current technical ecosystem."
+        },
+        "maintenance": {
+          "question": "Do you offer maintenance services after deployment?",
+          "answer": "Yes, we offer several maintenance packages adapted to your needs: technical support, continuous improvement, new feature development, and strategic support. Our maintenance contracts start from €500/month and include guaranteed response time."
+        },
+        "replacement": {
+          "question": "Will AI replace our teams?",
+          "answer": "No, AI doesn't replace your teams, it augments them. The goal is to eliminate repetitive low-value tasks to allow your employees to focus on higher-value activities: creativity, strategy, customer relations, innovation."
+        },
+        "measurement": {
+          "question": "How do you measure the success of an AI automation project?",
+          "answer": "We define relevant KPIs together (time savings, cost reduction, quality improvement, revenue increase) and implement analytics tools to track them. Regular reports allow you to evaluate performance and identify improvement opportunities."
+        },
+        "testing": {
+          "question": "Can I test before investing massively?",
+          "answer": "Absolutely. We systematically recommend a progressive approach: proof of concept (PoC) for technical validation on limited scope, pilot on a specific service/process, then progressive scaling and extension. This approach minimizes risks and validates ROI at each stage."
+        },
+        "audit": {
+          "question": "Do you offer a free audit?",
+          "answer": "Yes, we offer a free, no-commitment audit including: analysis of your current processes, identification of high-ROI automation opportunities, strategic recommendations, preliminary estimate of potential gains, and roadmap proposal."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to automate your processes with AI?",
+      "description": "Let's discuss your project and discover how we can unlock your business potential with intelligent automation solutions."
     },
     "portfolio": {
       "sectionTitle": "Our Recent",
       "sectionHighlight": "Work",
       "categories": {
-        "uiUx": "UI/ UX Design",
+        "uiUx": "UI/UX Design",
         "appDesign": "App Design"
-      }
-    },
-    "faq": {
-      "items": {
-        "quote": {
-          "question": "How can I request a quote for a project?",
-          "answer": "Start your AI journey by scheduling a free consultation through our online form or calling us directly. Within 24 hours, our experts will analyze your requirements and provide a detailed proposal including timeline, deliverables, and pricing options tailored to your needs."
-        },
-        "industries": {
-          "question": "What industries do you serve?",
-          "answer": "We've successfully implemented AI solutions across diverse sectors including healthcare (patient care optimization), finance (risk assessment), retail (inventory management), manufacturing (predictive maintenance), and education (personalized learning). Our adaptable approach ensures effective solutions regardless of your industry."
-        },
-        "timeline": {
-          "question": "What is the typical timeline for a project?",
-          "answer": "Project timelines vary based on complexity and scope. Simple chatbot integrations typically take 2-4 weeks, while custom AI model development may require 2-3 months. Enterprise-scale automation solutions usually span 3-6 months. We provide detailed milestones and regular progress updates throughout the development cycle."
-        },
-        "security": {
-          "question": "How do you ensure the security of AI solutions?",
-          "answer": "Security is paramount in our development process. We implement enterprise-grade encryption, regular security audits, and comply with industry standards (GDPR, HIPAA, etc.). All our AI solutions undergo rigorous testing for potential vulnerabilities before deployment."
-        },
-        "supportAfter": {
-          "question": "What kind of support do you provide after deployment?",
-          "answer": "We offer comprehensive post-deployment support including 24/7 monitoring, regular performance optimization, model retraining, and dedicated technical support. Our maintenance packages ensure your AI solutions continue to evolve and improve over time."
-        }
       }
     }
   }

@@ -1,0 +1,293 @@
+{
+  "seoAudit": {
+    "hero": {
+      "title": "Kostenloser SEO-Audit: Entdecken Sie, was Ihre Google-Sichtbarkeit bremst",
+      "subtitle": "Identifizieren Sie schnell technische Probleme, On-Page-Optimierungsmöglichkeiten und Off-Page-Verbesserungsbereiche, um Ihr organisches Ranking zu steigern und mehr qualifizierten Traffic zu generieren.",
+      "benefits": [
+        "100% kostenlos und unverbindlich",
+        "Detaillierter Bericht in 24-48h",
+        "Analyse durch einen SEO-Experten",
+        "Personalisierte und umsetzbare Empfehlungen"
+      ],
+      "cta": "Fordern Sie Ihren kostenlosen Audit an"
+    },
+    "problem": {
+      "title": "Warum erscheint Ihre Website nicht auf der ersten Google-Seite?",
+      "intro": "Sie stehen möglicherweise vor einem dieser häufigen Probleme:",
+      "issues": [
+        "Ihre Website bleibt auf Google unsichtbar, während Ihre Konkurrenten die Suchergebnisse dominieren",
+        "Sie investieren Zeit und Geld in Ihre Website, aber Ihr organischer Traffic stagniert",
+        "Versteckte technische Probleme blockieren die Indexierung Ihrer Seiten, ohne dass Sie es wissen",
+        "Ihr Inhalt ist nicht für die richtigen Keywords optimiert, die Ihre Zielgruppe ansprechen",
+        "Ihre externe Link-Strategie ist unzureichend oder schlecht ausgerichtet"
+      ],
+      "solution": "Ein professioneller SEO-Audit ermöglicht es Ihnen, die Hindernisse für Ihre Sichtbarkeit präzise zu bestimmen, Verbesserungsmöglichkeiten zu identifizieren und einen priorisierten Aktionsplan zu erstellen, um Ihre Website auf die erste Seite der Suchergebnisse zu bringen."
+    },
+    "benefits": {
+      "title": "Sofortige Vorteile unseres kostenlosen SEO-Audits",
+      "items": [
+        "Verstehen Sie, warum Ihre Website nicht so funktioniert, wie sie sollte",
+        "Identifizieren Sie \"Quick Wins\" (schnelle Maßnahmen mit hoher Wirkung)",
+        "Erhalten Sie eine klare und priorisierte Roadmap",
+        "Treffen Sie fundierte Entscheidungen für Ihre SEO-Strategie"
+      ]
+    },
+    "pillars": {
+      "title": "Unser kostenloser SEO-Audit deckt die 3 wesentlichen SEO-Säulen ab",
+      "items": [
+        {
+          "name": "Technischer SEO-Audit",
+          "description": "Technisches SEO bildet die solide Grundlage Ihrer SEO. Ohne eine optimierte technische Basis werden Ihre Content- und Link-Bemühungen beeinträchtigt.",
+          "subtitle": "Was wir analysieren",
+          "sections": [
+            {
+              "title": "Website-Struktur und -Architektur",
+              "points": [
+                "Crawlbarkeit und Indexierbarkeit",
+                "XML-Sitemap und robots.txt",
+                "Informationsarchitektur",
+                "Seitenhierarchie"
+              ]
+            },
+            {
+              "title": "Performance und Geschwindigkeit",
+              "points": [
+                "Core Web Vitals",
+                "Ladezeit",
+                "Mobile-Optimierung",
+                "Technische Benutzererfahrung"
+              ]
+            },
+            {
+              "title": "Kritische technische Probleme",
+              "points": [
+                "Indexierungsfehler",
+                "Verwaiste Seiten",
+                "Weiterleitungsketten",
+                "404- und 5xx-Fehler",
+                "Kanonisierungsprobleme",
+                "HTTPS-Sicherheit"
+              ]
+            }
+          ],
+          "outcome": "Eine vollständige Diagnose technischer Probleme, die Ihre Sichtbarkeit blockieren, mit priorisierten Empfehlungen zur Stärkung der technischen Grundlagen Ihrer Website."
+        },
+        {
+          "name": "On-Page SEO-Audit",
+          "description": "On-Page-Optimierung bestimmt, wie Google Ihren Inhalt interpretiert und bewertet. Diese Analyse zeigt, wie jede Seite optimiert werden kann, um ihre Relevanz zu maximieren.",
+          "subtitle": "Was wir analysieren",
+          "sections": [
+            {
+              "title": "Content-Optimierung",
+              "points": [
+                "Relevanz und Qualität der Inhalte",
+                "Titelstruktur und -hierarchie (H1-H6)",
+                "Keyword-Dichte und -Platzierung",
+                "Duplizierter oder kannibalisierter Inhalt",
+                "Lesbarkeit und Engagement"
+              ]
+            },
+            {
+              "title": "Tags- und Metadaten-Optimierung",
+              "points": [
+                "Title-Tags und Meta-Beschreibungen",
+                "Strukturelle Tags (Header, Footer, Nav)",
+                "Strukturierte Daten und schema.org",
+                "Bild-Alt-Attribute"
+              ]
+            },
+            {
+              "title": "Interne Verlinkung",
+              "points": [
+                "Interne Link-Struktur",
+                "Anchor-Text und Relevanz",
+                "Link-Juice-Verteilung",
+                "Seitentiefe"
+              ]
+            }
+          ],
+          "outcome": "Eine detaillierte Seite-für-Seite-Analyse mit konkreten Empfehlungen zur Optimierung Ihres Inhalts, Ihrer Tags und Ihrer internen Verlinkung, um Ihr Ranking erheblich zu verbessern."
+        },
+        {
+          "name": "Off-Page SEO-Audit",
+          "description": "Off-Page-SEO bewertet Ihre Autorität und Reputation in den Augen von Google. Diese Analyse zeigt, wie Sie Ihre Glaubwürdigkeit in Ihrer Branche stärken können.",
+          "subtitle": "Was wir analysieren",
+          "sections": [
+            {
+              "title": "Backlink-Profil",
+              "points": [
+                "Quantität und Qualität eingehender Links",
+                "Quellen- und Domain-Diversität",
+                "Thematische Relevanz der Links",
+                "Toxizität und Penalty-Risiken"
+              ]
+            },
+            {
+              "title": "Domain-Autorität",
+              "points": [
+                "Autoritätsmetriken (DR, DA, etc.)",
+                "Vergleich mit Wettbewerbern",
+                "Trust Flow und Citation Flow"
+              ]
+            },
+            {
+              "title": "Link-Building-Möglichkeiten",
+              "points": [
+                "Identifikation potenzieller Quellen",
+                "Wettbewerber-Backlink-Analyse",
+                "Lücken und ungenutzte Möglichkeiten"
+              ]
+            }
+          ],
+          "outcome": "Eine vollständige Bewertung Ihrer Online-Autorität mit strategischen Empfehlungen zur Entwicklung eines qualitativen Link-Profils und zur Verbesserung Ihrer Glaubwürdigkeit bei Google."
+        }
+      ]
+    },
+    "process": {
+      "title": "Wie funktioniert es? Unser 4-Schritte-SEO-Audit-Prozess",
+      "steps": [
+        {
+          "title": "Formular ausfüllen",
+          "description": "Geben Sie einfach Ihre Website-URL, Namen, E-Mail und Telefonnummer in das untenstehende Formular ein.",
+          "duration": "2 Minuten"
+        },
+        {
+          "title": "Unsere eingehende Analyse",
+          "description": "Unser Team von SEO-Experten analysiert Ihre Website aus 3 grundlegenden Blickwinkeln: technisch, on-page und off-page. Wir verwenden professionelle Tools (Screaming Frog, Ahrefs, Semrush, Pagespeed Insights) für eine zuverlässige und vollständige Diagnose.",
+          "duration": "24 bis 48 Stunden"
+        },
+        {
+          "title": "Sie erhalten Ihren detaillierten Bericht",
+          "description": "Sie erhalten per E-Mail einen vollständigen SEO-Audit-Bericht (PDF-Format) mit Diagnose der 3 SEO-Säulen, Liste der identifizierten Probleme nach Priorität, umsetzbaren Empfehlungen für jede Säule und konkretem priorisiertem Aktionsplan.",
+          "duration": "Personalisierter PDF-Bericht"
+        },
+        {
+          "title": "Beratungsgespräch (optional)",
+          "description": "Wir bieten ein Telefon- oder Videogespräch (20-30 Minuten) an, um die Audit-Ergebnisse zu präsentieren und Ihre Fragen zu den 3 analysierten Säulen zu beantworten.",
+          "duration": "Präsentationsanruf oder Teams-Meeting"
+        }
+      ],
+      "note": "Dieser Audit ist 100% kostenlos und unverbindlich. Keine Kauf- oder Service-Abonnement-Verpflichtung."
+    },
+    "whyChooseUs": {
+      "title": "Warum unseren kostenlosen SEO-Audit wählen?",
+      "reasons": [
+        {
+          "title": "Ganzheitliche Analyse der 3 SEO-Säulen",
+          "description": "Im Gegensatz zu automatisierten Tools, die sich hauptsächlich auf technische Aspekte konzentrieren, untersucht unser Audit die 3 grundlegenden Dimensionen von SEO: technisch, on-page und off-page, für eine vollständige Vision Ihres Optimierungspotenzials."
+        },
+        {
+          "title": "Menschliche Analyse durch einen SEO-Experten",
+          "description": "Unser Audit wird manuell von einem erfahrenen SEO-Berater durchgeführt, der die Besonderheiten Ihrer Branche und Ihre Geschäftsziele versteht, nicht durch ein einfaches automatisches Tool."
+        },
+        {
+          "title": "Personalisierte und umsetzbare Empfehlungen",
+          "description": "Wir listen nicht nur Probleme auf. Wir geben Ihnen konkrete Lösungen, priorisiert und an Ihren Kontext angepasst (Budget, Ressourcen, technisches Niveau) für jede der 3 Säulen."
+        },
+        {
+          "title": "Klarer und verständlicher Bericht",
+          "description": "Kein unverständlicher technischer Jargon. Wir erklären jeden Punkt in einfacher Sprache, damit Sie genau verstehen, was zu tun ist, sei es für den technischen, on-page oder off-page Aspekt."
+        },
+        {
+          "title": "ROI-orientierter strategischer Ansatz",
+          "description": "Unsere Analyse geht über technische Aspekte hinaus und konzentriert sich darauf, was tatsächlich qualifizierten Traffic und Conversions für Ihr Geschäft generiert."
+        }
+      ]
+    },
+    "forWho": {
+      "title": "Für wen ist dieser vollständige SEO-Audit?",
+      "targets": [
+        {
+          "name": "KMU und Unternehmer",
+          "description": "Sie möchten Ihre lokale oder nationale Sichtbarkeit verbessern, haben aber nicht die Ressourcen, um eine Vollzeit-SEO-Agentur zu engagieren."
+        },
+        {
+          "name": "Startups und Scale-ups",
+          "description": "Sie möchten Ihr organisches Wachstum beschleunigen und Ihre Abhängigkeit von bezahlten Akquisitionskanälen reduzieren."
+        },
+        {
+          "name": "E-Commerce",
+          "description": "Sie möchten Ihren qualifizierten Traffic, Ihre Produktsichtbarkeit und Ihre Online-Verkäufe durch organisches SEO steigern."
+        },
+        {
+          "name": "Unternehmens- und B2B-Websites",
+          "description": "Sie möchten mehr qualifizierte Leads generieren und Ihre Online-Autorität in Ihrer Branche stärken."
+        },
+        {
+          "name": "Bestehende Websites mit rückläufigem Traffic",
+          "description": "Ihr organischer Traffic ist kürzlich gesunken und Sie möchten verstehen warum und den Trend umkehren."
+        },
+        {
+          "name": "Website-Redesign-Projekte",
+          "description": "Sie bereiten ein Website-Redesign vor und möchten sicherstellen, dass Sie Ihr bestehendes SEO-Kapital nicht verlieren."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen zu unserem kostenlosen SEO-Audit",
+      "items": {
+        "isFree": {
+          "question": "Ist dieser Audit wirklich kostenlos? Gibt es versteckte Gebühren?",
+          "answer": "Ja, der Audit ist 100% kostenlos und ohne jegliche Verpflichtung. Wir fragen nicht nach Ihren Bankdaten und es gibt keine versteckten Gebühren. Unser Ziel ist es, Ihnen die Qualität unserer Expertise zu zeigen, um eine Vertrauensbeziehung aufzubauen."
+        },
+        "threePillars": {
+          "question": "Deckt der Audit wirklich die 3 SEO-Säulen ab (technisch, on-page, off-page)?",
+          "answer": "Absolut. Unser Audit ist vollständig und deckt die drei grundlegenden Dimensionen des organischen SEO ab: die technische Struktur Ihrer Website, Ihre Content-Optimierung (on-page) und Ihre Link-Strategie (off-page). Dieser ganzheitliche Ansatz stellt sicher, dass alle Aspekte, die Ihre Sichtbarkeit beeinflussen, analysiert werden."
+        },
+        "timeline": {
+          "question": "Wie lange dauert es, den Audit-Bericht zu erhalten?",
+          "answer": "Sie erhalten Ihren detaillierten SEO-Audit-Bericht innerhalb von 24 bis 48 Werktagen nach Ihrer Anfrage. Für große Websites (mehr als 500 Seiten) kann die Verzögerung etwas länger sein."
+        },
+        "reportContent": {
+          "question": "Was enthält der SEO-Audit-Bericht genau?",
+          "answer": "Der Bericht umfasst drei Hauptabschnitte, die den SEO-Säulen entsprechen: eine vollständige technische Analyse, einen eingehenden On-Page-Audit und eine Bewertung Ihrer Off-Page-Strategie (Backlinks und Autorität). Jeder Abschnitt enthält personalisierte Empfehlungen, die nach Priorität geordnet sind."
+        },
+        "subscription": {
+          "question": "Muss ich nach dem Audit einen Service abonnieren?",
+          "answer": "Nein. Unser SEO-Audit ist unverbindlich und Sie können die Empfehlungen selbst umsetzen. Wenn Sie bei der Umsetzung begleitet werden möchten, können wir Ihnen unsere Dienstleistungen anbieten, aber ohne jegliche Verpflichtung Ihrerseits."
+        },
+        "requiredInfo": {
+          "question": "Welche Informationen muss ich für den Audit angeben?",
+          "answer": "Ihre Website-URL, Name, E-Mail und Telefonnummer sind die einzigen erforderlichen Informationen. Wenn Sie Zugriff auf Google Search Console oder Google Analytics haben, können Sie uns auch temporären Zugriff für eine noch präzisere Analyse gewähren, dies ist jedoch nicht obligatorisch."
+        },
+        "implementation": {
+          "question": "Wie werde ich die Empfehlungen nach dem Audit umsetzen?",
+          "answer": "Der Bericht enthält umsetzbare Empfehlungen für jede der 3 Säulen mit unterschiedlichen technischen Komplexitätsstufen. Einige können von Ihnen selbst leicht umgesetzt werden, andere erfordern möglicherweise die Intervention eines Entwicklers oder SEO-Experten. Wir geben für jede Aktion klar den Schwierigkeitsgrad an."
+        },
+        "competitorAnalysis": {
+          "question": "Beinhaltet der Audit eine Wettbewerbsanalyse?",
+          "answer": "Ja, wir analysieren Ihre Hauptkonkurrenten, um deren SEO-Strategien (technisch, on-page und off-page) zu identifizieren und Chancen zu erkennen, die sie verpasst haben und die Sie nutzen könnten. Diese vergleichende Analyse ist im Audit-Bericht enthalten."
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Bereit, Ihre Google-Sichtbarkeit zu steigern?",
+      "subtitle": "Ihre Google-Sichtbarkeit beginnt mit einem eingehenden SEO-Audit der 3 grundlegenden SEO-Säulen.",
+      "description": "Fordern Sie jetzt Ihren kostenlosen SEO-Audit an und erhalten Sie eine klare Roadmap, um Ihre Website auf die erste Seite von Google zu bringen. Vollständige Analyse in 48 Stunden, unverbindlich."
+    },
+    "form": {
+      "input": {
+        "email": "E-Mail",
+        "name": "Vollständiger Name",
+        "phone": "Telefonnummer",
+        "company": "Firmenname",
+        "website": "Ihre Website-URL",
+        "textarea": {
+          "placeholder": "Erzählen Sie uns von Ihren SEO-Zielen und aktuellen Herausforderungen"
+        }
+      },
+      "submit": "Meinen kostenlosen SEO-Audit anfordern",
+      "submitting": "Wird gesendet...",
+      "errors": {
+        "required": "Dieses Feld ist erforderlich",
+        "invalidEmail": "Ungültige E-Mail",
+        "invalidPhone": "Ungültige Telefonnummer",
+        "invalidWebsite": "Ungültige Website-URL",
+        "pleaseFixErrors": "Bitte korrigieren Sie die Fehler im Formular"
+      },
+      "success": "Ihre SEO-Audit-Anfrage wurde erfolgreich gesendet! Wir werden uns innerhalb von 24 Stunden bei Ihnen melden.",
+      "server": "Ein Fehler ist aufgetreten, bitte versuchen Sie es erneut."
+    }
+  }
+}
+

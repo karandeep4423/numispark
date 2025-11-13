@@ -1,133 +1,230 @@
 {
-    "aiDevelopment": {
-      "hero": {
-        "title": "Verwandeln Sie Ihr Unternehmen mit KI & Automatisierung",
-        "subtitle": "Von Chatbots bis zu maßgeschneiderten KI-Modellen entwickeln wir intelligente Lösungen, die die Effizienz steigern"
-      },
-      "services": {
-        "sectionTitle": "Unsere Kernkompetenzen",
-        "sectionSubtitle": "Umfassende Lösungen, maßgeschneidert für Ihre Bedürfnisse",
-        "items": {
-          "customAI": {
-            "serviceName": "Entwicklung maßgeschneiderter KI-Modelle",
-            "serviceDes": "Verwandeln Sie Ihr Unternehmen mit maßgeschneiderten KI-Lösungen, die sich an Ihre einzigartigen Herausforderungen anpassen. Unsere individuellen Modelle nutzen modernste Technologie, um beispiellose Genauigkeit und Effizienz in Ihren Abläufen zu erzielen."
-          },
-          "chatbot": {
-            "serviceName": "Chatbot-Integration",
-            "serviceDes": "Revolutionieren Sie Ihren Kundenservice mit intelligenten Chatbots, die verstehen, lernen und sich weiterentwickeln. Bieten Sie rund um die Uhr Support, senken Sie Kosten und steigern Sie die Kundenzufriedenheit."
-          },
-          "automation": {
-            "serviceName": "Automatisierung von Geschäftsprozessen",
-            "serviceDes": "Beseitigen Sie repetitive Aufgaben und optimieren Sie Ihre Arbeitsabläufe mit intelligenten Automatisierungslösungen. Unsere Systeme passen sich Ihren Geschäftsprozessen an, reduzieren Fehler und ermöglichen es Ihrem Team, sich auf strategische Initiativen zu konzentrieren."
-          },
-          "analytics": {
-            "serviceName": "Maschinelles Lernen und prädiktive Analytik",
-            "serviceDes": "Nutzen Sie die Kraft Ihrer Daten mit fortschrittlicher Analytik, die Trends vorhersagt, Chancen erkennt und fundierte Entscheidungen ermöglicht. Setzen Sie Erkenntnisse in Taten um mit unseren umfassenden ML-Lösungen."
-          }
+  "aiDevelopment": {
+    "hero": {
+      "title": "Verwandeln Sie Ihre Geschäftsprozesse in Wettbewerbsvorteile",
+      "subtitle": "Intelligente Automatisierung kann bis zu 40% der Zeit Ihrer Mitarbeiter freisetzen",
+      "description": "Bei Numispark entwickeln wir maßgeschneiderte KI-Automatisierungslösungen, die sich nahtlos in Ihre bestehenden Systeme integrieren und bereits in den ersten Wochen einen messbaren ROI generieren."
+    },
+    "services": {
+      "title": "Unsere KI-Automatisierungsdienstleistungen",
+      "items": [
+        {
+          "name": "Digitales Marketing-Automatisierung",
+          "description": "Wir entwickeln intelligente Automatisierungslösungen, die die Möglichkeiten generativer KI voll ausschöpfen für eine optimale Marketingstrategie.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "KI-gestützte Content-Erstellung (Social-Media-Posts, Blog-Artikel, E-Mail-Kampagnen)",
+            "Dynamische Kampagnenpersonalisierung basierend auf Benutzerverhalten",
+            "Vollständige Automatisierung von E-Mail-Marketing- und Nurturing-Workflows",
+            "Automatisches Lead-Scoring und Qualifizierung",
+            "Prädiktive Leistungsanalyse für kontinuierliche Optimierung"
+          ],
+          "conclusion": "Unsere Marketing-Kunden verzeichnen durchschnittlich eine Steigerung der Conversion-Raten um 35% dank KI-Personalisierung und sparen 15 Stunden pro Woche bei der Content-Erstellung."
+        },
+        {
+          "name": "KI-Chatbots und Virtuelle Assistenten",
+          "description": "Optimieren Sie Ihre Kundenbeziehungen und beschleunigen Sie Ihren Support mit unseren konversationellen KI-Lösungen, die 24/7 exzellenten Service ermöglichen.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "Bereitstellung von konversationellen Chatbots mit natürlichem Sprachverständnis",
+            "KI-Sprachassistenten für natürliche Interaktion",
+            "Autonome Bearbeitung gängiger Kundenanfragen",
+            "Multichannel-Integration: WhatsApp, Instagram, Website, Telefon",
+            "Sentiment-Analyse für intelligente Priorisierung"
+          ],
+          "conclusion": "Ergebnis: 80% Reduzierung der Kundenreaktionszeit, Support-Teams können sich auf komplexe Fälle konzentrieren, verbesserte Kundenzufriedenheit."
+        },
+        {
+          "name": "Geschäftsprozess-Automatisierung (BPA)",
+          "description": "Wir erstellen intelligente, intuitive und benutzerzentrierte Automatisierungslösungen, um die Effizienz und Produktivität Ihrer Teams zu maximieren.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "Automatisierung interner Workflows und administrativer Aufgaben",
+            "Automatisierte Dokumentenverarbeitung (Rechnungen, Verträge, Formulare)",
+            "Automatische Lead-Verteilung und Qualifizierung",
+            "Multi-Tool-Synchronisation (CRM, Google Sheets, Notion, etc.)",
+            "Automatisiertes Reporting und Dashboards mit intelligenten Insights"
+          ],
+          "conclusion": "Unsere Kunden verzeichnen durchschnittlich eine Reduzierung der für automatisierte Prozesse aufgewendeten Zeit um 60% und einen positiven ROI in weniger als 6 Monaten."
+        },
+        {
+          "name": "Datenanalyse und Prädiktive KI",
+          "description": "Wir gewährleisten den Wert und die Leistung Ihrer Daten mit unseren umfassenden intelligenten Analyse- und Vorhersagediensten.",
+          "expertiseTitle": "Unser Fachwissen",
+          "expertise": [
+            "Analyse großer Mengen strukturierter und unstrukturierter Daten",
+            "Automatische Erkennung von Trends und verborgenen Insights",
+            "Vorhersage von Kundenverhalten und Antizipation von Bedürfnissen",
+            "Optimierung von Geschäftsentscheidungen auf Datenbasis",
+            "Semantische Analyse und Sentiment-Analyse"
+          ],
+          "conclusion": "Verwandeln Sie Ihre Daten in profitable Entscheidungen: Unsere Algorithmen identifizieren unsichtbare Muster und sagen Kundenverhalten mit 85% Genauigkeit voraus."
         }
-      },
-      "features": {
-        "sectionTitle": "Hauptmerkmale",
-        "sectionSubtitle": "unserer Chatbots",
-        "sectionTagline": "Ihr Erfolg ist unsere Priorität",
-        "items": {
-          "nlu": {
-            "serviceName": "Verstehen natürlicher Sprache (NLU)",
-            "serviceDes": "Ermöglichen Sie nahtlose Interaktionen zwischen Mensch und Maschine mit unseren fortschrittlichen NLU-Funktionen. Verarbeiten und verstehen Sie die menschliche Sprache mit beispielloser Genauigkeit und unterstützen Sie verschiedene Anwendungsfälle, von Kundenservice bis hin zur Datenanalyse."
-          },
-          "multilingual": {
-            "serviceName": "Mehrsprachige Unterstützung",
-            "serviceDes": "Überwinden Sie Sprachbarrieren und expandieren Sie global mit unseren mehrsprachigen KI-Lösungen. Unterstützen Sie über 100 Sprachen mit nahezu muttersprachlichem Verständnis und Reaktionsfähigkeit."
-          },
-          "integration": {
-            "serviceName": "Integration mit gängigen Plattformen",
-            "serviceDes": "Verbinden Sie unsere KI-Lösungen nahtlos mit Ihrem bestehenden Technologie-Stack. Ob Slack, Microsoft Teams oder individuelle Plattformen – wir sorgen für eine reibungslose Integration und optimale Leistung."
-          },
-          "realtime": {
-            "serviceName": "Echtzeit-Analytik",
-            "serviceDes": "Überwachen und optimieren Sie Ihre KI-Lösungen in Echtzeit. Erhalten Sie umsetzbare Erkenntnisse zu Leistungskennzahlen, Nutzerengagement und Systemzustand mit unserem umfassenden Analyse-Dashboard."
-          }
+      ]
+    },
+    "process": {
+      "title": "Unser KI-Automatisierungsprozess",
+      "steps": {
+        "0": {
+          "title": "Audit & Diagnose",
+          "description": "Wir beginnen damit, Ihre aktuellen Prozesse, Geschäftsziele und technischen Einschränkungen tiefgreifend zu verstehen. Diese Phase umfasst eine eingehende Analyse Ihrer aktuellen Prozesse, die Identifizierung von Automatisierungsmöglichkeiten mit hohem ROI, die Definition des MVP (Minimum Viable Product), die Auswahl geeigneter Technologien (No-Code vs. maßgeschneiderte Entwicklung) und die Planung der Implementierungsphasen für eine strategische Bereitstellung."
+        },
+        "1": {
+          "title": "Design & Prototyping",
+          "description": "Wir entwerfen die Automatisierungslösung und die Architektur Ihres Projekts. Diese Stufe umfasst die Entwicklung maßgeschneiderter Lösungen mit iterativer Validierung, die Erstellung optimierter Automatisierungs-Workflows, die Definition einer technischen Architektur unter Berücksichtigung Ihrer bestehenden Einschränkungen, die Entwicklung funktionaler Prototypen zur Validierung und vorläufige Benutzertests zur Sicherstellung der Übereinstimmung mit Ihren Anforderungen."
+        },
+        "2": {
+          "title": "Agile Entwicklung",
+          "description": "Wir entwickeln Ihre Lösung iterativ mit regelmäßigen Demonstrationen. Diese Phase umfasst die Einrichtung einer robusten und skalierbaren technischen Architektur, Frontend- (Schnittstellen) und Backend-Entwicklung (API, Integrationen), Integration prioritärer Funktionen, kontinuierliche Unit- und Integrationstests sowie regelmäßige Demonstrationen und Anpassungen zur Sicherstellung Ihrer Zufriedenheit."
+        },
+        "3": {
+          "title": "Tests & Qualitätssicherung",
+          "description": "Wir garantieren die Qualität Ihrer Lösung mit rigorosen Tests. Diese Stufe umfasst Funktionstests in allen Zielumgebungen, Leistungs- und Optimierungstests, Sicherheits- und Datenschutztests, Tests mit echten Benutzern sowie Korrekturen und Optimierungen zur Gewährleistung einer makellosen Lösung vor der Bereitstellung."
+        },
+        "4": {
+          "title": "Deployment & Schulung",
+          "description": "Wir gewährleisten einen erfolgreichen Launch und die Schulung Ihrer Teams. Diese letzte Phase umfasst die nahtlose Integration mit Ihren bestehenden Systemen, Teamschulung für autonome Nutzung, Wissenstransfer, Implementierung von Monitoring- und Analyse-Tools, technischen Support nach dem Launch und Leistungsverfolgung mit regelmäßigen Optimierungen."
         }
-      },
-      "whyUs": {
-        "sectionTitle": "Vorteile",
-        "sectionSubtitle": "der Zusammenarbeit mit uns",
-        "items": {
-          "cuttingEdge": {
-            "serviceName": "Expertise in modernsten KI-Technologien",
-            "serviceDes": "Arbeiten Sie mit einem Team zusammen, das stets an der Spitze der KI-Innovation steht. Unsere Experten sind auf die neuesten Technologien wie GPT-4, Computer Vision und Deep Learning spezialisiert, sodass Sie zukunftssichere Lösungen erhalten, die echten Geschäftswert schaffen."
-          },
-          "customSolutions": {
-            "serviceName": "Maßgeschneiderte Lösungen für Ihre Geschäftsbedürfnisse",
-            "serviceDes": "Erhalten Sie KI-Lösungen, die perfekt auf Ihre Geschäftsziele abgestimmt sind. Wir glauben nicht an Standardlösungen – unser Team analysiert Ihre individuellen Herausforderungen und entwickelt maßgeschneiderte KI-Lösungen, die einen messbaren ROI liefern."
-          },
-          "costEffective": {
-            "serviceName": "Kosteneffiziente und skalierbare Lösungen",
-            "serviceDes": "Maximieren Sie Ihre Investition mit Lösungen, die mit Ihrem Unternehmen wachsen. Unsere KI-Systeme sind auf Skalierbarkeit ausgelegt, sodass Sie klein starten und die Funktionen erweitern können, während Sie gleichzeitig kosteneffizient bleiben."
-          },
-          "speedOptimization": {
-            "serviceName": "Geschwindigkeitsoptimierung",
-            "serviceDes": "Erleben Sie blitzschnelle Leistung mit unseren optimierten KI-Lösungen. Wir setzen fortschrittliche Techniken wie Modellkompression und Edge Computing ein, um schnelle Reaktionszeiten zu gewährleisten, ohne die Genauigkeit zu beeinträchtigen."
-          }
+      }
+    },
+    "appTypes": {
+      "title": "Arten von Lösungen, die wir entwickeln",
+      "types": [
+        {
+          "name": "E-Commerce & Retail-Lösungen",
+          "description": "Transformieren Sie Ihre kommerzielle Aktivität mit Automatisierungslösungen für ein reibungsloses und personalisiertes Kundenerlebnis",
+          "points": [
+            "Automatisierung von Bestands- und Auftragsverwaltung",
+            "Personalisierung von Produktempfehlungen",
+            "Automatisierung von Kundenservice und Support",
+            "Automatisierte Treueprogramme",
+            "Intelligente Push-Benachrichtigungen",
+            "Integration mit Ihren bestehenden Verwaltungssystemen"
+          ]
+        },
+        {
+          "name": "Unternehmens- & B2B-Lösungen",
+          "description": "Optimieren Sie Ihre Geschäftsprozesse mit maßgeschneiderten Lösungen für Ihre Mitarbeiter oder Geschäftskunden",
+          "points": [
+            "Automatisierung administrativer und HR-Aufgaben",
+            "Validierungs- und Genehmigungsworkflows",
+            "Automatisierte Kunden- und Lieferantenportale",
+            "Intelligente Dashboards und Reporting",
+            "Integration mit Ihren Informationssystemen",
+            "Multi-Plattform-Synchronisation"
+          ]
+        },
+        {
+          "name": "Service- & Marktplatz-Lösungen",
+          "description": "Schaffen Sie neue Geschäftsmöglichkeiten mit automatisierten Verbindungs- und Serviceplattformen",
+          "points": [
+            "Automatisierung des Buchungsmanagements",
+            "Automatisierte Plattformen und Marktplätze",
+            "Intelligente Logistik- und Lieferdienste",
+            "Standortbasierte Lösungen",
+            "Automatisierte Zahlungssysteme",
+            "Automatische Bewertungs- und Review-Verwaltung"
+          ]
+        },
+        {
+          "name": "Innovative & Branchenspezifische Lösungen",
+          "description": "Erkunden Sie neue Territorien mit Lösungen, die KI und Branchenerfahrungen verbinden",
+          "points": [
+            "Automatisierung für IoT (Internet der Dinge)",
+            "Automatisierte Gesundheits- und Wellness-Lösungen",
+            "Automatisierung für Immobilien und Finanzen",
+            "Bildungs- und Schulungslösungen",
+            "Automatisierung mit Computer Vision",
+            "Gamifizierte und personalisierte Erlebnisse"
+          ]
         }
-      },
-      "process": {
-        "title": "KI-Entwicklung",
-        "steps": {
-          "vision": {
-            "title": "Ihre Vision verstehen",
-            "description": "Wir tauchen tief in Ihre Geschäftsbedürfnisse und Herausforderungen ein, indem wir gezielte Discovery-Sitzungen durchführen. Unser Team stellt sicher, dass wir nicht nur Ihre Anforderungen verstehen, sondern auch Chancen für Innovation und Wachstum aufdecken."
-          },
-          "planning": {
-            "title": "Strategische Planung",
-            "description": "Wir verwandeln Erkenntnisse in umsetzbare Strategien und erstellen eine klare Roadmap für Ihr Projekt. Unsere detaillierte Planung gewährleistet eine effiziente Entwicklung, termingerechte Umsetzung und messbare Ergebnisse."
-          },
-          "development": {
-            "title": "Design & Entwicklung",
-            "description": "Unser Expertenteam erweckt Ihre Vision zum Leben, indem es modernste KI-Technologien und sauberen Code einsetzt. Regelmäßige Updates und Demonstrationen halten Sie während des gesamten Entwicklungsprozesses auf dem Laufenden."
-          },
-          "launch": {
-            "title": "Einführung & Bereitstellung",
-            "description": "Wir sorgen für einen reibungslosen Übergang von der Entwicklung zur Bereitstellung durch umfassende Tests und Optimierung. Ihre Lösung wird mit Zuversicht gestartet, unterstützt durch gründliche Qualitätssicherung."
-          },
-          "support": {
-            "title": "Laufende Unterstützung",
-            "description": "Wir bieten kontinuierlichen Support, regelmäßige Updates und proaktive Wartung, damit Ihre Lösung stets optimale Leistung erbringt."
-          }
+      ]
+    },
+    "whyUs": {
+      "title": "Warum Numispark für Ihre KI-Automatisierung wählen",
+      "reasons": [
+        {
+          "title": "Bewährte technische Expertise",
+          "description": "15+ erfolgreich bereitgestellte KI-Automatisierungsprojekte. Unser Team beherrscht die neuesten Technologien (GPT-4, Claude, Make) und versteht die realen betrieblichen Einschränkungen französischer Unternehmen."
+        },
+        {
+          "title": "ROI garantiert ab dem ersten Monat",
+          "description": "Jede Automatisierung ist so konzipiert, dass sie schnell rentabel ist. Wir beginnen immer mit einem 3.000€-Piloten, der den Wert vor jeder größeren Investition demonstriert."
+        },
+        {
+          "title": "Transparente Methodik",
+          "description": "Unser agiler Prozess bezieht Sie in jeden Schritt ein, mit regelmäßigen Demonstrationen, präziser Fortschrittsverfolgung und klarer Kommunikation über technische Entscheidungen."
+        },
+        {
+          "title": "Business-Vision",
+          "description": "Wir entwickeln nicht einfach Automatisierungstools, wir schaffen strategische Lösungen, die auf Ihre Geschäftsziele abgestimmt sind, mit besonderem Augenmerk auf den ROI."
+        },
+        {
+          "title": "Vollständige Begleitung",
+          "description": "Vom ersten Audit bis zur Langzeitwartung begleiten wir Sie bei jedem Schritt Ihrer Transformation und garantieren Ihnen eine dauerhafte Partnerschaft."
+        },
+        {
+          "title": "Lösungen für kleine Unternehmen",
+          "description": "Im Gegensatz zu traditionellen IT-Dienstleistern haben wir Pakete entwickelt, die ab 3.000€ zugänglich sind. 70% unserer Kunden sind KMU mit weniger als 50 Mitarbeitern, die ihre Prozesse effektiv automatisieren."
         }
-      },
-      "portfolio": {
-        "sectionTitle": "Unsere aktuellen",
-        "sectionHighlight": "Arbeiten",
-        "categories": {
-          "uiUx": "UI/ UX Design",
-          "appDesign": "App Design"
+      ]
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "items": {
+        "cost": {
+          "question": "Was kostet ein KI-Automatisierungsprojekt?",
+          "answer": "Die Kosten variieren erheblich je nach Komplexität, Funktionen und notwendigen Integrationen. Ein einfaches Projekt kann bei etwa 3.000€ beginnen, während eine komplexe Multi-Prozess-Lösung eine Investition von 50.000€ oder mehr darstellen kann. Wir bieten phasenweise Ansätze an, um die Investition zu verteilen und das Konzept schrittweise zu validieren."
+        },
+        "timeline": {
+          "question": "Wie lange dauert die Implementierung einer KI-Lösung?",
+          "answer": "Typische Zeitpläne variieren von einigen Tagen für einfache No-Code-Automatisierungen bis zu 3-6 Monaten für komplexe maßgeschneiderte Lösungen. Unser agiler Ansatz ermöglicht es uns, inkrementelle funktionale Versionen zu liefern, wobei eine testbare erste Version in der Regel innerhalb von 2-4 Wochen nach Projektstart verfügbar ist."
+        },
+        "difference": {
+          "question": "Was ist der Unterschied zwischen klassischer Automatisierung und KI-Automatisierung?",
+          "answer": "Klassische Automatisierung (RPA) arbeitet mit festen Regeln, während KI-Automatisierung kontinuierliches Lernen, Anpassungsfähigkeit, natürliches Sprachverständnis, Vorhersage und intelligente Entscheidungsfindung hinzufügt. Wir empfehlen den am besten geeigneten Ansatz basierend auf Ihrem Projekt, Budget und Prioritäten."
+        },
+        "security": {
+          "question": "Wie gewährleisten Sie die Datensicherheit in Ihren Lösungen?",
+          "answer": "Sicherheit ist eine absolute Priorität. Wir implementieren Best Practices: vollständige DSGVO-Konformität, sicheres Hosting in Europa, Verschlüsselung sensibler Daten, Datenminimierungsrichtlinie, regelmäßige Sicherheitsaudits und dokumentierte Incident-Management-Prozesse."
+        },
+        "integration": {
+          "question": "Wie handhaben Sie die Integration mit unseren bestehenden Systemen?",
+          "answer": "Wir entwickeln sichere APIs und Konnektoren, die eine nahtlose Integration mit Ihren bestehenden Systemen (CRM, ERP, E-Commerce usw.) ermöglichen. Unsere Expertise in Entwicklung und Systemintegration ermöglicht es uns, Lösungen zu schaffen, die mit Ihrem aktuellen technischen Ökosystem konsistent sind."
+        },
+        "maintenance": {
+          "question": "Bieten Sie Wartungsdienste nach der Bereitstellung an?",
+          "answer": "Ja, wir bieten mehrere an Ihre Bedürfnisse angepasste Wartungspakete an: technischer Support, kontinuierliche Verbesserung, Entwicklung neuer Funktionen und strategische Begleitung. Unsere Wartungsverträge beginnen ab 500€/Monat und beinhalten garantierte Reaktionszeiten."
+        },
+        "replacement": {
+          "question": "Wird KI unsere Teams ersetzen?",
+          "answer": "Nein, KI ersetzt Ihre Teams nicht, sie erweitert sie. Das Ziel ist es, sich wiederholende Aufgaben mit geringem Mehrwert zu eliminieren, damit sich Ihre Mitarbeiter auf höherwertige Aktivitäten konzentrieren können: Kreativität, Strategie, Kundenbeziehungen, Innovation."
+        },
+        "measurement": {
+          "question": "Wie messen Sie den Erfolg eines KI-Automatisierungsprojekts?",
+          "answer": "Wir definieren gemeinsam relevante KPIs (Zeitersparnis, Kostenreduzierung, Qualitätsverbesserung, Umsatzsteigerung) und implementieren Analyse-Tools zur Verfolgung. Regelmäßige Berichte ermöglichen es Ihnen, die Leistung zu bewerten und Verbesserungsmöglichkeiten zu identifizieren."
+        },
+        "testing": {
+          "question": "Kann ich testen, bevor ich massiv investiere?",
+          "answer": "Absolut. Wir empfehlen systematisch einen progressiven Ansatz: Proof of Concept (PoC) zur technischen Validierung auf begrenztem Umfang, Pilot für einen spezifischen Service/Prozess, dann progressive Skalierung und Erweiterung. Dieser Ansatz minimiert Risiken und validiert den ROI in jeder Phase."
+        },
+        "audit": {
+          "question": "Bieten Sie ein kostenloses Audit an?",
+          "answer": "Ja, wir bieten ein kostenloses, unverbindliches Audit an, das Folgendes umfasst: Analyse Ihrer aktuellen Prozesse, Identifizierung von Automatisierungsmöglichkeiten mit hohem ROI, strategische Empfehlungen, vorläufige Schätzung potenzieller Gewinne und Roadmap-Vorschlag."
         }
-      },
-      "faq": {
-        "items": {
-          "quote": {
-            "question": "Wie kann ich ein Angebot für ein Projekt anfordern?",
-            "answer": "Starten Sie Ihre KI-Reise, indem Sie eine kostenlose Beratung über unser Online-Formular vereinbaren oder uns direkt anrufen. Innerhalb von 24 Stunden analysieren unsere Experten Ihre Anforderungen und erstellen einen detaillierten Vorschlag, der Zeitplan, Ergebnisse und auf Ihre Bedürfnisse zugeschnittene Preismodelle umfasst."
-          },
-          "industries": {
-            "question": "Welche Branchen bedienen Sie?",
-            "answer": "Wir haben KI-Lösungen erfolgreich in verschiedenen Sektoren implementiert, darunter Gesundheitswesen (Optimierung der Patientenversorgung), Finanzen (Risikobewertung), Einzelhandel (Bestandsmanagement), Fertigung (vorausschauende Wartung) und Bildung (personalisierte Lernkonzepte). Unser flexibler Ansatz gewährleistet effektive Lösungen, unabhängig von Ihrer Branche."
-          },
-          "timeline": {
-            "question": "Wie lange dauert ein typisches Projekt?",
-            "answer": "Die Projektdauer variiert je nach Komplexität und Umfang. Einfache Chatbot-Integrationen dauern in der Regel 2-4 Wochen, während die Entwicklung individueller KI-Modelle 2-3 Monate in Anspruch nehmen kann. Automatisierungslösungen im Unternehmensmaßstab erstrecken sich normalerweise über 3-6 Monate. Wir liefern detaillierte Meilensteine und regelmäßige Fortschrittsberichte während des gesamten Entwicklungszyklus."
-          },
-          "security": {
-            "question": "Wie gewährleisten Sie die Sicherheit der KI-Lösungen?",
-            "answer": "Sicherheit hat in unserem Entwicklungsprozess oberste Priorität. Wir setzen Verschlüsselung auf Unternehmensniveau ein, führen regelmäßige Sicherheitsüberprüfungen durch und halten uns an Industriestandards (GDPR, HIPAA etc.). Alle unsere KI-Lösungen werden vor der Bereitstellung rigorosen Tests auf potenzielle Schwachstellen unterzogen."
-          },
-          "supportAfter": {
-            "question": "Welche Art von Support bieten Sie nach der Bereitstellung an?",
-            "answer": "Wir bieten umfassenden Support nach der Bereitstellung, einschließlich 24/7-Monitoring, regelmäßiger Leistungsoptimierung, Modell-Neutrainings und dediziertem technischem Support. Unsere Wartungspakete stellen sicher, dass sich Ihre KI-Lösungen kontinuierlich weiterentwickeln und verbessern."
-          }
-        }
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihre Prozesse mit KI zu automatisieren?",
+      "description": "Lassen Sie uns über Ihr Projekt sprechen und entdecken, wie wir das Potenzial Ihres Unternehmens mit intelligenten Automatisierungslösungen freisetzen können."
+    },
+    "portfolio": {
+      "sectionTitle": "Unsere neuesten",
+      "sectionHighlight": "Arbeiten",
+      "categories": {
+        "uiUx": "UI/UX-Design",
+        "appDesign": "App-Design"
       }
     }
   }
-  
+}

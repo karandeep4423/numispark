@@ -1,4 +1,4 @@
-import RdvForm from "@/components/RdvForm/page";
+import SeoAuditPage from "@/components/seo-audit-gratuit/page";
 
 // Helper function to load translations in a Server Component
 async function loadTranslations(locale, namespace) {
@@ -11,29 +11,29 @@ async function loadTranslations(locale, namespace) {
 export async function generateMetadata({ params }) {
   const { lang } = params;
   const translations = await import(`@/public/locales/${lang}/metaData.json`).catch(() => ({
-    metaData: { rdv: { title: "Default Title", description: "", keywords: "", canonical: "" } },
+    metaData: { seoAudit: { title: "Audit SEO Gratuit", description: "", keywords: "", canonical: "" } },
   }));
 
   return {
-    title: translations.metaData["rdv"].title,
-    description: translations.metaData["rdv"].description,
-    keywords: translations.metaData["rdv"].keywords,
+    title: translations.metaData["seoAudit"]?.title || "Audit SEO Gratuit",
+    description: translations.metaData["seoAudit"]?.description || "",
+    keywords: translations.metaData["seoAudit"]?.keywords || "",
     alternates: {
-      canonical: translations.metaData["rdv"].canonical,
+      canonical: translations.metaData["seoAudit"]?.canonical || "",
     },
   };
 }
 
 // Server Component
-export default async function Rdv({ params }) {
+export default async function SeoAudit({ params }) {
   const { lang } = params;
 
-  // Load translations for the "rdv" namespace
-  const rdvTranslations = await loadTranslations(lang, "rdv");
+  // Load translations for the "seoAudit" namespace
+  const seoAuditTranslations = await loadTranslations(lang, "seoAudit");
 
   return (
     <div>
-      <RdvForm translations={rdvTranslations} lng={lang} />
+      <SeoAuditPage translations={seoAuditTranslations} lng={lang} />
     </div>
   );
 }

@@ -1,0 +1,208 @@
+{
+  "services": {
+    "hero": {
+      "title": "Discover our services",
+      "subtitle": "Complete digital solutions to support your growth",
+      "description": "From design to launch, we support your digital project with expertise and passion. Discover our custom services tailored to your needs."
+    },
+    "keyPointsTitle": "Key Points",
+    "learnMore": "Learn More",
+    "servicesTitle": "Discover our",
+    "servicesTitleHighlight": "services",
+    "servicesSubtitle": "Complete digital solutions to support your growth",
+    "items": [
+      {
+        "id": "web-development",
+        "name": "Website Creation",
+        "shortDescription": "Professional, fast, and optimized websites for all devices.",
+        "icon": "Globe",
+        "highlights": [
+          "Showcase and corporate websites",
+          "Responsive and high-performance sites",
+          "Custom WordPress CMS",
+          "Hosting and maintenance"
+        ],
+        "link": "/agence-creation-site-web"
+      },
+      {
+        "id": "seo-audit",
+        "name": "Free SEO Audit",
+        "shortDescription": "Complete analysis of your SEO to identify improvement opportunities.",
+        "icon": "Search",
+        "highlights": [
+          "Complete technical audit",
+          "On-page and off-page analysis",
+          "Detailed report in 48h",
+          "100% free and no commitment"
+        ],
+        "link": "/audit-seo-gratuit"
+      },
+      {
+        "id": "mobile-development",
+        "name": "Mobile App Development",
+        "shortDescription": "Native and cross-platform mobile applications for iOS and Android.",
+        "icon": "Smartphone",
+        "highlights": [
+          "Native iOS and Android apps",
+          "Cross-platform (React Native, Flutter)",
+          "Intuitive UX/UI design",
+          "Maintenance and evolution"
+        ],
+        "link": "/developpement-application-mobile"
+      },
+      {
+        "id": "ecommerce",
+        "name": "E-commerce Development",
+        "shortDescription": "High-performance online stores optimized for conversion and user experience.",
+        "icon": "ShoppingCart",
+        "highlights": [
+          "Custom and turnkey online stores",
+          "PrestaShop, Shopify, WooCommerce",
+          "Secure payment integration",
+          "Store migration and redesign"
+        ],
+        "link": "/developpement-ecommerce"
+      },
+      {
+        "id": "saas",
+        "name": "SaaS Development",
+        "shortDescription": "Scalable, secure, and intuitive cloud-based software solutions.",
+        "icon": "Cloud",
+        "highlights": [
+          "Multi-tenant cloud architecture",
+          "Automated subscription management",
+          "Advanced security and compliance",
+          "Third-party integrations"
+        ],
+        "link": "/developpement-saas"
+      },
+      {
+        "id": "ai-automation",
+        "name": "AI & Automation Agency",
+        "shortDescription": "Intelligent automation and artificial intelligence solutions to optimize your processes.",
+        "icon": "Brain",
+        "highlights": [
+          "Process automation with AI",
+          "Intelligent chatbots",
+          "Predictive analytics",
+          "CRM and ERP integration"
+        ],
+        "link": "/agence-automatisation-ia"
+      },
+      {
+        "id": "web-mobile-design",
+        "name": "Web & Mobile Design",
+        "shortDescription": "Creative and functional designs that captivate and convert your users.",
+        "icon": "Palette",
+        "highlights": [
+          "Modern UX/UI design",
+          "Optimized user experience",
+          "Interactive prototyping",
+          "Responsive design"
+        ],
+        "link": "/web-et-mobile-design"
+      },
+      {
+        "id": "social-media-design",
+        "name": "Social Media & Logo Design",
+        "shortDescription": "Impactful visual identities and engaging content for your social networks.",
+        "icon": "PenTool",
+        "highlights": [
+          "Custom logo design",
+          "Social media posts",
+          "Visual charter",
+          "Print and digital branding"
+        ],
+        "link": "/design-logo-et-posts-reseaux-sociaux"
+      },
+      {
+        "id": "seo",
+        "name": "Natural SEO",
+        "shortDescription": "SEO strategies to improve your visibility and ranking on Google.",
+        "icon": "TrendingUp",
+        "highlights": [
+          "Technical and on-page SEO",
+          "Keyword research",
+          "Quality link building",
+          "SEO content strategy"
+        ],
+        "link": "/seo"
+      },
+      {
+        "id": "digital-marketing",
+        "name": "Digital Marketing",
+        "shortDescription": "High-performance digital strategies to boost your visibility and conversions.",
+        "icon": "Target",
+        "highlights": [
+          "Social media strategy",
+          "Facebook, Instagram, LinkedIn ads",
+          "Community management",
+          "Analytics and reporting"
+        ],
+        "link": "/marketing-digital"
+      }
+    ],
+    "whyChooseUs": {
+      "title": "Why choose Numispark?",
+      "reasons": [
+        {
+          "icon": "Users",
+          "title": "Experienced Team",
+          "description": "Our team of experts combines technical skills and creativity to deliver exceptional digital solutions."
+        },
+        {
+          "icon": "Rocket",
+          "title": "Proven Results",
+          "description": "Over 200 successful projects and a 98% satisfaction rate demonstrate our commitment to excellence."
+        },
+        {
+          "icon": "Lightbulb",
+          "title": "Innovation & Creativity",
+          "description": "We stay at the forefront of technology to offer you innovative and differentiating solutions."
+        },
+        {
+          "icon": "HeartHandshake",
+          "title": "Personalized Support",
+          "description": "We listen to your needs and work closely with you to ensure your project's success."
+        },
+        {
+          "icon": "BarChart",
+          "title": "Data-Driven Approach",
+          "description": "Our decisions are based on data and in-depth analysis to maximize your ROI."
+        },
+        {
+          "icon": "Clock",
+          "title": "On-Time Delivery",
+          "description": "We respect our commitments and deliver your projects on time with uncompromising quality."
+        }
+      ]
+    },
+    "process": {
+      "title": "Our Work Process",
+      "description": "A proven methodology to ensure your project's success",
+      "steps": [
+        {
+          "title": "Discovery & Analysis",
+          "description": "We start by understanding your needs, goals, and target audience to define the best strategy."
+        },
+        {
+          "title": "Design & Concept",
+          "description": "Our creative team designs mockups and prototypes aligned with your vision and brand identity."
+        },
+        {
+          "title": "Development",
+          "description": "Our developers transform designs into functional solutions with clean and optimized code."
+        },
+        {
+          "title": "Testing & Optimization",
+          "description": "We rigorously test every feature and optimize performance before going live."
+        },
+        {
+          "title": "Launch & Support",
+          "description": "We ensure a smooth launch and remain by your side for maintenance and future developments."
+        }
+      ]
+    }
+  }
+}
+

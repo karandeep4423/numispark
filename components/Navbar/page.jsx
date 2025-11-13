@@ -22,6 +22,7 @@ import { MdRocket } from "react-icons/md";
 const Navbar = () => {
   const { t } = useTranslation("navbar");
   const [isLargeScreen, setIsLargeScreen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const pathname = usePathname();
   const [stateNav, setStateNav] = useState({
     scrollDirection: "up",
@@ -43,6 +44,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    setIsMounted(true);
     const handleResize = () => {
       setIsLargeScreen(window.innerWidth > 1024);
     };
@@ -184,22 +186,34 @@ const Navbar = () => {
     const isDropdownOpen = state.activeDropdown === id;
     return (
       <div className="dropdown group">
-        {/*Button to toggle the dropdown for services for mobile view. */}
-        <button
+        {/*Services link with dropdown toggle for mobile view. */}
+        <div
           onMouseEnter={() => {
             // Always allow hover to open dropdown on larger screens
-            if (window.innerWidth >= 1024) {
+            if (isMounted && isLargeScreen) {
               setState((prev) => ({ ...prev, activeDropdown: id }));
             }
           }}
-          onClick={() => toggleDropdown(id)}
-          className="flex items-center hover:font-bold relative lg:py-5 cursor-pointer"
+          className="flex items-center relative lg:py-5"
         >
-          {t("navbar.links.services")}
-          <span className="block lg:hidden">
+          <Link 
+            href="/services" 
+            className="hover:font-bold cursor-pointer"
+            onClick={() => {
+              if (isMounted && !isLargeScreen) {
+                toggleMenu();
+              }
+            }}
+          >
+            {t("navbar.links.services")}
+          </Link>
+          <button
+            onClick={() => toggleDropdown(id)}
+            className="lg:hidden ml-2"
+          >
             <DropdownIcon isOpen={isDropdownOpen} />
-          </span>
-        </button>
+          </button>
+        </div>
 
         <div
           className={`${
@@ -225,7 +239,7 @@ const Navbar = () => {
                       onClick={() => {
                         toggleMenu();
                         // Close dropdown only on mobile
-                        if (window.innerWidth < 1024) {
+                        if (isMounted && !isLargeScreen) {
                           toggleDropdown(id);
                         }
                       }}
@@ -292,7 +306,7 @@ const Navbar = () => {
 
         <div
           className={`lg:space-x-5 gap-y-4 text-lg absolute justify-between flex flex-col items-center lg:flex-row z-50 lg:static lg:w-auto lg:py-0 pb-6 w-full left-0 ${
-            state.isMenuOpen && window.innerWidth < 1024
+            state.isMenuOpen && (!isMounted || !isLargeScreen)
               ? "top-[64px] z-50 overflow-scroll lg:overflow-hidden bg-blue-200 pt-6"
               : "hidden  lg:flex"
           }`}
@@ -310,7 +324,11 @@ const Navbar = () => {
           {/* <Link onClick={toggleMenu} href="/blog">
             Blog
           </Link> */}
-          <Link onClick={toggleMenu} href="/contactez-nous" className="relative">
+          <Link
+            onClick={toggleMenu}
+            href="/contactez-nous"
+            className="relative"
+          >
             {t("navbar.links.contact")}
             <span className="absolute -top-1.5 -right-1 flex size-3">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-500 opacity-75"></span>
