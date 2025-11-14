@@ -9,5 +9,8 @@
   "relatedPosts": "Related Posts",
   "readingTime": "{{time}} min read",
   "noPostsFound": "No posts found",
+  "noPostsDescription": "Check back later for new content.",
+  "postsCountSingular": "Showing {{count}} blog post",
+  "postsCountPlural": "Showing {{count}} blog posts",
   "searchPlaceholder": "Search blog posts..."
 }

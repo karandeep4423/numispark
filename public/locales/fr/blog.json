@@ -1,0 +1,17 @@
+{
+  "title": "Blog",
+  "readMore": "Lire la suite",
+  "recentPosts": "Articles récents",
+  "categories": "Catégories",
+  "postedOn": "Publié le",
+  "by": "par",
+  "backToList": "Retour à la liste du blog",
+  "relatedPosts": "Articles associés",
+  "readingTime": "{{time}} min de lecture",
+  "noPostsFound": "Aucun article trouvé",
+  "noPostsDescription": "Revenez plus tard pour découvrir de nouveaux contenus.",
+  "postsCountSingular": "Affichage de {{count}} article de blog",
+  "postsCountPlural": "Affichage de {{count}} articles de blog",
+  "searchPlaceholder": "Rechercher des articles..."
+}
+

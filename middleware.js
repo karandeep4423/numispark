@@ -106,11 +106,12 @@ export function middleware(request) {
   }
   
   
-  // Skip static assets and API routes
+  // Skip static assets, API routes, and admin routes
   if (
     /\.(gif|png|jpg|jpeg|svg|mp4|webp|css|js|txt|xml|ico)$/.test(pathname) ||
     pathname.startsWith('/_next/') ||
-    pathname.startsWith('/api/')
+    pathname.startsWith('/api/') ||
+    pathname.startsWith('/admin')
   ) {
     return NextResponse.next();
   }
@@ -253,5 +254,5 @@ export function middleware(request) {
 }
 
 export const config = {
-  matcher: '/((?!api|_next/static|_next/image|favicon.ico).*)',
+  matcher: '/((?!api|admin|_next/static|_next/image|favicon.ico).*)',
 };

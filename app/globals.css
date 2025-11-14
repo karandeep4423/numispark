@@ -93,3 +93,15 @@ keyframes spin-slow {
 .prose hr {
   margin: 3rem 0;
 }
+
+.ProseMirror {
+  min-height: 400px;
+  outline: none !important;
+  border: none !important;
+  background: transparent;
+}
+
+.ProseMirror:focus {
+  outline: none !important;
+  border: none !important;
+}

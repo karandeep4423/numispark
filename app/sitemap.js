@@ -1,82 +1,73 @@
-const siteUrl = 'https://numispark.com';
+import dbConnect from '@/lib/mongodb';
+import Blog from '@/lib/models/Blog';
 
-// Define all your pages
-const pages = [
-  '', // homepage
-  '/a-propos-de-nous',
-  '/agence-automatisation-ia',
-  '/agence-creation-site-web',
-  '/audit-seo-gratuit',
-  '/blog',
-  '/contactez-nous',
-  '/design-logo-et-posts-reseaux-sociaux',
-  '/developpement-application-mobile',
-  '/developpement-ecommerce',
-  '/developpement-saas',
-  '/marketing-digital',
-  '/mentions-legales',
-  '/politique-de-confidentialite',
-  '/portfolio',
-  '/seo',
-  '/web-et-mobile-design',
-];
+export default async function sitemap() {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yoursite.com';
+  
+  try {
+    await dbConnect();
 
-export default function sitemap() {
-  const sitemapEntries = [];
-  
-  // Add French pages (default language at root)
-  pages.forEach((path) => {
-    sitemapEntries.push({
-      url: `${siteUrl}${path}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: path === '' ? 1.0 : 0.8,
-      alternates: {
-        languages: {
-          fr: `${siteUrl}${path}`,
-          en: `${siteUrl}/en${path}`,
-          de: `${siteUrl}/de${path}`,
-          'x-default': `${siteUrl}${path}`,
-        },
-      },
-    });
-  });
-  
-  // Add English pages
-  pages.forEach((path) => {
-    sitemapEntries.push({
-      url: `${siteUrl}/en${path}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.7,
-      alternates: {
-        languages: {
-          fr: `${siteUrl}${path}`,
-          en: `${siteUrl}/en${path}`,
-          de: `${siteUrl}/de${path}`,
-          'x-default': `${siteUrl}${path}`,
-        },
-      },
-    });
-  });
-  
-  // Add German pages
-  pages.forEach((path) => {
-    sitemapEntries.push({
-      url: `${siteUrl}/de${path}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.7,
-      alternates: {
-        languages: {
-          fr: `${siteUrl}${path}`,
-          en: `${siteUrl}/en${path}`,
-          de: `${siteUrl}/de${path}`,
-          'x-default': `${siteUrl}${path}`,
-        },
-      },
-    });
-  });
+    // Get all published blog posts
+    const posts = await Blog.find({ status: 'published' })
+      .select('slug publishedDate updatedAt')
+      .lean();
 
-  return sitemapEntries;
+    const languages = ['fr', 'en', 'de'];
+
+    // Generate blog post URLs for all languages
+    const blogUrls = [];
+    posts.forEach((post) => {
+      languages.forEach((lang) => {
+        blogUrls.push({
+          url: `${siteUrl}/${lang}/blog/${post.slug}`,
+          lastModified: post.updatedAt || post.publishedDate || new Date(),
+          changeFrequency: 'weekly',
+          priority: 0.8,
+        });
+      });
+    });
+
+    // Static pages
+    const staticPages = [
+      '',
+      '/a-propos-de-nous',
+      '/agence-automatisation-ia',
+      '/agence-creation-site-web',
+      '/blog',
+      '/contactez-nous',
+      '/portfolio',
+      '/services',
+    ];
+
+    const staticUrls = [];
+    languages.forEach((lang) => {
+      staticPages.forEach((page) => {
+        staticUrls.push({
+          url: `${siteUrl}/${lang}${page}`,
+          lastModified: new Date(),
+          changeFrequency: page === '/blog' ? 'daily' : 'monthly',
+          priority: page === '' ? 1.0 : 0.7,
+        });
+      });
+    });
+
+    return [...staticUrls, ...blogUrls];
+  } catch (error) {
+    console.error('Error generating sitemap:', error);
+    
+    // Return basic sitemap if database fails
+    const languages = ['fr', 'en', 'de'];
+    const fallbackUrls = [];
+    
+    languages.forEach((lang) => {
+      fallbackUrls.push({
+        url: `${siteUrl}/${lang}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 1.0,
+      });
+    });
+
+    return fallbackUrls;
+  }
 }
