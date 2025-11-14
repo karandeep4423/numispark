@@ -1,5 +1,5 @@
-import { notFound, redirect } from 'next/navigation';
-import { getPostBySlug, getAllPostSlugs, getRelatedPosts } from '@/lib/blog';
+import { notFound } from 'next/navigation';
+import { getPostBySlug, getAllPostSlugs, getRelatedPosts, getAvailableLanguagesForSlug } from '@/lib/blog';
 import BlogPostContent from '@/components/blog/BlogPostContent';
 import BlogHeader from '@/components/blog/BlogHeader';
 import RelatedPosts from '@/components/blog/RelatedPosts';
@@ -28,6 +28,17 @@ export async function generateMetadata({ params }) {
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yoursite.com';
   const postUrl = `${siteUrl}/${lang}/blog/${slug}`;
+
+  // Compute available languages for this slug so alternates match real content
+  const availableLanguages = await getAvailableLanguagesForSlug(slug);
+  const languagesAlternates = {};
+  const langsToUse = (availableLanguages && availableLanguages.length > 0)
+    ? availableLanguages
+    : [lang];
+
+  for (const lng of langsToUse) {
+    languagesAlternates[lng] = `${siteUrl}/${lng}/blog/${slug}`;
+  }
   
   // Use SEO fields if available, fallback to post data
   const metaTitle = post.seo?.metaTitle || post.title;
@@ -58,11 +69,7 @@ export async function generateMetadata({ params }) {
     },
     alternates: {
       canonical: post.seo?.canonicalUrl || postUrl,
-      languages: {
-        'fr': `${siteUrl}/fr/blog/${slug}`,
-        'en': `${siteUrl}/en/blog/${slug}`,
-        'de': `${siteUrl}/de/blog/${slug}`,
-      },
+      languages: languagesAlternates,
     },
   };
 }
@@ -77,10 +84,10 @@ export default async function BlogPostPage({ params }) {
   }
   
   const post = await getPostBySlug(slug, lang);
-  
-  // If the post doesn't exist for the selected language, redirect to the blog list
+
+  // If the post doesn't exist for this language, return a proper 404
   if (post?.notFound) {
-    return redirect(`/${lang}/blog`);
+    return notFound();
   }
   
   if (post.error) {
@@ -103,7 +110,7 @@ export default async function BlogPostPage({ params }) {
 
   // Generate JSON-LD structured data for SEO
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yoursite.com';
-  const jsonLd = {
+  const jsonLdArticle = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: post.title,
@@ -111,6 +118,8 @@ export default async function BlogPostPage({ params }) {
     image: post.image ? [post.image] : [],
     datePublished: post.date,
     dateModified: post.updatedAt || post.date,
+    inLanguage: lang,
+    ...(post.seo?.keywords && { keywords: post.seo.keywords }),
     author: {
       '@type': 'Person',
       name: post.author,
@@ -130,13 +139,42 @@ export default async function BlogPostPage({ params }) {
       '@id': `${siteUrl}/${lang}/blog/${slug}`,
     },
   };
+
+  const jsonLdBreadcrumb = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: `${siteUrl}/${lang === 'fr' ? '' : `${lang}/`}`.replace(/\/$/, ''),
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Blog',
+        item: `${siteUrl}/${lang}/blog`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: post.title,
+        item: `${siteUrl}/${lang}/blog/${slug}`,
+      },
+    ],
+  };
   
   return (
     <>
       {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdArticle) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }}
       />
       
       <div className="container mx-auto px-4 py-16">

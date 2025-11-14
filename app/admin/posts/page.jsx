@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import AdminNav from '@/components/admin/AdminNav';
 import ProtectedRoute from '@/components/admin/ProtectedRoute';
 import { format } from 'date-fns';
-import { PencilIcon, TrashIcon, PlusIcon } from '@heroicons/react/24/outline';
+import { PencilIcon, TrashIcon, PlusIcon, EyeIcon } from '@heroicons/react/24/outline';
 
 export default function PostsPage() {
   const [posts, setPosts] = useState([]);
@@ -171,6 +171,14 @@ export default function PostsPage() {
                         {post.views || 0}
                       </td>
                       <td className="px-6 py-4 text-right text-sm font-medium">
+                        <Link
+                          href={`/${post.language}/blog/${post.slug}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center text-gray-600 hover:text-gray-900 mr-4"
+                        >
+                          <EyeIcon className="w-5 h-5" />
+                        </Link>
                         <button
                           onClick={() => router.push(`/admin/posts/${post._id}/edit`)}
                           className="text-blue-600 hover:text-blue-900 mr-4"

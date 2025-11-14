@@ -159,18 +159,20 @@ export default function LanguageSwitcher() {
     // This overrides any browser language detection
     document.cookie = `userLocale=${code}; path=/; max-age=31536000; SameSite=Strict`;
 
-    // Extract the path without locale
     const pathWithoutLocale = getPathWithoutLocale(pathname);
-    // Construct the new URL with appropriate prefix
+
+    const isBlogPostPath =
+      pathWithoutLocale.startsWith('/blog/') &&
+      pathWithoutLocale.split('/').length >= 3;
+
     let newPath;
-    if (code === "fr") {
-      // For French, we don't add a locale prefix
+    if (isBlogPostPath) {
+      newPath = code === 'fr' ? '/blog' : `/${code}/blog`;
+    } else if (code === 'fr') {
       newPath = pathWithoutLocale;
     } else {
-      // For other languages, we add the locale prefix
-      // Ensure we don't have double slashes
-      const cleanPath = pathWithoutLocale.startsWith('/') 
-        ? pathWithoutLocale 
+      const cleanPath = pathWithoutLocale.startsWith('/')
+        ? pathWithoutLocale
         : `/${pathWithoutLocale}`;
       newPath = `/${code}${cleanPath}`;
     }
@@ -179,7 +181,6 @@ export default function LanguageSwitcher() {
     setIsOpen(false);
     
     // Perform a hard navigation by changing window.location
-    // This bypasses Next.js router caching issues
     window.location.href = newPath;
   };
 

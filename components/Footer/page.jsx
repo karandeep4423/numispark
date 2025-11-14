@@ -75,6 +75,12 @@ const Footer = () => {
               {t("footer.navigation.links.aboutUs")}
             </Link>
             <Link
+              href="/blog"
+              className="hover:text-blue-600 transition-colors"
+            >
+              Blog
+            </Link>
+            <Link
               href="/portfolio"
               className="hover:text-blue-600 transition-colors"
             >

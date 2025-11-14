@@ -36,6 +36,7 @@ import {
 
 export default function RichTextEditor({ content, onChange }) {
   const fileInputRef = useRef(null);
+  const lastSyncedHtmlRef = useRef(content || '');
 
   const editor = useEditor({
     extensions: [
@@ -70,14 +71,23 @@ export default function RichTextEditor({ content, onChange }) {
     content: content || '',
     immediatelyRender: false,
     onUpdate: ({ editor }) => {
-      onChange(editor.getHTML());
+      const html = editor.getHTML();
+      lastSyncedHtmlRef.current = html;
+      onChange(html);
     },
   });
 
   useEffect(() => {
-    if (editor && content !== editor.getHTML()) {
-      editor.commands.setContent(content || '');
+    if (!editor) return;
+
+    const incoming = content || '';
+
+    if (incoming === lastSyncedHtmlRef.current) {
+      return;
     }
+
+    editor.commands.setContent(incoming, false);
+    lastSyncedHtmlRef.current = incoming;
   }, [content, editor]);
 
   if (!editor) {
@@ -103,15 +113,17 @@ export default function RichTextEditor({ content, onChange }) {
   };
 
   const addLink = () => {
-    const previousUrl = editor.getAttributes('link').href;
-    const url = window.prompt('Enter URL:', previousUrl);
-
-    if (url === null) {
+    // If the current selection is already inside a link, treat this as a toggle
+    if (editor.isActive('link')) {
+      editor.chain().focus().extendMarkRange('link').unsetLink().run();
       return;
     }
 
-    if (url === '') {
-      editor.chain().focus().extendMarkRange('link').unsetLink().run();
+    const previousUrl = editor.getAttributes('link').href;
+    const url = window.prompt('Enter URL:', previousUrl || '');
+
+    // User cancelled or left empty: do nothing
+    if (!url) {
       return;
     }
 
