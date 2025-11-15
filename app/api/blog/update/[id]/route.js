@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { revalidatePath } from 'next/cache';
 import dbConnect from '@/lib/mongodb';
 import Blog from '@/lib/models/Blog';
 import Category from '@/lib/models/Category';
@@ -20,6 +21,9 @@ async function handler(request, { params }) {
         { status: 404 }
       );
     }
+
+    const previousSlug = existingPost.slug;
+    const previousLanguage = existingPost.language;
 
     // If slug is being changed, check it doesn't conflict
     if (data.slug && data.slug !== existingPost.slug) {
@@ -88,6 +92,31 @@ async function handler(request, { params }) {
       .populate('categories')
       .populate('tags')
       .lean();
+
+    if (blog) {
+      try {
+        const currentLang = blog.language;
+        const currentSlug = blog.slug;
+
+        // Refresh listing page in the current language
+        revalidatePath(`/${currentLang}/blog`);
+        // Refresh the detail page for the updated slug
+        revalidatePath(`/${currentLang}/blog/${currentSlug}`);
+
+        // If language changed, also refresh the old language listing/detail
+        if (previousLanguage && previousLanguage !== currentLang) {
+          revalidatePath(`/${previousLanguage}/blog`);
+          revalidatePath(`/${previousLanguage}/blog/${previousSlug}`);
+        }
+
+        // If slug changed, refresh the previous slug path to clear stale cache
+        if (previousSlug && previousSlug !== currentSlug) {
+          revalidatePath(`/${currentLang}/blog/${previousSlug}`);
+        }
+      } catch (revalidateError) {
+        console.error('Error revalidating blog paths:', revalidateError);
+      }
+    }
 
     return NextResponse.json({ success: true, blog });
   } catch (error) {
