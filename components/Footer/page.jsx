@@ -78,7 +78,7 @@ const Footer = () => {
               href="/blog"
               className="hover:text-blue-600 transition-colors"
             >
-              Blog
+              Blogs
             </Link>
             <Link
               href="/portfolio"
