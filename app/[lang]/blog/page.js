@@ -4,41 +4,66 @@ import BlogHeader from "@/components/blog/BlogHeader";
 
 export const revalidate = 3600; // Revalidate every hour (ISR)
 
-export async function generateMetadata({ params }) {
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://numispark.com";
+const hiddenLocale = "fr";
+
+const languageBlogPaths = {
+  fr: `${siteUrl}/blog`,
+  en: `${siteUrl}/en/blog`,
+  de: `${siteUrl}/de/blog`,
+};
+
+export async function generateMetadata({ params, searchParams }) {
   try {
-    const paramData = (await params) || "fr";
-    const lang = paramData?.lang;
+    const paramData = (await params) || { lang: hiddenLocale };
+    const lang = paramData?.lang || hiddenLocale;
     const translations = await import(
       `@/public/locales/${lang}/metaData.json`
     ).catch(() => ({ metaData: {} }));
 
-    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yoursite.com';
-    const blogUrl = `${siteUrl}/${lang}/blog`;
+    const rawPage = searchParams?.page || "1";
+    const pageNumber = Number.parseInt(rawPage, 10);
+    const isValidPage = Number.isFinite(pageNumber) && pageNumber > 1;
+
+    const baseBlogUrl = lang === hiddenLocale ? languageBlogPaths.fr : languageBlogPaths[lang] || languageBlogPaths.fr;
+    const canonical = isValidPage ? `${baseBlogUrl}?page=${pageNumber}` : baseBlogUrl;
+
+    const title = translations?.metaData?.blog?.title || "Blog";
+    const description = translations?.metaData?.blog?.description || "Latest blog posts";
+    const keywords = translations?.metaData?.blog?.keywords || "blog";
 
     return {
-      title: translations?.metaData?.blog?.title || "Blog",
-      description:
-        translations?.metaData?.blog?.description || "Latest blog posts",
-      keywords: translations?.metaData?.blog?.keywords || "blog",
-      openGraph: {
-        title: translations?.metaData?.blog?.title || "Blog",
-        description: translations?.metaData?.blog?.description || "Latest blog posts",
-        url: blogUrl,
-        type: 'website',
+      title,
+      description,
+      keywords,
+      robots: {
+        index: !isValidPage,
+        follow: true,
       },
       alternates: {
-        canonical: blogUrl,
+        canonical,
         languages: {
-          'fr': `${siteUrl}/fr/blog`,
-          'en': `${siteUrl}/en/blog`,
-          'de': `${siteUrl}/de/blog`,
+          fr: languageBlogPaths.fr,
+          en: languageBlogPaths.en,
+          de: languageBlogPaths.de,
+          "x-default": languageBlogPaths.fr,
         },
+      },
+      openGraph: {
+        title,
+        description,
+        url: canonical,
+        type: "website",
       },
     };
   } catch (error) {
     return {
       title: "Blog",
       description: "Latest blog posts",
+      robots: {
+        index: false,
+        follow: true,
+      },
     };
   }
 }

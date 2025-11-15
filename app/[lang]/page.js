@@ -33,11 +33,13 @@ import HowAgencyWorks from "@/components/Process/page";
 import Hero from "@/components/HomeHero/page";
 import { useTranslation } from "react-i18next";
 import PortfolioModal from "@/components/PortfolioModal/page";
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import LogoCarousel from "@/components/Logo-clients/page";
 import Link from "next/link";
 import ImageCarousel from "@/components/ImageCarousel/page";
 import Feedback from "@/components/Feedback/page";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://numispark.com";
 
 const TECHNOLOGIES = [
   {
@@ -311,9 +313,74 @@ const myCompanyLogos = [
 ];
 
 export default function Home() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedModal, setSelectedModal] = useState("");
+
+  const currentLocale = i18n?.language || "fr";
+  const localePath = currentLocale === "fr" ? "" : `/${currentLocale}`;
+  const pageUrl = `${siteUrl}${localePath || ""}`;
+
+  const faqItems = useMemo(() => {
+    const items = t("home.faq.items", { returnObjects: true });
+    if (!items || typeof items !== "object") return [];
+    return Object.keys(items).map((key) => ({
+      question: t(`home.faq.items.${key}.question`),
+      answer: t(`home.faq.items.${key}.answer`),
+    }));
+  }, [t]);
+
+  const faqSchema = useMemo(() => {
+    if (!faqItems.length) return null;
+    return {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqItems.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer,
+        },
+      })),
+      mainEntityOfPage: pageUrl,
+    };
+  }, [faqItems, pageUrl]);
+
+  const localizedProcessSteps = useMemo(() => {
+    return steps.map((step, index) => ({
+      position: index + 1,
+      name: t(`home.process.steps.${step.translationKey}.title`, step.translationKey),
+      text: t(
+        `home.process.steps.${step.translationKey}.description`,
+        step.translationKey
+      ),
+    }));
+  }, [t]);
+
+  const processTitle = t("home.process.title", "Notre processus");
+  const processDescription = t(
+    "home.process.description",
+    t("home.process.subtitle", "Découvrez notre méthodologie collaborative.")
+  );
+
+  const howToSchema = useMemo(() => {
+    if (!localizedProcessSteps.length) return null;
+    return {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: processTitle,
+      description: processDescription,
+      url: pageUrl,
+      inLanguage: currentLocale,
+      step: localizedProcessSteps.map((step) => ({
+        "@type": "HowToStep",
+        position: step.position,
+        name: step.name,
+        text: step.text,
+      })),
+    };
+  }, [localizedProcessSteps, processTitle, processDescription, pageUrl, currentLocale]);
 
   const openModal = (item) => {
     setSelectedModal(item);
@@ -321,7 +388,20 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <>
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+      {howToSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
+      )}
+      <div>
       {/* Hero Section */}
       <Hero technologies={TECHNOLOGIES} />
       <LogoCarousel logos={myCompanyLogos} />
@@ -631,17 +711,11 @@ export default function Home() {
 
       <Feedback />
       {/* FAQs Section */}
-      <FAQs
-        faqData={Object.keys(t("home.faq.items", { returnObjects: true })).map(
-          (key) => ({
-            question: t(`home.faq.items.${key}.question`),
-            answer: t(`home.faq.items.${key}.answer`),
-          })
-        )}
-      />
+      <FAQs faqData={faqItems} />
 
       {/* Contact Section */}
       <FormCTA />
     </div>
+    </>
   );
 }

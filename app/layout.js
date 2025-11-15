@@ -15,7 +15,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://numispark.com'),
+  metadataBase: new URL("https://numispark.com"),
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Numispark",
+  url: "https://numispark.com",
+  logo: "https://numispark.com/logo.png",
+  sameAs: [
+    "https://www.instagram.com/numisparkk",
+    "https://www.facebook.com/profile.php?id=61575081451563&locale=fr_FR",
+    "https://www.tiktok.com/@numispark",
+    "https://www.linkedin.com/company/numispark",
+  ],
 };
 
 export default async function RootLayout({ children, params }) {
@@ -29,7 +43,9 @@ export default async function RootLayout({ children, params }) {
         <meta httpEquiv="Cache-Control" content="no-store" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([schemaData, organizationSchema]),
+          }}
         />
       </head>
       <GoogleTagManager gtmId="GTM-M5MSM548" />

@@ -1,9 +1,12 @@
 User-agent: *
 Allow: /
+Allow: /api/sitemap
+Allow: /api/og
 Disallow: /admin/
+Noindex: /admin/
 Disallow: /private/
-Disallow: /api/
 Disallow: /temp/
+Disallow: /api/internal/
 
 Sitemap: https://numispark.com/sitemap.xml
 
@@ -11,5 +14,4 @@ User-agent: Google-Extended
 Allow: /
 User-agent: GPTBot
 Allow: /
-
 
