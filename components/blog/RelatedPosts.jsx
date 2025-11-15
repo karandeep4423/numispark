@@ -1,44 +1,33 @@
-import Link from 'next/link';
-import { format, parseISO } from 'date-fns';
+import BlogCard from './BlogCard';
 
 export default function RelatedPosts({ posts, lang }) {
   if (!posts || posts.length === 0) {
     return null;
   }
 
+  const translationsModule = require(`@/public/locales/${lang}/blog.json`);
+  const blogTranslations = translationsModule.default || translationsModule || {};
+  const translate = (key, fallback) => blogTranslations[key] ?? fallback;
+
+  const countLabelTemplate = posts.length === 1
+    ? translate('relatedCountSingular', '{{count}} article')
+    : translate('relatedCountPlural', '{{count}} articles');
+  const countLabel = countLabelTemplate.replace('{{count}}', posts.length.toString());
+
   return (
-    <div className="mt-12 border-t pt-8">
-      <h2 className="text-2xl font-bold mb-6">Related Posts</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="mt-16 border-t border-slate-100 pt-10">
+      <div className="flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-500">{translate('relatedEyebrow', 'More to explore')}</p>
+          <h2 className="mt-2 text-3xl font-bold text-slate-900">{translate('relatedPosts', 'Related Posts')}</h2>
+        </div>
+        <span className="text-sm text-slate-500">
+          {countLabel}
+        </span>
+      </div>
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {posts.map((post) => (
-          <Link
-            key={post._id}
-            href={`/${lang}/blog/${post.slug}`}
-            className="block group"
-          >
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform group-hover:shadow-lg">
-              {post.image && (
-                <div className="relative h-40 w-full">
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full h-full object-cover transition-transform group-hover:scale-105"
-                  />
-                </div>
-              )}
-              <div className="p-4">
-                <h3 className="text-lg font-semibold mb-2 group-hover:text-blue-600">
-                  {post.title}
-                </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-2">
-                  {post.excerpt}
-                </p>
-                <p className="text-xs text-gray-500 mt-2">
-                  {format(parseISO(post.date), 'MMM d, yyyy')}
-                </p>
-              </div>
-            </div>
-          </Link>
+          <BlogCard key={post._id} post={post} lang={lang} />
         ))}
       </div>
     </div>

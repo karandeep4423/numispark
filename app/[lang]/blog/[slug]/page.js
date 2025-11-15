@@ -85,6 +85,10 @@ export default async function BlogPostPage({ params }) {
   
   const post = await getPostBySlug(slug, lang);
 
+  const translationsModule = await import(`@/public/locales/${lang}/blog.json`).catch(() => null);
+  const blogTranslations = translationsModule?.default || translationsModule || {};
+  const translate = (key, fallback) => blogTranslations[key] ?? fallback;
+
   // If the post doesn't exist for this language, return a proper 404
   if (post?.notFound) {
     return notFound();
@@ -240,19 +244,45 @@ export default async function BlogPostPage({ params }) {
           )}
 
           {/* Author Info */}
-          {post.authorBio && (
-            <div className="mt-8 p-6 bg-gray-50 rounded-lg">
-              <div className="flex items-start gap-4">
-                {post.authorAvatar && (
-                  <img
-                    src={post.authorAvatar}
-                    alt={post.author}
-                    className="w-16 h-16 rounded-full object-cover"
-                  />
-                )}
-                <div>
-                  <h3 className="font-semibold text-lg">{post.author}</h3>
-                  <p className="text-gray-600 mt-1">{post.authorBio}</p>
+          {(post.author || post.authorBio) && (
+            <div className="mt-12">
+              <div className="shadow-[5px_5px_0px_4px_rgb(147,197,253),_-5px_-5px_0px_rgba(255,255,255,1)] rounded-2xl border border-gray-200 bg-white">
+                <div className="flex flex-col gap-6 rounded-[calc(1.5rem-4px)] bg-white/80 p-5 backdrop-blur">
+                  <div className="flex flex-col gap-6 md:flex-row md:items-center">
+                    <div className="relative flex h-20 w-20 items-center justify-center overflow-hidden rounded-2xl bg-blue-50 text-blue-600 shadow-lg">
+                      {post.authorAvatar ? (
+                        <img
+                          src={post.authorAvatar}
+                          alt={post.author}
+                          className="h-full w-full object-cover"
+                        />
+                      ) : (
+                        <span className="text-2xl font-semibold">
+                          {post.author?.charAt(0)?.toUpperCase() || '?'}
+                        </span>
+                      )}
+                      <span className="absolute -bottom-2 right-1 rounded-full bg-blue-600 px-3 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-white shadow-lg">
+                        {translate('authorBadgeLabel', 'Author')}
+                      </span>
+                    </div>
+
+                    <div className="flex-1">
+                      <p className="text-xs font-semibold uppercase tracking-[0.3em] text-blue-500">{translate('authorSectionLabel', "About the author")}</p>
+                      <div className="mt-2 flex flex-wrap items-center gap-3">
+                        <h3 className="text-2xl font-bold text-slate-900">{post.author}</h3>
+                        {post.readTime && (
+                          <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-600">
+                            {translate('readingTime', '{{time}} min read').replace('{{time}}', post.readTime)}
+                          </span>
+                        )}
+                      </div>
+                      {post.authorBio && (
+                        <p className="mt-3 text-base text-slate-600">
+                          {post.authorBio}
+                        </p>
+                      )}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

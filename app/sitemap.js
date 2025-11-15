@@ -1,72 +1,96 @@
 import dbConnect from '@/lib/mongodb';
 import Blog from '@/lib/models/Blog';
 
+const supportedLanguages = ['fr', 'en', 'de'];
+const sanitizeUrl = (url) => url.replace(/\/{2,}/g, '/').replace(':/', '://');
+
+const buildAlternates = (pathsByLang) => {
+  if (Object.keys(pathsByLang).length <= 1) {
+    return undefined;
+  }
+  return { languages: pathsByLang };
+};
+
 export default async function sitemap() {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yoursite.com';
-  
+  const buildTimestamp = new Date();
+
   try {
     await dbConnect();
 
-    // Get all published blog posts
+    // Get all published blog posts grouped by slug + language to avoid fake locales
     const posts = await Blog.find({ status: 'published' })
-      .select('slug publishedDate updatedAt')
+      .select('slug publishedDate updatedAt language')
       .lean();
 
-    const languages = ['fr', 'en', 'de'];
+    const postsBySlug = posts.reduce((acc, post) => {
+      if (!acc.has(post.slug)) {
+        acc.set(post.slug, []);
+      }
+      acc.get(post.slug).push(post);
+      return acc;
+    }, new Map());
 
-    // Generate blog post URLs for all languages
-    const blogUrls = [];
-    posts.forEach((post) => {
-      languages.forEach((lang) => {
-        blogUrls.push({
-          url: `${siteUrl}/${lang}/blog/${post.slug}`,
-          lastModified: post.updatedAt || post.publishedDate || new Date(),
-          changeFrequency: 'weekly',
-          priority: 0.8,
-        });
+    const blogUrls = Array.from(postsBySlug.entries()).map(([slug, localizedPosts]) => {
+      const pathsByLang = {};
+      let lastModified = null;
+
+      localizedPosts.forEach((post) => {
+        pathsByLang[post.language] = sanitizeUrl(`${siteUrl}/${post.language}/blog/${post.slug}`);
+        const candidateDate = post.updatedAt || post.publishedDate;
+        if (!lastModified || (candidateDate && candidateDate > lastModified)) {
+          lastModified = candidateDate;
+        }
       });
+
+      const canonicalUrl = pathsByLang.fr || Object.values(pathsByLang)[0];
+
+      return {
+        url: canonicalUrl,
+        lastModified: lastModified || buildTimestamp,
+        changeFrequency: 'weekly',
+        priority: 0.8,
+        ...(buildAlternates(pathsByLang) && { alternates: buildAlternates(pathsByLang) }),
+      };
     });
 
-    // Static pages
+    // Static pages generated only for available languages with alternates when multiple exist
     const staticPages = [
-      '',
-      '/a-propos-de-nous',
-      '/agence-automatisation-ia',
-      '/agence-creation-site-web',
-      '/blog',
-      '/contactez-nous',
-      '/portfolio',
-      '/services',
+      { path: '', priority: 1, changeFrequency: 'monthly' },
+      { path: '/a-propos-de-nous', priority: 0.7, changeFrequency: 'monthly' },
+      { path: '/agence-automatisation-ia', priority: 0.7, changeFrequency: 'monthly' },
+      { path: '/agence-creation-site-web', priority: 0.7, changeFrequency: 'monthly' },
+      { path: '/blog', priority: 0.7, changeFrequency: 'daily' },
+      { path: '/contactez-nous', priority: 0.7, changeFrequency: 'monthly' },
+      { path: '/portfolio', priority: 0.7, changeFrequency: 'monthly' },
+      { path: '/services', priority: 0.7, changeFrequency: 'monthly' },
     ];
 
-    const staticUrls = [];
-    languages.forEach((lang) => {
-      staticPages.forEach((page) => {
-        staticUrls.push({
-          url: `${siteUrl}/${lang}${page}`,
-          lastModified: new Date(),
-          changeFrequency: page === '/blog' ? 'daily' : 'monthly',
-          priority: page === '' ? 1.0 : 0.7,
-        });
-      });
+    const staticUrls = staticPages.map(({ path, priority, changeFrequency }) => {
+      const pathsByLang = supportedLanguages.reduce((acc, lang) => {
+        acc[lang] = sanitizeUrl(`${siteUrl}/${lang}${path}`);
+        return acc;
+      }, {});
+
+      return {
+        url: pathsByLang.fr || Object.values(pathsByLang)[0],
+        lastModified: buildTimestamp,
+        changeFrequency,
+        priority,
+        ...(buildAlternates(pathsByLang) && { alternates: buildAlternates(pathsByLang) }),
+      };
     });
 
     return [...staticUrls, ...blogUrls];
   } catch (error) {
     console.error('Error generating sitemap:', error);
-    
-    // Return basic sitemap if database fails
-    const languages = ['fr', 'en', 'de'];
-    const fallbackUrls = [];
-    
-    languages.forEach((lang) => {
-      fallbackUrls.push({
-        url: `${siteUrl}/${lang}`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly',
-        priority: 1.0,
-      });
-    });
+
+    const fallbackUrls = supportedLanguages.map((lang) => ({
+      url: sanitizeUrl(`${siteUrl}/${lang}`),
+      lastModified: buildTimestamp,
+      changeFrequency: 'monthly',
+      priority: 1.0,
+    }));
 
     return fallbackUrls;
   }

@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import dbConnect from '@/lib/mongodb';
 import Blog from '@/lib/models/Blog';
+import '@/lib/models/Category';
+import '@/lib/models/Tag';
 import { withAuth } from '@/lib/auth-middleware';
 
 // GET all blogs including drafts (protected - for admin)
