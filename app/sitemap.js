@@ -2,6 +2,7 @@ import dbConnect from '@/lib/mongodb';
 import Blog from '@/lib/models/Blog';
 
 const supportedLanguages = ['fr', 'en', 'de'];
+const hiddenLocale = 'fr';
 const sanitizeUrl = (url) => url.replace(/\/{2,}/g, '/').replace(':/', '://');
 
 const buildAlternates = (pathsByLang) => {
@@ -14,6 +15,23 @@ const buildAlternates = (pathsByLang) => {
 export default async function sitemap() {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yoursite.com';
   const buildTimestamp = new Date();
+
+  const buildLocalizedUrl = (lang, path = '') => {
+    const normalizedPath = path || '';
+
+    if (lang === hiddenLocale) {
+      const suffix = normalizedPath
+        ? (normalizedPath.startsWith('/') ? normalizedPath : `/${normalizedPath}`)
+        : '/';
+      return sanitizeUrl(`${siteUrl}${suffix}`);
+    }
+
+    const suffix = normalizedPath
+      ? (normalizedPath.startsWith('/') ? normalizedPath : `/${normalizedPath}`)
+      : '';
+
+    return sanitizeUrl(`${siteUrl}/${lang}${suffix}`);
+  };
 
   try {
     await dbConnect();
@@ -36,7 +54,7 @@ export default async function sitemap() {
       let lastModified = null;
 
       localizedPosts.forEach((post) => {
-        pathsByLang[post.language] = sanitizeUrl(`${siteUrl}/${post.language}/blog/${post.slug}`);
+        pathsByLang[post.language] = buildLocalizedUrl(post.language, `/blog/${post.slug}`);
         const candidateDate = post.updatedAt || post.publishedDate;
         if (!lastModified || (candidateDate && candidateDate > lastModified)) {
           lastModified = candidateDate;
@@ -68,7 +86,7 @@ export default async function sitemap() {
 
     const staticUrls = staticPages.map(({ path, priority, changeFrequency }) => {
       const pathsByLang = supportedLanguages.reduce((acc, lang) => {
-        acc[lang] = sanitizeUrl(`${siteUrl}/${lang}${path}`);
+        acc[lang] = buildLocalizedUrl(lang, path);
         return acc;
       }, {});
 
@@ -86,7 +104,7 @@ export default async function sitemap() {
     console.error('Error generating sitemap:', error);
 
     const fallbackUrls = supportedLanguages.map((lang) => ({
-      url: sanitizeUrl(`${siteUrl}/${lang}`),
+      url: buildLocalizedUrl(lang),
       lastModified: buildTimestamp,
       changeFrequency: 'monthly',
       priority: 1.0,
