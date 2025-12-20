@@ -21,7 +21,8 @@ export async function generateMetadata({ params, searchParams }) {
       `@/public/locales/${lang}/metaData.json`
     ).catch(() => ({ metaData: {} }));
 
-    const rawPage = searchParams?.page || "1";
+    const searchParamsData = await searchParams;
+    const rawPage = searchParamsData?.page || "1";
     const pageNumber = Number.parseInt(rawPage, 10);
     const isValidPage = Number.isFinite(pageNumber) && pageNumber > 1;
 

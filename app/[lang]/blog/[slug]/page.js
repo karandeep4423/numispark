@@ -26,8 +26,13 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yoursite.com';
-  const postUrl = `${siteUrl}/${lang}/blog/${slug}`;
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://numispark.com';
+  const hiddenLocale = 'fr';
+  
+  // Build correct canonical URL (French posts should not have /fr/ prefix)
+  const postUrl = lang === hiddenLocale 
+    ? `${siteUrl}/blog/${slug}`
+    : `${siteUrl}/${lang}/blog/${slug}`;
 
   // Compute available languages for this slug so alternates match real content
   const availableLanguages = await getAvailableLanguagesForSlug(slug);
@@ -37,7 +42,19 @@ export async function generateMetadata({ params }) {
     : [lang];
 
   for (const lng of langsToUse) {
-    languagesAlternates[lng] = `${siteUrl}/${lng}/blog/${slug}`;
+    // French posts should not have /fr/ prefix in hreflang
+    if (lng === hiddenLocale) {
+      languagesAlternates[lng] = `${siteUrl}/blog/${slug}`;
+    } else {
+      languagesAlternates[lng] = `${siteUrl}/${lng}/blog/${slug}`;
+    }
+  }
+  
+  // Add x-default pointing to French version (or first available language)
+  if (langsToUse.includes(hiddenLocale)) {
+    languagesAlternates['x-default'] = `${siteUrl}/blog/${slug}`;
+  } else {
+    languagesAlternates['x-default'] = languagesAlternates[langsToUse[0]];
   }
   
   // Use SEO fields if available, fallback to post data

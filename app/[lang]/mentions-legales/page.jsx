@@ -1,9 +1,10 @@
 import LegalNotice from "@/components/mentionsLegales/page";
+import { buildAlternates } from "@/lib/seo-helpers";
 
 export async function generateMetadata({ params}) {
   // Load translations directly from JSON files
   const paramData = await params;
-  const lang = paramData?.lang;
+  const lang = paramData?.lang || 'fr';
   const translations = await import(
     `@/public/locales/${lang}/metaData.json`
   );
@@ -12,9 +13,7 @@ export async function generateMetadata({ params}) {
     title: translations.metaData['mentions-legales'].title,
     description: translations.metaData['mentions-legales'].description,
     keywords: translations.metaData['mentions-legales'].keywords,
-    alternates: {
-      canonical: translations.metaData['mentions-legales'].canonical,
-    },
+    alternates: buildAlternates(lang, '/mentions-legales'),
   };
 }
 

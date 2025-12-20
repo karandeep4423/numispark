@@ -13,7 +13,7 @@ const buildAlternates = (pathsByLang) => {
 };
 
 export default async function sitemap() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yoursite.com';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://numispark.com';
   const buildTimestamp = new Date();
 
   const buildLocalizedUrl = (lang, path = '') => {

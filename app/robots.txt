@@ -3,7 +3,6 @@ Allow: /
 Allow: /api/sitemap
 Allow: /api/og
 Disallow: /admin/
-Noindex: /admin/
 Disallow: /private/
 Disallow: /temp/
 Disallow: /api/internal/
