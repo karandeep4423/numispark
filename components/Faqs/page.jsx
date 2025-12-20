@@ -1,10 +1,28 @@
  "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { PlusCircle, MinusCircle } from "lucide-react";
 
 const FAQs = ({ faqData, title }) => {
   const [openIndex, setOpenIndex] = useState(null);
   const [language, setLanguage] = useState('fr'); // default to French
+
+  // Generate FAQ Schema for SEO
+  const faqSchema = useMemo(() => {
+    if (!faqData || faqData.length === 0) return null;
+    
+    return {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqData.map((faq) => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": typeof faq.answer === 'string' ? faq.answer : faq.answer?.toString() || ''
+        }
+      }))
+    };
+  }, [faqData]);
 
   const FAQItem = ({ question, children, isOpen, onClick }) => {
     return (
@@ -51,23 +69,32 @@ const FAQs = ({ faqData, title }) => {
   }, []);
 
   return (
-    <div className="max-w-3xl mb-5 mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 className="text-4xl font-bold text-gray-800 text-center my-12">
-        {title || translations[language]}
-      </h1>
-      <div className="space-y-6">
-        {faqData.map((faq, index) => (
-          <FAQItem
-            key={index}
-            question={faq.question}
-            isOpen={openIndex === index}
-            onClick={() => setOpenIndex(openIndex === index ? null : index)}
-          >
-            {faq.answer}
-          </FAQItem>
-        ))}
+    <>
+      {/* FAQ Schema for SEO */}
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+      <div className="max-w-3xl mb-5 mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-4xl font-bold text-gray-800 text-center my-12">
+          {title || translations[language]}
+        </h2>
+        <div className="space-y-6">
+          {faqData.map((faq, index) => (
+            <FAQItem
+              key={index}
+              question={faq.question}
+              isOpen={openIndex === index}
+              onClick={() => setOpenIndex(openIndex === index ? null : index)}
+            >
+              {faq.answer}
+            </FAQItem>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

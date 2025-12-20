@@ -15,6 +15,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'd3h46s6jorvpfj.cloudfront.net', // Allow images from CloudFront
       },
+      {
+        protocol: 'https',
+        hostname: 'cdn.brandfetch.io', // Allow images from Brandfetch CDN
+      },
     ],
   },
 };

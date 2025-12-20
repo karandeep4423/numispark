@@ -3,11 +3,16 @@ import { useInView } from "react-intersection-observer";
 import { useTranslation } from "react-i18next";
 import { CheckCircle2 } from "lucide-react";
 
-const HowAgencyWorks = ({ steps, namespace, title }) => {
+const HowAgencyWorks = ({ steps = [], namespace = "home", title }) => {
   const { t } = useTranslation([namespace]);
   
   // Use provided title or fallback to translation
   const processTitle = title || t(`${namespace}.process.title`, "How Agency Works");
+  
+  // Return early if no steps provided
+  if (!steps || steps.length === 0) {
+    return null;
+  }
   
   return (
     <div className="bg-black text-white">

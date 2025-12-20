@@ -82,6 +82,17 @@ export default async function sitemap() {
       { path: '/contactez-nous', priority: 0.7, changeFrequency: 'monthly' },
       { path: '/portfolio', priority: 0.7, changeFrequency: 'monthly' },
       { path: '/services', priority: 0.7, changeFrequency: 'monthly' },
+      { path: '/seo', priority: 0.8, changeFrequency: 'monthly' },
+      { path: '/developpement-ecommerce', priority: 0.7, changeFrequency: 'monthly' },
+      { path: '/developpement-saas', priority: 0.7, changeFrequency: 'monthly' },
+      { path: '/developpement-application-mobile', priority: 0.7, changeFrequency: 'monthly' },
+      { path: '/marketing-digital', priority: 0.7, changeFrequency: 'monthly' },
+      { path: '/web-et-mobile-design', priority: 0.7, changeFrequency: 'monthly' },
+      { path: '/design-logo-et-posts-reseaux-sociaux', priority: 0.7, changeFrequency: 'monthly' },
+      { path: '/mentions-legales', priority: 0.3, changeFrequency: 'yearly' },
+      { path: '/politique-de-confidentialite', priority: 0.3, changeFrequency: 'yearly' },
+      { path: '/audit-seo-gratuit', priority: 0.8, changeFrequency: 'monthly' },
+      { path: '/devis-gratuit', priority: 0.8, changeFrequency: 'monthly' },
     ];
 
     const staticUrls = staticPages.map(({ path, priority, changeFrequency }) => {

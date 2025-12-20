@@ -1,4 +1,5 @@
 import { useEffect, useState, useCallback, useRef } from "react";
+import Image from "next/image";
 import HeroButtons from "../HeroButtons/page";
 import { useTranslation } from "react-i18next";
 
@@ -82,11 +83,13 @@ const AnimatedBackground = ({ technologies }) => {
             height: "48px",
           }}
         >
-          <img
+          <Image
             src={icon.logo}
             alt={icon.name}
+            width={48}
+            height={48}
             className="w-12 h-12 object-contain"
-            loading="lazy"
+            unoptimized={icon.logo.startsWith('data:') || icon.logo.includes('cdn.jsdelivr.net')}
           />
         </div>
       ))}

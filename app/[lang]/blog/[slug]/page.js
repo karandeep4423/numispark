@@ -215,12 +215,14 @@ export default async function BlogPostPage({ params }) {
           {post.image && (
             <div className="mb-8 w-full overflow-hidden rounded-2xl bg-gray-100">
               <Image 
-                width={100}
-                height={100}
+                width={1200}
+                height={675}
                 src={post.image} 
                 alt={post.imageAlt || post.title}
                 className="w-full h-auto object-cover"
                 style={{ aspectRatio: '16 / 9' }}
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
               />
             </div>
           )}

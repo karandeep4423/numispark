@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-const Technologies = ({ technologies }) => {
+const Technologies = ({ technologies = [] }) => {
   const { t } = useTranslation("technologies");
     return (
       <div className="pb-16 bg-gray-50">
@@ -14,7 +14,7 @@ const Technologies = ({ technologies }) => {
         {t("tech.description")}
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 container mt-10 mx-auto px-4">
-          {technologies.map((tech, index) => (
+          {(technologies || []).map((tech, index) => (
             <div
               key={`${tech.name}-${index}`}
               className="shadow-[5px_5px_0px_0px_rgb(147,197,253)] p-4 md:p-8"

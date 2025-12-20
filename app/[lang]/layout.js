@@ -32,6 +32,14 @@ const localeMetadata = {
       "IT services, digital marketing, web development, mobile app development, SEO, social media marketing, digital transformation, Numispark",
     openGraph: {
       locale: "en_US",
+      images: [
+        {
+          url: "https://numispark.com/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "NumiSpark - Digital Solutions for IT & Marketing",
+        },
+      ],
     },
   },
   fr: {
@@ -43,6 +51,14 @@ const localeMetadata = {
       "services IT, marketing digital, développement web, création d'applications mobiles, SEO, marketing sur les réseaux sociaux, transformation digitale, Numispark",
     openGraph: {
       locale: "fr_FR",
+      images: [
+        {
+          url: "https://numispark.com/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "Numispark - Agence Communication & Marketing Digital",
+        },
+      ],
     },
   },
   de: {
@@ -53,6 +69,14 @@ const localeMetadata = {
       "IT-Dienstleistungen, digitales Marketing, Webentwicklung, mobile App-Entwicklung, SEO, Social Media Marketing, digitale Transformation, Numispark",
     openGraph: {
       locale: "de_DE",
+      images: [
+        {
+          url: "https://numispark.com/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "NumiSpark - Digitale Lösungen für IT & Marketing",
+        },
+      ],
     },
   },
 };
@@ -112,11 +136,15 @@ export async function generateMetadata({ params }) {
       siteName: "NumiSpark",
       locale: localized.openGraph.locale,
       type: "website",
+      images: localized.openGraph.images,
     },
     twitter: {
       card: "summary_large_image",
+      site: "@numispark",
+      creator: "@numispark",
       title: localized.title,
       description: localized.description,
+      images: localized.openGraph.images,
     },
   };
 }
