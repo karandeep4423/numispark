@@ -4,10 +4,15 @@ import { useTranslation } from "react-i18next";
 import { parseISO, format } from 'date-fns';
 import Image from 'next/image';
 
+const hiddenLocale = 'fr';
+
 export default function BlogCard({ post, lang }) {
   const { t } = useTranslation('blog');
 
-  const blogPath = `/${lang}/blog/${post.slug}`;
+  // French blog posts should NOT have /fr/ prefix (it redirects to root)
+  const blogPath = lang === hiddenLocale 
+    ? `/blog/${post.slug}` 
+    : `/${lang}/blog/${post.slug}`;
 
   return (
     <Link href={blogPath} className="block h-full group">

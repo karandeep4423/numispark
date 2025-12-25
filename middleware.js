@@ -126,6 +126,15 @@ export function middleware(request) {
   // Get browser language from Accept-Language header
   const acceptLanguage = request.headers.get('Accept-Language');
   const browserLanguage = detectBrowserLanguage(acceptLanguage);
+  
+  // Parse the pathname to check for locale prefix (moved up for use in locale detection)
+  const pathSegments = pathname.split('/');
+  const firstSegment = pathSegments[1] || '';
+  const hasLocalePrefix = supportedLocales.includes(firstSegment);
+  const pathLocale = hasLocalePrefix ? firstSegment : null;
+  
+  // Detect if the URL path is inherently French (French-specific slugs like /blog/*, /portfolio, etc.)
+  const urlInherentLocale = detectLocaleFromPath(pathname);
 
   // Determine the locale to use with priority:
   let locale;
@@ -133,10 +142,14 @@ export function middleware(request) {
   if (isCrawler) {
     // FOR CRAWLERS: Determine locale from the URL path itself
     // This ensures crawlers get 200 status codes, not redirects
-    locale = detectLocaleFromPath(pathname);
+    locale = urlInherentLocale;
   } else {
-    // FOR REGULAR USERS: Use cookie > browser language > fallback
-    if (cookieLocale && supportedLocales.includes(cookieLocale)) {
+    // FOR REGULAR USERS:
+    // If URL is inherently French (e.g., /blog/*, /portfolio), respect that
+    // This prevents redirect loops when users access French content directly
+    if (urlInherentLocale === hiddenLocale && !hasLocalePrefix) {
+      locale = hiddenLocale;
+    } else if (cookieLocale && supportedLocales.includes(cookieLocale)) {
       // If cookie exists and is valid, use it (highest priority)
       locale = cookieLocale;
     } else if (browserLanguage) {
@@ -147,12 +160,6 @@ export function middleware(request) {
       locale = fallbackLocale;
     }
   }
-
-  // Parse the pathname to check for locale prefix
-  const pathSegments = pathname.split('/');
-  const firstSegment = pathSegments[1] || '';
-  const hasLocalePrefix = supportedLocales.includes(firstSegment);
-  const pathLocale = hasLocalePrefix ? firstSegment : null;
 
   // Case 1: URL already has a locale prefix
   if (hasLocalePrefix) {
