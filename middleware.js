@@ -99,9 +99,9 @@ function detectLocaleFromPath(pathname) {
 export function middleware(request) {
   const { pathname, host } = request.nextUrl;
 
-  // Redirect www to non-www for SEO
+  // Redirect www to non-www for SEO (handles both http and https)
   if (host === 'www.numispark.com') {
-    const newUrl = new URL(pathname, 'https://numispark.com');
+    const newUrl = new URL(pathname + request.nextUrl.search, 'https://numispark.com');
     return NextResponse.redirect(newUrl, 301);
   }
   

@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+import { notFound, redirect, permanentRedirect } from 'next/navigation';
 import { getPostBySlug, getAllPostSlugs, getRelatedPosts, getAvailableLanguagesForSlug } from '@/lib/blog';
 import BlogPostContent from '@/components/blog/BlogPostContent';
 import BlogHeader from '@/components/blog/BlogHeader';
@@ -16,18 +16,34 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const paramData = await params;
   const { lang, slug } = paramData;
-  const post = await getPostBySlug(slug, lang);
+  const hiddenLocale = 'fr';
+  
+  let post = await getPostBySlug(slug, lang);
+  
+  // SEO FIX: If post doesn't exist in current language, check French version for metadata
+  // This ensures proper metadata even during redirect
+  let effectiveLang = lang;
+  if ((post.notFound || post.error) && lang !== hiddenLocale) {
+    const frenchPost = await getPostBySlug(slug, hiddenLocale);
+    if (frenchPost && !frenchPost.notFound && !frenchPost.error) {
+      post = frenchPost;
+      effectiveLang = hiddenLocale;
+    }
+  }
   
   // Handle not found case
   if (post.notFound || post.error) {
     return {
       title: 'Post not found',
       description: 'The requested blog post could not be found',
+      robots: {
+        index: false,
+        follow: true,
+      },
     };
   }
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://numispark.com';
-  const hiddenLocale = 'fr';
   
   // Build correct canonical URL (French posts should not have /fr/ prefix)
   const postUrl = lang === hiddenLocale 
@@ -94,13 +110,24 @@ export async function generateMetadata({ params }) {
 export default async function BlogPostPage({ params }) {
   const paramData = await params;
   const { lang, slug } = paramData;  
+  const hiddenLocale = 'fr';
   
   // Redirect to 404 if slug is invalid
   if (!slug || typeof slug !== 'string') {
     return notFound();
   }
   
-  const post = await getPostBySlug(slug, lang);
+  let post = await getPostBySlug(slug, lang);
+  
+  // SEO FIX: If post doesn't exist in current language, check if it exists in French
+  // and redirect to the French version to avoid 404 errors from blog listing fallback
+  if (post?.notFound && lang !== hiddenLocale) {
+    const frenchPost = await getPostBySlug(slug, hiddenLocale);
+    if (frenchPost && !frenchPost.notFound && !frenchPost.error) {
+      // Permanent redirect (308) to French version for better SEO
+      permanentRedirect(`/blog/${slug}`);
+    }
+  }
 
   const translationsModule = await import(`@/public/locales/${lang}/blog.json`).catch(() => null);
   const blogTranslations = translationsModule?.default || translationsModule || {};

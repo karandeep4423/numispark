@@ -1,5 +1,5 @@
 # Numispark Robots.txt
-# Last updated: 2025-12-20
+# Last updated: 2025-12-25
 
 User-agent: *
 Allow: /
@@ -9,6 +9,9 @@ Disallow: /api/
 Disallow: /private/
 Disallow: /temp/
 Disallow: /_next/
+
+# Preferred host (non-www)
+Host: https://numispark.com
 
 # Sitemap location
 Sitemap: https://numispark.com/sitemap.xml

@@ -17,5 +17,10 @@
   "noPostsDescription": "Check back later for new content.",
   "postsCountSingular": "Showing {{count}} blog post",
   "postsCountPlural": "Showing {{count}} blog posts",
-  "searchPlaceholder": "Search blog posts..."
+  "searchPlaceholder": "Search blog posts...",
+  "blogIntroTitle": "Welcome to Our Blog",
+  "blogIntroText": "Discover insights, tips, and expert advice on web development, SEO, digital marketing, and more. Our team shares knowledge to help you grow your online presence.",
+  "comingSoonTitle": "Content Coming Soon",
+  "comingSoonText": "We are working on creating valuable content for you. In the meantime, explore our services or contact us for any questions.",
+  "fallbackNotice": "These articles are currently available in French. Translations coming soon!"
 }

@@ -17,6 +17,11 @@
   "noPostsDescription": "Revenez plus tard pour découvrir de nouveaux contenus.",
   "postsCountSingular": "Affichage de {{count}} article de blog",
   "postsCountPlural": "Affichage de {{count}} articles de blog",
-  "searchPlaceholder": "Rechercher des articles..."
+  "searchPlaceholder": "Rechercher des articles...",
+  "blogIntroTitle": "Bienvenue sur notre Blog",
+  "blogIntroText": "Découvrez des conseils, astuces et avis d'experts sur le développement web, le SEO, le marketing digital et bien plus encore. Notre équipe partage son expertise pour vous aider à développer votre présence en ligne.",
+  "comingSoonTitle": "Contenu à venir",
+  "comingSoonText": "Nous travaillons à la création de contenus de qualité pour vous. En attendant, n'hésitez pas à explorer nos services ou à nous contacter pour toute question.",
+  "fallbackNotice": "Ces articles sont actuellement disponibles en français."
 }
 

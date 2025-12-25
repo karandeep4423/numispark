@@ -17,6 +17,11 @@
   "noPostsDescription": "Schau später noch einmal vorbei, um neue Inhalte zu entdecken.",
   "postsCountSingular": "{{count}} Blogbeitrag wird angezeigt",
   "postsCountPlural": "{{count}} Blogbeiträge werden angezeigt",
-  "searchPlaceholder": "Blogbeiträge suchen..."
+  "searchPlaceholder": "Blogbeiträge suchen...",
+  "blogIntroTitle": "Willkommen auf unserem Blog",
+  "blogIntroText": "Entdecken Sie Einblicke, Tipps und Expertenrat zu Webentwicklung, SEO, digitalem Marketing und mehr. Unser Team teilt Wissen, um Ihnen beim Ausbau Ihrer Online-Präsenz zu helfen.",
+  "comingSoonTitle": "Inhalte kommen bald",
+  "comingSoonText": "Wir arbeiten daran, wertvolle Inhalte für Sie zu erstellen. In der Zwischenzeit können Sie unsere Dienstleistungen erkunden oder uns bei Fragen kontaktieren.",
+  "fallbackNotice": "Diese Artikel sind derzeit auf Französisch verfügbar. Übersetzungen folgen in Kürze!"
 }
 
