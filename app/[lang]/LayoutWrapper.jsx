@@ -17,7 +17,7 @@ export default function LayoutWrapper({ children }) {
       {!isLandingPage && <Footer />}
       {!isLandingPage && (
         <div className="fixed-circle">
-          <AnimatedCircle />
+          {/* <AnimatedCircle /> */}
         </div>
       )}
     </>
